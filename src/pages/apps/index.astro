@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
+---
+
+<BaseLayout title="Essential Apps" description="Must-have apps for foreigners in China — payments, navigation, transport, and daily life.">
+  <h1>Essential Apps</h1>
+  <p class="subtitle">Apps you should download before arriving in China.</p>
+  <ul class="guide-list">
+    {apps.map((app) => (
+      <li>
+        <a href={`/apps/${app.id}`}>
+          <strong>{app.data.title}</strong>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+
+<style>
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+
+  .guide-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .guide-list li {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .guide-list a {
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: #1a56db;
+  }
+
+  .guide-list a:hover {
+    background: #f9fafb;
+    margin: 0 -1rem;
+    padding: 1rem;
+  }
+</style>
