@@ -12,7 +12,7 @@
  *   3. Copies wiki/entities/*.md → src/content/apps/
  *   4. Only copies files where front matter contains status: audited
  *
- * The wiki repo is: https://github.com/yi-yang/foreigner-visiting-china-wiki
+ * The wiki repo is: https://github.com/chinatrip/foreigner-visiting-china-wiki
  */
 
 import { execSync } from 'node:child_process';
@@ -21,8 +21,8 @@ import { join, basename } from 'node:path';
 
 // Use HTTPS with token in CI, SSH locally
 const WIKI_REPO = process.env.GITHUB_TOKEN
-  ? `https://x-access-token:${process.env.GITHUB_TOKEN}@github.com/yi-yang/foreigner-visiting-china-wiki.git`
-  : 'git@github.com:yi-yang/foreigner-visiting-china-wiki.git';
+  ? `https://x-access-token:${process.env.GITHUB_TOKEN}@github.com/chinatrip/foreigner-visiting-china-wiki.git`
+  : 'git@github.com:chinatrip/foreigner-visiting-china-wiki.git';
 const TEMP_DIR = join(import.meta.dirname, '../.wiki-cache');
 const GUIDES_DIR = join(import.meta.dirname, '../src/content/guides');
 const APPS_DIR = join(import.meta.dirname, '../src/content/apps');
