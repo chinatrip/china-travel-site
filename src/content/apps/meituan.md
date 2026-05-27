@@ -1,6 +1,6 @@
 ---
 category: app
-title: Meituan (美团)
+title: Meituan
 date: 2026-05-06
 last_verified: 2026-05-06
 verified_against:

@@ -1,6 +1,6 @@
 ---
 category: app
-title: Amap (高德地图)
+title: Amap
 date: 2026-05-06
 last_verified: 2026-05-06
 verified_against:
