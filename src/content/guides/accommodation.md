@@ -51,6 +51,8 @@ These accept foreign credit cards and tend to list properties that are licensed 
 
 **Meituan (美团)** lists the same rooms as OTAs but at local prices — the same room that costs ¥400 on Trip.com can be ¥300 on Meituan, a 20–30% gap. The price difference exists between domestic apps (Meituan) and international-facing OTAs; the Chinese and international versions of Trip.com (Ctrip) show the same price. To use Meituan you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]) — foreign cards are not directly supported. Meituan has partial English support but many menus remain in Chinese. (Source: Reddit r/travelchina post #4, 2026-05-08)
 
+**DiDi (滴滴酒店)** now offers hotel booking with full English interface support. As a foreigner-friendly option, DiDi Hotels accepts international credit cards (Visa, Mastercard) directly — no Alipay or WeChat Pay required. Prices are competitive with domestic platforms, and the booking flow is integrated with DiDi's ride-hailing service, making it easy to book a car to your hotel after completing your reservation. Available in major cities.
+
 **Fliggy (飞猪)** has wide coverage of smaller cities and budget properties but is harder to use without a Chinese payment method and has no English UI.
 
 ## Check-In Requirements
