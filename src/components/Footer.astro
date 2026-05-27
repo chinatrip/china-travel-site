@@ -1,0 +1,37 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-secondary text-white mt-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="font-bold text-lg mb-3">ChinaGuide.ai</h3>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Practical, verified travel guides for foreigners visiting China. Written and verified by real travelers.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-sm uppercase tracking-wider text-gray-400 mb-3">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/guides" class="text-gray-300 hover:text-white transition-colors">Travel Guides</a></li>
+          <li><a href="/apps" class="text-gray-300 hover:text-white transition-colors">Essential Apps</a></li>
+          <li><a href="/guides/visa-types" class="text-gray-300 hover:text-white transition-colors">Visa Information</a></li>
+          <li><a href="/guides/mobile-payment" class="text-gray-300 hover:text-white transition-colors">Mobile Payment</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-sm uppercase tracking-wider text-gray-400 mb-3">About</h4>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          All content is regularly verified against official sources. Information changes frequently — check the verification date on each guide.
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-600 mt-8 pt-6 text-center text-gray-400 text-sm">
+      &copy; {year} ChinaGuide.ai. Content verified by real travelers.
+    </div>
+  </div>
+</footer>

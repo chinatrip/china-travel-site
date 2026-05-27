@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import Badge from '../components/Badge.astro';
 
 interface Props {
   title: string;
@@ -7,11 +8,11 @@ interface Props {
   lastVerified?: string;
   verifiedBy?: string;
   volatility?: string;
+  category?: string;
 }
 
-const { title, description, lastVerified, verifiedBy, volatility } = Astro.props;
+const { title, description, lastVerified, verifiedBy, volatility, category } = Astro.props;
 
-// Format date string nicely (handles both "2026-05-07" and full Date strings)
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
   if (isNaN(d.getTime())) return dateStr;
@@ -19,91 +20,52 @@ function formatDate(dateStr: string): string {
 }
 
 const formattedDate = lastVerified ? formatDate(lastVerified) : undefined;
-
-const volatilityLabel: Record<string, { text: string; color: string }> = {
-  low: { text: 'Stable', color: '#16a34a' },
-  stable: { text: 'Stable', color: '#16a34a' },
-  moderate: { text: 'May change', color: '#ca8a04' },
-  high: { text: 'Changes frequently', color: '#dc2626' },
-};
-
-const badge = volatility ? volatilityLabel[volatility] : null;
+const categoryLabel = category === 'app' ? 'Essential Apps' : 'Travel Guides';
+const categoryHref = category === 'app' ? '/apps' : '/guides';
 ---
 
 <BaseLayout title={title} description={description}>
-  <article>
-    <h1>{title}</h1>
+  <article class="max-w-3xl mx-auto px-4 sm:px-6 py-8">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-muted mb-6">
+      <a href="/" class="hover:text-primary transition-colors">Home</a>
+      <span class="mx-2">/</span>
+      <a href={categoryHref} class="hover:text-primary transition-colors">{categoryLabel}</a>
+      <span class="mx-2">/</span>
+      <span class="text-gray-900">{title}</span>
+    </nav>
 
-    {(lastVerified || badge) && (
-      <div class="meta">
-        {badge && (
-          <span class="badge" style={`--badge-color: ${badge.color}`}>
-            {badge.text}
-          </span>
-        )}
+    <!-- Header -->
+    <header class="mb-8 pb-6 border-b border-gray-200">
+      <h1 class="text-3xl sm:text-4xl font-bold text-secondary leading-tight mb-4">
+        {title}
+      </h1>
+
+      <div class="flex flex-wrap items-center gap-3 text-sm">
+        <Badge volatility={volatility} />
         {formattedDate && (
-          <span class="verified">
+          <span class="text-muted">
             Last verified: {formattedDate}
-            {verifiedBy && ` by ${verifiedBy}`}
+            {verifiedBy && <span> by <strong>{verifiedBy}</strong></span>}
           </span>
         )}
       </div>
-    )}
+    </header>
 
-    <div class="content">
+    <!-- Content -->
+    <div class="prose prose-gray prose-lg max-w-none
+      prose-headings:text-secondary prose-headings:font-bold
+      prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-200
+      prose-h3:text-xl prose-h3:mt-8
+      prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+      prose-table:text-sm
+      prose-th:bg-gray-50 prose-th:font-semibold
+      prose-td:border-gray-200 prose-th:border-gray-200
+      prose-blockquote:border-l-primary prose-blockquote:bg-red-50/30 prose-blockquote:py-1 prose-blockquote:rounded-r-md
+      prose-code:text-primary prose-code:bg-red-50 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
+      prose-strong:text-gray-900
+      prose-li:marker:text-primary">
       <slot />
     </div>
   </article>
 </BaseLayout>
-
-<style>
-  article h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-  }
-
-  .meta {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    font-size: 0.875rem;
-    color: #6b7280;
-  }
-
-  .badge {
-    background: color-mix(in srgb, var(--badge-color) 10%, white);
-    color: var(--badge-color);
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-weight: 500;
-  }
-
-  .content :global(h2) {
-    margin-top: 2.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e5e7eb;
-  }
-
-  .content :global(a) {
-    color: #1a56db;
-  }
-
-  .content :global(table) {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-  }
-
-  .content :global(th),
-  .content :global(td) {
-    border: 1px solid #e5e7eb;
-    padding: 0.5rem 0.75rem;
-    text-align: left;
-  }
-
-  .content :global(th) {
-    background: #f9fafb;
-    font-weight: 600;
-  }
-</style>

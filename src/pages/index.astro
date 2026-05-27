@@ -1,95 +1,75 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import GuideCard from '../components/GuideCard.astro';
 import { getCollection } from 'astro:content';
 
 const guides = await getCollection('guides', ({ data }) => data.status === 'audited');
 const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
+const totalGuides = guides.length + apps.length;
 ---
 
 <BaseLayout title="Home">
-  <section class="hero">
-    <h1>China Travel Guide</h1>
-    <p>Practical, verified guides for foreigners traveling in China. Written and verified by real travelers.</p>
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-secondary to-blue-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">
+        Your practical guide to<br />
+        <span class="text-red-400">traveling in China</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-blue-200 max-w-2xl mb-8">
+        Everything foreigners need to know — visa, payments, apps, transport, and more. Verified by real travelers, updated regularly.
+      </p>
+
+      <div class="flex flex-wrap gap-6 text-sm text-blue-200">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+          {totalGuides} verified guides
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+          Updated weekly
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 bg-green-400 rounded-full"></span>
+          Cited from official sources
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Travel Guides</h2>
-    <ul class="guide-list">
+  <!-- Guides Section -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-secondary">Travel Guides</h2>
+      <a href="/guides" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {guides.map((guide) => (
-        <li>
-          <a href={`/guides/${guide.id}`}>
-            <strong>{guide.data.title}</strong>
-            {guide.data.description && <span>{guide.data.description}</span>}
-          </a>
-        </li>
+        <GuideCard
+          title={guide.data.title}
+          href={`/guides/${guide.id}`}
+          volatility={guide.data.volatility}
+          lastVerified={guide.data.last_verified}
+        />
       ))}
-    </ul>
+    </div>
   </section>
 
-  <section>
-    <h2>Essential Apps</h2>
-    <ul class="guide-list">
+  <!-- Apps Section -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-12">
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-secondary">Essential Apps</h2>
+      <a href="/apps" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {apps.map((app) => (
-        <li>
-          <a href={`/apps/${app.id}`}>
-            <strong>{app.data.title}</strong>
-            {app.data.description && <span>{app.data.description}</span>}
-          </a>
-        </li>
+        <GuideCard
+          title={app.data.title}
+          href={`/apps/${app.id}`}
+          volatility={app.data.volatility}
+          lastVerified={app.data.last_verified}
+        />
       ))}
-    </ul>
+    </div>
   </section>
 </BaseLayout>
-
-<style>
-  .hero {
-    margin-bottom: 2rem;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .hero p {
-    color: #6b7280;
-    font-size: 1.125rem;
-  }
-
-  h2 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .guide-list {
-    list-style: none;
-    padding: 0;
-  }
-
-  .guide-list li {
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .guide-list a {
-    display: block;
-    padding: 1rem 0;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  .guide-list a:hover {
-    background: #f9fafb;
-    margin: 0 -1rem;
-    padding: 1rem;
-  }
-
-  .guide-list strong {
-    display: block;
-    color: #1a56db;
-  }
-
-  .guide-list span {
-    font-size: 0.875rem;
-    color: #6b7280;
-  }
-</style>

@@ -1,0 +1,29 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2 text-secondary font-bold text-lg tracking-tight">
+        <span class="text-primary text-xl">&#x2766;</span>
+        ChinaGuide.ai
+      </a>
+
+      <div class="flex items-center gap-6">
+        <a
+          href="/guides"
+          class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/guides') ? 'text-primary' : 'text-gray-600']}
+        >
+          Guides
+        </a>
+        <a
+          href="/apps"
+          class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/apps') ? 'text-primary' : 'text-gray-600']}
+        >
+          Essential Apps
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

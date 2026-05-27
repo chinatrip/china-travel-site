@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-primary: #dc2626;
+  --color-secondary: #1e3a5f;
+  --color-accent: #f59e0b;
+  --color-surface: #fafafa;
+  --color-muted: #6b7280;
+}
