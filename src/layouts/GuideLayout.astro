@@ -1,0 +1,99 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  lastVerified?: string;
+  verifiedBy?: string;
+  volatility?: 'stable' | 'moderate' | 'high';
+}
+
+const { title, description, lastVerified, verifiedBy, volatility } = Astro.props;
+
+const volatilityLabel = {
+  stable: { text: 'Stable', color: '#16a34a' },
+  moderate: { text: 'May change', color: '#ca8a04' },
+  high: { text: 'Changes frequently', color: '#dc2626' },
+};
+
+const badge = volatility ? volatilityLabel[volatility] : null;
+---
+
+<BaseLayout title={title} description={description}>
+  <article>
+    <h1>{title}</h1>
+
+    {(lastVerified || badge) && (
+      <div class="meta">
+        {badge && (
+          <span class="badge" style={`--badge-color: ${badge.color}`}>
+            {badge.text}
+          </span>
+        )}
+        {lastVerified && (
+          <span class="verified">
+            Last verified: {lastVerified}
+            {verifiedBy && ` by ${verifiedBy}`}
+          </span>
+        )}
+      </div>
+    )}
+
+    <div class="content">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  article h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+
+  .badge {
+    background: color-mix(in srgb, var(--badge-color) 10%, white);
+    color: var(--badge-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+
+  .content :global(h2) {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .content :global(a) {
+    color: #1a56db;
+  }
+
+  .content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+  }
+
+  .content :global(th),
+  .content :global(td) {
+    border: 1px solid #e5e7eb;
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+
+  .content :global(th) {
+    background: #f9fafb;
+    font-weight: 600;
+  }
+</style>

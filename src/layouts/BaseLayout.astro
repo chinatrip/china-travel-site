@@ -1,0 +1,85 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Your practical guide to traveling in China as a foreigner' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title} | China Travel Guide</title>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">China Travel Guide</a>
+        <a href="/guides">Guides</a>
+        <a href="/apps">Essential Apps</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>&copy; {new Date().getFullYear()} China Travel Guide. Content verified by real travelers.</p>
+    </footer>
+  </body>
+</html>
+
+<style>
+  :root {
+    --color-primary: #1a56db;
+    --color-text: #1f2937;
+    --color-muted: #6b7280;
+    --max-width: 720px;
+  }
+
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--color-text);
+    line-height: 1.7;
+  }
+
+  body {
+    margin: 0;
+    padding: 0 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  header nav {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  header nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  header nav a:first-child {
+    font-weight: 700;
+    margin-right: auto;
+  }
+
+  main {
+    padding: 2rem 0;
+  }
+
+  footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 1.5rem 0;
+    color: var(--color-muted);
+    font-size: 0.875rem;
+  }
+</style>

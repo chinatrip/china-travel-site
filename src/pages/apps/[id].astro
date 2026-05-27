@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from 'astro:content';
+import GuideLayout from '../../layouts/GuideLayout.astro';
+
+export async function getStaticPaths() {
+  const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
+  return apps.map((app) => ({
+    params: { id: app.id },
+    props: { app },
+  }));
+}
+
+const { app } = Astro.props;
+const { Content } = await render(app);
+---
+
+<GuideLayout
+  title={app.data.title}
+  description={app.data.description}
+  lastVerified={app.data.last_verified}
+  verifiedBy={app.data.verified_by}
+  volatility={app.data.volatility}
+>
+  <Content />
+</GuideLayout>

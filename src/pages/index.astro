@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const guides = await getCollection('guides', ({ data }) => data.status === 'audited');
+const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
+---
+
+<BaseLayout title="Home">
+  <section class="hero">
+    <h1>China Travel Guide</h1>
+    <p>Practical, verified guides for foreigners traveling in China. Written and verified by real travelers.</p>
+  </section>
+
+  <section>
+    <h2>Travel Guides</h2>
+    <ul class="guide-list">
+      {guides.map((guide) => (
+        <li>
+          <a href={`/guides/${guide.id}`}>
+            <strong>{guide.data.title}</strong>
+            {guide.data.description && <span>{guide.data.description}</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Essential Apps</h2>
+    <ul class="guide-list">
+      {apps.map((app) => (
+        <li>
+          <a href={`/apps/${app.id}`}>
+            <strong>{app.data.title}</strong>
+            {app.data.description && <span>{app.data.description}</span>}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    margin-bottom: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero p {
+    color: #6b7280;
+    font-size: 1.125rem;
+  }
+
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .guide-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .guide-list li {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .guide-list a {
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .guide-list a:hover {
+    background: #f9fafb;
+    margin: 0 -1rem;
+    padding: 1rem;
+  }
+
+  .guide-list strong {
+    display: block;
+    color: #1a56db;
+  }
+
+  .guide-list span {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+</style>
