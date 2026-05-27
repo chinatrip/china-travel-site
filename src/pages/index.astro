@@ -48,7 +48,6 @@ const totalGuides = guides.length + apps.length;
         <GuideCard
           title={guide.data.title}
           href={`/guides/${guide.id}`}
-          volatility={guide.data.volatility}
           lastVerified={guide.data.last_verified}
         />
       ))}
@@ -66,7 +65,6 @@ const totalGuides = guides.length + apps.length;
         <GuideCard
           title={app.data.title}
           href={`/apps/${app.id}`}
-          volatility={app.data.volatility}
           lastVerified={app.data.last_verified}
         />
       ))}

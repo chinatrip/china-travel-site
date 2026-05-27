@@ -18,7 +18,6 @@ const apps = await getCollection('apps', ({ data }) => data.status === 'audited'
         <GuideCard
           title={app.data.title}
           href={`/apps/${app.id}`}
-          volatility={app.data.volatility}
           lastVerified={app.data.last_verified}
         />
       ))}
