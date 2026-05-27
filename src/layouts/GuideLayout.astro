@@ -6,12 +6,13 @@ interface Props {
   description?: string;
   lastVerified?: string;
   verifiedBy?: string;
-  volatility?: 'stable' | 'moderate' | 'high';
+  volatility?: string;
 }
 
 const { title, description, lastVerified, verifiedBy, volatility } = Astro.props;
 
-const volatilityLabel = {
+const volatilityLabel: Record<string, { text: string; color: string }> = {
+  low: { text: 'Stable', color: '#16a34a' },
   stable: { text: 'Stable', color: '#16a34a' },
   moderate: { text: 'May change', color: '#ca8a04' },
   high: { text: 'Changes frequently', color: '#dc2626' },

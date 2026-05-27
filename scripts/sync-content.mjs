@@ -19,7 +19,7 @@ import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { join, basename } from 'node:path';
 
-const WIKI_REPO = 'https://github.com/yi-yang/foreigner-visiting-china-wiki.git';
+const WIKI_REPO = 'git@github.com:yi-yang/foreigner-visiting-china-wiki.git';
 const TEMP_DIR = join(import.meta.dirname, '../.wiki-cache');
 const GUIDES_DIR = join(import.meta.dirname, '../src/content/guides');
 const APPS_DIR = join(import.meta.dirname, '../src/content/apps');
@@ -94,7 +94,12 @@ console.log('=== Syncing wiki content to site ===\n');
 cloneOrPull();
 console.log('');
 
-syncDirectory(join(TEMP_DIR, 'wiki/concepts'), GUIDES_DIR, 'guide');
-syncDirectory(join(TEMP_DIR, 'wiki/entities'), APPS_DIR, 'app');
+// The wiki repo has a nested structure: repo-root/foreigner-visiting-china-wiki/wiki/
+const wikiRoot = existsSync(join(TEMP_DIR, 'wiki/concepts'))
+  ? join(TEMP_DIR, 'wiki')
+  : join(TEMP_DIR, 'foreigner-visiting-china-wiki/wiki');
+
+syncDirectory(join(wikiRoot, 'concepts'), GUIDES_DIR, 'guide');
+syncDirectory(join(wikiRoot, 'entities'), APPS_DIR, 'app');
 
 console.log('\nDone! Run `npm run dev` to preview.');
