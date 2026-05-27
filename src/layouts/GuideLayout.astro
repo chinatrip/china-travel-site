@@ -11,6 +11,15 @@ interface Props {
 
 const { title, description, lastVerified, verifiedBy, volatility } = Astro.props;
 
+// Format date string nicely (handles both "2026-05-07" and full Date strings)
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr);
+  if (isNaN(d.getTime())) return dateStr;
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+}
+
+const formattedDate = lastVerified ? formatDate(lastVerified) : undefined;
+
 const volatilityLabel: Record<string, { text: string; color: string }> = {
   low: { text: 'Stable', color: '#16a34a' },
   stable: { text: 'Stable', color: '#16a34a' },
@@ -32,9 +41,9 @@ const badge = volatility ? volatilityLabel[volatility] : null;
             {badge.text}
           </span>
         )}
-        {lastVerified && (
+        {formattedDate && (
           <span class="verified">
-            Last verified: {lastVerified}
+            Last verified: {formattedDate}
             {verifiedBy && ` by ${verifiedBy}`}
           </span>
         )}
