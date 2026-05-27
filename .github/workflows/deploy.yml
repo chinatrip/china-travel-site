@@ -1,19 +1,19 @@
-name: Deploy to Cloudflare Pages
+name: Sync wiki content and deploy
 
 on:
-  push:
-    branches: [main]
-  # Allow wiki repo to trigger rebuild via repository_dispatch
+  # Triggered by wiki repo when audited content changes
   repository_dispatch:
     types: [wiki-updated]
   # Manual trigger
   workflow_dispatch:
 
 jobs:
-  build-and-deploy:
+  sync-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.WIKI_REPO_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -27,12 +27,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.WIKI_REPO_TOKEN }}
 
-      - name: Build site
-        run: npm run build
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet src/content/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=china-travel-guide
+      - name: Commit and push updated content
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/content/
+          git commit -m "Auto-sync: update content from wiki repo"
+          git push
