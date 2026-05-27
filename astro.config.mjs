@@ -1,12 +1,17 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://chinatravelguide.com', // TODO: 替换为实际域名
+  site: 'https://chinaguide.ai',
+
   markdown: {
     shikiConfig: {
       theme: 'github-light',
     },
   },
+
+  integrations: [sitemap()],
 });

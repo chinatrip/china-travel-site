@@ -24,14 +24,15 @@ jobs:
 
       - name: Sync wiki content
         run: npm run sync-content
+        env:
+          GITHUB_TOKEN: ${{ secrets.WIKI_REPO_TOKEN }}
 
       - name: Build site
         run: npm run build
 
-      # TODO: Uncomment after Cloudflare Pages project is created
-      # - name: Deploy to Cloudflare Pages
-      #   uses: cloudflare/wrangler-action@v3
-      #   with:
-      #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-      #     command: pages deploy dist --project-name=china-travel-guide
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=china-travel-guide

@@ -19,7 +19,10 @@ import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { join, basename } from 'node:path';
 
-const WIKI_REPO = 'git@github.com:yi-yang/foreigner-visiting-china-wiki.git';
+// Use HTTPS with token in CI, SSH locally
+const WIKI_REPO = process.env.GITHUB_TOKEN
+  ? `https://x-access-token:${process.env.GITHUB_TOKEN}@github.com/yi-yang/foreigner-visiting-china-wiki.git`
+  : 'git@github.com:yi-yang/foreigner-visiting-china-wiki.git';
 const TEMP_DIR = join(import.meta.dirname, '../.wiki-cache');
 const GUIDES_DIR = join(import.meta.dirname, '../src/content/guides');
 const APPS_DIR = join(import.meta.dirname, '../src/content/apps');
