@@ -2,7 +2,7 @@
 category: guide
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
 date: 2026-05-02
-last_verified: 2026-05-02
+last_verified: 2026-05-28
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
@@ -17,6 +17,7 @@ verified_against:
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw_posts/2026-W18/travelchina.json
+  - raw/wechat-paypal-integration-2026.md
 related:
   - wiki/concepts/foreign-exchange.md
   - wiki/entities/alipay.md
@@ -160,7 +161,7 @@ Two distinct QR flows confuse first-time visitors:
 
 Both apps support both flows. If a small vendor doesn't see a QR for you to scan, open the **payment / pay** button in the app to show your personal QR for them to scan instead.
 
-## Alternative Wallets (Apple Pay, Google Pay, UnionPay Nihao China, e-CNY)
+## Alternative Wallets (Apple Pay, Google Pay, PayPal, UnionPay Nihao China, e-CNY)
 
 These are **not replacements** for Alipay or WeChat Pay — treat them as supplementary options.
 
@@ -169,6 +170,8 @@ These are **not replacements** for Alipay or WeChat Pay — treat them as supple
 **Google Pay** does not function in mainland China — Google services are blocked by the Great Firewall (source: airalo.com). Do not rely on it as a backup.
 
 **UnionPay "Nihao China"** — UnionPay launched a dedicated app for foreign visitors on December 24, 2025 (source: VisaHQ). It accepts international Visa, Mastercard, and UnionPay cards issued outside mainland China, and includes real-time English–Chinese translation and transit card top-up in major cities. Coverage and reliability are still expanding; it is not yet as universal as Alipay or WeChat Pay, but worth installing as a supplementary option. UnionPay's app also offers an **E-Money Card** product that can be recharged for spending at UnionPay merchants.
+
+**PayPal (via TenPay Global × PayPal World integration, 2026)** — As of May 27, 2026, Tencent's cross-border platform **TenPay Global** and **PayPal World** are interoperable: PayPal users can pay at **tens of millions of WeChat Pay merchants** in China using their PayPal account. Initially open to **US users**; rollout to other countries is unconfirmed. The specific scan flow (whether it uses standard WeChat Pay merchant QR codes or a separate PayPal entry point) and fee structure (whether the 3% foreign-card surcharge applies) are not yet publicly documented — verify at the PayPal or WeChat Pay help center before relying on this as your primary payment method. Source: Tencent VP announcement at the 20th Shenzhen International Financial Expo (raw/wechat-paypal-integration-2026.md).
 
 **International partner wallets (scan-direct, no card binding required)** — Alipay supports direct QR-code payment from the following overseas wallets without binding a separate card. Useful for travelers who already use these apps at home:
 

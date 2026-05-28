@@ -6,7 +6,9 @@ last_verified: 2026-05-04
 verified_against:
   - https://www.wechat.com
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
-sources: [raw/12306-guide-for-foreign-business-visitors-2025.md]
+sources:
+  - raw/12306-guide-for-foreign-business-visitors-2025.md
+  - raw/wechat-paypal-integration-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/alipay.md
@@ -85,6 +87,10 @@ Many Chinese services do **not** have a separate English-language website or iOS
 
 Mini Program interfaces are usually Chinese-language; however, major hotel chains and some transit services include English options.
 
+## PayPal Integration (2026)
+
+As of **May 27, 2026**, Tencent's cross-border platform **TenPay Global** and **PayPal World** are interoperable. PayPal users visiting China can pay at tens of millions of WeChat Pay merchants using their PayPal account. Initially open to US users; rollout to other countries TBC. Announced by Tencent Financial Technology VP 洪丹毅 at the 20th Shenzhen International Financial Expo. See [[wiki/concepts/mobile-payment.md]] for details and open questions on fees and scan flow.
+
 ## See Also
 
-- [[wiki/concepts/mobile-payment.md]] — full WeChat Pay setup guide, PBOC policy, fee tables, vouching detail, common failure modes
+- [[wiki/concepts/mobile-payment.md]] — full WeChat Pay setup guide, PBOC policy, fee tables, vouching detail, common failure modes, PayPal integration
