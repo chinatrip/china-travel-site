@@ -1,22 +1,23 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { execSync } from 'child_process';
 import { fileURLToPath } from 'url';
-import { resolve, dirname } from 'path';
 
 import sitemap from '@astrojs/sitemap';
 
 import tailwindcss from '@tailwindcss/vite';
 
-// Custom integration: run Pagefind after build to generate search index
+// Custom integration: run Pagefind after build using its Node API
 function pagefindIntegration() {
   return {
     name: 'pagefind',
     hooks: {
-      'astro:build:done': ({ dir }) => {
-        const outDir = fileURLToPath(dir);
-        const binPath = resolve(dirname(fileURLToPath(import.meta.url)), 'node_modules', '.bin', 'pagefind');
-        execSync(`${binPath} --site "${outDir}"`, { stdio: 'inherit' });
+      'astro:build:done': async ({ dir }) => {
+        const targetDir = fileURLToPath(dir);
+        const pagefind = await import('pagefind');
+        const { index } = await pagefind.createIndex();
+        await index.addDirectory({ path: targetDir });
+        await index.writeFiles({ outputPath: `${targetDir}/pagefind` });
+        console.log(`[pagefind] Search index written to ${targetDir}/pagefind`);
       },
     },
   };
