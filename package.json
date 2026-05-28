@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist",
+    "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "sync-content": "node scripts/sync-content.mjs",
     "astro": "astro"
@@ -18,5 +18,8 @@
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.8",
     "tailwindcss": "^4.3.0"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
   }
 }
