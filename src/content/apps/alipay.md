@@ -1,6 +1,7 @@
 ---
 category: app
 title: Alipay
+description: "Alipay setup guide for foreigners in China: link your Visa/Mastercard, payment fees, transaction limits, and common problems solved."
 date: 2026-04-30
 last_verified: 2026-05-04
 verified_against:

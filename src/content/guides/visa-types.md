@@ -1,6 +1,7 @@
 ---
 category: guide
 title: China Visa & Entry Options for Tourists and Visitors
+description: "China visa guide 2026: visa-free entry for 59 countries, 240-hour transit policy, tourist L-visa — find which entry path applies to your nationality."
 date: 2026-04-30
 last_verified: 2026-05-07
 verified_against:

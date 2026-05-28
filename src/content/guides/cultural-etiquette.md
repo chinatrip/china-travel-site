@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Cultural Etiquette for Foreign Visitors
+description: "Chinese cultural etiquette for visitors: dining customs, tipping, bargaining, personal questions, and behaviors that surprise foreigners."
 date: 2026-05-13
 last_verified: 2026-05-13
 verified_against:

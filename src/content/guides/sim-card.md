@@ -1,6 +1,7 @@
 ---
 category: guide
 title: SIM Card and eSIM in China for Foreign Visitors
+description: "Best eSIM and SIM card options for China travel 2026: pricing, carriers, setup steps, and how to bypass the Great Firewall without a VPN."
 date: 2026-05-02
 last_verified: 2026-05-02
 verified_against:

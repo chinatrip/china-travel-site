@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Accommodation for Foreign Visitors in China
+description: "Hotels in China that accept foreigners: booking platforms, check-in with passport, payment options, and how to avoid being turned away."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:

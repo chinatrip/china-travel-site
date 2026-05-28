@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Internet Access and the Great Firewall for Foreign Visitors
+description: "What's blocked in China and how to prepare: VPN options, foreign eSIM bypass, app setup checklist — everything to stay connected behind the Great Firewall."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:

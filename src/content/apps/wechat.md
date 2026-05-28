@@ -1,6 +1,7 @@
 ---
 category: app
 title: WeChat / WeChat Pay
+description: "WeChat and WeChat Pay for foreign visitors: setup, card binding, Mini Programs, PayPal integration, and vouching requirements explained."
 date: 2026-04-30
 last_verified: 2026-05-04
 verified_against:

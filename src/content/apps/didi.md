@@ -1,6 +1,7 @@
 ---
 category: app
 title: DiDi
+description: "DiDi ride-hailing in China for foreigners: app setup, payment methods, vehicle types, and tips for getting picked up without speaking Chinese."
 date: 2026-04-30
 last_verified: 2026-05-04
 verified_against:

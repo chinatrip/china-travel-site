@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Food and Dining in China for Foreign Visitors
+description: "Eating in China as a foreigner: restaurant apps, QR ordering, food delivery, allergy phrases in Chinese, and regional cuisine guide."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:

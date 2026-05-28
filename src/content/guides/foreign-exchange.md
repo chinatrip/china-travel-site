@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Foreign Exchange and Cash in China
+description: "Currency exchange and ATMs in China: best banks, withdrawal limits, fees, and when you still need cash as a foreign visitor."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:

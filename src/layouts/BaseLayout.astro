@@ -9,6 +9,8 @@ interface Props {
 }
 
 const { title, description = 'Your practical guide to traveling in China as a foreigner' } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
+const fullTitle = `${title} | ChinaGuide.ai`;
 ---
 
 <!doctype html>
@@ -17,8 +19,23 @@ const { title, description = 'Your practical guide to traveling in China as a fo
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
-    <title>{title} | ChinaGuide.ai</title>
+    <title>{fullTitle}</title>
+    <link rel="canonical" href={canonicalURL} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="ChinaGuide.ai" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />

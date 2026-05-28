@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
+description: "How to pay in China as a foreigner: set up Alipay and WeChat Pay with your Visa or Mastercard in minutes. Fees, limits, and troubleshooting."
 date: 2026-05-02
 last_verified: 2026-05-28
 verified_against:

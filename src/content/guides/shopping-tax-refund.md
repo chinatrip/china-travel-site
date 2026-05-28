@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Shopping and Tax Refund for Foreign Visitors
+description: "VAT tax refund in China 2026: ¥200 minimum spend, instant POS refund, airport claim process, and eligible stores for foreign shoppers."
 date: 2026-05-07
 last_verified: 2026-05-07
 verified_against:

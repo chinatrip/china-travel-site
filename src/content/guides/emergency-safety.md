@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Emergency and Safety for Foreign Visitors
+description: "Emergency contacts and safety in China: police, ambulance, common scams, lost passport procedure, and embassy contacts for foreign travelers."
 date: 2026-05-07
 last_verified: 2026-05-07
 verified_against:

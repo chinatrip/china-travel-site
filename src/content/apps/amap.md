@@ -1,6 +1,7 @@
 ---
 category: app
 title: Amap
+description: "Amap (Gaode Maps) guide: the best navigation app in China for foreigners — English UI, transit routing, and why Google Maps doesn't work."
 date: 2026-05-06
 last_verified: 2026-05-06
 verified_against:

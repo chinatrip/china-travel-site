@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Residence Registration
+description: "China's 24-hour residence registration rule: what foreign visitors must do at hotels and private stays, and what happens if you don't."
 date: 2026-04-30
 last_verified: 2026-04-30
 verified_against:

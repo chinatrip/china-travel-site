@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Health and Medical Care for Foreign Visitors
+description: "Healthcare in China for foreigners: emergency numbers, hospital types, travel insurance, medications, vaccinations, and altitude sickness."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:

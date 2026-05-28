@@ -1,6 +1,7 @@
 ---
 category: app
 title: Meituan
+description: "Meituan app for foreigners in China: food delivery, hotel booking, bike rental — how to use China's super-app with Alipay or WeChat Pay."
 date: 2026-05-06
 last_verified: 2026-05-06
 verified_against:

@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
+description: "Planning your China trip: best times to visit, daily budget by city, how long to stay, and when to avoid (Golden Week, Chinese New Year)."
 date: 2026-05-13
 last_verified: 2026-05-13
 verified_against:

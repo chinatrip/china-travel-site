@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Tibet Travel Permits and Altitude Health
+description: "Tibet Travel Permit guide 2026: who needs it, how to apply through a travel agency, costs, restricted areas, and altitude sickness prevention."
 date: 2026-05-13
 last_verified: 2026-05-13
 verified_against:

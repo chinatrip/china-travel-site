@@ -1,6 +1,7 @@
 ---
 category: guide
 title: Transportation in China
+description: "Getting around China: high-speed rail, metro, DiDi ride-hailing, taxis, and domestic flights. Booking tips and airport-to-city transfers for foreigners."
 date: 2026-04-30
 last_verified: 2026-04-30
 verified_against:
