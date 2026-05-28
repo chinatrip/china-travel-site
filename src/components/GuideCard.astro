@@ -2,10 +2,11 @@
 interface Props {
   title: string;
   href: string;
+  description?: string;
   lastVerified?: string;
 }
 
-const { title, href, lastVerified } = Astro.props;
+const { title, href, description, lastVerified } = Astro.props;
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -18,6 +19,11 @@ function formatDate(dateStr: string): string {
   <h3 class="font-semibold text-gray-900 group-hover:text-primary transition-colors leading-snug">
     {title}
   </h3>
+  {description && (
+    <p class="mt-1.5 text-sm text-gray-600 line-clamp-2">
+      {description}
+    </p>
+  )}
   {lastVerified && (
     <p class="mt-2 text-xs text-muted">
       Verified {formatDate(lastVerified)}

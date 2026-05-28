@@ -18,6 +18,7 @@ const guides = await getCollection('guides', ({ data }) => data.status === 'audi
         <GuideCard
           title={guide.data.title}
           href={`/guides/${guide.id}`}
+          description={guide.data.description}
           lastVerified={guide.data.last_verified}
         />
       ))}
