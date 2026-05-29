@@ -6,6 +6,8 @@ import sitemap from '@astrojs/sitemap';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import cloudflare from '@astrojs/cloudflare';
+
 // Custom integration: run Pagefind after build using its Node API
 function pagefindIntegration() {
   return {
@@ -38,4 +40,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+
+  adapter: cloudflare()
 });
