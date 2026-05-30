@@ -21,7 +21,13 @@ const currentPath = Astro.url.pathname;
           href="/apps"
           class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/apps') ? 'text-primary' : 'text-gray-600']}
         >
-          Essential Apps
+          Apps
+        </a>
+        <a
+          href="/checklist"
+          class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/checklist') ? 'text-primary' : 'text-gray-600']}
+        >
+          Checklist
         </a>
         <a
           href="/search"

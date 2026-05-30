@@ -1,0 +1,268 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="China Readiness Checklist" description="Personalized pre-trip checklist for China: visa, payments, apps, connectivity, and more — based on your nationality, dates, and destinations.">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+    <h1 class="text-3xl sm:text-4xl font-bold text-secondary mb-2">China Readiness Checklist</h1>
+    <p class="text-muted text-lg mb-8">Tell us about your trip and we'll generate a personalized preparation checklist.</p>
+
+    <!-- Form -->
+    <div id="form-section" class="bg-white rounded-xl border border-gray-200 p-6 mb-8 shadow-sm">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Nationality -->
+        <div>
+          <label for="nationality" class="block text-sm font-medium text-gray-700 mb-1">Your nationality</label>
+          <select id="nationality" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary">
+            <option value="">Select country...</option>
+            <option value="visa-free-30">UK, France, Germany, Australia, etc. (30-day visa-free)</option>
+            <option value="transit-240">USA (240-hour transit only, no visa-free)</option>
+            <option value="visa-required">Other (visa required)</option>
+          </select>
+        </div>
+
+        <!-- Departure date -->
+        <div>
+          <label for="departure" class="block text-sm font-medium text-gray-700 mb-1">Departure date</label>
+          <input type="date" id="departure" class="w-full rounded-lg border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary" />
+        </div>
+
+        <!-- Cities -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Destinations (select all)</label>
+          <div class="flex flex-wrap gap-2">
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="beijing" class="city-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Beijing</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="shanghai" class="city-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Shanghai</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="chengdu" class="city-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Chengdu</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="guangzhou" class="city-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Guangzhou</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="xian" class="city-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Xi'an</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="tibet" class="city-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Tibet</label>
+          </div>
+        </div>
+
+        <!-- Concerns -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Main concerns</label>
+          <div class="flex flex-wrap gap-2">
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="connectivity" class="concern-check rounded border-gray-300 text-primary focus:ring-primary/50" checked /> Internet</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="payment" class="concern-check rounded border-gray-300 text-primary focus:ring-primary/50" checked /> Payment</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="transport" class="concern-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Transport</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="accommodation" class="concern-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Hotels</label>
+            <label class="inline-flex items-center gap-1.5 text-sm"><input type="checkbox" value="health" class="concern-check rounded border-gray-300 text-primary focus:ring-primary/50" /> Health</label>
+          </div>
+        </div>
+      </div>
+
+      <button id="generate-btn" class="mt-6 w-full sm:w-auto px-6 py-2.5 bg-primary text-white font-medium rounded-lg hover:bg-red-700 transition-colors">
+        Generate My Checklist
+      </button>
+    </div>
+
+    <!-- Results -->
+    <div id="results-section" class="hidden">
+      <!-- Progress bar -->
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-3">
+          <div class="w-48 h-2 bg-gray-200 rounded-full overflow-hidden">
+            <div id="progress-bar" class="h-full bg-primary rounded-full transition-all duration-300" style="width: 0%"></div>
+          </div>
+          <span id="progress-text" class="text-sm text-muted">0 / 0 completed</span>
+        </div>
+        <button id="reset-btn" class="text-sm text-muted hover:text-primary transition-colors">Reset</button>
+      </div>
+
+      <!-- Checklist items rendered here -->
+      <div id="checklist-container"></div>
+    </div>
+  </div>
+
+  <script is:inline>
+  (function() {
+    const STORAGE_KEY = 'chinaguide_checklist';
+
+    const allItems = [
+      // VISA
+      { id: 'visa-free-confirm', category: 'visa', title: 'Confirm your visa-free eligibility', description: '59 countries can enter China without a visa for up to 30 days.', link: '/guides/visa-types', conditions: { nationalities: ['visa-free-30'] }, priority: 'high' },
+      { id: 'visa-transit-confirm', category: 'visa', title: 'Check 240-hour transit-free policy', description: 'US citizens can transit through China for up to 240 hours without a visa at 65 ports.', link: '/guides/visa-types', conditions: { nationalities: ['transit-240'] }, priority: 'high' },
+      { id: 'visa-apply', category: 'visa', title: 'Apply for a tourist (L) visa', description: 'Apply at your nearest Chinese embassy or consulate. Processing takes 4-7 business days.', link: '/guides/visa-types', conditions: { nationalities: ['visa-required'] }, priority: 'high' },
+      { id: 'passport-validity', category: 'visa', title: 'Check passport validity (6+ months)', description: 'Your passport must be valid for at least 6 months beyond your planned stay.', link: '/guides/visa-types', priority: 'high' },
+      { id: 'hotel-confirmation', category: 'visa', title: 'Print hotel booking confirmations', description: 'Immigration may ask for proof of accommodation at entry.', link: '/guides/accommodation', priority: 'medium' },
+
+      // CONNECTIVITY
+      { id: 'esim-buy', category: 'connectivity', title: 'Buy an eSIM for China', description: 'Foreign eSIMs bypass the Great Firewall — no VPN needed. Airalo, Holafly, Ubigi are popular choices.', link: '/guides/sim-card', conditions: { concerns: ['connectivity'] }, priority: 'high' },
+      { id: 'vpn-setup', category: 'connectivity', title: 'Download and test a VPN', description: 'If using a local SIM, you need a VPN for Google, WhatsApp, Instagram, etc. Set up BEFORE arrival.', link: '/guides/internet-connectivity', conditions: { concerns: ['connectivity'] }, priority: 'high' },
+      { id: 'offline-maps', category: 'connectivity', title: 'Download Amap (offline maps)', description: 'Google Maps is blocked in China. Amap works offline and has English UI.', link: '/apps/amap', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
+      { id: 'translation-app', category: 'connectivity', title: 'Install a translation app', description: 'Baidu Translate or Microsoft Translator work without VPN in China.', link: '/guides/internet-connectivity', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
+
+      // PAYMENT
+      { id: 'alipay-setup', category: 'payment', title: 'Download Alipay and bind your card', description: 'bindable card (Visa/Mastercard). 0% fee under ¥200, 3% over ¥200.', link: '/apps/alipay', conditions: { concerns: ['payment'] }, priority: 'high' },
+      { id: 'wechat-setup', category: 'payment', title: 'Download WeChat Pay and bind your card', description: 'Same fee structure as Alipay. WeChat is also essential for communication.', link: '/apps/wechat', conditions: { concerns: ['payment'] }, priority: 'high' },
+      { id: 'cash-prepare', category: 'payment', title: 'Bring some cash (¥500-1000)', description: 'Small vendors and some transport may not accept mobile pay. ATMs available at airports.', link: '/guides/foreign-exchange', conditions: { concerns: ['payment'] }, priority: 'medium' },
+      { id: 'bank-notify', category: 'payment', title: 'Notify your bank about China travel', description: 'Prevent your card from being blocked for suspicious foreign transactions.', link: '/guides/foreign-exchange', conditions: { concerns: ['payment'] }, priority: 'medium' },
+
+      // APPS
+      { id: 'app-alipay', category: 'apps', title: 'Install Alipay', description: 'Essential for payments everywhere in China.', link: '/apps/alipay', priority: 'high' },
+      { id: 'app-wechat', category: 'apps', title: 'Install WeChat', description: 'Messaging, payments, mini-programs, and daily life in China.', link: '/apps/wechat', priority: 'high' },
+      { id: 'app-amap', category: 'apps', title: 'Install Amap (Gaode Maps)', description: 'Best navigation app in China. Google Maps does not work.', link: '/apps/amap', priority: 'high' },
+      { id: 'app-didi', category: 'apps', title: 'Install DiDi', description: 'Ride-hailing (like Uber). Works with Alipay/WeChat Pay.', link: '/apps/didi', priority: 'medium' },
+      { id: 'app-12306', category: 'apps', title: 'Install 12306 (train tickets)', description: 'Official China Railway booking app. Register with passport before departure.', link: '/apps/12306', conditions: { concerns: ['transport'] }, priority: 'medium' },
+      { id: 'app-meituan', category: 'apps', title: 'Install Meituan', description: 'Food delivery, hotel booking, bike rental. Often 20-30% cheaper than international OTAs.', link: '/apps/meituan', priority: 'low' },
+
+      // TRANSPORT
+      { id: '12306-register', category: 'transport', title: 'Register on 12306 with your passport', description: 'Do this before arrival — verification can take 1-2 days.', link: '/apps/12306', conditions: { concerns: ['transport'] }, priority: 'high' },
+      { id: 'metro-payment', category: 'transport', title: 'Learn how to pay for metro rides', description: 'Most cities: Alipay QR code at turnstile, or buy single-journey tickets at machines.', link: '/guides/transportation', conditions: { concerns: ['transport'] }, priority: 'medium' },
+      { id: 'airport-transfer', category: 'transport', title: 'Plan airport-to-city transfer', description: 'Options: metro, airport bus, DiDi, or taxi. Metro is cheapest; DiDi is most convenient.', link: '/guides/transportation', conditions: { concerns: ['transport'] }, priority: 'medium' },
+
+      // ACCOMMODATION
+      { id: 'hotel-foreigner', category: 'accommodation', title: 'Confirm hotel accepts foreigners', description: 'Not all hotels are licensed to host foreign guests. Verify before booking.', link: '/guides/accommodation', conditions: { concerns: ['accommodation'] }, priority: 'high' },
+      { id: 'passport-copy', category: 'accommodation', title: 'Prepare passport copies', description: 'Hotels photocopy your passport at check-in for police registration. Carry a spare copy.', link: '/guides/residence-registration', conditions: { concerns: ['accommodation'] }, priority: 'medium' },
+
+      // HEALTH & SAFETY
+      { id: 'travel-insurance', category: 'health', title: 'Buy travel insurance', description: 'Cover medical emergencies and trip disruption. Check if it covers China specifically.', link: '/guides/health-medical', conditions: { concerns: ['health'] }, priority: 'high' },
+      { id: 'emergency-numbers', category: 'health', title: 'Save emergency numbers', description: 'Police: 110 | Ambulance: 120 | Fire: 119 | Your embassy number.', link: '/guides/emergency-safety', conditions: { concerns: ['health'] }, priority: 'medium' },
+      { id: 'vaccines-check', category: 'health', title: 'Check recommended vaccinations', description: 'Hepatitis A, Typhoid recommended. Rabies if visiting rural areas.', link: '/guides/health-medical', conditions: { concerns: ['health'] }, priority: 'medium' },
+
+      // TIBET SPECIAL
+      { id: 'tibet-permit', category: 'visa', title: 'Apply for Tibet Travel Permit', description: 'Required for all foreign visitors. Must book through a licensed travel agency. Apply 20+ days ahead.', link: '/guides/tibet-permits', conditions: { cities: ['tibet'] }, priority: 'high' },
+      { id: 'tibet-altitude', category: 'health', title: 'Prepare for altitude sickness', description: 'Lhasa is 3,650m. Consider Diamox (prescription). Get travel insurance with evacuation cover.', link: '/guides/tibet-permits', conditions: { cities: ['tibet'] }, priority: 'high' },
+    ];
+
+    const categoryLabels = {
+      visa: '🛂 Visa & Entry',
+      connectivity: '📶 Internet & Connectivity',
+      payment: '💳 Payment Setup',
+      apps: '📱 Essential Apps',
+      transport: '🚄 Transportation',
+      accommodation: '🏨 Accommodation',
+      health: '🏥 Health & Safety'
+    };
+
+    const categoryOrder = ['visa', 'connectivity', 'payment', 'apps', 'transport', 'accommodation', 'health'];
+
+    function getFormData() {
+      const nationality = document.getElementById('nationality').value;
+      const departure = document.getElementById('departure').value;
+      const cities = Array.from(document.querySelectorAll('.city-check:checked')).map(el => el.value);
+      const concerns = Array.from(document.querySelectorAll('.concern-check:checked')).map(el => el.value);
+      return { nationality, departure, cities, concerns };
+    }
+
+    function filterItems(data) {
+      return allItems.filter(item => {
+        const cond = item.conditions;
+        if (!cond) return true;
+        if (cond.nationalities && !cond.nationalities.includes(data.nationality)) return false;
+        if (cond.concerns && !cond.concerns.some(c => data.concerns.includes(c))) return false;
+        if (cond.cities && !cond.cities.some(c => data.cities.includes(c))) return false;
+        return true;
+      });
+    }
+
+    function getDaysUntil(dateStr) {
+      if (!dateStr) return null;
+      const diff = (new Date(dateStr) - new Date()) / (1000 * 60 * 60 * 24);
+      return Math.ceil(diff);
+    }
+
+    function loadChecked() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; }
+    }
+
+    function saveChecked(checked) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(checked));
+    }
+
+    function updateProgress(items, checked) {
+      const total = items.length;
+      const done = items.filter(i => checked[i.id]).length;
+      const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+      document.getElementById('progress-bar').style.width = pct + '%';
+      document.getElementById('progress-text').textContent = done + ' / ' + total + ' completed';
+    }
+
+    function renderChecklist(items, data) {
+      const container = document.getElementById('checklist-container');
+      const checked = loadChecked();
+      const daysUntil = getDaysUntil(data.departure);
+      container.innerHTML = '';
+
+      const grouped = {};
+      items.forEach(item => {
+        if (!grouped[item.category]) grouped[item.category] = [];
+        grouped[item.category].push(item);
+      });
+
+      categoryOrder.forEach(cat => {
+        const catItems = grouped[cat];
+        if (!catItems || catItems.length === 0) return;
+
+        const section = document.createElement('div');
+        section.className = 'mb-6';
+        section.innerHTML = '<h3 class="text-lg font-semibold text-secondary mb-3">' + categoryLabels[cat] + '</h3>';
+
+        const list = document.createElement('div');
+        list.className = 'space-y-2';
+
+        catItems.forEach(item => {
+          const isChecked = checked[item.id] || false;
+          const isUrgent = item.priority === 'high' && daysUntil !== null && daysUntil < 14;
+
+          const div = document.createElement('div');
+          div.className = 'flex items-start gap-3 p-3 rounded-lg border transition-colors ' +
+            (isChecked ? 'bg-gray-50 border-gray-100' : 'bg-white border-gray-200');
+
+          div.innerHTML =
+            '<input type="checkbox" class="mt-1 rounded border-gray-300 text-primary focus:ring-primary/50 checklist-item" data-id="' + item.id + '"' + (isChecked ? ' checked' : '') + ' />' +
+            '<div class="flex-1 min-w-0">' +
+              '<div class="flex items-center gap-2">' +
+                '<span class="text-sm font-medium ' + (isChecked ? 'line-through text-gray-400' : 'text-gray-900') + '">' + item.title + '</span>' +
+                (isUrgent && !isChecked ? '<span class="text-xs px-1.5 py-0.5 bg-red-100 text-red-700 rounded font-medium">Urgent</span>' : '') +
+              '</div>' +
+              '<p class="text-xs text-muted mt-0.5">' + item.description + '</p>' +
+            '</div>' +
+            (item.link ? '<a href="' + item.link + '" class="shrink-0 text-xs text-primary hover:underline font-medium mt-1">Guide &rarr;</a>' : '');
+
+          list.appendChild(div);
+        });
+
+        section.appendChild(list);
+        container.appendChild(section);
+      });
+
+      // Attach checkbox listeners
+      container.querySelectorAll('.checklist-item').forEach(cb => {
+        cb.addEventListener('change', function() {
+          const id = this.dataset.id;
+          const checked = loadChecked();
+          checked[id] = this.checked;
+          saveChecked(checked);
+          renderChecklist(items, data);
+        });
+      });
+
+      updateProgress(items, checked);
+      document.getElementById('results-section').classList.remove('hidden');
+    }
+
+    // Generate button
+    document.getElementById('generate-btn').addEventListener('click', function() {
+      const data = getFormData();
+      if (!data.nationality) {
+        alert('Please select your nationality.');
+        return;
+      }
+      const items = filterItems(data);
+      renderChecklist(items, data);
+      document.getElementById('results-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    // Reset button
+    document.getElementById('reset-btn').addEventListener('click', function() {
+      localStorage.removeItem(STORAGE_KEY);
+      const data = getFormData();
+      const items = filterItems(data);
+      renderChecklist(items, data);
+    });
+  })();
+  </script>
+</BaseLayout>
