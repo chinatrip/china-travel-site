@@ -139,7 +139,7 @@ However, Amap is still recommended for iPhone users when you need:
 ## Integration with Other Services
 
 - **DiDi**: tap the car icon in Amap to request a DiDi ride without switching apps.
-- **Ele.me (food delivery)**: accessible via Amap's search results for restaurants.
+- **淘宝闪购 (formerly Ele.me, food delivery)**: accessible via Amap's search results for restaurants.
 - **Alipay**: if you are signed in with an Alipay/Taobao account, your saved addresses and payment method carry over.
 
 ## See Also

@@ -34,7 +34,7 @@ Meituan is one of China's largest super-apps, covering food delivery, hotel book
 
 ## Food Delivery
 
-Meituan is one of China's two dominant food delivery platforms (the other is **Ele.me**, owned by Alibaba).
+Meituan is one of China's two dominant food delivery platforms (the other is **淘宝闪购**, formerly 饿了么/Ele.me, owned by Alibaba — rebranded December 2025).
 
 ### How to Order
 
@@ -51,7 +51,7 @@ Meituan is one of China's two dominant food delivery platforms (the other is **E
 - **Get your delivery address in Chinese characters first.** Ask hotel front desk to write the exact address including hotel name. Screenshot it or copy-paste into the address field.
 - **Browse by photos, not text.** Tap into restaurant listings to see dish photos with ratings. This is often more useful than translating the text menu.
 - **Use in-app translation.** Tap the ··· menu then 翻译 (translate) — supports 18 languages for menu descriptions.
-- **Backup plan:** If Meituan payment fails or a restaurant is not listed, try [[wiki/entities/eleme.md|Ele.me]] through Alipay. Some restaurants are exclusive to one platform.
+- **Backup plan:** If Meituan payment fails or a restaurant is not listed, try [[wiki/entities/eleme.md|淘宝闪购 (formerly Ele.me)]] through Alipay. Some restaurants are exclusive to one platform.
 - **Late-night use case:** Ordering to your hotel room at 10 PM is common and works well. Delivery typically arrives in 20-40 minutes in major cities.
 - **Use Meituan as a visual menu reference.** Even when dining at a restaurant in person, open the restaurant's page on Meituan to see photos and ratings of their dishes — helps with ordering at the table.
 
@@ -95,12 +95,12 @@ Meituan includes restaurant reviews and, for some venues, table reservations. **
 
 Meituan sells cinema tickets, attraction tickets, and event passes at competitive prices. Useful if you can navigate the Chinese interface — otherwise attraction official websites or Trip.com cover the same inventory with English support.
 
-## Meituan vs Ele.me
+## Meituan vs 淘宝闪购 (formerly Ele.me)
 
-| Feature | Meituan | Ele.me |
+| Feature | Meituan | 淘宝闪购 (formerly 饿了么) |
 |---------|---------|--------|
 | Market share | ~65–70% | ~30–35% |
-| Coverage | Broader (more cities, suburban areas) | Strong in Tier-1 cities |
+| Coverage | Broader (more cities, suburban areas) | Strong in Tier-1 cities (2000+ cities) |
 | Payment | Alipay, WeChat Pay | Alipay preferred (Alibaba-owned) |
 | English support | Minimal | Minimal |
 | Discounts | Meituan membership promotions | Alipay bundled promotions |

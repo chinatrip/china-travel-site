@@ -43,7 +43,7 @@ Several strategies work in practice:
 
 1. **Ask for picture menu:** Say '图片菜单' (tú piàn cài dān). Many restaurants keep tablet or picture versions for foreigners.
 2. **Point at other tables:** See a dish you want? Point and say '我要这个' (wǒ yào zhè ge = "I want this one"). This is socially normal in China.
-3. **Use delivery app photos:** Open Meituan or Ele.me to see that restaurant's dishes with photos and ratings, even if you order in person.
+3. **Use delivery app photos:** Open Meituan or 淘宝闪购 (formerly Ele.me) to see that restaurant's dishes with photos and ratings, even if you order in person.
 4. **Show photos from your phone:** Search Google Images for the dish name and show staff.
 5. **Ask staff to write it down:** For handwritten menus or regional dialects, ask staff to write the dish name on your phone, then translate it.
 
@@ -53,7 +53,7 @@ Several strategies work in practice:
 |--------|-------------|-------------|
 | Google Translate camera | Open app → Camera mode → Point at printed menu → Instant visual overlay | Requires VPN; struggles with handwritten menus |
 | Pleco dictionary | Look up individual characters offline | Manual; no camera auto-translate |
-| Meituan/Ele.me in-app translation | Tap ··· menu → 翻译 (translate) → supports 18 languages | Only works within the delivery app interface |
+| Meituan/淘宝闪购 in-app translation | Tap ··· menu → 翻译 (translate) → supports 18 languages | Only works within the delivery app interface |
 | Photo upload approach | Take clear photo of menu, upload to translation app | Often more accurate than live camera scan |
 
 **Tip:** Menu photo translation often works better than live camera scanning. Take a clear, well-lit photo and upload it rather than relying on real-time OCR.
@@ -69,7 +69,7 @@ Several strategies work in practice:
 | Platform | Notes |
 |---|---|
 | **Meituan Waimai (美团外卖)** | Dominant platform; yellow logo. Standalone app or WeChat Mini Program. |
-| **Ele.me / Taobao Flash Purchase (饿了么)** | Alibaba-owned; integrates with Alipay. App or Alipay Mini Program. |
+| **淘宝闪购 (formerly 饿了么/Ele.me)** | Alibaba-owned; integrates with Alipay. App or Alipay Mini Program. |
 
 Both platforms accept international phone numbers for registration as of 2026 — verify on the platform's help pages before relying on this, as policies change. Deliveries typically arrive in 20–40 minutes in major cities.
 
@@ -173,7 +173,7 @@ Exercise caution with:
 |---|---|---|
 | Dianping (大众点评) | Restaurant discovery, reviews | No |
 | Meituan Waimai (美团外卖) | Food delivery | No |
-| Ele.me / Taobao Flash Purchase | Food delivery | No |
+| 淘宝闪购 (formerly 饿了么) | Food delivery | No |
 | WeChat Mini Programs | Table ordering, delivery, payment | No |
 
 ## See Also
@@ -181,4 +181,4 @@ Exercise caution with:
 - [[wiki/concepts/mobile-payment.md]] — WeChat Pay and Alipay setup (required for QR ordering and delivery)
 - [[wiki/concepts/health-medical.md]] — Food safety, tap water, common stomach issues
 - [[wiki/entities/meituan.md]] — Meituan food delivery setup and tips
-- [[wiki/entities/eleme.md]] — Ele.me food delivery (Alibaba/Alipay integration)
+- [[wiki/entities/eleme.md]] — 淘宝闪购 (formerly 饿了么/Ele.me) instant delivery via Alipay

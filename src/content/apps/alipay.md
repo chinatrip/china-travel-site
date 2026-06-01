@@ -59,7 +59,7 @@ Tour Pass charges a **5% fee** per transaction (vs 3% for direct card binding). 
 
 - **Scan to pay / receive**: restaurants, supermarkets, attractions
 - **Ride-hailing**: integrated DiDi entry
-- **Food delivery**: integrated Ele.me (Alibaba-owned, seamless Alipay integration)
+- **Food delivery**: integrated 淘宝闪购 (formerly 饿了么/Ele.me, Alibaba-owned, seamless Alipay integration)
 - **Tickets**: flights, train, attractions
 - **Bike-sharing**: Hello Bike (also shows bike options on Alipay homepage)
 - **Metro mini-programs**: Access city metro QR codes (Yitongxing, Metro Daduhui, etc.) directly through Alipay
