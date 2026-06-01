@@ -18,6 +18,12 @@ const contentSchema = z.object({
   status: z.string().default('audited'),
   category: z.string().optional(),
   volatility: z.string().optional(),
+  review: z.object({
+    status: z.string().optional(),
+    page_audit: dateOrString.optional(),
+    citation_check: dateOrString.optional(),
+    notes: z.string().optional(),
+  }).optional(),
 });
 
 const guides = defineCollection({
