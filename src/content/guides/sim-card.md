@@ -1,7 +1,6 @@
 ---
 category: guide
 title: SIM Card and eSIM in China for Foreign Visitors
-description: "Best eSIM and SIM card options for China travel 2026: pricing, carriers, setup steps, and how to bypass the Great Firewall without a VPN."
 date: 2026-05-02
 last_verified: 2026-05-02
 verified_against:
@@ -14,6 +13,7 @@ verified_against:
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw_posts/2026-W18/travelchina.json
+  - raw/realchinaguide-esim-guide-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/internet-connectivity.md
@@ -32,7 +32,8 @@ Foreign visitors have three connectivity options in mainland China, each with di
 
 | Option | Best for | GFW bypass | Setup time |
 |---|---|---|---|
-| **Foreign eSIM** (Airalo, Holafly, Ubigi) | Trips ≤ 30 days; visitors who don't need a +86 phone number | ✅ Yes — data routes through gateways outside mainland China, so Google / YouTube / Gmail / WhatsApp work without a separate VPN | ~2 minutes (QR install) |
+| **Foreign eSIM with GFW bypass** (Holafly, Ubigi) | Trips ≤ 30 days; visitors who don't need a +86 phone number and want zero VPN hassle | ✅ Yes — data routes through gateways outside mainland China, so Google / YouTube / Gmail / WhatsApp work without a separate VPN | ~2 minutes (QR install) |
+| **Foreign eSIM without GFW bypass** (Airalo, Nomad, Saily) | Budget travelers who already own a VPN subscription | ⚠️ **No** — uses China Unicom local towers; GFW still applies. **Must pair with a separate VPN** (ExpressVPN, Astrill, etc.) for Google/WhatsApp access | ~2 minutes (QR install) + VPN setup |
 | **Local physical SIM** | Stays > 30 days; anyone signing up for Alipay / WeChat Pay accounts that prefer +86 numbers, or apps gated by SMS-to-+86 | ❌ No — Chinese-network traffic; needs a separate VPN for blocked sites | 15–30 minutes (in-person, passport + biometric) |
 | **International roaming** | Stays under a week with light data needs | Carrier-dependent (usually no) | None |
 
@@ -40,17 +41,68 @@ A Chinese phone number is more useful than it looks: many domestic services (123
 
 ## Foreign eSIM (Recommended for Most Tourists)
 
-These eSIMs route data through gateways outside mainland China, so blocked sites work natively — no VPN required.
+> ⚠️ **Important distinction:** Not all foreign eSIMs bypass the Great Firewall. Only providers that route data through non-China gateways (e.g., Holafly, Ubigi) bypass the GFW. Providers like Airalo use local China Unicom towers — the GFW still applies and you need a separate VPN for blocked services (Google, WhatsApp, etc.).
+
+Holafly and Ubigi eSIMs route data through gateways outside mainland China, so blocked sites work natively — no VPN required.
 
 | Provider | Network used | Sample plans (2026-05) | Coverage |
 |---|---|---|---|
 | **Airalo** | China Unicom | 1 GB / 3d for **$4**; 5 GB / 7d for **$14.50**; 20 GB / 30d for **$40**; 50 GB / 30d for **$49** | Mainland only |
-| **Holafly** | China Mobile (CMCC) | Unlimited / 3d for **$11.70**; / 7d for **$27.30**; / 30d for **$74.90** (with 1 GB/day hotspot share) | Mainland only — no Hong Kong or Taiwan |
+| **Holafly** | China Mobile (CMCC) | Unlimited / 5d for **$19.50**; / 7d for **$27.30**; / 10d for **$36.90**; / 15d for **$50.90**; / 30d for **$74.90** (with 1 GB/day hotspot share) | Mainland only — no Hong Kong or Taiwan |
+
+> Prices verified 2026-06-01 via holafly.com. Plans available in 1-day increments (1-90 days). Subject to Fair Usage Policy (~90 GB/month before throttling).
 | **Ubigi** | China Mobile / Unicom | 1 GB / 7d for **€4**; 3 GB / 30d for **€8**; 20 GB / month for **€19**; unlimited 7d for **€26** | Mainland; some plans extend region-wide |
 
 **How to activate.** Install the eSIM by QR before departure. The eSIM stays inactive until you arrive in mainland China and toggle data on — at that moment the validity clock starts. Phone must be eSIM-capable (iPhone XS or newer, Pixel 3 or newer, recent Samsung Galaxy).
 
 **Trade-off.** A foreign eSIM gives you data only — no +86 phone number. If you need one for Chinese-app sign-ups, get a physical SIM in addition.
+
+### Airalo vs Holafly: Detailed Comparison (Reddit Consensus, 2026)
+
+Based on analysis of 200+ Reddit traveler reports (source: realchinaguide.com, 2026-06):
+
+| Factor | Airalo | Holafly |
+|---|---|---|
+| **Data** | Fixed caps (1–50 GB) | Unlimited (1 GB/day hotspot) |
+| **VPN / GFW bypass** | NOT included — must buy separately | Included (routes via non-China gateway) |
+| **Network** | China Unicom (stronger in cities) | China Mobile (stronger in rural / remote areas) |
+| **Price (7-day)** | ~$14.50 | ~$27.30 |
+| **Best for** | Light data users, budget travelers | Most travelers, heavy data users, simplicity seekers |
+| **Support** | Good | Good, responsive for activation issues |
+
+**Reddit verdict:** Holafly wins for most travelers. Unlimited data + included VPN = worry-free. Airalo only recommended for light data users on a budget who already own a VPN.
+
+### VPN Bundling and Setup
+
+- **Holafly**: VPN is built in (data routes through gateway outside mainland China). Reported slower during peak evening hours; some users bring a backup VPN (ExpressVPN) for ~$8 extra.
+- **Airalo**: No VPN included. Pair with ExpressVPN or similar. Total cost: Airalo $15 + VPN $5-10 = ~$20-25 for 7 days.
+- **VPN data overhead**: VPN encryption adds ~20-30% extra data usage. Factor this into Airalo's capped plans (e.g., a 5 GB plan effectively gives ~3.5-4 GB of usable browsing).
+- **Critical**: Install and test your VPN app **before** arriving in China. VPN provider websites and app store entries are blocked inside the Great Firewall. Multiple users reported being stranded without WhatsApp/Google for days after forgetting this step.
+
+### Activation Timing and First-Hour Checklist
+
+1. **1-2 days before departure**: Purchase eSIM and scan QR code to install the profile. Do NOT toggle it on yet.
+2. **On landing**: Enable the eSIM data connection. The validity clock starts on first tower connection.
+3. **At the airport (while WiFi is available as fallback)**:
+   - Turn on VPN and confirm connection.
+   - Test WhatsApp / Google / Instagram to verify GFW bypass works.
+   - If issues arise, troubleshoot while airport WiFi is still accessible.
+
+### Data Usage Tips for Capped Plans
+
+- **Download offline Google Maps** for Beijing, Shanghai, Chengdu (and other planned cities) before departure — saves significant data.
+- Google Maps + translation apps + VPN are the heaviest data consumers. One user burned through 5 GB in 10 days with heavy Maps usage.
+- Budget example: Airalo $15 + pre-downloaded offline maps + existing VPN = $15 total for 2 weeks of moderate use.
+- Consider Holafly unlimited if you plan to upload photos, stream video, or use navigation continuously.
+
+### Dual-SIM Strategy (Recommended for Power Users)
+
+For travelers who need both unrestricted internet AND a +86 phone number:
+
+1. **Slot 1 (eSIM)**: Holafly or Airalo for data + GFW bypass.
+2. **Slot 2 (physical SIM)**: Cheap local China Mobile SIM (~¥50-70 / ~$10) for the +86 number needed by Alipay registration, 12306, and SMS verifications.
+
+This gives "best of both worlds" — full Western app access plus domestic service compatibility.
 
 ## Local Physical SIM
 

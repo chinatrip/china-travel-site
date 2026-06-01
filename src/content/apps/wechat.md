@@ -1,7 +1,6 @@
 ---
 category: app
 title: WeChat / WeChat Pay
-description: "WeChat and WeChat Pay for foreign visitors: setup, card binding, Mini Programs, PayPal integration, and vouching requirements explained."
 date: 2026-04-30
 last_verified: 2026-05-04
 verified_against:
@@ -10,6 +9,7 @@ verified_against:
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw/wechat-paypal-integration-2026.md
+  - raw/realchinaguide-payment-guide-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/alipay.md
@@ -60,6 +60,9 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 
 - The account is tightly bound to your phone number — update promptly if the number changes.
 - English UI: Settings → General → Language.
+- WeChat interface changes frequently, making it harder to locate payment features than Alipay.
+- Some services and exclusive mini-programs require WeChat Pay specifically and do not accept Alipay (source: realchinaguide.com 2026).
+- **Regional restrictions**: Some regions block the foreign-card linking feature entirely. If stuck, use Alipay as primary and keep ¥200 cash for WeChat-only places.
 
 ## WeChat Mini Programs
 
@@ -81,12 +84,27 @@ Mini Programs (小程序) are lightweight apps that run inside WeChat — no sep
 | Attraction ticketing | Many major attractions (Palace Museum, West Lake, etc.) sell timed-entry tickets exclusively via their Mini Program or WeChat — physical ticket queues may not exist |
 | Restaurant ordering | Scan a QR code at a restaurant table → menu appears → order and pay without a server; common in chain restaurants and fast-casual dining |
 | Airport / transit | Real-time flight status, boarding pass display at some airlines |
+| Hellobike (哈啰单车) | Bike sharing — scan QR on bike to unlock, ¥1-2 per ride |
+| 美团外卖 (Meituan) | Food delivery — search, order, pay, track rider in real-time |
+| 大麦 (Damai) | Event/concert tickets — digital tickets with QR code entry |
+| 猫眼 (Maoyan) | Movie tickets and live performances |
+| City metro apps | Yitongxing (Beijing), Metro Daduhui (Shanghai), 广州地铁, 深圳地铁, 成都地铁 |
 
 ### Why This Matters for Foreigners
 
 Many Chinese services do **not** have a separate English-language website or iOS/Android app — their primary user interface is a WeChat Mini Program. If a local recommends "scan the QR code" or you see a QR code at a ticketing counter, it almost always opens a Mini Program. Knowing how to navigate this flow prevents confusion and gates access to services that are otherwise hard to reach.
 
 Mini Program interfaces are usually Chinese-language; however, major hotel chains and some transit services include English options.
+
+### Mini Program Technical Details
+
+- Lightweight: under 10MB, launch in under 1 second
+- Inherit your WeChat Pay payment method automatically — no additional card setup needed
+- Foreign Visa/Mastercard works if linked to WeChat Pay
+- Recently opened mini-programs stay cached and work briefly offline, but QR codes and payments require an internet connection
+- Pin frequently used mini-programs for instant access
+
+(Source: realchinaguide.com 2026)
 
 ## PayPal Integration (2026)
 

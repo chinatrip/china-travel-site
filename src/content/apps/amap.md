@@ -1,12 +1,12 @@
 ---
 category: app
 title: Amap
-description: "Amap (Gaode Maps) guide: the best navigation app in China for foreigners — English UI, transit routing, and why Google Maps doesn't work."
-date: 2026-05-06
+date: 2026-06-01
 last_verified: 2026-05-06
 verified_against:
   - https://mobile.amap.com
-sources: []
+sources:
+  - raw/realchinaguide-navigation-guide-2026.md
 related:
   - wiki/concepts/transportation.md
   - wiki/concepts/internet-connectivity.md
@@ -92,6 +92,42 @@ However, Amap is still recommended for iPhone users when you need:
 - Offline map download for areas with spotty coverage
 
 **Android users:** Google Maps is blocked in mainland China and Google Play is unavailable without a VPN — Amap is required.
+
+## English Setup — Practical Tips
+
+- Enable English: **Me → Settings → Language → English**.
+- The interface is mostly translated. Restaurant names and smaller POIs may still display in Chinese, but addresses and routing directions render in English.
+- **Known issue**: Amap sometimes resets to Chinese after an app update. Re-check your language setting whenever you notice the UI reverted.
+- Searching works in both English and Chinese. For destinations not found in English, copy-paste Chinese characters from a translation app or booking confirmation.
+
+## Offline Maps — When and How
+
+- Path: **Me → Offline Maps → Download** → select city or province.
+- Offline maps enable turn-by-turn navigation without mobile data. Real-time features (live traffic, transit schedule updates) still require a connection.
+- **Recommended**: download maps for all planned cities before leaving your hotel each morning, or before departing your home country.
+- Particularly useful when data runs out (common with capped eSIM plans) or in subway stations with no signal.
+
+## Taxi Booking Through Amap
+
+- Amap has a built-in ride-hailing aggregator — tap the car icon on any destination to book.
+- When you request a ride through Amap, **the destination is auto-filled** in the driver's app, removing communication barriers.
+- Serves as a backup when DiDi is busy or surge-priced: Amap queries multiple platforms (DiDi, Caocao, T3, etc.) simultaneously.
+- Payment requires Alipay or WeChat Pay linked in the booking service.
+
+## Amap vs Google Maps — Practical Comparison
+
+| Aspect | Amap | Google Maps |
+|--------|------|-------------|
+| Works in China without VPN | Yes | No — blocked by GFW |
+| VPN reliability for Google Maps | N/A | ~50% uptime reported; drops mid-route |
+| China POI data accuracy | Up-to-date, comprehensive | Outdated, incomplete |
+| English interface | Partial (most UI, some POIs Chinese) | Full |
+| Offline maps for China | Excellent city-level downloads | Available but less detailed |
+| Metro/bus routing | Real-time, integrated | Limited China transit data |
+| Ride-hailing integration | Built-in (DiDi + others) | None in China |
+| Coverage outside China | Mainland only | Global |
+
+**Bottom line**: Use Amap as your primary navigation in China. Keep Google Maps (with VPN) only as a secondary reference for global context or for planning routes that cross borders.
 
 ## Limitations vs Google Maps
 

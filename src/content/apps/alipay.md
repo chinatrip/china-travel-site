@@ -1,13 +1,14 @@
 ---
 category: app
 title: Alipay
-description: "Alipay setup guide for foreigners in China: link your Visa/Mastercard, payment fees, transaction limits, and common problems solved."
 date: 2026-04-30
 last_verified: 2026-05-04
 verified_against:
   - https://global.alipay.com
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
-sources: [raw/12306-guide-for-foreign-business-visitors-2025.md]
+sources:
+  - raw/12306-guide-for-foreign-business-visitors-2025.md
+  - raw/realchinaguide-payment-guide-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/wechat.md
@@ -44,7 +45,13 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 
 ## Tour Pass / Alipay+
 
+> **Update (2026):** The original Tour Pass mini-program has been deprecated (its official URL returns 404). As of 2024, Alipay allows foreigners to directly bind international credit/debit cards (Visa, Mastercard, JCB, Diners Club, Discover) to their main Alipay account. Transaction limits: ¥10,000 per transaction, ¥50,000 annual (unverified accounts) or ¥200,000 (passport-verified accounts). The 'Tour Pass' and 'TourCard' product names are no longer active — direct card binding is the current method.
+
 **Tour Pass** (prepaid wallet) is **no longer necessary for most visitors** — direct card binding (added in 2024) is simpler and has higher limits. If the Alipay app shows a Tour Pass prompt during onboarding, dismiss it and use the standard Bank Cards flow instead.
+
+Tour Pass charges a **5% fee** per transaction (vs 3% for direct card binding). It auto-refunds unused balance to the original card after 90 days; no fee on refunds. (Source: realchinaguide.com 2026)
+
+**TourCard** (top-up balance variant): A prepaid balance option within Alipay. Load ¥500 at a time to minimize fee frequency. Top-up takes ~10 seconds from a foreign card. (Source: realchinaguide.com 2026)
 
 **Alipay+** allows payment via foreign e-wallets (GCash, Kakao Pay, GrabPay, TrueMoney, and others) — useful if you already use one of those apps.
 
@@ -52,9 +59,19 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 
 - **Scan to pay / receive**: restaurants, supermarkets, attractions
 - **Ride-hailing**: integrated DiDi entry
-- **Food delivery**: integrated Ele.me
+- **Food delivery**: integrated Ele.me (Alibaba-owned, seamless Alipay integration)
 - **Tickets**: flights, train, attractions
-- **Bike-sharing**: Hello Bike
+- **Bike-sharing**: Hello Bike (also shows bike options on Alipay homepage)
+- **Metro mini-programs**: Access city metro QR codes (Yitongxing, Metro Daduhui, etc.) directly through Alipay
+
+## Practical Tips (Source: realchinaguide.com 2026)
+
+- **Download before arriving in China** — app stores in China may require Chinese payment methods for downloads.
+- Set phone language to English **before** opening Alipay for the first time — affects the interface language.
+- Use your home-country phone number for registration; the account is not tied to a Chinese SIM.
+- Test with a small purchase at the airport upon arrival to confirm everything works.
+- Alipay shows all payments in real-time — useful for tracking spending and verifying charges.
+- **Long-stay option**: With a residence permit (3+ months), open a Bank of China account and link to Alipay for zero platform fees.
 
 ## See Also
 

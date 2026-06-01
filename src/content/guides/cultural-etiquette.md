@@ -1,7 +1,6 @@
 ---
 category: guide
 title: Cultural Etiquette for Foreign Visitors
-description: "Chinese cultural etiquette for visitors: dining customs, tipping, bargaining, personal questions, and behaviors that surprise foreigners."
 date: 2026-05-13
 last_verified: 2026-05-13
 verified_against:
@@ -69,7 +68,7 @@ A clear, repeated **"不用了"** (bù yòng le, "I'm fine, thank you") signals 
 Bargaining is **expected** at markets, souvenir stalls, and small independent shops. It is **not** expected at chain stores, supermarkets, restaurants, or formal retail with printed price tags.
 
 **At tourist markets:**
-- Open with a counter-offer of **40–60% of the asking price**
+- Open with a counter-offer of **20–40% of the asking price** (sellers quote high to allow negotiation)
 - Final price typically settles at **50–70% of the opening ask**
 - Agreeing to a price creates an expectation to buy — walking away after verbally accepting is considered poor form
 

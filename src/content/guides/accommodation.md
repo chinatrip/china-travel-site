@@ -1,7 +1,6 @@
 ---
 category: guide
 title: Accommodation for Foreign Visitors in China
-description: "Hotels in China that accept foreigners: booking platforms, check-in with passport, payment options, and how to avoid being turned away."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:
@@ -11,6 +10,7 @@ verified_against:
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw/reddit-pain-points-research-2026.md
+  - raw/realchinaguide-accommodation-guide-2026.md
 related:
   - wiki/concepts/residence-registration.md
   - wiki/concepts/mobile-payment.md
@@ -99,6 +99,66 @@ Key considerations:
 - **Breakfast:** most mid-range and above Chinese hotels include breakfast; confirm when booking as the inclusion varies.
 - **Deposit:** hotels typically hold a deposit (押金) at check-in — ¥200–500 for budget properties, higher for luxury. Returned at check-out. Foreign cards can be used for the hold in hotels that accept them; otherwise cash.
 - **VPN:** if you need access to blocked services (Google, WhatsApp, etc.) in your room, set up a VPN before arrival — hotel Wi-Fi is subject to the same Great Firewall restrictions as any Chinese network.
+
+## How to Find Foreigner-Accepting Hotels
+
+Finding a hotel that will actually accept your passport at check-in is the single biggest accommodation challenge for foreign visitors. Strategies:
+
+1. **Use international booking platforms** — While Booking.com and Agoda primarily list larger hotels that typically accept foreign guests, this is not guaranteed. Some properties may still refuse foreigners at check-in if they lack Public Security Bureau registration capability. Always confirm foreign guest acceptance before booking, especially for budget or smaller properties outside major cities. Trip.com also filters for foreigner-eligible properties in major cities.
+2. **Search '涉外酒店' on Chinese platforms** — on Meituan or Ctrip's Chinese site, this term filters for foreigner-licensed properties. Look for "Foreign guests accepted" tags.
+3. **Stick to international chains** — Marriott, Hilton, IHG, Hyatt, InterContinental, etc. always accept foreigners without exception.
+4. **Look for hotels near tourist areas** — properties in popular tourist districts are far more likely to be licensed than those in residential neighborhoods.
+5. **Avoid budget business hotels** — small unbranded hotels, especially those with only a Chinese website or located in residential areas, frequently lack a foreigner license.
+6. **Always book refundable rates** — some hotels say "yes" at booking but discover at check-in they cannot process foreign passports. A refundable booking gives you an exit.
+7. **Call ahead to verify** — if in doubt, call the hotel directly (or have your booking platform's customer service call on your behalf) to confirm they can register foreign guests.
+
+**If refused at check-in:** Call your booking platform's customer service immediately — they will find an alternative or arrange a refund. Meanwhile, search Booking.com for nearby international hotels. International chains in the same city will always accept you as a fallback.
+
+## Hostel vs Hotel Comparison
+
+| Factor | Hostel (dorm) | Budget hotel | Mid-range hotel |
+|---|---|---|---|
+| **Price** | ~¥70/night | ¥180-280/night | ¥400-700/night |
+| **Social** | Excellent — meet other travelers, get local tips | Minimal | Minimal |
+| **Comfort** | Shared bathroom, bunk beds | Private room, basic amenities | Private room, good amenities |
+| **Foreigner license** | Many hostels lack foreigner license — verify before booking | Risky — many budget hotels cannot accept foreigners | Generally licensed in major cities |
+| **Best for** | Solo backpackers, social travelers | Budget travelers who want privacy | Couples, families, comfort-seekers |
+
+**Recommended mixed strategy:** Use hostels in social/backpacker cities (Xi'an, Chengdu, Yangshuo) where highly-rated hostels cater to international travelers, and switch to hotels in major cities (Beijing, Shanghai) where comfort matters more and hotel prices are justified by better location and service. Verify foreigner license for both types.
+
+**Hostel tips:** Choose hostels rated 8.5+ on Trip.com or Hostelworld. Lockers are provided for valuables. Most travelers report no safety issues in Chinese hostels.
+
+## Booking Platform Tips
+
+### Trip.com vs Ctrip — Same Company
+Trip.com is Ctrip's international brand. Same company, same inventory, same hotels and trains. Trip.com is simply the foreigner-friendly version with full English support and foreign payment options (Visa, Mastercard, AMEX). No need to use both — Trip.com gives you access to everything Ctrip has.
+
+### Price Differences Between Platforms
+The same room can cost **20-30% more** on international OTAs (Trip.com, Booking.com, Agoda) compared to domestic platforms (Meituan, Fliggy). This price gap exists because domestic apps target local consumers with lower prices. To access domestic pricing, you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]).
+
+**Cost-saving strategy:** Use international platforms for guaranteed foreigner acceptance and foreign-card payment, or set up Alipay/WeChat Pay first and book via Meituan for 20-30% savings on the same room.
+
+### Platform Reliability
+Traveler reports confirm Trip.com works well for extended trips — one user booked 8 hotels, 4 trains, and 2 flights over 3 weeks with no issues. English customer support helped with date changes. Regular Visa card accepted for all bookings.
+
+## Check-In with Passport — Step by Step
+
+1. **Arrive at front desk** with your original passport (copies or photos on phone are never accepted).
+2. **Desk staff scan your passport** and check your valid visa, entry stamp, or visa-free entry evidence.
+3. **Staff complete registration** — they enter your details into the PSB system. This takes 5-10 minutes.
+4. **You receive a registration form** (境外人员临时住宿登记表) — keep this document. Police may ask for it during random checks.
+5. **Deposit hold** — the hotel places a deposit hold (押金): typically ¥200-500 for budget properties, higher for luxury. Foreign cards can be used where accepted; otherwise cash.
+
+**No action required from you** for PSB registration — hotels handle everything automatically. If you change hotels mid-trip, each new hotel registers you again upon check-in.
+
+## City-Specific Price Reference
+
+| City | Budget range | Mid-range | Notes |
+|---|---|---|---|
+| Beijing | ¥180-280/night | ¥400-700/night | Similar to Shanghai overall |
+| Shanghai | ¥200-300/night | ¥450-750/night | Shanghai and Beijing have broadly similar accommodation costs (Numbeo data shows less than 5% average difference). Hotel prices vary more by location and season than by city. |
+| Chengdu | ¥150-250/night | ¥350-600/night | Good hostel scene for backpackers |
+| Xi'an | ¥130-220/night | ¥300-550/night | Good hostel scene near city wall |
 
 ## See Also
 

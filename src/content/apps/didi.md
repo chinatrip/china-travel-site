@@ -1,7 +1,6 @@
 ---
 category: app
 title: DiDi
-description: "DiDi ride-hailing in China for foreigners: app setup, payment methods, vehicle types, and tips for getting picked up without speaking Chinese."
 date: 2026-04-30
 last_verified: 2026-05-04
 verified_against:
@@ -10,6 +9,7 @@ verified_against:
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw/reddit-pain-points-research-2026.md
+  - raw/realchinaguide-transport-guide-2026.md
 related:
   - wiki/concepts/transportation.md
   - wiki/concepts/mobile-payment.md
@@ -55,7 +55,28 @@ DiDi also operates bike-sharing — open the DiDi app and scan the QR code on an
 - Airports and high-speed rail stations have designated DiDi pickup zones — follow the in-app guidance to the right zone, not just the arrivals exit.
 - For lost items, use DiDi's in-app **Lost & Found** (My Trips → trip → Report Lost Item).
 
+## Practical Tips for Foreigners
+
+- **Alipay is the easiest payment method** for DiDi. Set up Alipay first, then link it to DiDi. Foreign Visa/Mastercard can also be added directly in DiDi's payment settings as an alternative.
+- **Drivers do not speak English.** Use the in-app translation feature or have your destination pre-written in Chinese characters. Price is shown upfront — no negotiation needed. Drivers follow GPS with minimal communication required.
+- **Driver cancellations are common during rush hour** when drivers are picky about destinations. Rebook immediately. If it happens repeatedly, try a different car type (e.g., switch from Express to Taxi) or walk to a busier pickup location.
+- **Typical ride cost:** ¥10–30 for most city trips. This is 10–15x more expensive than the metro for equivalent distances.
+- **DiDi runs 24/7** — metro closes at ~11:30 PM, making DiDi the default for late-night travel.
+- **When DiDi is busy:** Amap (高德地图) has taxi booking built in and aggregates multiple ride-hailing services. Use it as a fallback.
+- **Safe vs street taxis:** DiDi is considered safer than street-hail taxis — rides are tracked, prices are fixed, driver identity is verified.
+- **Mini-program access:** In WeChat or Alipay, search "滴滴出行" to open DiDi without a separate app download. Useful if you have Alipay set up but limited phone storage.
+
+## Cost Comparison: DiDi vs Metro
+
+| Scenario (Beijing) | DiDi | Metro |
+|---|---|---|
+| Single city trip (5 km) | ~¥15–25 | ¥3–5 |
+| Airport transfer | ~¥80–150 | ¥25 (airport express) |
+| 3 rides in one day | ~¥60–90 | ¥20 (3-day unlimited pass) |
+
+**Recommendation:** Use metro as default for 90% of daytime travel. Reserve DiDi for airports, late nights, luggage situations, rainy days, and groups of 3+ (where split cost makes DiDi competitive).
+
 ## Alternatives
 
-- **Amap (高德地图):** ride-hailing aggregator — calls multiple services at once including DiDi, useful for price comparison.
+- **Amap (高德地图):** ride-hailing aggregator — calls multiple services at once including DiDi, useful for price comparison and as a fallback when DiDi is busy.
 - **Street taxi:** hail on the street; metered fare; cash always accepted.

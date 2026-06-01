@@ -1,17 +1,19 @@
 ---
 category: app
 title: Meituan
-description: "Meituan app for foreigners in China: food delivery, hotel booking, bike rental — how to use China's super-app with Alipay or WeChat Pay."
 date: 2026-05-06
 last_verified: 2026-05-06
 verified_against:
   - https://www.meituan.com
-sources: []
+sources:
+  - raw/realchinaguide-food-dining-2026.md
 related:
   - wiki/concepts/accommodation.md
   - wiki/concepts/mobile-payment.md
+  - wiki/concepts/food-dining.md
   - wiki/entities/alipay.md
   - wiki/entities/wechat.md
+  - wiki/entities/eleme.md
 volatility: medium
 review:
   status: audited
@@ -42,6 +44,16 @@ Meituan is one of China's two dominant food delivery platforms (the other is **E
 4. Enter your delivery address in Chinese — use the address from your hotel booking confirmation, or ask hotel staff to write it for you.
 5. Pay via Alipay or WeChat Pay.
 6. Track the order on-screen; the rider contacts you by phone if needed (use the in-app call button so the number is anonymised).
+
+### Tips for Foreign Users
+
+- **Set phone language to English before first launch.** Meituan detects your phone's system language on first open — this determines whether you see a partially-English interface or full Chinese.
+- **Get your delivery address in Chinese characters first.** Ask hotel front desk to write the exact address including hotel name. Screenshot it or copy-paste into the address field.
+- **Browse by photos, not text.** Tap into restaurant listings to see dish photos with ratings. This is often more useful than translating the text menu.
+- **Use in-app translation.** Tap the ··· menu then 翻译 (translate) — supports 18 languages for menu descriptions.
+- **Backup plan:** If Meituan payment fails or a restaurant is not listed, try [[wiki/entities/eleme.md|Ele.me]] through Alipay. Some restaurants are exclusive to one platform.
+- **Late-night use case:** Ordering to your hotel room at 10 PM is common and works well. Delivery typically arrives in 20-40 minutes in major cities.
+- **Use Meituan as a visual menu reference.** Even when dining at a restaurant in person, open the restaurant's page on Meituan to see photos and ratings of their dishes — helps with ordering at the table.
 
 ### Interface Language
 

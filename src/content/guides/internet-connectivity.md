@@ -1,7 +1,6 @@
 ---
 category: guide
 title: Internet Access and the Great Firewall for Foreign Visitors
-description: "What's blocked in China and how to prepare: VPN options, foreign eSIM bypass, app setup checklist — everything to stay connected behind the Great Firewall."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:
@@ -11,6 +10,7 @@ verified_against:
   - https://www.airalo.com/china-esim
 sources:
   - raw/internet-gfw-guide-2026.md
+  - raw/realchinaguide-vpn-guide-2026.md
 related:
   - wiki/concepts/sim-card.md
   - wiki/concepts/mobile-payment.md
@@ -168,22 +168,68 @@ VPN provider websites are blocked in China. App stores remove VPN apps for users
 
 ### Reliable Providers (2026)
 
-| Provider | Protocol for China | Approx. cost | Notes |
-|---|---|---|---|
-| **ExpressVPN** | Lightway with obfuscation | ~$8–13/month | Consistently reliable track record in China |
-| **Astrill** | StealthVPN | ~$15–30/month | Frequently cited as most reliable for China; higher price |
-| **NordVPN** | Obfuscated servers | ~$4–8/month | Enable obfuscation in settings; standard servers are often blocked |
-| **Surfshark** | NoBorders mode | ~$3–5/month | Good performance; enable NoBorders before arriving |
+| Provider | Protocol for China | Approx. cost | Reliability | Notes |
+|---|---|---|---|---|
+| **Astrill** | StealthVPN | ~$15–30/month | Most reliable according to China expat community; stealth protocol | Used by companies with offices in Beijing/Shanghai; expensive |
+| **ExpressVPN** | Lightway with obfuscation | ~$8–13/month | Well-regarded; Lightway protocol; frequent updates for China | 30-day money-back guarantee; in-app chat works even when VPN is down |
+| **Surfshark** | NoBorders mode | ~$2–5/month | Mixed reports; NoBorders mode helps but inconsistent | Budget option; enable NoBorders before arriving |
+| **NordVPN** | Obfuscated servers | ~$4–8/month | Significant difficulties in China since 2024; not recommended as primary | China's deep packet inspection improved in 2024 and NordVPN did not adapt. Keep as backup only. |
+| **Shadowsocks** | SOCKS5 proxy | Self-hosted / varies | Very high (self-hosted) | Technical option for advanced users; harder to block than commercial VPNs; not user-friendly |
+
+VPN reliability changes rapidly as the GFW evolves. No provider guarantees connectivity. Performance degrades during politically sensitive periods (National Day, NPC sessions, etc.). Always install 2+ providers before departure.
+
+**Free VPNs do not work.** Across 500+ Reddit reports, free VPNs had a 0% success rate in China — blocked within days.
 
 Check current reviews from China-focused tech sites (e.g. VPNmentor, Comparitech China guides) immediately before travel — GFW detection improves constantly and provider rankings shift.
+
+### Multi-VPN Backup Strategy
+
+**Subscribe to at least 2 VPN providers** (~$10–15/month total). This is the single most important VPN recommendation from experienced China travelers.
+
+- If one VPN gets blocked, switch immediately to the backup.
+- Recommended combinations: ExpressVPN + Astrill, or ExpressVPN + Surfshark.
+- Multiple travelers report catastrophic failures with single-VPN setups (stuck without Western internet for days, unable to download alternatives because VPN websites are also blocked).
+- During politically sensitive periods (National Day Oct 1, Party Congress), even the best VPNs struggle — backups become critical.
 
 ### How Reliable Are VPNs?
 
 VPN reliability in China is not guaranteed. The GFW uses machine learning to detect and block VPN traffic. Connections degrade around politically sensitive dates (National Day, Party Congress, major anniversaries). Even reliable VPNs experience outages. Keep two providers installed and switch if one fails.
 
+**Peak-hour degradation:** VPN speeds often become unusable during 7–10 PM when network congestion is highest. Plan data-heavy tasks (video calls, streaming) outside these hours.
+
+**Battery drain:** Maintaining a VPN connection continuously drains battery significantly. Carry a power bank.
+
 ### Legal Status for Foreign Visitors
 
-Using a personal VPN as a foreign tourist is technically in a legal grey area. Enforcement focuses on VPN providers and Chinese citizens who distribute VPN services — not individual foreign visitors using VPNs for personal communication. Multiple China-focused travel and expat sources (including nordvpn.com and chinasurvivalkit.com) note no documented pattern of foreign tourists being penalised for personal VPN use; however, no guarantee can be given and the situation can change. Thousands of foreign residents and business travelers use VPNs daily as a practical matter.
+**Legal status (important):** The US State Department (updated May 2026) states that VPN use in China is 'illegal in most cases and may result in confiscation of your device, a fine, or detention.' The UK FCDO notes that VPNs need to be licensed by the Chinese government. In practice, enforcement has historically targeted VPN providers and distributors rather than individual foreign tourists using VPNs for personal communication. However, travelers should be aware of the legal risk and make their own informed decision. This wiki provides information only — consult your country's official travel advisory.
+
+Airport security does not check for VPN apps on devices.
+
+### VPN Troubleshooting
+
+When your VPN stops working in China, try these steps in order:
+
+1. **Switch server locations** — try Hong Kong, Japan, Singapore, or US servers.
+2. **Change protocols** — cycle through OpenVPN, Lightway (ExpressVPN), IKEv2, L2TP.
+3. **Force close and restart** the VPN app.
+4. **Clear browser cache and cookies** — some apps cache blocks even with VPN active. Try incognito/private browsing mode.
+5. **Restart your device** — sometimes the network stack needs a full reset.
+6. **Contact VPN support** — ExpressVPN and Astrill offer 24/7 chat. ExpressVPN's in-app chat works even when the VPN itself is down. Save support email addresses offline as backup.
+7. **Switch to backup VPN** — if the primary fails for 30+ minutes, activate your second provider.
+
+**Common timing issues:** VPN that worked yesterday may not work today — the GFW updates blocking lists continuously. Try again later; often connections restore within hours.
+
+### If You Forgot to Install VPN Before China
+
+This is a difficult situation because VPN provider websites are themselves blocked. Options:
+
+1. **Ask your hotel** — some hotels will help guests set up VPN on their devices, or offer business center computers with VPN access.
+2. **Use saved mirror links** — ExpressVPN provides special China mirror download URLs to subscribers. If you saved these in your notes app before arrival, they may still work.
+3. **Wait until Hong Kong or Macau** — the GFW does not apply there; you can freely download and configure VPN apps, then return to the mainland.
+4. **Airport WiFi** — upon landing, airport WiFi may allow initial VPN connections. Test immediately before leaving the airport.
+5. **Use another traveler's device** — as a last resort, briefly access a VPN website from a device that already has VPN working.
+
+**Prevention:** Save VPN setup guides as offline PDFs. Save mirror links in your notes app. Email VPN download links to yourself (accessible via Outlook/Yahoo which work without VPN).
 
 ## Foreign eSIM — The VPN-Free Alternative
 
@@ -192,6 +238,20 @@ A foreign eSIM (Airalo, Holafly, Ubigi — see [[wiki/concepts/sim-card.md]] for
 **Trade-off:** eSIMs provide data only — no Chinese phone number (+86). If you need a +86 number for app registrations or SMS verification, you will need a local physical SIM in addition.
 
 For visitors staying up to a few weeks who don't need a local number, the eSIM approach is the most reliable connectivity solution.
+
+### eSIM + VPN Combinations
+
+| eSIM Provider | VPN included? | Best for | Notes |
+|---|---|---|---|
+| **Holafly** | Yes (built-in) | Travelers who want zero setup hassle | Most recommended (~40% of Reddit users). Unlimited data. VPN can be slower than dedicated ExpressVPN during evenings — carry a backup VPN. |
+| **Airalo** | No | Budget travelers comfortable with tech | Budget favorite (~35%). ~$15 for 7 days. Must pair with separate VPN (e.g., ExpressVPN). Total cost ~$23. |
+| **Nomad** | No | Budget alternative | Works well, cheaper than Holafly, requires own VPN. |
+
+**Critical:** An eSIM without VPN bypass (like Airalo alone) still routes through China's network on local towers — Google, WhatsApp, and all blocked services remain inaccessible. Either choose an eSIM with VPN included (Holafly) or pair your eSIM with a separate VPN subscription.
+
+**VPN data overhead:** On capped data plans, VPN encryption adds roughly 20–30% extra data usage. Factor this into your data plan choice.
+
+**Dual-SIM strategy:** Some travelers buy Holafly eSIM for data + VPN convenience, plus a local China Mobile physical SIM (~$10) for a Chinese phone number (needed for Alipay registration and some services). Best of both worlds.
 
 ## Quick Reference: Blocked → Alternative
 

@@ -1,7 +1,6 @@
 ---
 category: guide
 title: China Visa & Entry Options for Tourists and Visitors
-description: "China visa guide 2026: visa-free entry for 59 countries, 240-hour transit policy, tourist L-visa — find which entry path applies to your nationality."
 date: 2026-04-30
 last_verified: 2026-05-07
 verified_against:
@@ -14,7 +13,7 @@ verified_against:
   - https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm
   - https://en.nia.gov.cn/n147418/n147463/c180637/content.html
   - https://www.visaforchina.cn
-sources: [raw/12306-guide-for-foreign-business-visitors-2025.md]
+sources: [raw/12306-guide-for-foreign-business-visitors-2025.md, raw/realchinaguide-visa-guide-2026.md]
 related:
   - wiki/concepts/residence-permit.md
   - wiki/concepts/residence-registration.md
@@ -38,7 +37,7 @@ Start here. Find your nationality in the table below to identify which section t
 
 | Your situation | Entry path | Section |
 |---|---|---|
-| Passport from one of ~59 unilateral visa-free countries (most EU, UK, Canada, Australia, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
+| Passport from one of 54+ unilateral visa-free countries (most EU, UK, Canada, Australia, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
 | Passport from a country with a mutual bilateral agreement (UAE, Singapore, Malaysia, Thailand, etc.) | **Bilateral visa-free** — no visa needed (up to 30–90 days depending on agreement) | [Section B](#section-b-bilateral-mutual-visa-exemption) |
 | Passport from one of 55 transit-eligible countries (includes USA + all above) AND traveling to a third country | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
 | Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 86 countries | [Section D](#section-d-hainan-province-30-day-visa-free) |
@@ -52,7 +51,7 @@ Start here. Find your nationality in the table below to identify which section t
 ## Section A — Unilateral 30-Day Visa-Free Entry
 
 ### What it is
-China grants unilateral (one-sided) visa-free entry to ordinary passport holders from approximately 59 countries. No visa application, no fees. Entry is permitted for tourism, business visits, visiting relatives, exchange visits, or transit.
+China grants unilateral (one-sided) visa-free entry to ordinary passport holders from 54+ countries (as of November 2024 expansion; the list is actively expanding — check the latest NIA announcements for updates). No visa application, no fees. Entry is permitted for tourism, business visits, visiting relatives, exchange visits, or transit.
 
 ### Stay duration
 Up to **30 days** per entry, calculated from 00:00 on the day after arrival. Nationality-specific limits apply — some bilateral agreements (Section B) allow longer stays.
@@ -154,6 +153,33 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 - You **cannot** work, study, or conduct journalism under this status
 - Hong Kong, Macau, and Taiwan are **not** valid as "third country" destinations for the onward ticket requirement — your onward flight must go to an actual foreign country
 - If you depart and re-enter on a new 240-hour transit, this may be scrutinized — consult the NIA FAQ
+
+### TWOV practical tips (from 2026 traveler reports)
+
+> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
+
+**Before departure:**
+- Hong Kong counts as a separate region for TWOV purposes — flying Singapore -> Shanghai -> Hong Kong qualifies
+- Print TWOV eligibility proof from the official China immigration website (s.nia.gov.cn) before your trip
+- Arrive at departure airport **2-3 hours early** — airline check-in staff in some countries are unfamiliar with TWOV rules and may initially refuse boarding
+- Be prepared to calmly explain the policy and show printed documentation
+
+**In China with TWOV:**
+- Immigration stamp process is smooth and fast once you arrive in China — officers are experienced with the policy
+- Hotels and domestic flights accept the TWOV sticker without issues (confirmed by recent 2026 travelers)
+- For 240-hour TWOV: domestic travel across permitted provinces is allowed
+- For 144-hour TWOV: typically restricted to the specific region of entry (e.g., Beijing-Tianjin-Hebei)
+- Must depart before time expires — overstaying = fines and future visa problems
+
+### TWOV vs visa-free: quick comparison
+
+| | Visa-free (Section A) | TWOV (Section C) |
+|---|---|---|
+| Onward ticket required? | No | Yes (to third country) |
+| Max stay | 30 days | 240 hours (10 days) |
+| Travel zones | Entire mainland China | 24 permitted provinces only |
+| Pre-approval needed? | No | No (activated at immigration) |
+| Eligible countries | 54+ (as of November 2024 expansion; actively expanding) | 55 (includes USA) |
 
 ---
 
@@ -310,3 +336,54 @@ For completeness, all standard China visa categories:
 - **Embassy FAQ (USA-based):** [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm)
 
 Visa policy for China changes frequently. Verify before booking travel.
+
+---
+
+## Entry Procedures & Arrival (Supplemental)
+
+> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
+
+### Digital arrival card (pre-arrival)
+- Complete the arrival card online at [s.nia.gov.cn](https://s.nia.gov.cn) within **72 hours before boarding**
+- Paper cards are still accepted on arrival if you cannot complete online
+- Applies to all entry types (visa, visa-free, TWOV)
+
+### At the airport on arrival
+1. Pass immigration (present passport, onward ticket if TWOV, completed arrival card)
+2. Optionally purchase a local SIM card (China Mobile/Unicom stores at airport; ~50-100 RMB for 30-day data plan with passport only)
+3. Take metro or DiDi to your hotel
+4. First tasks after arrival: activate VPN, test Alipay works, download offline maps in Amap
+
+### Accommodation registration (mandatory for ALL visitors)
+- **All foreigners must register their address with local police within 24 hours of arrival** at each new location
+- Hotels and hostels handle this automatically — they scan your passport at check-in (takes 5-10 minutes)
+- You receive a registration form/receipt — **keep it** (police may ask for it; needed for visa extensions)
+- If staying in private accommodation (Airbnb, with friends/family): you must go to the local police station to register in person
+- Documents needed for private registration: passport, visa, host's ID card (身份证), and proof of residence (lease or property certificate)
+- Required information: name, passport number, visa type, entry date, address, host information
+- If your passport is replaced (lost/stolen/expired) while in China, you must re-register with your new passport
+
+See also: [[wiki/concepts/residence-registration.md]]
+
+---
+
+## Using Visa Agencies
+
+> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
+
+- Reputable agencies (e.g., Oasis China Visa) can handle in-person consulate visits for you
+- Cost: approximately **$200 total** (including service fees) vs $140 DIY
+- Useful if you live far from a Chinese consulate or CVASC
+- VFS Global operates Chinese visa centers in many countries including UK, Germany, France
+- These centers handle document collection and biometric appointments on behalf of the consulate
+
+---
+
+## Visa-Free Country List Updates (2026)
+
+> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
+
+- As of November 2024 expansion, **54+ countries** have visa-free access (30 days; the list is actively expanding — check the latest NIA announcements for updates)
+- **UK and Canada** were added to the unilateral visa-free list on **February 17, 2026**
+- Most visa-free policies extended until **31 December 2026** (verify for your specific country)
+- The list continues to expand — always check [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) for the latest additions

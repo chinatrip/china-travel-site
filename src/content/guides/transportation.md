@@ -1,13 +1,14 @@
 ---
 category: guide
 title: Transportation in China
-description: "Getting around China: high-speed rail, metro, DiDi ride-hailing, taxis, and domestic flights. Booking tips and airport-to-city transfers for foreigners."
 date: 2026-04-30
 last_verified: 2026-04-30
 verified_against:
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
   - https://www.12306.cn
-sources: [raw/12306-guide-for-foreign-business-visitors-2025.md]
+sources:
+  - raw/12306-guide-for-foreign-business-visitors-2025.md
+  - raw/realchinaguide-transport-guide-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/12306.md
@@ -67,6 +68,28 @@ Major cities — Beijing, Shanghai, Guangzhou, Shenzhen and others — have exte
 - Self-service ticket machines accept RMB cash; some cities accept foreign bank cards.
 - Some cities (e.g., Shanghai) allow Apple Pay / contactless foreign-card tap at the gate.
 - **Navigation:** Google Maps is blocked in mainland China. Use **Amap (高德地图)** or **Baidu Maps** instead — both have English UI and accurate real-time transit routing. Download one before arrival.
+
+### City-by-City Metro Apps
+
+**Each city has its own metro app or mini-program.** Beijing's app does not work in Shanghai or Guangzhou. Set up the local app when you arrive in each new city (~3–5 minutes).
+
+| City | App / Mini-Program | Lines | Notes |
+|---|---|---|---|
+| **Beijing** | Yitongxing (亿通行) | 27 lines, 428 stations | Physical card (¥20 deposit) or app QR. Multi-day pass: ¥20/3 days. Cannot use Alipay/WeChat directly at gates — need app QR. |
+| **Shanghai** | Metro Daduhui (大都会) | 16+ lines (world's longest system) | Search "大都会" in WeChat/Alipay. Alipay/WeChat payment works directly. |
+| **Guangzhou** | 广州地铁 mini-program | 15+ lines | Announcements in Cantonese, Mandarin, and English. Direct metro to Baiyun Airport. Yangchengtong card works on metro, buses, and ferries. |
+| **Shenzhen** | Shenzhen Tong mini-program | 12 lines | Connects to Hong Kong MTR at Luohu and Futian border crossings. |
+| **Chengdu** | 成都地铁 mini-program | 13 lines | Line 3 → Panda Avenue station (near Giant Panda Research Base). |
+
+**Troubleshooting QR codes:** Look for the **Passport Lane** (blue sign) at turnstiles — staff there are trained to help foreigners. If scanning fails, maximize screen brightness and regenerate the QR code.
+
+### Metro Practical Tips
+
+- **Rush hours to avoid:** 7–9 AM and 5–7 PM (body-to-body crowding on major lines).
+- **Metro closes around 11:30 PM** in most cities; use DiDi for late-night travel.
+- **Cost:** ¥3–10 per ride — roughly 10–15x cheaper than DiDi for the same distance.
+- **Multi-day passes** (where available) offer excellent value for tourists — Beijing's ¥20/3-day pass covers unlimited rides.
+- **Combine metro + bike-sharing** for last-mile connections (~¥1.5 per bike ride via Hellobike, Meituan Bike, etc.).
 
 ## Security Checkpoints
 
@@ -175,7 +198,38 @@ Metered taxis (yellow / green cabs) can be hailed on the street and are still co
 - Payment: RMB cash (always accepted), Alipay / WeChat Pay (most cabs), card swipe (rare).
 - Older street-hail cabs may not have a working QR placard — keep ¥50–100 in cash as backup.
 
+## DiDi vs Metro: When to Use Each
+
+| Situation | Best option | Why |
+|---|---|---|
+| Daytime city sightseeing | Metro | Cheap (¥3–6), no traffic, fast |
+| Airport transfer | DiDi or airport express | Direct, handles luggage |
+| After 11:30 PM | DiDi | Metro is closed |
+| Group of 3+ people | DiDi | Split cost makes it competitive with metro |
+| Rush hour (7–9 AM, 5–7 PM) | Metro | DiDi stuck in traffic; metro runs underground |
+| Rainy day / heavy luggage | DiDi | Door-to-door, no stairs |
+
+**Budget example (Beijing, 6 days):** ¥20 metro 3-day pass + 5 DiDi rides ≈ ¥110 total. All-DiDi would cost ¥300+.
+
+## Airport-to-City: Additional Tips
+
+- **Shanghai Pudong:** Maglev train connects airport to metro hub in 8 minutes (¥50).
+- **Airport ATMs** generally offer better exchange rates than pre-exchanging cash at home banks. Withdraw ¥300–500 on arrival as backup cash.
+- **DiDi at airports:** follow in-app guidance to the designated pickup zone — do not wait at the general arrivals exit.
+- **First-hour checklist on arrival:** connect to airport WiFi → activate VPN → test Alipay with a small purchase → set up DiDi → test metro QR → screenshot hotel address in Chinese.
+
+## Train Booking: Practical Tips for Foreigners
+
+- **12306 passport format issues:** the official site sometimes rejects foreign passport numbers. If your passport is declined repeatedly, use **Trip.com** instead (~¥50 service fee but full English interface and foreign card support).
+- **Morning trains are often cheaper** than afternoon departures on the same route.
+- **Seat selection:** only available in the Chinese version of the 12306 app. The English version assigns seats randomly.
+- **On-board amenities:** free hot water dispensers on all trains (bring your own cup); snacks and meals are allowed; dining car available on most G/D trains.
+- **Power banks on trains:** no CCC certification required (unlike domestic flights). Capacity limit: 100 Wh (27,000 mAh) with clear labeling.
+- **Choosing the right station:** major cities have multiple stations (e.g., Beijing West, Beijing South). Check which station your train departs from — they can be 30+ minutes apart.
+
 ## Practical Tips
 
 - High-speed rail stations and airports have clear English signage.
 - Major stations offer baggage storage (staffed counters or self-service lockers).
+- **Amap has taxi booking built in** — useful as a backup when DiDi is busy or surge-priced.
+- **Bike-sharing fills metro gaps:** when two stations are 1–2 km apart, grab a shared bike (Hellobike, Meituan Bike) — scan with Alipay, ride, lock at destination. ~¥1.5 per trip.

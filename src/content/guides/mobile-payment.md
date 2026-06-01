@@ -1,7 +1,6 @@
 ---
 category: guide
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
-description: "How to pay in China as a foreigner: set up Alipay and WeChat Pay with your Visa or Mastercard in minutes. Fees, limits, and troubleshooting."
 date: 2026-05-02
 last_verified: 2026-05-28
 verified_against:
@@ -19,6 +18,7 @@ sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw_posts/2026-W18/travelchina.json
   - raw/wechat-paypal-integration-2026.md
+  - raw/realchinaguide-payment-guide-2026.md
 related:
   - wiki/concepts/foreign-exchange.md
   - wiki/entities/alipay.md
@@ -57,6 +57,8 @@ The April 2024 circular jointly issued by the PBOC and several ministries reset 
 - Alipay's in-app interface expanded from 2 to **16 languages** (source: english.www.gov.cn April 2024 circular)
 
 The earlier **Alipay Tour Pass** prepaid-wallet option is **no longer the recommended path** for most visitors — direct card binding (introduced for foreign cards in 2024) is simpler and has higher per-transaction limits than the prepaid-wallet approach (source: trip.com Alipay guide; chinatravelpack.com Tour Pass guide). Tour Pass still exists in some app flows, but it is unnecessary for most visitors. If you encounter a Tour Pass prompt during onboarding, dismiss it and proceed to the regular Bank Cards flow instead.
+
+**Tour Pass fee note**: Tour Pass charges a **5% fee** per transaction (source: realchinaguide.com 2026), significantly higher than the 3% charged on direct card binding. Tour Pass auto-refunds any unused balance to the original card after 90 days; the 5% fee is not charged on refunds.
 
 **Two-layer limit structure to keep in mind**:
 
@@ -205,6 +207,14 @@ Independent of mobile pay, the 2024 circular requires the following categories o
 
 Some merchants at covered venues may claim the POS machine "doesn't work" or produce a long-unused, uncharged device — this can be deliberate avoidance of higher interchange fees on foreign-card transactions. If a covered venue refuses, asking for the manager and citing the 2024 PBOC circular resolves most cases on the spot. For formal complaints, China's general government services hotline is **12345** (the nationwide government complaint and services line, operated by local government offices — verify it is still active at gov.cn before your trip); the PBOC operates a dedicated financial consumer rights line — verify the current number at pbc.gov.cn/en before your trip.
 
+## Payment Reliability and Redundancy
+
+Foreign users occasionally experience payment failures due to card verification issues, daily transaction limits, or network problems. Having a backup payment method (second app, cash ¥200-500, or physical card) is recommended. When Alipay fails, WeChat Pay almost always works (and vice versa). Having both apps set up ensures near-100% coverage.
+
+**Recommended redundancy strategy**: Alipay (primary, ~85-95% of payments) + WeChat Pay (backup) + ¥200-500 cash for rare edge cases. Between Alipay and WeChat Pay, coverage reaches ~99% of merchants.
+
+**Fee-minimization tip**: Cards with 0% foreign transaction fees (e.g., Chase Sapphire, Capital One Venture) eliminate the card-issuer portion of the fee — though the platform's 3% surcharge on payments over ¥200 still applies.
+
 ## Common Failure Modes
 
 | Symptom | Cause | Fix |
@@ -229,6 +239,14 @@ Even when the payment method is valid, many Chinese services (food delivery, tic
 Foreign visitors generally cannot complete either step. This blocks access to services entirely, independent of which payment method they carry. The workaround is to use the visitor-facing entry points where they exist (e.g., Alipay Mini Programs inside the Alipay app, which inherit the already-verified Alipay account identity) or ask a local contact to place the order on your behalf.
 
 (Source: Shuimu BBS 2026-05-11)
+
+## City Metro Mini-Programs (Quick Reference)
+
+Metro systems in major cities use dedicated mini-programs accessible through both WeChat and Alipay. Generate a QR code, scan at turnstile entry, scan again at exit — payment auto-deducts from your linked card.
+
+For the complete city-by-city metro mini-program table, see [[wiki/concepts/transportation.md#city-by-city-metro-apps]].
+
+(Source: realchinaguide.com 2026)
 
 ## Account Closure / Departure
 

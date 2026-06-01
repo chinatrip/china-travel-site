@@ -1,17 +1,18 @@
 ---
 category: guide
 title: Food and Dining in China for Foreign Visitors
-description: "Eating in China as a foreigner: restaurant apps, QR ordering, food delivery, allergy phrases in Chinese, and regional cuisine guide."
 date: 2026-05-04
 last_verified: 2026-05-04
 verified_against:
   - https://www.chinahighlights.com
 sources:
   - raw/food-dining-guide-2026.md
+  - raw/realchinaguide-food-dining-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/internet-connectivity.md
   - wiki/entities/meituan.md
+  - wiki/entities/eleme.md
 volatility: low
 review:
   status: audited
@@ -35,6 +36,27 @@ Most restaurants use QR-code table ordering:
 3. Submit order and pay via WeChat Pay or Alipay.
 
 In smaller restaurants, point-and-order using the menu photos is widely accepted. If you haven't set up WeChat Pay or Alipay yet, ask staff for a physical bill and pay with cash or a foreign card at the counter.
+
+### Ordering Without Speaking Chinese
+
+Several strategies work in practice:
+
+1. **Ask for picture menu:** Say '图片菜单' (tú piàn cài dān). Many restaurants keep tablet or picture versions for foreigners.
+2. **Point at other tables:** See a dish you want? Point and say '我要这个' (wǒ yào zhè ge = "I want this one"). This is socially normal in China.
+3. **Use delivery app photos:** Open Meituan or Ele.me to see that restaurant's dishes with photos and ratings, even if you order in person.
+4. **Show photos from your phone:** Search Google Images for the dish name and show staff.
+5. **Ask staff to write it down:** For handwritten menus or regional dialects, ask staff to write the dish name on your phone, then translate it.
+
+### Menu Translation Apps and Tips
+
+| Method | How it works | Limitations |
+|--------|-------------|-------------|
+| Google Translate camera | Open app → Camera mode → Point at printed menu → Instant visual overlay | Requires VPN; struggles with handwritten menus |
+| Pleco dictionary | Look up individual characters offline | Manual; no camera auto-translate |
+| Meituan/Ele.me in-app translation | Tap ··· menu → 翻译 (translate) → supports 18 languages | Only works within the delivery app interface |
+| Photo upload approach | Take clear photo of menu, upload to translation app | Often more accurate than live camera scan |
+
+**Tip:** Menu photo translation often works better than live camera scanning. Take a clear, well-lit photo and upload it rather than relying on real-time OCR.
 
 ## Tipping
 
@@ -118,6 +140,20 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | Xinjiang | 新疆 | Lamb, cumin, flatbreads, pulled noodles |
 | Yunnan | 云南 | Fresh herbs, mushrooms, sour flavors |
 
+## Popular Dishes by Region (Foreigner-Friendly Highlights)
+
+| City/Region | Must-try dishes | Notes |
+|-------------|----------------|-------|
+| **Beijing** | Peking duck, zhajiangmian (炸酱面, noodles w/ soybean paste), jianbing (street crepe), dumplings | Hutong street food is excellent; imperial cuisine at higher-end restaurants |
+| **Shanghai** | Xiaolongbao (小笼包, soup dumplings), shengjianbao (生煎包), crab shell cakes, sweet osmanthus cake | Din Tai Fung is reliable for xiaolongbao; most diverse food city overall |
+| **Chengdu** | Sichuan hotpot, mapo tofu, kung pao chicken, dan dan noodles | Haidilao chain has English menus; spice level is intense — order '微辣' (slightly spicy) to start |
+| **Chongqing** | Hotpot (spicier than Chengdu), grilled fish, xiaomian noodles | THE spiciest region — even locals sweat |
+| **Xi'an** | Cumin lamb skewers (烤羊肉串), roujiamo (肉夹馍, "Chinese burger"), biangbiang noodles | Muslim Quarter has endless street food; budget 50-100 RMB |
+| **Guangzhou** | Dim sum (morning tea tradition), char siu, congee, wonton noodles | Cantonese food capital; go early for dim sum (7-9 AM) |
+| **Xiamen** | Fresh seafood, oyster omelette, satay noodles, peanut soup | Fujian/Min Nan flavors |
+| **Xinjiang/Kashgar** | Da pan ji (大盘鸡, big plate chicken), lamb pilaf, naan bread, cumin lamb | Central Asian influence; halal-friendly |
+| **Yunnan** | Crossing-the-bridge noodles (过桥米线), wild mushrooms, Dai-style grilled fish | Fresh herbs, sour flavors; Dali has good Western food too |
+
 ## Food Safety
 
 Street food is generally safe if:
@@ -144,3 +180,5 @@ Exercise caution with:
 
 - [[wiki/concepts/mobile-payment.md]] — WeChat Pay and Alipay setup (required for QR ordering and delivery)
 - [[wiki/concepts/health-medical.md]] — Food safety, tap water, common stomach issues
+- [[wiki/entities/meituan.md]] — Meituan food delivery setup and tips
+- [[wiki/entities/eleme.md]] — Ele.me food delivery (Alibaba/Alipay integration)

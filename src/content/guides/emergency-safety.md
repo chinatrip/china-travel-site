@@ -1,9 +1,8 @@
 ---
 category: guide
 title: Emergency and Safety for Foreign Visitors
-description: "Emergency contacts and safety in China: police, ambulance, common scams, lost passport procedure, and embassy contacts for foreign travelers."
-date: 2026-05-07
-last_verified: 2026-05-07
+date: 2026-06-01
+last_verified: 2026-06-01
 verified_against:
   - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
   - https://chinasurvivalkit.com/blog/is-china-safe-tourists
@@ -16,7 +15,8 @@ verified_against:
   - https://www.intrepidtravel.com/us/china/is-china-lgbtqia-friendly
   - https://www.pacificprime.com/blog/travel-insurance-in-china.html
   - https://chinasurvivalkit.com/blog/china-police-passport-check-guide
-sources: []
+sources:
+  - raw/realchinaguide-safety-guide-2026.md
 related:
   - wiki/concepts/health-medical.md
   - wiki/concepts/accommodation.md
@@ -56,7 +56,9 @@ China is one of the safer countries in the world for physical crime by global st
 
 **Passport carry requirement:** Chinese law requires foreigners aged 16 and above to carry their **original passport** (or a valid foreign residence permit) at all times and to present it on request by public security authorities. Police do not legally accept printed copies as a substitute, though some officers may accept a clear photo during a routine check — carry the original when practical. Not producing your passport can result in being escorted to retrieve it, a fine, or, in worst cases, detention while identity is confirmed (source: chinasurvivalkit.com; chinaservicesinfo.com). Keep a separate photocopy or phone photo of your passport data page and visa as backup.
 
-**Solo female travelers:** generally very safe. You can move around urban areas, including late at night, with minimal worry. Standard big-city precautions (well-lit streets, booked transport) are adequate (source: chinasurvivalkit.com; scenerytrip.com).
+**Solo female travelers:** generally very safe. You can move around urban areas, including late at night, with minimal worry. Standard big-city precautions (well-lit streets, booked transport) are adequate. Traveler reports confirm walking alone in Beijing, Shanghai, Xi'an, and Guilin at all hours without incident — the most common annoyance cited is aggressive street vendors rather than any personal safety threat (source: chinasurvivalkit.com; scenerytrip.com; realchinaguide.com). The UK FCDO (updated May 2026) notes that while serious crime against foreigners is rare, 'women travelling alone or with female friends could be at slightly higher risk' of drink spiking. Standard precautions: avoid unmarked taxis, don't leave drinks unattended, and share your itinerary with someone.
+
+**Hostel safety:** Hostels with ratings of 8.5+ on Trip.com or Hostelworld are generally safe. Lockers are provided for valuables. Most travelers report no safety issues. Choose well-reviewed hostels and use the provided locker (source: realchinaguide.com).
 
 **LGBTQ+ travelers:** same-sex relationships are not criminalised in China. Public displays of affection draw attention and are generally discouraged — this applies to same-sex and opposite-sex couples alike in Chinese cultural norms. Major cities (Beijing, Shanghai, Chengdu in particular) have established queer scenes and are more tolerant. Rural areas are more conservative. There is no legal framework for same-sex partnerships. Homophobic violence is rare. Exercise the same discretion you would in any socially conservative urban environment (source: intrepidtravel.com; wildchina.com).
 
@@ -100,11 +102,62 @@ China's scams are well-documented and almost entirely predictable. Knowing them 
 
 **How to avoid:** Check large bills when you receive them. Genuine notes have a raised feel, a watermark visible when held to the light, and a colour-shifting security strip. When in doubt, pay with mobile (Alipay/WeChat Pay) rather than cash — there is no counterfeit risk in digital transactions.
 
+### Unofficial Guides / Park Gate Touts
+
+**How it works:** Unofficial "guides" approach tourists at the entrance to parks, scenic areas, and historical sites offering tours at negotiated prices. They lack credentials, may provide inaccurate information, lead you to commission-paying shops, or demand higher fees than agreed once the tour is underway.
+
+**How to avoid:** Book guides through official channels (the ticket office, your hotel, or licensed platforms like Klook/GetYourGuide). Legitimate guides at major sites have visible ID badges issued by the local tourism bureau.
+
+(Source: realchinaguide.com)
+
 ### General Scam-Avoidance Rules
 
 - **Firm "no" and walk away** — do not engage. Engaging gives scammers an opening to escalate.
 - **No one is giving you something for free near a tourist site.** If a stranger's offer seems unusually generous, it is.
 - **If you've paid and been defrauded:** call 110. Keep any receipts, messaging, or photos as evidence.
+- **Reduce cash exposure:** Keep most cash in your hotel safe; carry only ~100 yuan daily for incidentals. Use Alipay/WeChat Pay for all other transactions — digital payments eliminate counterfeit risk and make overcharging easier to dispute (source: realchinaguide.com).
+
+## Crime Statistics Context
+
+Violent crime against tourists in China is virtually zero risk. China consistently ranks among the safest countries globally for physical crime against visitors. The primary risks are financial (scams, overcharging) rather than physical. City-by-city context (source: realchinaguide.com):
+
+| City | Safety Level | Notes |
+|---|---|---|
+| Shanghai | Extremely safe | Very low violent crime; one of the safest major cities in the world |
+| Beijing | Very safe | Low crime rates; main concerns are scams and pollution |
+| Shenzhen | Very safe | Modern with excellent infrastructure |
+| Hangzhou | Extremely safe | Well-organized for tourists |
+| Chengdu | Very safe | Locals famously friendly and laid-back |
+| Xi'an | Very safe | Well-established tourism infrastructure |
+| Guangzhou | Generally safe | Standard large-city precautions apply |
+| Chongqing | Generally safe | Complex terrain can be disorienting |
+| Suzhou / Xiamen / Nanjing | Extremely safe | Tourist-friendly |
+| Kunming / Dali / Yangshuo | Very safe | Backpacker/expat communities established |
+
+Petty crime (pickpocketing) is concentrated in crowded tourist markets and transit hubs — not residential or business districts.
+
+## Night Safety
+
+Walking at night in Chinese cities is generally safe for foreign travelers. Key points:
+
+- **Metro systems** are well-lit with security staff at stations and busy until closing time (typically 22:30–23:30 depending on city and line). Beijing Metro safe until closing at 23:30.
+- **After metro closes**, use DiDi (ride-hailing) for late-night travel rather than flagging street taxis.
+- **Well-lit commercial and residential areas** are safe to walk at night. Travelers consistently report feeling safer walking at night in Chinese cities than in comparable Western cities.
+- **Areas to exercise standard caution** at night: poorly lit construction zones, isolated parks after closing, areas around train stations late at night (touts, not violence).
+
+(Source: realchinaguide.com; chinasurvivalkit.com)
+
+## Surveillance and Police Presence
+
+China has one of the world's most extensive public surveillance networks. Practical implications for tourists:
+
+- **CCTV is ubiquitous** in public spaces — streets, transport, tourist sites, malls. This contributes to low street crime but means all public behaviour is recorded.
+- **Xinjiang region** (Urumqi, Kashgar, Turpan) has noticeably heavier security: frequent checkpoints, ID checks, bag scans at public venues. Tourists are not targeted but should carry passport at all times and allow extra time for security procedures.
+- **Police presence at tourist sites** is generally helpful rather than intimidating. Officers at major sites often have basic English or access to translation.
+- **PSB registration** is mandatory within 24 hours of arrival at any location. Hotels handle this automatically. Private stays (Airbnb, friends) require a visit to the local police station (派出所) — your host should accompany you. Keep the registration form; police may ask for it during routine checks.
+- **Routine police checks**: Foreigners may be asked to show their passport, particularly in Xinjiang, Tibet, or during major political events. Comply calmly — these are administrative, not accusatory.
+
+(Source: realchinaguide.com; chinasurvivalkit.com; UK FCDO)
 
 ## Lost or Stolen Passport
 
