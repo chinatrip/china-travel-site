@@ -27,6 +27,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.WIKI_REPO_TOKEN }}
 
+      - name: Build site (validation)
+        run: npm run build
+
       - name: Check for changes
         id: diff
         run: |
@@ -40,3 +43,11 @@ jobs:
           git add src/content/
           git commit -m "Auto-sync: update content from wiki repo"
           git push
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.diff.outputs.changed == 'true'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=china-travel-site --branch=main
