@@ -4,6 +4,9 @@ title: "City Guides for Foreign Visitors"
 date: 2026-06-01
 sources: [raw/realchinaguide-city-guides-2026.md]
 related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md]
+last_verified: 2026-06-01
+verified_against:
+  - raw/realchinaguide-city-guides-2026.md
 volatility: low
 review:
   status: audited

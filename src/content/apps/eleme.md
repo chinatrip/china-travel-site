@@ -10,6 +10,10 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/meituan.md
   - wiki/entities/alipay.md
+last_verified: 2026-06-01
+verified_against:
+  - raw/realchinaguide-food-dining-2026.md
+  - https://www.ele.me
 volatility: medium
 review:
   status: audited
