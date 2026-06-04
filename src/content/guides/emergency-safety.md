@@ -21,6 +21,7 @@ related:
   - wiki/concepts/health-medical.md
   - wiki/concepts/accommodation.md
   - wiki/concepts/mobile-payment.md
+  - wiki/concepts/language-barrier.md
 volatility: medium
 review:
   status: audited
@@ -248,6 +249,11 @@ Travel insurance is **strongly recommended** for China. Chinese hospitals — in
 - Does it cover **natural disasters** (typhoon, earthquake) as a reason for trip cancellation?
 
 Some international hospitals in Beijing and Shanghai have direct billing arrangements with major international insurers (AXA, Cigna, Allianz). Confirm with the hospital and your insurer before any non-emergency visit. For full hospital detail, see [[wiki/concepts/health-medical.md]].
+
+### Budget Insurance Providers
+
+<!-- Unverified: from summary, needs citation check -->
+Budget-friendly travel insurance options reported by travelers include World Nomads and SafetyWing, with approximate costs of $50-80 for a 2-week trip covering medical emergencies and trip interruption. Verify coverage details, exclusions, and current pricing directly with the provider before purchasing. (Source: realchinaguide.com 2026.)
 
 ## See Also
 

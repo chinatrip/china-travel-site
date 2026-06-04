@@ -11,9 +11,14 @@ verified_against:
 sources:
   - raw/internet-gfw-guide-2026.md
   - raw/realchinaguide-vpn-guide-2026.md
+  - raw/realchinaguide-remote-work-2026.md
+  - raw/realchinaguide-tech-setup-2026.md
+  - raw/realchinaguide-troubleshooting-2026.md
 related:
   - wiki/concepts/sim-card.md
   - wiki/concepts/mobile-payment.md
+  - wiki/concepts/remote-work-china.md
+  - wiki/concepts/language-barrier.md
 volatility: high
 review:
   status: audited

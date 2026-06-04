@@ -13,6 +13,7 @@ related:
   - wiki/concepts/internet-connectivity.md
   - wiki/entities/meituan.md
   - wiki/entities/eleme.md
+  - wiki/entities/dianping.md
 volatility: low
 review:
   status: audited

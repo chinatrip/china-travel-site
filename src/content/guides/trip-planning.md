@@ -8,12 +8,21 @@ verified_against:
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
 sources:
   - raw/china-practical-guide-2026.md
+  - raw/realchinaguide-best-times-2026.md
+  - raw/realchinaguide-14day-itinerary-2026.md
+  - raw/realchinaguide-alternative-itineraries-2026.md
+  - raw/realchinaguide-money-costs-2026.md
+  - raw/realchinaguide-pretrip-preparation-2026.md
 related:
   - wiki/concepts/visa-types.md
   - wiki/concepts/transportation.md
   - wiki/concepts/accommodation.md
   - wiki/concepts/tibet-permits.md
   - wiki/concepts/cultural-etiquette.md
+  - wiki/concepts/attraction-ticketing.md
+  - wiki/concepts/departure-customs.md
+  - wiki/concepts/language-barrier.md
+  - wiki/concepts/city-guides.md
 volatility: low
 review:
   status: audited
@@ -64,6 +73,9 @@ Three national holidays cause extreme domestic travel surges that directly affec
 | **June–August** | Hot; "furnace cities" (Chongqing, Wuhan, Nanjing) reach 40°C+; typhoons affect southern coasts July–October; plum rain (梅雨) floods parts of eastern China May–July |
 | **November–February** | Fewer crowds at outdoor attractions; northern China −25°C; central cities (Wuhan, Xi'an) have little indoor heating infrastructure despite cold temperatures; comfortable in Yunnan and Hainan |
 
+<!-- Unverified: from summary, needs citation check -->
+**Regional weather detail:** China's "furnace cities" (火炉城市) — Chongqing, Wuhan, Nanjing, and Changsha — regularly exceed 40°C in July-August with high humidity. Plum rain season (梅雨, méiyǔ) brings continuous rainfall and flooding risk to eastern China (Shanghai, Hangzhou, Nanjing, Wuhan) from approximately May through July. Southern coastal cities (Guangzhou, Shenzhen, Xiamen, Haikou) face typhoon risk July-October, with cancellations of flights and ferry services during active storms. (Source: realchinaguide.com 2026.)
+
 ### If You Must Travel During a Peak Period
 
 - Book accommodation and transport as soon as dates are confirmed — use free-cancellation policies where available
@@ -85,6 +97,11 @@ Three national holidays cause extreme domestic travel surges that directly affec
 **Comfort/luxury:** 4–5 star hotel (¥600–2,000/night), Western or upscale Chinese restaurants, private transfers
 
 *Note: Remote/plateau (Lhasa, Urumqi) budget costs are higher than Tier-1 cities despite fewer amenities — accommodation is scarce and food supply chains are longer, so prices are elevated even at the budget end.*
+
+### Regional Cost Context
+
+<!-- Unverified: from summary, needs citation check -->
+China is mid-tier in Asia for travel costs: cheaper than Japan, South Korea, and Singapore; similar to Thailand; more expensive than Vietnam, Laos, and Cambodia. Compared to Europe, hotels are approximately 40-60% cheaper for equivalent quality, local food is 60-80% cheaper, and public transport is 70-90% cheaper. (Source: realchinaguide.com 2026 — requires independent verification.)
 
 ### Key Transport and Attraction Reference Prices
 
@@ -108,6 +125,11 @@ Three national holidays cause extreme domestic travel surges that directly affec
 The **240-hour visa-free transit policy** (10 days for 55 qualifying nationalities) works well for a focused 1–2 city trip from one of the approved entry regions (Beijing, Shanghai, Guangzhou-Shenzhen, Chengdu, Harbin). See [[wiki/concepts/visa-types.md]].
 
 **Peak season note:** add 20–30% buffer time to any itinerary during Golden Week or Spring Festival.
+
+### Sample 14-Day Budget (Two People, Mid-Range, 2025 Prices)
+
+<!-- Unverified: from summary, needs citation check -->
+A sample mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. Detailed day-by-day itineraries with actual costs are available in the source summaries (see `wiki/summaries/realchinaguide-14day-itinerary-2026.md` and `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`). (Source: realchinaguide.com 2026.)
 
 ## Independent vs. Guided Travel
 
@@ -141,6 +163,33 @@ Xinjiang is technically open to foreign tourists without a special permit (unlik
 - VPN reliability is lower; some apps have additional restrictions in the region
 - Some travel insurance policies explicitly exclude Xinjiang — verify before purchasing
 - Extensive camera and facial recognition networks are deployed; avoid photographing police, military, or checkpoints
+
+## Pre-Trip Preparation Timeline (30/7/1 Day Countdown)
+
+<!-- Unverified: from summary, needs citation check -->
+A structured countdown approach helps ensure nothing is missed before departure:
+
+**30 days before:**
+- Confirm visa status or visa-free eligibility
+- Purchase travel insurance
+- Set up Alipay and WeChat Pay; bind foreign card and test
+- Purchase and install eSIM (do not activate yet)
+- Install and test VPN on all devices
+- Book accommodation for at least the first few nights
+
+**7 days before:**
+- Book attraction tickets for time-sensitive sites (Forbidden City, Panda Base)
+- Download offline maps (Amap or Google Maps for offline use with VPN)
+- Save hotel addresses in Chinese characters
+- Complete digital arrival card at s.nia.gov.cn (available 72 hours before boarding)
+
+**1 day before:**
+- Install eSIM profile (do not toggle data on)
+- Confirm all bookings
+- Withdraw a small amount of RMB if possible, or plan airport ATM withdrawal
+- Screenshot essential information (hotel address, emergency numbers, embassy contact)
+
+(Source: realchinaguide.com 2026; partially covered in [[wiki/concepts/internet-connectivity.md]]. Detailed timeline in `wiki/summaries/realchinaguide-pretrip-preparation-2026.md`.)
 
 ## See Also
 

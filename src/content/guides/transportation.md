@@ -16,6 +16,8 @@ related:
   - wiki/entities/amap.md
   - wiki/concepts/health-medical.md
   - wiki/concepts/food-dining.md
+  - wiki/concepts/mini-programs.md
+  - wiki/entities/trip-com.md
 volatility: medium
 review:
   status: audited

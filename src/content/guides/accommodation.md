@@ -18,6 +18,7 @@ related:
   - wiki/concepts/health-medical.md
   - wiki/concepts/emergency-safety.md
   - wiki/entities/meituan.md
+  - wiki/entities/trip-com.md
 volatility: medium
 review:
   status: audited

@@ -116,6 +116,11 @@ China's mobile market is split among three state-owned operators. For a short-te
 | China Unicom | Historically the most foreign-phone-friendly; Airalo's eSIM partner | 10010 |
 | China Telecom | Strong urban and southern China; English support on hotline | 10000 |
 
+### Free Tourist SIM Promotion (China Mobile)
+
+<!-- Unverified: from summary, needs citation check -->
+China Mobile reportedly offers free SIM cards (4 cards with 10 GB each, totaling 40 GB) to foreign tourists at large flagship stores in tourist areas — passport required for registration. These SIMs operate behind the Great Firewall (no VPN included) but provide a +86 number useful for local app registrations (Alipay, 12306, etc.). Availability may vary by city and store; this promotion has not been independently verified against official China Mobile sources. (Source: realchinaguide.com 2026.)
+
 ### Where to Buy
 
 | Channel | Cost | Speed | Notes |

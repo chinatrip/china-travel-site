@@ -8,10 +8,12 @@ verified_against:
   - https://nessahuangg.com/culture-shock-in-china
 sources:
   - raw/china-practical-guide-2026.md
+  - raw/realchinaguide-cultural-differences-2026.md
 related:
   - wiki/concepts/food-dining.md
   - wiki/concepts/trip-planning.md
   - wiki/concepts/shopping-tax-refund.md
+  - wiki/concepts/language-barrier.md
 volatility: low
 review:
   status: audited

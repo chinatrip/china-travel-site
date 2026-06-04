@@ -19,10 +19,14 @@ sources:
   - raw_posts/2026-W18/travelchina.json
   - raw/wechat-paypal-integration-2026.md
   - raw/realchinaguide-payment-guide-2026.md
+  - raw/realchinaguide-tech-setup-2026.md
+  - raw/realchinaguide-money-costs-2026.md
+  - raw/realchinaguide-troubleshooting-2026.md
 related:
   - wiki/concepts/foreign-exchange.md
   - wiki/entities/alipay.md
   - wiki/entities/wechat.md
+  - wiki/concepts/remote-work-china.md
 volatility: high
 review:
   status: audited
@@ -214,6 +218,9 @@ Foreign users occasionally experience payment failures due to card verification 
 **Recommended redundancy strategy**: Alipay (primary, ~85-95% of payments) + WeChat Pay (backup) + ¥200-500 cash for rare edge cases. Between Alipay and WeChat Pay, coverage reaches ~99% of merchants.
 
 **Fee-minimization tip**: Cards with 0% foreign transaction fees (e.g., Chase Sapphire, Capital One Venture) eliminate the card-issuer portion of the fee — though the platform's 3% surcharge on payments over ¥200 still applies.
+
+<!-- Unverified: from summary, needs citation check -->
+**European no-FX-fee options**: European travelers may also consider Revolut, N26, or Wise debit cards, which charge 0% foreign transaction fees. These cards are Visa or Mastercard branded and can be bound to Alipay and WeChat Pay in the same way as other foreign cards. (Source: realchinaguide.com 2026 — requires independent verification of current Alipay/WeChat binding compatibility for each issuer.)
 
 ## Common Failure Modes
 
