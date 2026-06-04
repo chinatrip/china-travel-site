@@ -32,7 +32,7 @@ review:
 
 # Tibet Travel Permits and Altitude Health
 
-## Tibet Travel Permit (TTT) — Who Needs It
+## Who needs a Tibet Travel Permit?
 
 All foreign passport holders require a Tibet Travel Permit (TTT) to enter Tibet. This includes:
 - All nationalities entering on a standard China tourist visa (L visa) or visa-free
@@ -44,14 +44,14 @@ All foreign passport holders require a Tibet Travel Permit (TTT) to enter Tibet.
 
 Note: HK/Macau residents visiting Everest Base Camp still need a Frontier Certificate.
 
-## What the Permit Is
+## What is the Tibet Travel Permit?
 
 The TTT is a **paper document** listing the traveler's name, approved travel dates, and approved destinations within Tibet. It:
 - Cannot be reused for subsequent trips
 - Must be returned to the Tibet Tourism Bureau after your visit
 - Is checked at all transportation entry points — train, plane, and road checkpoints
 
-## How to Obtain the TTT
+## How do I get a Tibet Travel Permit?
 
 **Independent applications are not permitted.** Process:
 
@@ -63,7 +63,7 @@ The TTT is a **paper document** listing the traveler's name, approved travel dat
 
 **Cost:** the permit itself is free. The unavoidable cost is the tour package you must book through a licensed agency. Tour packages start around **USD $450–$2,050** depending on duration and destinations.
 
-## Independent Travel Is Prohibited
+## Can foreigners travel independently in Tibet?
 
 Foreign visitors cannot travel independently in Tibet:
 - A **licensed Tibetan guide must accompany you throughout your stay**
@@ -72,7 +72,7 @@ Foreign visitors cannot travel independently in Tibet:
 
 This is legally distinct from mainland China, where independent foreign travel is generally unrestricted — see [[wiki/concepts/trip-planning.md]].
 
-## When Tibet Is Closed to Foreign Tourists
+## When is Tibet closed to foreign tourists?
 
 Tibet typically closes to foreign visitors from **late February through end of March**, reopening approximately April 1. During this window, no permits are processed for travel within the closure period (applications for April+ travel continue).
 
@@ -80,7 +80,7 @@ Tibet typically closes to foreign visitors from **late February through end of M
 
 Plan Tibet visits for **April–late September** and confirm current closure status with your agency before booking transport. Avoid October 1–7 (National Day Golden Week) — travel surges affect transport and accommodation throughout China during this period.
 
-## Restricted Areas
+## Which areas of Tibet are restricted?
 
 Even with a standard TTT, the following are off-limits to foreign visitors:
 - Yarlung Tsangpo Grand Canyon
@@ -96,11 +96,11 @@ Even with a standard TTT, the following are off-limits to foreign visitors:
 | **Alien's Travel Permit (ATP)** | Everest Base Camp, Mt. Kailash, Lake Manasarovar, certain monasteries | Arranged by guide after arriving in Lhasa |
 | **Military Permit** | Remote border regions and sensitive frontier zones | 20+ days advance notice; arranged by agency before departure |
 
-## Entering Tibet from Nepal
+## How do I enter Tibet from Nepal?
 
 Travelers entering via Nepal (the Friendship Highway route) **cannot use a standard China visa**. They must obtain a **China Group Visa** from the Chinese Embassy in Kathmandu. Individual visas are not accepted for this entry route.
 
-## Altitude Sickness
+## How do I avoid altitude sickness in Tibet?
 
 Tibet is at extreme elevation — Lhasa alone is 3,650 m (12,000 ft), roughly 1,200 m higher than the highest ski resorts in the Alps. Most visitors experience some symptoms within 6–12 hours of arrival.
 
@@ -145,7 +145,7 @@ Both HACE and HAPE require **immediate descent**. Do not wait until morning.
 - Pharmacies in Lhasa carry basic AMS medications
 - If severe symptoms develop (confusion, unable to walk straight, extreme breathlessness at rest): **descend immediately**
 
-## Travel Insurance for Tibet
+## What travel insurance do I need for Tibet?
 
 Standard travel insurance frequently excludes Tibet and high-altitude emergencies. Verify your policy covers:
 - Medical treatment at altitude

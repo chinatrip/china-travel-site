@@ -52,7 +52,7 @@ Taobao Flash Purchase (formerly Ele.me) is China's second-largest instant delive
 | English support | Minimal — similar to Meituan |
 | Coverage | 2000+ cities, 400M+ users |
 
-## How to Access
+## How do I access Taobao Flash Purchase (Ele.me)?
 
 ### Option 1: Alipay Mini-Program (Recommended for foreigners)
 
@@ -74,7 +74,7 @@ Note: The app may still show as "饿了么" in some app stores during the transi
 
 The Alipay mini-program route is preferred because it inherits your Alipay payment method automatically.
 
-## How to Order
+## How do I order on Ele.me as a foreigner?
 
 1. Open 淘宝闪购 (via Alipay mini-program, Taobao, or standalone app).
 2. Browse restaurants by category, rating, or delivery time.
@@ -95,7 +95,7 @@ The ordering flow is nearly identical to Meituan once set up.
 - **Alipay/Taobao bundled promotions.** Frequently offers discounts for Alipay/Taobao users (coupons appear in Alipay homepage).
 - **Search tip:** Both "饿了么" and "淘宝闪购" work when searching in Alipay/WeChat. Use whichever appears.
 
-## When to Use 淘宝闪购 vs Meituan
+## Should I use Taobao Flash Purchase or Meituan?
 
 | Scenario | Recommendation |
 |----------|---------------|
@@ -105,7 +105,7 @@ The ordering flow is nearly identical to Meituan once set up.
 | Already in Alipay/Taobao | 淘宝闪购 mini-program is convenient (no app switch) |
 | Alipay/Taobao promotions available | 淘宝闪购 may be cheaper with coupons |
 
-## Limitations for Foreigners
+## What are Ele.me's limitations for foreigners?
 
 - Interface is predominantly Chinese — same challenge as Meituan.
 - Requires Alipay or WeChat Pay (no direct foreign card payment).

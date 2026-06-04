@@ -38,7 +38,7 @@ review:
 
 # Accommodation for Foreign Visitors in China
 
-## Quick Decision
+## Where should foreigners stay in China?
 
 | Option | Best for | Foreign-card payment | Notes |
 |---|---|---|---|
@@ -47,7 +47,7 @@ review:
 | **Youth hostel / budget hotel** | Budget travelers | Varies — confirm before booking | Not all are licensed to receive foreign guests; confirm when booking |
 | **Short-term rental** (Airbnb, local platforms) | Longer stays, apartment feel | Via platform | Highest risk of registration issues — see [[wiki/concepts/residence-registration.md]] |
 
-## Booking Platforms
+## Which booking platforms work for foreigners in China?
 
 ### International Platforms (Recommended)
 
@@ -67,13 +67,13 @@ These accept foreign credit cards and tend to list properties that are licensed 
 
 **Fliggy (飞猪)** has wide coverage of smaller cities and budget properties but is harder to use without a Chinese payment method and has no English UI.
 
-## Check-In Requirements
+## What do I need to check in to a hotel in China?
 
 - **Original passport is mandatory** at every check-in — a photocopy, a photo on your phone, or another ID document is not accepted. Hotels are legally required to verify and register your passport details.
 - A valid visa or entry stamp is required — the hotel will check that your passport shows a valid legal basis to be in China (a current visa, a valid entry stamp, or a qualifying visa-free entry).
 - The hotel files your residence registration with the local public security bureau automatically — you do not need to visit a police station for hotel stays (see [[wiki/concepts/residence-registration.md]]).
 
-## Foreign-Card Payment at the Front Desk
+## Can I pay with a foreign card at a hotel front desk in China?
 
 Under the PBOC April 2024 circular, **3-star and above hotels** are required to accept foreign Visa and Mastercard at the POS. In practice:
 
@@ -83,7 +83,7 @@ Under the PBOC April 2024 circular, **3-star and above hotels** are required to 
 
 Pre-paying through an international booking platform (Trip.com, Agoda, Booking.com) sidesteps front-desk payment entirely and is the most reliable approach.
 
-## Properties Licensed for Foreign Guests
+## Which hotels are licensed to accept foreign guests?
 
 Not every hotel or guesthouse in China is authorized to receive foreign nationals. Properties must register with local public security to accept foreign guests. In practice:
 
@@ -93,7 +93,7 @@ Not every hotel or guesthouse in China is authorized to receive foreign national
 
 When booking via Trip.com or similar platforms, search results generally show only foreigner-eligible properties by default in major cities, but confirm for off-the-beaten-path destinations.
 
-## Short-Term Rentals (Airbnb and Local Equivalents)
+## Can I use Airbnb or short-term rentals in China?
 
 Airbnb operates in mainland China. Local alternatives include Tujia (途家) and Meituan Minsu (美团民宿).
 
@@ -111,7 +111,7 @@ Key considerations:
 - **Deposit:** hotels typically hold a deposit (押金) at check-in — ¥200–500 for budget properties, higher for luxury. Returned at check-out. Foreign cards can be used for the hold in hotels that accept them; otherwise cash.
 - **VPN:** if you need access to blocked services (Google, WhatsApp, etc.) in your room, set up a VPN before arrival — hotel Wi-Fi is subject to the same Great Firewall restrictions as any Chinese network.
 
-## How to Find Foreigner-Accepting Hotels
+## How do I find hotels that accept foreigners?
 
 Finding a hotel that will actually accept your passport at check-in is the single biggest accommodation challenge for foreign visitors. Strategies:
 
@@ -125,7 +125,7 @@ Finding a hotel that will actually accept your passport at check-in is the singl
 
 **If refused at check-in:** Call your booking platform's customer service immediately — they will find an alternative or arrange a refund. Meanwhile, search Booking.com for nearby international hotels. International chains in the same city will always accept you as a fallback.
 
-## Hostel vs Hotel Comparison
+## Hostel or hotel: which should foreigners choose in China?
 
 | Factor | Hostel (dorm) | Budget hotel | Mid-range hotel |
 |---|---|---|---|
@@ -152,7 +152,7 @@ The same room can cost **20-30% more** on international OTAs (Trip.com, Booking.
 ### Platform Reliability
 Traveler reports confirm Trip.com works well for extended trips — one user booked 8 hotels, 4 trains, and 2 flights over 3 weeks with no issues. English customer support helped with date changes. Regular Visa card accepted for all bookings.
 
-## Check-In with Passport — Step by Step
+## How do I check in to a Chinese hotel with my passport?
 
 1. **Arrive at front desk** with your original passport (copies or photos on phone are never accepted).
 2. **Desk staff scan your passport** and check your valid visa, entry stamp, or visa-free entry evidence.
@@ -162,7 +162,7 @@ Traveler reports confirm Trip.com works well for extended trips — one user boo
 
 **No action required from you** for PSB registration — hotels handle everything automatically. If you change hotels mid-trip, each new hotel registers you again upon check-in.
 
-## City-Specific Price Reference
+## How much do hotels cost in major Chinese cities?
 
 | City | Budget range | Mid-range | Notes |
 |---|---|---|---|

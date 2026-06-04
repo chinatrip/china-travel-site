@@ -33,13 +33,13 @@ review:
 
 # Food and Dining in China for Foreign Visitors
 
-## Finding Restaurants
+## How do I find good restaurants in China?
 
 - **Dianping (大众点评):** China's dominant restaurant review platform (like Yelp). Works without VPN. Star ratings and photo menus are navigable without Chinese.
 - **Meituan:** same app used for delivery; also lists restaurants with menus and reviews.
 - **Amap (高德地图):** search nearby restaurants; links to Dianping reviews. Google Maps is blocked — use Amap instead.
 
-## Ordering at the Table
+## How do I order food at a restaurant in China?
 
 Most restaurants use QR-code table ordering:
 1. Scan the QR code on your table with WeChat or Alipay.
@@ -69,11 +69,11 @@ Several strategies work in practice:
 
 **Tip:** Menu photo translation often works better than live camera scanning. Take a clear, well-lit photo and upload it rather than relying on real-time OCR.
 
-## Tipping
+## Do I tip at restaurants in China?
 
 **Tipping is not customary in China** — at restaurants, hotels, or for services. Leaving cash on the table will typically be returned to you. At international hotels, ¥10–20 for porters is acceptable but not required.
 
-## Food Delivery
+## How does food delivery work for foreigners in China?
 
 ### Platforms
 
@@ -91,7 +91,7 @@ Both platforms accept international phone numbers for registration as of 2026 �
 - Minimum order amounts typically ¥15–30.
 - Payment: WeChat Pay and Alipay work on both platforms.
 
-## Communicating Dietary Needs
+## How do I communicate allergies or dietary needs in China?
 
 ### Allergies
 
@@ -139,7 +139,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | No MSG | 不要味精 | Bù yào wèijīng |
 | The bill, please | 买单 | Mǎidān |
 
-## Regional Cuisines
+## What are China's main regional cuisines?
 
 | Region | Character | Flavor profile |
 |---|---|---|
@@ -151,7 +151,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | Xinjiang | 新疆 | Lamb, cumin, flatbreads, pulled noodles |
 | Yunnan | 云南 | Fresh herbs, mushrooms, sour flavors |
 
-## Popular Dishes by Region (Foreigner-Friendly Highlights)
+## Which Chinese dishes should first-timers try?
 
 | City/Region | Must-try dishes | Notes |
 |-------------|----------------|-------|
@@ -165,7 +165,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | **Xinjiang/Kashgar** | Da pan ji (大盘鸡, big plate chicken), lamb pilaf, naan bread, cumin lamb | Central Asian influence; halal-friendly |
 | **Yunnan** | Crossing-the-bridge noodles (过桥米线), wild mushrooms, Dai-style grilled fish | Fresh herbs, sour flavors; Dali has good Western food too |
 
-## Food Safety
+## Is street food safe to eat in China?
 
 Street food is generally safe if:
 - Freshly cooked and served hot

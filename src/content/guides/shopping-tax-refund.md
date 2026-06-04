@@ -33,7 +33,7 @@ review:
 
 # Shopping and Tax Refund for Foreign Visitors
 
-## VAT Refund (离境退税) Overview
+## Can tourists get a VAT refund in China?
 
 China operates a departure VAT refund scheme for overseas visitors. A significant expansion took effect **April 8, 2025**: the minimum purchase threshold was cut from ¥500 to **¥200** per receipt at a single store on the same day, and a new **instant refund at point of sale** mechanism was introduced alongside the traditional airport-departure claim process.
 
@@ -55,7 +55,7 @@ In practice, most eligible goods attract **9–11% of the purchase price** back 
 
 Participating retailers display a **"Tax Free Shopping" or "离境退税"** sign at the entrance or checkout. Coverage has been expanded (April 2025) to include stores in major commercial areas, pedestrian streets, tourist attractions, resorts, cultural venues, airports, ports, and hotels. Not every store in these areas participates — look for the sign.
 
-## How to Claim: Two Paths
+## How do I claim a tax refund in China?
 
 ### Path 1: Instant Refund at Point of Sale (新 — since April 2025)
 
@@ -110,7 +110,7 @@ Land border crossings and ferry ports also process refunds — check signage at 
 - Claim the refund at the desk **within 30 days of customs validation**
 - Goods must be **unused and in original packaging** at customs inspection — do not open packaging or wear purchased items before leaving China
 
-## Customs Duty Limits: What You Can Bring Home
+## What are the customs duty limits when leaving China?
 
 These are the limits when **leaving China** (what foreign customs at your destination impose is separate and varies by country):
 
@@ -125,7 +125,7 @@ These are the limits when **leaving China** (what foreign customs at your destin
 
 **Note on counterfeit goods:** it is a legal risk in China to purchase counterfeit branded goods, and many countries (EU, US, UK, Australia) impose fines or confiscation at the border for importing them. Counterfeit goods are also excluded from VAT refund eligibility. See the scam-avoidance section in [[wiki/concepts/emergency-safety.md]] for market shopping tips.
 
-## Where to Shop
+## Where should foreigners shop in China?
 
 ### Luxury Malls
 
@@ -161,7 +161,7 @@ These are the limits when **leaving China** (what foreign customs at your destin
 
 Common in Chengdu (Jinli Street), Xian (Muslim Quarter), Chongqing, and smaller cities. Night markets are primarily food-focused; some stalls sell crafts and souvenirs. Cash is standard; some stalls now accept Alipay/WeChat Pay QR. Bargaining is expected at non-food stalls.
 
-## Bargaining Norms
+## Is bargaining expected when shopping in China?
 
 Bargaining is expected and acceptable at **markets, street stalls, and unlicensed small shops**. It is **not** practised at fixed-price stores (department stores, chain shops, supermarkets, brand boutiques).
 
@@ -173,7 +173,7 @@ Bargaining is expected and acceptable at **markets, street stalls, and unlicense
 
 **Scam to avoid:** some vendors show you a high-quality item, then swap it for a lower-quality version when packaging your purchase. Check the item before you leave the stall.
 
-## Payment at Retail
+## How do I pay when shopping in China?
 
 | Venue type | Accepted payments | Notes |
 |---|---|---|

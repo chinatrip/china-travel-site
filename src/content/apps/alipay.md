@@ -35,7 +35,7 @@ Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It c
 
 **Set up before you arrive** — SMS verification works on a foreign carrier; in-country setup is unreliable due to the GFW and a fresh Chinese SIM may not receive verification codes.
 
-## How Foreigners Set It Up
+## How do foreigners set up Alipay?
 
 1. Download the Alipay App (App Store / Google Play).
 2. Register with a **foreign mobile number**.
@@ -43,7 +43,7 @@ Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It c
 4. Under **Me → Bank Cards**, bind a Visa, Mastercard, JCB, Diners Club, or Discover card. AMEX is bindable but has limited merchant acceptance — use Visa or Mastercard as primary.
 5. You can now scan to pay anywhere Alipay is accepted.
 
-## Fees and Limits
+## What are Alipay's fees and limits for foreign cards?
 
 | Situation | Fee |
 |---|---|
@@ -53,7 +53,7 @@ Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It c
 
 PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000 annual. Check your current in-app limit after completing ID verification.
 
-## Tour Pass / Alipay+
+## What is Alipay Tour Pass, and do I need it?
 
 > **Update (2026):** The original Tour Pass mini-program has been deprecated (its official URL returns 404). As of 2024, Alipay allows foreigners to directly bind international credit/debit cards (Visa, Mastercard, JCB, Diners Club, Discover) to their main Alipay account. Transaction limits: ¥10,000 per transaction, ¥50,000 annual (unverified accounts) or ¥200,000 (passport-verified accounts). The 'Tour Pass' and 'TourCard' product names are no longer active — direct card binding is the current method.
 
@@ -65,7 +65,7 @@ Tour Pass charges a **5% fee** per transaction (vs 3% for direct card binding). 
 
 **Alipay+** allows payment via foreign e-wallets (GCash, Kakao Pay, GrabPay, TrueMoney, and others) — useful if you already use one of those apps.
 
-## Main Features
+## What can I do with Alipay?
 
 - **Scan to pay / receive**: restaurants, supermarkets, attractions
 - **Ride-hailing**: integrated DiDi entry

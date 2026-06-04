@@ -35,14 +35,14 @@ review:
 
 Meituan is one of China's largest super-apps, covering food delivery, hotel booking, restaurant discovery, bike-sharing, movie tickets, and more. Foreign visitors most commonly encounter it for food delivery and bike-sharing; hotel booking and restaurant reservations are possible but skew toward Chinese-language users.
 
-## Download
+## How do I download and set up Meituan?
 
 - **iOS**: App Store → search "Meituan" or "美团"
 - **Android**: Google Play → search "Meituan"
 
 **Prerequisite**: mobile payment (Alipay or WeChat Pay) must be set up before Meituan is usable — the app does not reliably support direct foreign card payment for all service categories.
 
-## Food Delivery
+## How does Meituan food delivery work?
 
 Meituan is one of China's two dominant food delivery platforms (the other is **淘宝闪购**, formerly 饿了么/Ele.me, owned by Alibaba — rebranded December 2025).
 
@@ -77,7 +77,7 @@ The Meituan app is predominantly Chinese. Key navigation:
 
 English restaurant names and cuisines (e.g., "Pizza", "Burger") are searchable in English.
 
-## Hotel Booking
+## Can I book hotels on Meituan?
 
 Meituan lists a large inventory of Chinese hotels, hostels, and guesthouses, often with competitive pricing for budget and mid-range properties.
 
@@ -85,7 +85,7 @@ Meituan lists a large inventory of Chinese hotels, hostels, and guesthouses, oft
 
 **Practical note for foreigners**: the interface is Chinese-language, and some smaller properties cannot process foreign passport check-in correctly. For most visitors, **Trip.com** or **Booking.com** are easier and fully English — use Meituan if you are comfortable navigating a Chinese UI and want the lower local price.
 
-## Meituan Bike (美团单车)
+## How do I use Meituan shared bikes?
 
 Meituan operates one of China's largest dockless bike-sharing fleets (yellow bikes).
 
@@ -105,7 +105,7 @@ Meituan includes restaurant reviews and, for some venues, table reservations. **
 
 Meituan sells cinema tickets, attraction tickets, and event passes at competitive prices. Useful if you can navigate the Chinese interface — otherwise attraction official websites or Trip.com cover the same inventory with English support.
 
-## Meituan vs 淘宝闪购 (formerly Ele.me)
+## Meituan or Taobao Flash Purchase: which is better?
 
 | Feature | Meituan | 淘宝闪购 (formerly 饿了么) |
 |---------|---------|--------|
@@ -117,7 +117,7 @@ Meituan sells cinema tickets, attraction tickets, and event passes at competitiv
 
 Both platforms work similarly for a foreign visitor — choose whichever has better restaurant selection near your location.
 
-## Limitations for Foreigners
+## What are Meituan's limitations for foreigners?
 
 - The app is **Chinese-language heavy** — most menus and UI labels are not translated.
 - **Mobile payment must be set up first** — Meituan does not accept foreign credit cards directly at the checkout.

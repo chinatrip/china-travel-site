@@ -35,14 +35,14 @@ review:
 
 DiDi is China's largest ride-hailing platform, covering the vast majority of cities. It's the default option for foreign visitors.
 
-## How Foreigners Use It
+## How do foreigners use DiDi?
 
 1. Download the DiDi App from the App Store or Google Play. **On Google Play, search for "DiDi — Ride Hailing App" (the China version) — the global DiDi app does not work properly in mainland China.** If in doubt, install the app before departure.
 2. Register with a **foreign mobile number** — English UI is available in Settings.
 3. Add a payment method: Alipay, WeChat Pay, or bind a Visa/Mastercard directly in-app (Me → Wallet → Add card). All three are reliably accepted in DiDi as of 2026.
 4. Enter your destination and request a ride. Drivers are matched automatically.
 
-## Vehicle Types
+## What DiDi vehicle types are available?
 
 | Type | Description |
 |------|-------------|
@@ -52,7 +52,7 @@ DiDi is China's largest ride-hailing platform, covering the vast majority of cit
 | Luxe (豪华车) | Business / executive |
 | Hitch (顺风车) | Carpool — note: operational restrictions apply (gender rules for solo female passengers on late-night trips) |
 
-## Bike-Sharing
+## Does DiDi offer bike-sharing?
 
 DiDi also operates bike-sharing — open the DiDi app and scan the QR code on any DiDi-branded bike to unlock it.
 
@@ -76,7 +76,7 @@ DiDi also operates bike-sharing — open the DiDi app and scan the QR code on an
 - **Safe vs street taxis:** DiDi is considered safer than street-hail taxis — rides are tracked, prices are fixed, driver identity is verified.
 - **Mini-program access:** In WeChat or Alipay, search "滴滴出行" to open DiDi without a separate app download. Useful if you have Alipay set up but limited phone storage.
 
-## Cost Comparison: DiDi vs Metro
+## Is DiDi or the metro cheaper in China?
 
 | Scenario (Beijing) | DiDi | Metro |
 |---|---|---|
@@ -86,7 +86,7 @@ DiDi also operates bike-sharing — open the DiDi app and scan the QR code on an
 
 **Recommendation:** Use metro as default for 90% of daytime travel. Reserve DiDi for airports, late nights, luggage situations, rainy days, and groups of 3+ (where split cost makes DiDi competitive).
 
-## Alternatives
+## What are the alternatives to DiDi in China?
 
 - **Amap (高德地图):** ride-hailing aggregator — calls multiple services at once including DiDi, useful for price comparison and as a fallback when DiDi is busy.
 - **Street taxi:** hail on the street; metered fare; cash always accepted.

@@ -36,7 +36,7 @@ WeChat (Tencent) is a super-app combining messaging, social networking, payments
 
 **Set up before you arrive** — WeChat registration from a foreign number often triggers a contact-vouching step that requires a qualifying contact to be available. This cannot be arranged reliably from inside China.
 
-## Setting Up WeChat Pay
+## How do I set up WeChat Pay as a foreigner?
 
 1. Download WeChat (App Store / Google Play).
 2. Register with a **foreign mobile number**. WeChat may require an existing contact to scan a QR code to verify your account (risk-control measure, high probability for foreign registrations). The contact must meet all four official conditions: registered 6+ months; WeChat Pay active 3+ months; has not vouched for another account in the past month; has not been banned in the past 6 months. There is no nationality or residency requirement. If no qualifying contact is available, WeChat in-app customer support can unlock the account but takes several days.
@@ -44,7 +44,7 @@ WeChat (Tencent) is a super-app combining messaging, social networking, payments
 4. **Me → Services → Wallet → Bank Cards → Add Bank Card.** Bind a Visa, Mastercard, or JCB. AMEX is bindable but has inconsistent merchant acceptance — use Visa or Mastercard as primary.
 5. Once verified, scan to pay or be scanned.
 
-## Fees and Limits
+## What are WeChat Pay's fees and limits?
 
 | Situation | Fee |
 |---|---|
@@ -54,13 +54,13 @@ WeChat (Tencent) is a super-app combining messaging, social networking, payments
 
 PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000 annual. Check your actual limit in-app: Wallet → Pay → Settings → Daily Limit.
 
-## Payment Features
+## What can I do with WeChat Pay?
 
 - **Scan to pay**: works at virtually every merchant
 - **Wallet top-up**: receive RMB transfers from Chinese contacts — credited to your WeChat Wallet and not subject to foreign-card limits
 - **Mini Programs**: in-app services for delivery, hotels, tickets, and more
 
-## Communication Features
+## What are WeChat's messaging features?
 
 - Text / voice / video calls (free over data)
 - Group chats and Moments (a social feed)
@@ -74,7 +74,7 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 - Some services and exclusive mini-programs require WeChat Pay specifically and do not accept Alipay (source: realchinaguide.com 2026).
 - **Regional restrictions**: Some regions block the foreign-card linking feature entirely. If stuck, use Alipay as primary and keep ¥200 cash for WeChat-only places.
 
-## WeChat Mini Programs
+## What are WeChat mini-programs?
 
 Mini Programs (小程序) are lightweight apps that run inside WeChat — no separate download or installation required. They behave like native apps but launch instantly from within WeChat's interface.
 
@@ -116,7 +116,7 @@ Mini Program interfaces are usually Chinese-language; however, major hotel chain
 
 (Source: realchinaguide.com 2026)
 
-## PayPal Integration (2026)
+## How does the WeChat Pay PayPal integration work?
 
 As of **May 27, 2026**, Tencent's cross-border platform **TenPay Global** and **PayPal World** are interoperable. PayPal users visiting China can pay at tens of millions of WeChat Pay merchants using their PayPal account. Initially open to US users; rollout to other countries TBC. Announced by Tencent Financial Technology VP 洪丹毅 at the 20th Shenzhen International Financial Expo. See [[wiki/concepts/mobile-payment.md]] for details and open questions on fees and scan flow.
 

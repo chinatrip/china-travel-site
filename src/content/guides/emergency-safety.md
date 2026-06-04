@@ -41,7 +41,7 @@ review:
 
 # Emergency and Safety for Foreign Visitors
 
-## Emergency Numbers
+## What are the emergency phone numbers in China?
 
 | Service | Number | Notes |
 |---|---|---|
@@ -57,7 +57,7 @@ review:
 - State your **location first** — give the address in Chinese if possible. Photograph your hotel's address card (in Chinese) before going out each day.
 - For 120 (ambulance), also see the Language and Hospital sections in [[wiki/concepts/health-medical.md]] for further detail on medical emergencies.
 
-## General Safety
+## How safe is China for tourists?
 
 China is one of the safer countries in the world for physical crime by global standards. Violent crime against tourists is rare.
 
@@ -73,7 +73,7 @@ China is one of the safer countries in the world for physical crime by global st
 
 **LGBTQ+ travelers:** same-sex relationships are not criminalised in China. Public displays of affection draw attention and are generally discouraged — this applies to same-sex and opposite-sex couples alike in Chinese cultural norms. Major cities (Beijing, Shanghai, Chengdu in particular) have established queer scenes and are more tolerant. Rural areas are more conservative. There is no legal framework for same-sex partnerships. Homophobic violence is rare. Exercise the same discretion you would in any socially conservative urban environment (source: intrepidtravel.com; wildchina.com).
 
-## Common Tourist Scams
+## What are the most common scams in China?
 
 China's scams are well-documented and almost entirely predictable. Knowing them in advance is the best defence.
 
@@ -128,7 +128,7 @@ China's scams are well-documented and almost entirely predictable. Knowing them 
 - **If you've paid and been defrauded:** call 110. Keep any receipts, messaging, or photos as evidence.
 - **Reduce cash exposure:** Keep most cash in your hotel safe; carry only ~100 yuan daily for incidentals. Use Alipay/WeChat Pay for all other transactions — digital payments eliminate counterfeit risk and make overcharging easier to dispute (source: realchinaguide.com).
 
-## Crime Statistics Context
+## How common is crime against tourists in China?
 
 Violent crime against tourists in China is virtually zero risk. China consistently ranks among the safest countries globally for physical crime against visitors. The primary risks are financial (scams, overcharging) rather than physical. City-by-city context (source: realchinaguide.com):
 
@@ -147,7 +147,7 @@ Violent crime against tourists in China is virtually zero risk. China consistent
 
 Petty crime (pickpocketing) is concentrated in crowded tourist markets and transit hubs — not residential or business districts.
 
-## Night Safety
+## Is China safe at night?
 
 Walking at night in Chinese cities is generally safe for foreign travelers. Key points:
 
@@ -158,7 +158,7 @@ Walking at night in Chinese cities is generally safe for foreign travelers. Key 
 
 (Source: realchinaguide.com; chinasurvivalkit.com)
 
-## Surveillance and Police Presence
+## How much surveillance and police presence is there in China?
 
 China has one of the world's most extensive public surveillance networks. Practical implications for tourists:
 
@@ -170,7 +170,7 @@ China has one of the world's most extensive public surveillance networks. Practi
 
 (Source: realchinaguide.com; chinasurvivalkit.com; UK FCDO)
 
-## Lost or Stolen Passport
+## What do I do if my passport is lost or stolen in China?
 
 Act immediately — do not wait.
 
@@ -203,7 +203,7 @@ Most major countries have consulates in Shanghai, Guangzhou, Chengdu, and other 
 
 Once you have a replacement travel document, apply for a new Chinese visa (or visa-free entry endorsement, if applicable) at the local PSB Exit and Entry Administration office before your authorized stay expires. This step is needed only if you plan to remain in China — if departing immediately on the ETD, coordinate with the PSB.
 
-## Natural Hazards
+## What natural hazards should I prepare for in China?
 
 ### Typhoons
 
@@ -239,7 +239,7 @@ N95 and KN95 masks are widely available in Chinese pharmacies (大药房) and co
 
 China's national average PM2.5 for 2025 was 29.6 µg/m³ (AQI ~87, "Moderate") — but individual city readings vary widely from this average, and winter episodes in northern cities regularly push AQI above 150 (source: IQAir; China Research Center).
 
-## Travel Insurance
+## Do I need travel insurance for China?
 
 Travel insurance is **strongly recommended** for China. Chinese hospitals — including public hospitals — require upfront payment before treatment is provided. This applies to ambulance services too, which in some documented cases have required cash payment before transporting a patient. Without insurance, a serious injury or illness requiring medical evacuation can cost **USD $250,000 or more** (source: pacificprime.com).
 

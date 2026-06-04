@@ -31,7 +31,7 @@ review:
 
 # Health and Medical Care for Foreign Visitors
 
-## Emergency Numbers
+## What are the medical emergency numbers in China?
 
 | Service | Number | Notes |
 |---|---|---|
@@ -42,7 +42,7 @@ review:
 
 **Language issue:** 120 operators and ambulance crews typically speak Chinese only. Have a Chinese-speaking person call on your behalf, or use a translation app. Keep your hotel address written in Chinese characters for emergencies.
 
-## Hospital Types
+## What types of hospitals can foreigners use in China?
 
 | Type | Cost | Language | Where |
 |---|---|---|---|
@@ -66,7 +66,7 @@ review:
 
 Other cities: search "[city] 国际医疗" for the nearest option with international services.
 
-## Hospital Admission Process
+## How does hospital admission work in China?
 
 1. **Registration (挂号):** at reception desk, hospital app, or WeChat mini-program. Pay registration fee (¥5–50 public; higher private). Bring your passport.
 2. **Consultation:** see the doctor. Arrive early for non-emergency visits — queues form quickly.
@@ -75,7 +75,7 @@ Other cities: search "[city] 国际医疗" for the nearest option with internati
 5. **Hospitalization deposit:** if admitted, pay a deposit (¥3,000–7,000 at public hospitals; higher at private). Deducted during stay, refunded on discharge.
 6. **Medical report:** request a discharge summary (出院小结). Insurance claims may require a certified translation.
 
-## Payment
+## How do I pay for medical care in China?
 
 Most public hospitals do **not** accept international credit cards. Bring:
 - Alipay or WeChat Pay (set up before arrival — see [[wiki/concepts/mobile-payment.md]])
@@ -84,7 +84,7 @@ Most public hospitals do **not** accept international credit cards. Bring:
 
 Keep all receipts for insurance reimbursement.
 
-## Travel Insurance
+## Do I need travel insurance for medical care in China?
 
 Travel insurance is essential. Medical evacuation / repatriation is extremely expensive without it. Look for:
 - Medical treatment: at least USD $100,000 cover
@@ -93,7 +93,7 @@ Travel insurance is essential. Medical evacuation / repatriation is extremely ex
 
 Some international hospitals have direct billing agreements with major insurers (AXA, Cigna, Allianz) — confirm before your visit to avoid paying out of pocket. Embassies cannot pay medical bills or arrange evacuation.
 
-## Pre-Travel Health Preparation
+## How should I prepare my health before traveling to China?
 
 Consult a travel medicine clinic or your GP at least 4–6 weeks before departure. Commonly recommended vaccinations for China visitors include:
 
@@ -104,7 +104,7 @@ Consult a travel medicine clinic or your GP at least 4–6 weeks before departur
 
 Check your government's travel health advisory for the latest China-specific recommendations (e.g. UK FCDO fitfortravel.nhs.uk, US CDC wwwnc.cdc.gov/travel/destinations/traveler/none/china).
 
-## Medicines and Prescriptions
+## Can I bring medicines or buy prescriptions in China?
 
 - Bring a full supply of any prescription medication for your stay, plus extra for delays.
 - Bring a doctor's note listing all medications, dosages, and diagnoses (in English; Chinese translation helpful).
@@ -112,7 +112,7 @@ Check your government's travel health advisory for the latest China-specific rec
 - Common Western OTC brands may not be available; local equivalents exist but packaging is in Chinese.
 - Watson's and established pharmacy chains (大药房) in major cities carry some imported products.
 
-## Animal Bites and Rabies
+## What should I do about animal bites or rabies risk in China?
 
 Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) requires:
 1. Immediate wound cleaning with soap and water for 15 minutes
@@ -121,7 +121,7 @@ Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) r
 
 **Do not wait.** Rabies is fatal once symptomatic. Find a vaccination center via 120 or any hospital emergency desk.
 
-## Common Health Considerations
+## What common health issues affect travelers in China?
 
 **Air quality:** Beijing, Shanghai, and industrial cities have periods of high PM2.5. Check AQI apps — IQAir and Air Matters work without VPN. Bring N95 masks for high-pollution days.
 
@@ -131,7 +131,7 @@ Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) r
 
 **Altitude:** see the dedicated section below.
 
-## Altitude Sickness
+## How do I avoid altitude sickness in China?
 
 If travelling to Tibet (Lhasa: 3,650 m), Qinghai, or high-altitude destinations in Yunnan (Shangri-La: 3,200 m) or Sichuan, altitude sickness is a real risk. For full detail on the Tibet permit process, see [[wiki/concepts/tibet-permits.md]].
 

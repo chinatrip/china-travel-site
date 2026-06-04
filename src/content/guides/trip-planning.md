@@ -42,7 +42,7 @@ review:
 
 # Trip Planning — Timing, Budget, Length, and Independent Travel
 
-## When to Avoid: Major Holiday Periods
+## When should I avoid traveling in China?
 
 Three national holidays cause extreme domestic travel surges that directly affect foreign tourists — transport sells out, hotel prices spike, and attractions hit daily capacity limits.
 
@@ -93,7 +93,7 @@ Three national holidays cause extreme domestic travel surges that directly affec
 - Consider Tier 2/3 cities which handle domestic overflow better than Beijing or Shanghai
 - Budget an extra 20–30% time throughout the itinerary — queues add time at attractions, transit points, and restaurants
 
-## Daily Budget by City Tier (2026)
+## What is a realistic daily budget for China?
 
 | City Tier | Examples | Budget | Mid-range | Comfort/Luxury |
 |---|---|---|---|---|
@@ -123,7 +123,7 @@ China is mid-tier in Asia for travel costs: cheaper than Japan, South Korea, and
 | Local restaurant meal with drink | ¥50–120/person |
 | International restaurant in Tier-1 city | ¥200–500+/person |
 
-## How Long for a First Trip
+## How many days do I need for a first trip to China?
 
 | Duration | What's Realistic |
 |---|---|
@@ -141,7 +141,7 @@ The **240-hour visa-free transit policy** (10 days for 55 qualifying nationaliti
 <!-- Unverified: from summary, needs citation check -->
 A sample mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. Detailed day-by-day itineraries with actual costs are available in the source summaries (see `wiki/summaries/realchinaguide-14day-itinerary-2026.md` and `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`). (Source: realchinaguide.com 2026.)
 
-## Independent vs. Guided Travel
+## Should I travel independently or with a guide in China?
 
 Most of mainland China is fully open to independent foreign travel — no guide is required.
 
@@ -174,7 +174,7 @@ Xinjiang is technically open to foreign tourists without a special permit (unlik
 - Some travel insurance policies explicitly exclude Xinjiang — verify before purchasing
 - Extensive camera and facial recognition networks are deployed; avoid photographing police, military, or checkpoints
 
-## Pre-Trip Preparation Timeline (30/7/1 Day Countdown)
+## What should I prepare before a China trip?
 
 <!-- Unverified: from summary, needs citation check -->
 A structured countdown approach helps ensure nothing is missed before departure:

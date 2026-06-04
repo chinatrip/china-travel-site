@@ -24,7 +24,7 @@ review:
   notes: "Single-source (realchinaguide.com). Mini-program names and flows verified against general knowledge. City metro app names cross-checked with transportation.md."
 ---
 
-## What Are Mini-Programs
+## What are mini-programs in China?
 
 Mini-programs are lightweight applications that run inside WeChat and Alipay. They do not require separate downloads from the App Store or Google Play. For foreigners, they solve the biggest friction point in China: accessing local services without a Chinese phone number or bank account.
 
@@ -35,7 +35,7 @@ Mini-programs are lightweight applications that run inside WeChat and Alipay. Th
 - No deposit required for services like bike-sharing
 - Built-in translation (tap ··· → Translate) supports 18 languages; available since late 2024
 
-## How to Access
+## How do I open a mini-program?
 
 1. Open WeChat or Alipay
 2. Use the search bar to find the mini-program by name (Chinese characters work best; copy-paste recommended)
@@ -44,7 +44,7 @@ Mini-programs are lightweight applications that run inside WeChat and Alipay. Th
 
 Pin frequently used mini-programs for instant access from the home screen.
 
-## Essential Mini-Programs for Travelers
+## Which mini-programs are essential for travelers in China?
 
 ### Transport: DiDi (滴滴出行)
 
@@ -97,7 +97,7 @@ Search '美团外卖' in WeChat or Alipay. Allow location permission to see near
 
 Alibaba-owned, integrates with Alipay. Search '淘宝闪购' or '饿了么' (old name still works) in Alipay or look for the icon on the homepage. Rebranded from "饿了么" in December 2025. Works identically to Meituan once set up. See [[wiki/entities/eleme.md]].
 
-## Troubleshooting
+## Why isn't a mini-program working?
 
 | Problem | Solution |
 |---------|----------|
@@ -106,6 +106,6 @@ Alibaba-owned, integrates with Alipay. Search '淘宝闪购' or '饿了么' (old
 | Interface in Chinese only | Tap ··· → Translate (翻译); update app if option missing |
 | No internet for QR codes | Mini-programs cache briefly but need connection for QR and payments; get an [[wiki/concepts/sim-card.md]] |
 
-## Connectivity Requirement
+## Do mini-programs need a VPN or Chinese number?
 
 Mini-programs need internet to generate QR codes and process payments. Get an eSIM or local SIM before relying on them. See [[wiki/concepts/sim-card.md]] for options.
