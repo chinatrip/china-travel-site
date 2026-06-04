@@ -1,5 +1,14 @@
 ---
 description: "Medical care in China for foreign visitors: international hospitals, paying with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at high-elevation destinations. Updated May 2026."
+faqs:
+  - q: "Where do foreigners get medical care in China?"
+    a: "Major cities have international hospitals and foreigner clinics with English-speaking staff (e.g., United Family, Raffles). Public hospitals are cheaper but largely Chinese-only; bring a translation app and your passport."
+  - q: "How do I pay for a hospital visit in China?"
+    a: "Hospitals generally expect payment up front via Alipay, WeChat Pay or cash. Set up mobile payment before arrival and keep your travel-insurance details handy for reimbursement."
+  - q: "Do I need travel insurance for China?"
+    a: "Strongly recommended. It covers medical emergencies and evacuation, which can be costly — especially for high-altitude or remote-area trips. Confirm the policy explicitly covers China."
+  - q: "Can I buy medicine over the counter in China?"
+    a: "Pharmacies (yaodian) are widespread and stock common remedies, but staff may not speak English and brand names differ. Bring essential prescriptions, and show the generic drug name via a translation app."
 category: guide
 title: Health and Medical Care for Foreign Visitors
 date: 2026-05-04

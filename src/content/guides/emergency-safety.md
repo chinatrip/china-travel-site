@@ -1,5 +1,14 @@
 ---
 description: "Staying safe in China as a foreigner: emergency numbers (110 police, 120 ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English help hotline. Updated June 2026."
+faqs:
+  - q: "What are the emergency numbers in China?"
+    a: "Police 110, ambulance 120, fire 119. For English-language help, the 12345 government service hotline can assist in many cities."
+  - q: "Is China safe for tourists?"
+    a: "Violent crime against tourists is very rare and most travelers, including solo female travelers, feel safe. The main risks are scams and petty theft in crowded tourist areas — take normal precautions."
+  - q: "What are the most common scams in China?"
+    a: "The classic ones are the tea-house / bar 'invitation' scam (a friendly stranger runs up a huge bill), the art-student gallery scam, and fake taxis. If a stranger picks the venue and drinks heavily, be cautious — and you can report scams via 110 or the 12345 hotline."
+  - q: "What should I do if I lose my passport in China?"
+    a: "Report it to the local police for a loss report, contact your embassy or consulate for an emergency travel document, and apply for a replacement visa stamp at the local exit-entry administration."
 category: guide
 title: Emergency and Safety for Foreign Visitors
 date: 2026-06-01

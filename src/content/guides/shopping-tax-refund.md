@@ -1,5 +1,14 @@
 ---
 description: "China's tourist VAT refund: minimum ¥200 per store per day, the new instant in-store refund, eligible shops, and how to claim at the airport on departure. Updated May 2026."
+faqs:
+  - q: "Can foreign tourists get a VAT refund in China?"
+    a: "Yes. Overseas visitors can claim a refund on eligible goods bought at tax-free (tuishui) stores, with a minimum spend of ¥200 per store per day, when taking the items out of China within 90 days."
+  - q: "How do I claim the tax refund?"
+    a: "Ask the store for a tax-refund form and keep the receipt, then process the refund at the airport customs/refund counter on departure. China has also rolled out an instant in-store refund at participating shops."
+  - q: "How much is the China tax refund?"
+    a: "The refund is roughly 11% of the purchase price after the service fee (from the 13% VAT). It can be paid to a card or via mobile payment."
+  - q: "What can't I claim a refund on?"
+    a: "Consumables already used, purchases below the ¥200 threshold, and goods not carried out with you generally don't qualify. Keep items unused and packed for possible customs inspection."
 category: guide
 title: Shopping and Tax Refund for Foreign Visitors
 date: 2026-05-07

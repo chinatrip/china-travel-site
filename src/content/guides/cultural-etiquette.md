@@ -1,5 +1,14 @@
 ---
 description: "Practical etiquette for foreign visitors to China: tipping is not expected, queuing, dining customs, gift-giving, and avoiding common cultural faux pas. Updated May 2026."
+faqs:
+  - q: "Do I need to tip in China?"
+    a: "No. Tipping is not customary in China and isn't expected at restaurants, taxis or hotels. Leaving nothing is completely normal."
+  - q: "What are common cultural faux pas to avoid in China?"
+    a: "Avoid sticking chopsticks upright in rice, be ready for direct queuing, don't expect home personal-space norms, and accept cards or gifts with both hands as a sign of respect."
+  - q: "Is bargaining expected in China?"
+    a: "Bargain at tourist markets and small independent stalls, but not in malls, chain stores, supermarkets or restaurants, which have fixed prices."
+  - q: "Do people speak English in China?"
+    a: "Outside major hotels and tourist sites English is limited, especially beyond Beijing and Shanghai. A camera-translation app and your hotel's name saved in Chinese characters go a long way."
 category: guide
 title: Cultural Etiquette for Foreign Visitors
 date: 2026-05-13

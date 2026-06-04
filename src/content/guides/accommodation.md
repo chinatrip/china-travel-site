@@ -1,5 +1,14 @@
 ---
 description: "Which hotels in China accept foreign passports, how to book foreigner-eligible stays on Trip.com/Agoda, pay with foreign cards, and handle the mandatory police registration. Updated May 2026."
+faqs:
+  - q: "Why do some hotels in China refuse foreign guests?"
+    a: "Some smaller or budget hotels aren't set up for the mandatory police registration of foreign guests, so they decline rather than risk doing it wrong. Refusing foreign guests isn't actually permitted, but it still happens — booking 3-star-and-above or via international platforms avoids most issues."
+  - q: "How do I find hotels that accept foreigners?"
+    a: "Book through international platforms like Trip.com, Agoda or Booking.com, which list properties licensed to receive foreign guests and accept foreign cards. For direct bookings, call ahead to confirm they can register foreign passports."
+  - q: "What do I need at hotel check-in in China?"
+    a: "Your passport — the hotel photocopies it and reports your stay to the local police. Carry a spare photocopy, and expect to pay a deposit by card or mobile pay."
+  - q: "Can I use Airbnb or short-term rentals in China?"
+    a: "They exist but carry the highest registration risk: for non-hotel stays you must register at the local police station within 24 hours of arrival. Confirm the host can help, or choose a hotel to simplify registration."
 category: guide
 title: Accommodation for Foreign Visitors in China
 date: 2026-05-04

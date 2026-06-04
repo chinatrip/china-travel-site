@@ -1,5 +1,14 @@
 ---
 description: "Getting around China as a foreigner: high-speed rail via 12306, metro QR-code payment, DiDi ride-hailing, taxis, and using Amap in English. Updated April 2026."
+faqs:
+  - q: "How do foreigners buy high-speed train tickets in China?"
+    a: "Register on the 12306 app with your passport (verification can take 1-2 days), or book via Trip.com. Tickets are linked to your passport, which you scan to enter the station and board."
+  - q: "How do I pay for the metro in China?"
+    a: "Most big-city metros let you scan an Alipay or WeChat metro QR code at the turnstile, or buy single-journey tickets from machines that usually have an English option."
+  - q: "What is the best ride-hailing app in China for foreigners?"
+    a: "DiDi (like Uber) — sign up with a foreign number or use the DiDi mini-program inside Alipay, pay with your bound card, and enter destinations without typing Chinese."
+  - q: "How do I navigate China without Google Maps?"
+    a: "Google Maps is unreliable behind the firewall. Use Amap (Gaode), which has an English mode (Amap Global), offline maps, transit routing and built-in ride-hailing."
 category: guide
 title: Transportation in China
 date: 2026-04-30

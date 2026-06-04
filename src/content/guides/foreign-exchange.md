@@ -1,5 +1,14 @@
 ---
 description: "Cash and currency in China for foreigners: ATM withdrawals, where foreign cards work, how much cash to carry, and the RMB 20,000 / USD 5,000 customs cash limit. Updated May 2026."
+faqs:
+  - q: "Should I bring cash or use ATMs in China?"
+    a: "Mobile pay covers most spending, but keep some cash for small vendors. Withdrawing RMB from a Chinese ATM (Bank of China, ICBC) usually beats exchanging cash at home — check your bank's foreign-ATM fees first."
+  - q: "How much cash can I bring into China?"
+    a: "You can carry up to RMB 20,000, or the equivalent of USD 5,000 in foreign currency, without declaring it at customs; above that you must declare."
+  - q: "Do shops in China accept foreign Visa or Mastercard?"
+    a: "Direct foreign-card acceptance is limited mostly to international hotels, large department stores and some chains. For everyday spending, bind your card to Alipay or WeChat Pay instead."
+  - q: "Where can I exchange money in China?"
+    a: "Bank of China branches and airport counters exchange major currencies — bring your passport. ATM withdrawals are often more convenient and competitive than counter exchange."
 category: guide
 title: Foreign Exchange and Cash in China
 date: 2026-05-04

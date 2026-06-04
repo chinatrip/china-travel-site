@@ -1,5 +1,14 @@
 ---
 description: "WeChat is essential in China for messaging, payments, and mini-programs — how foreigners set up WeChat Pay, bind a foreign card, and the 2026 PayPal integration for US users. Updated May 2026."
+faqs:
+  - q: "Do I need WeChat to travel in China?"
+    a: "It's highly recommended. WeChat is used for messaging, payments and countless mini-programs, and many businesses and contacts expect it. Set it up before arrival."
+  - q: "Can foreigners use WeChat Pay with a foreign card?"
+    a: "Yes — bind a foreign Visa or Mastercard. Some features and mini-programs still expect a Chinese phone number, but basic payments work with a foreign card."
+  - q: "What is the WeChat Pay PayPal integration?"
+    a: "A 2026 integration lets eligible US users fund WeChat Pay via PayPal, easing setup for travelers without a usable card binding. Availability and terms can change, so verify before relying on it."
+  - q: "Alipay or WeChat Pay — which should I set up?"
+    a: "Set up both if you can. Alipay tends to be easier for foreigners and has English support; WeChat Pay is essential for messaging and merchants who only take WeChat."
 category: app
 title: WeChat / WeChat Pay
 date: 2026-04-30

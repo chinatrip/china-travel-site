@@ -1,5 +1,14 @@
 ---
 description: "Amap (Gaode) is China's top navigation app and works where Google Maps does not — how to switch it to English, offline maps, transit routing, and built-in ride-hailing. Updated May 2026."
+faqs:
+  - q: "Does Amap work in English?"
+    a: "Yes — Amap has an English mode, and there's an 'Amap Global' version aimed at foreign visitors. It's the most reliable navigation in China since Google Maps is blocked."
+  - q: "Do I need a VPN or Chinese number to use Amap?"
+    a: "No VPN is needed — Amap is a Chinese service that works normally. Core navigation works without a Chinese phone number, though some features like in-app ride-hailing payment work best with a linked wallet."
+  - q: "Can I use Amap offline?"
+    a: "Yes — download offline city maps in advance for navigation without data, useful as a backup and to save eSIM data."
+  - q: "How do I search places in Amap as a foreigner?"
+    a: "Search in English for major landmarks, or paste Chinese names/addresses (e.g., from your hotel booking). Saving your hotel as a destination in Chinese helps drivers and navigation."
 category: app
 title: Amap
 date: 2026-06-01

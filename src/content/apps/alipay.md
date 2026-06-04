@@ -1,5 +1,14 @@
 ---
 description: "Set up Alipay as a foreigner: bind a Visa/Mastercard with no Chinese bank account, passport verification, Tour Pass vs direct binding, fees, and fixing payment failures. Updated May 2026."
+faqs:
+  - q: "Can I use Alipay without a Chinese bank account?"
+    a: "Yes. Bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card directly since the April 2024 PBOC policy — no Chinese bank account needed."
+  - q: "Do I need to verify my passport on Alipay?"
+    a: "For larger or cumulative spending Alipay asks for passport verification; small spending often works right after binding a card. Complete verification before your trip to avoid limits."
+  - q: "Why is my Alipay payment failing?"
+    a: "Common causes: paying to a personal QR code (foreign cards can only pay merchant codes), having a VPN switched on, or hitting a per-transaction limit. Turn off the VPN and ask for a merchant code."
+  - q: "What is Alipay Tour Pass and do I need it?"
+    a: "Tour Pass is a prepaid mini-wallet for short visits, but since direct foreign-card binding launched it's usually unnecessary and can carry fees. Most visitors just bind a card directly."
 category: app
 title: Alipay
 date: 2026-04-30
