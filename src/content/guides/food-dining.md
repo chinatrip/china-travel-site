@@ -1,4 +1,5 @@
 ---
+description: "How to order food in China without speaking Chinese: photo menus, camera translation, allergy phrases, delivery apps (Meituan, Eleme), and regional cuisine basics. Updated May 2026."
 category: guide
 title: Food and Dining in China for Foreign Visitors
 date: 2026-05-04

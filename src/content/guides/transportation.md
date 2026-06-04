@@ -1,4 +1,5 @@
 ---
+description: "Getting around China as a foreigner: high-speed rail via 12306, metro QR-code payment, DiDi ride-hailing, taxis, and using Amap in English. Updated April 2026."
 category: guide
 title: Transportation in China
 date: 2026-04-30

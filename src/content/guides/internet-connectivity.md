@@ -1,4 +1,5 @@
 ---
+description: "What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs still work after the 2026 crackdown, and why a foreign eSIM bypasses it with no VPN. Updated May 2026."
 category: guide
 title: Internet Access and the Great Firewall for Foreign Visitors
 date: 2026-05-04

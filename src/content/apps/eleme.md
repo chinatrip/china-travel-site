@@ -1,4 +1,5 @@
 ---
+description: "Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app — the ordering flow for foreigners, in-app translation, Alipay payment, and address tips. Updated June 2026."
 category: app
 title: "Taobao Flash Purchase (淘宝闪购, formerly Ele.me / 饿了么)"
 date: 2026-06-01

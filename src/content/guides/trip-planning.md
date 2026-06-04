@@ -1,4 +1,5 @@
 ---
+description: "Planning a China trip: best seasons, how many days, what to pre-book versus buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3 cities. Updated May 2026."
 category: guide
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
 date: 2026-05-13

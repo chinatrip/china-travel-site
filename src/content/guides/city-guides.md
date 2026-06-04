@@ -1,4 +1,5 @@
 ---
+description: "Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin and more — top sights, how many days to spend, best seasons, and getting around. Updated June 2026."
 category: guide
 title: "City Guides for Foreign Visitors"
 date: 2026-06-01

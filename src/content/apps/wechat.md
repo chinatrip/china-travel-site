@@ -1,4 +1,5 @@
 ---
+description: "WeChat is essential in China for messaging, payments, and mini-programs — how foreigners set up WeChat Pay, bind a foreign card, and the 2026 PayPal integration for US users. Updated May 2026."
 category: app
 title: WeChat / WeChat Pay
 date: 2026-04-30

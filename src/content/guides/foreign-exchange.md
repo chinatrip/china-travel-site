@@ -1,4 +1,5 @@
 ---
+description: "Cash and currency in China for foreigners: ATM withdrawals, where foreign cards work, how much cash to carry, and the RMB 20,000 / USD 5,000 customs cash limit. Updated May 2026."
 category: guide
 title: Foreign Exchange and Cash in China
 date: 2026-05-04

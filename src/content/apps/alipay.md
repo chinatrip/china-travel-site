@@ -1,4 +1,5 @@
 ---
+description: "Set up Alipay as a foreigner: bind a Visa/Mastercard with no Chinese bank account, passport verification, Tour Pass vs direct binding, fees, and fixing payment failures. Updated May 2026."
 category: app
 title: Alipay
 date: 2026-04-30

@@ -1,4 +1,5 @@
 ---
+description: "Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed payments. Updated May 2026."
 category: guide
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
 date: 2026-05-02

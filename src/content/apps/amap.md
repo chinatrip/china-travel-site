@@ -1,4 +1,5 @@
 ---
+description: "Amap (Gaode) is China's top navigation app and works where Google Maps does not — how to switch it to English, offline maps, transit routing, and built-in ride-hailing. Updated May 2026."
 category: app
 title: Amap
 date: 2026-06-01

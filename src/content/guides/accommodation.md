@@ -1,4 +1,5 @@
 ---
+description: "Which hotels in China accept foreign passports, how to book foreigner-eligible stays on Trip.com/Agoda, pay with foreign cards, and handle the mandatory police registration. Updated May 2026."
 category: guide
 title: Accommodation for Foreign Visitors in China
 date: 2026-05-04

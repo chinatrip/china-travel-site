@@ -1,4 +1,5 @@
 ---
+description: "China visa and entry options in 2026: 30-day visa-free for 59 countries, 240-hour transit-free at 65 ports for US citizens, the tourist L visa, and entry requirements. Updated May 2026."
 category: guide
 title: China Visa & Entry Options for Tourists and Visitors
 date: 2026-04-30

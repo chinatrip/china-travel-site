@@ -1,4 +1,5 @@
 ---
+description: "How foreigners use WeChat and Alipay mini-programs for ride-hailing, food, metro and tickets — and which ones still require a Chinese phone number. Updated June 2026."
 category: guide
 title: "Mini-Programs (WeChat & Alipay)"
 date: 2026-06-01

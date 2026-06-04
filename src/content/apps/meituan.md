@@ -1,4 +1,5 @@
 ---
+description: "Meituan is China's super-app for food delivery, hotels, and bike rental, often 20-30% cheaper than international OTAs — how foreigners register, pay, and order. Updated May 2026."
 category: app
 title: Meituan
 date: 2026-05-06

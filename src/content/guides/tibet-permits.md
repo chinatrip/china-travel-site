@@ -1,4 +1,5 @@
 ---
+description: "Foreigners need a Tibet Travel Permit (not just a China visa), arranged through a registered tour — how to apply, costs, closed periods, and altitude-sickness prep for Lhasa. Updated May 2026."
 category: guide
 title: Tibet Travel Permits and Altitude Health
 date: 2026-05-13

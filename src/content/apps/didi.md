@@ -1,4 +1,5 @@
 ---
+description: "DiDi is China's ride-hailing app like Uber: sign up with a foreign number, pay via Alipay/WeChat, enter destinations without Chinese, and run it inside Alipay with no separate app. Updated May 2026."
 category: app
 title: DiDi
 date: 2026-04-30

@@ -1,4 +1,5 @@
 ---
+description: "eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi) bypass the firewall with no VPN, data needs, activation timing, and when you need a +86 number. Updated May 2026."
 category: guide
 title: SIM Card and eSIM in China for Foreign Visitors
 date: 2026-05-02

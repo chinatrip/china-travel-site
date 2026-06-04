@@ -1,4 +1,5 @@
 ---
+description: "Practical etiquette for foreign visitors to China: tipping is not expected, queuing, dining customs, gift-giving, and avoiding common cultural faux pas. Updated May 2026."
 category: guide
 title: Cultural Etiquette for Foreign Visitors
 date: 2026-05-13

@@ -1,4 +1,5 @@
 ---
+description: "Foreigners must register their address within 24 hours of arrival — done by the hotel, or at a police station for private stays. Online pilots and required documents. Updated April 2026."
 category: guide
 title: Residence Registration
 date: 2026-04-30

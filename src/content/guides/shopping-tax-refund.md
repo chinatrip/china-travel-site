@@ -1,4 +1,5 @@
 ---
+description: "China's tourist VAT refund: minimum ¥200 per store per day, the new instant in-store refund, eligible shops, and how to claim at the airport on departure. Updated May 2026."
 category: guide
 title: Shopping and Tax Refund for Foreign Visitors
 date: 2026-05-07
