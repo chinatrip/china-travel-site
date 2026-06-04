@@ -1,5 +1,14 @@
 ---
 description: "What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs still work after the 2026 crackdown, and why a foreign eSIM bypasses it with no VPN. Updated May 2026."
+faqs:
+  - q: "Do I need a VPN to access Google, WhatsApp and Instagram in China?"
+    a: "Only if you connect through a Chinese SIM or local Wi-Fi. A foreign eSIM bypasses the Great Firewall entirely, so blocked services work without a VPN. With a Chinese SIM you do need a working VPN."
+  - q: "Which VPNs still work in China in 2026?"
+    a: "VPN reliability is a moving target — a service that works one week can be blocked the next, and the 2026 crackdown disrupted many (including LetsVPN). Install and test two VPNs before you fly; newer protocols like Xray Reality and Trojan currently survive better than older Shadowsocks variants."
+  - q: "Can I download a VPN once I'm already in China?"
+    a: "It's very hard — app stores and VPN websites are largely blocked from inside China. Download and test your VPN before arrival. If your only VPN stops working, options include a different-region App Store account or having someone send you the installer file."
+  - q: "Is it legal for tourists to use a VPN in China?"
+    a: "For individuals it sits in a legal gray area, and there are no known enforcement cases against tourists for personal use. Use a reputable provider and avoid sending sensitive data over untrusted services."
 category: guide
 title: Internet Access and the Great Firewall for Foreign Visitors
 date: 2026-05-04

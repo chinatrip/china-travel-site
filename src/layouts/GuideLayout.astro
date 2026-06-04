@@ -10,9 +10,10 @@ interface Props {
   verifiedBy?: string;
   volatility?: string;
   category?: string;
+  faqs?: { q: string; a: string }[];
 }
 
-const { title, description, date, lastVerified, verifiedBy, volatility, category } = Astro.props;
+const { title, description, date, lastVerified, verifiedBy, volatility, category, faqs } = Astro.props;
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -50,6 +51,19 @@ const breadcrumbSchema = {
     { "@type": "ListItem", "position": 3, "name": title },
   ],
 };
+
+const hasFaqs = Array.isArray(faqs) && faqs.length > 0;
+const faqSchema = hasFaqs
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": faqs!.map((f) => ({
+        "@type": "Question",
+        "name": f.q,
+        "acceptedAnswer": { "@type": "Answer", "text": f.a },
+      })),
+    }
+  : null;
 ---
 
 <BaseLayout title={title} description={description}>
@@ -83,6 +97,7 @@ const breadcrumbSchema = {
     <!-- Structured Data -->
     <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
     <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    {faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 
     <!-- Content -->
     <div class="prose prose-gray prose-lg max-w-none
@@ -99,5 +114,19 @@ const breadcrumbSchema = {
       prose-li:marker:text-primary">
       <slot />
     </div>
+
+    {hasFaqs && (
+      <section class="mt-12 pt-8 border-t border-gray-200" aria-labelledby="faq-heading">
+        <h2 id="faq-heading" class="text-2xl font-bold text-secondary mb-6">Frequently Asked Questions</h2>
+        <dl class="space-y-6">
+          {faqs!.map((f) => (
+            <div>
+              <dt class="font-semibold text-gray-900">{f.q}</dt>
+              <dd class="mt-1 text-gray-700 leading-relaxed">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+    )}
   </article>
 </BaseLayout>

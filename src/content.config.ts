@@ -9,6 +9,7 @@ const dateOrString = z.union([z.coerce.string(), z.date().transform((d) => d.toI
 const contentSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
+  faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   date: dateOrString.optional(),
   last_verified: dateOrString.optional(),
   verified_against: z.array(z.string()).optional(),

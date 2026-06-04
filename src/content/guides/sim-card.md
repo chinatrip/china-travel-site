@@ -1,5 +1,14 @@
 ---
 description: "eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi) bypass the firewall with no VPN, data needs, activation timing, and when you need a +86 number. Updated May 2026."
+faqs:
+  - q: "Do I need a VPN if I use a foreign eSIM in China?"
+    a: "No. A foreign or Hong Kong eSIM routes data through an overseas gateway, so it bypasses the Great Firewall and Google, WhatsApp and Instagram work without a VPN. You only need a VPN on Chinese hotel Wi-Fi."
+  - q: "Which eSIMs work best for China?"
+    a: "Airalo, Holafly, Ubigi and Nomad are popular and bypass the firewall. Pick data by usage — roughly 10-20 GB covers three weeks of normal use. Note that the always-on VPN built into some eSIMs can occasionally interfere with Alipay."
+  - q: "Can I top up an eSIM after I have already arrived in mainland China?"
+    a: "It depends on the provider — some allow in-app top-ups from inside China, others do not. Buy enough data up front and check your provider's top-up policy before you travel."
+  - q: "Do I need a Chinese phone number?"
+    a: "Most travelers don't — a foreign eSIM covers data. You only need a +86 number for apps that gate sign-up behind it (such as Meituan or some bike-share), and DiDi works without one via the Alipay mini-program."
 category: guide
 title: SIM Card and eSIM in China for Foreign Visitors
 date: 2026-05-02
