@@ -57,6 +57,25 @@ function main() {
       }
     }
   }
+  // Also scan text endpoints (e.g. llms.txt) for absolute site URLs missing a slash.
+  const absRe = /https:\/\/chinaguide\.ai(\/[^\s)\]"'<>]*)/g;
+  for (const txt of ['llms.txt']) {
+    let content;
+    try {
+      content = readFileSync(join(DIST, txt), 'utf8');
+    } catch {
+      continue;
+    }
+    let m;
+    while ((m = absRe.exec(content)) !== null) {
+      if (isOffender(m[1])) {
+        const key = 'https://chinaguide.ai' + m[1];
+        if (!byHref.has(key)) byHref.set(key, new Set());
+        byHref.get(key).add(join(DIST, txt));
+      }
+    }
+  }
+
   if (byHref.size) {
     console.error(`❌ ${byHref.size} internal link(s) without trailing slash:`);
     for (const [href, fileset] of byHref) {
