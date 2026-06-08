@@ -80,6 +80,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   (function() {
     const STORAGE_KEY = 'chinaguide_checklist';
 
+    // Keep internal links on the canonical trailing-slash form (avoids a 307 on click).
+    const withSlash = (u) => {
+      if (!u || !u.startsWith('/')) return u;
+      const i = u.search(/[#?]/);
+      const path = i === -1 ? u : u.slice(0, i);
+      const rest = i === -1 ? '' : u.slice(i);
+      if (path.endsWith('/') || path.split('/').pop().includes('.')) return u;
+      return path + '/' + rest;
+    };
+
     const allItems = [
       // VISA
       { id: 'visa-free-confirm', category: 'visa', title: 'Confirm your visa-free eligibility', description: '59 countries can enter China without a visa for up to 30 days.', link: '/guides/visa-types', conditions: { nationalities: ['visa-free-30'] }, priority: 'high' },
@@ -220,7 +230,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               '</div>' +
               '<p class="text-xs text-muted mt-0.5">' + item.description + '</p>' +
             '</div>' +
-            (item.link ? '<a href="' + item.link + '" class="shrink-0 text-xs text-primary hover:underline font-medium mt-1">Guide &rarr;</a>' : '');
+            (item.link ? '<a href="' + withSlash(item.link) + '" class="shrink-0 text-xs text-primary hover:underline font-medium mt-1">Guide &rarr;</a>' : '');
 
           list.appendChild(div);
         });

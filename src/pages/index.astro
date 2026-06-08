@@ -41,13 +41,13 @@ const totalGuides = guides.length + apps.length;
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
     <div class="flex items-center justify-between mb-6">
       <h2 class="text-2xl font-bold text-secondary">Travel Guides</h2>
-      <a href="/guides" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
+      <a href="/guides/" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {guides.map((guide) => (
         <GuideCard
           title={guide.data.title}
-          href={`/guides/${guide.id}`}
+          href={`/guides/${guide.id}/`}
           description={guide.data.description}
           lastVerified={guide.data.last_verified}
         />
@@ -59,13 +59,13 @@ const totalGuides = guides.length + apps.length;
   <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-12">
     <div class="flex items-center justify-between mb-6">
       <h2 class="text-2xl font-bold text-secondary">Essential Apps</h2>
-      <a href="/apps" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
+      <a href="/apps/" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {apps.map((app) => (
         <GuideCard
           title={app.data.title}
-          href={`/apps/${app.id}`}
+          href={`/apps/${app.id}/`}
           description={app.data.description}
           lastVerified={app.data.last_verified}
         />

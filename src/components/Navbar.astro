@@ -12,25 +12,25 @@ const currentPath = Astro.url.pathname;
 
       <div class="flex items-center gap-6">
         <a
-          href="/guides"
+          href="/guides/"
           class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/guides') ? 'text-primary' : 'text-gray-600']}
         >
           Guides
         </a>
         <a
-          href="/apps"
+          href="/apps/"
           class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/apps') ? 'text-primary' : 'text-gray-600']}
         >
           Apps
         </a>
         <a
-          href="/checklist"
+          href="/checklist/"
           class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/checklist') ? 'text-primary' : 'text-gray-600']}
         >
           Checklist
         </a>
         <a
-          href="/search"
+          href="/search/"
           class:list={["text-sm font-medium transition-colors hover:text-primary", currentPath.startsWith('/search') ? 'text-primary' : 'text-gray-600']}
           aria-label="Search"
         >

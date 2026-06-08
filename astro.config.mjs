@@ -7,6 +7,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 
 import remarkWikiLinks from './src/plugins/remark-wikilinks.mjs';
+import remarkTrailingSlash from './src/plugins/remark-trailing-slash.mjs';
 
 // Custom integration: run Pagefind after build using its Node API
 function pagefindIntegration() {
@@ -29,8 +30,10 @@ function pagefindIntegration() {
 export default defineConfig({
   site: 'https://chinaguide.ai',
 
+  trailingSlash: 'always',
+
   markdown: {
-    remarkPlugins: [remarkWikiLinks],
+    remarkPlugins: [remarkWikiLinks, remarkTrailingSlash],
     shikiConfig: {
       theme: 'github-light',
     },
