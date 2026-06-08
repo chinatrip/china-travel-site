@@ -14,7 +14,7 @@ export const GET: APIRoute = async () => {
     const desc = e.data.description ? `: ${e.data.description}` : '';
     const d = e.data.last_verified ? new Date(e.data.last_verified) : null;
     const verified = d && !isNaN(d.getTime()) ? ` (Verified ${d.toISOString().split('T')[0]})` : '';
-    return `- [${e.data.title}](${SITE}/${base}/${e.id})${desc}${verified}`;
+    return `- [${e.data.title}](${SITE}/${base}/${e.id}/)${desc}${verified}`;
   };
 
   const body = `# ChinaGuide.ai

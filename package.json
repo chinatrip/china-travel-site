@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "sync-content": "node scripts/sync-content.mjs",
-    "astro": "astro"
+    "astro": "astro",
+    "test": "node --test && astro build && node scripts/check-internal-links.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",

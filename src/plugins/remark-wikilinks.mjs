@@ -53,7 +53,7 @@ function splitTextValue(value) {
       // No published route — drop the brackets, keep readable text.
       out.push({ type: "text", value: alias || slug });
     } else {
-      const url = `${SECTION_BASE[section]}/${slug}${anchor || ""}`;
+      const url = `${SECTION_BASE[section]}/${slug}/${anchor || ""}`;
       out.push({
         type: "link",
         url,
