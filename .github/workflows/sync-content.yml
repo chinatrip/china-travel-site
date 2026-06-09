@@ -46,9 +46,12 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           # MUST be a PAT (not the default GITHUB_TOKEN) so the opened PR triggers
-          # ci.yml (gate + preview). NOTE: if this PAT belongs to the reviewer, the
-          # review request below is a no-op (can't review your own PR) — use a bot
-          # account's PAT for reliable review-request notifications.
+          # ci.yml (gate + preview).
+          #
+          # No `reviewers:` here: the PAT currently belongs to a human (1Feng), so the
+          # content PR is authored by them and GitHub rejects a self-review request.
+          # To get a real "review requested" notification, set WIKI_REPO_TOKEN to a
+          # BOT account's PAT (author = bot ≠ reviewer), then add `reviewers: 1Feng`.
           token: ${{ secrets.WIKI_REPO_TOKEN }}
           branch: auto/content-sync
           base: main
@@ -63,4 +66,3 @@ jobs:
 
             ⚠️ Sanity-check the diff for unexpected deletions or stripped front matter
             (e.g. lost `description`/`faqs`) — those indicate wiki content drift.
-          reviewers: 1Feng
