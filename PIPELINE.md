@@ -19,8 +19,8 @@ flowchart TD
     D --> E[🟦 GHA publish-content.yml<br/>检测 audited 变更 → repository_dispatch]
   end
   E -->|event: wiki-updated| F[🟦 GHA sync-content.yml<br/>clone wiki → 复制 audited → 开内容 PR]
-  G[👤 代码改动开 PR] --> H
-  F --> H[site/main 的 PR]
+  G[👤 代码改动开 PR] --> H[site/main 的 PR]
+  F --> H
   H --> I[🟦 GHA ci.yml<br/>npm test → 构建 → wrangler versions upload]
   I -->|部署预览版| P[🟧 CF Worker 预览 URL]
   I -->|贴评论 @审阅者| H
