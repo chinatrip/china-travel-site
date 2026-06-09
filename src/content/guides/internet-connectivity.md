@@ -1,23 +1,14 @@
 ---
-description: "What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs still work after the 2026 crackdown, and why a foreign eSIM bypasses it with no VPN. Updated May 2026."
-faqs:
-  - q: "Do I need a VPN to access Google, WhatsApp and Instagram in China?"
-    a: "Only if you connect through a Chinese SIM or local Wi-Fi. A foreign eSIM bypasses the Great Firewall entirely, so blocked services work without a VPN. With a Chinese SIM you do need a working VPN."
-  - q: "Which VPNs still work in China in 2026?"
-    a: "VPN reliability is a moving target — a service that works one week can be blocked the next, and the 2026 crackdown disrupted many (including LetsVPN). Install and test two VPNs before you fly; newer protocols like Xray Reality and Trojan currently survive better than older Shadowsocks variants."
-  - q: "Can I download a VPN once I'm already in China?"
-    a: "It's very hard — app stores and VPN websites are largely blocked from inside China. Download and test your VPN before arrival. If your only VPN stops working, options include a different-region App Store account or having someone send you the installer file."
-  - q: "Is it legal for tourists to use a VPN in China?"
-    a: "Officially it's restricted, not freely legal: the US State Department (2026) warns VPN use is illegal in most cases and could lead to device confiscation, a fine, or detention, and China requires VPNs to be government-licensed. In practice, enforcement has targeted providers and distributors rather than individual tourists using a VPN for personal communication, and airport security doesn't check devices — but weigh the risk yourself and check your country's official travel advisory."
 category: guide
 title: Internet Access and the Great Firewall for Foreign Visitors
 date: 2026-05-04
-last_verified: 2026-05-04
+last_verified: 2026-06-09
 verified_against:
   - https://chinasurvivalkit.com/blog/china-firewall-test-websites-apps-guide
   - https://nordvpn.com/blog/vpn-for-china/
   - https://landingin.syncosmic.com/blog/vpn-china-2026-what-actually-works
   - https://www.airalo.com/china-esim
+  - https://www.airalo.com/help/using-managing-esims/ZSEEHBT5HW6F/stay-connected-in-china-your-guide-to-unfiltered-internet-access-is-a-vpn-required/ZDZBNIKI4TFP
 sources:
   - raw/internet-gfw-guide-2026.md
   - raw/realchinaguide-vpn-guide-2026.md
@@ -30,17 +21,27 @@ related:
   - wiki/concepts/remote-work-china.md
   - wiki/concepts/language-barrier.md
 volatility: high
+description: "What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs still work after the 2026 crackdown, and why a foreign eSIM bypasses it with no VPN. Updated June 2026."
+faqs:
+  - q: "Do I need a VPN to access Google, WhatsApp and Instagram in China?"
+    a: "Only if you connect through a Chinese SIM or local Wi-Fi. A foreign eSIM (Airalo, Holafly, Nomad) routes your data via international roaming through gateways outside mainland China, so it bypasses the Great Firewall and blocked services work without a VPN. With a Chinese SIM or local Wi-Fi you do need a working VPN."
+  - q: "Which VPNs still work in China in 2026?"
+    a: "VPN reliability is a moving target — a service that works one week can be blocked the next, and the 2026 crackdown disrupted many. As of June 2026, Astrill (StealthVPN) and ExpressVPN (Lightway) are the most consistently reported to work; only providers with TLS-based obfuscation reliably bypass the firewall. Install and test two VPNs before you fly."
+  - q: "Can I download a VPN once I'm already in China?"
+    a: "It's very hard — app stores and VPN websites are largely blocked from inside China. Download and test your VPN before arrival. If your only VPN stops working, options include a different-region App Store account or having someone send you the installer file."
+  - q: "Is it legal for tourists to use a VPN in China?"
+    a: "Officially it's restricted, not freely legal: the US State Department (2026) warns VPN use is illegal in most cases and could lead to device confiscation, a fine, or detention, and China requires VPNs to be government-licensed. In practice, enforcement has targeted providers and distributors rather than individual tourists using a VPN for personal communication, and airport security doesn't check devices — but weigh the risk yourself and check your country's official travel advisory."
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: 2026-05-06
 ---
 
 # Internet Access and the Great Firewall for Foreign Visitors
 
-China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a nationwide system that blocks thousands of foreign websites and apps. Every internet connection inside mainland China — hotel Wi-Fi, local SIM data — passes through it, **unless you use a foreign eSIM** (see [Foreign eSIM](#how-does-a-foreign-esim-get-online-without-a-vpn) below). This page covers what's blocked, what works natively, and how to prepare.
+China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a nationwide system that blocks thousands of foreign websites and apps. Every internet connection inside mainland China — hotel Wi-Fi, local SIM data — passes through it, **unless you use a foreign eSIM** (see [Foreign eSIM](#foreign-esim--the-vpn-free-alternative) below). This page covers what's blocked, what works natively, and how to prepare.
 
-## What is blocked in China?
+## What's Blocked
 
 | Category | Blocked services |
 |---|---|
@@ -56,7 +57,7 @@ China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a
 
 As of 2026, the GFW blocks thousands of domains and services (source: chinasurvivalkit.com). The list changes — services occasionally get blocked or unblocked without announcement.
 
-## What works in China without a VPN?
+## What Works Without a VPN
 
 | Category | Working services |
 |---|---|
@@ -70,7 +71,7 @@ As of 2026, the GFW blocks thousands of domains and services (source: chinasurvi
 
 **Public Wi-Fi note:** most free public Wi-Fi in China (airports, malls, metro stations) requires SMS authentication to a Chinese mobile number to connect. Without a local SIM you may not be able to use it. A foreign eSIM or hotel Wi-Fi (which typically uses room credentials) avoids this barrier.
 
-## What should I set up before arriving in China?
+## Before You Arrive — Pre-Departure Setup
 
 **Install and set up these apps before you leave home.** Several key setup steps — binding a foreign card, SMS verification, the WeChat vouching step — are significantly easier or only possible while you're still on your home carrier with a non-Chinese IP address.
 
@@ -133,7 +134,7 @@ See [[wiki/entities/12306.md]].
 **6. VPN (2+ providers)** — If you need access to blocked services (Google, Gmail, WhatsApp, Instagram, Facebook, YouTube, most Western news sites).
 
 - **Critical:** Download and test your VPN **before departure**. The VPN provider's own website is often blocked in China, making it impossible to download or purchase from within China.
-- Install your chosen VPN (see [VPN Setup](#how-do-i-set-up-a-vpn-for-china) below for provider recommendations)
+- Install your chosen VPN (see [VPN Setup](#vpn-setup) below for provider recommendations)
 - Subscribe to a plan and verify it connects in your home country
 - Keep the app updated — outdated VPN apps often stop working after firewall updates
 - Note: using a VPN for payment apps (Alipay, WeChat Pay) can occasionally trigger fraud detection. Disable the VPN when completing payments if a transaction is declined unexpectedly.
@@ -171,7 +172,7 @@ See [[wiki/entities/meituan.md]].
 - [ ] **Download entertainment** (Netflix shows, music) for offline use — assume VPN may fail at times
 - [ ] **Download Baidu Translate** as a VPN-free translation fallback
 
-## How do I set up a VPN for China?
+## VPN Setup
 
 ### Why You Need a VPN
 
@@ -181,19 +182,23 @@ Without a VPN you lose access to Gmail, WhatsApp, Google Maps, YouTube, and most
 
 VPN provider websites are blocked in China. App stores remove VPN apps for users on Chinese accounts. **You cannot download or set up a VPN after arrival.** Install at least two VPN apps and purchase subscriptions before your flight.
 
-### Reliable Providers (2026)
+### Reliable Providers (as of June 2026)
+
+Approximate monthly costs below are typical long-term plan rates and shift with promotions — check each provider's site before buying. Rankings reflect the China-focused expat and traveler community as of June 2026 and change as the GFW evolves.
 
 | Provider | Protocol for China | Approx. cost | Reliability | Notes |
 |---|---|---|---|---|
-| **Astrill** | StealthVPN | ~$15–30/month | Most reliable according to China expat community; stealth protocol | Used by companies with offices in Beijing/Shanghai; expensive |
+| **Astrill** | StealthVPN | ~$15–30/month | Often rated most consistently reliable by the China expat community; stealth protocol | Long track record against the GFW; expensive |
 | **ExpressVPN** | Lightway with obfuscation | ~$8–13/month | Well-regarded; Lightway protocol; frequent updates for China | 30-day money-back guarantee; in-app chat works even when VPN is down |
 | **Surfshark** | NoBorders mode | ~$2–5/month | Mixed reports; NoBorders mode helps but inconsistent | Budget option; enable NoBorders before arriving |
-| **NordVPN** | Obfuscated servers | ~$4–8/month | Significant difficulties in China since 2024; not recommended as primary | China's deep packet inspection improved in 2024 and NordVPN did not adapt. Keep as backup only. |
+| **NordVPN** | Obfuscated servers | ~$4–8/month | Has had significant difficulties in China in recent years; not recommended as primary | China's deep packet inspection has outpaced NordVPN's obfuscation; keep as backup only. |
 | **Shadowsocks** | SOCKS5 proxy | Self-hosted / varies | Very high (self-hosted) | Technical option for advanced users; harder to block than commercial VPNs; not user-friendly |
+
+> Note: A general crackdown in 2026 ("the Great Unplug") tightened detection further — standard WireGuard, OpenVPN, and IKEv2 are now blocked with near-total accuracy inside China, so providers relying only on those protocols (without TLS-based obfuscation) increasingly fail.
 
 VPN reliability changes rapidly as the GFW evolves. No provider guarantees connectivity. Performance degrades during politically sensitive periods (National Day, NPC sessions, etc.). Always install 2+ providers before departure.
 
-**Free VPNs do not work.** Across 500+ Reddit reports, free VPNs had a 0% success rate in China — blocked within days.
+**Free VPNs do not work.** Free VPNs consistently fail in China — they lack the obfuscation needed to evade the GFW and are typically blocked within days. Experienced travelers overwhelmingly report that only paid, China-tested providers stand a chance.
 
 Check current reviews from China-focused tech sites (e.g. VPNmentor, Comparitech China guides) immediately before travel — GFW detection improves constantly and provider rankings shift.
 
@@ -246,7 +251,7 @@ This is a difficult situation because VPN provider websites are themselves block
 
 **Prevention:** Save VPN setup guides as offline PDFs. Save mirror links in your notes app. Email VPN download links to yourself (accessible via Outlook/Yahoo which work without VPN).
 
-## How does a foreign eSIM get online without a VPN?
+## Foreign eSIM — The VPN-Free Alternative
 
 A foreign eSIM (Airalo, Holafly, Ubigi — see [[wiki/concepts/sim-card.md]] for pricing and comparison) routes all data through gateways outside mainland China, bypassing the GFW entirely without a VPN. Google, WhatsApp, YouTube, and all other services work natively. Typical cost: $5–25 USD for a 1–4 week data plan.
 
@@ -256,13 +261,15 @@ For visitors staying up to a few weeks who don't need a local number, the eSIM a
 
 ### eSIM + VPN Combinations
 
-| eSIM Provider | VPN included? | Best for | Notes |
-|---|---|---|---|
-| **Holafly** | Yes (built-in) | Travelers who want zero setup hassle | Most recommended (~40% of Reddit users). Unlimited data. VPN can be slower than dedicated ExpressVPN during evenings — carry a backup VPN. |
-| **Airalo** | No | Budget travelers comfortable with tech | Budget favorite (~35%). ~$15 for 7 days. Must pair with separate VPN (e.g., ExpressVPN). Total cost ~$23. |
-| **Nomad** | No | Budget alternative | Works well, cheaper than Holafly, requires own VPN. |
+All three providers below bypass the GFW via international roaming — none *requires* a VPN. The "built-in VPN" column indicates whether the provider also bundles a VPN app for added redundancy.
 
-**Critical:** An eSIM without VPN bypass (like Airalo alone) still routes through China's network on local towers — Google, WhatsApp, and all blocked services remain inaccessible. Either choose an eSIM with VPN included (Holafly) or pair your eSIM with a separate VPN subscription.
+| eSIM Provider | Built-in VPN? | Best for | Notes |
+|---|---|---|---|
+| **Holafly** | Yes (bundled) | Travelers who want zero setup hassle | Frequently recommended in traveler communities. Unlimited data. The bundled VPN can be slower than a dedicated VPN during peak evening hours — some carry a backup VPN. |
+| **Airalo** | No | Budget travelers comfortable with tech | Popular budget choice. Works without any VPN via roaming. As of June 2026, Airalo's China unlimited plans run roughly $11.50 (3 days) to $69 (30 days), e.g. ~$27 for 7 days (source: airalo.com). See [[wiki/concepts/sim-card.md]] for current pricing. |
+| **Nomad** | No | Budget alternative | Works via roaming, no VPN needed; often cheaper than Holafly. |
+
+**How the bypass works:** A foreign travel eSIM connects via *international roaming*, not China's domestic network — your data is routed through gateways outside mainland China (typically Hong Kong or Singapore), so to the GFW you appear as an international roaming user. This means a standalone data eSIM like Airalo bypasses the firewall on its own: Google, WhatsApp, and social media work without any VPN. Airalo's own documentation confirms "a VPN is NOT required" with its China eSIM (source: airalo.com, accessed June 2026). A bundled VPN (as with Holafly) is a convenience, not a requirement — and some travelers still carry a separate VPN as a backup in case roaming routing is degraded.
 
 **VPN data overhead:** On capped data plans, VPN encryption adds roughly 20–30% extra data usage. Factor this into your data plan choice.
 
@@ -280,7 +287,7 @@ For visitors staying up to a few weeks who don't need a local number, the eSIM a
 | Google Search | VPN | Yes |
 | Instagram / Twitter | VPN | Yes |
 
-## Does the Great Firewall apply in Hong Kong, Macau, and Taiwan?
+## Hong Kong, Macau, Taiwan
 
 The GFW does **not** apply in Hong Kong, Macau, or Taiwan. All standard international services work normally in these territories without a VPN.
 

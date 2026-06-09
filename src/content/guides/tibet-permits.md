@@ -1,21 +1,12 @@
 ---
-description: "Foreigners need a Tibet Travel Permit (not just a China visa), arranged through a registered tour — how to apply, costs, closed periods, and altitude-sickness prep for Lhasa. Updated May 2026."
-faqs:
-  - q: "Do foreigners need a special permit for Tibet?"
-    a: "Yes. Beyond a China visa you need a Tibet Travel Permit, and you cannot travel independently — you must book through a registered agency with a guide, which arranges the permit."
-  - q: "How do I get a Tibet Travel Permit?"
-    a: "Book a tour with a licensed Tibet agency at least 15-20 days ahead and send a scan of your passport and China visa; they obtain the permit. You can't apply directly yourself."
-  - q: "When is Tibet closed to foreign tourists?"
-    a: "Tibet typically closes to foreign visitors from around late February into late March or early April each year. Exact dates vary, so confirm with your agency before planning."
-  - q: "How do I avoid altitude sickness in Tibet?"
-    a: "Lhasa sits at about 3,650 m. Acclimatize slowly, stay hydrated, avoid alcohol the first days, and ask a doctor about acetazolamide. Insurance covering high-altitude evacuation is strongly advised."
 category: guide
 title: Tibet Travel Permits and Altitude Health
 date: 2026-05-13
-last_verified: 2026-05-13
+last_verified: 2026-06-09
 verified_against:
   - https://www.chinahighlights.com/tibet/visa-document.htm
-  - https://www.gototibet.com/blog/can-foreigners-go-to-tibet
+  - https://www.gototibet.com/blog/can-foreigners-go-to-tibet.html
+  - https://www.thelandofsnows.com/tibet-travel-regulations/
 sources:
   - raw/tibet-travel-guide-2026.md
 related:
@@ -24,15 +15,25 @@ related:
   - wiki/concepts/emergency-safety.md
   - wiki/concepts/trip-planning.md
 volatility: medium
+description: "Foreigners need a Tibet Travel Permit (not just a China visa), arranged through a registered tour — how to apply, costs, closed periods, and altitude-sickness prep for Lhasa. Updated June 2026."
+faqs:
+  - q: "Do foreigners need a special permit for Tibet?"
+    a: "Yes. Beyond a China visa you need a Tibet Travel Permit, and you cannot travel independently — you must book through a registered agency with a guide, which arranges the permit."
+  - q: "How do I get a Tibet Travel Permit?"
+    a: "Book a tour with a licensed Tibet agency at least 15-20 days ahead and send a scan of your passport and China visa; they obtain the permit. You can't apply directly yourself."
+  - q: "When is Tibet closed to foreign tourists?"
+    a: "In many past years Tibet closed to foreign visitors from around late February into late March or early April, but this administrative closure is not guaranteed every year — in 2026 it did not happen and Tibet stayed open through that period. Dates vary, so always confirm the current status with your agency before planning."
+  - q: "How do I avoid altitude sickness in Tibet?"
+    a: "Lhasa sits at about 3,650 m. Acclimatize slowly, stay hydrated, avoid alcohol the first days, and ask a doctor about acetazolamide. Insurance covering high-altitude evacuation is strongly advised."
 review:
   status: audited
-  page_audit: 2026-05-13
+  page_audit: 2026-06-09
   citation_check: 2026-05-13
 ---
 
 # Tibet Travel Permits and Altitude Health
 
-## Who needs a Tibet Travel Permit?
+## Tibet Travel Permit (TTT) — Who Needs It
 
 All foreign passport holders require a Tibet Travel Permit (TTT) to enter Tibet. This includes:
 - All nationalities entering on a standard China tourist visa (L visa) or visa-free
@@ -44,14 +45,14 @@ All foreign passport holders require a Tibet Travel Permit (TTT) to enter Tibet.
 
 Note: HK/Macau residents visiting Everest Base Camp still need a Frontier Certificate.
 
-## What is the Tibet Travel Permit?
+## What the Permit Is
 
 The TTT is a **paper document** listing the traveler's name, approved travel dates, and approved destinations within Tibet. It:
 - Cannot be reused for subsequent trips
 - Must be returned to the Tibet Tourism Bureau after your visit
 - Is checked at all transportation entry points — train, plane, and road checkpoints
 
-## How do I get a Tibet Travel Permit?
+## How to Obtain the TTT
 
 **Independent applications are not permitted.** Process:
 
@@ -61,9 +62,9 @@ The TTT is a **paper document** listing the traveler's name, approved travel dat
 4. Allow **at least 10 working days** before your travel date (processing takes 5–7 working days)
 5. Train passengers receive a permit copy; those flying to Lhasa need the **original permit**
 
-**Cost:** the permit itself is free. The unavoidable cost is the tour package you must book through a licensed agency. Tour packages start around **USD $450–$2,050** depending on duration and destinations.
+**Cost:** the permit itself is free. The unavoidable cost is the tour package you must book through a licensed agency. Tour packages start around **USD $450–$2,090** depending on duration and destinations.
 
-## Can foreigners travel independently in Tibet?
+## Independent Travel Is Prohibited
 
 Foreign visitors cannot travel independently in Tibet:
 - A **licensed Tibetan guide must accompany you throughout your stay**
@@ -72,15 +73,15 @@ Foreign visitors cannot travel independently in Tibet:
 
 This is legally distinct from mainland China, where independent foreign travel is generally unrestricted — see [[wiki/concepts/trip-planning.md]].
 
-## When is Tibet closed to foreign tourists?
+## When Tibet Is Closed to Foreign Tourists
 
-Tibet typically closes to foreign visitors from **late February through end of March**, reopening approximately April 1. During this window, no permits are processed for travel within the closure period (applications for April+ travel continue).
+In many past years Tibet closed to foreign visitors from **late February through end of March**, reopening around April 1, with no permits processed for travel inside that window (applications for April+ travel continued). This was an administrative pattern, not a fixed law, and it does not apply every year.
 
-**2026 specific:** the Tibetan New Year holiday falls February 15–26, during which no permits are processed.
+**2026 specific:** as of June 2026, multiple Tibet travel agencies report that — unlike the usual pattern — no closure occurred this year. gototibet.com (accessed June 2026) says "in March 2026, the travel restrictions were lifted, allowing foreign travelers to obtain Tibet Travel Permits and visit Tibet during this period," and The Land of Snows (accessed June 2026) states "in 2026, Tibet will remain open for all international travelers," including the Tibetan New Year (Losar, February 18, 2026) period and March. These are commercial agency sources rather than an official notice, and closures are set administratively at short notice — so confirm the current status with your booking agency before finalizing transport.
 
-Plan Tibet visits for **April–late September** and confirm current closure status with your agency before booking transport. Avoid October 1–7 (National Day Golden Week) — travel surges affect transport and accommodation throughout China during this period.
+Because closure dates are set administratively and can change year to year, always confirm the current closure status with your agency before booking transport. Avoid October 1–7 (National Day Golden Week) — travel surges affect transport and accommodation throughout China during this period.
 
-## Which areas of Tibet are restricted?
+## Restricted Areas
 
 Even with a standard TTT, the following are off-limits to foreign visitors:
 - Yarlung Tsangpo Grand Canyon
@@ -96,11 +97,11 @@ Even with a standard TTT, the following are off-limits to foreign visitors:
 | **Alien's Travel Permit (ATP)** | Everest Base Camp, Mt. Kailash, Lake Manasarovar, certain monasteries | Arranged by guide after arriving in Lhasa |
 | **Military Permit** | Remote border regions and sensitive frontier zones | 20+ days advance notice; arranged by agency before departure |
 
-## How do I enter Tibet from Nepal?
+## Entering Tibet from Nepal
 
 Travelers entering via Nepal (the Friendship Highway route) **cannot use a standard China visa**. They must obtain a **China Group Visa** from the Chinese Embassy in Kathmandu. Individual visas are not accepted for this entry route.
 
-## How do I avoid altitude sickness in Tibet?
+## Altitude Sickness
 
 Tibet is at extreme elevation — Lhasa alone is 3,650 m (12,000 ft), roughly 1,200 m higher than the highest ski resorts in the Alps. Most visitors experience some symptoms within 6–12 hours of arrival.
 
@@ -145,7 +146,7 @@ Both HACE and HAPE require **immediate descent**. Do not wait until morning.
 - Pharmacies in Lhasa carry basic AMS medications
 - If severe symptoms develop (confusion, unable to walk straight, extreme breathlessness at rest): **descend immediately**
 
-## What travel insurance do I need for Tibet?
+## Travel Insurance for Tibet
 
 Standard travel insurance frequently excludes Tibet and high-altitude emergencies. Verify your policy covers:
 - Medical treatment at altitude

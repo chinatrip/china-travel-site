@@ -1,18 +1,8 @@
 ---
-description: "Staying safe in China as a foreigner: emergency numbers (110 police, 120 ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English help hotline. Updated June 2026."
-faqs:
-  - q: "What are the emergency numbers in China?"
-    a: "Police 110, ambulance 120, fire 119. For English-language help, the 12345 government service hotline can assist in many cities."
-  - q: "Is China safe for tourists?"
-    a: "Violent crime against tourists is very rare and most travelers, including solo female travelers, feel safe. The main risks are scams and petty theft in crowded tourist areas — take normal precautions."
-  - q: "What are the most common scams in China?"
-    a: "The classic ones are the tea-house / bar 'invitation' scam (a friendly stranger runs up a huge bill), the art-student gallery scam, and fake taxis. If a stranger picks the venue and drinks heavily, be cautious — and you can report scams via 110 or the 12345 hotline."
-  - q: "What should I do if I lose my passport in China?"
-    a: "Report it to the local police for a loss report, contact your embassy or consulate for an emergency travel document, and apply for a replacement visa stamp at the local exit-entry administration."
 category: guide
 title: Emergency and Safety for Foreign Visitors
 date: 2026-06-01
-last_verified: 2026-06-01
+last_verified: 2026-06-09
 verified_against:
   - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
   - https://chinasurvivalkit.com/blog/is-china-safe-tourists
@@ -33,15 +23,25 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/language-barrier.md
 volatility: medium
+description: "Staying safe in China as a foreigner: emergency numbers (110 police, 120 ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English help hotline. Updated June 2026."
+faqs:
+  - q: "What are the emergency numbers in China?"
+    a: "Police 110, ambulance 120, fire 119. For English-language help, the 12345 government service hotline can assist in many cities."
+  - q: "Is China safe for tourists?"
+    a: "Violent crime against tourists is very rare and most travelers, including solo female travelers, feel safe. The main risks are scams and petty theft in crowded tourist areas — take normal precautions."
+  - q: "What are the most common scams in China?"
+    a: "The classic ones are the tea-house / bar 'invitation' scam (a friendly stranger runs up a huge bill), the art-student gallery scam, and fake taxis. If a stranger picks the venue and drinks heavily, be cautious — and you can report scams via 110 or the 12345 hotline."
+  - q: "What should I do if I lose my passport in China?"
+    a: "Report it to the local police for a loss report, contact your embassy or consulate for an emergency travel document, and apply for a replacement visa stamp at the local exit-entry administration."
 review:
   status: audited
-  page_audit: 2026-05-07
+  page_audit: 2026-06-09
   citation_check: null
 ---
 
 # Emergency and Safety for Foreign Visitors
 
-## What are the emergency phone numbers in China?
+## Emergency Numbers
 
 | Service | Number | Notes |
 |---|---|---|
@@ -57,7 +57,7 @@ review:
 - State your **location first** — give the address in Chinese if possible. Photograph your hotel's address card (in Chinese) before going out each day.
 - For 120 (ambulance), also see the Language and Hospital sections in [[wiki/concepts/health-medical.md]] for further detail on medical emergencies.
 
-## How safe is China for tourists?
+## General Safety
 
 China is one of the safer countries in the world for physical crime by global standards. Violent crime against tourists is rare.
 
@@ -73,7 +73,7 @@ China is one of the safer countries in the world for physical crime by global st
 
 **LGBTQ+ travelers:** same-sex relationships are not criminalised in China. Public displays of affection draw attention and are generally discouraged — this applies to same-sex and opposite-sex couples alike in Chinese cultural norms. Major cities (Beijing, Shanghai, Chengdu in particular) have established queer scenes and are more tolerant. Rural areas are more conservative. There is no legal framework for same-sex partnerships. Homophobic violence is rare. Exercise the same discretion you would in any socially conservative urban environment (source: intrepidtravel.com; wildchina.com).
 
-## What are the most common scams in China?
+## Common Tourist Scams
 
 China's scams are well-documented and almost entirely predictable. Knowing them in advance is the best defence.
 
@@ -128,7 +128,7 @@ China's scams are well-documented and almost entirely predictable. Knowing them 
 - **If you've paid and been defrauded:** call 110. Keep any receipts, messaging, or photos as evidence.
 - **Reduce cash exposure:** Keep most cash in your hotel safe; carry only ~100 yuan daily for incidentals. Use Alipay/WeChat Pay for all other transactions — digital payments eliminate counterfeit risk and make overcharging easier to dispute (source: realchinaguide.com).
 
-## How common is crime against tourists in China?
+## Crime Statistics Context
 
 Violent crime against tourists in China is virtually zero risk. China consistently ranks among the safest countries globally for physical crime against visitors. The primary risks are financial (scams, overcharging) rather than physical. City-by-city context (source: realchinaguide.com):
 
@@ -147,7 +147,7 @@ Violent crime against tourists in China is virtually zero risk. China consistent
 
 Petty crime (pickpocketing) is concentrated in crowded tourist markets and transit hubs — not residential or business districts.
 
-## Is China safe at night?
+## Night Safety
 
 Walking at night in Chinese cities is generally safe for foreign travelers. Key points:
 
@@ -158,7 +158,7 @@ Walking at night in Chinese cities is generally safe for foreign travelers. Key 
 
 (Source: realchinaguide.com; chinasurvivalkit.com)
 
-## How much surveillance and police presence is there in China?
+## Surveillance and Police Presence
 
 China has one of the world's most extensive public surveillance networks. Practical implications for tourists:
 
@@ -170,7 +170,7 @@ China has one of the world's most extensive public surveillance networks. Practi
 
 (Source: realchinaguide.com; chinasurvivalkit.com; UK FCDO)
 
-## What do I do if my passport is lost or stolen in China?
+## Lost or Stolen Passport
 
 Act immediately — do not wait.
 
@@ -203,7 +203,7 @@ Most major countries have consulates in Shanghai, Guangzhou, Chengdu, and other 
 
 Once you have a replacement travel document, apply for a new Chinese visa (or visa-free entry endorsement, if applicable) at the local PSB Exit and Entry Administration office before your authorized stay expires. This step is needed only if you plan to remain in China — if departing immediately on the ETD, coordinate with the PSB.
 
-## What natural hazards should I prepare for in China?
+## Natural Hazards
 
 ### Typhoons
 
@@ -239,7 +239,7 @@ N95 and KN95 masks are widely available in Chinese pharmacies (大药房) and co
 
 China's national average PM2.5 for 2025 was 29.6 µg/m³ (AQI ~87, "Moderate") — but individual city readings vary widely from this average, and winter episodes in northern cities regularly push AQI above 150 (source: IQAir; China Research Center).
 
-## Do I need travel insurance for China?
+## Travel Insurance
 
 Travel insurance is **strongly recommended** for China. Chinese hospitals — including public hospitals — require upfront payment before treatment is provided. This applies to ambulance services too, which in some documented cases have required cash payment before transporting a patient. Without insurance, a serious injury or illness requiring medical evacuation can cost **USD $250,000 or more** (source: pacificprime.com).
 

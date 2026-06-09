@@ -1,18 +1,8 @@
 ---
-description: "Medical care in China for foreign visitors: international hospitals, paying with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at high-elevation destinations. Updated May 2026."
-faqs:
-  - q: "Where do foreigners get medical care in China?"
-    a: "Major cities have international hospitals and foreigner clinics with English-speaking staff (e.g., United Family, Raffles). Public hospitals are cheaper but largely Chinese-only; bring a translation app and your passport."
-  - q: "How do I pay for a hospital visit in China?"
-    a: "Hospitals generally expect payment up front via Alipay, WeChat Pay or cash. Set up mobile payment before arrival and keep your travel-insurance details handy for reimbursement."
-  - q: "Do I need travel insurance for China?"
-    a: "Strongly recommended. It covers medical emergencies and evacuation, which can be costly — especially for high-altitude or remote-area trips. Confirm the policy explicitly covers China."
-  - q: "Can I buy medicine over the counter in China?"
-    a: "Pharmacies (yaodian) are widespread and stock common remedies, but staff may not speak English and brand names differ. Bring essential prescriptions, and show the generic drug name via a translation app."
 category: guide
 title: Health and Medical Care for Foreign Visitors
 date: 2026-05-04
-last_verified: 2026-05-04
+last_verified: 2026-06-09
 verified_against:
   - https://www.gov.uk/government/publications/medical-treatment-in-china
 sources:
@@ -23,15 +13,25 @@ related:
   - wiki/concepts/emergency-safety.md
   - wiki/concepts/tibet-permits.md
 volatility: medium
+description: "Medical care in China for foreign visitors: international hospitals, paying with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at high-elevation destinations. Updated May 2026."
+faqs:
+  - q: "Where do foreigners get medical care in China?"
+    a: "Major cities have international hospitals and foreigner clinics with English-speaking staff (e.g., United Family, Raffles). Public hospitals are cheaper but largely Chinese-only; bring a translation app and your passport."
+  - q: "How do I pay for a hospital visit in China?"
+    a: "Hospitals generally expect payment up front via Alipay, WeChat Pay or cash. Set up mobile payment before arrival and keep your travel-insurance details handy for reimbursement."
+  - q: "Do I need travel insurance for China?"
+    a: "Strongly recommended. It covers medical emergencies and evacuation, which can be costly — especially for high-altitude or remote-area trips. Confirm the policy explicitly covers China."
+  - q: "Can I buy medicine over the counter in China?"
+    a: "Pharmacies (yaodian) are widespread and stock common remedies, but staff may not speak English and brand names differ. Bring essential prescriptions, and show the generic drug name via a translation app."
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: 2026-05-06
 ---
 
 # Health and Medical Care for Foreign Visitors
 
-## What are the medical emergency numbers in China?
+## Emergency Numbers
 
 | Service | Number | Notes |
 |---|---|---|
@@ -42,7 +42,7 @@ review:
 
 **Language issue:** 120 operators and ambulance crews typically speak Chinese only. Have a Chinese-speaking person call on your behalf, or use a translation app. Keep your hotel address written in Chinese characters for emergencies.
 
-## What types of hospitals can foreigners use in China?
+## Hospital Types
 
 | Type | Cost | Language | Where |
 |---|---|---|---|
@@ -66,7 +66,7 @@ review:
 
 Other cities: search "[city] 国际医疗" for the nearest option with international services.
 
-## How does hospital admission work in China?
+## Hospital Admission Process
 
 1. **Registration (挂号):** at reception desk, hospital app, or WeChat mini-program. Pay registration fee (¥5–50 public; higher private). Bring your passport.
 2. **Consultation:** see the doctor. Arrive early for non-emergency visits — queues form quickly.
@@ -75,7 +75,7 @@ Other cities: search "[city] 国际医疗" for the nearest option with internati
 5. **Hospitalization deposit:** if admitted, pay a deposit (¥3,000–7,000 at public hospitals; higher at private). Deducted during stay, refunded on discharge.
 6. **Medical report:** request a discharge summary (出院小结). Insurance claims may require a certified translation.
 
-## How do I pay for medical care in China?
+## Payment
 
 Most public hospitals do **not** accept international credit cards. Bring:
 - Alipay or WeChat Pay (set up before arrival — see [[wiki/concepts/mobile-payment.md]])
@@ -84,7 +84,7 @@ Most public hospitals do **not** accept international credit cards. Bring:
 
 Keep all receipts for insurance reimbursement.
 
-## Do I need travel insurance for medical care in China?
+## Travel Insurance
 
 Travel insurance is essential. Medical evacuation / repatriation is extremely expensive without it. Look for:
 - Medical treatment: at least USD $100,000 cover
@@ -93,7 +93,7 @@ Travel insurance is essential. Medical evacuation / repatriation is extremely ex
 
 Some international hospitals have direct billing agreements with major insurers (AXA, Cigna, Allianz) — confirm before your visit to avoid paying out of pocket. Embassies cannot pay medical bills or arrange evacuation.
 
-## How should I prepare my health before traveling to China?
+## Pre-Travel Health Preparation
 
 Consult a travel medicine clinic or your GP at least 4–6 weeks before departure. Commonly recommended vaccinations for China visitors include:
 
@@ -104,7 +104,7 @@ Consult a travel medicine clinic or your GP at least 4–6 weeks before departur
 
 Check your government's travel health advisory for the latest China-specific recommendations (e.g. UK FCDO fitfortravel.nhs.uk, US CDC wwwnc.cdc.gov/travel/destinations/traveler/none/china).
 
-## Can I bring medicines or buy prescriptions in China?
+## Medicines and Prescriptions
 
 - Bring a full supply of any prescription medication for your stay, plus extra for delays.
 - Bring a doctor's note listing all medications, dosages, and diagnoses (in English; Chinese translation helpful).
@@ -112,7 +112,7 @@ Check your government's travel health advisory for the latest China-specific rec
 - Common Western OTC brands may not be available; local equivalents exist but packaging is in Chinese.
 - Watson's and established pharmacy chains (大药房) in major cities carry some imported products.
 
-## What should I do about animal bites or rabies risk in China?
+## Animal Bites and Rabies
 
 Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) requires:
 1. Immediate wound cleaning with soap and water for 15 minutes
@@ -121,7 +121,7 @@ Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) r
 
 **Do not wait.** Rabies is fatal once symptomatic. Find a vaccination center via 120 or any hospital emergency desk.
 
-## What common health issues affect travelers in China?
+## Common Health Considerations
 
 **Air quality:** Beijing, Shanghai, and industrial cities have periods of high PM2.5. Check AQI apps — IQAir and Air Matters work without VPN. Bring N95 masks for high-pollution days.
 
@@ -131,7 +131,7 @@ Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) r
 
 **Altitude:** see the dedicated section below.
 
-## How do I avoid altitude sickness in China?
+## Altitude Sickness
 
 If travelling to Tibet (Lhasa: 3,650 m), Qinghai, or high-altitude destinations in Yunnan (Shangri-La: 3,200 m) or Sichuan, altitude sickness is a real risk. For full detail on the Tibet permit process, see [[wiki/concepts/tibet-permits.md]].
 

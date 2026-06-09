@@ -1,22 +1,14 @@
 ---
-description: "Which hotels in China accept foreign passports, how to book foreigner-eligible stays on Trip.com/Agoda, pay with foreign cards, and handle the mandatory police registration. Updated May 2026."
-faqs:
-  - q: "Why do some hotels in China refuse foreign guests?"
-    a: "Some smaller or budget hotels aren't set up for the mandatory police registration of foreign guests, so they decline rather than risk doing it wrong. Refusing foreign guests isn't actually permitted, but it still happens — booking 3-star-and-above or via international platforms avoids most issues."
-  - q: "How do I find hotels that accept foreigners?"
-    a: "Book through international platforms like Trip.com, Agoda or Booking.com, which list properties licensed to receive foreign guests and accept foreign cards. For direct bookings, call ahead to confirm they can register foreign passports."
-  - q: "What do I need at hotel check-in in China?"
-    a: "Your passport — the hotel photocopies it and reports your stay to the local police. Carry a spare photocopy, and expect to pay a deposit by card or mobile pay."
-  - q: "Can I use Airbnb or short-term rentals in China?"
-    a: "They exist but carry the highest registration risk: for non-hotel stays you must register at the local police station within 24 hours of arrival. Confirm the host can help, or choose a hotel to simplify registration."
 category: guide
 title: Accommodation for Foreign Visitors in China
 date: 2026-05-04
-last_verified: 2026-05-04
+last_verified: 2026-06-09
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://www.trip.com
   - https://www.agoda.com
+  - https://www.cnbc.com/2022/05/23/airbnb-is-closing-its-domestic-business-in-china-sources-say.html
+  - https://skift.com/2025/03/20/airbnb-stopped-listing-in-china-but-it-still-wants-chinese-travelers/
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw/reddit-pain-points-research-2026.md
@@ -30,24 +22,34 @@ related:
   - wiki/entities/meituan.md
   - wiki/entities/trip-com.md
 volatility: medium
+description: "Which hotels in China accept foreign passports, how to book foreigner-eligible stays on Trip.com/Agoda, pay with foreign cards, and handle the mandatory police registration. Updated June 2026."
+faqs:
+  - q: "Why do some hotels in China refuse foreign guests?"
+    a: "Some smaller or budget hotels aren't set up for the mandatory police registration of foreign guests, so they decline rather than risk doing it wrong. Refusing foreign guests isn't actually permitted, but it still happens — booking 3-star-and-above or via international platforms avoids most issues."
+  - q: "How do I find hotels that accept foreigners?"
+    a: "Book through international platforms like Trip.com, Agoda or Booking.com, which list properties licensed to receive foreign guests and accept foreign cards. For direct bookings, call ahead to confirm they can register foreign passports."
+  - q: "What do I need at hotel check-in in China?"
+    a: "Your original passport — a photocopy or phone photo is not accepted. The hotel scans it and reports your stay to the local police automatically. Expect to pay a deposit by card (where foreign cards are accepted) or by mobile pay or cash."
+  - q: "Can I use Airbnb or short-term rentals in China?"
+    a: "Airbnb shut down all of its domestic mainland-China listings in July 2022 and, as of June 2026, has not relisted them, so it is not a reliable way to book apartment-style stays inside China. Domestic platforms like Tujia and Meituan Minsu fill that role, but short-term rentals carry the highest registration risk: for non-hotel stays you must register at the local police station within 24 hours of arrival. Confirm the host can handle registration, or choose a hotel to simplify it."
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: 2026-05-06
 ---
 
 # Accommodation for Foreign Visitors in China
 
-## Where should foreigners stay in China?
+## Quick Decision
 
 | Option | Best for | Foreign-card payment | Notes |
 |---|---|---|---|
 | **International booking platform** (Trip.com, Agoda, Booking.com) | Most visitors — widest selection, foreign-card friendly | At booking (online) | Filters to foreigner-eligible hotels; English customer support |
 | **Hotel direct** (3-star and above) | Flexibility to pay at check-out | At front desk (PBOC 2024 mandate for 3-star+, but compliance varies in practice — pre-pay online to avoid uncertainty) | Call ahead if you need English-speaking staff |
 | **Youth hostel / budget hotel** | Budget travelers | Varies — confirm before booking | Not all are licensed to receive foreign guests; confirm when booking |
-| **Short-term rental** (Airbnb, local platforms) | Longer stays, apartment feel | Via platform | Highest risk of registration issues — see [[wiki/concepts/residence-registration.md]] |
+| **Short-term rental** (local platforms — Tujia, Meituan Minsu; Airbnb no longer lists mainland China stays) | Longer stays, apartment feel | Via platform | Highest risk of registration issues — see [[wiki/concepts/residence-registration.md]] |
 
-## Which booking platforms work for foreigners in China?
+## Booking Platforms
 
 ### International Platforms (Recommended)
 
@@ -61,19 +63,17 @@ These accept foreign credit cards and tend to list properties that are licensed 
 
 ### Domestic Platforms
 
-**Meituan (美团)** lists the same rooms as OTAs but at local prices — the same room that costs ¥400 on Trip.com can be ¥300 on Meituan, a 20–30% gap. The price difference exists between domestic apps (Meituan) and international-facing OTAs; the Chinese and international versions of Trip.com (Ctrip) show the same price. To use Meituan you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]) — foreign cards are not directly supported. Meituan has partial English support but many menus remain in Chinese. (Source: Reddit r/travelchina post #4, 2026-05-08)
-
-**DiDi (滴滴酒店)** now offers hotel booking with full English interface support. As a foreigner-friendly option, DiDi Hotels accepts international credit cards (Visa, Mastercard) directly — no Alipay or WeChat Pay required. Prices are competitive with domestic platforms, and the booking flow is integrated with DiDi's ride-hailing service, making it easy to book a car to your hotel after completing your reservation. Available in major cities.
+**Meituan (美团)** lists the same rooms as OTAs but often at lower local prices — travelers report savings of roughly 20–30% on the same room versus international-facing OTAs (e.g. a room around ¥400 on Trip.com showing closer to ¥300 on Meituan). This is an anecdotal traveler estimate rather than a verified figure, and the gap varies by property and date; the Chinese and international versions of Trip.com (Ctrip) show the same price. To use Meituan you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]) — foreign cards are not directly supported. Meituan has partial English support but many menus remain in Chinese. (Source: traveler reports, Reddit r/travelchina, 2026-05-08)
 
 **Fliggy (飞猪)** has wide coverage of smaller cities and budget properties but is harder to use without a Chinese payment method and has no English UI.
 
-## What do I need to check in to a hotel in China?
+## Check-In Requirements
 
 - **Original passport is mandatory** at every check-in — a photocopy, a photo on your phone, or another ID document is not accepted. Hotels are legally required to verify and register your passport details.
 - A valid visa or entry stamp is required — the hotel will check that your passport shows a valid legal basis to be in China (a current visa, a valid entry stamp, or a qualifying visa-free entry).
 - The hotel files your residence registration with the local public security bureau automatically — you do not need to visit a police station for hotel stays (see [[wiki/concepts/residence-registration.md]]).
 
-## Can I pay with a foreign card at a hotel front desk in China?
+## Foreign-Card Payment at the Front Desk
 
 Under the PBOC April 2024 circular, **3-star and above hotels** are required to accept foreign Visa and Mastercard at the POS. In practice:
 
@@ -83,7 +83,7 @@ Under the PBOC April 2024 circular, **3-star and above hotels** are required to 
 
 Pre-paying through an international booking platform (Trip.com, Agoda, Booking.com) sidesteps front-desk payment entirely and is the most reliable approach.
 
-## Which hotels are licensed to accept foreign guests?
+## Properties Licensed for Foreign Guests
 
 Not every hotel or guesthouse in China is authorized to receive foreign nationals. Properties must register with local public security to accept foreign guests. In practice:
 
@@ -93,9 +93,9 @@ Not every hotel or guesthouse in China is authorized to receive foreign national
 
 When booking via Trip.com or similar platforms, search results generally show only foreigner-eligible properties by default in major cities, but confirm for off-the-beaten-path destinations.
 
-## Can I use Airbnb or short-term rentals in China?
+## Short-Term Rentals (Local Platforms)
 
-Airbnb operates in mainland China. Local alternatives include Tujia (途家) and Meituan Minsu (美团民宿).
+Airbnb is not a practical home-rental option inside mainland China: it shut down all of its domestic mainland-China listings (around 150,000) effective 30 July 2022 and, as of June 2026, has not relisted them — it now serves only Chinese travelers booking stays abroad. (A small number of commercial hotels may still surface on Airbnb, but it is not a reliable way to find apartment-style stays in China.) For short-term apartment rentals, use domestic platforms instead: Tujia (途家) and Meituan Minsu (美团民宿).
 
 Key considerations:
 - Hosts must be licensed to receive foreign guests and must file your residence registration within 24 hours of your arrival — the same deadline that applies to hotels — per the Exit and Entry Administration Law implementing regulations (see [[wiki/concepts/residence-registration.md]]). Many short-term rental hosts are not set up to do this.
@@ -111,7 +111,7 @@ Key considerations:
 - **Deposit:** hotels typically hold a deposit (押金) at check-in — ¥200–500 for budget properties, higher for luxury. Returned at check-out. Foreign cards can be used for the hold in hotels that accept them; otherwise cash.
 - **VPN:** if you need access to blocked services (Google, WhatsApp, etc.) in your room, set up a VPN before arrival — hotel Wi-Fi is subject to the same Great Firewall restrictions as any Chinese network.
 
-## How do I find hotels that accept foreigners?
+## How to Find Foreigner-Accepting Hotels
 
 Finding a hotel that will actually accept your passport at check-in is the single biggest accommodation challenge for foreign visitors. Strategies:
 
@@ -125,7 +125,9 @@ Finding a hotel that will actually accept your passport at check-in is the singl
 
 **If refused at check-in:** Call your booking platform's customer service immediately — they will find an alternative or arrange a refund. Meanwhile, search Booking.com for nearby international hotels. International chains in the same city will always accept you as a fallback.
 
-## Hostel or hotel: which should foreigners choose in China?
+## Hostel vs Hotel Comparison
+
+Prices below are approximate ballpark figures (as of June 2026) and vary by city, season, and property.
 
 | Factor | Hostel (dorm) | Budget hotel | Mid-range hotel |
 |---|---|---|---|
@@ -145,14 +147,14 @@ Finding a hotel that will actually accept your passport at check-in is the singl
 Trip.com is Ctrip's international brand. Same company, same inventory, same hotels and trains. Trip.com is simply the foreigner-friendly version with full English support and foreign payment options (Visa, Mastercard, AMEX). No need to use both — Trip.com gives you access to everything Ctrip has.
 
 ### Price Differences Between Platforms
-The same room can cost **20-30% more** on international OTAs (Trip.com, Booking.com, Agoda) compared to domestic platforms (Meituan, Fliggy). This price gap exists because domestic apps target local consumers with lower prices. To access domestic pricing, you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]).
+The same room can cost more on international OTAs (Trip.com, Booking.com, Agoda) than on domestic platforms (Meituan, Fliggy) — travelers report differences in the rough range of **20–30%**, though this is an anecdotal estimate that varies by property and date. The gap exists because domestic apps target local consumers with lower prices. To access domestic pricing, you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]).
 
-**Cost-saving strategy:** Use international platforms for guaranteed foreigner acceptance and foreign-card payment, or set up Alipay/WeChat Pay first and book via Meituan for 20-30% savings on the same room.
+**Cost-saving strategy:** Use international platforms for guaranteed foreigner acceptance and foreign-card payment, or set up Alipay/WeChat Pay first and book via Meituan to access the lower domestic rates on the same room.
 
 ### Platform Reliability
 Traveler reports confirm Trip.com works well for extended trips — one user booked 8 hotels, 4 trains, and 2 flights over 3 weeks with no issues. English customer support helped with date changes. Regular Visa card accepted for all bookings.
 
-## How do I check in to a Chinese hotel with my passport?
+## Check-In with Passport — Step by Step
 
 1. **Arrive at front desk** with your original passport (copies or photos on phone are never accepted).
 2. **Desk staff scan your passport** and check your valid visa, entry stamp, or visa-free entry evidence.
@@ -162,7 +164,9 @@ Traveler reports confirm Trip.com works well for extended trips — one user boo
 
 **No action required from you** for PSB registration — hotels handle everything automatically. If you change hotels mid-trip, each new hotel registers you again upon check-in.
 
-## How much do hotels cost in major Chinese cities?
+## City-Specific Price Reference
+
+The nightly ranges below are rough indications only (approximate, as of June 2026); actual prices vary widely by season, location, and demand, so treat them as ballpark figures and check live rates when booking.
 
 | City | Budget range | Mid-range | Notes |
 |---|---|---|---|
