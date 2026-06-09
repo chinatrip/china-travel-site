@@ -115,3 +115,39 @@ npm run sync-content   # 从 wiki 拉 audited 内容到 src/content/(本地走 S
 npm run dev            # 本地预览
 npm test               # node:test + 构建 + 内链 guard
 ```
+
+## 一次性搭建(从零跑起来)
+
+在一个新环境立起整套流水线,需要:
+
+**1. Cloudflare**
+- 站点是 Worker(带静态资源),`wrangler.json` 已在仓库,无需另建项目配置。
+- **关闭原生 Git 集成**:Workers & Pages → `china-travel-site` → Settings → Builds/Git → 解绑仓库(否则会与 GitHub Actions 双重部署)。
+
+**2. site 仓 secrets**
+| secret | 怎么来 |
+|---|---|
+| `CLOUDFLARE_API_TOKEN` | CF → My Profile → API Tokens → "Edit Cloudflare Workers" 模板 |
+| `CLOUDFLARE_ACCOUNT_ID` | CF 后台账户 ID |
+| `APP_ID` / `APP_PRIVATE_KEY` | GitHub App(见 3) |
+
+**3. GitHub App `chinaguide-content-sync`**
+- 建 App:权限 Contents `R/W` + Pull requests `R/W`;关掉 Webhook。
+- **装到两个仓**:`china-travel-site` + `foreigner-visiting-china-wiki`。
+- 记 App ID + 生成私钥 → 配成 site 仓的 `APP_ID` / `APP_PRIVATE_KEY` secret。
+
+**4. wiki 仓 secret**
+- `SITE_REPO_TOKEN`:向 site 发 `repository_dispatch` 的 PAT。
+
+## 故障排查(Runbook)
+
+| 症状 | 可能原因 | 处理 |
+|---|---|---|
+| `CI & Preview` 预览步被跳过 | `CLOUDFLARE_API_TOKEN` 未配 | 配上(预览步以 `if: env.CF_TOKEN != ''` 守卫) |
+| 预览步报 `Unknown arguments: preview-alias` | wrangler 太老(action 默认 3.x) | 确保 `wrangler@^4` 在 devDependencies |
+| `Deploy (production)` 的 `wrangler deploy` 失败 | token 权限不足 / account ID 错 | token 需 Workers Scripts:Edit + Workers Routes:Edit;核对 account ID |
+| `sync-content` 没开出内容 PR | App 未装到仓 / `APP_*` secret 缺 / 0 篇 audited | 检查 App 安装 + secrets;0 篇时 `sync-content.mjs` 会主动失败(#4 防空站) |
+| 内容 PR 没触发 `CI & Preview` | PR 由默认 `GITHUB_TOKEN` 创建 | 必须由 GitHub App token 创建(已配置) |
+| 没收到内容 PR 的 review 通知 | 作者不是 App / 关了通知 | 确认 PR 作者是 App、`reviewers:` 是你;查 GitHub 通知设置 |
+| 内容 PR diff 含**意外删除 / 抹字段** | wiki 内容漂移 | **别合并**;见 issue #19(`src/content` 有未在 wiki 的手工内容) |
+| 要回滚生产 | — | `wrangler versions deploy <旧版本>`,或 revert 合并后 push,或手动重发 `Deploy (production)` |
