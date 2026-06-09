@@ -1,58 +1,50 @@
 # China Travel Guide — Site
 
-Astro-based static site for [foreigner-visiting-china-wiki](https://github.com/yi-yang/foreigner-visiting-china-wiki) content.
+Astro static site for [chinatrip/foreigner-visiting-china-wiki](https://github.com/chinatrip/foreigner-visiting-china-wiki) content. Deployed as a **Cloudflare Worker (static assets)** at <https://chinaguide.ai>.
 
 ## Architecture
 
 ```
-wiki repo (content)          site repo (code)
-yi-yang/foreigner-           yi-yang/china-travel-site
-visiting-china-wiki
-  │                              │
-  │  wiki/concepts/*.md          │  src/content/guides/
-  │  wiki/entities/*.md          │  src/content/apps/
-  │                              │
-  └──── sync-content ───────────►│
-         (script or CI)          │
-                                 ├── astro build
-                                 │
-                                 └── Cloudflare Pages (deploy)
+wiki repo (content)                  site repo (this · code + build)
+chinatrip/foreigner-visiting-        chinatrip/china-travel-site
+china-wiki
+  wiki/concepts/*.md  ──┐ audited
+  wiki/entities/*.md  ──┘
+        │  publish-content → repository_dispatch
+        ▼
+  sync-content.yml → 开内容 PR → ci.yml (gate + 预览)
+        │
+        └─ 合并 main → deploy.yml (wrangler deploy) → Cloudflare Worker
 ```
+
+**完整流水线见 [PIPELINE.md](./PIPELINE.md)** —— 每个阶段谁负责、在哪观测、如何回滚。
 
 ## Quick Start
 
 ```bash
-# Install
 npm install
-
-# Sync content from wiki repo
-npm run sync-content
-
-# Dev server
-npm run dev
-
-# Build
-npm run build
+npm run sync-content   # 从 wiki 仓同步 audited 内容到 src/content/
+npm run dev            # 本地开发
+npm test               # node:test + astro build + 内链尾斜杠 guard
 ```
 
-## Content Workflow
+## Content workflow（简版）
 
-1. Edit Markdown in the **wiki repo** (`wiki/concepts/` or `wiki/entities/`)
-2. Set front matter `status: audited` when content is ready for publication
-3. Run `npm run sync-content` locally, or push to trigger CI
-4. Only `status: audited` files are published to the site
+1. 在 **wiki 仓** 编辑 `wiki/concepts/`（→ guides）或 `wiki/entities/`（→ apps）。
+2. front matter 里把 `review.status` 设为 `audited` 表示可发布。
+3. 合并到 wiki/main → 自动同步、开内容 PR → 审阅合并即上线。
+4. 只有 `review.status: audited` 的页会进站。
 
 ## Deployment
 
-The site deploys to Cloudflare Pages. Deployment is triggered by:
-- Push to `main` branch of this repo
-- `repository_dispatch` event from the wiki repo (on content update)
-- Manual workflow dispatch
+GitHub Actions 用 `wrangler` 部署到 Cloudflare Worker（Cloudflare 原生 Git 集成已关闭，部署由 Actions 显式发起）：
+
+- **PR** → `ci.yml` 部署预览版（`wrangler versions upload`），预览 URL 贴在 PR 评论。
+- **合并到 main** → `deploy.yml` 部署生产（`wrangler deploy`）→ <https://chinaguide.ai>。
+
+详见 [PIPELINE.md](./PIPELINE.md)。
 
 ## TODO
 
-- [ ] Configure Cloudflare Pages project
-- [ ] Set up custom domain
-- [ ] Add sitemap generation
 - [ ] Add GA4 analytics
 - [ ] Design hotel booking CTA component

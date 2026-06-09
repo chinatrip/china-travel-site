@@ -1,19 +1,34 @@
-name: Sync wiki content and deploy
+name: Deploy (production)
+
+# Runs on every push to main (i.e. when any PR is merged).
+# Re-runs the full gate, then deploys to the production Cloudflare Worker
+# (serves chinaguide.ai). `wrangler deploy` reads wrangler.json (assets: ./dist).
+#
+# The deploy step is guarded by `env.CF_TOKEN != ''`. Until the CLOUDFLARE_API_TOKEN
+# secret is set (and the Cloudflare native Git integration is disconnected), this
+# step skips and Cloudflare's native integration still deploys. After that, this
+# workflow is the single source of production deploys. Manual re-run / rollback via
+# the "Run workflow" button (workflow_dispatch).
 
 on:
-  # Triggered by wiki repo when audited content changes
-  repository_dispatch:
-    types: [wiki-updated]
-  # Manual trigger
-  workflow_dispatch:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
-  sync-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
+    env:
+      CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.WIKI_REPO_TOKEN }}
 
       - uses: actions/setup-node@v4
         with:
@@ -22,32 +37,13 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Sync wiki content
-        run: npm run sync-content
-        env:
-          GITHUB_TOKEN: ${{ secrets.WIKI_REPO_TOKEN }}
+      - name: Test (node:test + build + internal-link guard)
+        run: npm test
 
-      - name: Build site (validation)
-        run: npm run build
-
-      - name: Check for changes
-        id: diff
-        run: |
-          git diff --quiet src/content/ && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
-
-      - name: Commit and push updated content
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/content/
-          git commit -m "Auto-sync: update content from wiki repo"
-          git push
-
-      - name: Deploy to Cloudflare Pages
-        if: steps.diff.outputs.changed == 'true'
+      - name: Deploy to production (Cloudflare Workers)
+        if: env.CF_TOKEN != ''
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=china-travel-site --branch=main
+          command: deploy

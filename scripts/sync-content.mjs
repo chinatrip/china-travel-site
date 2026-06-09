@@ -1,23 +1,30 @@
 #!/usr/bin/env node
 
 /**
- * Sync content from the wiki repo to the site's content directory.
+ * Sync audited content from the wiki repo into the site's content directory.
  *
- * Usage:
- *   npm run sync-content
+ * Usage:  npm run sync-content
  *
  * What it does:
- *   1. Clones/pulls the wiki repo into a temp directory
- *   2. Copies wiki/concepts/*.md → src/content/guides/
- *   3. Copies wiki/entities/*.md → src/content/apps/
- *   4. Only copies files where front matter contains status: audited
+ *   1. Clones/pulls the wiki repo into a temp dir (.wiki-cache).
+ *   2. Collects wiki/concepts/*.md → guides, wiki/entities/*.md → apps,
+ *      keeping ONLY pages whose front matter has nested `review.status: audited`.
+ *   3. Only after confirming ≥1 audited page, wipes + rewrites the target dirs.
  *
- * The wiki repo is: https://github.com/chinatrip/foreigner-visiting-china-wiki
+ * Wiki repo: https://github.com/chinatrip/foreigner-visiting-china-wiki
+ *
+ * Safety:
+ *   - Audited gate reads the REAL nested `review.status` via a YAML parser
+ *     (gray-matter), not a flattened best-effort parse. See issue #3.
+ *   - Never publishes an empty site: if 0 audited pages are found (wiki
+ *     unreachable, all draft, or schema drift), it aborts with a non-zero exit
+ *     BEFORE touching src/content/, so CI fails and no PR/deploy happens. See #4.
  */
 
 import { execSync } from 'node:child_process';
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
-import { join, basename } from 'node:path';
+import { join } from 'node:path';
+import matter from 'gray-matter';
 
 // Use HTTPS with token in CI, SSH locally
 const WIKI_REPO = process.env.GITHUB_TOKEN
@@ -38,71 +45,91 @@ function cloneOrPull() {
   }
 }
 
-function extractFrontMatter(content) {
-  const match = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!match) return {};
-  const fm = {};
-  for (const line of match[1].split('\n')) {
-    const [key, ...rest] = line.split(':');
-    if (key && rest.length) {
-      fm[key.trim()] = rest.join(':').trim();
-    }
-  }
-  return fm;
-}
-
-function syncDirectory(sourceDir, targetDir, category) {
+/**
+ * Collect audited pages from a source dir. Parses front matter properly and
+ * keeps only `review.status === 'audited'`. Does NOT modify the target dir
+ * (so the empty-site guard can run before any destructive wipe).
+ * @returns {{name: string, outputContent: string}[]}
+ */
+function collectAudited(sourceDir, category) {
   if (!existsSync(sourceDir)) {
     console.log(`  Source not found: ${sourceDir}, skipping.`);
-    return;
+    return [];
   }
-  mkdirSync(targetDir, { recursive: true });
-
-  // Clean existing files in target
-  for (const file of readdirSync(targetDir)) {
-    if (file.endsWith('.md')) {
-      rmSync(join(targetDir, file));
-    }
-  }
-
   const files = readdirSync(sourceDir).filter((f) => f.endsWith('.md'));
-  let synced = 0;
+  const items = [];
   let skipped = 0;
 
   for (const file of files) {
     const content = readFileSync(join(sourceDir, file), 'utf-8');
-    const fm = extractFrontMatter(content);
-
-    // Only sync audited content
-    if (fm.status !== 'audited') {
+    let fm;
+    try {
+      fm = matter(content).data;
+    } catch (err) {
+      console.warn(`  ⚠ ${file}: front matter parse failed (${err.message}), skipping.`);
       skipped++;
       continue;
     }
 
-    // Ensure category is set in front matter
-    let outputContent = content;
-    if (!fm.category) {
-      outputContent = content.replace(/^(---\n)/, `$1category: ${category}\n`);
+    // Audited gate — the wiki schema nests status under `review:`.
+    if (fm.review?.status !== 'audited') {
+      skipped++;
+      continue;
     }
 
-    writeFileSync(join(targetDir, file), outputContent);
-    synced++;
+    // Inject category at the top level if missing (string-level, to preserve
+    // the original content/formatting verbatim).
+    const outputContent = fm.category
+      ? content
+      : content.replace(/^(---\r?\n)/, `$1category: ${category}\n`);
+
+    items.push({ name: file, outputContent });
   }
 
-  console.log(`  ${category}: ${synced} synced, ${skipped} skipped (draft)`);
+  console.log(`  ${category}: ${items.length} audited, ${skipped} skipped`);
+  return items;
 }
 
-// Main
+/** Wipe existing .md in target, then write the collected items. */
+function writeDir(targetDir, items) {
+  mkdirSync(targetDir, { recursive: true });
+  for (const file of readdirSync(targetDir)) {
+    if (file.endsWith('.md')) rmSync(join(targetDir, file));
+  }
+  for (const { name, outputContent } of items) {
+    writeFileSync(join(targetDir, name), outputContent);
+  }
+}
+
+// ---- Main ----
 console.log('=== Syncing wiki content to site ===\n');
-cloneOrPull();
+
+try {
+  cloneOrPull();
+} catch (err) {
+  console.error(`\n❌ Failed to fetch wiki content: ${err.message}`);
+  process.exit(1);
+}
 console.log('');
 
-// The wiki repo has a nested structure: repo-root/foreigner-visiting-china-wiki/wiki/
+// The wiki repo nests content under repo-root/foreigner-visiting-china-wiki/wiki/
 const wikiRoot = existsSync(join(TEMP_DIR, 'wiki/concepts'))
   ? join(TEMP_DIR, 'wiki')
   : join(TEMP_DIR, 'foreigner-visiting-china-wiki/wiki');
 
-syncDirectory(join(wikiRoot, 'concepts'), GUIDES_DIR, 'guide');
-syncDirectory(join(wikiRoot, 'entities'), APPS_DIR, 'app');
+const guides = collectAudited(join(wikiRoot, 'concepts'), 'guide');
+const apps = collectAudited(join(wikiRoot, 'entities'), 'app');
+const total = guides.length + apps.length;
 
-console.log('\nDone! Run `npm run dev` to preview.');
+// #4 — never publish an empty site. Abort before any destructive write.
+if (total === 0) {
+  console.error('\n❌ 0 audited pages found — aborting WITHOUT modifying src/content/.');
+  console.error('   Likely: wiki unreachable, all pages draft, or front-matter schema drift.');
+  console.error('   Investigate before publishing (CI fails here; no PR / no deploy).');
+  process.exit(1);
+}
+
+writeDir(GUIDES_DIR, guides);
+writeDir(APPS_DIR, apps);
+
+console.log(`\nDone! ${total} pages synced (${guides.length} guides, ${apps.length} apps).`);
