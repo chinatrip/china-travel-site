@@ -1,14 +1,4 @@
 ---
-description: "Set up Alipay as a foreigner: bind a Visa/Mastercard with no Chinese bank account, passport verification, Tour Pass vs direct binding, fees, and fixing payment failures. Updated May 2026."
-faqs:
-  - q: "Can I use Alipay without a Chinese bank account?"
-    a: "Yes. Bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card directly since the April 2024 PBOC policy — no Chinese bank account needed."
-  - q: "Do I need to verify my passport on Alipay?"
-    a: "For larger or cumulative spending Alipay asks for passport verification; small spending often works right after binding a card. Complete verification before your trip to avoid limits."
-  - q: "Why is my Alipay payment failing?"
-    a: "Common causes: paying to a personal QR code (foreign cards can only pay merchant codes), having a VPN switched on, or hitting a per-transaction limit. Turn off the VPN and ask for a merchant code."
-  - q: "What is Alipay Tour Pass and do I need it?"
-    a: "Tour Pass is a prepaid mini-wallet for short visits, but since direct foreign-card binding launched it's usually unnecessary and can carry fees. Most visitors just bind a card directly."
 category: app
 title: Alipay
 date: 2026-04-30
@@ -35,7 +25,7 @@ Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It c
 
 **Set up before you arrive** — SMS verification works on a foreign carrier; in-country setup is unreliable due to the GFW and a fresh Chinese SIM may not receive verification codes.
 
-## How do foreigners set up Alipay?
+## How Foreigners Set It Up
 
 1. Download the Alipay App (App Store / Google Play).
 2. Register with a **foreign mobile number**.
@@ -43,7 +33,7 @@ Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It c
 4. Under **Me → Bank Cards**, bind a Visa, Mastercard, JCB, Diners Club, or Discover card. AMEX is bindable but has limited merchant acceptance — use Visa or Mastercard as primary.
 5. You can now scan to pay anywhere Alipay is accepted.
 
-## What are Alipay's fees and limits for foreign cards?
+## Fees and Limits
 
 | Situation | Fee |
 |---|---|
@@ -53,7 +43,7 @@ Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It c
 
 PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000 annual. Check your current in-app limit after completing ID verification.
 
-## What is Alipay Tour Pass, and do I need it?
+## Tour Pass / Alipay+
 
 > **Update (2026):** The original Tour Pass mini-program has been deprecated (its official URL returns 404). As of 2024, Alipay allows foreigners to directly bind international credit/debit cards (Visa, Mastercard, JCB, Diners Club, Discover) to their main Alipay account. Transaction limits: ¥10,000 per transaction, ¥50,000 annual (unverified accounts) or ¥200,000 (passport-verified accounts). The 'Tour Pass' and 'TourCard' product names are no longer active — direct card binding is the current method.
 
@@ -65,7 +55,7 @@ Tour Pass charges a **5% fee** per transaction (vs 3% for direct card binding). 
 
 **Alipay+** allows payment via foreign e-wallets (GCash, Kakao Pay, GrabPay, TrueMoney, and others) — useful if you already use one of those apps.
 
-## What can I do with Alipay?
+## Main Features
 
 - **Scan to pay / receive**: restaurants, supermarkets, attractions
 - **Ride-hailing**: integrated DiDi entry

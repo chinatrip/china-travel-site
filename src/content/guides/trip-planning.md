@@ -1,14 +1,4 @@
 ---
-description: "Planning a China trip: best seasons, how many days, what to pre-book versus buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3 cities. Updated May 2026."
-faqs:
-  - q: "How many days should I spend in China?"
-    a: "Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across too many places — slowing down reduces burnout and absorbs delays from weather or illness."
-  - q: "What should I pre-book versus buy on arrival?"
-    a: "Pre-book only things that sell out — the Forbidden City, Terracotta Warriors, peak-season long-distance trains. Buy most attraction tickets and short trips same-day via Alipay to stay flexible."
-  - q: "What is the best season to visit China?"
-    a: "Spring (April-May) and autumn (September-October) offer the best weather. Avoid Golden Week (first week of October) and Lunar New Year, when crowds and prices surge."
-  - q: "What is a realistic daily budget for China?"
-    a: "Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+ for high-end, with Tier-1 cities (Beijing, Shanghai) costing more than smaller ones."
 category: guide
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
 date: 2026-05-13
@@ -42,7 +32,7 @@ review:
 
 # Trip Planning — Timing, Budget, Length, and Independent Travel
 
-## When should I avoid traveling in China?
+## When to Avoid: Major Holiday Periods
 
 Three national holidays cause extreme domestic travel surges that directly affect foreign tourists — transport sells out, hotel prices spike, and attractions hit daily capacity limits.
 
@@ -93,7 +83,7 @@ Three national holidays cause extreme domestic travel surges that directly affec
 - Consider Tier 2/3 cities which handle domestic overflow better than Beijing or Shanghai
 - Budget an extra 20–30% time throughout the itinerary — queues add time at attractions, transit points, and restaurants
 
-## What is a realistic daily budget for China?
+## Daily Budget by City Tier (2026)
 
 | City Tier | Examples | Budget | Mid-range | Comfort/Luxury |
 |---|---|---|---|---|
@@ -123,7 +113,7 @@ China is mid-tier in Asia for travel costs: cheaper than Japan, South Korea, and
 | Local restaurant meal with drink | ¥50–120/person |
 | International restaurant in Tier-1 city | ¥200–500+/person |
 
-## How many days do I need for a first trip to China?
+## How Long for a First Trip
 
 | Duration | What's Realistic |
 |---|---|
@@ -141,7 +131,7 @@ The **240-hour visa-free transit policy** (10 days for 55 qualifying nationaliti
 <!-- Unverified: from summary, needs citation check -->
 A sample mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. Detailed day-by-day itineraries with actual costs are available in the source summaries (see `wiki/summaries/realchinaguide-14day-itinerary-2026.md` and `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`). (Source: realchinaguide.com 2026.)
 
-## Should I travel independently or with a guide in China?
+## Independent vs. Guided Travel
 
 Most of mainland China is fully open to independent foreign travel — no guide is required.
 
@@ -174,7 +164,7 @@ Xinjiang is technically open to foreign tourists without a special permit (unlik
 - Some travel insurance policies explicitly exclude Xinjiang — verify before purchasing
 - Extensive camera and facial recognition networks are deployed; avoid photographing police, military, or checkpoints
 
-## What should I prepare before a China trip?
+## Pre-Trip Preparation Timeline (30/7/1 Day Countdown)
 
 <!-- Unverified: from summary, needs citation check -->
 A structured countdown approach helps ensure nothing is missed before departure:

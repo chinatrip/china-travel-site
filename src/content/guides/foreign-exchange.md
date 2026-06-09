@@ -1,14 +1,4 @@
 ---
-description: "Cash and currency in China for foreigners: ATM withdrawals, where foreign cards work, how much cash to carry, and the RMB 20,000 / USD 5,000 customs cash limit. Updated May 2026."
-faqs:
-  - q: "Should I bring cash or use ATMs in China?"
-    a: "Mobile pay covers most spending, but keep some cash for small vendors. Withdrawing RMB from a Chinese ATM (Bank of China, ICBC) usually beats exchanging cash at home — check your bank's foreign-ATM fees first."
-  - q: "How much cash can I bring into China?"
-    a: "You can carry up to RMB 20,000, or the equivalent of USD 5,000 in foreign currency, without declaring it at customs; above that you must declare."
-  - q: "Do shops in China accept foreign Visa or Mastercard?"
-    a: "Direct foreign-card acceptance is limited mostly to international hotels, large department stores and some chains. For everyday spending, bind your card to Alipay or WeChat Pay instead."
-  - q: "Where can I exchange money in China?"
-    a: "Bank of China branches and airport counters exchange major currencies — bring your passport. ATM withdrawals are often more convenient and competitive than counter exchange."
 category: guide
 title: Foreign Exchange and Cash in China
 date: 2026-05-04
@@ -36,13 +26,13 @@ review:
 
 Mobile payment (Alipay / WeChat Pay) covers the overwhelming majority of daily spending in China, but cash remains essential for street vendors, small taxis, rural areas, and as a backup. This page covers ATM access, currency exchange, and cash handling.
 
-## How much cash should I carry in China?
+## How Much Cash to Carry
 
 **Recommended on hand at all times: ¥200–500 in small bills** (¥10, ¥20, ¥50 denominations).
 
 This covers: street food and market stalls, older taxis without working QR placards, small-town transit, and emergencies when mobile payment fails. Larger cities (Beijing, Shanghai, Guangzhou, Shenzhen) rarely require it; smaller cities and rural areas depend on it more.
 
-## How do I withdraw cash from ATMs in China?
+## ATM Withdrawal
 
 ### Which Banks to Use
 
@@ -74,7 +64,7 @@ Avoid: small rural bank ATMs and convenience-store ATMs — foreign card accepta
 - If the ATM retains your card, go directly to the bank counter immediately — retained foreign cards are typically held for 3–7 business days before being destroyed or returned to the issuing bank. Bring your passport; the branch can hold the card for you to collect or advise on the return process.
 - Some ATMs time out quickly; have your PIN ready before inserting the card.
 
-## Where can I exchange money in China?
+## Currency Exchange
 
 ### Where to Exchange
 
@@ -103,7 +93,7 @@ Bank of China publishes live exchange rates at bankofchina.com (English version 
 
 You can convert unused RMB back to foreign currency at bank branches or airport exchange counters. Keep your original exchange receipt (水单) — banks may require it to verify the RMB was obtained through legitimate channels, particularly for larger amounts. The reconversion process requires your passport.
 
-## How much cash can I bring into China?
+## Customs and Carrying Limits
 
 | Cash type | Limit | Declaration required |
 |---|---|---|
@@ -113,7 +103,7 @@ You can convert unused RMB back to foreign currency at bank branches or airport 
 
 Declarations are made on the inbound customs form. Keep receipts if you carry large amounts — customs may ask for evidence of legitimate source.
 
-## Do shops in China accept foreign cards?
+## Foreign Cards at POS (Non-ATM)
 
 Beyond ATMs, foreign Visa and Mastercard can be used at the POS in:
 
@@ -123,7 +113,7 @@ Beyond ATMs, foreign Visa and Mastercard can be used at the POS in:
 
 Most ordinary merchants, street vendors, small restaurants, and budget shops do **not** accept foreign cards at POS — this is why Alipay or WeChat Pay with a bound foreign card is the practical daily solution (see [[wiki/concepts/mobile-payment.md]]).
 
-## Can a foreigner open a Chinese bank account?
+## Opening a Chinese Bank Card
 
 Foreign visitors can open a Chinese bank account and obtain a **UnionPay debit card** at commercial bank branches. This is useful for longer stays — a Chinese bank card enables full functionality in Alipay and WeChat Pay (including P2P transfers, higher limits, and services that reject foreign cards).
 

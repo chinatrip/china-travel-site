@@ -1,14 +1,4 @@
 ---
-description: "Foreigners must register their address within 24 hours of arrival — done by the hotel, or at a police station for private stays. Online pilots and required documents. Updated April 2026."
-faqs:
-  - q: "Do tourists need to register with the police in China?"
-    a: "Yes. All foreigners must register their place of stay. A hotel registers you automatically at check-in. For private stays (friends, family, rentals) you must register at the local police station within 24 hours of arrival."
-  - q: "What happens if I don't register within 24 hours?"
-    a: "Failure to register can result in a warning or fine. Register promptly and keep the registration slip — you may need it for visa extensions or other official processes."
-  - q: "What do I need to register a private stay?"
-    a: "Bring your passport (with visa/entry stamp) and the host's ID and proof of address to the neighborhood police station (paichusuo). Some provinces now offer online registration pilots."
-  - q: "Does staying in a hotel count as registration?"
-    a: "Yes — hotels report your stay to the police at check-in, so you don't need to do anything extra. If you switch to a private stay mid-trip, that stay does require registering."
 category: guide
 title: Residence Registration
 date: 2026-04-30
@@ -33,7 +23,7 @@ review:
 
 Foreign nationals must register their residence within **24 hours** of arriving at each accommodation in China. This is a legal obligation under the **Exit and Entry Administration Law (出境入境管理法, 2012)** and the implementing **Regulations on Residence Registration of Foreigners in China** — the 24-hour deadline is specified in those regulations.
 
-## How do I register my residence in China?
+## How to Register
 
 | Accommodation | Who Registers | Process |
 |---------------|---------------|---------|
@@ -49,7 +39,7 @@ Foreign nationals must register their residence within **24 hours** of arriving 
 - **Multi-city trips:** the 24-hour clock resets at each new accommodation. If you travel from Beijing to Xi'an on day 3, you must register at your Xi'an accommodation within 24 hours of arrival there — even if you were already registered in Beijing. Hotel stays handle this automatically; private/rental stays require a repeat visit to the local 派出所.
 - **Short-term rental / host liability:** under the Exit and Entry Administration Law and implementing regulations, both the host and the foreign guest bear responsibility for ensuring registration is completed. If your host fails to file, register yourself at the local 派出所 — do not assume the host has handled it. Properties receiving foreign guests are subject to public security registration requirements; in practice, not all short-term rental operators are set up to file foreign-guest registrations with local police, and some operate without the necessary approval — staying at such a property may leave your registration incomplete regardless of your actions.
 
-## What law requires residence registration in China?
+## Legal Basis
 
 - Exit and Entry Administration Law of the People's Republic of China (2012)
 - Regulations on Residence Registration of Foreigners in China (implementing regulation; specifies the 24-hour deadline and registration procedures)

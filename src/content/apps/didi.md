@@ -1,14 +1,4 @@
 ---
-description: "DiDi is China's ride-hailing app like Uber: sign up with a foreign number, pay via Alipay/WeChat, enter destinations without Chinese, and run it inside Alipay with no separate app. Updated May 2026."
-faqs:
-  - q: "Can foreigners use DiDi in China?"
-    a: "Yes. Register with a foreign phone number, or use the DiDi mini-program inside Alipay/WeChat with no separate signup, and pay through your bound card."
-  - q: "How do I pay for DiDi?"
-    a: "Link Alipay or WeChat Pay (or a foreign card in the app); fares are charged automatically at the end of the ride — no cash needed."
-  - q: "How do I tell the DiDi driver where to go if I don't speak Chinese?"
-    a: "Enter your destination in the app (search English names or paste Chinese) and DiDi sends it to the driver. The app shows the route, so little spoken Chinese is needed; messages can be auto-translated."
-  - q: "What if the DiDi driver can't find me?"
-    a: "Pick a clear pickup point (a mall entrance or landmark), watch the car on the map, and use the in-app call/message with translation, or share your trip for safety."
 category: app
 title: DiDi
 date: 2026-04-30
@@ -35,14 +25,14 @@ review:
 
 DiDi is China's largest ride-hailing platform, covering the vast majority of cities. It's the default option for foreign visitors.
 
-## How do foreigners use DiDi?
+## How Foreigners Use It
 
 1. Download the DiDi App from the App Store or Google Play. **On Google Play, search for "DiDi — Ride Hailing App" (the China version) — the global DiDi app does not work properly in mainland China.** If in doubt, install the app before departure.
 2. Register with a **foreign mobile number** — English UI is available in Settings.
 3. Add a payment method: Alipay, WeChat Pay, or bind a Visa/Mastercard directly in-app (Me → Wallet → Add card). All three are reliably accepted in DiDi as of 2026.
 4. Enter your destination and request a ride. Drivers are matched automatically.
 
-## What DiDi vehicle types are available?
+## Vehicle Types
 
 | Type | Description |
 |------|-------------|
@@ -52,7 +42,7 @@ DiDi is China's largest ride-hailing platform, covering the vast majority of cit
 | Luxe (豪华车) | Business / executive |
 | Hitch (顺风车) | Carpool — note: operational restrictions apply (gender rules for solo female passengers on late-night trips) |
 
-## Does DiDi offer bike-sharing?
+## Bike-Sharing
 
 DiDi also operates bike-sharing — open the DiDi app and scan the QR code on any DiDi-branded bike to unlock it.
 
@@ -76,7 +66,7 @@ DiDi also operates bike-sharing — open the DiDi app and scan the QR code on an
 - **Safe vs street taxis:** DiDi is considered safer than street-hail taxis — rides are tracked, prices are fixed, driver identity is verified.
 - **Mini-program access:** In WeChat or Alipay, search "滴滴出行" to open DiDi without a separate app download. Useful if you have Alipay set up but limited phone storage.
 
-## Is DiDi or the metro cheaper in China?
+## Cost Comparison: DiDi vs Metro
 
 | Scenario (Beijing) | DiDi | Metro |
 |---|---|---|
@@ -86,7 +76,7 @@ DiDi also operates bike-sharing — open the DiDi app and scan the QR code on an
 
 **Recommendation:** Use metro as default for 90% of daytime travel. Reserve DiDi for airports, late nights, luggage situations, rainy days, and groups of 3+ (where split cost makes DiDi competitive).
 
-## What are the alternatives to DiDi in China?
+## Alternatives
 
 - **Amap (高德地图):** ride-hailing aggregator — calls multiple services at once including DiDi, useful for price comparison and as a fallback when DiDi is busy.
 - **Street taxi:** hail on the street; metered fare; cash always accepted.

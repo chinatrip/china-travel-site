@@ -1,14 +1,4 @@
 ---
-description: "China visa and entry options in 2026: 30-day visa-free for 59 countries, 240-hour transit-free at 65 ports for US citizens, the tourist L visa, and entry requirements. Updated May 2026."
-faqs:
-  - q: "Which countries can enter China visa-free in 2026?"
-    a: "As of 2026, 59 countries qualify for 30-day visa-free entry (most of the EU, the UK, Australia and others). Always confirm your nationality's current status on the National Immigration Administration site before booking."
-  - q: "Can US citizens visit China without a visa?"
-    a: "US passport holders are not on the 30-day visa-free list, but can use the 240-hour (10-day) transit-free policy at 65 ports when travelling onward to a third country. For an ordinary tourist trip, a tourist (L) visa is required."
-  - q: "What is the 240-hour transit-free policy?"
-    a: "It lets eligible travelers transit China for up to 240 hours (10 days) without a visa, provided they enter and exit through qualifying ports and hold an onward ticket to a third country."
-  - q: "How long must my passport be valid to enter China?"
-    a: "Your passport should be valid for at least six months beyond your planned stay and have blank visa pages."
 category: guide
 title: China Visa & Entry Options for Tourists and Visitors
 date: 2026-04-30
@@ -58,7 +48,7 @@ Start here. Find your nationality in the table below to identify which section t
 
 ---
 
-## Section A: Unilateral 30-Day Visa-Free Entry
+## Section A — Unilateral 30-Day Visa-Free Entry
 
 ### What it is
 China grants unilateral (one-sided) visa-free entry to ordinary passport holders from 54+ countries (as of November 2024 expansion; the list is actively expanding — check the latest NIA announcements for updates). No visa application, no fees. Entry is permitted for tourism, business visits, visiting relatives, exchange visits, or transit.
@@ -92,7 +82,7 @@ The following nationalities held unilateral 30-day visa-free entry as verified a
 
 ---
 
-## Section B: Bilateral (Mutual) Visa Exemption
+## Section B — Bilateral (Mutual) Visa Exemption
 
 ### What it is
 China has signed mutual visa exemption treaties with approximately 29 countries. These are reciprocal agreements — both countries waive visas for the other's citizens. If your country is in this group, you do not need a visa for short stays.
@@ -107,7 +97,7 @@ UAE, Singapore, Malaysia, Thailand, Brunei, Maldives, Kazakhstan, Georgia, Armen
 
 ---
 
-## Section C: 240-Hour Transit Visa-Free
+## Section C — 240-Hour Transit Visa-Free (过境免签)
 
 ### What it is
 The flagship transit-free scheme allows eligible travelers transiting through China to leave the airport, travel across permitted regions, and stay up to **240 hours (10 days)** without a visa. Announced December 17, 2024; expanded from earlier 72/144-hour windows.
@@ -193,7 +183,7 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 
 ---
 
-## Section D: Hainan Province 30-Day Visa-Free
+## Section D — Hainan Province 30-Day Visa-Free
 
 ### What it is
 A separate, province-level visa-free scheme for Hainan (China's southernmost island province and Special Economic Zone). Significantly broader nationality coverage than the national unilateral scheme — 86 countries as of December 2025.
@@ -212,7 +202,7 @@ Tourism, business visits, visiting relatives, medical treatment, conferences and
 
 ---
 
-## Section E: 24-Hour Airside Transit
+## Section E — 24-Hour Airside Transit
 
 ### What it is
 All foreign nationals (regardless of nationality) may transit through China airside — without clearing immigration — for up to **24 hours**, provided they remain within the international transit zone of the airport.
@@ -230,7 +220,7 @@ All major international airports in China that handle international connections.
 
 ---
 
-## Section F: L Visa (Tourist Visa)
+## Section F — L Visa (Tourist Visa)
 
 ### When you need it
 - Your nationality is not covered by any visa-free or transit-free scheme for mainland China, OR
@@ -288,7 +278,7 @@ Processing takes 7–10 working days; your passport is held during review — yo
 
 ---
 
-## What visa mistakes get visitors turned away from China?
+## Common Mistakes That Get Visitors Turned Away
 
 > These are verified patterns from official consular FAQ pages and immigration guidance. (verify at [us.china-embassy.gov.cn FAQ](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm) and [newyork.china-consulate.gov.cn](https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm))
 
@@ -337,7 +327,7 @@ For completeness, all standard China visa categories:
 
 ---
 
-## Where do I apply for a China visa?
+## Where to Apply and Official Sources
 
 - **Visa applications:** [visaforchina.cn](https://www.visaforchina.cn) (COVA system; also lists nearest CVASC locations)
 - **NIA transit policy:** [en.nia.gov.cn — Transit Policies](https://en.nia.gov.cn/n147418/n147463/c156086/content.html)
@@ -349,7 +339,7 @@ Visa policy for China changes frequently. Verify before booking travel.
 
 ---
 
-## What happens at immigration when entering China?
+## Entry Procedures & Arrival (Supplemental)
 
 > Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 
@@ -377,7 +367,7 @@ See also: [[wiki/concepts/residence-registration.md]]
 
 ---
 
-## Should I use a visa agency for China?
+## Using Visa Agencies
 
 > Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 
@@ -389,7 +379,7 @@ See also: [[wiki/concepts/residence-registration.md]]
 
 ---
 
-## Which countries are visa-free for China in 2026?
+## Visa-Free Country List Updates (2026)
 
 > Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 

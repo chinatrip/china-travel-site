@@ -1,14 +1,4 @@
 ---
-description: "What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs still work after the 2026 crackdown, and why a foreign eSIM bypasses it with no VPN. Updated May 2026."
-faqs:
-  - q: "Do I need a VPN to access Google, WhatsApp and Instagram in China?"
-    a: "Only if you connect through a Chinese SIM or local Wi-Fi. A foreign eSIM bypasses the Great Firewall entirely, so blocked services work without a VPN. With a Chinese SIM you do need a working VPN."
-  - q: "Which VPNs still work in China in 2026?"
-    a: "VPN reliability is a moving target — a service that works one week can be blocked the next, and the 2026 crackdown disrupted many (including LetsVPN). Install and test two VPNs before you fly; newer protocols like Xray Reality and Trojan currently survive better than older Shadowsocks variants."
-  - q: "Can I download a VPN once I'm already in China?"
-    a: "It's very hard — app stores and VPN websites are largely blocked from inside China. Download and test your VPN before arrival. If your only VPN stops working, options include a different-region App Store account or having someone send you the installer file."
-  - q: "Is it legal for tourists to use a VPN in China?"
-    a: "Officially it's restricted, not freely legal: the US State Department (2026) warns VPN use is illegal in most cases and could lead to device confiscation, a fine, or detention, and China requires VPNs to be government-licensed. In practice, enforcement has targeted providers and distributors rather than individual tourists using a VPN for personal communication, and airport security doesn't check devices — but weigh the risk yourself and check your country's official travel advisory."
 category: guide
 title: Internet Access and the Great Firewall for Foreign Visitors
 date: 2026-05-04
@@ -38,9 +28,9 @@ review:
 
 # Internet Access and the Great Firewall for Foreign Visitors
 
-China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a nationwide system that blocks thousands of foreign websites and apps. Every internet connection inside mainland China — hotel Wi-Fi, local SIM data — passes through it, **unless you use a foreign eSIM** (see [Foreign eSIM](#how-does-a-foreign-esim-get-online-without-a-vpn) below). This page covers what's blocked, what works natively, and how to prepare.
+China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a nationwide system that blocks thousands of foreign websites and apps. Every internet connection inside mainland China — hotel Wi-Fi, local SIM data — passes through it, **unless you use a foreign eSIM** (see [Foreign eSIM](#foreign-esim--the-vpn-free-alternative) below). This page covers what's blocked, what works natively, and how to prepare.
 
-## What is blocked in China?
+## What's Blocked
 
 | Category | Blocked services |
 |---|---|
@@ -56,7 +46,7 @@ China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a
 
 As of 2026, the GFW blocks thousands of domains and services (source: chinasurvivalkit.com). The list changes — services occasionally get blocked or unblocked without announcement.
 
-## What works in China without a VPN?
+## What Works Without a VPN
 
 | Category | Working services |
 |---|---|
@@ -70,7 +60,7 @@ As of 2026, the GFW blocks thousands of domains and services (source: chinasurvi
 
 **Public Wi-Fi note:** most free public Wi-Fi in China (airports, malls, metro stations) requires SMS authentication to a Chinese mobile number to connect. Without a local SIM you may not be able to use it. A foreign eSIM or hotel Wi-Fi (which typically uses room credentials) avoids this barrier.
 
-## What should I set up before arriving in China?
+## Before You Arrive — Pre-Departure Setup
 
 **Install and set up these apps before you leave home.** Several key setup steps — binding a foreign card, SMS verification, the WeChat vouching step — are significantly easier or only possible while you're still on your home carrier with a non-Chinese IP address.
 
@@ -133,7 +123,7 @@ See [[wiki/entities/12306.md]].
 **6. VPN (2+ providers)** — If you need access to blocked services (Google, Gmail, WhatsApp, Instagram, Facebook, YouTube, most Western news sites).
 
 - **Critical:** Download and test your VPN **before departure**. The VPN provider's own website is often blocked in China, making it impossible to download or purchase from within China.
-- Install your chosen VPN (see [VPN Setup](#how-do-i-set-up-a-vpn-for-china) below for provider recommendations)
+- Install your chosen VPN (see [VPN Setup](#vpn-setup) below for provider recommendations)
 - Subscribe to a plan and verify it connects in your home country
 - Keep the app updated — outdated VPN apps often stop working after firewall updates
 - Note: using a VPN for payment apps (Alipay, WeChat Pay) can occasionally trigger fraud detection. Disable the VPN when completing payments if a transaction is declined unexpectedly.
@@ -171,7 +161,7 @@ See [[wiki/entities/meituan.md]].
 - [ ] **Download entertainment** (Netflix shows, music) for offline use — assume VPN may fail at times
 - [ ] **Download Baidu Translate** as a VPN-free translation fallback
 
-## How do I set up a VPN for China?
+## VPN Setup
 
 ### Why You Need a VPN
 
@@ -246,7 +236,7 @@ This is a difficult situation because VPN provider websites are themselves block
 
 **Prevention:** Save VPN setup guides as offline PDFs. Save mirror links in your notes app. Email VPN download links to yourself (accessible via Outlook/Yahoo which work without VPN).
 
-## How does a foreign eSIM get online without a VPN?
+## Foreign eSIM — The VPN-Free Alternative
 
 A foreign eSIM (Airalo, Holafly, Ubigi — see [[wiki/concepts/sim-card.md]] for pricing and comparison) routes all data through gateways outside mainland China, bypassing the GFW entirely without a VPN. Google, WhatsApp, YouTube, and all other services work natively. Typical cost: $5–25 USD for a 1–4 week data plan.
 
@@ -280,7 +270,7 @@ For visitors staying up to a few weeks who don't need a local number, the eSIM a
 | Google Search | VPN | Yes |
 | Instagram / Twitter | VPN | Yes |
 
-## Does the Great Firewall apply in Hong Kong, Macau, and Taiwan?
+## Hong Kong, Macau, Taiwan
 
 The GFW does **not** apply in Hong Kong, Macau, or Taiwan. All standard international services work normally in these territories without a VPN.
 

@@ -1,14 +1,4 @@
 ---
-description: "Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed payments. Updated May 2026."
-faqs:
-  - q: "Can foreigners use Alipay or WeChat Pay in China without a Chinese bank account?"
-    a: "Yes. Since the April 2024 PBOC policy you can bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card directly to Alipay or WeChat Pay — no Chinese bank account or phone number required."
-  - q: "Why does my Alipay or WeChat Pay payment keep failing in China?"
-    a: "The most common cause is paying to a vendor's personal QR code, which foreign-card wallets cannot send to — only merchant codes work. A turned-on VPN can also block payments, so switch it off when paying."
-  - q: "How much does it cost to pay with a foreign card on Alipay or WeChat Pay?"
-    a: "Transactions under ¥200 have no fee; transactions of ¥200 or more carry about a 3% surcharge. To avoid it, ask the merchant to split the bill into amounts below ¥200."
-  - q: "Should I still bring cash to China?"
-    a: "Mobile pay is accepted almost everywhere, but carry ¥500-1000 in cash as a backup for small vendors, rural areas, and the occasional payment failure."
 category: guide
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
 date: 2026-05-02
@@ -48,7 +38,7 @@ review:
 
 China runs on QR-code mobile payment. Since a major People's Bank of China (PBOC) policy shift in **April 2024**, foreign visitors can pay almost anywhere by binding a regular Visa or Mastercard directly to **Alipay** or **WeChat Pay** — no Chinese bank account, no prepaid wallet, no Chinese SIM required.
 
-## How should foreigners pay in China?
+## Quick Decision
 
 | Option | Best for | Setup time | Foreign cards accepted | Key fees |
 |---|---|---|---|---|
@@ -61,7 +51,7 @@ For both Alipay and WeChat Pay, **AMEX is bindable but merchant acceptance is un
 
 **Set up both Alipay and WeChat Pay before arrival.** Different merchants accept different apps, SMS verification is more reliable on a foreign carrier than on a fresh Chinese SIM, and WeChat may trigger a contact-vouching step during registration from a foreign number — arrange a qualifying contact before departure if possible.
 
-## What did the 2024 PBOC policy change for foreign visitors?
+## What Changed (2024–2025 PBOC Policy)
 
 The April 2024 circular jointly issued by the PBOC and several ministries reset the foreign-tourist payment story:
 
@@ -81,7 +71,7 @@ The earlier **Alipay Tour Pass** prepaid-wallet option is **no longer the recomm
 
 The verified-tier figures below show the **PBOC regulatory ceilings** — the maximum any platform may allow per transaction or per year. Alipay's and WeChat's own per-account limits are not publicly disclosed but in practice closely track these ceilings for verified accounts; your effective limit may be lower. Check in-app after completing ID verification to confirm your current account limit.
 
-## How do I set up Alipay as a foreigner?
+## Alipay (Recommended First)
 
 ### Setup
 
@@ -121,7 +111,7 @@ Limits are tied to the verified passport identity.
 
 Refunds clear back to the original foreign card after the merchant initiates the return. Cross-border settlement can take up to **30 days** (widely cited by travel guides including travelofchina.com; Alipay's official refund policy at alipay.com may reflect a shorter or different window — check the app's Help center for the current figure). If the refund has not appeared after 30 days, escalate in this order: (1) contact the merchant directly, (2) raise a dispute in the Alipay app under Help → Dispute, (3) dispute the charge with your card issuer. Don't close the bound card until in-flight refunds have all landed.
 
-## How do I set up WeChat Pay as a foreigner?
+## WeChat Pay
 
 ### Setup
 
@@ -157,7 +147,7 @@ Refunds clear back to the original foreign card after the merchant initiates the
 
 Refunds clear back to the original foreign card after the merchant initiates the return. Cross-border settlement follows the same timeline as Alipay — up to **30 days** (widely cited by travel guides; verify the current timeline in WeChat's in-app Help center). Escalate in this order if the refund does not appear: (1) contact the merchant, (2) raise a dispute via WeChat Pay → Help → Dispute a Payment, (3) dispute with your card issuer. Don't close the bound card until in-flight refunds have landed.
 
-## How do I receive money from a friend on Alipay or WeChat?
+## Receiving RMB from Friends (Both Apps)
 
 Both apps support receiving RMB from a Chinese friend — useful when a specific merchant rejects your foreign card.
 
@@ -169,7 +159,7 @@ Both apps support receiving RMB from a Chinese friend — useful when a specific
 
 Foreign-card-bound accounts have lower receive limits than mainland-resident accounts, but the path works for typical tourist amounts.
 
-## How do QR-code payments work in China?
+## How Payment Flows Work
 
 Two distinct QR flows confuse first-time visitors:
 
@@ -178,7 +168,7 @@ Two distinct QR flows confuse first-time visitors:
 
 Both apps support both flows. If a small vendor doesn't see a QR for you to scan, open the **payment / pay** button in the app to show your personal QR for them to scan instead.
 
-## Can I use Apple Pay, Google Pay, or PayPal in China?
+## Alternative Wallets (Apple Pay, Google Pay, PayPal, UnionPay Nihao China, e-CNY)
 
 These are **not replacements** for Alipay or WeChat Pay — treat them as supplementary options.
 
@@ -198,7 +188,7 @@ AlipayHK · WeChat Pay HK · Kakao Pay (South Korea) · Touch'n Go eWallet (Mala
 
 **Digital yuan (e-CNY)** — China's central bank digital currency (CBDC) wallet accepts foreign passport registration in participating pilot cities and has been promoted at some airports and major event venues. In practice, merchant acceptance remains patchy and its advantages over Alipay/WeChat Pay are not material for a short-term tourist. It is not recommended as a primary payment method; note it exists if you encounter e-CNY top-up kiosks at airports or event venues.
 
-## Where does mobile pay not work in China?
+## Where Mobile Pay Doesn't Work (Both Apps)
 
 | Scenario | Why | Fallback |
 |---|---|---|
@@ -210,7 +200,7 @@ AlipayHK · WeChat Pay HK · Kakao Pay (South Korea) · Touch'n Go eWallet (Mala
 
 **Working rule: carry ¥200–500 in small bills as backup.** Tier-1 cities almost never need it; tier-2 and below occasionally do.
 
-## Which venues must accept foreign cards in China?
+## PBOC Merchant Mandate (Foreign Card POS)
 
 Independent of mobile pay, the 2024 circular requires the following categories of venue to accept foreign bank cards (Visa / Mastercard) at the POS:
 
@@ -221,7 +211,7 @@ Independent of mobile pay, the 2024 circular requires the following categories o
 
 Some merchants at covered venues may claim the POS machine "doesn't work" or produce a long-unused, uncharged device — this can be deliberate avoidance of higher interchange fees on foreign-card transactions. If a covered venue refuses, asking for the manager and citing the 2024 PBOC circular resolves most cases on the spot. For formal complaints, China's general government services hotline is **12345** (the nationwide government complaint and services line, operated by local government offices — verify it is still active at gov.cn before your trip); the PBOC operates a dedicated financial consumer rights line — verify the current number at pbc.gov.cn/en before your trip.
 
-## How do I make sure I can always pay in China?
+## Payment Reliability and Redundancy
 
 Foreign users occasionally experience payment failures due to card verification issues, daily transaction limits, or network problems. Having a backup payment method (second app, cash ¥200-500, or physical card) is recommended. When Alipay fails, WeChat Pay almost always works (and vice versa). Having both apps set up ensures near-100% coverage.
 
@@ -232,7 +222,7 @@ Foreign users occasionally experience payment failures due to card verification 
 <!-- Unverified: from summary, needs citation check -->
 **European no-FX-fee options**: European travelers may also consider Revolut, N26, or Wise debit cards, which charge 0% foreign transaction fees. These cards are Visa or Mastercard branded and can be bound to Alipay and WeChat Pay in the same way as other foreign cards. (Source: realchinaguide.com 2026 — requires independent verification of current Alipay/WeChat binding compatibility for each issuer.)
 
-## Why is my payment failing in China?
+## Common Failure Modes
 
 | Symptom | Cause | Fix |
 |---|---|---|
@@ -246,7 +236,7 @@ Foreign users occasionally experience payment failures due to card verification 
 | Third-party app redirects to Alipay/WeChat at checkout but only domestic cards appear | The redirect flow passes a filter that excludes foreign cards, even if one is already bound to the wallet | Open Alipay/WeChat directly and complete the payment from there instead |
 | Payment fails while using a VPN | VPN traffic raises the risk score in Alipay/WeChat Pay's fraud-detection system; combined with other factors (new account, first large payment, unfamiliar merchant) it can push a transaction over the rejection threshold | For most users this is not an issue in practice — try disabling the VPN for the payment if a transaction is declined unexpectedly |
 
-## Why can't I register for Chinese apps with a foreign number?
+## Registration Wall
 
 Even when the payment method is valid, many Chinese services (food delivery, ticketing, some transit apps) require account registration before any payment screen is reached. Registration typically requires:
 
@@ -265,13 +255,13 @@ For the complete city-by-city metro mini-program table, see [[wiki/concepts/tran
 
 (Source: realchinaguide.com 2026)
 
-## What should I do with my payment apps before leaving China?
+## Account Closure / Departure
 
 - **Accounts persist** — there is no mandatory closure step for either app. Neither Alipay nor WeChat publicly documents a dormancy deactivation timeline for foreign-linked accounts; to be safe, log in at least once a year if you plan to reuse the account on future visits.
 - **Wait for in-flight refunds** to clear back to the original card (up to 30 days) before closing the card itself.
 - To remove a bound card without deleting the account: **Wallet → Bank Cards → remove**. Re-bind on the next visit.
 
-## What should I do if I lose my phone in China?
+## Lost Phone
 
 Both apps support remote sign-out and device-binding management:
 
