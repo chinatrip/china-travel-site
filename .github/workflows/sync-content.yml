@@ -4,8 +4,11 @@ name: Sync audited wiki content
 # content changes, or manually. Clones the wiki, copies `review.status: audited`
 # pages into src/content/, and opens/updates a CONTENT PR — it does NOT deploy.
 # The content PR then goes through ci.yml (gate + preview) like any other PR;
-# merging it triggers deploy.yml (production). This keeps a single mental model:
-# everything ships via a PR to main.
+# merging it triggers deploy.yml (production). Single mental model: everything
+# ships via a PR to main.
+#
+# The PR is authored by a GitHub App (not a human, not the default GITHUB_TOKEN),
+# so (a) the `reviewers:` request works and notifies, and (b) the PR triggers ci.yml.
 
 on:
   repository_dispatch:
@@ -17,16 +20,26 @@ concurrency:
   cancel-in-progress: false # content is a write op — queue, don't cancel mid-run
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   sync-content:
     runs-on: ubuntu-latest
     steps:
+      - name: Mint GitHub App token (authors the content PR)
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: |
+            china-travel-site
+            foreigner-visiting-china-wiki
+
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.WIKI_REPO_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
 
       - uses: actions/setup-node@v4
         with:
@@ -40,16 +53,14 @@ jobs:
       - name: Sync audited content from wiki
         run: npm run sync-content
         env:
-          GITHUB_TOKEN: ${{ secrets.WIKI_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
 
       - name: Open / update content PR
         uses: peter-evans/create-pull-request@v7
         with:
-          # MUST be a PAT (not the default GITHUB_TOKEN) so the opened PR triggers
-          # ci.yml (gate + preview). NOTE: if this PAT belongs to the reviewer, the
-          # review request below is a no-op (can't review your own PR) — use a bot
-          # account's PAT for reliable review-request notifications.
-          token: ${{ secrets.WIKI_REPO_TOKEN }}
+          # App token → PR author is the App (not a human), so the review request
+          # below notifies the reviewer AND the PR triggers ci.yml (gate + preview).
+          token: ${{ steps.app-token.outputs.token }}
           branch: auto/content-sync
           base: main
           add-paths: src/content
