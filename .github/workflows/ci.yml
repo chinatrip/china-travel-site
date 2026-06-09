@@ -1,4 +1,4 @@
-name: CI
+name: CI & Preview
 
 # Runs on every PR to main (code PRs AND the auto content-sync PR).
 # 1. npm test = node:test + astro build + internal-link trailing-slash guard

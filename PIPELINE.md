@@ -79,7 +79,7 @@ GitHub 默认**不会因为 check 变绿就推送你**,所以本流程主动制�
 | wiki 内容校验 | wiki 仓 **Actions** → `PR Content Lint` |
 | wiki 发布触发 | wiki 仓 **Actions** → `publish-content` |
 | site 内容同步 / 开 PR | site 仓 **Actions** → `Sync audited wiki content` |
-| site PR 校验 + **预览部署** | site 仓 PR **Checks** / **Actions** → `CI`;预览 URL 见 PR 上 CI 贴的评论 |
+| site PR 校验 + **预览部署** | site 仓 PR **Checks** / **Actions** → `CI & Preview`;预览 URL 见 PR 上 CI 贴的评论 |
 | **生产部署** | site 仓 **Actions** → `Deploy (production)`(✅ = 已上生产) |
 | 线上 | https://chinaguide.ai |
 
