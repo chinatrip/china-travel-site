@@ -1,14 +1,4 @@
 ---
-description: "Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin and more — top sights, how many days to spend, best seasons, and getting around. Updated June 2026."
-faqs:
-  - q: "Which cities should I visit on a first trip to China?"
-    a: "Most first-timers do Beijing (Great Wall, Forbidden City), Shanghai (modern China) and Xi'an (Terracotta Warriors), adding Chengdu (pandas) or Guilin/Yangshuo (scenery) if time allows. About 4-5 days per major city is comfortable."
-  - q: "How many days do I need in China?"
-    a: "Two weeks lets you cover 3-4 cities without rushing. For a shorter 240-hour transit-free trip, focus on one or two cities near a single entry region."
-  - q: "What is the best time of year to visit China?"
-    a: "Spring (April-May) and autumn (September-October) have the most pleasant weather. Avoid Golden Week (early October) and Lunar New Year, when domestic crowds and prices peak."
-  - q: "How do I travel between Chinese cities?"
-    a: "High-speed rail is fast, frequent and connects all major cities — book on 12306. Flights suit very long distances; within cities use the metro, DiDi and Amap."
 category: guide
 title: "City Guides for Foreign Visitors"
 date: 2026-06-01
@@ -28,7 +18,7 @@ review:
 
 China has dozens of cities worth visiting, each with distinct character. This page provides a quick-reference guide to the 20 most popular destinations for foreign tourists, organized by region.
 
-## Which cities are best for foreign visitors to China?
+## City Quick Reference
 
 | City | Region | Days | Highlights | Best Season |
 |------|--------|------|-----------|-------------|
@@ -53,7 +43,7 @@ China has dozens of cities worth visiting, each with distinct character. This pa
 | Kashgar | Far West | 2-3 | Old City, Sunday Market, Uyghur culture, Karakoram Highway | May-Oct |
 | Lhasa | Tibet | 3-4 | Potala Palace, Jokhang Temple, Barkhor Street (permit required) | May-Oct |
 
-## What are good multi-city routes for a China trip?
+## Popular Multi-City Routes
 
 ### Classic First-Timer (14 days)
 Beijing (4-5d) > Xi'an (2-3d) > Chengdu (3-4d) > Shanghai (3-4d)
@@ -84,7 +74,7 @@ Note: Requires domestic flights for western segments.
 - **Budget**: Shanghai and Beijing have broadly similar accommodation costs (Numbeo data shows less than 5% average difference). Hotel prices vary more by location and season than by city. Tier-2 cities (Chengdu, Xi'an, Nanjing) offer excellent value.
 - **Avoid**: National holidays (May 1-5, Oct 1-7) bring extreme crowds to all destinations.
 
-## Which cities should I visit on a first trip to China?
+## First-Time Visitor Recommendations
 
 - **Beijing vs Shanghai first?** Shanghai is easier to navigate and more international. Beijing offers deeper cultural immersion. Both are excellent starting points.
 - **Short trip (5-7 days)**: Pick Beijing + Shanghai (connected by 4.5h HSR, ~$50).

@@ -1,14 +1,4 @@
 ---
-description: "eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi) bypass the firewall with no VPN, data needs, activation timing, and when you need a +86 number. Updated May 2026."
-faqs:
-  - q: "Do I need a VPN if I use a foreign eSIM in China?"
-    a: "No. A foreign or Hong Kong eSIM routes data through an overseas gateway, so it bypasses the Great Firewall and Google, WhatsApp and Instagram work without a VPN. You only need a VPN on Chinese hotel Wi-Fi."
-  - q: "Which eSIMs work best for China?"
-    a: "Airalo, Holafly, Ubigi and Nomad are popular and bypass the firewall. Pick data by usage — roughly 10-20 GB covers three weeks of normal use. Note that the always-on VPN built into some eSIMs can occasionally interfere with Alipay."
-  - q: "Can I top up an eSIM after I have already arrived in mainland China?"
-    a: "It depends on the provider — some allow in-app top-ups from inside China, others do not. Buy enough data up front and check your provider's top-up policy before you travel."
-  - q: "Do I need a Chinese phone number?"
-    a: "Most travelers don't — a foreign eSIM covers data. You only need a +86 number for apps that gate sign-up behind it (such as Meituan or some bike-share), and DiDi works without one via the Alipay mini-program."
 category: guide
 title: SIM Card and eSIM in China for Foreign Visitors
 date: 2026-05-02
@@ -38,7 +28,7 @@ review:
 
 Foreign visitors have three connectivity options in mainland China, each with different setup, cost, and Great Firewall implications.
 
-## Should I get an eSIM or a SIM card for China?
+## Quick Decision
 
 | Option | Best for | GFW bypass | Setup time |
 |---|---|---|---|
@@ -49,7 +39,7 @@ Foreign visitors have three connectivity options in mainland China, each with di
 
 A Chinese phone number is more useful than it looks: many domestic services (12306 train booking, DiDi tour mode, attraction ticketing, hotel front-desk WeChat groups) fall back to SMS verification on a +86 number. Alipay and WeChat Pay both accept foreign numbers in 2026, but some sub-features remain +86-only.
 
-## How does a foreign eSIM work in China?
+## Foreign eSIM (Recommended for Most Tourists)
 
 > ⚠️ **Important distinction:** Not all foreign eSIMs bypass the Great Firewall. Only providers that route data through non-China gateways (e.g., Holafly, Ubigi) bypass the GFW. Providers like Airalo use local China Unicom towers — the GFW still applies and you need a separate VPN for blocked services (Google, WhatsApp, etc.).
 
@@ -114,7 +104,7 @@ For travelers who need both unrestricted internet AND a +86 phone number:
 
 This gives "best of both worlds" — full Western app access plus domestic service compatibility.
 
-## How do I get a local SIM card in China?
+## Local Physical SIM
 
 ### The Three State Carriers
 
@@ -172,7 +162,7 @@ Most prepaid plans **do not auto-charge** — if your balance hits zero, the num
 - Convenience-store self-service kiosks (Chinese-only UI)
 - Carrier store counter (cash or card)
 
-## Why isn't my eSIM or SIM working in China?
+## Common Failure Modes
 
 | Symptom | Cause | Fix |
 |---|---|---|
@@ -182,11 +172,11 @@ Most prepaid plans **do not auto-charge** — if your balance hits zero, the num
 | eSIM QR scanned but no service | eSIM activated before arrival; the validity clock started early | Most providers reset on first in-country tower attach — contact provider support if not |
 | Number suspended after months unused | Carriers auto-reclaim long-dormant prepaids | Top up at least every 90 days; otherwise expect a fresh number next visit |
 
-## Do I need a different SIM for Hong Kong, Macau, or Taiwan?
+## Hong Kong, Macau, and Taiwan
 
 Mainland Chinese SIMs **do not work** in Hong Kong, Macau, or Taiwan without a separate roaming add-on — these are different jurisdictions despite the "China" branding. Travelers crossing the border should plan for separate connectivity (a dedicated HK SIM, a roaming pack, or one of Airalo / Ubigi's separate Hong Kong / Asia regional eSIM plans).
 
-## Will my SIM or eSIM bypass the Great Firewall?
+## Connectivity and the Great Firewall
 
 A Chinese SIM gives you Chinese-network internet, which blocks most non-Chinese services:
 

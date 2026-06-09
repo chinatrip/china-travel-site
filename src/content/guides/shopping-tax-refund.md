@@ -1,18 +1,8 @@
 ---
-description: "China's tourist VAT refund: minimum ¥200 per store per day, the new instant in-store refund, eligible shops, and how to claim at the airport on departure. Updated May 2026."
-faqs:
-  - q: "Can foreign tourists get a VAT refund in China?"
-    a: "Yes. Overseas visitors can claim a refund on eligible goods bought at tax-free (tuishui) stores, with a minimum spend of ¥200 per store per day, when taking the items out of China within 90 days."
-  - q: "How do I claim the tax refund?"
-    a: "Ask the store for a tax-refund form and keep the receipt, then process the refund at the airport customs/refund counter on departure. China has also rolled out an instant in-store refund at participating shops."
-  - q: "How much is the China tax refund?"
-    a: "The refund is roughly 11% of the purchase price after the service fee (from the 13% VAT). It can be paid to a card or via mobile payment."
-  - q: "What can't I claim a refund on?"
-    a: "Consumables already used, purchases below the ¥200 threshold, and goods not carried out with you generally don't qualify. Keep items unused and packed for possible customs inspection."
 category: guide
 title: Shopping and Tax Refund for Foreign Visitors
 date: 2026-05-07
-last_verified: 2026-05-07
+last_verified: 2026-06-09
 verified_against:
   - https://www.china-briefing.com/news/chinas-new-instant-vat-refund-policy-boost-to-tourism-and-retail-amid-tariff-tensions/
   - https://www.visahq.com/news/2025-12-11/cn/china-broadens-visa-free-entry-and-streamlines-tax-refunds-to-woo-foreign-visitors/
@@ -25,15 +15,25 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/foreign-exchange.md
 volatility: medium
+description: "China's tourist VAT refund: minimum ¥200 per store per day, the new instant in-store refund, eligible shops, and how to claim at the airport on departure. Updated May 2026."
+faqs:
+  - q: "Can foreign tourists get a VAT refund in China?"
+    a: "Yes. Overseas visitors can claim a refund on eligible goods bought at tax-free (tuishui) stores, with a minimum spend of ¥200 per store per day, when taking the items out of China within 90 days."
+  - q: "How do I claim the tax refund?"
+    a: "Ask the store for a tax-refund form and keep the receipt, then process the refund at the airport customs/refund counter on departure. China has also rolled out an instant in-store refund at participating shops."
+  - q: "How much is the China tax refund?"
+    a: "The refund is roughly 11% of the purchase price after the service fee (from the 13% VAT). It can be paid to a card or via mobile payment."
+  - q: "What can't I claim a refund on?"
+    a: "Consumables already used, purchases below the ¥200 threshold, and goods not carried out with you generally don't qualify. Keep items unused and packed for possible customs inspection."
 review:
   status: audited
-  page_audit: 2026-05-07
+  page_audit: 2026-06-09
   citation_check: null
 ---
 
 # Shopping and Tax Refund for Foreign Visitors
 
-## Can tourists get a VAT refund in China?
+## VAT Refund (离境退税) Overview
 
 China operates a departure VAT refund scheme for overseas visitors. A significant expansion took effect **April 8, 2025**: the minimum purchase threshold was cut from ¥500 to **¥200** per receipt at a single store on the same day, and a new **instant refund at point of sale** mechanism was introduced alongside the traditional airport-departure claim process.
 
@@ -55,7 +55,7 @@ In practice, most eligible goods attract **9–11% of the purchase price** back 
 
 Participating retailers display a **"Tax Free Shopping" or "离境退税"** sign at the entrance or checkout. Coverage has been expanded (April 2025) to include stores in major commercial areas, pedestrian streets, tourist attractions, resorts, cultural venues, airports, ports, and hotels. Not every store in these areas participates — look for the sign.
 
-## How do I claim a tax refund in China?
+## How to Claim: Two Paths
 
 ### Path 1: Instant Refund at Point of Sale (新 — since April 2025)
 
@@ -110,7 +110,7 @@ Land border crossings and ferry ports also process refunds — check signage at 
 - Claim the refund at the desk **within 30 days of customs validation**
 - Goods must be **unused and in original packaging** at customs inspection — do not open packaging or wear purchased items before leaving China
 
-## What are the customs duty limits when leaving China?
+## Customs Duty Limits: What You Can Bring Home
 
 These are the limits when **leaving China** (what foreign customs at your destination impose is separate and varies by country):
 
@@ -125,7 +125,7 @@ These are the limits when **leaving China** (what foreign customs at your destin
 
 **Note on counterfeit goods:** it is a legal risk in China to purchase counterfeit branded goods, and many countries (EU, US, UK, Australia) impose fines or confiscation at the border for importing them. Counterfeit goods are also excluded from VAT refund eligibility. See the scam-avoidance section in [[wiki/concepts/emergency-safety.md]] for market shopping tips.
 
-## Where should foreigners shop in China?
+## Where to Shop
 
 ### Luxury Malls
 
@@ -161,7 +161,7 @@ These are the limits when **leaving China** (what foreign customs at your destin
 
 Common in Chengdu (Jinli Street), Xian (Muslim Quarter), Chongqing, and smaller cities. Night markets are primarily food-focused; some stalls sell crafts and souvenirs. Cash is standard; some stalls now accept Alipay/WeChat Pay QR. Bargaining is expected at non-food stalls.
 
-## Is bargaining expected when shopping in China?
+## Bargaining Norms
 
 Bargaining is expected and acceptable at **markets, street stalls, and unlicensed small shops**. It is **not** practised at fixed-price stores (department stores, chain shops, supermarkets, brand boutiques).
 
@@ -173,7 +173,7 @@ Bargaining is expected and acceptable at **markets, street stalls, and unlicense
 
 **Scam to avoid:** some vendors show you a high-quality item, then swap it for a lower-quality version when packaging your purchase. Check the item before you leave the stall.
 
-## How do I pay when shopping in China?
+## Payment at Retail
 
 | Venue type | Accepted payments | Notes |
 |---|---|---|

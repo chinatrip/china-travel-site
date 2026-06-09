@@ -1,14 +1,4 @@
 ---
-description: "How to order food in China without speaking Chinese: photo menus, camera translation, allergy phrases, delivery apps (Meituan, Eleme), and regional cuisine basics. Updated May 2026."
-faqs:
-  - q: "How do I order food in China if I don't speak Chinese?"
-    a: "Use a camera-translation app (Google Translate needs a VPN; Baidu or Microsoft Translator work without one) on menus, point at picture menus, or scan the table QR code to order in an app that often has photos."
-  - q: "How do I handle food allergies or dietary restrictions in China?"
-    a: "Save your restrictions written in Chinese to show staff, since machine translation of dish names is unreliable. Be specific — many dishes contain peanuts or soy or are cooked in shared woks."
-  - q: "Can I get food delivery as a foreigner in China?"
-    a: "Yes, via Meituan or Ele.me (now Taobao Flash Purchase), though some require a Chinese phone number to register. Both show photos and accept Alipay/WeChat Pay; you'll need your address in Chinese."
-  - q: "Is Chinese food very spicy everywhere?"
-    a: "No. The 'spice belt' (Sichuan, Chongqing, Hunan, Hubei, Jiangxi) is hot, but Guangdong, Jiangsu, Zhejiang, Shanghai and Fujian cuisines are mild. You can ask for 不辣 (bu la, not spicy)."
 category: guide
 title: Food and Dining in China for Foreign Visitors
 date: 2026-05-04
@@ -33,13 +23,13 @@ review:
 
 # Food and Dining in China for Foreign Visitors
 
-## How do I find good restaurants in China?
+## Finding Restaurants
 
 - **Dianping (大众点评):** China's dominant restaurant review platform (like Yelp). Works without VPN. Star ratings and photo menus are navigable without Chinese.
 - **Meituan:** same app used for delivery; also lists restaurants with menus and reviews.
 - **Amap (高德地图):** search nearby restaurants; links to Dianping reviews. Google Maps is blocked — use Amap instead.
 
-## How do I order food at a restaurant in China?
+## Ordering at the Table
 
 Most restaurants use QR-code table ordering:
 1. Scan the QR code on your table with WeChat or Alipay.
@@ -69,11 +59,11 @@ Several strategies work in practice:
 
 **Tip:** Menu photo translation often works better than live camera scanning. Take a clear, well-lit photo and upload it rather than relying on real-time OCR.
 
-## Do I tip at restaurants in China?
+## Tipping
 
 **Tipping is not customary in China** — at restaurants, hotels, or for services. Leaving cash on the table will typically be returned to you. At international hotels, ¥10–20 for porters is acceptable but not required.
 
-## How does food delivery work for foreigners in China?
+## Food Delivery
 
 ### Platforms
 
@@ -91,7 +81,7 @@ Both platforms accept international phone numbers for registration as of 2026 �
 - Minimum order amounts typically ¥15–30.
 - Payment: WeChat Pay and Alipay work on both platforms.
 
-## How do I communicate allergies or dietary needs in China?
+## Communicating Dietary Needs
 
 ### Allergies
 
@@ -139,7 +129,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | No MSG | 不要味精 | Bù yào wèijīng |
 | The bill, please | 买单 | Mǎidān |
 
-## What are China's main regional cuisines?
+## Regional Cuisines
 
 | Region | Character | Flavor profile |
 |---|---|---|
@@ -151,7 +141,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | Xinjiang | 新疆 | Lamb, cumin, flatbreads, pulled noodles |
 | Yunnan | 云南 | Fresh herbs, mushrooms, sour flavors |
 
-## Which Chinese dishes should first-timers try?
+## Popular Dishes by Region (Foreigner-Friendly Highlights)
 
 | City/Region | Must-try dishes | Notes |
 |-------------|----------------|-------|
@@ -165,7 +155,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | **Xinjiang/Kashgar** | Da pan ji (大盘鸡, big plate chicken), lamb pilaf, naan bread, cumin lamb | Central Asian influence; halal-friendly |
 | **Yunnan** | Crossing-the-bridge noodles (过桥米线), wild mushrooms, Dai-style grilled fish | Fresh herbs, sour flavors; Dali has good Western food too |
 
-## Is street food safe to eat in China?
+## Food Safety
 
 Street food is generally safe if:
 - Freshly cooked and served hot

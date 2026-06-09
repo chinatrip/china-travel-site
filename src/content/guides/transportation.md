@@ -1,14 +1,4 @@
 ---
-description: "Getting around China as a foreigner: high-speed rail via 12306, metro QR-code payment, DiDi ride-hailing, taxis, and using Amap in English. Updated April 2026."
-faqs:
-  - q: "How do foreigners buy high-speed train tickets in China?"
-    a: "Register on the 12306 app with your passport (verification can take 1-2 days), or book via Trip.com. Tickets are linked to your passport, which you scan to enter the station and board."
-  - q: "How do I pay for the metro in China?"
-    a: "Most big-city metros let you scan an Alipay or WeChat metro QR code at the turnstile, or buy single-journey tickets from machines that usually have an English option."
-  - q: "What is the best ride-hailing app in China for foreigners?"
-    a: "DiDi (like Uber) — sign up with a foreign number or use the DiDi mini-program inside Alipay, pay with your bound card, and enter destinations without typing Chinese."
-  - q: "How do I navigate China without Google Maps?"
-    a: "Google Maps is unreliable behind the firewall. Use Amap (Gaode), which has an English mode (Amap Global), offline maps, transit routing and built-in ride-hailing."
 category: guide
 title: Transportation in China
 date: 2026-04-30
@@ -37,7 +27,7 @@ review:
 
 # Transportation in China
 
-## How do I get from the airport to the city in China?
+## Airport to City
 
 Getting from the airport into the city centre is typically the first transport task on arrival.
 
@@ -48,7 +38,7 @@ Getting from the airport into the city centre is typically the first transport t
 | **Airport shuttle bus** | Slower (60–90 min, traffic-dependent) | ¥20–40 | Multiple routes to city sub-centres; useful if not near a metro stop. Buy on the bus or at the shuttle counter. |
 | **Taxi / DiDi** | Convenient but variable | ¥80–200+ depending on city and distance | DiDi pickup points are designated — follow signage. Metered taxi queues are at arrivals exits. Avoid unlicensed touts inside the terminal. |
 
-## How do I take high-speed trains in China?
+## High-Speed Rail / Intercity Trains
 
 China's high-speed rail network covers nearly all major cities and is the preferred option for medium- and long-distance travel.
 
@@ -72,7 +62,7 @@ China's high-speed rail network covers nearly all major cities and is the prefer
 | 15 min – 2 hours before departure | 20% |
 | < 15 minutes before departure, or after departure | No refund |
 
-## How do I use the metro in China?
+## Metro / Subway
 
 Major cities — Beijing, Shanghai, Guangzhou, Shenzhen and others — have extensive subway networks.
 
@@ -103,7 +93,7 @@ Major cities — Beijing, Shanghai, Guangzhou, Shenzhen and others — have exte
 - **Multi-day passes** (where available) offer excellent value for tourists — Beijing's ¥20/3-day pass covers unlimited rides.
 - **Combine metro + bike-sharing** for last-mile connections (~¥1.5 per bike ride via Hellobike, Meituan Bike, etc.).
 
-## What are the security checks on China's transport?
+## Security Checkpoints
 
 Every metro station and long-distance rail station in China has security screening. Budget extra time accordingly.
 
@@ -141,7 +131,7 @@ Standard international aviation security applies. Additional China-specific note
 - Power banks: carry-on only; power banks over 160 Wh are not permitted
 - Lighters: one lighter per person (not in checked baggage)
 
-## How does ride-hailing work in China?
+## Ride-Hailing
 
 **DiDi** is the dominant platform — see [[wiki/entities/didi.md]]:
 - Foreign mobile numbers accepted; English UI available.
@@ -151,7 +141,7 @@ Standard international aviation security applies. Additional China-specific note
 
 **Amap (Gaode)** and **Baidu Maps** also offer ride-hailing aggregation alongside navigation — both recommended for tourists.
 
-## How do I book domestic flights in China?
+## Domestic Flights
 
 Book domestic flights on platforms that accept foreign cards:
 - **Trip.com / Ctrip**: international UI, strong English support
@@ -163,13 +153,13 @@ Book domestic flights on platforms that accept foreign cards:
 - Standard checked baggage allowance on most Chinese carriers: **20 kg** economy class. Carry-on allowance varies by carrier and fare class — many major carriers (e.g., Air China, China Eastern, China Southern) cap economy carry-on at **5 kg**; always check your booking confirmation for the exact figure before packing.
 - Liquids rules at Chinese security follow the standard 100 ml / 1-litre bag rule.
 
-## Can foreigners use shared bikes in China?
+## Bike-Sharing
 
 Three major platforms are widely available: **Meituan Bike**, **Hello Bike**, and **DiDi Bike**:
 - Unlock by scanning the QR code on the bike — Meituan and Hello Bike via WeChat or Alipay; DiDi Bike via the DiDi app
 - A deposit may be required (some platforms waive it for verified users)
 
-## How do I use public buses in China?
+## Buses (Public Transit)
 
 City bus systems support:
 - Alipay / WeChat Pay QR codes
@@ -178,7 +168,7 @@ City bus systems support:
 
 **Acquiring a local transit card:** available at metro station service centers with your passport; a refundable deposit (typically ¥20–50, varies by city) is required. Cards can be topped up at metro service desks, convenience stores, or via Alipay / WeChat Pay mini-programs. Most transit cards are city-specific; however, cities participating in the national **Jiaotong Lianhe (交通联合)** interoperability scheme (e.g., Shanghai, Suzhou, Hangzhou, and others) accept each other's cards — check whether your card's issuing city is in the scheme before relying on it elsewhere.
 
-## Can foreigners rent a car in China?
+## Car Rental
 
 Car rental is available at most international airports and major downtown outlets, and via car-leasing apps or Alipay / WeChat mini-programs.
 
@@ -202,7 +192,7 @@ Foreign visitors cannot drive in China on an overseas license alone. Two paths:
 
 ---
 
-## How do taxis work in China?
+## Taxis
 
 Metered taxis (yellow / green cabs) can be hailed on the street and are still common in smaller cities and at airports:
 - Flag-down available; no app required.
@@ -210,7 +200,7 @@ Metered taxis (yellow / green cabs) can be hailed on the street and are still co
 - Payment: RMB cash (always accepted), Alipay / WeChat Pay (most cabs), card swipe (rare).
 - Older street-hail cabs may not have a working QR placard — keep ¥50–100 in cash as backup.
 
-## DiDi or metro: which should I use in China?
+## DiDi vs Metro: When to Use Each
 
 | Situation | Best option | Why |
 |---|---|---|
@@ -230,7 +220,7 @@ Metered taxis (yellow / green cabs) can be hailed on the street and are still co
 - **DiDi at airports:** follow in-app guidance to the designated pickup zone — do not wait at the general arrivals exit.
 - **First-hour checklist on arrival:** connect to airport WiFi → activate VPN → test Alipay with a small purchase → set up DiDi → test metro QR → screenshot hotel address in Chinese.
 
-## How do foreigners book train tickets in China?
+## Train Booking: Practical Tips for Foreigners
 
 - **12306 passport format issues:** the official site sometimes rejects foreign passport numbers. If your passport is declined repeatedly, use **Trip.com** instead (~¥50 service fee but full English interface and foreign card support).
 - **Morning trains are often cheaper** than afternoon departures on the same route.
