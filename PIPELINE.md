@@ -70,7 +70,7 @@ GitHub 默认**不会因为 check 变绿就推送你**,所以本流程主动制�
 - `ci.yml` 成功 → 在 PR 贴/更新一条 `✅ 可合并 + 预览 URL` 的评论并 **@审阅者** → 触发铃铛/邮件/手机推送,点开就是预览链接。
 - `sync-content.yml` 开内容 PR 时 `reviewers:` 请求审阅 → 机器人 PR 不再"隐形"。
 
-> ⚠️ 前提:开内容 PR 用的 PAT(`WIKI_REPO_TOKEN`)**不能是审阅者本人**的账号,否则"请求自己 review / @自己"不会推送。可靠做法是用**机器人账号**的 PAT(作者=机器人,审阅者=人)。
+> 实现:内容 PR 由 **GitHub App**(`chinaguide-content-sync`)创建(`sync-content.yml` 经 `actions/create-github-app-token` 用 `APP_ID`/`APP_PRIVATE_KEY` 铸 token)。作者是 App ≠ 审阅者,所以"请求 review"能正常推送你;且 App 创建的 PR **仍会触发 `CI & Preview`**(默认 `GITHUB_TOKEN` 创建的不会)。
 
 ## 在哪观测(全在 GitHub Actions)
 
@@ -79,18 +79,20 @@ GitHub 默认**不会因为 check 变绿就推送你**,所以本流程主动制�
 | wiki 内容校验 | wiki 仓 **Actions** → `PR Content Lint` |
 | wiki 发布触发 | wiki 仓 **Actions** → `publish-content` |
 | site 内容同步 / 开 PR | site 仓 **Actions** → `Sync audited wiki content` |
-| site PR 校验 + **预览部署** | site 仓 PR **Checks** / **Actions** → `CI`;预览 URL 见 PR 上 CI 贴的评论 |
+| site PR 校验 + **预览部署** | site 仓 PR **Checks** / **Actions** → `CI & Preview`;预览 URL 见 PR 上 CI 贴的评论 |
 | **生产部署** | site 仓 **Actions** → `Deploy (production)`(✅ = 已上生产) |
 | 线上 | https://chinaguide.ai |
 
 ## Secrets / Token
 
-| Token | 在哪 | 用途 |
+| Secret | 在哪 | 用途 |
 |---|---|---|
 | `CLOUDFLARE_API_TOKEN` | site | `wrangler deploy` / `versions upload`(用 CF "Edit Cloudflare Workers" 模板) |
 | `CLOUDFLARE_ACCOUNT_ID` | site | 指定 Cloudflare 账户 |
-| `WIKI_REPO_TOKEN` | site | clone 私有 wiki + 开内容 PR(**须 PAT**) |
+| `APP_ID` + `APP_PRIVATE_KEY` | site | GitHub App(`chinaguide-content-sync`)凭据;`sync-content` 用它 clone 私有 wiki + 开内容 PR(作者=App)。App 需**装在两仓**:site `Contents`+`Pull requests` 写、wiki `Contents` 读 |
 | `SITE_REPO_TOKEN` | wiki | 向 site 发 `repository_dispatch` |
+
+> 旧的 `WIKI_REPO_TOKEN`(site)已被 GitHub App 取代,**不再使用,可删除**。
 
 > Cloudflare 端只配了 token 接收部署,**关闭了原生 Git 集成**(不再自治构建)——部署由 GitHub Actions 显式发起。
 
