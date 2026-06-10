@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { z } from 'zod';
 import {
   filterContentPaths,
   buildReviewInput,
@@ -10,6 +11,7 @@ import {
   loadPageHistory,
   reviewPage,
   verdictCompleteness,
+  PageVerdictSchema,
   CRITERION_IDS,
   ADVISORY_IDS,
 } from '../scripts/seo-review.mjs';
@@ -275,6 +277,18 @@ test('loadPageHistory skips # and blank lines, filters by slug', () => {
   const hist = loadPageHistory(jsonl, 'amap');
   assert.equal(hist.length, 2);
   assert.ok(hist.every((h) => h.slug === 'amap'));
+});
+
+// ---- schema strict-mode compatibility ----------------------------------------
+test('PageVerdictSchema: faqGrounding extras are nullable (OpenAI strict mode), not optional', () => {
+  // Regression: .optional() drops the key from `required` in the JSON schema and OpenAI
+  // strict structured outputs reject the whole request ("Missing 'problemQuote'").
+  const v = cleanVerdict({
+    faqGrounding: [{ question: 'Q', groundingStatus: 'grounded', problemQuote: null, bodySupport: null }],
+  });
+  PageVerdictSchema.parse(v); // null must be accepted
+  const item = z.toJSONSchema(PageVerdictSchema).properties.faqGrounding.items;
+  assert.deepEqual([...item.required].sort(), ['bodySupport', 'groundingStatus', 'problemQuote', 'question']);
 });
 
 // ---- reviewPage with injected model ----------------------------------------
