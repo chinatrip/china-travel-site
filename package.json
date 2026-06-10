@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "sync-content": "node scripts/sync-content.mjs",
+    "seo-review": "node scripts/seo-review.mjs",
     "astro": "astro",
     "test": "node --test && astro build && node scripts/check-internal-links.mjs"
   },
@@ -23,6 +24,9 @@
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "wrangler": "^4.98.0"
+    "@openrouter/ai-sdk-provider": "^2.9.0",
+    "ai": "^6.0.198",
+    "wrangler": "^4.98.0",
+    "zod": "^4.4.3"
   }
 }

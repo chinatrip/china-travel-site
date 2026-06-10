@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # wiki cache (cloned at sync time, not committed)
 .wiki-cache/
+
+# SEO/GEO review run artifact (regenerated each CI run; the PR comment is the durable output)
+seo-review-report.md
