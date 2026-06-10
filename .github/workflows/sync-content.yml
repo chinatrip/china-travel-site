@@ -67,6 +67,10 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           branch: auto/content-sync
           base: main
+          # src/content includes wiki-sync-state.json, where the sync script durably
+          # records removed/no-base warnings — so even a warnings-only run (no content
+          # file changed) produces a diff and this PR materializes instead of the
+          # warnings silently vanishing. The report also lands on the run's summary page.
           add-paths: src/content
           commit-message: "chore: sync audited wiki content (non-destructive merge)"
           title: "🤖 Content sync from wiki (audited)"

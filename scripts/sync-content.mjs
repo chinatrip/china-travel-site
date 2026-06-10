@@ -31,7 +31,7 @@
  */
 
 import { execSync, execFileSync } from 'node:child_process';
-import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
+import { appendFileSync, existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, writeFileSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { tmpdir } from 'node:os';
 import matter from 'gray-matter';
@@ -201,6 +201,24 @@ export function classifyPages({ wikiAudited, wikiAllRels, siteKeys, state }) {
   return { newPages, merges, siteOnly, removed };
 }
 
+/**
+ * Record removed/no-base warnings durably in the state file. The state lives in
+ * src/content (inside the sync PR's add-paths), so the FIRST occurrence of a warning
+ * always produces a committable diff — the PR (with the report as its body) materializes
+ * even when no content file changed. Without this, a warnings-only run would create no
+ * commit and the report (gitignored) would silently vanish. Re-runs are idempotent;
+ * a page that recovers (re-audited / merged again) gets a fresh flag-free entry.
+ */
+export function recordWarningsInState(state, { removed = [], noBase = [] } = {}) {
+  for (const r of removed) {
+    state.pages[r.siteKey] = { ...state.pages[r.siteKey], removedFromWiki: r.reason };
+  }
+  for (const { siteKey, wikiRel } of noBase) {
+    state.pages[siteKey] = { wikiPath: wikiRel, baseSha: state.pages[siteKey]?.baseSha ?? null, noBase: true };
+  }
+  return state;
+}
+
 const CONFLICT_MARKER_RE = /^(<{7} |={7}$|>{7} )/m;
 
 /** True if the text contains git conflict markers. */
@@ -368,13 +386,13 @@ async function main() {
   for (const page of plan.merges) {
     const oursRaw = readFileSync(join(CONTENT_DIR, page.siteKey), 'utf8');
     if (!page.baseSha) {
-      results.push({ siteKey: page.siteKey, noBase: true, conflicted: false });
+      results.push({ siteKey: page.siteKey, wikiRel: page.wikiRel, noBase: true, conflicted: false });
       console.log(`  🚧 ${page.siteKey} — no merge base, site version kept`);
       continue;
     }
     const baseRaw = showWikiFileAt(page.baseSha, page.wikiRel) ?? showWikiFileAt(page.baseSha, state.pages[page.siteKey]?.wikiPath);
     if (baseRaw === null) {
-      results.push({ siteKey: page.siteKey, noBase: true, conflicted: false });
+      results.push({ siteKey: page.siteKey, wikiRel: page.wikiRel, noBase: true, conflicted: false });
       console.log(`  🚧 ${page.siteKey} — base ${page.baseSha.slice(0, 7)} unreadable, site version kept`);
       continue;
     }
@@ -388,11 +406,27 @@ async function main() {
 
   for (const r of plan.removed) console.log(`  🗑️  ${r.siteKey} — ${r.reason} (kept; confirm in PR)`);
 
+  // Warnings must never vanish silently: record them in the state file so even a
+  // warnings-only run produces a committable diff (→ the sync PR gets created).
+  recordWarningsInState(state, {
+    removed: plan.removed,
+    noBase: results.filter((r) => r.noBase).map((r) => ({ siteKey: r.siteKey, wikiRel: r.wikiRel })),
+  });
+
   // Persist state (sorted for stable diffs) + report.
   state.pages = Object.fromEntries(Object.entries(state.pages).sort(([a], [b]) => a.localeCompare(b)));
   writeFileSync(STATE_PATH, JSON.stringify(state, null, 2) + '\n');
   const report = renderSyncReport({ wikiSha, results, removed: plan.removed, siteOnly: plan.siteOnly });
   writeFileSync(REPORT_PATH, report);
+  // Also surface the report on the workflow run page itself — visible even when
+  // nothing changed and no PR materializes (e.g. a manual re-run).
+  if (process.env.GITHUB_STEP_SUMMARY) {
+    try {
+      appendFileSync(process.env.GITHUB_STEP_SUMMARY, report + '\n');
+    } catch {
+      /* non-fatal */
+    }
+  }
 
   const conflicts = results.filter((r) => r.conflicted).length;
   console.log(`\nDone. ${results.length} pages written, ${conflicts} with conflicts, ${plan.siteOnly.length} site-native untouched.`);

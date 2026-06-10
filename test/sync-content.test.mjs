@@ -7,6 +7,7 @@ import {
   mergeBody,
   auditedOnly,
   classifyPages,
+  recordWarningsInState,
   hasConflictMarkers,
   renderSyncReport,
   SITE_OWNED_FIELDS,
@@ -195,6 +196,34 @@ test('classifyPages buckets new / merge / no-base / site-only / deleted / demote
       ['guides/gone.md', 'deleted from wiki'],
     ],
   );
+});
+
+// ---- recordWarningsInState ----------------------------------------------------
+test('recordWarningsInState: warnings-only run still produces a committable state diff', () => {
+  const state = { pages: { 'guides/gone.md': { wikiPath: 'concepts/gone.md', baseSha: 'abc' } } };
+  const before = JSON.stringify(state);
+  recordWarningsInState(state, {
+    removed: [{ siteKey: 'guides/gone.md', wikiPath: 'concepts/gone.md', reason: 'deleted from wiki' }],
+    noBase: [{ siteKey: 'guides/orphan.md', wikiRel: 'concepts/orphan.md' }],
+  });
+  assert.notEqual(JSON.stringify(state), before); // first occurrence → diff → PR materializes
+  assert.equal(state.pages['guides/gone.md'].removedFromWiki, 'deleted from wiki');
+  assert.equal(state.pages['guides/gone.md'].baseSha, 'abc'); // original base kept
+  assert.deepEqual(state.pages['guides/orphan.md'], { wikiPath: 'concepts/orphan.md', baseSha: null, noBase: true });
+
+  const afterFirst = JSON.stringify(state);
+  recordWarningsInState(state, {
+    removed: [{ siteKey: 'guides/gone.md', wikiPath: 'concepts/gone.md', reason: 'deleted from wiki' }],
+    noBase: [{ siteKey: 'guides/orphan.md', wikiRel: 'concepts/orphan.md' }],
+  });
+  assert.equal(JSON.stringify(state), afterFirst); // re-runs idempotent — no PR churn
+});
+
+test('recordWarningsInState: noBase keeps an existing (unreadable) baseSha for retry', () => {
+  const state = { pages: { 'guides/odd.md': { wikiPath: 'concepts/odd.md', baseSha: 'deadbee' } } };
+  recordWarningsInState(state, { noBase: [{ siteKey: 'guides/odd.md', wikiRel: 'concepts/odd.md' }] });
+  assert.equal(state.pages['guides/odd.md'].baseSha, 'deadbee');
+  assert.equal(state.pages['guides/odd.md'].noBase, true);
 });
 
 // ---- hasConflictMarkers -----------------------------------------------------
