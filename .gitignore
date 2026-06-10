@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # wiki cache (cloned at sync time, not committed)
 .wiki-cache/
+
+# sync run artifact (becomes the sync PR body; regenerated each run)
+sync-report.md
