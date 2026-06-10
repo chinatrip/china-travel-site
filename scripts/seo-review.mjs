@@ -54,8 +54,11 @@ const CriterionResult = z.object({
 const FaqGroundingItem = z.object({
   question: z.string(),
   groundingStatus: z.enum(['grounded', 'partially_grounded', 'ungrounded', 'overclaims']),
-  problemQuote: z.string().optional(),
-  bodySupport: z.string().optional(),
+  // OpenAI strict structured outputs require EVERY property in `required`; optionality
+  // must be expressed as nullable. .optional() gets the whole schema rejected upstream
+  // ("'required' is required ... Missing 'problemQuote'").
+  problemQuote: z.string().nullable(),
+  bodySupport: z.string().nullable(),
 });
 export const PageVerdictSchema = z.object({
   slug: z.string(),
