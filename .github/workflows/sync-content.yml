@@ -1,8 +1,12 @@
 name: Sync audited wiki content
 
 # Triggered by the wiki repo (repository_dispatch: wiki-updated) when audited
-# content changes, or manually. Clones the wiki, copies `review.status: audited`
-# pages into src/content/, and opens/updates a CONTENT PR — it does NOT deploy.
+# content changes, or manually. Clones the wiki and runs the NON-DESTRUCTIVE
+# sync (scripts/sync-content.mjs): site-owned frontmatter (description/faqs/
+# category) and site-native pages are preserved; bodies are 3-way merged against
+# the base recorded in src/content/wiki-sync-state.json. Overlapping edits leave
+# conflict markers in the PR — check-conflict-markers.mjs (in `npm test`) keeps
+# CI red until a human resolves them. The PR body is the generated sync report.
 # The content PR then goes through ci.yml (gate + preview) like any other PR;
 # merging it triggers deploy.yml (production). Single mental model: everything
 # ships via a PR to main.
@@ -63,15 +67,14 @@ jobs:
           token: ${{ steps.app-token.outputs.token }}
           branch: auto/content-sync
           base: main
+          # src/content includes wiki-sync-state.json, where the sync script durably
+          # records removed/no-base warnings — so even a warnings-only run (no content
+          # file changed) produces a diff and this PR materializes instead of the
+          # warnings silently vanishing. The report also lands on the run's summary page.
           add-paths: src/content
-          commit-message: "chore: sync audited wiki content"
+          commit-message: "chore: sync audited wiki content (non-destructive merge)"
           title: "🤖 Content sync from wiki (audited)"
-          body: |
-            Automated sync of `review.status: audited` wiki content into `src/content/`.
-
-            Triggered by a `wiki-updated` dispatch. **Review the diff + the preview link
-            (posted by CI), then merge to publish to production.**
-
-            ⚠️ Sanity-check the diff for unexpected deletions or stripped front matter
-            (e.g. lost `description`/`faqs`) — those indicate wiki content drift.
+          # The sync script writes the per-page merge report (clean/conflict/no-base/
+          # removed) to sync-report.md — it becomes the PR description.
+          body-path: sync-report.md
           reviewers: 1Feng
