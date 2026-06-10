@@ -117,11 +117,32 @@ export function buildReviewInput(raw, filePath) {
   };
 }
 
+/**
+ * Fail-closed completeness check on the model output itself: every BLOCKING criterion
+ * must be present in `criteria`, and `faqGrounding` must cover every FAQ on the page.
+ * An incomplete verdict must never silently pass the gate.
+ */
+export function verdictCompleteness(verdict, derived) {
+  const present = new Set((verdict.criteria || []).map((c) => c.id));
+  const missingBlockingCriteria = BLOCKING_IDS.filter((id) => !present.has(id));
+  const faqCount = derived.faqCount ?? (Array.isArray(derived.faqs) ? derived.faqs.length : 0);
+  const groundedCount = new Set((verdict.faqGrounding || []).map((f) => f.question)).size;
+  const groundingGap = Math.max(0, faqCount - groundedCount);
+  return {
+    missingBlockingCriteria,
+    faqCount,
+    groundedCount,
+    groundingGap,
+    complete: missingBlockingCriteria.length === 0 && groundingGap === 0,
+  };
+}
+
 /** Apply the BLOCKING policy to an LLM verdict + machine-checked derived facts. */
 export function evaluatePageVerdict(verdict, derived) {
   const byId = Object.fromEntries((verdict.criteria || []).map((c) => [c.id, c]));
   const blocking = [];
   const advisory = [];
+  const completeness = verdictCompleteness(verdict, derived);
 
   // 1. faq_grounding — authoritative source is the per-FAQ grounding array.
   const badGrounding = (verdict.faqGrounding || []).filter(
@@ -133,6 +154,15 @@ export function evaluatePageVerdict(verdict, derived) {
       detail: badGrounding.map(
         (b) => `"${b.question}" — ${b.groundingStatus}${b.problemQuote ? `: ${b.problemQuote}` : ''}`,
       ),
+    });
+  }
+  // Fail-closed: the model must ground EVERY FAQ; missing/short coverage blocks.
+  if (completeness.groundingGap > 0) {
+    blocking.push({
+      id: 'faq_grounding',
+      detail: [
+        `model verdict grounded only ${completeness.groundedCount}/${completeness.faqCount} FAQs — incomplete coverage (fail-closed)`,
+      ],
     });
   }
 
@@ -152,6 +182,14 @@ export function evaluatePageVerdict(verdict, derived) {
   for (const id of ['faq_wellformed', 'faqpage_schema_readiness', 'title_quality']) {
     const c = byId[id];
     if (c && c.passed === false) blocking.push({ id, detail: [c.rationale] });
+  }
+
+  // Fail-closed: a BLOCKING criterion absent from the model output blocks under its own id
+  // (skipped when a machine check already blocked that id, to avoid duplicates).
+  for (const id of completeness.missingBlockingCriteria) {
+    if (!blocking.some((b) => b.id === id)) {
+      blocking.push({ id, detail: ['criterion missing from model output (fail-closed)'] });
+    }
   }
 
   // advisory criteria — reported, never block.
@@ -262,7 +300,7 @@ export function buildSystemPrompt(standards, calibration) {
     '',
     'GROUNDING RULE (critical): the page BODY provided is the ONLY ground truth for judging FAQ answers. Do NOT use outside knowledge to rescue a claim. When support is unclear, do NOT mark it grounded. An answer that states something more strongly/absolutely than the body supports is "overclaims".',
     '',
-    'Score each rubric criterion 0–5 with a one-sentence rationale and a `passed` boolean. Output ONLY the structured object. The host code — not you — decides the merge gate.',
+    'Score each rubric criterion 0–5 with a one-sentence rationale and a `passed` boolean. COMPLETENESS IS MANDATORY: `criteria` must contain ALL 11 rubric criterion ids (an omitted criterion is treated as a failure by the host), and `faqGrounding` must contain exactly one item per FAQ, copying each question verbatim. Output ONLY the structured object. The host code — not you — decides the merge gate.',
     '',
     '=== STANDARDS (rubric) ===',
     standards || '(standards file missing)',
@@ -296,7 +334,7 @@ export function buildUserPrompt(derived, history = []) {
     derived.bodyForGrounding,
     '"""',
     '',
-    'Review per the STANDARDS rubric. Ground every FAQ answer against the body above. For pages with no faqs, mark faq_* criteria passed=true with rationale "no faqs".',
+    'Review per the STANDARDS rubric. Return ALL 11 criteria. Ground every FAQ answer against the body above — faqGrounding must have one item per FAQ with the question copied verbatim. For pages with no faqs, mark faq_* criteria passed=true with rationale "no faqs" and return an empty faqGrounding array.',
   ].join('\n');
 }
 
@@ -327,6 +365,13 @@ export async function reviewPage(input, memory, { callModel = defaultCallModel, 
       // ensure slug/collection are set even if model omits/varies
       verdict.slug = input.derived.slug;
       verdict.collection = input.derived.collection;
+      // Incomplete verdict (missing blocking criteria / FAQs not all grounded): retry to let
+      // the model self-correct. If retries run out, return it anyway — the deterministic
+      // gate (evaluatePageVerdict) blocks incomplete verdicts, never silently passes them.
+      if (!verdictCompleteness(verdict, input.derived).complete && attempt < retries) {
+        lastErr = new Error('incomplete verdict from model');
+        continue;
+      }
       return verdict;
     } catch (err) {
       lastErr = err;

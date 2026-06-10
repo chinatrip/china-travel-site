@@ -9,6 +9,7 @@ import {
   renderMarkdownReport,
   loadPageHistory,
   reviewPage,
+  verdictCompleteness,
   CRITERION_IDS,
   ADVISORY_IDS,
 } from '../scripts/seo-review.mjs';
@@ -55,13 +56,14 @@ function cleanVerdict(overrides = {}) {
   };
 }
 
-/** Derived facts for a healthy page (in-range meta). */
+/** Derived facts for a healthy page (in-range meta, 1 FAQ). */
 function cleanDerived(overrides = {}) {
   return {
     slug: 'getting-around',
     collection: 'guides',
     descriptionMissing: false,
     descriptionLength: 130,
+    faqCount: 1,
     ...overrides,
   };
 }
@@ -154,6 +156,62 @@ test('model-failed faqpage_schema_readiness → blocks', () => {
   assert.ok(r.blocking.some((b) => b.id === 'faqpage_schema_readiness'));
 });
 
+// ---- fail-closed on incomplete model output ---------------------------------
+test('page has FAQs but faqGrounding is empty → blocks (fail-closed)', () => {
+  const v = cleanVerdict({ faqGrounding: [] });
+  const r = evaluatePageVerdict(v, cleanDerived({ faqCount: 1 }));
+  assert.equal(r.pass, false);
+  assert.ok(r.blocking.some((b) => b.id === 'faq_grounding' && b.detail[0].includes('fail-closed')));
+});
+
+test('faqGrounding covers fewer FAQs than the page has → blocks (fail-closed)', () => {
+  const v = cleanVerdict(); // grounds 1 question
+  const r = evaluatePageVerdict(v, cleanDerived({ faqCount: 3 }));
+  assert.equal(r.pass, false);
+  assert.ok(r.blocking.some((b) => b.id === 'faq_grounding' && b.detail[0].includes('1/3')));
+});
+
+test('no-FAQ page with empty faqGrounding → still passes', () => {
+  const v = cleanVerdict({ faqGrounding: [] });
+  const r = evaluatePageVerdict(v, cleanDerived({ faqCount: 0 }));
+  assert.equal(r.pass, true);
+});
+
+test('missing blocking criterion in model output → blocks under its own id (fail-closed)', () => {
+  for (const id of ['faq_wellformed', 'faqpage_schema_readiness', 'title_quality', 'meta_description']) {
+    const v = cleanVerdict();
+    v.criteria = v.criteria.filter((c) => c.id !== id);
+    const r = evaluatePageVerdict(v, cleanDerived());
+    assert.equal(r.pass, false, `missing ${id} must fail-close`);
+    assert.ok(r.blocking.some((b) => b.id === id && b.detail[0].includes('missing')), `blocks under ${id}`);
+  }
+});
+
+test('missing criterion does not duplicate an existing machine-check block', () => {
+  const v = cleanVerdict();
+  v.criteria = v.criteria.filter((c) => c.id !== 'meta_description');
+  const r = evaluatePageVerdict(v, cleanDerived({ descriptionMissing: true, descriptionLength: 0 }));
+  assert.equal(r.pass, false);
+  assert.equal(r.blocking.filter((b) => b.id === 'meta_description').length, 1);
+});
+
+test('missing ADVISORY criterion does NOT block', () => {
+  const v = cleanVerdict();
+  v.criteria = v.criteria.filter((c) => !ADVISORY_IDS.includes(c.id));
+  const r = evaluatePageVerdict(v, cleanDerived());
+  assert.equal(r.pass, true);
+});
+
+test('verdictCompleteness reports gaps', () => {
+  const incomplete = cleanVerdict({ faqGrounding: [] });
+  incomplete.criteria = incomplete.criteria.filter((c) => c.id !== 'title_quality');
+  const c = verdictCompleteness(incomplete, cleanDerived({ faqCount: 2 }));
+  assert.equal(c.complete, false);
+  assert.deepEqual(c.missingBlockingCriteria, ['title_quality']);
+  assert.equal(c.groundingGap, 2);
+  assert.equal(verdictCompleteness(cleanVerdict(), cleanDerived()).complete, true);
+});
+
 test('advisory-only failures do NOT block', () => {
   let v = cleanVerdict();
   for (const id of ADVISORY_IDS) v = withCriterion(v, id, { passed: false, rationale: 'meh' });
@@ -226,6 +284,31 @@ test('reviewPage uses injected callModel + stamps slug/collection', async () => 
   const v = await reviewPage(input, { standards: 's', calibration: 'c' }, { callModel: stub });
   assert.equal(v.slug, 'x'); // re-stamped from input
   assert.equal(v.collection, 'apps');
+});
+
+test('reviewPage retries on incomplete verdict, returns the complete one', async () => {
+  const derived = { slug: 'x', collection: 'apps', faqs: [{ q: 'Q?', a: 'A.' }], faqCount: 1, h2Headings: [], descriptionMissing: false, descriptionLength: 130, titleWithSuffix: 'X | ChinaGuide.ai', titleLength: 16, h1: 'X', wikilinkCount: 0, bodyForGrounding: 'body', description: 'd' };
+  let calls = 0;
+  const stub = async () => {
+    calls++;
+    return calls === 1 ? cleanVerdict({ faqGrounding: [] }) : cleanVerdict({ faqGrounding: [{ question: 'Q?', groundingStatus: 'grounded' }] });
+  };
+  const v = await reviewPage({ derived, history: [] }, { standards: '', calibration: '' }, { callModel: stub, retries: 2 });
+  assert.equal(calls, 2);
+  assert.equal(v.faqGrounding.length, 1);
+});
+
+test('reviewPage returns incomplete verdict after retries exhaust (gate blocks it downstream)', async () => {
+  const derived = { slug: 'x', collection: 'apps', faqs: [{ q: 'Q?', a: 'A.' }], faqCount: 1, h2Headings: [], descriptionMissing: false, descriptionLength: 130, titleWithSuffix: 'X | ChinaGuide.ai', titleLength: 16, h1: 'X', wikilinkCount: 0, bodyForGrounding: 'body', description: 'd' };
+  let calls = 0;
+  const stub = async () => {
+    calls++;
+    return cleanVerdict({ faqGrounding: [] }); // always incomplete
+  };
+  const v = await reviewPage({ derived, history: [] }, { standards: '', calibration: '' }, { callModel: stub, retries: 1 });
+  assert.equal(calls, 2); // 1 + 1 retry
+  const r = evaluatePageVerdict(v, derived);
+  assert.equal(r.pass, false); // fail-closed at the gate
 });
 
 test('reviewPage retries then throws on persistent error', async () => {
