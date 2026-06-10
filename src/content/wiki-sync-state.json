@@ -3,99 +3,99 @@
   "pages": {
     "apps/12306.md": {
       "wikiPath": "entities/12306.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "apps/alipay.md": {
       "wikiPath": "entities/alipay.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "apps/amap.md": {
       "wikiPath": "entities/amap.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "apps/didi.md": {
       "wikiPath": "entities/didi.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "apps/eleme.md": {
       "wikiPath": "entities/eleme.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "apps/meituan.md": {
       "wikiPath": "entities/meituan.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "apps/wechat.md": {
       "wikiPath": "entities/wechat.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/accommodation.md": {
       "wikiPath": "concepts/accommodation.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/city-guides.md": {
       "wikiPath": "concepts/city-guides.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/cultural-etiquette.md": {
       "wikiPath": "concepts/cultural-etiquette.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/emergency-safety.md": {
       "wikiPath": "concepts/emergency-safety.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/food-dining.md": {
       "wikiPath": "concepts/food-dining.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/foreign-exchange.md": {
       "wikiPath": "concepts/foreign-exchange.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/health-medical.md": {
       "wikiPath": "concepts/health-medical.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/internet-connectivity.md": {
       "wikiPath": "concepts/internet-connectivity.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/mini-programs.md": {
       "wikiPath": "concepts/mini-programs.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/mobile-payment.md": {
       "wikiPath": "concepts/mobile-payment.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/residence-registration.md": {
       "wikiPath": "concepts/residence-registration.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/shopping-tax-refund.md": {
       "wikiPath": "concepts/shopping-tax-refund.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/sim-card.md": {
       "wikiPath": "concepts/sim-card.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/tibet-permits.md": {
       "wikiPath": "concepts/tibet-permits.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/transportation.md": {
       "wikiPath": "concepts/transportation.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/trip-planning.md": {
       "wikiPath": "concepts/trip-planning.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     },
     "guides/visa-types.md": {
       "wikiPath": "concepts/visa-types.md",
-      "baseSha": "fa550a3b7e6142b4154d3c20f72f67b83ea282e7"
+      "baseSha": "e72e81d6eefa2da958e611f26d524e39664f09ee"
     }
   }
 }

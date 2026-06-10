@@ -1,18 +1,7 @@
 ---
-description: "DiDi is China's ride-hailing app like Uber: sign up with a foreign number, pay via Alipay/WeChat, enter destinations without Chinese, and run it inside Alipay with no separate app. Updated May 2026."
-faqs:
-  - q: "Can foreigners use DiDi in China?"
-    a: "Yes. Register with a foreign phone number, or use the DiDi mini-program inside Alipay/WeChat with no separate signup, and pay through your bound card."
-  - q: "How do I pay for DiDi?"
-    a: "Link Alipay or WeChat Pay (or a foreign card in the app); fares are charged automatically at the end of the ride — no cash needed."
-  - q: "How do I tell the DiDi driver where to go if I don't speak Chinese?"
-    a: "Enter your destination in the app (search English names or paste Chinese) and DiDi sends it to the driver. The app shows the route, so little spoken Chinese is needed; messages can be auto-translated."
-  - q: "What if the DiDi driver can't find me?"
-    a: "Pick a clear pickup point (a mall entrance or landmark), watch the car on the map, and use the in-app call/message with translation, or share your trip for safety."
-category: app
 title: DiDi
 date: 2026-04-30
-last_verified: 2026-05-04
+last_verified: 2026-06-09
 verified_against:
   - https://www.didiglobal.com
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
@@ -25,10 +14,21 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/amap.md
 volatility: medium
+description: "DiDi is China's ride-hailing app like Uber: sign up with a foreign number, pay via Alipay/WeChat, enter destinations without Chinese, and run it inside Alipay with no separate app. Updated May 2026."
+faqs:
+  - q: "Can foreigners use DiDi in China?"
+    a: "Yes. Register with a foreign phone number, or use the DiDi mini-program inside Alipay/WeChat with no separate signup, and pay through your bound card."
+  - q: "How do I pay for DiDi?"
+    a: "Link Alipay or WeChat Pay (or a foreign card in the app); fares are charged automatically at the end of the ride — no cash needed."
+  - q: "How do I tell the DiDi driver where to go if I don't speak Chinese?"
+    a: "Enter your destination in the app (search English names or paste Chinese) and DiDi sends it to the driver. The app shows the route, so little spoken Chinese is needed; messages can be auto-translated."
+  - q: "What if the DiDi driver can't find me?"
+    a: "Pick a clear pickup point (a mall entrance or landmark), watch the car on the map, and use the in-app call/message with translation, or share your trip for safety."
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: null
+category: app
 ---
 
 # DiDi

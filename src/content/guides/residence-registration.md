@@ -1,18 +1,7 @@
 ---
-description: "Foreigners must register their address within 24 hours of arrival — done by the hotel, or at a police station for private stays. Online pilots and required documents. Updated April 2026."
-faqs:
-  - q: "Do tourists need to register with the police in China?"
-    a: "Yes. All foreigners must register their place of stay. A hotel registers you automatically at check-in. For private stays (friends, family, rentals) you must register at the local police station within 24 hours of arrival."
-  - q: "What happens if I don't register within 24 hours?"
-    a: "Failure to register can result in a warning or fine. Register promptly and keep the registration slip — you may need it for visa extensions or other official processes."
-  - q: "What do I need to register a private stay?"
-    a: "Bring your passport (with visa/entry stamp) and the host's ID and proof of address to the neighborhood police station (paichusuo). Some provinces now offer online registration pilots."
-  - q: "Does staying in a hotel count as registration?"
-    a: "Yes — hotels report your stay to the police at check-in, so you don't need to do anything extra. If you switch to a private stay mid-trip, that stay does require registering."
-category: guide
 title: Residence Registration
 date: 2026-04-30
-last_verified: 2026-04-30
+last_verified: 2026-06-09
 verified_against:
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
   - https://www.nia.gov.cn
@@ -23,10 +12,21 @@ related:
   - wiki/concepts/residence-permit.md
   - wiki/concepts/visa-types.md
 volatility: high
+description: "Foreigners must register their address within 24 hours of arrival — done by the hotel, or at a police station for private stays. Online pilots and required documents. Updated April 2026."
+faqs:
+  - q: "Do tourists need to register with the police in China?"
+    a: "Yes. All foreigners must register their place of stay. A hotel registers you automatically at check-in. For private stays (friends, family, rentals) you must register at the local police station within 24 hours of arrival."
+  - q: "What happens if I don't register within 24 hours?"
+    a: "Failure to register can result in a warning or fine. Register promptly and keep the registration slip — you may need it for visa extensions or other official processes."
+  - q: "What do I need to register a private stay?"
+    a: "Bring your passport (with visa/entry stamp) and the host's ID and proof of address to the neighborhood police station (paichusuo). Some provinces now offer online registration pilots."
+  - q: "Does staying in a hotel count as registration?"
+    a: "Yes — hotels report your stay to the police at check-in, so you don't need to do anything extra. If you switch to a private stay mid-trip, that stay does require registering."
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: null
+category: guide
 ---
 
 # Residence Registration
