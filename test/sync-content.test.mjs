@@ -123,6 +123,21 @@ test('mergeFrontmatter: identical wiki value → silent (no noise when wiki adop
   assert.equal(matter(fmBlock).data.description, siteDesc);
 });
 
+test('mergeFrontmatter block is structurally sound: exactly one closing ---, no leakage into body', () => {
+  // Regression: matter.stringify('', data) ends with "---\n\n"; a tail-strip regex
+  // missed it and a stray "---" leaked into the body of every synced page (PR #27).
+  for (const theirs of [WIKI_V1, WIKI_V2_COMPATIBLE]) {
+    const { fmBlock } = mergeFrontmatter(SITE_CURRENT, theirs, { defaultCategory: 'guide' });
+    assert.deepEqual(fmBlock.match(/^---$/gm), ['---', '---'], 'exactly 2 delimiter lines');
+    assert.ok(fmBlock.endsWith('---\n') && !fmBlock.endsWith('\n---\n\n'), 'single trailing delimiter');
+    // Full-file roundtrip: composed file must parse back to the same body, byte for byte.
+    const body = splitFrontmatter(theirs).body;
+    const full = fmBlock + body;
+    assert.equal(matter(full).content, matter(theirs).content, 'body survives composition unchanged');
+    assert.ok(!matter(full).content.trimStart().startsWith('---'), 'no stray --- at body start');
+  }
+});
+
 // ---- mergeBody (real git merge-file) ----------------------------------------
 test('mergeBody auto-merges non-overlapping edits (site H2 kept + wiki fact-fix applied)', () => {
   const ours = splitFrontmatter(SITE_CURRENT).body;

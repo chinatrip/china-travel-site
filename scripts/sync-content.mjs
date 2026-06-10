@@ -108,8 +108,14 @@ export function mergeFrontmatter(oursRaw, theirsRaw, { defaultCategory } = {}) {
 
   if (Object.keys(inject).length === 0) return { fmBlock: theirsBlock, fieldConflicts };
 
-  // Serialize just the injected fields via gray-matter's YAML engine.
-  const yaml = matter.stringify('', inject).replace(/^---\r?\n/, '').replace(/---\r?\n?$/, '');
+  // Serialize just the injected fields via gray-matter's YAML engine. Extract the YAML
+  // between the delimiters by MATCHING, not by stripping the tail: stringify('', data)
+  // returns "---\nyaml\n---\n\n" (TWO trailing newlines), which a trailing-strip regex
+  // silently fails on — that bug leaked a stray "---" into every synced page's body.
+  const dumped = matter.stringify('', inject);
+  const yamlMatch = dumped.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+  if (!yamlMatch) throw new Error(`cannot extract injected YAML from: ${JSON.stringify(dumped)}`);
+  const yaml = `${yamlMatch[1]}\n`;
   const fmBlock = theirsBlock.replace(/---\r?\n?$/, `${yaml}---\n`);
   return { fmBlock, fieldConflicts };
 }
