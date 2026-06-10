@@ -1,28 +1,26 @@
 ---
-title: "City Guides for Foreign Visitors"
-date: 2026-06-01
-sources: [raw/realchinaguide-city-guides-2026.md]
-related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md, wiki/entities/dianping.md]
-last_verified: 2026-06-09
-verified_against:
-  - raw/realchinaguide-city-guides-2026.md
-  - https://www.travelchinaguide.com/china-trains/beijing-shanghai-highspeed.htm
-  - https://www.chinadiscovery.com/chinese-visa/240-hour-visa-free-transit.html
-volatility: low
 description: "Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin and more — top sights, how many days to spend, best seasons, and getting around. Updated June 2026."
 faqs:
   - q: "Which cities should I visit on a first trip to China?"
     a: "Most first-timers do Beijing (Great Wall, Forbidden City), Shanghai (modern China) and Xi'an (Terracotta Warriors), adding Chengdu (pandas) or Guilin/Yangshuo (scenery) if time allows. About 4-5 days per major city is comfortable."
   - q: "How many days do I need in China?"
-    a: "Two weeks lets you cover 3-4 cities without rushing. On a short visa-free transit trip, plan around your time limit — the 240-hour transit policy now allows travel across multiple provinces, while the older 144-hour transit typically confines you to a single region."
+    a: "Two weeks lets you cover 3-4 cities without rushing. For a shorter 240-hour transit-free trip, focus on one or two cities near a single entry region."
   - q: "What is the best time of year to visit China?"
     a: "Spring (April-May) and autumn (September-October) have the most pleasant weather. Avoid Golden Week (early October) and Lunar New Year, when domestic crowds and prices peak."
   - q: "How do I travel between Chinese cities?"
     a: "High-speed rail is fast, frequent and connects all major cities — book on 12306. Flights suit very long distances; within cities use the metro, DiDi and Amap."
 category: guide
+title: "City Guides for Foreign Visitors"
+date: 2026-06-01
+sources: [raw/realchinaguide-city-guides-2026.md]
+related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md, wiki/entities/dianping.md]
+last_verified: 2026-06-01
+verified_against:
+  - raw/realchinaguide-city-guides-2026.md
+volatility: low
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-06-01
   notes: "City highlights and recommended days are stable facts. Best seasons cross-checked against general climate data. HSR time corrected during lint."
 ---
 
@@ -82,14 +80,14 @@ Note: Requires domestic flights for western segments.
 
 - **Metro apps**: Each city has its own metro mini-program. Set up upon arrival (takes ~5 minutes).
 - **Language**: English signage is good in Beijing, Shanghai, Guangzhou, Shenzhen. Limited elsewhere; translation apps essential.
-- **Permits**: [[wiki/concepts/tibet-permits.md]] required for Lhasa. Xinjiang cities (Urumqi, Kashgar) generally do not require a special travel permit, but visitors should expect heightened security checks and ID inspections; confirm current local conditions before travelling.
-- **Budget**: Shanghai tends to be the most expensive Chinese city for visitors, with Beijing close behind; hotels, food and attractions both run noticeably higher than in tier-2 cities. Within either city, prices vary more by location and season than by exact city. Tier-2 cities (Chengdu, Xi'an, Nanjing) offer excellent value.
-- **Avoid**: National holidays (Labour Day around May 1-3 and National Day / Golden Week Oct 1-7) bring extreme crowds to all destinations.
+- **Permits**: [[wiki/concepts/tibet-permits.md]] required for Lhasa. Xinjiang cities (Urumqi, Kashgar) do not require permits but expect additional security checks.
+- **Budget**: Shanghai and Beijing have broadly similar accommodation costs (Numbeo data shows less than 5% average difference). Hotel prices vary more by location and season than by city. Tier-2 cities (Chengdu, Xi'an, Nanjing) offer excellent value.
+- **Avoid**: National holidays (May 1-5, Oct 1-7) bring extreme crowds to all destinations.
 
 ## Which cities should I visit on a first trip to China?
 
 - **Beijing vs Shanghai first?** Shanghai is easier to navigate and more international. Beijing offers deeper cultural immersion. Both are excellent starting points.
-- **Short trip (5-7 days)**: Pick Beijing + Shanghai (connected by ~4.5h HSR; second-class fare roughly CNY 553-673 / US$80-100 as of June 2026, after a ~20% fare-ceiling increase effective May 26, 2026).
+- **Short trip (5-7 days)**: Pick Beijing + Shanghai (connected by 4.5h HSR, ~$50).
 - **Nature focus**: Guilin/Yangshuo or Zhangjiajie.
 - **Food focus**: Chengdu (spicy) or Guangzhou (Cantonese dim sum).
 - **Off the beaten path**: Kashgar, Dali, or Nanjing.

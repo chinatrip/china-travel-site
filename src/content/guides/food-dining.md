@@ -1,20 +1,20 @@
 ---
-description: "How to order food in China without speaking Chinese: photo menus, camera translation, allergy phrases, delivery apps (Meituan, Ele.me / Taobao Flash Sale), and regional cuisine basics. Updated May 2026."
+description: "How to order food in China without speaking Chinese: photo menus, camera translation, allergy phrases, delivery apps (Meituan, Eleme), and regional cuisine basics. Updated May 2026."
 faqs:
   - q: "How do I order food in China if I don't speak Chinese?"
     a: "Use a camera-translation app (Google Translate needs a VPN; Baidu or Microsoft Translator work without one) on menus, point at picture menus, or scan the table QR code to order in an app that often has photos."
   - q: "How do I handle food allergies or dietary restrictions in China?"
     a: "Save your restrictions written in Chinese to show staff, since machine translation of dish names is unreliable. Be specific — many dishes contain peanuts or soy or are cooked in shared woks."
   - q: "Can I get food delivery as a foreigner in China?"
-    a: "Yes, via Meituan or Ele.me (rebranded as Taobao Flash Sale / 淘宝闪购 in December 2025), though some require a Chinese phone number to register. Both show photos and accept Alipay/WeChat Pay; you'll need your address in Chinese."
+    a: "Yes, via Meituan or Ele.me (now Taobao Flash Purchase), though some require a Chinese phone number to register. Both show photos and accept Alipay/WeChat Pay; you'll need your address in Chinese."
   - q: "Is Chinese food very spicy everywhere?"
     a: "No. The 'spice belt' (Sichuan, Chongqing, Hunan, Hubei, Jiangxi) is hot, but Guangdong, Jiangsu, Zhejiang, Shanghai and Fujian cuisines are mild. You can ask for 不辣 (bu la, not spicy)."
+category: guide
 title: Food and Dining in China for Foreign Visitors
 date: 2026-05-04
-last_verified: 2026-06-09
+last_verified: 2026-05-04
 verified_against:
   - https://www.chinahighlights.com
-  - https://technode.com/2025/12/05/ele-me-rebrands-as-taobao-flash-sale-ending-17-years-as-an-independent-brand/
 sources:
   - raw/food-dining-guide-2026.md
   - raw/realchinaguide-food-dining-2026.md
@@ -27,9 +27,8 @@ related:
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-04
   citation_check: 2026-05-06
-category: guide
 ---
 
 # Food and Dining in China for Foreign Visitors

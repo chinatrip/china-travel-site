@@ -1,19 +1,4 @@
 ---
-title: "Taobao Flash Purchase (淘宝闪购, formerly Ele.me / 饿了么)"
-date: 2026-06-01
-sources:
-  - raw/realchinaguide-food-dining-2026.md
-  - https://www.ele.me (verified 2026-06-01, meta description confirms rebrand)
-related:
-  - wiki/concepts/food-dining.md
-  - wiki/concepts/mobile-payment.md
-  - wiki/entities/meituan.md
-  - wiki/entities/alipay.md
-last_verified: 2026-06-09
-verified_against:
-  - raw/realchinaguide-food-dining-2026.md
-  - https://www.ele.me
-volatility: medium
 description: "Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app — the ordering flow for foreigners, in-app translation, Alipay payment, and address tips. Updated June 2026."
 faqs:
   - q: "What is Taobao Flash Purchase / Ele.me?"
@@ -24,12 +9,27 @@ faqs:
     a: "Both are similar; Meituan has the larger nationwide merchant network, while Ele.me / Taobao Flash Purchase ties tightly into Alipay. Try whichever has better coverage where you're staying."
   - q: "How do I translate the Ele.me app?"
     a: "Tap the ··· menu and choose 翻译 (translate) for multi-language dish descriptions, or use your phone's screen translation."
+category: app
+title: "Taobao Flash Purchase (淘宝闪购, formerly Ele.me / 饿了么)"
+date: 2026-06-01
+sources:
+  - raw/realchinaguide-food-dining-2026.md
+  - https://www.ele.me (verified 2026-06-01, meta description confirms rebrand)
+related:
+  - wiki/concepts/food-dining.md
+  - wiki/concepts/mobile-payment.md
+  - wiki/entities/meituan.md
+  - wiki/entities/alipay.md
+last_verified: 2026-06-01
+verified_against:
+  - raw/realchinaguide-food-dining-2026.md
+  - https://www.ele.me
+volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-06-01
   citation_check: 2026-06-01
   notes: "Rebrand confirmed via ele.me official meta description: '自2025年12月起，饿了么品牌更名为淘宝闪购'. Alibaba ownership, Alipay integration, ordering flow verified."
-category: app
 ---
 
 # Taobao Flash Purchase (淘宝闪购)

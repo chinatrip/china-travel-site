@@ -1,12 +1,4 @@
 ---
-title: "Mini-Programs (WeChat & Alipay)"
-date: 2026-06-01
-sources: [raw/realchinaguide-mini-programs-2026.md]
-related: [wiki/concepts/mobile-payment.md, wiki/concepts/transportation.md, wiki/concepts/sim-card.md, wiki/concepts/attraction-ticketing.md]
-last_verified: 2026-06-09
-verified_against:
-  - raw/realchinaguide-mini-programs-2026.md
-volatility: medium
 description: "How foreigners use WeChat and Alipay mini-programs for ride-hailing, food, metro and tickets — and which ones still require a Chinese phone number. Updated June 2026."
 faqs:
   - q: "What are WeChat and Alipay mini-programs?"
@@ -17,11 +9,19 @@ faqs:
     a: "Use the DiDi mini-program inside Alipay or WeChat — it works without installing DiDi or having a Chinese phone number, and pays through your wallet."
   - q: "Can I use mini-programs in English?"
     a: "Some offer English or in-app translation, but many are Chinese-only. Use your phone's screen translation or the host app's translate feature to navigate them."
+category: guide
+title: "Mini-Programs (WeChat & Alipay)"
+date: 2026-06-01
+sources: [raw/realchinaguide-mini-programs-2026.md]
+related: [wiki/concepts/mobile-payment.md, wiki/concepts/transportation.md, wiki/concepts/sim-card.md, wiki/concepts/attraction-ticketing.md]
+last_verified: 2026-06-01
+verified_against:
+  - raw/realchinaguide-mini-programs-2026.md
+volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-06-01
   notes: "Single-source (realchinaguide.com). Mini-program names and flows verified against general knowledge. City metro app names cross-checked with transportation.md."
-category: guide
 ---
 
 ## What are mini-programs in China?

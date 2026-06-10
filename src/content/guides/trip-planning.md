@@ -1,7 +1,18 @@
 ---
+description: "Planning a China trip: best seasons, how many days, what to pre-book versus buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3 cities. Updated May 2026."
+faqs:
+  - q: "How many days should I spend in China?"
+    a: "Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across too many places — slowing down reduces burnout and absorbs delays from weather or illness."
+  - q: "What should I pre-book versus buy on arrival?"
+    a: "Pre-book only things that sell out — the Forbidden City, Terracotta Warriors, peak-season long-distance trains. Buy most attraction tickets and short trips same-day via Alipay to stay flexible."
+  - q: "What is the best season to visit China?"
+    a: "Spring (April-May) and autumn (September-October) offer the best weather. Avoid Golden Week (first week of October) and Lunar New Year, when crowds and prices surge."
+  - q: "What is a realistic daily budget for China?"
+    a: "Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+ for high-end, with Tier-1 cities (Beijing, Shanghai) costing more than smaller ones."
+category: guide
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
 date: 2026-05-13
-last_verified: 2026-06-09
+last_verified: 2026-05-13
 verified_against:
   - https://ourwander.com/p/worst-time-to-visit-china
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
@@ -23,21 +34,10 @@ related:
   - wiki/concepts/language-barrier.md
   - wiki/concepts/city-guides.md
 volatility: low
-description: "Planning a China trip: best seasons, how many days, what to pre-book versus buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3 cities. Updated May 2026."
-faqs:
-  - q: "How many days should I spend in China?"
-    a: "Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across too many places — slowing down reduces burnout and absorbs delays from weather or illness."
-  - q: "What should I pre-book versus buy on arrival?"
-    a: "Pre-book only things that sell out — the Forbidden City, Terracotta Warriors, peak-season long-distance trains. Buy most attraction tickets and short trips same-day via Alipay to stay flexible."
-  - q: "What is the best season to visit China?"
-    a: "Spring (April-May) and autumn (September-October) offer the best weather. Avoid Golden Week (first week of October) and Lunar New Year, when crowds and prices surge."
-  - q: "What is a realistic daily budget for China?"
-    a: "Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+ for high-end, with Tier-1 cities (Beijing, Shanghai) costing more than smaller ones."
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-13
   citation_check: 2026-05-13
-category: guide
 ---
 
 # Trip Planning — Timing, Budget, Length, and Independent Travel

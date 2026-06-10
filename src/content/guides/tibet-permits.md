@@ -1,11 +1,21 @@
 ---
+description: "Foreigners need a Tibet Travel Permit (not just a China visa), arranged through a registered tour — how to apply, costs, closed periods, and altitude-sickness prep for Lhasa. Updated May 2026."
+faqs:
+  - q: "Do foreigners need a special permit for Tibet?"
+    a: "Yes. Beyond a China visa you need a Tibet Travel Permit, and you cannot travel independently — you must book through a registered agency with a guide, which arranges the permit."
+  - q: "How do I get a Tibet Travel Permit?"
+    a: "Book a tour with a licensed Tibet agency at least 15-20 days ahead and send a scan of your passport and China visa; they obtain the permit. You can't apply directly yourself."
+  - q: "When is Tibet closed to foreign tourists?"
+    a: "Tibet typically closes to foreign visitors from around late February into late March or early April each year. Exact dates vary, so confirm with your agency before planning."
+  - q: "How do I avoid altitude sickness in Tibet?"
+    a: "Lhasa sits at about 3,650 m. Acclimatize slowly, stay hydrated, avoid alcohol the first days, and ask a doctor about acetazolamide. Insurance covering high-altitude evacuation is strongly advised."
+category: guide
 title: Tibet Travel Permits and Altitude Health
 date: 2026-05-13
-last_verified: 2026-06-09
+last_verified: 2026-05-13
 verified_against:
   - https://www.chinahighlights.com/tibet/visa-document.htm
-  - https://www.gototibet.com/blog/can-foreigners-go-to-tibet.html
-  - https://www.thelandofsnows.com/tibet-travel-regulations/
+  - https://www.gototibet.com/blog/can-foreigners-go-to-tibet
 sources:
   - raw/tibet-travel-guide-2026.md
 related:
@@ -14,21 +24,10 @@ related:
   - wiki/concepts/emergency-safety.md
   - wiki/concepts/trip-planning.md
 volatility: medium
-description: "Foreigners need a Tibet Travel Permit (not just a China visa), arranged through a registered tour — how to apply, costs, closed periods, and altitude-sickness prep for Lhasa. Updated June 2026."
-faqs:
-  - q: "Do foreigners need a special permit for Tibet?"
-    a: "Yes. Beyond a China visa you need a Tibet Travel Permit, and you cannot travel independently — you must book through a registered agency with a guide, which arranges the permit."
-  - q: "How do I get a Tibet Travel Permit?"
-    a: "Book a tour with a licensed Tibet agency at least 15-20 days ahead and send a scan of your passport and China visa; they obtain the permit. You can't apply directly yourself."
-  - q: "When is Tibet closed to foreign tourists?"
-    a: "In many past years Tibet closed to foreign visitors from around late February into late March or early April, but this administrative closure is not guaranteed every year — in 2026 it did not happen and Tibet stayed open through that period. Dates vary, so always confirm the current status with your agency before planning."
-  - q: "How do I avoid altitude sickness in Tibet?"
-    a: "Lhasa sits at about 3,650 m. Acclimatize slowly, stay hydrated, avoid alcohol the first days, and ask a doctor about acetazolamide. Insurance covering high-altitude evacuation is strongly advised."
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-13
   citation_check: 2026-05-13
-category: guide
 ---
 
 # Tibet Travel Permits and Altitude Health
@@ -62,7 +61,7 @@ The TTT is a **paper document** listing the traveler's name, approved travel dat
 4. Allow **at least 10 working days** before your travel date (processing takes 5–7 working days)
 5. Train passengers receive a permit copy; those flying to Lhasa need the **original permit**
 
-**Cost:** the permit itself is free. The unavoidable cost is the tour package you must book through a licensed agency. Tour packages start around **USD $450–$2,090** depending on duration and destinations.
+**Cost:** the permit itself is free. The unavoidable cost is the tour package you must book through a licensed agency. Tour packages start around **USD $450–$2,050** depending on duration and destinations.
 
 ## Can foreigners travel independently in Tibet?
 
@@ -75,11 +74,11 @@ This is legally distinct from mainland China, where independent foreign travel i
 
 ## When is Tibet closed to foreign tourists?
 
-In many past years Tibet closed to foreign visitors from **late February through end of March**, reopening around April 1, with no permits processed for travel inside that window (applications for April+ travel continued). This was an administrative pattern, not a fixed law, and it does not apply every year.
+Tibet typically closes to foreign visitors from **late February through end of March**, reopening approximately April 1. During this window, no permits are processed for travel within the closure period (applications for April+ travel continue).
 
-**2026 specific:** as of June 2026, multiple Tibet travel agencies report that — unlike the usual pattern — no closure occurred this year. gototibet.com (accessed June 2026) says "in March 2026, the travel restrictions were lifted, allowing foreign travelers to obtain Tibet Travel Permits and visit Tibet during this period," and The Land of Snows (accessed June 2026) states "in 2026, Tibet will remain open for all international travelers," including the Tibetan New Year (Losar, February 18, 2026) period and March. These are commercial agency sources rather than an official notice, and closures are set administratively at short notice — so confirm the current status with your booking agency before finalizing transport.
+**2026 specific:** the Tibetan New Year holiday falls February 15–26, during which no permits are processed.
 
-Because closure dates are set administratively and can change year to year, always confirm the current closure status with your agency before booking transport. Avoid October 1–7 (National Day Golden Week) — travel surges affect transport and accommodation throughout China during this period.
+Plan Tibet visits for **April–late September** and confirm current closure status with your agency before booking transport. Avoid October 1–7 (National Day Golden Week) — travel surges affect transport and accommodation throughout China during this period.
 
 ## Which areas of Tibet are restricted?
 

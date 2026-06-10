@@ -1,16 +1,4 @@
 ---
-title: Amap
-date: 2026-06-01
-last_verified: 2026-06-09
-verified_against:
-  - https://mobile.amap.com
-sources:
-  - raw/realchinaguide-navigation-guide-2026.md
-related:
-  - wiki/concepts/transportation.md
-  - wiki/concepts/internet-connectivity.md
-  - wiki/entities/didi.md
-volatility: low
 description: "Amap (Gaode) is China's top navigation app and works where Google Maps does not — how to switch it to English, offline maps, transit routing, and built-in ride-hailing. Updated May 2026."
 faqs:
   - q: "Does Amap work in English?"
@@ -21,11 +9,23 @@ faqs:
     a: "Yes — download offline city maps in advance for navigation without data, useful as a backup and to save eSIM data."
   - q: "How do I search places in Amap as a foreigner?"
     a: "Search in English for major landmarks, or paste Chinese names/addresses (e.g., from your hotel booking). Saving your hotel as a destination in Chinese helps drivers and navigation."
+category: app
+title: Amap
+date: 2026-06-01
+last_verified: 2026-05-06
+verified_against:
+  - https://mobile.amap.com
+sources:
+  - raw/realchinaguide-navigation-guide-2026.md
+related:
+  - wiki/concepts/transportation.md
+  - wiki/concepts/internet-connectivity.md
+  - wiki/entities/didi.md
+volatility: low
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-06
   citation_check: null
-category: app
 ---
 
 # Amap (高德地图)

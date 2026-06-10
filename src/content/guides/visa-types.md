@@ -1,11 +1,21 @@
 ---
+description: "China visa and entry options in 2026: 30-day visa-free for 59 countries, 240-hour transit-free at 65 ports for US citizens, the tourist L visa, and entry requirements. Updated May 2026."
+faqs:
+  - q: "Which countries can enter China visa-free in 2026?"
+    a: "As of 2026, 59 countries qualify for 30-day visa-free entry (most of the EU, the UK, Australia and others). Always confirm your nationality's current status on the National Immigration Administration site before booking."
+  - q: "Can US citizens visit China without a visa?"
+    a: "US passport holders are not on the 30-day visa-free list, but can use the 240-hour (10-day) transit-free policy at 65 ports when travelling onward to a third country. For an ordinary tourist trip, a tourist (L) visa is required."
+  - q: "What is the 240-hour transit-free policy?"
+    a: "It lets eligible travelers transit China for up to 240 hours (10 days) without a visa, provided they enter and exit through qualifying ports and hold an onward ticket to a third country."
+  - q: "How long must my passport be valid to enter China?"
+    a: "Your passport should be valid for at least six months beyond your planned stay and have blank visa pages."
+category: guide
 title: China Visa & Entry Options for Tourists and Visitors
 date: 2026-04-30
-last_verified: 2026-06-09
+last_verified: 2026-05-07
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
-  - https://english.www.gov.cn/news/202602/15/content_WS6991bc11c6d00ca5f9a092d6.html
   - https://en.nia.gov.cn/n147418/n147463/c156086/content.html
   - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm
@@ -19,21 +29,10 @@ related:
   - wiki/concepts/residence-registration.md
   - wiki/concepts/work-permit.md
 volatility: high
-description: "China visa and entry options in 2026: 30-day visa-free for 50 countries (including Japan, South Korea, the UK and Canada), 240-hour transit-free at 65 ports for US citizens, the tourist L visa, and entry requirements. Updated June 2026."
-faqs:
-  - q: "Which countries can enter China visa-free in 2026?"
-    a: "As of June 2026, 50 countries qualify for 30-day unilateral visa-free entry — most of the EU, the UK, Canada, Australia, New Zealand, plus Japan and the Republic of Korea (South Korea). Always confirm your nationality's current status on the National Immigration Administration site before booking."
-  - q: "Can US citizens visit China without a visa?"
-    a: "US passport holders are not on the 30-day unilateral visa-free list, but can use the 240-hour (10-day) transit-free policy at 65 ports when travelling onward to a third country, and may enter Hainan visa-free. For an ordinary mainland tourist trip, a tourist (L) visa is required."
-  - q: "What is the 240-hour transit-free policy?"
-    a: "It lets eligible travelers from 55 countries transit China for up to 240 hours (10 days) without a visa, provided they enter and exit through one of the 65 qualifying ports, stay within the 24 permitted provincial-level regions, and hold an onward ticket to a third country."
-  - q: "How long must my passport be valid to enter China?"
-    a: "For a visa application your passport should be valid for at least six months beyond your planned stay and have blank visa pages. For the 240-hour transit scheme, embassies generally advise at least three months of remaining validity — confirm the exact requirement with your nearest Chinese embassy or consulate."
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-07
   citation_check: null
-category: guide
 ---
 
 # China Visa & Entry Options for Tourists and Visitors
@@ -48,21 +47,21 @@ Start here. Find your nationality in the table below to identify which section t
 
 | Your situation | Entry path | Section |
 |---|---|---|
-| Passport from one of 50 unilateral visa-free countries (most EU, UK, Canada, Australia, Japan, South Korea, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
+| Passport from one of 54+ unilateral visa-free countries (most EU, UK, Canada, Australia, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
 | Passport from a country with a mutual bilateral agreement (UAE, Singapore, Malaysia, Thailand, etc.) | **Bilateral visa-free** — no visa needed (up to 30–90 days depending on agreement) | [Section B](#section-b-bilateral-mutual-visa-exemption) |
 | Passport from one of 55 transit-eligible countries (includes USA + all above) AND traveling to a third country | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
-| Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 59 countries (broader effective coverage via other schemes) | [Section D](#section-d-hainan-province-30-day-visa-free) |
+| Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 86 countries | [Section D](#section-d-hainan-province-30-day-visa-free) |
 | Any country; brief airside connection only | **24-hour airside transit** — no visa, must stay in port | [Section E](#section-e-24-hour-airside-transit) |
 | None of the above, or need a longer / work / study stay | **L-visa (tourist)** or other visa — apply before travel | [Section F](#section-f-l-visa-tourist-visa) |
 
-> **USA passport holders:** As of June 2026, the US is NOT on the unilateral 30-day visa-free list, but US citizens DO qualify for the 240-hour transit visa-free scheme (Section C) and may enter Hainan visa-free (Section D). For unrestricted mainland China travel, a visa is required.
+> **USA passport holders:** As of May 2026, the US is NOT on the unilateral 30-day visa-free list, but US citizens DO qualify for the 240-hour transit visa-free scheme (Section C) and may enter Hainan visa-free (Section D). For unrestricted mainland China travel, a visa is required.
 
 ---
 
 ## Section A: Unilateral 30-Day Visa-Free Entry
 
 ### What it is
-China grants unilateral (one-sided) visa-free entry to ordinary passport holders from 50 countries (as of June 2026, per the NIA list current as of 17 February 2026; the list changes — check the latest NIA announcements for updates). No visa application, no fees. Entry is permitted for tourism, business visits, visiting relatives, exchange visits, or transit.
+China grants unilateral (one-sided) visa-free entry to ordinary passport holders from 54+ countries (as of November 2024 expansion; the list is actively expanding — check the latest NIA announcements for updates). No visa application, no fees. Entry is permitted for tourism, business visits, visiting relatives, exchange visits, or transit.
 
 ### Stay duration
 Up to **30 days** per entry, calculated from 00:00 on the day after arrival. Nationality-specific limits apply — some bilateral agreements (Section B) allow longer stays.
@@ -70,20 +69,20 @@ Up to **30 days** per entry, calculated from 00:00 on the day after arrival. Nat
 ### Policy validity
 Extended until **31 December 2026** for most listed countries. Verify whether your country's extension has been confirmed — some countries were added or extended at different dates.
 
-### Countries covered (as of June 2026)
-The following nationalities held unilateral 30-day visa-free entry as verified against the NIA unilateral exemption list and official embassy notices. Verify your country's current status at [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) before travel — this list changes.
+### Countries covered (as of May 2026)
+The following nationalities held unilateral 30-day visa-free entry as verified against NIA announcements and official embassy notices. Verify your country's current status at [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) before travel — this list changes.
 
 **Europe (~35 countries):** Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia (until 14 Sep 2026 under separate arrangement), Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom (added Feb 2026)
 
 **Americas:** Argentina, Brazil, Canada (added Feb 2026), Chile, Peru, Uruguay
 
-**Asia (7):** Bahrain, Brunei Darussalam, Japan, Kuwait, Oman, Republic of Korea (South Korea), Saudi Arabia
+**Middle East:** Bahrain, Kuwait, Oman, Saudi Arabia
 
 **Oceania:** Australia, New Zealand
 
-> Countries verified against the NIA unilateral exemption list (current as of 17 February 2026). Russia's listing on the unilateral scheme runs to 14 September 2026; most other countries are covered until 31 December 2026. Canada and the United Kingdom were added effective February 17, 2026 (per the official gov.cn announcement of 15 February 2026).
+> Countries verified in multiple official sources. Russia's arrangement runs separately to Sep 2026 and requires verification. Canada and UK were added February 17, 2026.
 >
-> **The USA and most African and South Asian nationalities are NOT on this unilateral list** as of June 2026 — check Sections B, C, or D, or apply for a visa (Section F). Note: Japan and the Republic of Korea (South Korea) ARE on the unilateral list (Japan was reinstated effective 30 November 2024).
+> **Japan, South Korea, USA, and most Asian/African/South Asian nationalities are NOT on this list** as of May 2026 — check Sections B, C, or D, or apply for a visa (Section F).
 
 ### Restrictions
 - Ordinary (tourist) passports only — diplomatic/service passport rules differ
@@ -115,19 +114,19 @@ The flagship transit-free scheme allows eligible travelers transiting through Ch
 
 This answers Q1 and Q18 in the wiki's question ledger: yes, you can leave the airport — but only if you meet all criteria below.
 
-### Who qualifies (55 countries as of June 2026)
+### Who qualifies (55 countries as of December 2024)
 Albania, Argentina, Australia, Austria, Belarus, Belgium, Bosnia-Herzegovina, Brazil, Brunei, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Indonesia, Ireland, Italy, Japan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, Netherlands, New Zealand, North Macedonia, Norway, Poland, Portugal, Qatar, Republic of Korea, Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Arab Emirates, United Kingdom, United States.
 
-> Source: Chinese Embassy in the United States (us.china-embassy.gov.cn) and the State Council announcement of 4 November 2025 (english.www.gov.cn). Indonesia was added to the transit scheme in June 2025, bringing the total to 55 countries.
+> Source: Chinese Embassy in the United States (us.china-embassy.gov.cn), December 2024. Indonesia was the most recent addition.
 
 ### Requirements — all must be met
 1. **Onward ticket:** Confirmed ticket with assigned seat and departure date to a **third country or region** (not China, not your origin country if returning via same route). Departing within 240 hours.
-2. **Passport validity:** Chinese embassies generally advise at least 3 months of remaining validity at time of entry. This is standard consular guidance rather than a figure stated on the NIA transit pages — confirm the exact requirement with your nearest Chinese embassy or consulate.
+2. **Passport validity:** At least 3 months remaining at time of entry.
 3. **Digital arrival card:** As of November 2025, complete the arrival card at [s.nia.gov.cn](https://s.nia.gov.cn) within 72 hours before boarding. Paper cards still accepted on arrival if you cannot complete online.
 4. **Entry through eligible port:** Must enter through one of the 65 designated ports (see below).
 5. **Stay within permitted zones:** Travel limited to the 24 permitted provinces/regions.
 
-### Eligible ports (65 total, as of June 2026)
+### Eligible ports (65 total, as of December 2024 expansion)
 All major international airports and land/sea border crossings across the 24 permitted provinces. Key entry points include:
 - **Beijing:** Beijing Capital International Airport (PEK), Beijing Daxing International Airport (PKX)
 - **Shanghai:** Pudong International Airport (PVG), Hongqiao International Airport (SHA)
@@ -190,20 +189,20 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 | Max stay | 30 days | 240 hours (10 days) |
 | Travel zones | Entire mainland China | 24 permitted provinces only |
 | Pre-approval needed? | No | No (activated at immigration) |
-| Eligible countries | 50 (as of June 2026; list changes) | 55 (includes USA) |
+| Eligible countries | 54+ (as of November 2024 expansion; actively expanding) | 55 (includes USA) |
 
 ---
 
 ## Section D: Hainan Province 30-Day Visa-Free
 
 ### What it is
-A separate, province-level visa-free scheme for Hainan (China's southernmost island province and Free Trade Port). The dedicated Hainan scheme covers ordinary passport holders from **59 countries** (per the NIA Hainan policy page, content current as of 14 February 2025). In practice, citizens of additional countries can also enter Hainan visa-free via the national unilateral and bilateral schemes, so the effective combined coverage is broader than 59.
+A separate, province-level visa-free scheme for Hainan (China's southernmost island province and Special Economic Zone). Significantly broader nationality coverage than the national unilateral scheme — 86 countries as of December 2025.
 
 ### Stay duration
 Up to **30 days** within Hainan Province.
 
 ### Countries covered
-The dedicated Hainan scheme lists 59 countries, including the United States and many nations not on the national unilateral list. Citizens covered by the national unilateral and bilateral schemes can also enter Hainan visa-free. Verify the current list at [en.nia.gov.cn/n147418/n147463/c180637](https://en.nia.gov.cn/n147418/n147463/c180637/content.html).
+86 countries as of December 2025, including all countries in the national unilateral scheme plus the United States and many additional nations. Verify the current list at [en.nia.gov.cn/n147418/n147463/c180637](https://en.nia.gov.cn/n147418/n147463/c180637/content.html).
 
 ### Critical restriction
 **You may not travel from Hainan to mainland China** without an appropriate visa. If you enter Hainan on the Hainan visa-free scheme and want to continue to Beijing, Shanghai, or anywhere else on the mainland, you need a separate Chinese visa. Hainan's ports of entry and exit are separate from mainland China's transit scheme.
@@ -297,7 +296,7 @@ Processing takes 7–10 working days; your passport is held during review — yo
 
 2. **Misidentifying your nationality's eligibility:** Do not assume your country is on the unilateral visa-free list because a neighboring country is. The list is specific. Check NIA or your embassy, not travel blogs.
 
-3. **Passport validity:** Chinese consulates generally require at least 6 months validity for a visa application, and advise at least 3 months remaining for the transit scheme. Check both your passport and any dependent/family member passports before booking.
+3. **Passport validity:** A passport with less than 3 months validity (transit scheme) or less than 6 months validity (visa application) will be rejected. Check both your passport and any dependent/family member passports before booking.
 
 4. **Entering restricted zones:** Traveling to Xinjiang, Tibet, Inner Mongolia, Ningxia, Qinghai, Gansu, or Jilin under the 240-hour transit visa-free scheme is an immigration violation.
 
@@ -311,7 +310,7 @@ Processing takes 7–10 working days; your passport is held during review — yo
 
 9. **Wrong visa category:** Attending business meetings, signing contracts, or participating in trade fairs on an L-visa rather than M-visa can lead to denial. If your trip includes commercial activity, apply for the correct visa.
 
-10. **Hainan → mainland travel without a visa:** Entering Hainan on the Hainan visa-free scheme and then trying to fly to Beijing or Shanghai without a separate visa is an immigration violation. Get a mainland visa if you plan to leave Hainan.
+10. **Hainan → mainland travel without a visa:** Entering Hainan on the 86-country Hainan visa-free scheme and then trying to fly to Beijing or Shanghai without a separate visa is an immigration violation. Get a mainland visa if you plan to leave Hainan.
 
 ---
 
@@ -394,7 +393,7 @@ See also: [[wiki/concepts/residence-registration.md]]
 
 > Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 
-- As of June 2026, **50 countries** have unilateral 30-day visa-free access (per the NIA list current as of 17 February 2026; the list changes — check the latest NIA announcements for updates)
-- **UK and Canada** were added to the unilateral visa-free list effective **February 17, 2026** (per the official gov.cn announcement of 15 February 2026)
-- Most visa-free policies extended until **31 December 2026** (Russia runs to 14 September 2026; verify for your specific country)
+- As of November 2024 expansion, **54+ countries** have visa-free access (30 days; the list is actively expanding — check the latest NIA announcements for updates)
+- **UK and Canada** were added to the unilateral visa-free list on **February 17, 2026**
+- Most visa-free policies extended until **31 December 2026** (verify for your specific country)
 - The list continues to expand — always check [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) for the latest additions

@@ -1,7 +1,18 @@
 ---
+description: "Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed payments. Updated May 2026."
+faqs:
+  - q: "Can foreigners use Alipay or WeChat Pay in China without a Chinese bank account?"
+    a: "Yes. Since the April 2024 PBOC policy you can bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card directly to Alipay or WeChat Pay — no Chinese bank account or phone number required."
+  - q: "Why does my Alipay or WeChat Pay payment keep failing in China?"
+    a: "The most common cause is paying to a vendor's personal QR code, which foreign-card wallets cannot send to — only merchant codes work. A turned-on VPN can also block payments, so switch it off when paying."
+  - q: "How much does it cost to pay with a foreign card on Alipay or WeChat Pay?"
+    a: "Transactions under ¥200 have no fee; transactions of ¥200 or more carry about a 3% surcharge. To avoid it, ask the merchant to split the bill into amounts below ¥200."
+  - q: "Should I still bring cash to China?"
+    a: "Mobile pay is accepted almost everywhere, but carry ¥500-1000 in cash as a backup for small vendors, rural areas, and the occasional payment failure."
+category: guide
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
 date: 2026-05-02
-last_verified: 2026-06-09
+last_verified: 2026-05-28
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
@@ -27,21 +38,10 @@ related:
   - wiki/entities/wechat.md
   - wiki/concepts/remote-work-china.md
 volatility: high
-description: "Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed payments. Updated May 2026."
-faqs:
-  - q: "Can foreigners use Alipay or WeChat Pay in China without a Chinese bank account?"
-    a: "Yes. Since the April 2024 PBOC policy you can bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card directly to Alipay or WeChat Pay — no Chinese bank account or phone number required."
-  - q: "Why does my Alipay or WeChat Pay payment keep failing in China?"
-    a: "The most common cause is paying to a vendor's personal QR code, which foreign-card wallets cannot send to — only merchant codes work. A turned-on VPN can also block payments, so switch it off when paying."
-  - q: "How much does it cost to pay with a foreign card on Alipay or WeChat Pay?"
-    a: "Transactions under ¥200 have no fee; transactions of ¥200 or more carry about a 3% surcharge. To avoid it, ask the merchant to split the bill into amounts below ¥200."
-  - q: "Should I still bring cash to China?"
-    a: "Mobile pay is accepted almost everywhere, but carry ¥500-1000 in cash as a backup for small vendors, rural areas, and the occasional payment failure."
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-03
   citation_check: 2026-05-06
-category: guide
 ---
 
 # Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)

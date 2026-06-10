@@ -1,17 +1,4 @@
 ---
-title: Health and Medical Care for Foreign Visitors
-date: 2026-05-04
-last_verified: 2026-06-09
-verified_against:
-  - https://www.gov.uk/government/publications/medical-treatment-in-china
-sources:
-  - raw/health-medical-guide-2026.md
-related:
-  - wiki/concepts/mobile-payment.md
-  - wiki/concepts/accommodation.md
-  - wiki/concepts/emergency-safety.md
-  - wiki/concepts/tibet-permits.md
-volatility: medium
 description: "Medical care in China for foreign visitors: international hospitals, paying with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at high-elevation destinations. Updated May 2026."
 faqs:
   - q: "Where do foreigners get medical care in China?"
@@ -22,11 +9,24 @@ faqs:
     a: "Strongly recommended. It covers medical emergencies and evacuation, which can be costly — especially for high-altitude or remote-area trips. Confirm the policy explicitly covers China."
   - q: "Can I buy medicine over the counter in China?"
     a: "Pharmacies (yaodian) are widespread and stock common remedies, but staff may not speak English and brand names differ. Bring essential prescriptions, and show the generic drug name via a translation app."
+category: guide
+title: Health and Medical Care for Foreign Visitors
+date: 2026-05-04
+last_verified: 2026-05-04
+verified_against:
+  - https://www.gov.uk/government/publications/medical-treatment-in-china
+sources:
+  - raw/health-medical-guide-2026.md
+related:
+  - wiki/concepts/mobile-payment.md
+  - wiki/concepts/accommodation.md
+  - wiki/concepts/emergency-safety.md
+  - wiki/concepts/tibet-permits.md
+volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-05-04
   citation_check: 2026-05-06
-category: guide
 ---
 
 # Health and Medical Care for Foreign Visitors
