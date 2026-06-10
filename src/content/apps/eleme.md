@@ -1,15 +1,4 @@
 ---
-description: "Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app — the ordering flow for foreigners, in-app translation, Alipay payment, and address tips. Updated June 2026."
-faqs:
-  - q: "What is Taobao Flash Purchase / Ele.me?"
-    a: "It's one of China's two big food-delivery platforms (rebranded from Ele.me / 饿了么 in late 2025), owned by Alibaba and integrated with Alipay."
-  - q: "Can foreigners order on Ele.me / Taobao Flash Purchase?"
-    a: "Yes, if you can register (some features need a Chinese phone number) and pay with Alipay. You'll need a delivery address in Chinese; the app shows photos and offers in-app translation."
-  - q: "Ele.me or Meituan — which should I use?"
-    a: "Both are similar; Meituan has the larger nationwide merchant network, while Ele.me / Taobao Flash Purchase ties tightly into Alipay. Try whichever has better coverage where you're staying."
-  - q: "How do I translate the Ele.me app?"
-    a: "Tap the ··· menu and choose 翻译 (translate) for multi-language dish descriptions, or use your phone's screen translation."
-category: app
 title: "Taobao Flash Purchase (淘宝闪购, formerly Ele.me / 饿了么)"
 date: 2026-06-01
 sources:
@@ -20,16 +9,27 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/meituan.md
   - wiki/entities/alipay.md
-last_verified: 2026-06-01
+last_verified: 2026-06-09
 verified_against:
   - raw/realchinaguide-food-dining-2026.md
   - https://www.ele.me
 volatility: medium
+description: "Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app — the ordering flow for foreigners, in-app translation, Alipay payment, and address tips. Updated June 2026."
+faqs:
+  - q: "What is Taobao Flash Purchase / Ele.me?"
+    a: "It's one of China's two big food-delivery platforms (rebranded from Ele.me / 饿了么 in late 2025), owned by Alibaba and integrated with Alipay."
+  - q: "Can foreigners order on Ele.me / Taobao Flash Purchase?"
+    a: "Yes, if you can register (some features need a Chinese phone number) and pay with Alipay. You'll need a delivery address in Chinese; the app shows photos and offers in-app translation."
+  - q: "Ele.me or Meituan — which should I use?"
+    a: "Both are similar; Meituan has the larger nationwide merchant network, while Ele.me / Taobao Flash Purchase ties tightly into Alipay. Try whichever has better coverage where you're staying."
+  - q: "How do I translate the Ele.me app?"
+    a: "Tap the ··· menu and choose 翻译 (translate) for multi-language dish descriptions, or use your phone's screen translation."
 review:
   status: audited
-  page_audit: 2026-06-01
+  page_audit: 2026-06-09
   citation_check: 2026-06-01
   notes: "Rebrand confirmed via ele.me official meta description: '自2025年12月起，饿了么品牌更名为淘宝闪购'. Alibaba ownership, Alipay integration, ordering flow verified."
+category: app
 ---
 
 # Taobao Flash Purchase (淘宝闪购)

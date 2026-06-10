@@ -1,4 +1,20 @@
 ---
+title: WeChat / WeChat Pay
+date: 2026-04-30
+last_verified: 2026-06-09
+verified_against:
+  - https://www.wechat.com
+  - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
+  - https://www.dragontrail.com/resources/blog/how-to-get-a-wechat-account-from-overseas
+  - https://www.sinorbis.com/how-to-sign-up-for-a-wechat-personal-account
+sources:
+  - raw/12306-guide-for-foreign-business-visitors-2025.md
+  - raw/wechat-paypal-integration-2026.md
+  - raw/realchinaguide-payment-guide-2026.md
+related:
+  - wiki/concepts/mobile-payment.md
+  - wiki/entities/alipay.md
+volatility: medium
 description: "WeChat is essential in China for messaging, payments, and mini-programs — how foreigners set up WeChat Pay, bind a foreign card, and the 2026 PayPal integration for US users. Updated May 2026."
 faqs:
   - q: "Do I need WeChat to travel in China?"
@@ -9,25 +25,11 @@ faqs:
     a: "A 2026 integration lets eligible US users fund WeChat Pay via PayPal, easing setup for travelers without a usable card binding. Availability and terms can change, so verify before relying on it."
   - q: "Alipay or WeChat Pay — which should I set up?"
     a: "Set up both if you can. Alipay tends to be easier for foreigners and has English support; WeChat Pay is essential for messaging and merchants who only take WeChat."
-category: app
-title: WeChat / WeChat Pay
-date: 2026-04-30
-last_verified: 2026-05-04
-verified_against:
-  - https://www.wechat.com
-  - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
-sources:
-  - raw/12306-guide-for-foreign-business-visitors-2025.md
-  - raw/wechat-paypal-integration-2026.md
-  - raw/realchinaguide-payment-guide-2026.md
-related:
-  - wiki/concepts/mobile-payment.md
-  - wiki/entities/alipay.md
-volatility: medium
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: null
+category: app
 ---
 
 # WeChat / WeChat Pay
@@ -39,7 +41,7 @@ WeChat (Tencent) is a super-app combining messaging, social networking, payments
 ## How do I set up WeChat Pay as a foreigner?
 
 1. Download WeChat (App Store / Google Play).
-2. Register with a **foreign mobile number**. WeChat may require an existing contact to scan a QR code to verify your account (risk-control measure, high probability for foreign registrations). The contact must meet all four official conditions: registered 6+ months; WeChat Pay active 3+ months; has not vouched for another account in the past month; has not been banned in the past 6 months. There is no nationality or residency requirement. If no qualifying contact is available, WeChat in-app customer support can unlock the account but takes several days.
+2. Register with a **foreign mobile number**. WeChat may require an existing contact to scan a QR code to verify your account (risk-control measure, high probability for foreign registrations). As of June 2026, third-party registration guides report the contact (helper) typically needs to meet several conditions that differ by the helper's account type: the account should have been registered **6+ months for a mainland-China user** or **1+ month for an international user**; a **mainland-China helper should also have WeChat Pay activated** (this does not apply to international helpers, and there is no minimum-duration requirement); the helper should not have helped register another account in the past month; and should not have been blocked in the past month. These guides also cite a cap of **3 assisted registrations per year** per helper. WeChat does not publish these thresholds officially, so treat them as indicative and check the current in-app requirement. If no qualifying contact is available, WeChat in-app customer support can unlock the account but takes several days.
 3. Complete passport identity verification.
 4. **Me → Services → Wallet → Bank Cards → Add Bank Card.** Bind a Visa, Mastercard, or JCB. AMEX is bindable but has inconsistent merchant acceptance — use Visa or Mastercard as primary.
 5. Once verified, scan to pay or be scanned.

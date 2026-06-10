@@ -1,18 +1,17 @@
 ---
-description: "Cash and currency in China for foreigners: ATM withdrawals, where foreign cards work, how much cash to carry, and the RMB 20,000 / USD 5,000 customs cash limit. Updated May 2026."
+description: "Cash and currency in China for foreigners: ATM withdrawals, where foreign cards work, how much cash to carry, and the RMB 20,000 / USD 5,000 customs cash limit. Updated June 2026."
 faqs:
   - q: "Should I bring cash or use ATMs in China?"
     a: "Mobile pay covers most spending, but keep some cash for small vendors. Withdrawing RMB from a Chinese ATM (Bank of China, ICBC) usually beats exchanging cash at home — check your bank's foreign-ATM fees first."
   - q: "How much cash can I bring into China?"
-    a: "You can carry up to RMB 20,000, or the equivalent of USD 5,000 in foreign currency, without declaring it at customs; above that you must declare."
+    a: "You can carry up to RMB 20,000, or the equivalent of USD 5,000 in foreign currency, without declaring it at customs; above that you must declare to customs."
   - q: "Do shops in China accept foreign Visa or Mastercard?"
     a: "Direct foreign-card acceptance is limited mostly to international hotels, large department stores and some chains. For everyday spending, bind your card to Alipay or WeChat Pay instead."
   - q: "Where can I exchange money in China?"
     a: "Bank of China branches and airport counters exchange major currencies — bring your passport. ATM withdrawals are often more convenient and competitive than counter exchange."
-category: guide
 title: Foreign Exchange and Cash in China
 date: 2026-05-04
-last_verified: 2026-05-04
+last_verified: 2026-06-09
 verified_against:
   - https://www.you.co/sg/blog/china-atm-withdrawal-guide/
   - https://wise.com/gb/blog/atms-in-china
@@ -28,8 +27,9 @@ related:
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-05-04
+  page_audit: 2026-06-09
   citation_check: 2026-05-06
+category: guide
 ---
 
 # Foreign Exchange and Cash in China
@@ -64,14 +64,14 @@ Avoid: small rural bank ATMs and convenience-store ATMs — foreign card accepta
 | Chinese bank ATM fee | **¥20–30 per transaction** (source: YouTrip 2026 ATM guide; varies by bank) | Charged by the Chinese bank regardless of your card issuer |
 | Your home bank fee | **1–3% + flat fee** | Set by your bank; varies widely — check before travel |
 | Per-transaction limit | **¥2,500–5,000** (source: YouTrip 2026 ATM guide) | Varies by machine and bank |
-| Daily withdrawal limit | **¥20,000** (source: YouTrip 2026 ATM guide) | Across all ATM transactions in one day; your home bank may impose a lower limit |
+| Daily withdrawal limit | **¥20,000** (source: Wise, as of June 2026; YouTrip cites a lower ¥10,000 cap, so confirm with your bank) | Across all ATM transactions in one day; your home bank may impose a lower limit |
 
 **Strategy:** withdraw larger amounts less frequently to minimise per-transaction fees. ¥2,000–3,000 at a time is practical for most short trips.
 
 ### ATM Practical Tips
 
 - Use ATMs inside bank branches during business hours where possible — lower skimming risk and staff available if the card is retained.
-- If the ATM retains your card, go directly to the bank counter immediately — retained foreign cards are typically held for 3–7 business days before being destroyed or returned to the issuing bank. Bring your passport; the branch can hold the card for you to collect or advise on the return process.
+- If the ATM retains your card, go directly to the bank counter immediately. Bring your passport; the branch can hold the card for you to collect or advise on the return process. Retained foreign cards may not be returnable on the spot, so do not rely on a single card.
 - Some ATMs time out quickly; have your PIN ready before inserting the card.
 
 ## Where can I exchange money in China?
@@ -81,7 +81,7 @@ Avoid: small rural bank ATMs and convenience-store ATMs — foreign card accepta
 | Channel | Rate quality | Speed | Notes |
 |---|---|---|---|
 | **Bank of China branch** | Best available (bank's selling rate — slightly below the mid-rate, but the closest rate available to retail customers) | Slow (30–60 min, queues) | Passport required; present at the FX counter; best for large amounts |
-| **Airport exchange counter** | 3–5% worse than bank | Fast | Useful for a small amount on arrival to cover immediate costs; avoid for large exchanges |
+| **Airport exchange counter** | Markedly worse than bank (commonly 10–20% worse, source: travelchinacheaper.com) | Fast | Useful for a small amount on arrival to cover immediate costs; avoid for large exchanges |
 | **ATM withdrawal** | Close to bank rate (minus fees) | Fast | Practically equivalent to bank rate for small/medium amounts; convenient |
 | **Hotel exchange desk** | Variable, often poor | Fast | Use only as a last resort |
 | **Unofficial street exchange** | Avoid | — | Counterfeit notes and short-changing are common; illegal |
@@ -107,7 +107,7 @@ You can convert unused RMB back to foreign currency at bank branches or airport 
 
 | Cash type | Limit | Declaration required |
 |---|---|---|
-| **RMB** | ¥20,000 per person in or out (source: customs.gov.cn) | Amounts above ¥20,000 require prior approval from the **State Administration of Foreign Exchange (SAFE, 国家外汇管理局)** — apply at safe.gov.cn or a major Chinese bank before travel; this limit is rarely an issue for tourists |
+| **RMB** | ¥20,000 per person in or out (source: customs.gov.cn) | ¥20,000 is the standard carry limit for travellers; amounts above it must be declared to Customs and may require supporting documents, and the excess can be refused or confiscated. This limit is rarely an issue for tourists |
 | **Foreign currency** | No cap on bringing in (source: customs.gov.cn) | Declare to customs in writing if carrying **more than USD $5,000 equivalent** on entry |
 | **Foreign currency out** | USD $5,000 equivalent without permit (source: customs.gov.cn) | Carrying more than $5,000 out requires a permit issued by an authorized Chinese bank — apply before departure |
 
@@ -129,7 +129,7 @@ Foreign visitors can open a Chinese bank account and obtain a **UnionPay debit c
 
 **Requirements:** valid passport (or Foreign Permanent Resident ID card). Some banks may also request proof of residence, employment, or enrollment.
 
-**Process:** present your passport at the bank counter at any commercial bank outlet (Bank of China, ICBC, CCB, and others all offer this service). Processing typically takes 30–60 minutes.
+**Process:** present your passport at the bank counter at any commercial bank outlet (Bank of China, ICBC, CCB, and others all offer this service). Allow time for paperwork and identity checks; the process is usually completed during a single branch visit.
 
 **Practical note:** keep the card secure. If lost, report it to the bank immediately. Short-term tourists generally do not need a Chinese bank card — binding a foreign card to Alipay / WeChat Pay is sufficient for daily spending.
 
