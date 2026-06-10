@@ -157,3 +157,4 @@ However, Amap is still recommended for iPhone users when you need:
 - [[wiki/concepts/transportation.md]] — transport overview including metro, train, and ride-hailing
 - [[wiki/concepts/internet-connectivity.md]] — GFW context and VPN guidance
 - [[wiki/entities/didi.md]] — ride-hailing via DiDi directly or through Amap aggregation
+- [[wiki/concepts/city-guides.md]] — city-by-city overviews for planning where to navigate

@@ -21,6 +21,8 @@ related:
 volatility: high
 description: "eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi) bypass the firewall with no VPN, data needs, activation timing, and when you need a +86 number. Updated June 2026."
 faqs:
+  - q: "Can I get a free SIM card at Chinese airports?"
+    a: "Yes — every Chinese airport hands out free tourist SIM cards with unlimited data at the arrivals hall, no passport needed."
   - q: "Do I need a VPN if I use a foreign eSIM in China?"
     a: "No. The major foreign travel eSIMs sold for China (Airalo, Holafly, Ubigi) route data through an overseas gateway, so they bypass the Great Firewall and Google, WhatsApp and Instagram work without a VPN on eSIM data — Airalo confirms this in its help docs, and Holafly and Ubigi state the same on their China pages. You only need a VPN on Chinese hotel or airport Wi-Fi, which is still firewalled."
   - q: "Which eSIMs work best for China?"
