@@ -1,0 +1,5 @@
+# SEO/GEO review decision ledger (JSONL) — one JSON object per line, appended per review.
+# Lines starting with '#' (and blank lines) are ignored. The reviewer reads a page's prior
+# decisions to avoid re-flagging already-accepted issues and to spot regressions.
+# Primary curated memory is standards.md + calibration.md; persisting this ledger back from
+# CI across runs is a follow-up (see PR). Locally, runs append here.
