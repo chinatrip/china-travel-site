@@ -93,11 +93,7 @@ Not every hotel or guesthouse in China is authorized to receive foreign national
 
 When booking via Trip.com or similar platforms, search results generally show only foreigner-eligible properties by default in major cities, but confirm for off-the-beaten-path destinations.
 
-<<<<<<< site
 ## Can I use Airbnb or short-term rentals in China?
-=======
-## Short-Term Rentals (Local Platforms)
->>>>>>> wiki
 
 Airbnb is not a practical home-rental option inside mainland China: it shut down all of its domestic mainland-China listings (around 150,000) effective 30 July 2022 and, as of June 2026, has not relisted them — it now serves only Chinese travelers booking stays abroad. (A small number of commercial hotels may still surface on Airbnb, but it is not a reliable way to find apartment-style stays in China.) For short-term apartment rentals, use domestic platforms instead: Tujia (途家) and Meituan Minsu (美团民宿).
 
