@@ -167,10 +167,17 @@ export default {
     }
     const response = applySecurityHeaders(await env.ASSETS.fetch(request));
     const cacheControl = cacheControlFor(url.pathname);
-    // response.ok guard: a stale-HTML client can request a hashed asset that
-    // no longer exists after a deploy — caching that 404 for a year would
-    // break the client permanently, so only successful responses opt in.
-    if (cacheControl && response.ok) {
+    // Status guard: a stale-HTML client can request a hashed asset that no
+    // longer exists after a deploy — caching that 404 for a year would break
+    // the client permanently, so only 2xx responses opt in. 304 is included
+    // as well: the assets layer answers If-None-Match hits with a 304 still
+    // carrying the old `max-age=0` header, and per RFC 9111 §4.3.4 browsers
+    // refresh the stored entry from the 304's headers — without the override
+    // here, clients that cached under the old policy would revalidate
+    // forever and never upgrade to immutable. A 304 only happens on an ETag
+    // match (the bytes behind the name are unchanged), so it is as safe to
+    // upgrade as the 200 it stands in for.
+    if (cacheControl && (response.ok || response.status === 304)) {
       response.headers.set('Cache-Control', cacheControl);
     }
     return response;
