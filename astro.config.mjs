@@ -8,6 +8,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 import remarkWikiLinks from './src/plugins/remark-wikilinks.mjs';
 import remarkTrailingSlash from './src/plugins/remark-trailing-slash.mjs';
+import remarkStripLeadingH1 from './src/plugins/remark-strip-leading-h1.mjs';
 
 // Custom integration: run Pagefind after build using its Node API
 function pagefindIntegration() {
@@ -33,7 +34,7 @@ export default defineConfig({
   trailingSlash: 'always',
 
   markdown: {
-    remarkPlugins: [remarkWikiLinks, remarkTrailingSlash],
+    remarkPlugins: [remarkStripLeadingH1, remarkWikiLinks, remarkTrailingSlash],
     shikiConfig: {
       theme: 'github-light',
     },

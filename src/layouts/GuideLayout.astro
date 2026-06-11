@@ -76,15 +76,35 @@ function toISODate(dateStr: string): string {
   return d.toISOString().split('T')[0];
 }
 
+// Canonical URL in trailing-slash form (matches BaseLayout's <link rel="canonical">).
+const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+const canonicalURL = new URL(canonicalPath, Astro.site).href;
+const defaultImage = new URL('/og-default.png', Astro.site).href;
+
+// Single Organization entity, referenced site-wide via @id.
+const organization = {
+  "@type": "Organization",
+  "@id": "https://chinaguide.ai/#organization",
+  "name": "ChinaGuide.ai",
+  "url": "https://chinaguide.ai",
+  "logo": {
+    "@type": "ImageObject",
+    "url": defaultImage,
+  },
+};
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": title,
   ...(description && { "description": description }),
+  "url": canonicalURL,
+  "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL },
+  "image": [defaultImage],
   ...(date && { "datePublished": toISODate(date) }),
   ...(lastVerified && { "dateModified": toISODate(lastVerified) }),
-  "author": { "@type": "Organization", "name": "ChinaGuide.ai", "url": "https://chinaguide.ai" },
-  "publisher": { "@type": "Organization", "name": "ChinaGuide.ai", "url": "https://chinaguide.ai" },
+  "author": organization,
+  "publisher": organization,
 };
 
 const breadcrumbSchema = {
@@ -93,7 +113,7 @@ const breadcrumbSchema = {
   "itemListElement": [
     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://chinaguide.ai/" },
     { "@type": "ListItem", "position": 2, "name": categoryLabel, "item": `https://chinaguide.ai${categoryHref}` },
-    { "@type": "ListItem", "position": 3, "name": title },
+    { "@type": "ListItem", "position": 3, "name": title, "item": canonicalURL },
   ],
 };
 
