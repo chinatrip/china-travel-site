@@ -104,6 +104,42 @@ export function securityHeaders() {
   };
 }
 
+const IMMUTABLE_CACHE = 'public, max-age=31536000, immutable';
+const HOURLY_CACHE = 'public, max-age=3600';
+
+// Pagefind's content-addressed chunk files: the hex hash in the filename
+// changes whenever the indexed content changes, so the bytes behind a given
+// name are immutable (e.g. fragment/en_1f988b1.pf_fragment,
+// index/en_847a521.pf_index, pagefind.en_18dbfbe23b.pf_meta).
+const HASHED_PAGEFIND = /\.(?:pf_fragment|pf_index|pf_meta)$/;
+
+/**
+ * Cache-Control override for a pathname, or null to keep the assets-layer
+ * default (`public, max-age=0, must-revalidate`) — see issue #39.
+ *
+ * - `/_astro/*`: every filename carries an Astro content hash → immutable.
+ * - `/pagefind/*` hashed chunks (see HASHED_PAGEFIND) → immutable.
+ * - `/pagefind/*` un-hashed loaders (pagefind.js, pagefind-ui.js,
+ *   pagefind-entry.json, wasm.*.pagefind, …): the filename never changes
+ *   across deploys, so a year-long immutable would pin returning visitors
+ *   to a stale loader after a pagefind version bump. One hour bounds that
+ *   window while skipping a revalidation round-trip on most /search/
+ *   visits. (pagefind-entry.json is additionally cache-busted by
+ *   pagefind.js itself via a `?ts=` query, so its max-age barely matters.)
+ * - Everything else (HTML, robots.txt, sitemaps, …): null — must-revalidate
+ *   on every request is correct for un-hashed, frequently-redeployed files.
+ *
+ * @param {string} pathname
+ * @returns {string | null}
+ */
+export function cacheControlFor(pathname) {
+  if (pathname.startsWith('/_astro/')) return IMMUTABLE_CACHE;
+  if (pathname.startsWith('/pagefind/')) {
+    return HASHED_PAGEFIND.test(pathname) ? IMMUTABLE_CACHE : HOURLY_CACHE;
+  }
+  return null;
+}
+
 /**
  * Return a copy of the response with the security header set applied.
  * Responses from Response.redirect() and ASSETS.fetch() have immutable
@@ -122,12 +158,28 @@ export function applySecurityHeaders(response) {
 
 export default {
   async fetch(request, env) {
+    const url = new URL(request.url);
     if (request.method === 'GET' || request.method === 'HEAD') {
-      const target = redirectTarget(new URL(request.url));
+      const target = redirectTarget(url);
       if (target) {
         return applySecurityHeaders(Response.redirect(target, 301));
       }
     }
-    return applySecurityHeaders(await env.ASSETS.fetch(request));
+    const response = applySecurityHeaders(await env.ASSETS.fetch(request));
+    const cacheControl = cacheControlFor(url.pathname);
+    // Status guard: a stale-HTML client can request a hashed asset that no
+    // longer exists after a deploy — caching that 404 for a year would break
+    // the client permanently, so only 2xx responses opt in. 304 is included
+    // as well: the assets layer answers If-None-Match hits with a 304 still
+    // carrying the old `max-age=0` header, and per RFC 9111 §4.3.4 browsers
+    // refresh the stored entry from the 304's headers — without the override
+    // here, clients that cached under the old policy would revalidate
+    // forever and never upgrade to immutable. A 304 only happens on an ETag
+    // match (the bytes behind the name are unchanged), so it is as safe to
+    // upgrade as the 200 it stands in for.
+    if (cacheControl && (response.ok || response.status === 304)) {
+      response.headers.set('Cache-Control', cacheControl);
+    }
+    return response;
   },
 };

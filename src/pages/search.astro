@@ -9,8 +9,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
 
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
-  <script is:inline src="/pagefind/pagefind-ui.js"></script>
+  <script is:inline src="/pagefind/pagefind-ui.js" defer></script>
   <script is:inline>
+    // pagefind-ui.js is deferred, so it hasn't executed when this inline
+    // script parses — but deferred scripts always finish before
+    // DOMContentLoaded fires, so PagefindUI is defined by the time
+    // initSearch runs via the listener branch below.
     function initSearch() {
       var ui = new PagefindUI({ element: "#search", showSubResults: true });
       // Sitelinks Searchbox lands here as /search/?q=term (see the WebSite
