@@ -19,6 +19,9 @@ export function buildWebsiteSchema(description) {
     '@type': 'WebSite',
     '@id': `${SITE}/#website`,
     name: BRAND,
+    // Google Site Names reads alternateName — covers the brand spellings
+    // issue #7 targets ("chinaguide" position 12, "china guide" 0 impressions).
+    alternateName: ['ChinaGuide', 'China Guide'],
     url: `${SITE}/`,
     description,
     inLanguage: 'en',

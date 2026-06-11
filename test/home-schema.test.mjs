@@ -12,6 +12,9 @@ test('WebSite schema carries brand identity, @id, and language', () => {
   assert.equal(schema['@type'], 'WebSite');
   assert.equal(schema['@id'], 'https://chinaguide.ai/#website');
   assert.equal(schema.name, 'ChinaGuide.ai');
+  // Google Site Names reads alternateName — direct lever for the brand
+  // queries this issue targets ("chinaguide", "china guide").
+  assert.deepEqual(schema.alternateName, ['ChinaGuide', 'China Guide']);
   assert.equal(schema.url, 'https://chinaguide.ai/');
   assert.equal(schema.description, DESCRIPTION);
   assert.equal(schema.inLanguage, 'en');
