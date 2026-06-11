@@ -1,5 +1,5 @@
 ---
-title: Amap
+title: "Amap for Foreigners: English Navigation in China (2026)"
 date: 2026-06-01
 last_verified: 2026-06-09
 verified_against:
@@ -28,7 +28,7 @@ review:
 category: app
 ---
 
-# Amap (高德地图)
+# Amap for Foreigners: English Navigation in China (2026)
 
 Amap (高德地图, also known as Gaode Maps) is China's most widely used navigation app, operated by Alibaba Group. It is the recommended mapping tool for foreign visitors because Google Maps is blocked by the Great Firewall and does not have reliable offline data for China.
 

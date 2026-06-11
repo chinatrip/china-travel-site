@@ -1,5 +1,5 @@
 ---
-title: Meituan
+title: "Meituan for Foreigners: Food Delivery & Hotel Deals (2026)"
 date: 2026-05-06
 last_verified: 2026-06-09
 verified_against:
@@ -31,7 +31,7 @@ review:
 category: app
 ---
 
-# Meituan (美团)
+# Meituan for Foreigners: Food Delivery & Hotel Deals (2026)
 
 Meituan is one of China's largest super-apps, covering food delivery, hotel booking, restaurant discovery, bike-sharing, movie tickets, and more. Foreign visitors most commonly encounter it for food delivery and bike-sharing; hotel booking and restaurant reservations are possible but skew toward Chinese-language users.
 

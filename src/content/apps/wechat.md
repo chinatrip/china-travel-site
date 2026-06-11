@@ -1,5 +1,5 @@
 ---
-title: WeChat / WeChat Pay
+title: "How to Use WeChat Pay in China as a Foreigner (2026)"
 date: 2026-04-30
 last_verified: 2026-06-09
 verified_against:
@@ -32,7 +32,7 @@ review:
 category: app
 ---
 
-# WeChat / WeChat Pay
+# How to Use WeChat Pay in China as a Foreigner (2026)
 
 WeChat (Tencent) is a super-app combining messaging, social networking, payments, and Mini Programs. It's effectively required infrastructure for daily life and business communication in China.
 
