@@ -2,6 +2,7 @@
   "name": "china-travel-site",
   "compatibility_date": "2026-05-30",
   "main": "worker/index.js",
+  "routes": [{ "pattern": "www.chinaguide.ai", "custom_domain": true }],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
