@@ -6,9 +6,11 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  /** Keep the page out of search indexes (e.g. the /search/ shell page). */
+  noindex?: boolean;
 }
 
-const { title, description = 'Your practical guide to traveling in China as a foreigner' } = Astro.props;
+const { title, description = 'Your practical guide to traveling in China as a foreigner', noindex = false } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 const fullTitle = `${title} | ChinaGuide.ai`;
 ---
@@ -20,7 +22,10 @@ const fullTitle = `${title} | ChinaGuide.ai`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{fullTitle}</title>
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonicalURL} />
+    <link rel="alternate" hreflang="en" href={canonicalURL} />
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph -->

@@ -40,4 +40,22 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: meta-externalfetcher
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
 Sitemap: https://chinaguide.ai/sitemap-index.xml
