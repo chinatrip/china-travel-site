@@ -9,7 +9,9 @@
 
 const SECTION_COLLECTION = { concepts: 'guides', entities: 'apps' };
 
-const RE = /^wiki\/(concepts|entities)\/([^/#?]+)\.md$/;
+// Slugs are strictly kebab-case ([a-z0-9-]) — rejects traversal shapes
+// (".." via "...md"), uppercase, underscores, spaces, and encoded separators.
+const RE = /^wiki\/(concepts|entities)\/([a-z0-9-]+)\.md$/;
 
 /**
  * Parse a `related` wiki path into its content collection, entry id, and route.

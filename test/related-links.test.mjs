@@ -22,6 +22,14 @@ test('returns null for non-wiki paths', () => {
   assert.equal(relatedToRoute('/guides/transportation/'), null);
 });
 
+test('rejects slugs outside [a-z0-9-] (traversal, uppercase, underscore, space)', () => {
+  assert.equal(relatedToRoute('wiki/concepts/...md'), null); // '..' slug → would emit /guides/../
+  assert.equal(relatedToRoute('wiki/concepts/Transportation.md'), null);
+  assert.equal(relatedToRoute('wiki/concepts/mobile_payment.md'), null);
+  assert.equal(relatedToRoute('wiki/concepts/mobile payment.md'), null);
+  assert.equal(relatedToRoute('wiki/entities/didi%2Ffoo.md'), null);
+});
+
 test('returns null for malformed wiki paths', () => {
   assert.equal(relatedToRoute('wiki/concepts/transportation'), null); // missing .md
   assert.equal(relatedToRoute('wiki/concepts/.md'), null); // empty slug

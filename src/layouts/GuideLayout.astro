@@ -20,7 +20,8 @@ interface Props {
 const { title, description, date, lastVerified, verifiedBy, volatility, category, faqs, related } = Astro.props;
 
 // Resolve frontmatter `related` wiki paths to published pages only —
-// entries pointing at unpublished wiki pages are silently skipped.
+// entries pointing at unpublished wiki pages are skipped (with a build-time warning),
+// self-links are dropped, and duplicate routes are rendered once.
 const isPublished = ({ data }: { data: { status: string } }) => data.status === 'audited';
 const [publishedGuides, publishedApps] = await Promise.all([
   getCollection('guides', isPublished),
@@ -28,20 +29,36 @@ const [publishedGuides, publishedApps] = await Promise.all([
 ]);
 const entriesByCollection = { guides: publishedGuides, apps: publishedApps };
 
-const relatedLinks = (related ?? [])
-  .map(parseRelated)
-  .filter((parsed): parsed is NonNullable<typeof parsed> => parsed !== null)
-  .map((parsed) => {
-    const entry = entriesByCollection[parsed.collection].find((e) => e.id === parsed.id);
-    if (!entry) return null;
-    return {
-      href: parsed.route,
-      title: entry.data.title,
-      description: entry.data.description,
-      lastVerified: entry.data.last_verified,
-    };
-  })
-  .filter((link): link is NonNullable<typeof link> => link !== null);
+// Current page route in canonical trailing-slash form, for self-link filtering.
+const currentRoute = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+
+interface RelatedLink {
+  href: string;
+  title: string;
+  description?: string;
+  lastVerified?: string;
+}
+
+const seenRoutes = new Set<string>();
+const relatedLinks: RelatedLink[] = [];
+for (const wikiPath of related ?? []) {
+  const parsed = parseRelated(wikiPath);
+  if (!parsed) continue; // summaries/raw/malformed — intentionally no route
+  if (parsed.route === currentRoute || seenRoutes.has(parsed.route)) continue;
+  const entry = entriesByCollection[parsed.collection].find((e) => e.id === parsed.id);
+  if (!entry) {
+    // Slug typo or unpublished wiki page — surface it at build time instead of losing the link silently.
+    console.warn(`[related] ${currentRoute}: skipping "${wikiPath}" — no published ${parsed.collection} entry "${parsed.id}"`);
+    continue;
+  }
+  seenRoutes.add(parsed.route);
+  relatedLinks.push({
+    href: parsed.route,
+    title: entry.data.title,
+    description: entry.data.description,
+    lastVerified: entry.data.last_verified,
+  });
+}
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
