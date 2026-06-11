@@ -1,13 +1,20 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
-// Self-hosted Inter (latin subset only; weights actually used by the site).
-// Replaces the render-blocking Google Fonts stylesheet (#39).
-import '@fontsource/inter/latin-400.css';
-import '@fontsource/inter/latin-500.css';
-import '@fontsource/inter/latin-600.css';
-import '@fontsource/inter/latin-700.css';
-// Hashed URLs resolved at build time so the above-the-fold weights can be preloaded.
+// Self-hosted Inter (weights actually used by the site). Replaces the
+// render-blocking Google Fonts stylesheet (#39).
+// Combined per-weight CSS: one @font-face per subset, each with unicode-range,
+// so browsers fetch only the subsets a page actually needs. Guide pages with
+// pinyin tone marks (e.g. ǒ ǎ ǐ) need latin-ext; do NOT switch these to the
+// per-subset files (latin-400.css etc.) — those lack unicode-range and the
+// last-declared face would shadow the rest of the family.
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+// Hashed URLs resolved at build time so the above-the-fold weights can be
+// preloaded. Latin subset only: it covers the main text path on every page;
+// other subsets (latin-ext for pinyin, etc.) load on demand via unicode-range.
 import interLatin400Woff2 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
 import interLatin700Woff2 from '@fontsource/inter/files/inter-latin-700-normal.woff2?url';
 import '../styles/global.css';
