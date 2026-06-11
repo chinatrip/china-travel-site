@@ -2,16 +2,61 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import { getCollection } from 'astro:content';
+import { buildItemList } from '../../lib/item-list.mjs';
 
 const guides = await getCollection('guides', ({ data }) => data.status === 'audited');
+
+const itemListSchema = buildItemList(
+  'China Travel Guides',
+  guides.map((guide) => `/guides/${guide.id}/`),
+);
 ---
 
-<BaseLayout title="Travel Guides" description="Practical guides for foreigners traveling in China — visa, payments, transport, safety, and more.">
+<BaseLayout title="Travel Guides" description="Source-verified China travel guides for foreigners: visa-free entry, mobile payments, SIM cards and VPNs, trains, hotels, and safety.">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
     <header class="mb-8">
       <h1 class="text-3xl font-bold text-secondary mb-2">Travel Guides</h1>
       <p class="text-muted text-lg">Everything you need to know before and during your trip to China.</p>
     </header>
+
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+    <section class="prose prose-gray max-w-none mb-10">
+      <h2>What these guides cover</h2>
+      <p>
+        Traveling in China as a foreigner means dealing with a few systems that work differently from
+        almost anywhere else: entry policies that change often, mobile payments that have largely
+        replaced cash, an internet where Google, WhatsApp, and Instagram don't work without
+        preparation, and an excellent transport network built around Chinese-language apps. These
+        guides cover each of those areas — visa and entry options, mobile payment setup, connectivity
+        (SIM cards, eSIMs, and VPNs), trains and city transport, accommodation rules for foreign
+        guests, food and dining, health care, and emergency contacts — plus the smaller things that
+        catch first-time visitors out, such as hotel registration and shopping tax refunds.
+      </p>
+
+      <h2>How the guides are verified</h2>
+      <p>
+        Every guide is checked against primary sources — immigration notices, embassy announcements,
+        and operator documentation where official sources exist — and shows a last-verified date so
+        you can judge how current the information is. Fast-moving topics such as visa-free policies
+        are flagged as high-volatility and re-checked more frequently, and when a rule changes, the
+        guide is updated rather than left to age. No guide is published until it has been audited.
+      </p>
+
+      <h2>Where to start</h2>
+      <p>
+        If you are planning a first trip, begin with the
+        <a href="/checklist/">pre-departure checklist</a>, which puts the essentials in order, from
+        documents to apps. Then confirm how you can enter using the
+        <a href="/guides/visa-types/">visa and entry options guide</a>, and set up
+        <a href="/guides/mobile-payment/">mobile payment</a> before you fly — it is the one step most
+        travelers wish they had done earlier. After that, read by travel stage: connectivity and
+        transport before departure, accommodation and food on arrival, and the health and safety
+        guides as reference during your trip. Each guide also stands alone, so if you only need one
+        answer — say, whether your hotel can register foreign guests — you can jump straight to that
+        topic.
+      </p>
+    </section>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       {guides.map((guide) => (

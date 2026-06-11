@@ -2,16 +2,59 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import GuideCard from '../../components/GuideCard.astro';
 import { getCollection } from 'astro:content';
+import { buildItemList } from '../../lib/item-list.mjs';
 
 const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
+
+const itemListSchema = buildItemList(
+  'Essential Apps for China Travel',
+  apps.map((app) => `/apps/${app.id}/`),
+);
 ---
 
-<BaseLayout title="Essential Apps" description="Must-have apps for foreigners in China — payments, navigation, transport, and daily life.">
+<BaseLayout title="Essential Apps" description="The seven apps every China visitor needs — WeChat, Alipay, Amap, DiDi, 12306, Meituan, Ele.me — with setup steps for foreign phones and cards.">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
     <header class="mb-8">
       <h1 class="text-3xl font-bold text-secondary mb-2">Essential Apps</h1>
       <p class="text-muted text-lg">Apps you should download before arriving in China.</p>
     </header>
+
+    <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+    <section class="prose prose-gray max-w-none mb-10">
+      <h2>Why install these before you arrive</h2>
+      <p>
+        Most of the apps you rely on at home — Google Maps, Gmail, WhatsApp, Instagram — are blocked
+        in mainland China unless you arrive with a working VPN or a foreign eSIM. The practical
+        answer is not to fight that, but to install the local equivalents before you board the
+        plane, while your app store, phone number, and bank cards all still work normally. Several
+        of these apps also involve identity or card verification steps that are far easier to
+        complete at home than over hotel Wi-Fi on arrival day.
+      </p>
+
+      <h2>What these seven apps cover</h2>
+      <p>
+        The apps listed here cover the situations every visitor runs into. WeChat and Alipay handle
+        mobile payments — both accept foreign Visa and Mastercard, and between them they have
+        replaced cash almost everywhere. Amap provides navigation with an English interface that
+        actually works in China, where Google Maps data is unreliable. DiDi is the standard
+        ride-hailing app, 12306 is the official channel for train tickets, and Meituan and Ele.me
+        cover food delivery and restaurant deals. Each app page explains whether you can register
+        with an overseas phone number, which steps need a passport or a foreign card, and the common
+        setup failures to expect.
+      </p>
+
+      <h2>How this fits with the guides</h2>
+      <p>
+        App pages focus on installation, registration, and the screens you will actually see; the
+        travel guides explain the systems behind them. If you are starting from zero: install WeChat
+        and Alipay and bind a card using the
+        <a href="/guides/mobile-payment/">mobile payment guide</a>, decide how you will get online
+        with the <a href="/guides/vpn-or-esim/">VPN-or-eSIM decision guide</a>, then add the rest
+        based on your itinerary. The <a href="/checklist/">pre-departure checklist</a> sequences all
+        of this into a single list you can work through before your flight.
+      </p>
+    </section>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {apps.map((app) => (
