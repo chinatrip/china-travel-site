@@ -11,12 +11,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <script is:inline src="/pagefind/pagefind-ui.js"></script>
   <script is:inline>
+    function initSearch() {
+      var ui = new PagefindUI({ element: "#search", showSubResults: true });
+      // Sitelinks Searchbox lands here as /search/?q=term (see the WebSite
+      // SearchAction on the homepage) — run the query instead of showing an
+      // empty box. triggerSearch() is the documented PagefindUI instance API.
+      var query = new URLSearchParams(location.search).get('q');
+      if (query) ui.triggerSearch(query);
+    }
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', function() {
-        new PagefindUI({ element: "#search", showSubResults: true });
-      });
+      document.addEventListener('DOMContentLoaded', initSearch);
     } else {
-      new PagefindUI({ element: "#search", showSubResults: true });
+      initSearch();
     }
   </script>
 
