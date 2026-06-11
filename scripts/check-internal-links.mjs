@@ -4,8 +4,46 @@
 // splits canonical signals. This scans dist/ and exits non-zero on offenders.
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { LICENSE_URL } from '../src/lib/llms.mjs';
 
 const DIST = 'dist';
+
+// Per-page markdown products (issue #56): every guides/apps content page must
+// ship a `/<base>/<slug>.md` sibling — the worker serves it for
+// `Accept: text/markdown` content negotiation — with the same hygiene rules
+// as the llms feeds (no wiki comments, no unresolved wikilinks) plus an H1
+// and the License line.
+export function checkMarkdownProducts() {
+  const problems = [];
+  for (const base of ['guides', 'apps']) {
+    const dir = join(DIST, base);
+    let dirents;
+    try {
+      dirents = readdirSync(dir, { withFileTypes: true });
+    } catch {
+      problems.push(`${dir}/ not found — run \`npm run build\` first.`);
+      continue;
+    }
+    for (const d of dirents) {
+      if (!d.isDirectory()) continue; // each subdirectory is one content page
+      const mdPath = join(dir, `${d.name}.md`);
+      let md;
+      try {
+        md = readFileSync(mdPath, 'utf8');
+      } catch {
+        problems.push(`${join(dir, d.name)}/ has no markdown sibling ${mdPath}`);
+        continue;
+      }
+      if (!md.startsWith('# ')) problems.push(`${mdPath} must start with an H1`);
+      if (!md.includes(`License: ${LICENSE_URL}`))
+        problems.push(`${mdPath} is missing the License line`);
+      for (const marker of ['<!--', '[[wiki/']) {
+        if (md.includes(marker)) problems.push(`${mdPath} contains "${marker}"`);
+      }
+    }
+  }
+  return problems;
+}
 
 function walkHtml(dir) {
   const out = [];
@@ -88,6 +126,13 @@ function main() {
     process.exit(1);
   }
 
+  const mdProblems = checkMarkdownProducts();
+  if (mdProblems.length) {
+    console.error(`❌ ${mdProblems.length} markdown product problem(s):`);
+    for (const p of mdProblems) console.error(`  ${p}`);
+    process.exit(1);
+  }
+
   if (byHref.size) {
     console.error(`❌ ${byHref.size} internal link(s) without trailing slash:`);
     for (const [href, fileset] of byHref) {
@@ -96,6 +141,7 @@ function main() {
     process.exit(1);
   }
   console.log('✅ All internal links use trailing slashes.');
+  console.log('✅ Every content page ships a clean markdown sibling.');
 }
 
 main();

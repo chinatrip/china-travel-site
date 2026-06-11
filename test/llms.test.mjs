@@ -9,6 +9,8 @@ import {
   stripFrontmatter,
   buildLlmsTxt,
   buildLlmsFullTxt,
+  buildPageMarkdown,
+  publishedChecker,
 } from '../src/lib/llms.mjs';
 import { resolveWikilinksText } from '../src/plugins/remark-wikilinks.mjs';
 
@@ -198,6 +200,70 @@ test('llms-full.txt resolves wikilinks against published entries only', () => {
   assert.ok(full.includes(`[WeChat](${SITE}/apps/wechat/)`));
   assert.ok(full.includes('unpublished Attraction Ticketing,'), 'unpublished target degrades to plain text');
   assert.ok(full.includes('summary foo-2026.'));
+});
+
+// ---------- buildPageMarkdown (per-page .md products, issue #56) ----------
+
+test('buildPageMarkdown renders H1, description line, body, and License line', () => {
+  const e = entry(
+    'visa-types',
+    'China Visa Types',
+    { description: 'Which visa you need.' },
+    'Body text.',
+  );
+  assert.equal(
+    buildPageMarkdown(e, () => true),
+    `# China Visa Types
+
+Which visa you need.
+
+Body text.
+
+License: ${LICENSE_URL}
+`,
+  );
+});
+
+test('buildPageMarkdown omits the description line when missing', () => {
+  const e = entry('didi', 'DiDi', {}, 'Ride hailing.');
+  assert.equal(
+    buildPageMarkdown(e, () => true),
+    `# DiDi
+
+Ride hailing.
+
+License: ${LICENSE_URL}
+`,
+  );
+});
+
+test('buildPageMarkdown strips comments, dedupes the leading H1, resolves wikilinks', () => {
+  const e = entry(
+    'trip-planning',
+    'Trip Planning',
+    {},
+    '<!-- synced from wiki -->\n# Trip Planning\n\nUse [[wiki/concepts/mobile-payment.md]] and [[wiki/concepts/attraction-ticketing.md]].',
+  );
+  const isPublished = (section, slug) =>
+    section === 'concepts' && slug === 'mobile-payment';
+  const md = buildPageMarkdown(e, isPublished);
+  assert.ok(!md.includes('<!--'), 'comments must not leak into .md products');
+  assert.ok(!md.includes('[[wiki/'), 'wikilinks must not leak into .md products');
+  assert.equal((md.match(/^# Trip Planning$/gm) || []).length, 1);
+  assert.ok(md.includes(`[Mobile Payment](${SITE}/guides/mobile-payment/)`));
+  assert.ok(md.includes('and Attraction Ticketing.'), 'unpublished target degrades to plain text');
+});
+
+test('publishedChecker resolves concepts→guides and entities→apps, rejects the rest', () => {
+  const isPublished = publishedChecker({
+    guides: [entry('mobile-payment', 'Mobile Payment')],
+    apps: [entry('wechat', 'WeChat')],
+  });
+  assert.equal(isPublished('concepts', 'mobile-payment'), true);
+  assert.equal(isPublished('entities', 'wechat'), true);
+  assert.equal(isPublished('concepts', 'wechat'), false);
+  assert.equal(isPublished('entities', 'mobile-payment'), false);
+  assert.equal(isPublished('summaries', 'foo-2026'), false);
 });
 
 // ---------- page separator ----------

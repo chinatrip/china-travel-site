@@ -133,6 +133,35 @@ function cleanBody(raw, isPublished) {
   return md.replace(/\n{3,}/g, '\n\n').trim();
 }
 
+/**
+ * Build an `isPublished(section, slug)` checker over the audited collections:
+ * wikilink targets resolve to real URLs only when the target entry is in this
+ * build (callers pre-filter collections to status === 'audited').
+ */
+export function publishedChecker({ guides, apps }) {
+  const published = {
+    concepts: new Set(guides.map((e) => e.id)),
+    entities: new Set(apps.map((e) => e.id)),
+  };
+  return (section, slug) => published[section]?.has(slug) ?? false;
+}
+
+/**
+ * Build the standalone markdown representation of one content page, emitted
+ * at /guides/<id>.md and /apps/<id>.md and served by the worker for
+ * `Accept: text/markdown` content negotiation (issue #56).
+ * Structure: H1 (title), one meta-description line, cleaned body, License line.
+ */
+export function buildPageMarkdown(e, isPublished) {
+  const desc = e.data.description ? `${e.data.description}\n\n` : '';
+  return `# ${e.data.title}
+
+${desc}${cleanBody(e.body, isPublished)}
+
+License: ${LICENSE_URL}
+`;
+}
+
 function fullPageSection(base, e, isPublished) {
   const date = verifiedDate(e);
   const verified = date ? `\nLast verified: ${date}` : '';
@@ -146,13 +175,7 @@ ${cleanBody(e.body, isPublished)}`;
 export function buildLlmsFullTxt({ guides, apps }) {
   const g = [...guides].sort(byTitle);
   const a = [...apps].sort(byTitle);
-  // Wikilink targets resolve to a real URL only when the target entry is in
-  // this build (callers pre-filter collections to status === 'audited').
-  const published = {
-    concepts: new Set(g.map((e) => e.id)),
-    entities: new Set(a.map((e) => e.id)),
-  };
-  const isPublished = (section, slug) => published[section]?.has(slug) ?? false;
+  const isPublished = publishedChecker({ guides: g, apps: a });
   const pages = [
     ...g.map((e) => fullPageSection('guides', e, isPublished)),
     ...a.map((e) => fullPageSection('apps', e, isPublished)),
