@@ -1,12 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildOrganizationSchema } from '../lib/home-schema.mjs';
 
 const description =
-  'Who runs ChinaGuide.ai, how every guide is verified against official primary sources before publication, and how to reach the editorial team.';
+  'Who runs ChinaGuide.ai, how guides are source-checked — against official documentation wherever it exists — and how to reach the editorial team.';
 
-// AboutPage schema (#38): mainEntity resolves to the canonical Organization
-// entity emitted on the homepage (src/lib/home-schema.mjs) — one entity,
-// referenced by @id, never duplicated.
+// AboutPage schema (#38): Google parses JSON-LD per page, so a bare
+// `{"@id": …}` mainEntity would dangle — the full Organization node is
+// inlined here instead. Same @id as the homepage entity and the node
+// GuideLayout inlines on every content page; same-@id duplication across
+// pages is how this repo keeps the entity resolvable everywhere.
+const { '@context': _ctx, ...organizationEntity } = buildOrganizationSchema(
+  new URL('/og-default.png', Astro.site).href,
+);
 const aboutPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
@@ -15,7 +21,7 @@ const aboutPageSchema = {
   name: 'About ChinaGuide.ai',
   description,
   inLanguage: 'en',
-  mainEntity: { '@id': 'https://chinaguide.ai/#organization' },
+  mainEntity: organizationEntity,
 };
 ---
 
@@ -39,7 +45,8 @@ const aboutPageSchema = {
         Travel information about China goes stale fast — visa-free policies change, payment apps
         revise their onboarding for foreigners, booking rules shift. So instead of another list of
         sights, every page here is built around one promise: what you read has been checked against
-        official, primary sources, and you can see when that check last happened.
+        sources — official, primary documentation wherever it exists — and you can see when that
+        check last happened.
       </p>
       <p>
         If you are planning a first trip, start with the <a href="/guides/">travel guides</a>, the
@@ -60,9 +67,10 @@ const aboutPageSchema = {
       <p>Every guide goes through the same pipeline before you see it:</p>
       <ol>
         <li>
-          <strong>Source verification.</strong> Claims are checked against official primary
-          sources — immigration notices, embassy and consulate announcements, and operators' own
-          documentation (payment platforms, railways, airlines).
+          <strong>Source verification.</strong> Claims are checked against sources before
+          publication — official documentation wherever it exists, such as immigration notices,
+          embassy and consulate announcements, and operators' own materials (payment platforms,
+          railways, airlines).
         </li>
         <li>
           <strong>A visible "last verified" date.</strong> Each guide shows when its content was

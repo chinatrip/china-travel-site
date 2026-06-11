@@ -1,7 +1,10 @@
-// Homepage brand JSON-LD (issue #7): WebSite + SearchAction and the canonical
-// Organization entity. Both are emitted only on the homepage; content pages
-// reference the same Organization via @id from GuideLayout.astro — keep the
-// @id values and entity fields in sync with that file.
+// Brand JSON-LD (issue #7): WebSite + SearchAction and the canonical
+// Organization entity. The WebSite node is emitted only on the homepage; the
+// Organization node is emitted on the homepage and inlined on /about/ (as the
+// AboutPage mainEntity). Content pages inline their own copy of the same
+// entity from GuideLayout.astro — keep the @id values in sync with that file.
+// Known divergence (#38): contactPoint exists only in this builder for now;
+// syncing GuideLayout's inline node is a follow-up after PR #52 (Unit B) lands.
 
 const SITE = 'https://chinaguide.ai';
 const BRAND = 'ChinaGuide.ai';
@@ -57,7 +60,7 @@ export function buildOrganizationSchema(logoUrl) {
     contactPoint: {
       '@type': 'ContactPoint',
       email: 'support@chinaguide.ai',
-      contactType: 'customer support',
+      contactType: 'customer service',
     },
     // TODO(#9): fill in social profiles (X/Reddit/YouTube/…) once the
     // accounts exist; an empty sameAs is valid and ignored by parsers.

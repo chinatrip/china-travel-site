@@ -57,7 +57,8 @@ test('Organization exposes a support contactPoint without changing url (#38)', (
   assert.deepEqual(schema.contactPoint, {
     '@type': 'ContactPoint',
     email: 'support@chinaguide.ai',
-    contactType: 'customer support',
+    // "customer service" is Google's conventional contactType enum value.
+    contactType: 'customer service',
   });
   // contactPoint is additive — the canonical entity url must stay untouched.
   assert.equal(schema.url, 'https://chinaguide.ai');
