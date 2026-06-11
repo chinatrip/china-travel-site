@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description =
+  'How ChinaGuide.ai sources and verifies its guides: official sources first, dated re-verification, a corrections channel, and AI-assistance disclosure.';
+---
+
+<BaseLayout title="Editorial Policy" description={description}>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-secondary mb-2">Editorial Policy</h1>
+      <p class="text-muted text-lg">
+        The standards every published page on ChinaGuide.ai is held to.
+      </p>
+    </header>
+
+    <section class="prose prose-gray max-w-none">
+      <p>
+        The short version: official sources first, dated verification, fast corrections, and
+        honest disclosure about how the content is made.
+      </p>
+
+      <h2>Sourcing standards</h2>
+      <ul>
+        <li>
+          <strong>Official primary sources come first.</strong> Core visa policy pages are
+          verified against government immigration notices and embassy or consulate announcements;
+          permit topics that are only handled through licensed agencies (such as Tibet permits)
+          rely on operator documentation instead. App and service information is verified against
+          the operators' own documentation wherever it exists and, where possible, against our
+          own use of the product.
+        </li>
+        <li>
+          <strong>Secondary reporting is labeled.</strong> Where a claim rests on third-party
+          reporting rather than a primary source, our standard is to say so in the text rather
+          than presenting it as confirmed fact.
+        </li>
+      </ul>
+
+      <h2>Updates</h2>
+      <ul>
+        <li>
+          Every guide shows a <strong>"Last verified" date</strong>. That date moves only when the
+          page has actually been re-checked against its sources — not when we touch formatting.
+        </li>
+        <li>
+          Guides are classified by how quickly their subject changes, shown as a label on each
+          page. Fast-moving topics — visa policy, payment app onboarding — are re-verified more
+          frequently than stable ones.
+        </li>
+        <li>
+          When a rule or process changes, we update the existing guide rather than leaving
+          outdated advice up alongside a new post.
+        </li>
+      </ul>
+
+      <h2>Corrections</h2>
+      <p>
+        Found an error? Email <a href="mailto:support@chinaguide.ai">support@chinaguide.ai</a>.
+        Corrections are prioritized over other content work: the page is re-checked against
+        current sources, fixed, and its verification date updated.
+      </p>
+
+      <h2>AI assistance, disclosed</h2>
+      <p>We use AI tools to help draft, research, and review content. Three things keep that honest:</p>
+      <ol>
+        <li>The standards and final publication decisions are made by people, not models.</li>
+        <li>
+          Nothing is published until it passes a review gate — every page is marked as audited
+          before it goes live, and drafts never ship.
+        </li>
+        <li>
+          An automated AI reviewer additionally reviews every content change and flags quality
+          problems — for example, an FAQ answer not supported by the body of its page — before a
+          person decides whether it ships.
+        </li>
+      </ol>
+      <p>
+        We would rather tell you exactly how this works than pretend otherwise. What matters is
+        the verification standard, and it is enforced regardless of which tools produce a draft.
+      </p>
+
+      <p>
+        Questions about this policy: <a href="mailto:support@chinaguide.ai">support@chinaguide.ai</a>.
+        More about who we are: <a href="/about/">About ChinaGuide.ai</a>.
+      </p>
+    </section>
+  </div>
+</BaseLayout>

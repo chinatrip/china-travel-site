@@ -70,12 +70,19 @@ test('llms.txt carries a License line and a pointer to llms-full.txt', () => {
   assert.ok(txt.includes(`${SITE}/llms-full.txt`));
 });
 
-test('llms.txt lists the four static site pages and excludes /search/', () => {
+test('llms.txt lists the six static site pages and excludes /search/', () => {
   const txt = buildLlmsTxt({ guides, apps });
-  for (const url of [`${SITE}/`, `${SITE}/guides/`, `${SITE}/apps/`, `${SITE}/checklist/`]) {
+  for (const url of [
+    `${SITE}/`,
+    `${SITE}/guides/`,
+    `${SITE}/apps/`,
+    `${SITE}/checklist/`,
+    `${SITE}/about/`,
+    `${SITE}/editorial-policy/`,
+  ]) {
     assert.ok(txt.includes(`](${url})`), `missing site page ${url}`);
   }
-  assert.equal(SITE_PAGES.length, 4);
+  assert.equal(SITE_PAGES.length, 6);
   assert.ok(SITE_PAGES.every((p) => p.description && p.description.length > 0));
   assert.ok(!txt.includes('/search/'), '/search/ must stay excluded');
 });

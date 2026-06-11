@@ -44,11 +44,23 @@ export const SITE_PAGES = [
     description:
       'Interactive pre-trip checklist personalized by nationality, travel dates, and destinations.',
   },
+  {
+    title: 'About',
+    url: `${SITE}/about/`,
+    description:
+      'Who runs ChinaGuide.ai and how guides are source-checked — against official documentation wherever it exists — before publication.',
+  },
+  {
+    title: 'Editorial Policy',
+    url: `${SITE}/editorial-policy/`,
+    description:
+      'Sourcing standards, update principles, the corrections process, and how AI assistance is used and reviewed.',
+  },
 ];
 
 const HEADER_TITLE = '# ChinaGuide.ai';
 const HEADER_BLOCKQUOTE =
-  '> Practical, source-verified travel guides for foreign visitors to China. Every page cites official sources (gov.cn, PBOC, NIA) and shows a "Last verified" date. Coverage includes visas, mobile payments, connectivity (VPN vs eSIM), transport, accommodation, safety, food, and the essential Chinese apps.';
+  '> Practical, source-verified travel guides for foreign visitors to China. Every page is checked against sources — official documentation (gov.cn, NIA, embassy notices) wherever it exists — and shows a "Last verified" date. Coverage includes visas, mobile payments, connectivity (VPN vs eSIM), transport, accommodation, safety, food, and the essential Chinese apps.';
 
 const byTitle = (a, b) => a.data.title.localeCompare(b.data.title);
 
