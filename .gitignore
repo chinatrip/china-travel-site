@@ -26,6 +26,9 @@ pnpm-debug.log*
 # wiki cache (cloned at sync time, not committed)
 .wiki-cache/
 
+# wrangler dev local state (created by the worker smoke test)
+.wrangler/
+
 # sync run artifact (becomes the sync PR body; regenerated each run)
 sync-report.md
 

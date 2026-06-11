@@ -140,6 +140,69 @@ export function cacheControlFor(pathname) {
   return null;
 }
 
+// --- Markdown content negotiation + alternate discovery (issue #56) ---
+//
+// Implemented in-repo instead of Cloudflare's dashboard-side "Markdown for
+// Agents" beta: dashboard toggles don't live in the repo, and config-as-truth
+// is a hard rule here (a dashboard-only setting already caused one production
+// outage). Negotiation runs *after* redirectTarget(), so only canonical
+// (lowercase, trailing-slash) paths ever negotiate, and the .md products are
+// file-like paths that the redirect rules skip by design.
+
+// The assets-layer default for HTML; the markdown representation of a page
+// deliberately shares the exact same cache policy.
+const DEFAULT_PAGE_CACHE = 'public, max-age=0, must-revalidate';
+
+// Canonical content-page paths (/guides/<slug>/, /apps/<slug>/) — the only
+// HTML pages with a built .md sibling. List pages (/guides/, /apps/) and
+// nested/non-canonical paths intentionally don't match.
+const CONTENT_PAGE = /^\/(guides|apps)\/([a-z0-9-]+)\/$/;
+
+const LLMS_TXT_LINK = '</llms.txt>; rel="alternate"; type="text/plain"';
+
+/**
+ * Whether the request explicitly asks for markdown. Only a literal
+ * `text/markdown` token counts — a browser's `text/html,…,*∕*` must never
+ * trigger negotiation, so wildcard matching is deliberately not implemented.
+ *
+ * @param {string | null | undefined} accept - Accept header value.
+ * @returns {boolean}
+ */
+export function wantsMarkdown(accept) {
+  return typeof accept === 'string' && accept.toLowerCase().includes('text/markdown');
+}
+
+/**
+ * Map a canonical pathname to the markdown asset that represents it, or null
+ * when the path has no markdown representation (no negotiation).
+ *
+ * - `/` → `/llms.txt` (the agent-facing markdown overview of the whole site)
+ * - `/guides/<slug>/` → `/guides/<slug>.md`, `/apps/<slug>/` → `/apps/<slug>.md`
+ * - everything else (about, checklist, list pages, assets, …) → null
+ *
+ * @param {string} pathname
+ * @returns {string | null}
+ */
+export function markdownAssetFor(pathname) {
+  if (pathname === '/') return '/llms.txt';
+  const m = CONTENT_PAGE.exec(pathname);
+  return m ? `/${m[1]}/${m[2]}.md` : null;
+}
+
+/**
+ * RFC 8288 Link header advertising the markdown alternates of an HTML page.
+ * Every page links /llms.txt; content pages additionally link their own .md
+ * sibling. The home page's markdown asset *is* /llms.txt, so it is not
+ * advertised a second time.
+ *
+ * @param {string | null} mdAsset - Result of markdownAssetFor() for the path.
+ * @returns {string}
+ */
+export function alternatesLinkHeader(mdAsset) {
+  if (!mdAsset || mdAsset === '/llms.txt') return LLMS_TXT_LINK;
+  return `${LLMS_TXT_LINK}, <${mdAsset}>; rel="alternate"; type="text/markdown"`;
+}
+
 /**
  * Return a copy of the response with the security header set applied.
  * Responses from Response.redirect() and ASSETS.fetch() have immutable
@@ -159,12 +222,34 @@ export function applySecurityHeaders(response) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (request.method === 'GET' || request.method === 'HEAD') {
+    const isRead = request.method === 'GET' || request.method === 'HEAD';
+    if (isRead) {
       const target = redirectTarget(url);
       if (target) {
         return applySecurityHeaders(Response.redirect(target, 301));
       }
     }
+
+    // Markdown content negotiation: canonical paths only (post-redirect).
+    const mdAsset = isRead ? markdownAssetFor(url.pathname) : null;
+    if (mdAsset && wantsMarkdown(request.headers.get('Accept'))) {
+      // `new Request(url, request)` keeps the method (HEAD stays HEAD) and
+      // conditional headers (If-None-Match revalidates against the .md ETag).
+      const mdResponse = await env.ASSETS.fetch(
+        new Request(new URL(mdAsset, url.origin), request),
+      );
+      // 304 counts as success: it's an ETag match on the .md asset itself,
+      // so falling back to HTML here would break revalidating md clients.
+      if (mdResponse.ok || mdResponse.status === 304) {
+        const response = applySecurityHeaders(mdResponse);
+        response.headers.set('Content-Type', 'text/markdown; charset=utf-8');
+        response.headers.set('Cache-Control', DEFAULT_PAGE_CACHE);
+        response.headers.set('Vary', 'Accept');
+        return response;
+      }
+      // .md asset missing → fall through to the normal HTML response.
+    }
+
     const response = applySecurityHeaders(await env.ASSETS.fetch(request));
     const cacheControl = cacheControlFor(url.pathname);
     // Status guard: a stale-HTML client can request a hashed asset that no
@@ -179,6 +264,16 @@ export default {
     // upgrade as the 200 it stands in for.
     if (cacheControl && (response.ok || response.status === 304)) {
       response.headers.set('Cache-Control', cacheControl);
+    }
+    // Negotiable URLs serve two representations, so caches must key on
+    // Accept — even on the HTML representation (issue #56).
+    if (mdAsset && !response.headers.get('Vary')?.includes('Accept')) {
+      response.headers.append('Vary', 'Accept');
+    }
+    // Markdown discovery (RFC 8288): every HTML page advertises its
+    // alternates; non-HTML responses (assets, feeds, …) stay untouched.
+    if (response.headers.get('Content-Type')?.includes('text/html')) {
+      response.headers.set('Link', alternatesLinkHeader(mdAsset));
     }
     return response;
   },
