@@ -23,7 +23,7 @@ Format per entry: **CALL** (ACCEPT / REJECT) — situation — why.
 
 ## faq_wellformed / answer length
 
-- **ACCEPT** — A short but accurate, front-loaded FAQ answer (e.g. ~30 words that fully answer "Can I use Apple Pay in China?"). Length alone is never a reason to fail `faq_wellformed`; pass it and add a `suggestions` item to expand toward 80–160 words with one concrete detail from the body so AI engines have enough context to cite it.
+- **ACCEPT** — A short but accurate, front-loaded FAQ answer (e.g. ~30 words that fully answer "Can I use Apple Pay in China?"). Length alone is never a reason to fail `faq_wellformed` — nor any other criterion (do not reroute a short-but-complete answer into a `faqpage_schema_readiness` fail; brevity is not a self-containment defect). Pass it and add a `suggestions` item to expand toward 80–160 words with one concrete detail from the body so AI engines have enough context to cite it.
 
 ## faqpage_schema_readiness
 

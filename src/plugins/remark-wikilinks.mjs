@@ -39,6 +39,19 @@ function humanize(slug) {
 const RE =
   /\[\[wiki\/(concepts|entities|summaries)\/([^|\]#]+?)\.md(#[^|\]]*)?(?:\|([^\]]+))?\]\]/g;
 
+// Text-level variant of the mdast transform below, for plain-text/markdown
+// outputs (e.g. /llms-full.txt). Same RE + section mapping + display names, so
+// the feed matches what the rendered HTML links to. `isPublished(section, slug)`
+// lets callers downgrade links to unpublished targets to plain text instead of
+// advertising dead URLs to AI consumers.
+export function resolveWikilinksText(text, { siteBase = '', isPublished } = {}) {
+  return text.replace(RE, (_full, section, slug, anchor, alias) => {
+    if (section === 'summaries') return alias || slug; // no published route
+    if (isPublished && !isPublished(section, slug)) return alias || humanize(slug);
+    return `[${alias || humanize(slug)}](${siteBase}${SECTION_BASE[section]}/${slug}/${anchor || ''})`;
+  });
+}
+
 function splitTextValue(value) {
   const out = [];
   let last = 0;

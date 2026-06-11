@@ -57,8 +57,11 @@ function main() {
       }
     }
   }
-  // Also scan text endpoints (e.g. llms.txt) for absolute site URLs missing a slash.
+  // Also scan text endpoints (e.g. llms.txt) for absolute site URLs missing a
+  // slash, and for internal wiki syntax that must never leak into the
+  // AI-facing feeds (regressions caught in PR #50 review).
   const absRe = /https:\/\/chinaguide\.ai(\/[^\s)\]"'<>]*)/g;
+  const leaks = [];
   for (const txt of ['llms.txt', 'llms-full.txt']) {
     let content;
     try {
@@ -74,6 +77,15 @@ function main() {
         byHref.get(key).add(join(DIST, txt));
       }
     }
+    for (const marker of ['<!--', '[[wiki/']) {
+      if (content.includes(marker)) leaks.push(`${join(DIST, txt)} contains "${marker}"`);
+    }
+  }
+
+  if (leaks.length) {
+    console.error(`❌ Internal syntax leaked into AI text feeds:`);
+    for (const l of leaks) console.error(`  ${l}`);
+    process.exit(1);
   }
 
   if (byHref.size) {

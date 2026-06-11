@@ -2,7 +2,14 @@
 // Framework-free so `node --test` covers them without an Astro build; the
 // Astro endpoints in src/pages/ are thin wrappers around these functions.
 
+import { resolveWikilinksText } from '../plugins/remark-wikilinks.mjs';
+
 export const SITE = 'https://chinaguide.ai';
+
+// Page delimiter for llms-full.txt. Deliberately NOT `---`: page bodies contain
+// markdown horizontal rules, so a `---` delimiter would shred pages for any
+// consumer that splits on it.
+export const PAGE_SEPARATOR = '===== PAGE =====';
 
 // Content license advertised to AI consumers: CC BY-NC 4.0 — reuse with
 // attribution is allowed, commercial republication is not.
@@ -98,22 +105,45 @@ function stripLeadingH1(md) {
   return md.replace(/^#[ \t][^\n]*\r?\n+/, '').trim();
 }
 
-function fullPageSection(base, e) {
+/**
+ * Prepare a raw markdown body for the AI-facing text feed:
+ * frontmatter out; wiki workflow comments out (e.g. "<!-- Unverified: … -->" —
+ * invisible in rendered HTML but corrosive to citation trust in plain text);
+ * leading H1 deduped; [[wiki/…]] links resolved to the same absolute URLs the
+ * rendered site links to, with unpublished targets degraded to plain text.
+ */
+function cleanBody(raw, isPublished) {
+  let md = stripFrontmatter(raw ?? '');
+  // Comments first, so a comment ahead of the title doesn't shield the H1 strip.
+  md = md.replace(/<!--[\s\S]*?-->/g, '').trim();
+  md = stripLeadingH1(md);
+  md = resolveWikilinksText(md, { siteBase: SITE, isPublished });
+  return md.replace(/\n{3,}/g, '\n\n').trim();
+}
+
+function fullPageSection(base, e, isPublished) {
   const date = verifiedDate(e);
   const verified = date ? `\nLast verified: ${date}` : '';
   return `# ${e.data.title}
 URL: ${SITE}/${base}/${e.id}/${verified}
 
-${stripLeadingH1(stripFrontmatter(e.body ?? ''))}`;
+${cleanBody(e.body, isPublished)}`;
 }
 
 /** Build /llms-full.txt: every content page's full markdown body in one file. */
 export function buildLlmsFullTxt({ guides, apps }) {
   const g = [...guides].sort(byTitle);
   const a = [...apps].sort(byTitle);
+  // Wikilink targets resolve to a real URL only when the target entry is in
+  // this build (callers pre-filter collections to status === 'audited').
+  const published = {
+    concepts: new Set(g.map((e) => e.id)),
+    entities: new Set(a.map((e) => e.id)),
+  };
+  const isPublished = (section, slug) => published[section]?.has(slug) ?? false;
   const pages = [
-    ...g.map((e) => fullPageSection('guides', e)),
-    ...a.map((e) => fullPageSection('apps', e)),
+    ...g.map((e) => fullPageSection('guides', e, isPublished)),
+    ...a.map((e) => fullPageSection('apps', e, isPublished)),
   ];
   return `${HEADER_TITLE} — Full Content
 
@@ -121,9 +151,8 @@ ${HEADER_BLOCKQUOTE}
 
 License: ${LICENSE_URL}
 Index version: ${SITE}/llms.txt
+Each content page below begins with "# <page title>" and its canonical "URL:" line.
 
----
-
-${pages.join('\n\n---\n\n')}
+${pages.map((p) => `${PAGE_SEPARATOR}\n\n${p}`).join('\n\n')}
 `;
 }
