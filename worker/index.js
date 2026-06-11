@@ -15,15 +15,22 @@
  * **301 Moved Permanently** that composes every applicable normalization,
  * preserving the query string:
  *
- *   1. www.chinaguide.ai → apex (checked before any other rule)
- *   2. uppercase path → lowercase
- *   3. trailing /index.html → bare directory form
+ *   1. www.chinaguide.ai → apex
+ *   2. trailing /index.html → bare directory form (case-insensitive)
+ *   3. uppercase path → lowercase (page paths only, see below)
  *   4. extensionless path without trailing slash → trailing-slash form
  *
- * Rules 2–4 compose, so e.g. /Guides/Visa-Types 301s straight to
- * /guides/visa-types/ in one hop. Every response that passes through the
- * worker (redirects and ASSETS fetches alike) gets the security header set
- * from securityHeaders().
+ * All rules compose into one hop, so e.g. www.chinaguide.ai/Guides/INDEX.HTML
+ * 301s straight to https://chinaguide.ai/guides/ in a single redirect.
+ *
+ * File-like paths (last segment contains a dot) skip rules 3 and 4 entirely:
+ * Astro emits hashed asset filenames containing uppercase (e.g.
+ * /_astro/BaseLayout.C2WUMWDk.css, referenced by every page), and with
+ * run_worker_first those requests pass through this worker — lowercasing
+ * them would 301 to a nonexistent path and break every stylesheet.
+ *
+ * Every response that passes through the worker (redirects and ASSETS
+ * fetches alike) gets the security header set from securityHeaders().
  *
  * Open-redirect safety: targets are always built from the literal apex
  * origin or `parsed.origin` plus the (normalized) pathname, never from
@@ -46,35 +53,37 @@ const INDEX_SUFFIX = '/index.html';
 export function redirectTarget(url) {
   const parsed = typeof url === 'string' ? new URL(url) : url;
 
-  // www → apex, before any other rule. Path and query pass through
-  // unchanged; any remaining normalization happens on the apex hop.
-  if (parsed.hostname === WWW_HOSTNAME) {
-    return `${APEX_ORIGIN}${parsed.pathname}${parsed.search}`;
-  }
+  // www → apex. No early return: the pathname keeps flowing through the
+  // rules below so any www + non-canonical-path combination still resolves
+  // in a single 301.
+  const isWww = parsed.hostname === WWW_HOSTNAME;
+  const origin = isWww ? APEX_ORIGIN : parsed.origin;
 
   let pathname = parsed.pathname;
 
-  // Uppercase → lowercase (must precede the trailing-slash rule so the two
-  // compose into a single 301).
-  pathname = pathname.toLowerCase();
-
   // **/index.html → bare directory form (/index.html → /,
-  // /guides/index.html → /guides/).
-  if (pathname.endsWith(INDEX_SUFFIX)) {
+  // /guides/index.html → /guides/). Case-insensitive (so /INDEX.HTML is
+  // stripped too), and applied before the file-like check so the remaining
+  // directory path can still be normalized below.
+  if (pathname.toLowerCase().endsWith(INDEX_SUFFIX)) {
     pathname = pathname.slice(0, -(INDEX_SUFFIX.length - 1));
   }
 
-  // Extensionless path without a trailing slash → add the slash. File-like
-  // paths (last segment contains a dot) are left alone.
-  if (!pathname.endsWith('/')) {
-    const lastSegment = pathname.slice(pathname.lastIndexOf('/') + 1);
-    if (!lastSegment.includes('.')) {
+  // File-like paths (last segment contains a dot) are served verbatim by
+  // the assets layer: hashed asset filenames are case-sensitive, so they
+  // must skip both lowercasing and the trailing slash.
+  const lastSegment = pathname.slice(pathname.lastIndexOf('/') + 1);
+  if (!lastSegment.includes('.')) {
+    // Uppercase → lowercase, then add the missing trailing slash; doing
+    // both here composes them into a single 301.
+    pathname = pathname.toLowerCase();
+    if (!pathname.endsWith('/')) {
       pathname += '/';
     }
   }
 
-  if (pathname === parsed.pathname) return null;
-  return `${parsed.origin}${pathname}${parsed.search}`;
+  if (!isWww && pathname === parsed.pathname) return null;
+  return `${origin}${pathname}${parsed.search}`;
 }
 
 /**
