@@ -58,6 +58,32 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </button>
     </div>
 
+    <!-- Static overview (always-visible HTML so the page is indexable without JS) -->
+    <section aria-labelledby="checklist-overview-heading" class="mb-8">
+      <h2 id="checklist-overview-heading" class="text-xl font-semibold text-secondary mb-3">What this China travel checklist covers</h2>
+      <p class="text-sm text-muted mb-3">
+        Preparing for a trip to China takes more setup than most destinations, and the order matters. This China
+        travel checklist walks you through every pre-departure step: confirming whether you qualify for visa-free
+        entry — 50 countries currently qualify for 30-day unilateral visa-free entry to mainland China, see our
+        <a href="/guides/visa-types/" class="text-primary hover:underline">visa types guide</a> for the current NIA
+        list — checking that your passport is valid for at least six months, and arranging a
+        <a href="/guides/tibet-permits/" class="text-primary hover:underline">Tibet Travel Permit</a> if Lhasa is on
+        your itinerary.
+      </p>
+      <p class="text-sm text-muted">
+        Payments come next: download <a href="/apps/alipay/" class="text-primary hover:underline">Alipay</a> or
+        <a href="/apps/wechat/" class="text-primary hover:underline">WeChat Pay</a> and link a Visa or Mastercard
+        before you fly, and carry a little cash for vendors that don't take mobile payments. For connectivity, a
+        foreign <a href="/guides/sim-card/" class="text-primary hover:underline">eSIM</a> bypasses the Great Firewall
+        without a VPN, while a local SIM needs a VPN installed before arrival — and since Google Maps doesn't work in
+        China, install <a href="/apps/amap/" class="text-primary hover:underline">Amap</a> for navigation. Round
+        things out with essential apps (DiDi for ride-hailing, 12306 for train tickets),
+        <a href="/guides/accommodation/" class="text-primary hover:underline">accommodation</a> checks — not every
+        hotel can host foreign guests — and health basics like travel insurance and emergency numbers. Use the form
+        above to generate a personalized version based on your nationality, dates, and destinations.
+      </p>
+    </section>
+
     <!-- Results -->
     <div id="results-section" class="hidden">
       <!-- Progress bar -->
@@ -92,49 +118,49 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     const allItems = [
       // VISA
-      { id: 'visa-free-confirm', category: 'visa', title: 'Confirm your visa-free eligibility', description: '59 countries can enter China without a visa for up to 30 days.', link: '/guides/visa-types', conditions: { nationalities: ['visa-free-30'] }, priority: 'high' },
-      { id: 'visa-transit-confirm', category: 'visa', title: 'Check 240-hour transit-free policy', description: 'US citizens can transit through China for up to 240 hours without a visa at 65 ports.', link: '/guides/visa-types', conditions: { nationalities: ['transit-240'] }, priority: 'high' },
-      { id: 'visa-apply', category: 'visa', title: 'Apply for a tourist (L) visa', description: 'Apply at your nearest Chinese embassy or consulate. Processing takes 4-7 business days.', link: '/guides/visa-types', conditions: { nationalities: ['visa-required'] }, priority: 'high' },
-      { id: 'passport-validity', category: 'visa', title: 'Check passport validity (6+ months)', description: 'Your passport must be valid for at least 6 months beyond your planned stay.', link: '/guides/visa-types', priority: 'high' },
-      { id: 'hotel-confirmation', category: 'visa', title: 'Print hotel booking confirmations', description: 'Immigration may ask for proof of accommodation at entry.', link: '/guides/accommodation', priority: 'medium' },
+      { id: 'visa-free-confirm', category: 'visa', title: 'Confirm your visa-free eligibility', description: '50 countries qualify for 30-day unilateral visa-free entry to mainland China — check the current NIA list.', link: '/guides/visa-types/', conditions: { nationalities: ['visa-free-30'] }, priority: 'high' },
+      { id: 'visa-transit-confirm', category: 'visa', title: 'Check 240-hour transit-free policy', description: 'US citizens can transit through China for up to 240 hours without a visa at 65 ports.', link: '/guides/visa-types/', conditions: { nationalities: ['transit-240'] }, priority: 'high' },
+      { id: 'visa-apply', category: 'visa', title: 'Apply for a tourist (L) visa', description: 'Apply at your nearest Chinese embassy or consulate. Processing takes 4-7 business days.', link: '/guides/visa-types/', conditions: { nationalities: ['visa-required'] }, priority: 'high' },
+      { id: 'passport-validity', category: 'visa', title: 'Check passport validity (6+ months)', description: 'Your passport must be valid for at least 6 months beyond your planned stay.', link: '/guides/visa-types/', priority: 'high' },
+      { id: 'hotel-confirmation', category: 'visa', title: 'Print hotel booking confirmations', description: 'Immigration may ask for proof of accommodation at entry.', link: '/guides/accommodation/', priority: 'medium' },
 
       // CONNECTIVITY
-      { id: 'esim-buy', category: 'connectivity', title: 'Buy an eSIM for China', description: 'Foreign eSIMs bypass the Great Firewall — no VPN needed. Airalo, Holafly, Ubigi are popular choices.', link: '/guides/sim-card', conditions: { concerns: ['connectivity'] }, priority: 'high' },
-      { id: 'vpn-setup', category: 'connectivity', title: 'Download and test a VPN', description: 'If using a local SIM, you need a VPN for Google, WhatsApp, Instagram, etc. Set up BEFORE arrival.', link: '/guides/internet-connectivity', conditions: { concerns: ['connectivity'] }, priority: 'high' },
-      { id: 'offline-maps', category: 'connectivity', title: 'Download Amap (offline maps)', description: 'Google Maps is blocked in China. Amap works offline and has English UI.', link: '/apps/amap', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
-      { id: 'translation-app', category: 'connectivity', title: 'Install a translation app', description: 'Baidu Translate or Microsoft Translator work without VPN in China.', link: '/guides/internet-connectivity', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
+      { id: 'esim-buy', category: 'connectivity', title: 'Buy an eSIM for China', description: 'Foreign eSIMs bypass the Great Firewall — no VPN needed. Airalo, Holafly, Ubigi are popular choices.', link: '/guides/sim-card/', conditions: { concerns: ['connectivity'] }, priority: 'high' },
+      { id: 'vpn-setup', category: 'connectivity', title: 'Download and test a VPN', description: 'If using a local SIM, you need a VPN for Google, WhatsApp, Instagram, etc. Set up BEFORE arrival.', link: '/guides/internet-connectivity/', conditions: { concerns: ['connectivity'] }, priority: 'high' },
+      { id: 'offline-maps', category: 'connectivity', title: 'Download Amap (offline maps)', description: 'Google Maps is blocked in China. Amap works offline and has English UI.', link: '/apps/amap/', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
+      { id: 'translation-app', category: 'connectivity', title: 'Install a translation app', description: 'Baidu Translate or Microsoft Translator work without VPN in China.', link: '/guides/internet-connectivity/', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
 
       // PAYMENT
-      { id: 'alipay-setup', category: 'payment', title: 'Download Alipay and bind your card', description: 'bindable card (Visa/Mastercard). 0% fee under ¥200, 3% over ¥200.', link: '/apps/alipay', conditions: { concerns: ['payment'] }, priority: 'high' },
-      { id: 'wechat-setup', category: 'payment', title: 'Download WeChat Pay and bind your card', description: 'Same fee structure as Alipay. WeChat is also essential for communication.', link: '/apps/wechat', conditions: { concerns: ['payment'] }, priority: 'high' },
-      { id: 'cash-prepare', category: 'payment', title: 'Bring some cash (¥500-1000)', description: 'Small vendors and some transport may not accept mobile pay. ATMs available at airports.', link: '/guides/foreign-exchange', conditions: { concerns: ['payment'] }, priority: 'medium' },
-      { id: 'bank-notify', category: 'payment', title: 'Notify your bank about China travel', description: 'Prevent your card from being blocked for suspicious foreign transactions.', link: '/guides/foreign-exchange', conditions: { concerns: ['payment'] }, priority: 'medium' },
+      { id: 'alipay-setup', category: 'payment', title: 'Download Alipay and bind your card', description: 'bindable card (Visa/Mastercard). 0% fee under ¥200, 3% over ¥200.', link: '/apps/alipay/', conditions: { concerns: ['payment'] }, priority: 'high' },
+      { id: 'wechat-setup', category: 'payment', title: 'Download WeChat Pay and bind your card', description: 'Same fee structure as Alipay. WeChat is also essential for communication.', link: '/apps/wechat/', conditions: { concerns: ['payment'] }, priority: 'high' },
+      { id: 'cash-prepare', category: 'payment', title: 'Bring some cash (¥500-1000)', description: 'Small vendors and some transport may not accept mobile pay. ATMs available at airports.', link: '/guides/foreign-exchange/', conditions: { concerns: ['payment'] }, priority: 'medium' },
+      { id: 'bank-notify', category: 'payment', title: 'Notify your bank about China travel', description: 'Prevent your card from being blocked for suspicious foreign transactions.', link: '/guides/foreign-exchange/', conditions: { concerns: ['payment'] }, priority: 'medium' },
 
       // APPS
-      { id: 'app-alipay', category: 'apps', title: 'Install Alipay', description: 'Essential for payments everywhere in China.', link: '/apps/alipay', priority: 'high' },
-      { id: 'app-wechat', category: 'apps', title: 'Install WeChat', description: 'Messaging, payments, mini-programs, and daily life in China.', link: '/apps/wechat', priority: 'high' },
-      { id: 'app-amap', category: 'apps', title: 'Install Amap (Gaode Maps)', description: 'Best navigation app in China. Google Maps does not work.', link: '/apps/amap', priority: 'high' },
-      { id: 'app-didi', category: 'apps', title: 'Install DiDi', description: 'Ride-hailing (like Uber). Works with Alipay/WeChat Pay.', link: '/apps/didi', priority: 'medium' },
-      { id: 'app-12306', category: 'apps', title: 'Install 12306 (train tickets)', description: 'Official China Railway booking app. Register with passport before departure.', link: '/apps/12306', conditions: { concerns: ['transport'] }, priority: 'medium' },
-      { id: 'app-meituan', category: 'apps', title: 'Install Meituan', description: 'Food delivery, hotel booking, bike rental. Often 20-30% cheaper than international OTAs.', link: '/apps/meituan', priority: 'low' },
+      { id: 'app-alipay', category: 'apps', title: 'Install Alipay', description: 'Essential for payments everywhere in China.', link: '/apps/alipay/', priority: 'high' },
+      { id: 'app-wechat', category: 'apps', title: 'Install WeChat', description: 'Messaging, payments, mini-programs, and daily life in China.', link: '/apps/wechat/', priority: 'high' },
+      { id: 'app-amap', category: 'apps', title: 'Install Amap (Gaode Maps)', description: 'Best navigation app in China. Google Maps does not work.', link: '/apps/amap/', priority: 'high' },
+      { id: 'app-didi', category: 'apps', title: 'Install DiDi', description: 'Ride-hailing (like Uber). Works with Alipay/WeChat Pay.', link: '/apps/didi/', priority: 'medium' },
+      { id: 'app-12306', category: 'apps', title: 'Install 12306 (train tickets)', description: 'Official China Railway booking app. Register with passport before departure.', link: '/apps/12306/', conditions: { concerns: ['transport'] }, priority: 'medium' },
+      { id: 'app-meituan', category: 'apps', title: 'Install Meituan', description: 'Food delivery, hotel booking, bike rental. Often 20-30% cheaper than international OTAs.', link: '/apps/meituan/', priority: 'low' },
 
       // TRANSPORT
-      { id: '12306-register', category: 'transport', title: 'Register on 12306 with your passport', description: 'Do this before arrival — verification can take 1-2 days.', link: '/apps/12306', conditions: { concerns: ['transport'] }, priority: 'high' },
-      { id: 'metro-payment', category: 'transport', title: 'Learn how to pay for metro rides', description: 'Most cities: Alipay QR code at turnstile, or buy single-journey tickets at machines.', link: '/guides/transportation', conditions: { concerns: ['transport'] }, priority: 'medium' },
-      { id: 'airport-transfer', category: 'transport', title: 'Plan airport-to-city transfer', description: 'Options: metro, airport bus, DiDi, or taxi. Metro is cheapest; DiDi is most convenient.', link: '/guides/transportation', conditions: { concerns: ['transport'] }, priority: 'medium' },
+      { id: '12306-register', category: 'transport', title: 'Register on 12306 with your passport', description: 'Do this before arrival — verification can take 1-2 days.', link: '/apps/12306/', conditions: { concerns: ['transport'] }, priority: 'high' },
+      { id: 'metro-payment', category: 'transport', title: 'Learn how to pay for metro rides', description: 'Most cities: Alipay QR code at turnstile, or buy single-journey tickets at machines.', link: '/guides/transportation/', conditions: { concerns: ['transport'] }, priority: 'medium' },
+      { id: 'airport-transfer', category: 'transport', title: 'Plan airport-to-city transfer', description: 'Options: metro, airport bus, DiDi, or taxi. Metro is cheapest; DiDi is most convenient.', link: '/guides/transportation/', conditions: { concerns: ['transport'] }, priority: 'medium' },
 
       // ACCOMMODATION
-      { id: 'hotel-foreigner', category: 'accommodation', title: 'Confirm hotel accepts foreigners', description: 'Not all hotels are licensed to host foreign guests. Verify before booking.', link: '/guides/accommodation', conditions: { concerns: ['accommodation'] }, priority: 'high' },
-      { id: 'passport-copy', category: 'accommodation', title: 'Prepare passport copies', description: 'Hotels photocopy your passport at check-in for police registration. Carry a spare copy.', link: '/guides/residence-registration', conditions: { concerns: ['accommodation'] }, priority: 'medium' },
+      { id: 'hotel-foreigner', category: 'accommodation', title: 'Confirm hotel accepts foreigners', description: 'Not all hotels are licensed to host foreign guests. Verify before booking.', link: '/guides/accommodation/', conditions: { concerns: ['accommodation'] }, priority: 'high' },
+      { id: 'passport-copy', category: 'accommodation', title: 'Prepare passport copies', description: 'Hotels photocopy your passport at check-in for police registration. Carry a spare copy.', link: '/guides/residence-registration/', conditions: { concerns: ['accommodation'] }, priority: 'medium' },
 
       // HEALTH & SAFETY
-      { id: 'travel-insurance', category: 'health', title: 'Buy travel insurance', description: 'Cover medical emergencies and trip disruption. Check if it covers China specifically.', link: '/guides/health-medical', conditions: { concerns: ['health'] }, priority: 'high' },
-      { id: 'emergency-numbers', category: 'health', title: 'Save emergency numbers', description: 'Police: 110 | Ambulance: 120 | Fire: 119 | Your embassy number.', link: '/guides/emergency-safety', conditions: { concerns: ['health'] }, priority: 'medium' },
-      { id: 'vaccines-check', category: 'health', title: 'Check recommended vaccinations', description: 'Hepatitis A, Typhoid recommended. Rabies if visiting rural areas.', link: '/guides/health-medical', conditions: { concerns: ['health'] }, priority: 'medium' },
+      { id: 'travel-insurance', category: 'health', title: 'Buy travel insurance', description: 'Cover medical emergencies and trip disruption. Check if it covers China specifically.', link: '/guides/health-medical/', conditions: { concerns: ['health'] }, priority: 'high' },
+      { id: 'emergency-numbers', category: 'health', title: 'Save emergency numbers', description: 'Police: 110 | Ambulance: 120 | Fire: 119 | Your embassy number.', link: '/guides/emergency-safety/', conditions: { concerns: ['health'] }, priority: 'medium' },
+      { id: 'vaccines-check', category: 'health', title: 'Check recommended vaccinations', description: 'Hepatitis A, Typhoid recommended. Rabies if visiting rural areas.', link: '/guides/health-medical/', conditions: { concerns: ['health'] }, priority: 'medium' },
 
       // TIBET SPECIAL
-      { id: 'tibet-permit', category: 'visa', title: 'Apply for Tibet Travel Permit', description: 'Required for all foreign visitors. Must book through a licensed travel agency. Apply 20+ days ahead.', link: '/guides/tibet-permits', conditions: { cities: ['tibet'] }, priority: 'high' },
-      { id: 'tibet-altitude', category: 'health', title: 'Prepare for altitude sickness', description: 'Lhasa is 3,650m. Consider Diamox (prescription). Get travel insurance with evacuation cover.', link: '/guides/tibet-permits', conditions: { cities: ['tibet'] }, priority: 'high' },
+      { id: 'tibet-permit', category: 'visa', title: 'Apply for Tibet Travel Permit', description: 'Required for all foreign visitors. Must book through a licensed travel agency. Apply 20+ days ahead.', link: '/guides/tibet-permits/', conditions: { cities: ['tibet'] }, priority: 'high' },
+      { id: 'tibet-altitude', category: 'health', title: 'Prepare for altitude sickness', description: 'Lhasa is 3,650m. Consider Diamox (prescription). Get travel insurance with evacuation cover.', link: '/guides/tibet-permits/', conditions: { cities: ['tibet'] }, priority: 'high' },
     ];
 
     const categoryLabels = {
