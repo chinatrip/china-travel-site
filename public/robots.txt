@@ -1,6 +1,7 @@
 # ChinaGuide.ai — all crawlers welcome, including AI / LLM crawlers.
 User-agent: *
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 # Explicit allow for AI / LLM crawlers (Generative Engine Optimization).
 # We want our source-verified content to be cited by AI search engines.
