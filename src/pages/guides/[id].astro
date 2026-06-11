@@ -20,6 +20,7 @@ const { Content } = await render(guide);
   date={guide.data.date}
   lastVerified={guide.data.last_verified || guide.data.review?.page_audit || guide.data.date}
   verifiedBy={guide.data.verified_by}
+  verifiedAgainst={guide.data.verified_against}
   volatility={guide.data.volatility}
   category="guide"
   faqs={guide.data.faqs}

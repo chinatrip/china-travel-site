@@ -4,6 +4,7 @@ import BaseLayout from './BaseLayout.astro';
 import Badge from '../components/Badge.astro';
 import GuideCard from '../components/GuideCard.astro';
 import { parseRelated } from '../lib/related.mjs';
+import { filterExternalSources, formatSourceLabel } from '../lib/trust-signals.mjs';
 
 interface Props {
   title: string;
@@ -11,13 +12,23 @@ interface Props {
   date?: string;
   lastVerified?: string;
   verifiedBy?: string;
+  verifiedAgainst?: string[];
   volatility?: string;
   category?: string;
   faqs?: { q: string; a: string }[];
   related?: string[];
 }
 
-const { title, description, date, lastVerified, verifiedBy, volatility, category, faqs, related } = Astro.props;
+const { title, description, date, lastVerified, verifiedBy, verifiedAgainst, volatility, category, faqs, related } = Astro.props;
+
+// Visible verifier byline — falls back to the team byline so every page
+// carries an accountable name even before per-page verified_by lands (#38).
+const displayVerifiedBy = verifiedBy || 'ChinaGuide Editorial Team';
+
+// Public sources for the "Sources & verification" section. Internal provenance
+// entries (raw/…, wiki/…) are filtered out; pages without external sources
+// degrade gracefully (no section — the byline above still renders).
+const externalSources = filterExternalSources(verifiedAgainst);
 
 // Resolve frontmatter `related` wiki paths to published pages only —
 // entries pointing at unpublished wiki pages are skipped (with a build-time warning),
@@ -153,7 +164,7 @@ const faqSchema = hasFaqs
         {formattedDate && (
           <span class="text-muted">
             Last verified: {formattedDate}
-            {verifiedBy && <span> by <strong>{verifiedBy}</strong></span>}
+            <span> by <strong>{displayVerifiedBy}</strong></span>
           </span>
         )}
       </div>
@@ -191,6 +202,42 @@ const faqSchema = hasFaqs
             </div>
           ))}
         </dl>
+      </section>
+    )}
+
+    {externalSources.length > 0 && (
+      <section class="mt-12 pt-8 border-t border-gray-200" aria-label="Sources and verification">
+        <details class="group">
+          <summary class="cursor-pointer text-lg font-semibold text-secondary list-none flex items-center gap-2 [&::-webkit-details-marker]:hidden">
+            <svg class="w-4 h-4 text-muted transition-transform group-open:rotate-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+            </svg>
+            Sources &amp; verification
+          </summary>
+          <div class="mt-4 pl-6 text-sm text-gray-700 space-y-3">
+            {formattedDate && (
+              <p>
+                Last verified: {formattedDate} by <strong>{displayVerifiedBy}</strong>
+              </p>
+            )}
+            <p>This guide was checked against the following sources:</p>
+            <ul class="space-y-1.5 list-disc pl-5 marker:text-primary">
+              {externalSources.map((src) => (
+                <li>
+                  <a
+                    href={src}
+                    rel="nofollow noopener"
+                    target="_blank"
+                    class="text-primary hover:underline break-all"
+                  >{formatSourceLabel(src)}</a>
+                </li>
+              ))}
+            </ul>
+            <p class="text-muted">
+              Learn how we verify and update our guides in our <a href="/editorial-policy/" class="text-primary hover:underline">editorial policy</a>.
+            </p>
+          </div>
+        </details>
       </section>
     )}
 
