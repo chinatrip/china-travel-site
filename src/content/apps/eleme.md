@@ -1,5 +1,5 @@
 ---
-title: "Taobao Flash Purchase (淘宝闪购, formerly Ele.me / 饿了么)"
+title: "Ele.me (Taobao Flash Purchase) for Foreigners (2026)"
 date: 2026-06-01
 sources:
   - raw/realchinaguide-food-dining-2026.md
@@ -32,7 +32,7 @@ review:
 category: app
 ---
 
-# Taobao Flash Purchase (淘宝闪购)
+# Ele.me (Taobao Flash Purchase) for Foreigners (2026)
 
 > **Brand update (December 2025):** "饿了么" (Ele.me) has been officially rebranded to "淘宝闪购" (Taobao Flash Purchase). The domain ele.me still works and redirects. Older guides and some in-app references may still use the "饿了么" name.
 

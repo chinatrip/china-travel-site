@@ -1,5 +1,5 @@
 ---
-title: Alipay
+title: "How to Set Up Alipay in China as a Foreigner (2026)"
 date: 2026-04-30
 last_verified: 2026-06-09
 verified_against:
@@ -33,7 +33,7 @@ review:
 category: app
 ---
 
-# Alipay
+# How to Set Up Alipay in China as a Foreigner (2026)
 
 Alipay (Ant Group) is one of China's two dominant mobile-payment platforms. It covers payments, lifestyle services, and transportation.
 

@@ -1,5 +1,5 @@
 ---
-title: DiDi
+title: "How to Use DiDi in China for Foreigners (2026)"
 date: 2026-04-30
 last_verified: 2026-06-09
 verified_against:
@@ -12,6 +12,7 @@ sources:
 related:
   - wiki/concepts/transportation.md
   - wiki/concepts/mobile-payment.md
+  - wiki/entities/alipay.md
   - wiki/entities/amap.md
 volatility: medium
 description: "DiDi is China's ride-hailing app like Uber: sign up with a foreign number, pay via Alipay/WeChat, enter destinations without Chinese, and run it inside Alipay with no separate app. Updated May 2026."
@@ -31,7 +32,7 @@ review:
 category: app
 ---
 
-# DiDi
+# How to Use DiDi in China for Foreigners (2026)
 
 DiDi is China's largest ride-hailing platform, covering the vast majority of cities. It's the default option for foreign visitors.
 
@@ -62,17 +63,17 @@ DiDi also operates bike-sharing — open the DiDi app and scan the QR code on an
 - **Designated pickup points:** DiDi cannot pick you up anywhere — the app assigns a specific pickup spot, which may be a 5-minute walk from where you are. Walk to the assigned point before the driver arrives; drivers will not wait long. (Source: Reddit r/travelchina, 2026-05-08)
 - **DiDi via Alipay:** DiDi is available as a Mini Program inside the Alipay app — tap the DiDi icon on Alipay's home screen. You do not strictly need a separate DiDi app if Alipay is already set up.
 - Use the in-app translator to communicate with the driver if needed.
-- Airports and high-speed rail stations have designated DiDi pickup zones — follow the in-app guidance to the right zone, not just the arrivals exit.
+- Airports and high-speed rail stations have designated DiDi pickup zones — follow the in-app guidance to the right zone, not just the arrivals exit. For metro and airport-express alternatives, see [[wiki/concepts/transportation.md|transportation in China]].
 - For lost items, use DiDi's in-app **Lost & Found** (My Trips → trip → Report Lost Item).
 
 ## Practical Tips for Foreigners
 
-- **Alipay is the easiest payment method** for DiDi. Set up Alipay first, then link it to DiDi. Foreign Visa/Mastercard can also be added directly in DiDi's payment settings as an alternative.
+- **Alipay is the easiest payment method** for DiDi. Set up [[wiki/entities/alipay.md|Alipay]] first, then link it to DiDi. Foreign Visa/Mastercard can also be added directly in DiDi's payment settings as an alternative.
 - **Drivers do not speak English.** Use the in-app translation feature or have your destination pre-written in Chinese characters. Price is shown upfront — no negotiation needed. Drivers follow GPS with minimal communication required.
 - **Driver cancellations are common during rush hour** when drivers are picky about destinations. Rebook immediately. If it happens repeatedly, try a different car type (e.g., switch from Express to Taxi) or walk to a busier pickup location.
 - **Typical ride cost:** ¥10–30 for most city trips. This is 10–15x more expensive than the metro for equivalent distances.
 - **DiDi runs 24/7** — metro closes at ~11:30 PM, making DiDi the default for late-night travel.
-- **When DiDi is busy:** Amap (高德地图) has taxi booking built in and aggregates multiple ride-hailing services. Use it as a fallback.
+- **When DiDi is busy:** [[wiki/entities/amap.md|Amap]] (高德地图) has taxi booking built in and aggregates multiple ride-hailing services. Use it as a fallback.
 - **Safe vs street taxis:** DiDi is considered safer than street-hail taxis — rides are tracked, prices are fixed, driver identity is verified.
 - **Mini-program access:** In WeChat or Alipay, search "滴滴出行" to open DiDi without a separate app download. Useful if you have Alipay set up but limited phone storage.
 
