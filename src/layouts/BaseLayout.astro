@@ -1,6 +1,15 @@
 ---
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
+// Self-hosted Inter (latin subset only; weights actually used by the site).
+// Replaces the render-blocking Google Fonts stylesheet (#39).
+import '@fontsource/inter/latin-400.css';
+import '@fontsource/inter/latin-500.css';
+import '@fontsource/inter/latin-600.css';
+import '@fontsource/inter/latin-700.css';
+// Hashed URLs resolved at build time so the above-the-fold weights can be preloaded.
+import interLatin400Woff2 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import interLatin700Woff2 from '@fontsource/inter/files/inter-latin-700-normal.woff2?url';
 import '../styles/global.css';
 
 interface Props {
@@ -41,9 +50,9 @@ const fullTitle = `${title} | ChinaGuide.ai`;
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Preload the above-the-fold font weights (body 400, headings 700). crossorigin is required for font preloads even same-origin. -->
+    <link rel="preload" href={interLatin400Woff2} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={interLatin700Woff2} as="font" type="font/woff2" crossorigin />
   </head>
   <body class="bg-surface text-gray-900 font-sans antialiased">
     <Navbar />
