@@ -44,6 +44,18 @@ export const SITE_PAGES = [
     description:
       'Interactive pre-trip checklist personalized by nationality, travel dates, and destinations.',
   },
+  {
+    title: 'About',
+    url: `${SITE}/about/`,
+    description:
+      'Who runs ChinaGuide.ai and how every guide is verified against official sources before publication.',
+  },
+  {
+    title: 'Editorial Policy',
+    url: `${SITE}/editorial-policy/`,
+    description:
+      'Sourcing standards, update principles, the corrections process, and how AI assistance is used and reviewed.',
+  },
 ];
 
 const HEADER_TITLE = '# ChinaGuide.ai';

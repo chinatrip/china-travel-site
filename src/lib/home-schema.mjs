@@ -52,6 +52,13 @@ export function buildOrganizationSchema(logoUrl) {
     name: BRAND,
     url: SITE,
     logo: { '@type': 'ImageObject', url: logoUrl },
+    // Reachable support inbox (#38) — same address shown on /about/ and
+    // /editorial-policy/, so the entity and the visible pages agree.
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'support@chinaguide.ai',
+      contactType: 'customer support',
+    },
     // TODO(#9): fill in social profiles (X/Reddit/YouTube/…) once the
     // accounts exist; an empty sameAs is valid and ignored by parsers.
     sameAs: [],

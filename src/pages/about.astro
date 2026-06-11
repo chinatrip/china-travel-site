@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description =
+  'Who runs ChinaGuide.ai, how every guide is verified against official primary sources before publication, and how to reach the editorial team.';
+
+// AboutPage schema (#38): mainEntity resolves to the canonical Organization
+// entity emitted on the homepage (src/lib/home-schema.mjs) — one entity,
+// referenced by @id, never duplicated.
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  '@id': 'https://chinaguide.ai/about/#aboutpage',
+  url: 'https://chinaguide.ai/about/',
+  name: 'About ChinaGuide.ai',
+  description,
+  inLanguage: 'en',
+  mainEntity: { '@id': 'https://chinaguide.ai/#organization' },
+};
+---
+
+<BaseLayout title="About" description={description}>
+  <script type="application/ld+json" set:html={JSON.stringify(aboutPageSchema)} />
+
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-secondary mb-2">About ChinaGuide.ai</h1>
+      <p class="text-muted text-lg">Practical, source-verified travel guides for foreign visitors to China.</p>
+    </header>
+
+    <section class="prose prose-gray max-w-none">
+      <h2>What this site is</h2>
+      <p>
+        ChinaGuide.ai covers the things that actually trip up foreign visitors on the ground in
+        China: visa and entry rules, mobile payments, internet connectivity, trains and city
+        transport, hotel registration, and the Chinese apps worth installing before you land.
+      </p>
+      <p>
+        Travel information about China goes stale fast — visa-free policies change, payment apps
+        revise their onboarding for foreigners, booking rules shift. So instead of another list of
+        sights, every page here is built around one promise: what you read has been checked against
+        official, primary sources, and you can see when that check last happened.
+      </p>
+      <p>
+        If you are planning a first trip, start with the <a href="/guides/">travel guides</a>, the
+        <a href="/apps/">essential apps</a>, or the personalized
+        <a href="/checklist/">pre-trip checklist</a>.
+      </p>
+
+      <h2>Who runs it</h2>
+      <p>
+        ChinaGuide.ai is maintained by the <strong>ChinaGuide Editorial Team</strong> — a small
+        editorial team with first-hand experience using the systems these guides describe: the
+        payment apps, the railway booking flows, the entry procedures. We are not a travel agency
+        and we sell no tours, visas, or bookings; the site's only job is to keep this information
+        accurate.
+      </p>
+
+      <h2>How our content is made</h2>
+      <p>Every guide goes through the same pipeline before you see it:</p>
+      <ol>
+        <li>
+          <strong>Source verification.</strong> Claims are checked against official primary
+          sources — immigration notices, embassy and consulate announcements, and operators' own
+          documentation (payment platforms, railways, airlines).
+        </li>
+        <li>
+          <strong>A visible "last verified" date.</strong> Each guide shows when its content was
+          last checked, so you can judge freshness for yourself.
+        </li>
+        <li>
+          <strong>A review gate before publication.</strong> Pages go live only after passing
+          review and being marked as audited in our content pipeline. Drafts never ship.
+        </li>
+        <li>
+          <strong>Faster re-checks for fast-moving topics.</strong> Guides are rated by how
+          quickly their subject changes — you'll see labels like "Changes often" or "Stable" on
+          each page — and high-volatility topics such as visa policy are re-verified more
+          frequently.
+        </li>
+        <li>
+          <strong>Automated quality review.</strong> Every content change also runs through an
+          automated AI review step that checks, among other things, that each FAQ answer is
+          actually supported by the body of the page — so unsupported claims get flagged
+          before a page ships.
+        </li>
+      </ol>
+      <p>
+        We use AI tools to help produce and review content; people set the standards, verify the
+        sources, and make the final publication call. The full standards are in our
+        <a href="/editorial-policy/">editorial policy</a>.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions, suggestions, or something out of date? Email
+        <a href="mailto:support@chinaguide.ai">support@chinaguide.ai</a>. Corrections get
+        priority — if you spot an error, telling us is the fastest way to get it fixed for
+        everyone.
+      </p>
+    </section>
+  </div>
+</BaseLayout>

@@ -52,6 +52,17 @@ test('Organization sameAs is an empty array until social profiles exist (#9)', (
   assert.deepEqual(schema.sameAs, []);
 });
 
+test('Organization exposes a support contactPoint without changing url (#38)', () => {
+  const schema = buildOrganizationSchema(LOGO);
+  assert.deepEqual(schema.contactPoint, {
+    '@type': 'ContactPoint',
+    email: 'support@chinaguide.ai',
+    contactType: 'customer support',
+  });
+  // contactPoint is additive — the canonical entity url must stay untouched.
+  assert.equal(schema.url, 'https://chinaguide.ai');
+});
+
 test('schemas serialize without undefined fields (set:html + JSON.stringify safe)', () => {
   for (const schema of [buildWebsiteSchema(DESCRIPTION), buildOrganizationSchema(LOGO)]) {
     const json = JSON.stringify(schema);
