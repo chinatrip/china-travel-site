@@ -15,11 +15,18 @@ const source = readFileSync(
 test('visa-free country count is 50, not 59 (59 is the Hainan-only program)', () => {
   assert.ok(!source.includes('59 countries'), 'stale "59 countries" claim found in checklist.astro');
   assert.ok(source.includes('50 countries'), 'expected the corrected "50 countries" claim in checklist.astro');
+  // "unilateral" keeps the claim aligned with the visa-types FAQ: bilateral
+  // mutual-exemption countries (Singapore, UAE, Thailand, ...) are not in the 50.
+  assert.ok(
+    source.includes('unilateral visa-free entry'),
+    'the 50-country claim must be qualified as "unilateral visa-free entry"',
+  );
 });
 
 // ---- link guard: checklist data links must use the canonical trailing-slash form ----
 test('every internal link in the checklist data ends with a trailing slash', () => {
-  const links = [...source.matchAll(/link:\s*'([^']+)'/g)].map((m) => m[1]);
+  // Quote-agnostic so `link: "..."` or a template literal can't slip past the guard.
+  const links = [...source.matchAll(/link:\s*(['"`])([^'"`]+)\1/g)].map((m) => m[2]);
   assert.ok(links.length > 0, 'no link: fields found — extraction regex is broken');
 
   const offenders = links.filter((link) => {

@@ -64,7 +64,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <p class="text-sm text-muted mb-3">
         Preparing for a trip to China takes more setup than most destinations, and the order matters. This China
         travel checklist walks you through every pre-departure step: confirming whether you qualify for visa-free
-        entry — 50 countries currently qualify for 30-day visa-free entry to mainland China, see our
+        entry — 50 countries currently qualify for 30-day unilateral visa-free entry to mainland China, see our
         <a href="/guides/visa-types/" class="text-primary hover:underline">visa types guide</a> for the current NIA
         list — checking that your passport is valid for at least six months, and arranging a
         <a href="/guides/tibet-permits/" class="text-primary hover:underline">Tibet Travel Permit</a> if Lhasa is on
@@ -118,7 +118,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     const allItems = [
       // VISA
-      { id: 'visa-free-confirm', category: 'visa', title: 'Confirm your visa-free eligibility', description: '50 countries qualify for 30-day visa-free entry to mainland China — check the current NIA list.', link: '/guides/visa-types/', conditions: { nationalities: ['visa-free-30'] }, priority: 'high' },
+      { id: 'visa-free-confirm', category: 'visa', title: 'Confirm your visa-free eligibility', description: '50 countries qualify for 30-day unilateral visa-free entry to mainland China — check the current NIA list.', link: '/guides/visa-types/', conditions: { nationalities: ['visa-free-30'] }, priority: 'high' },
       { id: 'visa-transit-confirm', category: 'visa', title: 'Check 240-hour transit-free policy', description: 'US citizens can transit through China for up to 240 hours without a visa at 65 ports.', link: '/guides/visa-types/', conditions: { nationalities: ['transit-240'] }, priority: 'high' },
       { id: 'visa-apply', category: 'visa', title: 'Apply for a tourist (L) visa', description: 'Apply at your nearest Chinese embassy or consulate. Processing takes 4-7 business days.', link: '/guides/visa-types/', conditions: { nationalities: ['visa-required'] }, priority: 'high' },
       { id: 'passport-validity', category: 'visa', title: 'Check passport validity (6+ months)', description: 'Your passport must be valid for at least 6 months beyond your planned stay.', link: '/guides/visa-types/', priority: 'high' },
