@@ -59,7 +59,7 @@ function main() {
   }
   // Also scan text endpoints (e.g. llms.txt) for absolute site URLs missing a slash.
   const absRe = /https:\/\/chinaguide\.ai(\/[^\s)\]"'<>]*)/g;
-  for (const txt of ['llms.txt']) {
+  for (const txt of ['llms.txt', 'llms-full.txt']) {
     let content;
     try {
       content = readFileSync(join(DIST, txt), 'utf8');
