@@ -21,6 +21,10 @@ Format per entry: **CALL** (ACCEPT / REJECT) — situation — why.
 - **ACCEPT** — Question or benefit-framed, specific ("Do You Need a Chinese Phone Number? +86 for Foreigners in 2026").
 - **REJECT** — Bare entity with no intent ("Phone Numbers") or so long the ` | ChinaGuide.ai` suffix truncates in SERP.
 
+## faq_wellformed / answer length
+
+- **ACCEPT** — A short but accurate, front-loaded FAQ answer (e.g. ~30 words that fully answer "Can I use Apple Pay in China?"). Length alone is never a reason to fail `faq_wellformed` — nor any other criterion (do not reroute a short-but-complete answer into a `faqpage_schema_readiness` fail; brevity is not a self-containment defect). Pass it and add a `suggestions` item to expand toward 80–160 words with one concrete detail from the body so AI engines have enough context to cite it.
+
 ## faqpage_schema_readiness
 
 - **REJECT** — An "FAQ" whose answer contains a marketing CTA ("Buy now", "Sign up at…") or whose question is not actually a question. Pollutes FAQPage rich results.

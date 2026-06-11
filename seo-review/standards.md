@@ -20,6 +20,7 @@ The model scores each criterion 0–5 with a one-sentence rationale and a `passe
    **Blocks** if any FAQ is `ungrounded` or `overclaims`. When support is unclear, do NOT mark `grounded`.
 
 2. **`faq_wellformed`** — `q` is a genuine question a foreign traveler would ask/search; `a` is concise and **answers the question in its first sentence** (front-loaded — critical for FAQ rich results and AI extraction). **Blocks** if an answer doesn't answer its question or buries the answer.
+   *Length guidance — informational only; answer length on its own never makes this **or any other** criterion fail, and must not affect any criterion's `passed` or `score`:* the ideal FAQ answer is **80–160 words**. If an answer is under ~40 words, it usually lacks the surrounding context AI engines need to cite it — add an item to `suggestions` proposing a concrete expansion (one example, one caveat, or one number from the body). If it exceeds ~200 words, the direct answer drowns — suggest trimming the tail while keeping the front-loaded first sentence. In both cases report via `suggestions` only.
 
 3. **`meta_description`** — Present (not relying on the layout's generic fallback), ~120–160 chars, conveys the page's primary intent, reads as a compelling SERP snippet. **Blocks** if missing or grossly out of range. *(Length is machine-checked: missing or <50 / >180 chars hard-blocks; quality within range is your judgment.)*
 
@@ -30,7 +31,7 @@ The model scores each criterion 0–5 with a one-sentence rationale and a `passe
 ## ADVISORY criteria (report only — never block)
 
 6. **`h2_question_form`** — Most H2 headings should be natural-language questions a traveler would search (house style; strong for "People Also Ask" + AI extraction). Score intent alignment. (A non-question utility heading like "See Also" is fine.)
-7. **`direct_answer_geo`** — Does each section lead with a direct, self-contained, quotable answer in the first 1–2 sentences, so an AI engine can lift a clean citation? Are key facts standalone statements rather than buried in narrative?
+7. **`direct_answer_geo`** — Does each section lead with a direct, self-contained, quotable answer in the first 1–2 sentences, so an AI engine can lift a clean citation? Are key facts standalone statements rather than buried in narrative? *Background: analyses of AI-cited passages put the sweet spot at roughly **134–167 words** per self-contained, quotable passage — body sections near that range are the likeliest to be lifted whole. This range applies to body prose only; for FAQ answers, defer to criterion 2's 80–160-word guidance. Treat both as targets when suggesting rewrites, never as pass/fail lines.*
 8. **`internal_linking`** — Relevant `[[wiki/...]]` links and a "See Also" section; links relevant, not excessive.
 9. **`keyword_intent_match`** — Does the page actually answer the query implied by its title/slug, and cover the obvious sub-questions a foreign traveler has?
 10. **`no_keyword_stuffing`** — Flag unnatural keyword repetition, robotic phrasing, over-optimization.
