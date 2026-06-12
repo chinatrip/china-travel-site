@@ -4,13 +4,13 @@ faqs:
   - q: "Do I need a Chinese phone number as a tourist in China?"
     a: "Usually no. A foreign eSIM gives you data, and Alipay, WeChat, DiDi (via mini-program), Amap and 12306 all work without a +86 number. You only need one for a handful of apps and for public Wi-Fi that verifies by SMS."
   - q: "Which apps require a Chinese (+86) phone number?"
-    a: "Fewer than you'd think: the clearest cases are public Wi-Fi that authenticates by SMS and some bike-share and IoT services (e.g. certain laundry machines). Luckin Coffee is no longer one of them — order through its Alipay or WeChat mini-program, or the standalone app, which accepts international numbers. The KFC app may ask for a phone number at sign-up, but the WeChat mini-program route avoids it. Meituan and the standalone DiDi app sometimes accept a foreign number but verification can be unreliable — the mini-program versions avoid the problem."
+    a: "Fewer than you'd think: the clearest cases are public Wi-Fi that authenticates by SMS, Meituan delivery (signup accepts a foreign number, but checkout asks for a mainland contact number), and some bike-share and IoT services (e.g. certain laundry machines). Luckin Coffee is no longer one of them — order through its Alipay or WeChat mini-program, or the standalone app, which as of mid-2026 accepts international numbers. The KFC app may ask for a phone number at sign-up, but the WeChat mini-program route avoids it. The standalone DiDi app sometimes has verification issues — the mini-program version avoids the problem."
   - q: "How do I use Chinese services without a Chinese phone number?"
     a: "Use the mini-program version inside WeChat or Alipay instead of the standalone app — mini-programs generally need no phone number or SMS verification. For example, run DiDi as a mini-program inside Alipay. Many ordering, ticket and ride services work this way."
   - q: "How do I get a Chinese phone number if I need one?"
     a: "Buy a prepaid Chinese SIM (China Mobile, Unicom or Telecom) at the airport or a carrier shop with your passport — real-name registration is required. Some travel eSIM packages also bundle a usable number. Note that a Chinese SIM is behind the Great Firewall, so you'll also want a VPN."
   - q: "Why doesn't my foreign number receive the Chinese app's verification code?"
-    a: "Many Chinese apps accept a +86 number but silently fail to deliver SMS to foreign numbers, so the code never arrives. Use the mini-program version, register before you travel while on your home carrier, or get a Chinese number for that app."
+    a: "Many Chinese apps accept a foreign number at signup but silently fail to deliver the SMS, so the code never arrives. Use the mini-program version, register before you travel while on your home carrier, or get a Chinese number for that app."
 category: guide
 title: "Do You Need a Chinese Phone Number? +86 for Foreigners in 2026"
 date: 2026-06-04
@@ -45,7 +45,7 @@ This is the friction first-timers describe as "everything is futuristic but gate
 | Your situation | Need a +86 number? |
 |---|---|
 | Short trip; use Alipay, WeChat, DiDi, Amap, maps and trains | **No** — a foreign eSIM is enough |
-| Want to order from Luckin Coffee or KFC | **No** — use the Alipay/WeChat mini-program; Luckin's own app also accepts foreign numbers |
+| Want to order from Luckin Coffee or KFC | **No** — use the Alipay/WeChat mini-program; as of mid-2026 Luckin's own app also accepts foreign numbers |
 | Want to connect to free public/airport/mall Wi-Fi | **Often yes** — many require SMS to a +86 number |
 | Long stay, or you want every local app to "just work" | **Yes** — get a Chinese SIM |
 | Renting shared bikes, some IoT (e.g. laundry machines) | **Sometimes** |
@@ -58,12 +58,13 @@ For why a Chinese SIM also affects your internet access, see [VPN or eSIM for Ch
 
 - **Public / airport / mall Wi-Fi** that authenticates by SMS code
 - **Some bike-share** services and IoT devices (certain shared **laundry machines**, lockers, vending)
-- A few services where a foreign number is accepted at signup but the **SMS code never arrives** — **Meituan** is the most-reported case; its mini-program inside WeChat/Alipay avoids the standalone app's verification
+- **Meituan** delivery — signup accepts an international number, but **checkout asks for a mainland contact number** for the order
+- A few services where a foreign number is accepted at signup but the **SMS code never arrives**
 
 **Works WITHOUT a Chinese number:**
 
 - **Alipay** and **WeChat / WeChat Pay** — register with your foreign number (WeChat may need a contact to vouch — set up before you travel)
-- **Luckin Coffee** — ordering is still all-digital, but no +86 is needed: run the Luckin mini-program inside Alipay or WeChat (Alipay even auto-translates it) or scan the QR at the counter; as of mid-2026 the standalone app also accepts international numbers at registration
+- **Luckin Coffee** — ordering is still all-digital, but no +86 is needed: run the Luckin mini-program inside Alipay or WeChat (Alipay even auto-translates it); as of mid-2026 the standalone app also accepts international numbers at registration
 - **KFC** — the app may ask for a phone number at sign-up (registering by email is also reported, and English is usually available); ordering through the WeChat mini-program skips the standalone app entirely
 - **DiDi** — works as a mini-program inside Alipay/WeChat with no number; the standalone app sometimes has verification issues
 - **Amap (Gaode)**, **12306**, and most **mini-programs** inside WeChat/Alipay
