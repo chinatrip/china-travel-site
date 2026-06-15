@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { resolveRecentlyVerified } from '../lib/recent-verified.mjs';
+
+const description =
+  'The verification record for ChinaGuide.ai: every guide and app page, ordered by when it was last re-checked against its sources.';
+
+// Only published pages — same audited gate the homepage and listings use.
+const [guides, apps] = await Promise.all([
+  getCollection('guides', ({ data }) => data.status === 'audited'),
+  getCollection('apps', ({ data }) => data.status === 'audited'),
+]);
+
+// Full record, most-recently-verified first. No limit: this is the canonical,
+// indexable list that editorial-policy and any future "changelog" link point to.
+const records = resolveRecentlyVerified([...guides, ...apps]);
+---
+
+<BaseLayout title="Recently Verified" description={description}>
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-secondary mb-2">Recently Verified</h1>
+      <p class="text-muted text-lg max-w-2xl">
+        Every page below was checked against its sources on the date shown — visa rules, payment
+        apps, transport, and more, newest verification first.
+      </p>
+      <p class="text-sm text-gray-500 mt-3">
+        These checks follow our <a href="/editorial-policy/" class="text-primary hover:underline">Editorial Policy</a>.
+      </p>
+    </header>
+
+    <ul class="space-y-4">
+      {records.map((rec) => (
+        <li class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sm:p-5">
+          <div class="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <a href={rec.url} class="text-lg font-semibold text-secondary hover:text-primary hover:underline">
+              {rec.title}
+            </a>
+            <span class="flex items-center gap-2 text-sm text-gray-500 shrink-0">
+              <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+              Verified <time datetime={rec.isoDate}>{rec.displayDate}</time>
+            </span>
+          </div>
+          {rec.sources.length > 0 && (
+            <p class="mt-2 text-sm text-gray-500">
+              Official sources:{' '}
+              {rec.sources.map((src, i) => (
+                <>
+                  {i > 0 && <span aria-hidden="true">, </span>}
+                  <a
+                    href={src.url}
+                    rel="nofollow noopener"
+                    target="_blank"
+                    class="text-primary hover:underline break-words"
+                  >{src.label}</a>
+                </>
+              ))}
+            </p>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>

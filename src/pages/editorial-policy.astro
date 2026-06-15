@@ -1,8 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { resolveRecentlyVerified } from '../lib/recent-verified.mjs';
 
 const description =
   'How ChinaGuide.ai sources and verifies its guides: official sources first, dated re-verification, a corrections channel, and AI-assistance disclosure.';
+
+// The freshest slice of the public verification record, to make the "dated
+// verification" promise concrete on the policy page itself. Full list at /updates/.
+const [guides, apps] = await Promise.all([
+  getCollection('guides', ({ data }) => data.status === 'audited'),
+  getCollection('apps', ({ data }) => data.status === 'audited'),
+]);
+const recentlyVerified = resolveRecentlyVerified([...guides, ...apps], { limit: 8 });
 ---
 
 <BaseLayout title="Editorial Policy" description={description}>
@@ -53,6 +63,19 @@ const description =
           outdated advice up alongside a new post.
         </li>
       </ul>
+
+      <h3>Recently verified</h3>
+      <p>The most recent re-checks against sources — the same dates shown on each page:</p>
+      <ul>
+        {recentlyVerified.map((rec) => (
+          <li>
+            <a href={rec.url}>{rec.title}</a> — verified {rec.displayDate}
+          </li>
+        ))}
+      </ul>
+      <p>
+        <a href="/updates/">See the full verification record &rarr;</a>
+      </p>
 
       <h2>Corrections</h2>
       <p>
