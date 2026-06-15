@@ -1,10 +1,16 @@
 ---
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
 date: 2026-05-13
-last_verified: 2026-06-09
+last_verified: 2026-06-15
 verified_against:
   - https://ourwander.com/p/worst-time-to-visit-china
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
+  - https://chinasurvivalkit.com/blog/china-summer-heat
+  - https://en.wikipedia.org/wiki/East_Asian_rainy_season
+  - https://www.hko.gov.hk/en/cis/climahk.htm
+  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202512/t20251203_11765346.htm
+  - https://www.trip.com/guide/info/china-arrival-card.html
+  - https://en.wikipedia.org/wiki/Qinling%E2%80%93Huaihe_Line
 sources:
   - raw/china-practical-guide-2026.md
   - raw/realchinaguide-best-times-2026.md
@@ -23,20 +29,35 @@ related:
   - wiki/concepts/language-barrier.md
   - wiki/concepts/city-guides.md
 volatility: low
-description: "Planning a China trip: best seasons, how many days, what to pre-book versus buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3 cities. Updated May 2026."
-faqs:
-  - q: "How many days should I spend in China?"
-    a: "Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across too many places — slowing down reduces burnout and absorbs delays from weather or illness."
-  - q: "What should I pre-book versus buy on arrival?"
-    a: "Pre-book only things that sell out — the Forbidden City, Terracotta Warriors, peak-season long-distance trains. Buy most attraction tickets and short trips same-day via Alipay to stay flexible."
-  - q: "What is the best season to visit China?"
-    a: "Spring (April-May) and autumn (September-October) offer the best weather. Avoid Golden Week (first week of October) and Lunar New Year, when crowds and prices surge."
-  - q: "What is a realistic daily budget for China?"
-    a: "Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+ for high-end, with Tier-1 cities (Beijing, Shanghai) costing more than smaller ones."
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-05-13
+  page_audit: 2026-06-15
+  citation_check: 2026-06-15
+description: >-
+  Planning a China trip: best seasons, how many days, what to pre-book versus
+  buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3
+  cities. Updated May 2026.
+faqs:
+  - q: How many days should I spend in China?
+    a: >-
+      Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across
+      too many places — slowing down reduces burnout and absorbs delays from
+      weather or illness.
+  - q: What should I pre-book versus buy on arrival?
+    a: >-
+      Pre-book only things that sell out — the Forbidden City, Terracotta
+      Warriors, peak-season long-distance trains. Buy most attraction tickets
+      and short trips same-day via Alipay to stay flexible.
+  - q: What is the best season to visit China?
+    a: >-
+      Spring (April-May) and autumn (September-October) offer the best weather.
+      Avoid Golden Week (first week of October) and Lunar New Year, when crowds
+      and prices surge.
+  - q: What is a realistic daily budget for China?
+    a: >-
+      Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+
+      for high-end, with Tier-1 cities (Beijing, Shanghai) costing more than
+      smaller ones.
 category: guide
 ---
 
@@ -80,11 +101,10 @@ Three national holidays cause extreme domestic travel surges that directly affec
 |---|---|
 | **April–May** | Optimal in most regions; spring weather, reasonable crowds |
 | **Late September** (before Oct 1) | Excellent; autumn weather, crowds drop immediately after Golden Week ends |
-| **June–August** | Hot; "furnace cities" (Chongqing, Wuhan, Nanjing) reach 40°C+; typhoons affect southern coasts July–October; plum rain (梅雨) floods parts of eastern China May–July |
-| **November–February** | Fewer crowds at outdoor attractions; northern China −25°C; central cities (Wuhan, Xi'an) have little indoor heating infrastructure despite cold temperatures; comfortable in Yunnan and Hainan |
+| **June–August** | Hot; "furnace cities" (Chongqing, Wuhan, Nanjing) reach 40°C+; typhoons affect southern coasts mainly July–September (season runs May–November); plum rain (梅雨) peaks over the lower Yangtze around mid-June to early July |
+| **November–February** | Fewer crowds at outdoor attractions; northern China −25°C; cities just south of the Qinling–Huai heating line (e.g. Wuhan, Chengdu, Shanghai) get cold and damp but lack the municipal central heating that the north has indoors; comfortable in Yunnan and Hainan |
 
-<!-- Unverified: from summary, needs citation check -->
-**Regional weather detail:** China's "furnace cities" (火炉城市) — Chongqing, Wuhan, Nanjing, and Changsha — regularly exceed 40°C in July-August with high humidity. Plum rain season (梅雨, méiyǔ) brings continuous rainfall and flooding risk to eastern China (Shanghai, Hangzhou, Nanjing, Wuhan) from approximately May through July. Southern coastal cities (Guangzhou, Shenzhen, Xiamen, Haikou) face typhoon risk July-October, with cancellations of flights and ferry services during active storms. (Source: realchinaguide.com 2026.)
+**Regional weather detail:** The Yangtze-basin "furnace cities" (火炉城市) — Chongqing, Wuhan, and Nanjing — see June–August average highs of roughly 32–38°C with oppressive humidity, and "feels-like" temperatures regularly above 40°C (source: chinasurvivalkit.com, accessed June 2026). Plum-rain season (梅雨, méiyǔ) settles over the lower Yangtze (Shanghai, Hangzhou, Nanjing, Wuhan) from about mid-June to early July, bringing persistent heavy rain and flood risk as the East Asian rain belt moves north across eastern China between May and July. On the southern coast (Guangzhou, Shenzhen, Xiamen, Haikou), tropical cyclones can occur May–November and are most frequent July–September (per Hong Kong Observatory climate data, accessed June 2026) — expect flight and ferry cancellations while a storm is active.
 
 ### If You Must Travel During a Peak Period
 
@@ -110,8 +130,7 @@ Three national holidays cause extreme domestic travel surges that directly affec
 
 ### Regional Cost Context
 
-<!-- Unverified: from summary, needs citation check -->
-China is mid-tier in Asia for travel costs: cheaper than Japan, South Korea, and Singapore; similar to Thailand; more expensive than Vietnam, Laos, and Cambodia. Compared to Europe, hotels are approximately 40-60% cheaper for equivalent quality, local food is 60-80% cheaper, and public transport is 70-90% cheaper. (Source: realchinaguide.com 2026 — requires independent verification.)
+China is broadly mid-tier in Asia for travel costs: travelers consistently report it cheaper than Japan, South Korea, or Singapore, roughly comparable to Thailand, and more expensive than Vietnam, Laos, or Cambodia. Accommodation, food, and local transport are also widely reported as substantially cheaper than Western Europe at equivalent quality. (Traveler-reported comparisons as of 2026, not independently verified — the gap varies considerably by city, season, and travel style.)
 
 ### Key Transport and Attraction Reference Prices
 
@@ -138,8 +157,7 @@ The **240-hour visa-free transit policy** (10 days for 55 qualifying nationaliti
 
 ### Sample 14-Day Budget (Two People, Mid-Range, 2025 Prices)
 
-<!-- Unverified: from summary, needs citation check -->
-A sample mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. Detailed day-by-day itineraries with actual costs are available in the source summaries (see `wiki/summaries/realchinaguide-14day-itinerary-2026.md` and `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`). (Source: realchinaguide.com 2026.)
+One published worked example (2025 prices) for a mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. These figures come from a traveler-guide write-up in this page's sources and have not been independently verified; treat them as one data point, not a quote. They are, however, consistent with the budget table above — the all-in daily rate lands inside the mid-range band. Detailed day-by-day itineraries are in `wiki/summaries/realchinaguide-14day-itinerary-2026.md` and `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`.
 
 ## Should I travel independently or with a guide in China?
 
@@ -176,7 +194,6 @@ Xinjiang is technically open to foreign tourists without a special permit (unlik
 
 ## What should I prepare before a China trip?
 
-<!-- Unverified: from summary, needs citation check -->
 A structured countdown approach helps ensure nothing is missed before departure:
 
 **30 days before:**
@@ -191,15 +208,15 @@ A structured countdown approach helps ensure nothing is missed before departure:
 - Book attraction tickets for time-sensitive sites (Forbidden City, Panda Base)
 - Download offline maps (Amap or Google Maps for offline use with VPN)
 - Save hotel addresses in Chinese characters
-- Complete digital arrival card at s.nia.gov.cn (available 72 hours before boarding)
 
 **1 day before:**
+- Fill in the digital arrival card online at s.nia.gov.cn (official online channel since November 20, 2025, per PRC embassy notices; travel guidance recommends completing it 24–72 hours before arrival — it can also be done on arrival at the border, at the cost of queueing)
 - Install eSIM profile (do not toggle data on)
 - Confirm all bookings
 - Withdraw a small amount of RMB if possible, or plan airport ATM withdrawal
 - Screenshot essential information (hotel address, emergency numbers, embassy contact)
 
-(Source: realchinaguide.com 2026; partially covered in [[wiki/concepts/internet-connectivity.md]]. Detailed timeline in `wiki/summaries/realchinaguide-pretrip-preparation-2026.md`.)
+(Checklist structure follows a traveler-guide source in this page's sources list; app, payment, and connectivity setup steps are covered in detail in [[wiki/concepts/internet-connectivity.md]] and [[wiki/concepts/sim-card.md]]; arrival-card details per PRC embassy notice and trip.com guide, accessed June 2026. Detailed timeline in `wiki/summaries/realchinaguide-pretrip-preparation-2026.md`.)
 
 ## See Also
 

@@ -19,20 +19,42 @@ related:
   - wiki/concepts/residence-registration.md
   - wiki/concepts/work-permit.md
 volatility: high
-description: "China visa and entry options in 2026: 30-day visa-free for 50 countries (including Japan, South Korea, the UK and Canada), 240-hour transit-free at 65 ports for US citizens, the tourist L visa, and entry requirements. Updated June 2026."
-faqs:
-  - q: "Which countries can enter China visa-free in 2026?"
-    a: "As of June 2026, 50 countries qualify for 30-day unilateral visa-free entry — most of the EU, the UK, Canada, Australia, New Zealand, plus Japan and the Republic of Korea (South Korea). Always confirm your nationality's current status on the National Immigration Administration site before booking."
-  - q: "Can US citizens visit China without a visa?"
-    a: "US passport holders are not on the 30-day unilateral visa-free list, but can use the 240-hour (10-day) transit-free policy at 65 ports when travelling onward to a third country, and may enter Hainan visa-free. For an ordinary mainland tourist trip, a tourist (L) visa is required."
-  - q: "What is the 240-hour transit-free policy?"
-    a: "It lets eligible travelers from 55 countries transit China for up to 240 hours (10 days) without a visa, provided they enter and exit through one of the 65 qualifying ports, stay within the 24 permitted provincial-level regions, and hold an onward ticket to a third country."
-  - q: "How long must my passport be valid to enter China?"
-    a: "For a visa application your passport should be valid for at least six months beyond your planned stay and have blank visa pages. For the 240-hour transit scheme, embassies generally advise at least three months of remaining validity — confirm the exact requirement with your nearest Chinese embassy or consulate."
 review:
   status: audited
   page_audit: 2026-06-09
   citation_check: null
+description: >-
+  China visa and entry options in 2026: 30-day visa-free for 50 countries
+  (including Japan, South Korea, the UK and Canada), 240-hour transit-free at 65
+  ports for US citizens, the tourist L visa, and entry requirements. Updated
+  June 2026.
+faqs:
+  - q: Which countries can enter China visa-free in 2026?
+    a: >-
+      As of June 2026, 50 countries qualify for 30-day unilateral visa-free
+      entry — most of the EU, the UK, Canada, Australia, New Zealand, plus Japan
+      and the Republic of Korea (South Korea). Always confirm your nationality's
+      current status on the National Immigration Administration site before
+      booking.
+  - q: Can US citizens visit China without a visa?
+    a: >-
+      US passport holders are not on the 30-day unilateral visa-free list, but
+      can use the 240-hour (10-day) transit-free policy at 65 ports when
+      travelling onward to a third country, and may enter Hainan visa-free. For
+      an ordinary mainland tourist trip, a tourist (L) visa is required.
+  - q: What is the 240-hour transit-free policy?
+    a: >-
+      It lets eligible travelers from 55 countries transit China for up to 240
+      hours (10 days) without a visa, provided they enter and exit through one
+      of the 65 qualifying ports, stay within the 24 permitted provincial-level
+      regions, and hold an onward ticket to a third country.
+  - q: How long must my passport be valid to enter China?
+    a: >-
+      For a visa application your passport should be valid for at least six
+      months beyond your planned stay and have blank visa pages. For the
+      240-hour transit scheme, embassies generally advise at least three months
+      of remaining validity — confirm the exact requirement with your nearest
+      Chinese embassy or consulate.
 category: guide
 ---
 

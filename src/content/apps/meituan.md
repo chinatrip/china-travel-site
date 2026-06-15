@@ -14,20 +14,34 @@ related:
   - wiki/entities/wechat.md
   - wiki/entities/eleme.md
 volatility: medium
-description: "Meituan is China's super-app for food delivery, hotels, and bike rental, often 20-30% cheaper than international OTAs — how foreigners register, pay, and order. Updated May 2026."
-faqs:
-  - q: "What is Meituan used for?"
-    a: "Meituan is a super-app for food delivery, restaurant deals, hotel and attraction booking, and bike rental — often 20-30% cheaper than international platforms."
-  - q: "Can foreigners use Meituan?"
-    a: "Yes, though registration may require a Chinese phone number for some features. Pay with Alipay or WeChat Pay, and provide your address in Chinese for delivery."
-  - q: "Is Meituan cheaper than Trip.com for hotels?"
-    a: "Often yes for domestic hotels and local deals, but it's Chinese-first and lists fewer foreigner-licensed properties. For guaranteed foreign-friendly bookings, cross-check Trip.com."
-  - q: "Does Meituan have an English version?"
-    a: "Not a full one — it's largely Chinese. Use your phone's screen translation to navigate ordering and checkout."
 review:
   status: audited
   page_audit: 2026-06-09
   citation_check: null
+description: >-
+  Meituan is China's super-app for food delivery, hotels, and bike rental, often
+  20-30% cheaper than international OTAs — how foreigners register, pay, and
+  order. Updated May 2026.
+faqs:
+  - q: What is Meituan used for?
+    a: >-
+      Meituan is a super-app for food delivery, restaurant deals, hotel and
+      attraction booking, and bike rental — often 20-30% cheaper than
+      international platforms.
+  - q: Can foreigners use Meituan?
+    a: >-
+      Yes, though registration may require a Chinese phone number for some
+      features. Pay with Alipay or WeChat Pay, and provide your address in
+      Chinese for delivery.
+  - q: Is Meituan cheaper than Trip.com for hotels?
+    a: >-
+      Often yes for domestic hotels and local deals, but it's Chinese-first and
+      lists fewer foreigner-licensed properties. For guaranteed foreign-friendly
+      bookings, cross-check Trip.com.
+  - q: Does Meituan have an English version?
+    a: >-
+      Not a full one — it's largely Chinese. Use your phone's screen translation
+      to navigate ordering and checkout.
 category: app
 ---
 
