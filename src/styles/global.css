@@ -9,3 +9,69 @@
   --color-surface: #fafafa;
   --color-muted: #6b7280;
 }
+
+/*
+ * Accessibility fallbacks (a11y). These live in the single global stylesheet
+ * so they apply site-wide via BaseLayout's import — no per-component changes.
+ */
+
+/*
+ * Respect "reduce motion": neutralise every transition/transform/animation
+ * (including all Tailwind utilities such as GuideCard's hover:-translate-y)
+ * for users who request reduced motion. Durations drop to ~0 rather than 0 so
+ * animation/transition `end` events still fire, looping animations run once,
+ * and smooth scrolling becomes instant.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /*
+   * Collapsing transition-duration alone does NOT cancel a hover transform —
+   * the element still jumps instantly to its offset position. So explicitly
+   * zero out transforms on interactive (hover/focus/active) affordance states,
+   * scoped to those states only so any base-state layout transform is left
+   * untouched. This makes GuideCard's hover:-translate-y a no-op without
+   * editing the component.
+   *
+   * The reset overrides Tailwind's transform engine at its source: Tailwind v4
+   * applies translate/rotate/skew via these custom properties (e.g. the native
+   * `translate` property reads --tw-translate-x/y), so zeroing the properties
+   * here neutralises the offset. This is deliberate over a plain
+   * `transform: none`, which (a) would not override Tailwind's individual
+   * `translate:` property per spec, and (b) gets folded away by the CSS
+   * minifier — whereas custom-property resets survive the build intact.
+   */
+  *:hover,
+  *:focus,
+  *:active {
+    --tw-translate-x: 0 !important;
+    --tw-translate-y: 0 !important;
+    --tw-translate-z: 0 !important;
+    --tw-rotate-x: 0 !important;
+    --tw-rotate-y: 0 !important;
+    --tw-rotate-z: 0 !important;
+    --tw-skew-x: 0 !important;
+    --tw-skew-y: 0 !important;
+    /* And neutralise the native individual + shorthand properties too. */
+    scale: 1 !important;
+    rotate: none !important;
+    transform: none !important;
+  }
+}
+
+/*
+ * Visible keyboard focus ring. :focus-visible (not :focus) keeps the ring for
+ * keyboard navigation while leaving mouse clicks unchanged. Uses the site
+ * primary token for a consistent, high-contrast outline with breathing room.
+ */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
