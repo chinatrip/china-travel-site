@@ -5,6 +5,7 @@ import Badge from '../components/Badge.astro';
 import GuideCard from '../components/GuideCard.astro';
 import { parseRelated } from '../lib/related.mjs';
 import { filterExternalSources, formatSourceLabel } from '../lib/trust-signals.mjs';
+import { SUPPORT_CONTACT_POINT } from '../lib/home-schema.mjs';
 
 interface Props {
   title: string;
@@ -92,7 +93,9 @@ const canonicalPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `$
 const canonicalURL = new URL(canonicalPath, Astro.site).href;
 const defaultImage = new URL('/og-default.png', Astro.site).href;
 
-// Single Organization entity, referenced site-wide via @id.
+// Single Organization entity, referenced site-wide via @id. @id/name/url/logo
+// mirror home-schema.mjs's buildOrganizationSchema; contactPoint is shared from
+// there (#38) so this inline node and the homepage entity stay in sync.
 const organization = {
   "@type": "Organization",
   "@id": "https://chinaguide.ai/#organization",
@@ -102,6 +105,7 @@ const organization = {
     "@type": "ImageObject",
     "url": defaultImage,
   },
+  "contactPoint": SUPPORT_CONTACT_POINT,
 };
 
 const articleSchema = {
