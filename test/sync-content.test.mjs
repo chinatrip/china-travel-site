@@ -175,6 +175,42 @@ test('mergeFrontmatter: multi-line faqs with BLANK LINES between entries → ful
   assert.deepEqual(fmBlock.match(/^---$/gm), ['---', '---'], 'exactly 2 delimiter lines');
 });
 
+test('mergeFrontmatter: multi-line faqs with a top-level # COMMENT between entries → fully stripped, valid YAML', () => {
+  // Regression (PR #71 review iter 2): the stop condition `^\S` also matched a column-0
+  // YAML comment (`# ...`), mistaking it for the next top-level key — so a legal faqs block
+  // with a comment between entries got truncated and the tail entries leaked back as
+  // orphaned indented lines → "bad indentation of a mapping entry". A column-0 comment
+  // belongs to the field block and must be consumed; only `^[^\s#]` (column-0, non-blank,
+  // non-comment) ends the field.
+  const wikiWithCommentedFaqs = WIKI_V1.replace(
+    '---\n\n# Payments',
+    'faqs:\n  - q: "Old wiki Q1?"\n    a: "Old wiki A1."\n# editor note: revisit Q2 wording\n  - q: "Old wiki Q2?"\n    a: "Old wiki A2."\n---\n\n# Payments',
+  );
+  const { fmBlock, fieldConflicts } = mergeFrontmatter(SITE_CURRENT, wikiWithCommentedFaqs, { defaultCategory: 'guide' });
+
+  // divergence still reported, carrying the full multi-entry wiki value (comment ignored by parser)
+  const faqConflict = fieldConflicts.find((fc) => fc.field === 'faqs');
+  assert.ok(faqConflict, 'faqs divergence reported');
+  assert.deepEqual(faqConflict.wikiValue, [
+    { q: 'Old wiki Q1?', a: 'Old wiki A1.' },
+    { q: 'Old wiki Q2?', a: 'Old wiki A2.' },
+  ]);
+
+  // (c) parses cleanly — no "bad indentation" from orphaned tail entries
+  const merged = matter(fmBlock).data;
+  // (a) site version wins
+  assert.equal(merged.faqs.length, 1);
+  assert.equal(merged.faqs[0].q, 'Do foreign cards work in China?');
+  // (b) no residue of ANY wiki faqs entry (parsed + raw), and the in-block comment is gone too
+  assert.ok(!merged.faqs.some((f) => f.q === 'Old wiki Q1?' || f.q === 'Old wiki Q2?'), 'wiki faqs fully stripped');
+  assert.ok(!fmBlock.includes('Old wiki Q1?') && !fmBlock.includes('Old wiki Q2?'), 'no orphaned wiki faqs lines');
+  assert.ok(!fmBlock.includes('editor note: revisit Q2 wording'), 'in-faqs comment stripped with the block');
+  assert.equal((fmBlock.match(/^faqs:/gm) || []).length, 1, 'exactly one faqs key');
+  // (d) block structurally sound
+  assert.ok(fmBlock.includes('title: Payments in China'));
+  assert.deepEqual(fmBlock.match(/^---$/gm), ['---', '---'], 'exactly 2 delimiter lines');
+});
+
 test('mergeFrontmatter: identical wiki value → silent (no noise when wiki adopted the site value)', () => {
   const siteDesc = matter(SITE_CURRENT).data.description;
   const wikiSameDesc = WIKI_V1.replace('---\n\n# Payments', `description: ${siteDesc}\n---\n\n# Payments`);

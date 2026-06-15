@@ -88,12 +88,18 @@ export function splitFrontmatter(raw) {
  * We do NOT re-dump the block through gray-matter: a round-trip reorders keys, normalizes
  * quote style and flow vs. block collections, and would turn every sync into a whole-block
  * diff. Instead we delete only the matched field's lines. A field starts at a top-level key
- * line `^field:` and runs until the NEXT non-empty column-0 line (`^\S` — either the next
- * top-level key or the closing `---`). Indented child lines (`^\s+\S`) AND blank lines
- * (`^\s*$`) belong to the field and are consumed: a blank line must NOT terminate the scan,
- * or a legal multi-entry block with blank lines between items (e.g. `faqs:` whose `- q:`/`a:`
- * entries are separated by blank lines) would be truncated, leaking orphaned indented lines
- * back into the block → invalid YAML ("bad indentation of a mapping entry").
+ * line `^field:` and runs until the NEXT real top-level key / block terminator — matched as
+ * `^[^\s#]` (column 0, non-blank, NOT a comment). Three line kinds belong to the field and
+ * are consumed: indented child lines (`^\s+\S`), blank lines (`^\s*$`), and column-0 YAML
+ * comments (`^#…`). Anything that terminates the scan too early truncates a legal multi-entry
+ * block (e.g. `faqs:` whose `- q:`/`a:` entries are separated by blank lines OR an editorial
+ * `# comment`), leaking orphaned indented lines back into the block → invalid YAML ("bad
+ * indentation of a mapping entry"). Both a blank line and a column-0 `#` comment had each, in
+ * turn, been mistaken for the field end (PR #71 review iters 1 & 2).
+ *
+ * Scope: our frontmatter has no block scalars (`|`/`>`) and no column-0 value continuations —
+ * faqs answers are single-line quoted strings — so "column-0, non-blank, non-comment ⇒ next
+ * key" holds. A block-scalar value would need a deeper YAML-aware scan; we don't emit those.
  *
  * @param {string} fmBlock  full frontmatter block incl. delimiters (`---\n...\n---\n`)
  * @param {string} field    top-level field name to remove
@@ -108,13 +114,14 @@ export function stripTopLevelField(fmBlock, field) {
   while (i < lines.length) {
     if (keyRe.test(lines[i])) {
       // Skip the key line, then consume everything belonging to this field: indented child
-      // lines AND blank lines (which may separate multi-line entries). Stop only at the next
-      // non-empty column-0 line (^\S) — the next top-level key or the closing `---`.
+      // lines, blank lines (which may separate multi-line entries), and column-0 comments.
+      // Stop only at the next REAL top-level key / closing `---`: column 0, non-blank, and
+      // NOT a `#` comment (^[^\s#]).
       i++;
       while (i < lines.length) {
         const l = lines[i].replace(/\r$/, ''); // tolerate CRLF blocks
-        if (/^\S/.test(l)) break; // next top-level key or closing delimiter → leave for outer loop
-        i++; // indented child OR blank line within the field → consume
+        if (/^[^\s#]/.test(l)) break; // next top-level key or closing delimiter → leave for outer loop
+        i++; // indented child, blank line, OR column-0 comment within the field → consume
       }
       continue;
     }
