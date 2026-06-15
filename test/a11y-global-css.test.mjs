@@ -39,6 +39,30 @@ test('source global.css has a prefers-reduced-motion: reduce reset', () => {
   assert.match(flatSource, /\*\s*,\s*\*::before\s*,\s*\*::after/);
 });
 
+test('source global.css neutralises hover affordance transforms under reduced-motion', () => {
+  // Collapsing transition-duration alone still lets hover transforms (e.g.
+  // GuideCard's hover:-translate-y) *instantly* shift the element. To truly
+  // reduce motion we must zero out the transform on the interactive states.
+  //
+  // Tailwind v4 applies the offset via the individual CSS `translate` property
+  // (which reads --tw-translate-x/y), NOT the legacy `transform` shorthand. A
+  // bare `transform: none` would therefore neither override it nor survive the
+  // CSS minifier (which folds identity transform declarations away). So the
+  // robust reset is to override Tailwind's --tw-translate-* custom properties,
+  // which the minifier cannot merge into a shorthand.
+  //
+  // The selector may be a list (e.g. `*:hover, *:focus, *:active`), so allow
+  // anything but braces between `:hover` and the rule's opening `{`.
+  const hoverRule = flatSource.match(/:hover[^{}]*{[^}]*}/);
+  assert.ok(hoverRule, 'missing a :hover transform-reset rule under reduced-motion');
+  const rule = hoverRule[0];
+  // Zero out the translate the GuideCard hover actually uses, both axes.
+  assert.match(rule, /--tw-translate-x:\s*0\s*!important/, ':hover should zero --tw-translate-x');
+  assert.match(rule, /--tw-translate-y:\s*0\s*!important/, ':hover should zero --tw-translate-y');
+  // And neutralise the native transform shorthand for any non-Tailwind usage.
+  assert.match(rule, /transform:\s*none\s*!important/, ':hover should reset transform');
+});
+
 test('source global.css defines a :focus-visible outline ring', () => {
   assert.match(flatSource, /:focus-visible\s*{[^}]*}/, 'missing :focus-visible rule');
   const rule = flatSource.match(/:focus-visible\s*{[^}]*}/)[0];
@@ -59,5 +83,6 @@ test('built dist CSS keeps both a11y blocks (skipped if no dist build)', { skip:
   const dist = squash(cssFiles.map((f) => readFileSync(f, 'utf8')).join('\n'));
   assert.match(dist, /@media\s*\(\s*prefers-reduced-motion:\s*reduce\s*\)/, 'reduced-motion block missing from built CSS');
   assert.match(dist, /animation-duration:\s*0?\.01ms\s*!important/, 'reduced-motion duration reset missing from built CSS');
+  assert.match(dist, /:hover[^{}]*{[^}]*--tw-translate-y:\s*0\s*!important/, 'hover transform-reset (--tw-translate-y) missing from built CSS');
   assert.match(dist, /:focus-visible/, ':focus-visible rule missing from built CSS');
 });

@@ -31,6 +31,39 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /*
+   * Collapsing transition-duration alone does NOT cancel a hover transform —
+   * the element still jumps instantly to its offset position. So explicitly
+   * zero out transforms on interactive (hover/focus/active) affordance states,
+   * scoped to those states only so any base-state layout transform is left
+   * untouched. This makes GuideCard's hover:-translate-y a no-op without
+   * editing the component.
+   *
+   * The reset overrides Tailwind's transform engine at its source: Tailwind v4
+   * applies translate/rotate/skew via these custom properties (e.g. the native
+   * `translate` property reads --tw-translate-x/y), so zeroing the properties
+   * here neutralises the offset. This is deliberate over a plain
+   * `transform: none`, which (a) would not override Tailwind's individual
+   * `translate:` property per spec, and (b) gets folded away by the CSS
+   * minifier — whereas custom-property resets survive the build intact.
+   */
+  *:hover,
+  *:focus,
+  *:active {
+    --tw-translate-x: 0 !important;
+    --tw-translate-y: 0 !important;
+    --tw-translate-z: 0 !important;
+    --tw-rotate-x: 0 !important;
+    --tw-rotate-y: 0 !important;
+    --tw-rotate-z: 0 !important;
+    --tw-skew-x: 0 !important;
+    --tw-skew-y: 0 !important;
+    /* And neutralise the native individual + shorthand properties too. */
+    scale: 1 !important;
+    rotate: none !important;
+    transform: none !important;
+  }
 }
 
 /*
