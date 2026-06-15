@@ -99,18 +99,41 @@ jobs:
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # Runs on `always()` so the single marker comment ALWAYS reflects the
+      # CURRENT commit. With `if: outcome == success` a later failing push would
+      # leave a stale "✅ ready" comment (same marker) pointing at an old version.
       - name: Comment preview URL on PR
-        if: steps.preview.outcome == 'success'
+        if: always()
         uses: actions/github-script@v7
         env:
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          PREVIEW_OUTCOME: ${{ steps.preview.outcome }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           # `versions upload` doesn't fill deployment-url; use the deterministic stable alias.
           STABLE_URL: https://pr-${{ github.event.number }}-china-travel-site.yiyang-pku.workers.dev
         with:
           script: |
             const marker = '<!-- ci-preview-bot -->';
             const url = process.env.STABLE_URL;
-            // @1Feng — see note: if the PR author IS this user, the mention won't notify.
-            const body = `${marker}\n✅ **CI 通过,预览就绪**:${url}\n\n@1Feng 可审阅合并。_(更新于 ${new Date().toISOString()})_`;
+            const tests = process.env.TESTS_OUTCOME;
+            const preview = process.env.PREVIEW_OUTCOME;
+            const hasToken = (process.env.CF_TOKEN || '') !== '';
+            const stamp = `_(更新于 ${new Date().toISOString()})_`;
+            // Build the body from the CURRENT commit's status (single source of truth).
+            let body;
+            if (tests !== 'success') {
+              body = `${marker}\n❌ **CI 失败** — 本次提交测试/构建未通过,预览不可用。见 Actions logs。\n\n${stamp}`;
+            } else if (preview === 'success') {
+              // @1Feng — see note: if the PR author IS this user, the mention won't notify.
+              body = `${marker}\n✅ **CI 通过,预览就绪**:${url}\n\n@1Feng 可审阅合并。${stamp}`;
+            } else if (preview === 'failure') {
+              body = `${marker}\n⚠️ **CI 通过,但预览部署失败** — 见 Actions logs。\n\n${stamp}`;
+            } else if (!hasToken) {
+              body = `${marker}\n✅ **CI 通过**;预览 URL 未配置(\`CLOUDFLARE_API_TOKEN\` 未设)。\n\n${stamp}`;
+            } else {
+              // tests green + token set but preview neither success/failure (unexpected).
+              body = `${marker}\n✅ **CI 通过**;预览状态未知(${preview || 'n/a'})— 见 Actions logs。\n\n${stamp}`;
+            }
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number,
             });
