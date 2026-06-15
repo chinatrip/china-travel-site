@@ -88,9 +88,12 @@ export function splitFrontmatter(raw) {
  * We do NOT re-dump the block through gray-matter: a round-trip reorders keys, normalizes
  * quote style and flow vs. block collections, and would turn every sync into a whole-block
  * diff. Instead we delete only the matched field's lines. A field starts at a top-level key
- * line `^field:` and runs until the next top-level key (`^\S`, i.e. a non-indented line) or
- * the closing `---`/end of block — so multi-line values (e.g. `faqs:` + indented `- q:` /
- * `a:` items) are removed whole.
+ * line `^field:` and runs until the NEXT non-empty column-0 line (`^\S` — either the next
+ * top-level key or the closing `---`). Indented child lines (`^\s+\S`) AND blank lines
+ * (`^\s*$`) belong to the field and are consumed: a blank line must NOT terminate the scan,
+ * or a legal multi-entry block with blank lines between items (e.g. `faqs:` whose `- q:`/`a:`
+ * entries are separated by blank lines) would be truncated, leaking orphaned indented lines
+ * back into the block → invalid YAML ("bad indentation of a mapping entry").
  *
  * @param {string} fmBlock  full frontmatter block incl. delimiters (`---\n...\n---\n`)
  * @param {string} field    top-level field name to remove
@@ -104,17 +107,14 @@ export function stripTopLevelField(fmBlock, field) {
   let i = 0;
   while (i < lines.length) {
     if (keyRe.test(lines[i])) {
-      // Skip the key line and any subsequent indented (child) or blank-then-child lines,
-      // up to the next top-level key or the closing delimiter.
+      // Skip the key line, then consume everything belonging to this field: indented child
+      // lines AND blank lines (which may separate multi-line entries). Stop only at the next
+      // non-empty column-0 line (^\S) — the next top-level key or the closing `---`.
       i++;
       while (i < lines.length) {
         const l = lines[i].replace(/\r$/, ''); // tolerate CRLF blocks
-        if (l === '---' || l === '') break; // closing delimiter / block terminator → handled by outer
-        if (/^\s/.test(l)) {
-          i++;
-          continue;
-        } // indented child of this field
-        break; // next top-level key
+        if (/^\S/.test(l)) break; // next top-level key or closing delimiter → leave for outer loop
+        i++; // indented child OR blank line within the field → consume
       }
       continue;
     }
