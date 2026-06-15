@@ -9,21 +9,38 @@ verified_against:
   - https://www.travelchinaguide.com/china-trains/beijing-shanghai-highspeed.htm
   - https://www.chinadiscovery.com/chinese-visa/240-hour-visa-free-transit.html
 volatility: low
-description: "Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin and more — top sights, how many days to spend, best seasons, and getting around. Updated June 2026."
-faqs:
-  - q: "Which cities should I visit on a first trip to China?"
-    a: "Most first-timers do Beijing (Great Wall, Forbidden City), Shanghai (modern China) and Xi'an (Terracotta Warriors), adding Chengdu (pandas) or Guilin/Yangshuo (scenery) if time allows. About 4-5 days per major city is comfortable."
-  - q: "How many days do I need in China?"
-    a: "Two weeks lets you cover 3-4 cities without rushing. On a short visa-free transit trip, plan around your time limit — the 240-hour transit policy now allows travel across multiple provinces, while the older 144-hour transit typically confines you to a single region."
-  - q: "What is the best time of year to visit China?"
-    a: "Spring (April-May) and autumn (September-October) have the most pleasant weather. Avoid Golden Week (early October) and Lunar New Year, when domestic crowds and prices peak."
-  - q: "How do I travel between Chinese cities?"
-    a: "High-speed rail is fast, frequent and connects all major cities — book on 12306. Flights suit very long distances; within cities use the metro, DiDi and Amap."
-category: guide
 review:
   status: audited
   page_audit: 2026-06-09
   notes: "City highlights and recommended days are stable facts. Best seasons cross-checked against general climate data. HSR time corrected during lint."
+description: >-
+  Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin
+  and more — top sights, how many days to spend, best seasons, and getting
+  around. Updated June 2026.
+faqs:
+  - q: Which cities should I visit on a first trip to China?
+    a: >-
+      Most first-timers do Beijing (Great Wall, Forbidden City), Shanghai
+      (modern China) and Xi'an (Terracotta Warriors), adding Chengdu (pandas) or
+      Guilin/Yangshuo (scenery) if time allows. About 4-5 days per major city is
+      comfortable.
+  - q: How many days do I need in China?
+    a: >-
+      Two weeks lets you cover 3-4 cities without rushing. On a short visa-free
+      transit trip, plan around your time limit — the 240-hour transit policy
+      now allows travel across multiple provinces, while the older 144-hour
+      transit typically confines you to a single region.
+  - q: What is the best time of year to visit China?
+    a: >-
+      Spring (April-May) and autumn (September-October) have the most pleasant
+      weather. Avoid Golden Week (early October) and Lunar New Year, when
+      domestic crowds and prices peak.
+  - q: How do I travel between Chinese cities?
+    a: >-
+      High-speed rail is fast, frequent and connects all major cities — book on
+      12306. Flights suit very long distances; within cities use the metro, DiDi
+      and Amap.
+category: guide
 ---
 
 ## Overview
