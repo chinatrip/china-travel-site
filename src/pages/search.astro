@@ -5,7 +5,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Search" description="Search all China travel guides, app tutorials, and practical tips for foreigners." noindex>
   <div class="max-w-3xl mx-auto px-4 sm:px-6 py-10">
     <h1 class="text-3xl font-bold text-secondary mb-6">Search</h1>
-    <div id="search"></div>
+    <!--
+      pagefind injects an <input> with only a placeholder/title for its
+      accessible name — no <label>, no aria-label, no landmark. Wrapping the
+      mount point in <search aria-label> gives keyboard and screen-reader users
+      a named search landmark to jump to. (<search> has an implicit
+      role="search"; the aria-label is its accessible name.)
+    -->
+    <search aria-label="Search ChinaGuide.ai">
+      <div id="search"></div>
+    </search>
   </div>
 
   <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
