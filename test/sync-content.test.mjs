@@ -105,14 +105,40 @@ test('mergeFrontmatter injects default category for pages that never had one', (
   assert.equal(matter(fmBlock).data.category, 'app');
 });
 
-test('mergeFrontmatter: diverging wiki value wins + is reported, no duplicate key', () => {
+test('mergeFrontmatter: diverging → site value wins + is reported, no duplicate key', () => {
   const wikiWithDesc = WIKI_V1.replace('---\n\n# Payments', 'description: wiki-side description\n---\n\n# Payments');
   const { fmBlock, fieldConflicts } = mergeFrontmatter(SITE_CURRENT, wikiWithDesc, { defaultCategory: 'guide' });
   assert.equal(fieldConflicts.length, 1);
   assert.equal(fieldConflicts[0].field, 'description');
+  assert.equal(fieldConflicts[0].wikiValue, 'wiki-side description'); // report carries the wiki (old) value
   const merged = matter(fmBlock).data; // would throw / misparse on duplicate keys
-  assert.equal(merged.description, 'wiki-side description');
+  assert.equal(merged.description, matter(SITE_CURRENT).data.description); // site value wins, wiki stripped
   assert.equal(merged.faqs.length, 1); // other site fields still injected
+});
+
+test('mergeFrontmatter: diverging multi-line faqs → site version wins, no duplicate key, reported', () => {
+  // wiki carries its OWN faqs block (multi-line) that differs from the site's.
+  const wikiWithFaqs = WIKI_V1.replace(
+    '---\n\n# Payments',
+    'faqs:\n  - q: "Old wiki question?"\n    a: "Old wiki answer."\n---\n\n# Payments',
+  );
+  const { fmBlock, fieldConflicts } = mergeFrontmatter(SITE_CURRENT, wikiWithFaqs, { defaultCategory: 'guide' });
+
+  // divergence reported, carrying the wiki (old) value
+  const faqConflict = fieldConflicts.find((fc) => fc.field === 'faqs');
+  assert.ok(faqConflict, 'faqs divergence reported');
+  assert.deepEqual(faqConflict.wikiValue, [{ q: 'Old wiki question?', a: 'Old wiki answer.' }]);
+
+  // block is structurally sound — parses, single faqs key, site version kept
+  const merged = matter(fmBlock).data; // throws on duplicate top-level YAML keys
+  assert.equal(merged.faqs.length, 1);
+  assert.equal(merged.faqs[0].q, 'Do foreign cards work in China?'); // site faqs, not wiki's
+  assert.ok(!merged.faqs.some((f) => f.q === 'Old wiki question?'), 'wiki faqs fully stripped');
+  // no duplicate faqs: the key must appear exactly once in the raw block
+  assert.equal((fmBlock.match(/^faqs:/gm) || []).length, 1, 'exactly one faqs key');
+  // wiki-owned fields untouched, structure intact
+  assert.ok(fmBlock.includes('title: Payments in China'));
+  assert.deepEqual(fmBlock.match(/^---$/gm), ['---', '---'], 'exactly 2 delimiter lines');
 });
 
 test('mergeFrontmatter: identical wiki value → silent (no noise when wiki adopted the site value)', () => {
@@ -258,7 +284,7 @@ test('renderSyncReport lists conflicts, no-base, removals, field collisions', ()
       { siteKey: 'guides/fresh.md', isNew: true, conflicted: false },
       { siteKey: 'guides/clash.md', conflicted: true },
       { siteKey: 'guides/orphan.md', noBase: true, conflicted: false },
-      { siteKey: 'guides/claimed.md', conflicted: false, fieldConflicts: [{ field: 'description', siteValue: 'site desc' }] },
+      { siteKey: 'guides/claimed.md', conflicted: false, fieldConflicts: [{ field: 'description', wikiValue: 'old wiki desc' }] },
     ],
     removed: [{ siteKey: 'guides/old.md', wikiPath: 'concepts/old.md', reason: 'deleted from wiki' }],
     siteOnly: ['guides/vpn-or-esim.md'],

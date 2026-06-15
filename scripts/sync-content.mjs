@@ -3,13 +3,17 @@
 /**
  * NON-DESTRUCTIVE sync of audited wiki content into the site's content directory.
  *
- * The wiki owns the knowledge layer; the site owns an SEO/GEO layer on top of it
- * (frontmatter `description`/`faqs`/`category`, question-form headings, site-native
- * GEO pages). A sync must merge wiki updates IN without wiping the site layer OUT.
+ * The wiki owns the knowledge layer (body prose + facts, canonical); the site owns an
+ * SEO/GEO layer on top of it (frontmatter `description`/`faqs`/`category`, question-form
+ * headings, site-native GEO pages). A sync must merge wiki updates IN without wiping the
+ * site layer OUT.
  *
  * Per page:
  *   - frontmatter: wiki fields taken verbatim from the new wiki version; SITE_OWNED_FIELDS
- *     are re-injected from the current site file (field-level ownership, deterministic).
+ *     are SITE-OWNED — the site value wins, deterministically (field-level ownership). When
+ *     the wiki block also carries a site-owned field, that field is stripped out of the wiki
+ *     block and the site value re-injected; a genuine value divergence is REPORTED (never
+ *     auto-reverted) so the wiki single-source can be back-ported deliberately.
  *   - body: git merge-file 3-way merge — base is the wiki version last merged into this
  *     file (recorded per page in src/content/wiki-sync-state.json), ours is the current
  *     site body, theirs is the new wiki body. Overlapping edits leave conflict markers
@@ -46,12 +50,15 @@ const STATE_PATH = join(CONTENT_DIR, 'wiki-sync-state.json');
 const REPORT_PATH = join(import.meta.dirname, '../sync-report.md');
 
 /**
- * SEO frontmatter fields a sync must never STRIP from a page.
+ * SEO frontmatter fields the SITE owns. The site value always wins; a sync never reverts
+ * them to a wiki value. The wiki remains canonical for body prose/facts (merged via the
+ * 3-way body merge), but these three SEO fields are single-sourced in the site.
  * - wiki lacks the field, site has it → site value re-injected (gap-fill; e.g. `category`,
  *   or a site-side description the wiki hasn't adopted yet).
- * - both have it → the wiki (canonical since the 2026-06 faqs/description migration) wins;
- *   if the values differ, the overridden site value is REPORTED so a site-side edit is
- *   never silently lost — port it to the wiki or restore it in the sync PR.
+ * - both have it → the SITE value wins. The wiki's copy is stripped from its block (so no
+ *   duplicate YAML key) and the site value injected; if the values DIVERGE, the wiki value
+ *   is REPORTED (not applied) so it can be deliberately back-ported to the wiki single-source.
+ * - neither has it → `category` is still injected from defaultCategory.
  */
 export const SITE_OWNED_FIELDS = ['description', 'faqs', 'category'];
 
@@ -75,30 +82,79 @@ export function splitFrontmatter(raw) {
 }
 
 /**
- * Field-level frontmatter merge.
- * Takes the WIKI frontmatter block verbatim (low diff noise, exactly like the old
- * category injection) and injects SITE_OWNED_FIELDS the wiki lacks from the current
- * site file. When the wiki carries the field too, its verbatim value is kept
- * (injecting would create a duplicate YAML key) and a genuine value divergence is
- * reported so site-side edits are never silently lost.
+ * Strip a single TOP-LEVEL YAML field (and its full value, single- or multi-line) from a
+ * frontmatter block string, in place, leaving every other line byte-for-byte unchanged.
  *
- * @returns {{ fmBlock: string, fieldConflicts: {field, siteValue}[] }}
+ * We do NOT re-dump the block through gray-matter: a round-trip reorders keys, normalizes
+ * quote style and flow vs. block collections, and would turn every sync into a whole-block
+ * diff. Instead we delete only the matched field's lines. A field starts at a top-level key
+ * line `^field:` and runs until the next top-level key (`^\S`, i.e. a non-indented line) or
+ * the closing `---`/end of block — so multi-line values (e.g. `faqs:` + indented `- q:` /
+ * `a:` items) are removed whole.
+ *
+ * @param {string} fmBlock  full frontmatter block incl. delimiters (`---\n...\n---\n`)
+ * @param {string} field    top-level field name to remove
+ * @returns {string} the block with that field removed (or unchanged if absent)
+ */
+export function stripTopLevelField(fmBlock, field) {
+  const lines = fmBlock.split('\n');
+  // Field key at indentation 0: `field:` optionally followed by a value.
+  const keyRe = new RegExp(`^${field.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}:`);
+  const out = [];
+  let i = 0;
+  while (i < lines.length) {
+    if (keyRe.test(lines[i])) {
+      // Skip the key line and any subsequent indented (child) or blank-then-child lines,
+      // up to the next top-level key or the closing delimiter.
+      i++;
+      while (i < lines.length) {
+        const l = lines[i].replace(/\r$/, ''); // tolerate CRLF blocks
+        if (l === '---' || l === '') break; // closing delimiter / block terminator → handled by outer
+        if (/^\s/.test(l)) {
+          i++;
+          continue;
+        } // indented child of this field
+        break; // next top-level key
+      }
+      continue;
+    }
+    out.push(lines[i]);
+    i++;
+  }
+  return out.join('\n');
+}
+
+/**
+ * Field-level frontmatter merge.
+ * Takes the WIKI frontmatter block verbatim (low diff noise, exactly like the old category
+ * injection) for all non-site-owned fields, and makes SITE_OWNED_FIELDS site-owned: the
+ * site value always wins. When the wiki block also carries a site-owned field, that field
+ * is STRIPPED from the wiki block (so no duplicate YAML key) and the site value re-injected.
+ * A genuine value divergence is REPORTED (carrying the wiki value) but never applied — the
+ * site value is kept; back-port to the wiki single-source if the wiki value should win.
+ *
+ * @returns {{ fmBlock: string, fieldConflicts: {field, wikiValue}[] }}
  */
 export function mergeFrontmatter(oursRaw, theirsRaw, { defaultCategory } = {}) {
   const ours = matter(oursRaw);
   const theirs = matter(theirsRaw);
-  const { fmBlock: theirsBlock } = splitFrontmatter(theirsRaw);
+  let theirsBlock = splitFrontmatter(theirsRaw).fmBlock;
 
   const inject = {};
   const fieldConflicts = [];
   for (const field of SITE_OWNED_FIELDS) {
     const siteValue = ours.data?.[field];
-    if (siteValue === undefined) continue;
     const wikiValue = theirs.data?.[field];
-    if (wikiValue !== undefined) {
-      // Wiki carries the field → wiki wins; surface only a REAL divergence.
-      if (JSON.stringify(wikiValue) !== JSON.stringify(siteValue)) fieldConflicts.push({ field, siteValue });
+    if (siteValue === undefined) {
+      // Site has no value → keep the wiki's (gap-fill in reverse): leave it in the block.
       continue;
+    }
+    // Site owns this field → site value wins.
+    if (wikiValue !== undefined) {
+      // Strip the wiki's copy so re-injection can't create a duplicate key.
+      theirsBlock = stripTopLevelField(theirsBlock, field);
+      // Report a REAL divergence (carrying the wiki value); the site value is still kept.
+      if (JSON.stringify(wikiValue) !== JSON.stringify(siteValue)) fieldConflicts.push({ field, wikiValue });
     }
     inject[field] = siteValue;
   }
@@ -261,11 +317,11 @@ export function renderSyncReport({ wikiSha, results, removed, siteOnly }) {
     lines.push('');
   }
   if (fieldConflicts.length) {
-    lines.push('### ⚠️ Site-side frontmatter values overridden by wiki');
-    lines.push('These fields DIVERGED between site and wiki; the wiki (canonical) value was applied. If the site value should win, port it to the wiki or restore it in this PR:');
+    lines.push('### ⚠️ Site-owned frontmatter diverges from wiki (site value kept)');
+    lines.push('These fields are SITE-OWNED: the site value was kept and the wiki value was NOT applied. The wiki copy is stale — port the site value to the wiki to single-source it:');
     for (const r of fieldConflicts)
       for (const fc of r.fieldConflicts)
-        lines.push(`- \`${r.siteKey}\` field \`${fc.field}\` — site had: \`${JSON.stringify(fc.siteValue).slice(0, 120)}\``);
+        lines.push(`- \`${r.siteKey}\` field \`${fc.field}\` — wiki had: \`${JSON.stringify(fc.wikiValue).slice(0, 120)}\` (site value kept; port to wiki to single-source)`);
     lines.push('');
   }
   if (noBase.length) {
