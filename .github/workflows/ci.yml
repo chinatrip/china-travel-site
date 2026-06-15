@@ -41,6 +41,7 @@ jobs:
         run: npm install
 
       - name: Test (node:test + build + internal-link guard)
+        id: tests
         run: npm test
 
       - name: Deploy preview (Cloudflare Workers version)
@@ -54,20 +55,32 @@ jobs:
           command: versions upload --preview-alias pr-${{ github.event.number }}
 
       # Render the CI result + preview links on the run's Summary page.
+      # Runs on `always()` so the failure paths below are reachable (with
+      # `success()` the whole step is skipped on failure → dead code). We must
+      # therefore report the REAL test/preview outcomes, not a hardcoded "passed".
       # `versions upload` does NOT populate wrangler-action's `deployment-url`,
-      # so we key off the step OUTCOME and surface the deterministic stable alias.
+      # so the preview line keys off the step OUTCOME + the deterministic alias.
       - name: CI report (run summary)
-        if: success()
+        if: always()
         env:
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
           PREVIEW_OUTCOME: ${{ steps.preview.outcome }}
           PREVIEW_URL: ${{ steps.preview.outputs.deployment-url }}
           PR_NUMBER: ${{ github.event.number }}
         run: |
           {
-            echo "## ✅ CI Report"
+            if [ "$TESTS_OUTCOME" = "success" ]; then
+              echo "## ✅ CI Report"
+              echo ""
+              echo "**Tests + build + internal-link guard:** passed"
+            else
+              echo "## ❌ CI Report"
+              echo ""
+              echo "**Tests + build + internal-link guard:** ${TESTS_OUTCOME:-failed} — see logs"
+            fi
             echo ""
-            echo "**Tests + build + internal-link guard:** passed"
-            echo ""
+            # Preview ("Deploy preview" implicitly ANDs success(), so it is
+            # skipped when tests fail even though CF_TOKEN is set).
             if [ "$PREVIEW_OUTCOME" = "success" ]; then
               echo "### 🔍 Preview deployment"
               echo ""
@@ -77,10 +90,12 @@ jobs:
               if [ -n "$PREVIEW_URL" ]; then
                 echo "| Version URL | <$PREVIEW_URL> |"
               fi
+            elif [ "$PREVIEW_OUTCOME" = "failure" ]; then
+              echo "> ⚠️ Preview deploy failed — see logs."
             elif [ -z "$CF_TOKEN" ]; then
               echo "> 🔍 Preview skipped — \`CLOUDFLARE_API_TOKEN\` not configured."
             else
-              echo "> ⚠️ Preview deploy failed — see logs."
+              echo "> 🔍 Preview skipped — tests failed (preview only runs on green tests)."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
