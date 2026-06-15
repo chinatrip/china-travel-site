@@ -12,7 +12,7 @@
     "sync-content": "node scripts/sync-content.mjs",
     "seo-review": "node scripts/seo-review.mjs",
     "astro": "astro",
-    "test": "node --test && astro build && node scripts/check-internal-links.mjs && node scripts/check-conflict-markers.mjs && node scripts/check-fonts.mjs"
+    "test": "node --test --test-concurrency=1 && astro build && node scripts/check-internal-links.mjs && node scripts/check-conflict-markers.mjs && node scripts/check-fonts.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
