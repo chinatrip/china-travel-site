@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description =
+  'This page could not be found. Jump back to the homepage, the China travel guides, the essential apps, or search the site.';
+
+// Links back to the site's main entry points. Trailing slashes are mandatory
+// here (trailingSlash: 'always' + the worker's 301 normalization) — linking to
+// the canonical directory form avoids a needless redirect hop.
+const destinations = [
+  { href: '/', label: 'Home' },
+  { href: '/guides/', label: 'Travel guides' },
+  { href: '/apps/', label: 'Essential apps' },
+  { href: '/search/', label: 'Search the site' },
+];
+---
+
+<BaseLayout title="Page not found" description={description} noindex>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-20 sm:py-28 text-center">
+    <p class="text-sm font-semibold uppercase tracking-wider text-primary mb-3">404</p>
+    <h1 class="text-3xl sm:text-4xl font-bold text-secondary mb-4">Page not found</h1>
+    <p class="text-muted text-lg max-w-xl mx-auto mb-10">
+      The page you were looking for doesn't exist or may have moved. Here's where to go next.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-3">
+      <a
+        href="/"
+        class="inline-flex items-center rounded-lg bg-primary px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+      >
+        Back to home
+      </a>
+      <a
+        href="/search/"
+        class="inline-flex items-center rounded-lg border border-gray-200 bg-white px-5 py-2.5 text-sm font-semibold text-secondary transition-colors hover:border-primary hover:text-primary"
+      >
+        Search the site
+      </a>
+    </div>
+
+    <nav class="mt-12 border-t border-gray-100 pt-8" aria-label="Popular pages">
+      <p class="text-sm font-medium text-muted mb-4">Or start from one of these</p>
+      <ul class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+        {destinations.map(({ href, label }) => (
+          <li>
+            <a href={href} class="font-medium text-primary hover:underline">{label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </section>
+</BaseLayout>
