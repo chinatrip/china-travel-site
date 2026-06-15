@@ -24,11 +24,19 @@ interface Props {
   description?: string;
   /** Keep the page out of search indexes (e.g. the /search/ shell page). */
   noindex?: boolean;
+  /**
+   * Social preview image. Per-page override (absolute URL or site-root path);
+   * defaults to the existing /og-default.png. Resolved to an absolute URL so
+   * OG/Twitter crawlers, which require absolute image URLs, always get one.
+   */
+  image?: string;
 }
 
-const { title, description = 'Your practical guide to traveling in China as a foreigner', noindex = false } = Astro.props;
+const { title, description = 'Your practical guide to traveling in China as a foreigner', noindex = false, image = '/og-default.png' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 const fullTitle = `${title} | ChinaGuide.ai`;
+// Absolute social-image URL (handles both absolute overrides and root-relative paths).
+const ogImage = new URL(image, Astro.site).href;
 ---
 
 <!doctype html>
@@ -38,7 +46,7 @@ const fullTitle = `${title} | ChinaGuide.ai`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <title>{fullTitle}</title>
-    {noindex && <meta name="robots" content="noindex, follow" />}
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <link rel="canonical" href={canonicalURL} />
     <link rel="alternate" hreflang="en" href={canonicalURL} />
     <link rel="alternate" hreflang="x-default" href={canonicalURL} />
@@ -51,11 +59,13 @@ const fullTitle = `${title} | ChinaGuide.ai`;
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="ChinaGuide.ai" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={ogImage} />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <!-- Preload the above-the-fold font weights (body 400, headings 700). crossorigin is required for font preloads even same-origin. -->
     <link rel="preload" href={interLatin400Woff2} as="font" type="font/woff2" crossorigin />
