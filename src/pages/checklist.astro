@@ -1,9 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildItemList } from '../lib/item-list.mjs';
+
+// ItemList of the published guide/app pages this checklist's static overview
+// links to, in the order they appear in the prose. Every URL here is a real,
+// audited page that the visitor can reach from this page — so the schema
+// describes what's actually rendered, not an aspirational set. A HowTo would
+// be the wrong type: the page is a curated reference list, not literal
+// sequential steps, and Google retired HowTo rich results.
+const checklistItemList = buildItemList('China Trip Preparation Checklist', [
+  '/guides/visa-types/',
+  '/guides/tibet-permits/',
+  '/apps/alipay/',
+  '/apps/wechat/',
+  '/guides/sim-card/',
+  '/apps/amap/',
+  '/guides/accommodation/',
+]);
 ---
 
 <BaseLayout title="China Readiness Checklist" description="Personalized pre-trip checklist for China: visa, payments, apps, connectivity, and more — based on your nationality, dates, and destinations.">
   <div class="max-w-4xl mx-auto px-4 sm:px-6 py-10">
+    <script type="application/ld+json" set:html={JSON.stringify(checklistItemList)} />
+
     <h1 class="text-3xl sm:text-4xl font-bold text-secondary mb-2">China Readiness Checklist</h1>
     <p class="text-muted text-lg mb-8">Tell us about your trip and we'll generate a personalized preparation checklist.</p>
 
