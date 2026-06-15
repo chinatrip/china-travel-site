@@ -41,6 +41,7 @@ jobs:
         run: npm install
 
       - name: Test (node:test + build + internal-link guard)
+        id: tests
         run: npm test
 
       - name: Deploy preview (Cloudflare Workers version)
@@ -54,40 +55,85 @@ jobs:
           command: versions upload --preview-alias pr-${{ github.event.number }}
 
       # Render the CI result + preview links on the run's Summary page.
+      # Runs on `always()` so the failure paths below are reachable (with
+      # `success()` the whole step is skipped on failure → dead code). We must
+      # therefore report the REAL test/preview outcomes, not a hardcoded "passed".
+      # `versions upload` does NOT populate wrangler-action's `deployment-url`,
+      # so the preview line keys off the step OUTCOME + the deterministic alias.
       - name: CI report (run summary)
-        if: success()
+        if: always()
         env:
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          PREVIEW_OUTCOME: ${{ steps.preview.outcome }}
           PREVIEW_URL: ${{ steps.preview.outputs.deployment-url }}
           PR_NUMBER: ${{ github.event.number }}
         run: |
           {
-            echo "## ✅ CI Report"
+            if [ "$TESTS_OUTCOME" = "success" ]; then
+              echo "## ✅ CI Report"
+              echo ""
+              echo "**Tests + build + internal-link guard:** passed"
+            else
+              echo "## ❌ CI Report"
+              echo ""
+              echo "**Tests + build + internal-link guard:** ${TESTS_OUTCOME:-failed} — see logs"
+            fi
             echo ""
-            echo "**Tests + build + internal-link guard:** passed"
-            echo ""
-            if [ -n "$PREVIEW_URL" ]; then
+            # Preview ("Deploy preview" implicitly ANDs success(), so it is
+            # skipped when tests fail even though CF_TOKEN is set).
+            if [ "$PREVIEW_OUTCOME" = "success" ]; then
               echo "### 🔍 Preview deployment"
               echo ""
               echo "| | |"
               echo "|---|---|"
-              echo "| Preview URL | <$PREVIEW_URL> |"
               echo "| Stable alias | <https://pr-${PR_NUMBER}-china-travel-site.yiyang-pku.workers.dev> |"
-            else
+              if [ -n "$PREVIEW_URL" ]; then
+                echo "| Version URL | <$PREVIEW_URL> |"
+              fi
+            elif [ "$PREVIEW_OUTCOME" = "failure" ]; then
+              echo "> ⚠️ Preview deploy failed — see logs."
+            elif [ -z "$CF_TOKEN" ]; then
               echo "> 🔍 Preview skipped — \`CLOUDFLARE_API_TOKEN\` not configured."
+            else
+              echo "> 🔍 Preview skipped — tests failed (preview only runs on green tests)."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
+      # Runs on `always()` so the single marker comment ALWAYS reflects the
+      # CURRENT commit. With `if: outcome == success` a later failing push would
+      # leave a stale "✅ ready" comment (same marker) pointing at an old version.
       - name: Comment preview URL on PR
-        if: steps.preview.outcome == 'success' && steps.preview.outputs.deployment-url != ''
+        if: always()
         uses: actions/github-script@v7
         env:
-          PREVIEW_URL: ${{ steps.preview.outputs.deployment-url }}
+          TESTS_OUTCOME: ${{ steps.tests.outcome }}
+          PREVIEW_OUTCOME: ${{ steps.preview.outcome }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          # `versions upload` doesn't fill deployment-url; use the deterministic stable alias.
+          STABLE_URL: https://pr-${{ github.event.number }}-china-travel-site.yiyang-pku.workers.dev
         with:
           script: |
             const marker = '<!-- ci-preview-bot -->';
-            const url = process.env.PREVIEW_URL;
-            // @1Feng — see note: if the PR author IS this user, the mention won't notify.
-            const body = `${marker}\n✅ **CI 通过,预览就绪**:${url}\n\n@1Feng 可审阅合并。_(更新于 ${new Date().toISOString()})_`;
+            const url = process.env.STABLE_URL;
+            const tests = process.env.TESTS_OUTCOME;
+            const preview = process.env.PREVIEW_OUTCOME;
+            const hasToken = (process.env.CF_TOKEN || '') !== '';
+            const stamp = `_(更新于 ${new Date().toISOString()})_`;
+            // Build the body from the CURRENT commit's status (single source of truth).
+            let body;
+            if (tests !== 'success') {
+              body = `${marker}\n❌ **CI 失败** — 本次提交测试/构建未通过,预览不可用。见 Actions logs。\n\n${stamp}`;
+            } else if (preview === 'success') {
+              // @1Feng — see note: if the PR author IS this user, the mention won't notify.
+              body = `${marker}\n✅ **CI 通过,预览就绪**:${url}\n\n@1Feng 可审阅合并。${stamp}`;
+            } else if (preview === 'failure') {
+              body = `${marker}\n⚠️ **CI 通过,但预览部署失败** — 见 Actions logs。\n\n${stamp}`;
+            } else if (!hasToken) {
+              body = `${marker}\n✅ **CI 通过**;预览 URL 未配置(\`CLOUDFLARE_API_TOKEN\` 未设)。\n\n${stamp}`;
+            } else {
+              // tests green + token set but preview neither success/failure (unexpected).
+              body = `${marker}\n✅ **CI 通过**;预览状态未知(${preview || 'n/a'})— 见 Actions logs。\n\n${stamp}`;
+            }
             const { data: comments } = await github.rest.issues.listComments({
               owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number,
             });
