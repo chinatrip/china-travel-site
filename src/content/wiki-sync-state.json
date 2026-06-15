@@ -71,8 +71,7 @@
     },
     "guides/payment-failures.md": {
       "wikiPath": "concepts/payment-failures.md",
-      "baseSha": null,
-      "noBase": true
+      "baseSha": "74337af6309af971f76d77d35c0ceca4c342d9c3"
     },
     "guides/residence-registration.md": {
       "wikiPath": "concepts/residence-registration.md",
