@@ -3,11 +3,24 @@
 // Organization node is emitted on the homepage and inlined on /about/ (as the
 // AboutPage mainEntity). Content pages inline their own copy of the same
 // entity from GuideLayout.astro — keep the @id values in sync with that file.
-// Known divergence (#38): contactPoint exists only in this builder for now;
-// syncing GuideLayout's inline node is a follow-up after PR #52 (Unit B) lands.
+// The support contactPoint (#38) is the shared SUPPORT_CONTACT_POINT export,
+// reused by GuideLayout's inline node so the two never drift.
 
 const SITE = 'https://chinaguide.ai';
 const BRAND = 'ChinaGuide.ai';
+
+/**
+ * Canonical support ContactPoint for the Organization entity (#38).
+ * Reachable support inbox shown on /about/ and /editorial-policy/, so the
+ * entity and the visible pages agree. Shared so the homepage Organization
+ * node and GuideLayout's inline copy never drift apart.
+ */
+export const SUPPORT_CONTACT_POINT = {
+  '@type': 'ContactPoint',
+  email: 'support@chinaguide.ai',
+  // "customer service" is Google's conventional contactType enum value.
+  contactType: 'customer service',
+};
 
 /**
  * WebSite schema with a Sitelinks Searchbox SearchAction.
@@ -55,13 +68,8 @@ export function buildOrganizationSchema(logoUrl) {
     name: BRAND,
     url: SITE,
     logo: { '@type': 'ImageObject', url: logoUrl },
-    // Reachable support inbox (#38) — same address shown on /about/ and
-    // /editorial-policy/, so the entity and the visible pages agree.
-    contactPoint: {
-      '@type': 'ContactPoint',
-      email: 'support@chinaguide.ai',
-      contactType: 'customer service',
-    },
+    // Reachable support inbox (#38), shared with GuideLayout's inline node.
+    contactPoint: SUPPORT_CONTACT_POINT,
     // TODO(#9): fill in social profiles (X/Reddit/YouTube/…) once the
     // accounts exist; an empty sameAs is valid and ignored by parsers.
     sameAs: [],

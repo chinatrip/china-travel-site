@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { buildWebsiteSchema, buildOrganizationSchema } from '../src/lib/home-schema.mjs';
+import { buildWebsiteSchema, buildOrganizationSchema, SUPPORT_CONTACT_POINT } from '../src/lib/home-schema.mjs';
 
 const DESCRIPTION =
   'Practical travel guides for foreigners visiting China — visa, mobile payment, apps, transportation, food, and safety.';
@@ -62,6 +62,17 @@ test('Organization exposes a support contactPoint without changing url (#38)', (
   });
   // contactPoint is additive — the canonical entity url must stay untouched.
   assert.equal(schema.url, 'https://chinaguide.ai');
+});
+
+test('SUPPORT_CONTACT_POINT is the shared source reused by the Organization builder (#38)', () => {
+  // Exact shape — also the contract GuideLayout's inline node is asserted against.
+  assert.deepEqual(SUPPORT_CONTACT_POINT, {
+    '@type': 'ContactPoint',
+    email: 'support@chinaguide.ai',
+    contactType: 'customer service',
+  });
+  // Reused by reference so the homepage entity and GuideLayout never drift.
+  assert.equal(buildOrganizationSchema(LOGO).contactPoint, SUPPORT_CONTACT_POINT);
 });
 
 test('schemas serialize without undefined fields (set:html + JSON.stringify safe)', () => {
