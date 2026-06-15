@@ -33,17 +33,30 @@ test('Navbar exposes a single, descriptively labelled navigation landmark', () =
   assert.ok(!/role=("|')navigation\1/.test(NAVBAR), 'no redundant nested navigation landmark');
 });
 
-test('Navbar signals the active route with aria-current="page", not colour alone', () => {
-  // aria-current must resolve to "page" for the active link and be omitted
-  // (undefined) otherwise, so screen readers learn which link is current.
+test('Navbar reserves aria-current="page" for the exact current path only', () => {
+  // aria-current="page" means "this link IS the current page". A section/ancestor
+  // link (e.g. /guides/ while on /guides/visa-types/) must NOT claim "page".
   assert.match(NAVBAR, /aria-current=/);
-  assert.match(NAVBAR, /'page'\s*:\s*undefined/);
+  assert.match(NAVBAR, /'page'/);
+});
+
+test('Navbar uses aria-current="location" for ancestor/section matches, not "page"', () => {
+  // The fix: an active-but-not-exact link gets aria-current="location"
+  // (or is omitted) — never "page" — so screen readers do not misreport the
+  // section link as the current page.
+  assert.match(NAVBAR, /'location'/);
+});
+
+test('Navbar distinguishes exact-path from prefix (ancestor) matching', () => {
+  // There must be an exact-equality test against currentPath in addition to the
+  // prefix/section test that drives the colour highlight.
+  assert.match(NAVBAR, /currentPath\s*===|===\s*currentPath/);
+  assert.match(NAVBAR, /currentPath\.startsWith/);
 });
 
 test('Navbar derives active state from currentPath per top-level destination', () => {
-  // The active predicate must be path-prefix based and cover the primary
-  // destinations (regardless of whether it is inlined or table-driven).
-  assert.match(NAVBAR, /currentPath\.startsWith/);
+  // The section predicate must cover the primary destinations (regardless of
+  // whether it is inlined or table-driven).
   for (const seg of ['/guides', '/apps', '/checklist']) {
     assert.ok(
       NAVBAR.includes(`'${seg}'`),

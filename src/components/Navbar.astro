@@ -1,16 +1,32 @@
 ---
-const currentPath = Astro.url.pathname;
+// Normalise to a single trailing slash so exact comparisons against link
+// hrefs (which are directory-format, e.g. "/guides/") are stable regardless of
+// how Astro hands us the pathname.
+const withSlash = (p: string) => (p.endsWith('/') ? p : `${p}/`);
+const currentPath = withSlash(Astro.url.pathname);
 
-// Primary destinations. Active state drives both the colour change and the
-// programmatic `aria-current` signal, so assistive tech learns the current
-// section instead of relying on colour alone.
+// Primary destinations. `match` drives the *visual* section highlight (prefix
+// match, so /guides/ stays highlighted on /guides/visa-types/). The
+// `aria-current` value is split: only the *exact* current page gets "page";
+// an active ancestor/section link gets "location" — never "page" — so screen
+// readers don't misreport a section link as the current page.
 const links = [
   { href: '/guides/', label: 'Guides', match: '/guides' },
   { href: '/apps/', label: 'Apps', match: '/apps' },
   { href: '/checklist/', label: 'Checklist', match: '/checklist' },
 ];
 
+// Visual highlight: this link is the current page OR an ancestor section of it.
 const isActive = (match: string) => currentPath.startsWith(match);
+
+// aria-current: "page" only on the exact path; "location" for an ancestor/
+// section match; undefined (attribute omitted) otherwise.
+const ariaCurrent = (href: string) => {
+  if (currentPath === href) return 'page';
+  if (currentPath.startsWith(href)) return 'location';
+  return undefined;
+};
+
 const searchActive = currentPath.startsWith('/search');
 ---
 
@@ -26,7 +42,7 @@ const searchActive = currentPath.startsWith('/search');
         {links.map((link) => (
           <a
             href={link.href}
-            aria-current={isActive(link.match) ? 'page' : undefined}
+            aria-current={ariaCurrent(link.href)}
             class:list={["text-sm font-medium transition-colors hover:text-primary", isActive(link.match) ? 'text-primary' : 'text-gray-600']}
           >
             {link.label}
@@ -34,7 +50,7 @@ const searchActive = currentPath.startsWith('/search');
         ))}
         <a
           href="/search/"
-          aria-current={searchActive ? 'page' : undefined}
+          aria-current={ariaCurrent('/search/')}
           class:list={["text-sm font-medium transition-colors hover:text-primary", searchActive ? 'text-primary' : 'text-gray-600']}
           aria-label="Search"
         >
