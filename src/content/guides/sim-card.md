@@ -1,10 +1,11 @@
 ---
 title: SIM Card and eSIM in China for Foreign Visitors
 date: 2026-05-02
-last_verified: 2026-06-09
+last_verified: 2026-06-15
 verified_against:
   - https://www.airalo.com/china-esim
   - https://www.airalo.com/help/using-managing-esims/ZSEEHBT5HW6F/stay-connected-in-china-your-guide-to-unfiltered-internet-access-is-a-vpn-required/ZDZBNIKI4TFP
+  - https://esimdb.com/china/airalo
   - https://esim.holafly.com/esim-china/
   - https://cellulardata.ubigi.com/travel-to-china/internet-and-esim-data-plans-china/
   - https://chinaguidelines.com/en/posts/sim
@@ -31,8 +32,8 @@ faqs:
     a: "Most travelers don't — a foreign eSIM covers data. You only need a +86 number for apps that gate sign-up behind it (such as Meituan or some bike-share), and DiDi works without one via the Alipay mini-program."
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: null
+  page_audit: 2026-06-15
+  citation_check: 2026-06-15
 category: guide
 ---
 
@@ -58,11 +59,11 @@ Airalo, Holafly, Ubigi, and similar travel eSIMs route data through gateways out
 
 | Provider | Network used | Sample plans (as of June 2026) | Coverage |
 |---|---|---|---|
-| **Airalo** | China Unicom (routed via overseas gateway) | Unlimited-data plans: 3d **$11.50**; 5d **$19**; 7d **$27**; 10d **$35**; 15d **$49**; 30d **$69**. Some fixed-cap plans also sold (e.g. 1 GB / 3d for **$4**; 20 GB / 30d for **$40**; 50 GB / 30d for **$49**). | Mainland only |
+| **Airalo** | China Unicom (routed via overseas gateway) | Unlimited-data plans: 3d **$11.50**; 5d **$19**; 7d **$27**; 10d **$35**; 15d **$49**; 30d **$69**. Some fixed-cap plans also sold (e.g. 1 GB / 3d for **$4**; larger 20–50 GB / 30d caps for roughly **$40–50**). | Mainland only |
 | **Holafly** | China Mobile (CMCC) | Unlimited / 5d for **$19.50**; / 7d for **$27.30**; / 10d for **$36.90**; / 15d for **$50.90**; / 30d for **$74.90** (with 1 GB/day hotspot share) | Mainland only — no Hong Kong or Taiwan |
 | **Ubigi** | China Mobile / Unicom | 1 GB / 7d for **$4**; 3 GB / 30d for **$8**; 10 GB / 7d for **$14**; 25 GB / 30d for **$35** | Mainland; some plans extend region-wide |
 
-> Holafly prices verified 2026-06-01 via holafly.com; plans available in 1-day increments (1–90 days), subject to a Fair Usage Policy (~90 GB/month before throttling). Airalo prices verified 2026-06-09 via airalo.com/china-esim.
+> Holafly prices verified 2026-06-01 via holafly.com; plans available in 1-day increments (1–90 days), subject to a Fair Usage Policy (~90 GB/month before throttling). Airalo unlimited prices re-verified 2026-06-12 via airalo.com/china-esim (unchanged from 2026-06-09); fixed-cap examples are approximate, cross-checked 2026-06-12 against airalo.com and esimdb.com.
 
 **How to activate.** Install the eSIM by QR before departure. The eSIM stays inactive until you arrive in mainland China and toggle data on — at that moment the validity clock starts. Phone must be eSIM-capable (iPhone XS or newer, Pixel 3 or newer, recent Samsung Galaxy).
 
@@ -130,8 +131,7 @@ All three hotlines operate 24/7. On 10010 (Unicom) and 10000 (Telecom) you can t
 
 ### Free Tourist SIM Promotion (China Mobile)
 
-<!-- Unverified: from summary, needs citation check -->
-China Mobile reportedly offers free SIM cards (4 cards with 10 GB each, totaling 40 GB) to foreign tourists at large flagship stores in tourist areas — passport required for registration. These SIMs operate behind the Great Firewall (no VPN included) but provide a +86 number useful for local app registrations (Alipay, 12306, etc.). Availability may vary by city and store; this promotion has not been independently verified against official China Mobile sources. (Source: realchinaguide.com 2026.)
+According to traveler reports (2026, via this page's sources), China Mobile offers free SIM cards (4 cards with 10 GB each, totaling 40 GB) to foreign tourists at large flagship stores in tourist areas — passport required for registration. These SIMs operate behind the Great Firewall (no VPN included) but provide a +86 number useful for local app registrations (Alipay, 12306, etc.). **This promotion is user-reported and has not been independently verified against official China Mobile channels (checked June 2026)** — treat it as unconfirmed, ask at a flagship store, and expect availability to vary by city and store.
 
 ### Where to Buy
 
@@ -155,7 +155,7 @@ Every Chinese SIM has been tied to a verified identity since 2019. At the carrie
 2. Sit for a live face photo, which is matched in real time against the passport photo.
 3. Sign a Chinese-language customer agreement (the agent will translate the key clauses verbally).
 
-Activation takes 15–30 minutes. There is **no remote / online registration path** for a foreign passport — it has to be in person.
+Activation at a carrier counter takes 15–30 minutes and is done in person. The state carriers themselves do not offer self-service online sign-up for a foreign passport, but a few foreigner-focused resellers do bridge the gap: Shanghai's municipal guide notes that "online processing of a SIM card from the three major mobile companies can be done through Nihao Mobile," which offers English service, online ordering, and delivery (real-name identity verification with your passport is still required either way). (Per english.shanghai.gov.cn, accessed June 2026.)
 
 ### Typical Prepaid Plans (2026, RMB)
 

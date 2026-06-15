@@ -1,7 +1,7 @@
 ---
 title: Internet Access and the Great Firewall for Foreign Visitors
 date: 2026-05-04
-last_verified: 2026-06-09
+last_verified: 2026-06-15
 verified_against:
   - https://chinasurvivalkit.com/blog/china-firewall-test-websites-apps-guide
   - https://nordvpn.com/blog/vpn-for-china/
@@ -32,7 +32,7 @@ faqs:
     a: "Officially it's restricted, not freely legal: the US State Department (2026) warns VPN use is illegal in most cases and could lead to device confiscation, a fine, or detention, and China requires VPNs to be government-licensed. In practice, enforcement has targeted providers and distributors rather than individual tourists using a VPN for personal communication, and airport security doesn't check devices — but weigh the risk yourself and check your country's official travel advisory."
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-06-15
   citation_check: 2026-05-06
 category: guide
 ---
@@ -253,7 +253,7 @@ This is a difficult situation because VPN provider websites are themselves block
 
 ## How does a foreign eSIM get online without a VPN?
 
-A foreign eSIM (Airalo, Holafly, Ubigi — see [[wiki/concepts/sim-card.md]] for pricing and comparison) routes all data through gateways outside mainland China, bypassing the GFW entirely without a VPN. Google, WhatsApp, YouTube, and all other services work natively. Typical cost: $5–25 USD for a 1–4 week data plan.
+A foreign eSIM (Airalo, Holafly, Ubigi) routes all data through gateways outside mainland China, bypassing the GFW entirely without a VPN. Google, WhatsApp, YouTube, and all other services work natively. Costs run from a few dollars for a small fixed-data pack to roughly $70 for a 30-day unlimited plan (as of June 2026) — the current per-provider pricing table and comparison live in [[wiki/concepts/sim-card.md]].
 
 **Trade-off:** eSIMs provide data only — no Chinese phone number (+86). If you need a +86 number for app registrations or SMS verification, you will need a local physical SIM in addition.
 
@@ -266,7 +266,7 @@ All three providers below bypass the GFW via international roaming — none *req
 | eSIM Provider | Built-in VPN? | Best for | Notes |
 |---|---|---|---|
 | **Holafly** | Yes (bundled) | Travelers who want zero setup hassle | Frequently recommended in traveler communities. Unlimited data. The bundled VPN can be slower than a dedicated VPN during peak evening hours — some carry a backup VPN. |
-| **Airalo** | No | Budget travelers comfortable with tech | Popular budget choice. Works without any VPN via roaming. As of June 2026, Airalo's China unlimited plans run roughly $11.50 (3 days) to $69 (30 days), e.g. ~$27 for 7 days (source: airalo.com). See [[wiki/concepts/sim-card.md]] for current pricing. |
+| **Airalo** | No | Budget travelers comfortable with tech | Popular budget choice. Works without any VPN via roaming. Current plan pricing is maintained in [[wiki/concepts/sim-card.md]]. |
 | **Nomad** | No | Budget alternative | Works via roaming, no VPN needed; often cheaper than Holafly. |
 
 **How the bypass works:** A foreign travel eSIM connects via *international roaming*, not China's domestic network — your data is routed through gateways outside mainland China (typically Hong Kong or Singapore), so to the GFW you appear as an international roaming user. This means a standalone data eSIM like Airalo bypasses the firewall on its own: Google, WhatsApp, and social media work without any VPN. Airalo's own documentation confirms "a VPN is NOT required" with its China eSIM (source: airalo.com, accessed June 2026). A bundled VPN (as with Holafly) is a convenience, not a requirement — and some travelers still carry a separate VPN as a backup in case roaming routing is degraded.

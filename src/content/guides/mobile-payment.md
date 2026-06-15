@@ -1,33 +1,39 @@
 ---
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
-date: 2026-05-02
-last_verified: 2026-06-09
+date: 2026-06-15
+last_verified: 2026-06-15
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
-  - https://help.wechat.com/cgi-bin/micromsg-bin/oshelpcenter?opcode=2&id=2307252mur7f2307257zfyfe&lang=en
   - https://www.trip.com/guide/phone/how-to-use-alipay.html
-  - https://chinatravelpack.com/guides/alipay-tour-pass-guide
+  - https://render.alipay.com/p/c/k0mtcsgi/1572520436172.html
+  - https://render.alipay.com/p/c/k2ffmmxp
   - https://www.chinavigators.com/wechat-pay-foreigners-guide/
-  - https://www.travelofchina.com/how-to-avoid-international-card-fees-on-alipay/
-  - https://www.visahq.com/news/2025-12-24/cn/unionpay-debuts-nihao-china-super-app-to-simplify-payments-for-foreign-visitors/
+  - https://m.unionpayintl.com/ZT/en/NHCAPP/
+  - https://www.unionpayintl.com/cn/mediaCenter/newsCenter/companyNews/3016318.shtml
   - https://wise.com/en-cn/blog/alipay-fee-international-cards
+  - https://wise.com/sg/blog/link-wise-card-alipay-wechat-china
+  - https://wise.com/us/blog/alipay-limit
+  - https://english.beijing.gov.cn/specials/paymentservices/news/202404/t20240429_3645653.html
+  - https://www.dragontrail.com/resources/blog/how-to-get-a-wechat-account-from-overseas
   - https://www.airalo.com/blog/access-google-china
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw_posts/2026-W18/travelchina.json
   - raw/wechat-paypal-integration-2026.md
+  - raw/shuimu-foreign-card-payment-guide-2026.md
   - raw/realchinaguide-payment-guide-2026.md
   - raw/realchinaguide-tech-setup-2026.md
   - raw/realchinaguide-money-costs-2026.md
   - raw/realchinaguide-troubleshooting-2026.md
 related:
+  - wiki/concepts/payment-failures.md
   - wiki/concepts/foreign-exchange.md
   - wiki/entities/alipay.md
   - wiki/entities/wechat.md
   - wiki/concepts/remote-work-china.md
 volatility: high
-description: "Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed payments. Updated May 2026."
+description: "Bind a Visa/Mastercard to Alipay or WeChat Pay under the April 2024 PBOC policy: 0% fee under ¥200, 3% from ¥200, plus how to fix failed payments. Updated June 2026."
 faqs:
   - q: "Can foreigners use Alipay or WeChat Pay in China without a Chinese bank account?"
     a: "Yes. Since the April 2024 PBOC policy you can bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card directly to Alipay or WeChat Pay — no Chinese bank account or phone number required."
@@ -36,11 +42,11 @@ faqs:
   - q: "How much does it cost to pay with a foreign card on Alipay or WeChat Pay?"
     a: "Transactions under ¥200 have no fee; transactions of ¥200 or more carry about a 3% surcharge. To avoid it, ask the merchant to split the bill into amounts below ¥200."
   - q: "Should I still bring cash to China?"
-    a: "Mobile pay is accepted almost everywhere, but carry ¥500-1000 in cash as a backup for small vendors, rural areas, and the occasional payment failure."
+    a: "Mobile pay is accepted almost everywhere, but carry ¥200-500 in cash as a backup for small vendors, rural areas, and the occasional payment failure."
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-05-06
+  page_audit: 2026-06-15
+  citation_check: 2026-06-15
 category: guide
 ---
 
@@ -70,16 +76,16 @@ The April 2024 circular jointly issued by the PBOC and several ministries reset 
 - 3-star and above tourist hotels, 4A/5A national attractions, and national / provincial tourist resorts are required to accept foreign bank cards at POS
 - Alipay's in-app interface expanded from 2 to **16 languages** (source: english.www.gov.cn April 2024 circular)
 
-The earlier **Alipay Tour Pass** prepaid-wallet option is **no longer the recommended path** for most visitors — direct card binding (introduced for foreign cards in 2024) is simpler and has higher per-transaction limits than the prepaid-wallet approach (source: trip.com Alipay guide; chinatravelpack.com Tour Pass guide). Tour Pass still exists in some app flows, but it is unnecessary for most visitors. If you encounter a Tour Pass prompt during onboarding, dismiss it and proceed to the regular Bank Cards flow instead.
+The earlier **Alipay Tour Pass** prepaid-wallet option is **no longer the recommended path** for most visitors — direct card binding is simpler and has higher per-transaction limits than the prepaid-wallet approach (source: trip.com Alipay guide; the official Tour Pass agreements on render.alipay.com document the prepaid-card mechanics). Tour Pass still exists in some app flows, but it is unnecessary for most visitors. If you encounter a Tour Pass prompt during onboarding, dismiss it and proceed to the regular Bank Cards flow instead.
 
-**Tour Pass fee note**: Tour Pass charges a **5% fee** per transaction (source: realchinaguide.com 2026), significantly higher than the 3% charged on direct card binding. Tour Pass auto-refunds any unused balance to the original card after 90 days; the 5% fee is not charged on refunds.
+**Tour Pass fee note**: the underlying Bank of Shanghai prepaid-card service charges a **5% service fee on each top-up** ("5% of the card purchase amount … charged in RMB at one time" — not per spending transaction), significantly higher than the 3% surcharge on direct card binding. The service is valid for **90 days**, after which Bank of Shanghai automatically converts any remaining balance back at the prevailing exchange rate and refunds it to the original card — any exchange-rate difference is borne by the user. (Source: Bank of Shanghai "Prepaid Card" User Service Agreement and the official "Tour Pass" IT Service Agreement, both hosted on render.alipay.com, accessed 2026-06-12)
 
 **Two-layer limit structure to keep in mind**:
 
 1. **PBOC ceiling** (regulatory): $5,000 / single, $50,000 / year **per platform** (Alipay and WeChat each have their own independent ceiling — the caps are not aggregated across both apps). Above this, the platform must reject.
 2. **Platform internal limit** (Alipay or WeChat's own cap, lower in some cases): per-account caps below the PBOC ceiling, depending on whether your passport ID is verified.
 
-The verified-tier figures below show the **PBOC regulatory ceilings** — the maximum any platform may allow per transaction or per year. Alipay's and WeChat's own per-account limits are not publicly disclosed but in practice closely track these ceilings for verified accounts; your effective limit may be lower. Check in-app after completing ID verification to confirm your current account limit.
+The per-platform tables below separate the **PBOC regulatory ceiling** (the maximum any platform may allow per transaction or per year) from **your actual account limit**. Alipay's and WeChat's own per-account limits are not publicly disclosed, and third-party reports of effective limits vary widely — one guide reports WeChat annual caps around ¥50,000–65,000 (chinavigators.com), far below the regulatory ceiling. Assume your effective limit may be much lower than the PBOC maximum; check in-app after completing ID verification to confirm your current account limit.
 
 ## How do I set up Alipay as a foreigner?
 
@@ -93,18 +99,21 @@ The verified-tier figures below show the **PBOC regulatory ceilings** — the ma
 
 ### Limits and Fees (2026)
 
-| Limit | Unverified | Verified (passport ID submitted) |
-|---|---|---|
-| Single transaction | not officially published; travel guides report ~¥6,000 (travelofchina.com) — treat as estimate only; complete ID verification before any purchase | up to ~**¥36,000** per the PBOC $5,000 USD ceiling — check in-app for your current account limit |
-| Monthly / Annual | lower | annual ceiling up to ~**¥360,000** (the PBOC $50,000 USD ceiling) |
+Two different numbers govern what you can spend, and they are easy to confuse:
 
-The verified-tier figures above are the **PBOC regulatory ceilings** ($5,000 and $50,000 USD), not Alipay's internally-set account limits. Alipay's per-account caps are always at or below these ceilings; the exact internal values are not publicly disclosed but in practice closely track the PBOC limits for verified accounts. Submitting your passport for ID verification is essential — do it at first setup or you will hit limits quickly.
+| | PBOC regulatory ceiling (the legal maximum any platform may allow) | Your actual Alipay account limit |
+|---|---|---|
+| Single transaction | **$5,000 USD** (~¥36,000) for verified users — "transaction limits for foreign nationals in China has been increased from USD 1,000 to USD 5,000 for a single transaction" (Beijing municipal government) | **Not publicly disclosed** and set at or below the ceiling; check in-app after ID verification for your current figure |
+| Annual | **$50,000 USD** (~¥360,000) — "from USD 10,000 to USD 50,000 annually" (Beijing municipal government) | **Not publicly disclosed**; third-party reports of effective caps vary widely (see the limit-structure note above) |
+| Before ID verification | n/a (these caps apply to verified accounts) | low — unverified foreign accounts are reported capped around ~$500/transaction and ~$2,000/year (Wise); complete passport verification before any purchase |
+
+**Do not treat the ~¥36,000 / ~¥360,000 ceilings as your spendable limit.** They are the regulatory maximum; your platform account limit is set somewhere at or below them and is not published, so confirm it in-app after ID verification rather than planning a large payment off the ceiling figure. Submitting your passport for ID verification is essential — do it at first setup or you will hit limits quickly.
 
 | Fee | Note |
 |---|---|
-| Single payment **under ¥200** (i.e., up to ¥199.99) | **0%** Alipay fee (source: wise.com; threshold introduced following the PBOC April 2024 policy directive) |
-| Single payment **¥200 or over** | **3%** Alipay foreign-card surcharge **on the full amount** — a ¥200 or ¥201 payment incurs 3% on the entire amount, not just the portion at or above ¥200 (Alipay's rate per wise.com; WeChat's equivalent confirmed by Beijing circular May 2025) |
-| Card-issuer foreign-transaction fee | Typically **1–3%**, set by your bank — not Alipay |
+| Single payment **under ¥200** (i.e., up to ¥199.99) | **0%** Alipay fee on merchant payments. The ¥200 fee-exemption threshold is confirmed for the foreign-card 3% fee by the Beijing municipal circular (May 2025); Alipay is widely reported to apply the same ¥200 threshold, though Alipay does not publish an Alipay-specific fee schedule confirming it (traveler-/guide-reported for Alipay specifically, not independently verified from an Alipay source) |
+| Single payment **¥200 or over** | **3%** Alipay foreign-card surcharge **on the full amount** — Wise documents Alipay charging "a flat rate of 3% of the transaction amount as a service fee," and that the fee is "only charged on the amount paid by credit card" (i.e., the full card amount, not just the portion above ¥200) |
+| Card-issuer foreign-transaction fee | Typically **1–3%**, set by your bank — not Alipay (trip.com Alipay guide) |
 | FX rate | Shown in-app before you confirm each payment — check the displayed amount for large purchases. |
 
 Limits are tied to the verified passport identity.
@@ -119,25 +128,29 @@ Limits are tied to the verified passport identity.
 
 ### Refunds
 
-Refunds clear back to the original foreign card after the merchant initiates the return. Cross-border settlement can take up to **30 days** (widely cited by travel guides including travelofchina.com; Alipay's official refund policy at alipay.com may reflect a shorter or different window — check the app's Help center for the current figure). If the refund has not appeared after 30 days, escalate in this order: (1) contact the merchant directly, (2) raise a dispute in the Alipay app under Help → Dispute, (3) dispute the charge with your card issuer. Don't close the bound card until in-flight refunds have all landed.
+Refunds clear back to the original foreign card after the merchant initiates the return. Cross-border settlement can take up to **30 days** (a widely cited travel-guide figure; Alipay's official refund policy may reflect a shorter or different window — check the app's Help center for the current figure). If the refund has not appeared after 30 days, escalate in this order: (1) contact the merchant directly, (2) raise a dispute in the Alipay app under Help → Dispute, (3) dispute the charge with your card issuer. Don't close the bound card until in-flight refunds have all landed.
 
 ## How do I set up WeChat Pay as a foreigner?
 
 ### Setup
 
 1. Install **WeChat** (App Store / Google Play).
-2. Register with your foreign number. WeChat may require an existing contact to scan a QR code to verify your new account — this is a risk-control measure, not always triggered, but the probability is high for foreign-number registrations. The vouching contact must meet **all four** of WeChat's official conditions: (1) registered for more than 6 months; (2) WeChat Pay activated for more than 3 months; (3) has not vouched for another account in the past month; (4) has not been banned in the past 6 months. (Verify current conditions in WeChat Help Center → Account Security — the source URL used at page creation is no longer accessible as of 2026-05-06.) There is no nationality or residency requirement, but in practice these conditions are strict enough that many overseas contacts do not qualify. If you cannot find a qualifying contact, WeChat's in-app customer support can potentially unlock the account, but the process takes several days.
+2. Register with your foreign number. WeChat may require an existing contact to scan a QR code to verify your new account — this is a risk-control measure, not always triggered, but the probability is high for foreign-number registrations. The vouching contact must meet WeChat's conditions: signed up for WeChat **over 1 month ago** (international user) or **over 6 months ago** (Chinese mainland user); has **activated WeChat Pay** if they are a Chinese mainland user; **hasn't done "Help Friend Register" for others in the past month** (one user can help a maximum of 3 people to register per year); and **hasn't been blocked in the past month** (source: Dragon Trail International, "How to Get a WeChat Account from Overseas," accessed 2026-06-15). In practice these conditions are strict enough that many overseas contacts do not qualify. If you cannot find a qualifying contact, WeChat's in-app customer support can reportedly unlock the account, though the timeline is traveler-reported and not independently verified.
 3. Complete passport identity verification.
 4. **Me → Services → Wallet → Bank Cards → Add Bank Card.**
-5. Bind a Visa, Mastercard, JCB, or AMEX (AMEX support is inconsistent — Visa or Mastercard is the safest default).
+5. Bind a Visa, Mastercard, JCB, Diners Club, or Discover card; AMEX is bindable but support is inconsistent — Visa or Mastercard is the safest default.
 
 ### Limits and Fees (2026)
 
-| Limit | Unverified | Verified (passport ID submitted) |
+Same two-number distinction as Alipay (regulatory ceiling vs. your account limit):
+
+| | PBOC regulatory ceiling (legal maximum any platform may allow) | Your actual WeChat Pay account limit |
 |---|---|---|
-| Single transaction | not officially published; travel guides report ~¥6,000 (travelofchina.com) — treat as estimate only; complete ID verification before any purchase | up to ~**¥36,000** per the PBOC $5,000 USD ceiling — check in-app for your current account limit |
-| Daily | varies (check in-app: Wallet → Pay → Settings → Daily Limit) | higher; exact tier not published |
-| Monthly / Annual | lower | annual ceiling up to ~**¥360,000** (the PBOC $50,000 USD ceiling) |
+| Single transaction | **$5,000 USD** (~¥36,000) for verified users (Beijing municipal government) | **Not publicly disclosed**; set at or below the ceiling — check in-app (Wallet → Pay → Settings → Daily Limit) |
+| Annual | **$50,000 USD** (~¥360,000) (Beijing municipal government) | **Not publicly disclosed and often far lower** — one guide reports effective WeChat annual caps around **¥50,000–65,000** for foreign-card users (chinavigators), well below the ceiling |
+| Before ID verification | n/a | low — complete passport verification before any purchase |
+
+**Plan large payments off your in-app limit, not the ~¥36,000 / ~¥360,000 regulatory ceilings** — WeChat's effective cap is reported to be much lower than the PBOC maximum.
 
 | Fee | Note |
 |---|---|
@@ -186,7 +199,7 @@ These are **not replacements** for Alipay or WeChat Pay — treat them as supple
 
 **Google Pay** does not function in mainland China — Google services are blocked by the Great Firewall (source: airalo.com). Do not rely on it as a backup.
 
-**UnionPay "Nihao China"** — UnionPay launched a dedicated app for foreign visitors on December 24, 2025 (source: VisaHQ). It accepts international Visa, Mastercard, and UnionPay cards issued outside mainland China, and includes real-time English–Chinese translation and transit card top-up in major cities. Coverage and reliability are still expanding; it is not yet as universal as Alipay or WeChat Pay, but worth installing as a supplementary option. UnionPay's app also offers an **E-Money Card** product that can be recharged for spending at UnionPay merchants.
+**UnionPay "Nihao China"** — UnionPay officially launched a dedicated app for foreign visitors on December 19, 2025 (source: UnionPay International official announcement, accessed 2026-06-12). It supports top-up from international Visa, Mastercard, and UnionPay cards issued outside mainland China, and includes real-time English–Chinese translation and metro/bus QR access in 43 major cities. Coverage and reliability are still expanding; it is not yet as universal as Alipay or WeChat Pay, but worth installing as a supplementary option. The in-app **Tour Wallet** holds the topped-up balance for QR spending at UnionPay merchants (source: UnionPay International, accessed 2026-06-12).
 
 **PayPal (via TenPay Global × PayPal World integration, 2026)** — As of May 27, 2026, Tencent's cross-border platform **TenPay Global** and **PayPal World** are interoperable: PayPal users can pay at **tens of millions of WeChat Pay merchants** in China using their PayPal account. Initially open to **US users**; rollout to other countries is unconfirmed. The specific scan flow (whether it uses standard WeChat Pay merchant QR codes or a separate PayPal entry point) and fee structure (whether the 3% foreign-card surcharge applies) are not yet publicly documented — verify at the PayPal or WeChat Pay help center before relying on this as your primary payment method. Source: Tencent VP announcement at the 20th Shenzhen International Financial Expo (raw/wechat-paypal-integration-2026.md).
 
@@ -223,28 +236,25 @@ Some merchants at covered venues may claim the POS machine "doesn't work" or pro
 
 ## How do I make sure I can always pay in China?
 
-Foreign users occasionally experience payment failures due to card verification issues, daily transaction limits, or network problems. Having a backup payment method (second app, cash ¥200-500, or physical card) is recommended. When Alipay fails, WeChat Pay almost always works (and vice versa). Having both apps set up ensures near-100% coverage.
+Foreign users occasionally experience payment failures due to card verification issues, daily transaction limits, or network problems. Having a backup payment method (second app, cash ¥200-500, or physical card) is recommended. When Alipay fails, WeChat Pay almost always works (and vice versa) — with both apps set up, nearly every merchant accepts at least one of them.
 
-**Recommended redundancy strategy**: Alipay (primary, ~85-95% of payments) + WeChat Pay (backup) + ¥200-500 cash for rare edge cases. Between Alipay and WeChat Pay, coverage reaches ~99% of merchants.
+**Recommended redundancy strategy**: Alipay (primary for most payments) + WeChat Pay (backup) + ¥200-500 cash for rare edge cases. If a payment fails anyway, see [[wiki/concepts/payment-failures.md]] for the full troubleshooting path.
 
 **Fee-minimization tip**: Cards with 0% foreign transaction fees (e.g., Chase Sapphire, Capital One Venture) eliminate the card-issuer portion of the fee — though the platform's 3% surcharge on payments over ¥200 still applies.
 
-<!-- Unverified: from summary, needs citation check -->
-**European no-FX-fee options**: European travelers may also consider Revolut, N26, or Wise debit cards, which charge 0% foreign transaction fees. These cards are Visa or Mastercard branded and can be bound to Alipay and WeChat Pay in the same way as other foreign cards. (Source: realchinaguide.com 2026 — requires independent verification of current Alipay/WeChat binding compatibility for each issuer.)
+**European low-FX-fee options**: **Wise** debit cards (Visa or Mastercard branded, virtual or physical) can be linked to both Alipay and WeChat Pay — Wise documents the setup officially: passport-based real-name verification, no Chinese bank account or Chinese phone number required (source: wise.com "Link Your Wise Card to Alipay & WeChat", accessed 2026-06-12). Note Wise is not fee-free: it converts at the mid-market rate plus a small conversion fee, rather than charging a flat foreign-transaction fee. For **Revolut** and **N26**, neither issuer officially documents Alipay/WeChat Pay binding, and user reports are mixed — some travelers bind them like any other Visa/Mastercard, others hit "foreign banks are not allowed" errors (according to user reports, not independently verified). Test-bind before departure and carry a second card as backup.
 
 ## Why is my payment failing in China?
 
-| Symptom | Cause | Fix |
-|---|---|---|
-| Card binding rejected | Issuer blocks the merchant code, requires 3-D Secure, or hasn't been notified of overseas use | Call your card issuer before the trip; some banks require pre-trip travel notification for Chinese merchants |
-| SMS verification doesn't arrive | Carrier SMS gateway delays; foreign-routed SMS sometimes filtered | Resend; if persistent, register on a foreign carrier before arrival |
-| Payment fails for amounts ≥ ¥200 | 3% surcharge declined by card issuer (or hits issuer's foreign-transaction-fee threshold) | Split into smaller payments (each under ¥200 sidesteps the surcharge entirely) or switch to the other app |
-| WeChat registration stuck at "ask a friend to scan" | Risk-control vouching step — frequently triggered for foreign-number registrations; the contact must be registered 6+ months, have WeChat Pay 3+ months, not have vouched in the past month, and not been banned in 6 months | Find a qualifying contact before arrival; if none available, WeChat in-app support can unlock but takes several days |
-| Refund stuck for >30 days | Cross-border settlement delay | Wait the full 30 days, then dispute via the merchant first, the app second, the card issuer third |
-| Card binds successfully but cannot be selected at checkout | Alipay/WeChat risk-control silently blocks the card for that merchant or transaction type; no error message | Try the other app; fall back to POS card swipe or cash |
-| Card stops working suddenly after several successful payments | Platform risk-control or regulatory spending limit hit; no advance warning given (source: Shuimu BBS 2026-05-11) | Try unbinding and re-binding the card; try the other platform; switch to cash |
-| Third-party app redirects to Alipay/WeChat at checkout but only domestic cards appear | The redirect flow passes a filter that excludes foreign cards, even if one is already bound to the wallet | Open Alipay/WeChat directly and complete the payment from there instead |
-| Payment fails while using a VPN | VPN traffic raises the risk score in Alipay/WeChat Pay's fraud-detection system; combined with other factors (new account, first large payment, unfamiliar merchant) it can push a transaction over the rejection threshold | For most users this is not an issue in practice — try disabling the VPN for the payment if a transaction is declined unexpectedly |
+The handful of causes behind almost every failed foreign-card payment:
+
+- **Personal vs merchant QR code** — foreign-card wallets can only pay **merchant** codes; a small vendor's personal collect code will refuse your payment (chinavigators marks "Split bills with friends" and "P2P transfers to contacts" as unavailable to foreign-card accounts — "receiving only possible"). Try the other app (the vendor may have a merchant code there), ask for a merchant code (商家码), or pay cash.
+- **VPN left on** — VPN traffic raises the fraud-detection risk score and can silently decline a payment ("an active VPN causes geographic IP mismatches that trigger fraud detection" — chinavigators). Toggle the VPN off for the payment, then back on.
+- **Payment ≥ ¥200 declined** — the 3% surcharge is rejected by some card issuers. Split the bill into amounts under ¥200 or switch to the other app.
+- **Risk-control blocks a previously working card with no warning** (traveler-reported, not independently verified — Shuimu BBS 2026-05-11) — unbind and re-bind the card, try the other platform, or fall back to cash / POS swipe.
+- **Setup-stage failures** — card binding rejected (call your issuer, give a travel notification first) or WeChat registration stuck at contact-vouching (see the WeChat Pay setup section above).
+
+For the full symptom → cause → fix table — including SMS verification delays, refunds stuck past 30 days, cards that bind but can't be selected at checkout, and third-party apps that filter out foreign cards — see [[wiki/concepts/payment-failures.md]].
 
 ## Why can't I register for Chinese apps with a foreign number?
 
@@ -261,9 +271,7 @@ Foreign visitors generally cannot complete either step. This blocks access to se
 
 Metro systems in major cities use dedicated mini-programs accessible through both WeChat and Alipay. Generate a QR code, scan at turnstile entry, scan again at exit — payment auto-deducts from your linked card.
 
-For the complete city-by-city metro mini-program table, see [[wiki/concepts/transportation.md#city-by-city-metro-apps]].
-
-(Source: realchinaguide.com 2026)
+For the complete city-by-city metro mini-program table (with sources), see [[wiki/concepts/transportation.md#city-by-city-metro-apps]].
 
 ## What should I do with my payment apps before leaving China?
 
@@ -276,7 +284,7 @@ For the complete city-by-city metro mini-program table, see [[wiki/concepts/tran
 Both apps support remote sign-out and device-binding management:
 
 - **Alipay**: log into alipay.com on a desktop, **Account Security → Manage Devices** → remove the lost device. Then change the login password.
-- **WeChat**: on a friend's phone or desktop wechat.com, sign in via your number → **Settings → Account Security → Manage Devices** → remove the lost device. WeChat Pay specifically can also be locked via **Wallet → Pay → Forgot password** to invalidate the existing PIN until you reset.
+- **WeChat**: WeChat freezes account access through **WeChat Security Center** (weixin110.qq.com) → **Freeze Account**, which you can reach from any browser. Note that signing in on a new device usually requires confirmation from your old phone, so if the device is truly lost, use the freeze flow rather than a fresh login. Once you regain access on a replacement device, remove the old one under **Settings → Account Security → Manage Devices** and reset your WeChat Pay PIN. (WeChat's account-recovery flows change periodically — verify the current freeze path in WeChat's Help Center.)
 
 If you cannot regain access at all, both apps use device-bound authentication (PIN/biometric tied to the registered device), which significantly limits unauthorized charge risk — but do not rely on this as a guarantee. Call your card issuer to block or flag the card regardless.
 

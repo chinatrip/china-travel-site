@@ -1,7 +1,7 @@
 ---
 title: "How to Set Up Alipay in China as a Foreigner (2026)"
 date: 2026-04-30
-last_verified: 2026-06-09
+last_verified: 2026-06-12
 verified_against:
   - https://global.alipay.com
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
@@ -9,9 +9,10 @@ verified_against:
   - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250228/5af2c2cb1807459a84f5b49e6a1ebb06.html
   - https://www.alipayplus.com/mobile-payment-provider-list/
   - https://www.scmp.com/tech/big-tech/article/3331469/alibaba-rebrands-food-delivery-app-eleme-taobao-shangou-instant-retail-push
+  - https://render.alipay.com/p/c/k2ffmmxp
+  - https://render.alipay.com/p/c/k0mtcsgi/1572520436172.html
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
-  - raw/realchinaguide-payment-guide-2026.md
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/wechat.md
@@ -28,8 +29,8 @@ faqs:
     a: "Tour Pass is a prepaid mini-wallet for short visits, but since direct foreign-card binding launched it's usually unnecessary and can carry fees. Most visitors just bind a card directly."
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: null
+  page_audit: 2026-06-12
+  citation_check: 2026-06-12
 category: app
 ---
 
@@ -63,9 +64,9 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 
 **Tour Pass** (prepaid wallet) is **no longer necessary for most visitors** — direct card binding (added in 2024) is simpler and has higher limits. If the Alipay app shows a Tour Pass prompt during onboarding, dismiss it and use the standard Bank Cards flow instead.
 
-Where Tour Pass is still encountered, it charged a **5% fee** per transaction (vs 3% for direct card binding) and auto-refunded unused balance to the original card after 90 days, with no fee on refunds. (Source: realchinaguide.com 2026)
+Where Tour Pass is still encountered, the underlying Bank of Shanghai prepaid-card service charges a **5% service fee on each top-up** ("5% of the card purchase amount … charged in RMB at one time") — versus the 3% surcharge on direct card binding — and the service is valid for **90 days**, after which Bank of Shanghai automatically converts the remaining balance back at the prevailing exchange rate and refunds it to the original bank card (any exchange-rate difference is borne by the user). (Source: Bank of Shanghai "Prepaid Card" User Service Agreement, hosted on render.alipay.com, accessed June 2026)
 
-**TourCard** (top-up balance variant) was a prepaid balance option within Alipay — load ¥500 at a time to minimize fee frequency, with top-ups taking ~10 seconds from a foreign card. (Source: realchinaguide.com 2026)
+**TourCard** (top-up balance variant) was a prepaid balance option within Alipay — like Tour Pass, you load RMB onto the prepaid card from a foreign bank card, then "make purchases and payments by using the Prepaid Card balance via Alipay quick payment service". (Source: official "Tour Pass" Information Technology Service Agreement on render.alipay.com, accessed June 2026.) Travelers commonly reported loading ¥500 at a time, with top-ups completing within seconds (traveler-reported, not independently verified).
 
 **Alipay+** allows payment via foreign e-wallets (GCash, Kakao Pay, GrabPay, TrueMoney, and others) — useful if you already use one of those apps.
 
@@ -78,7 +79,9 @@ Where Tour Pass is still encountered, it charged a **5% fee** per transaction (v
 - **Bike-sharing**: Hello Bike (also shows bike options on Alipay homepage)
 - **Metro mini-programs**: Access city metro QR codes (Yitongxing, Metro Daduhui, etc.) directly through Alipay
 
-## Practical Tips (Source: realchinaguide.com 2026)
+## Practical Tips
+
+The following are traveler-reported practices, not official Alipay guidance:
 
 - **Download before arriving in China** — app stores in China may require Chinese payment methods for downloads.
 - Set phone language to English **before** opening Alipay for the first time — affects the interface language.

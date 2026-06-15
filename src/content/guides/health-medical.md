@@ -1,9 +1,13 @@
 ---
 title: Health and Medical Care for Foreign Visitors
-date: 2026-05-04
-last_verified: 2026-06-09
+date: 2026-06-12
+last_verified: 2026-06-12
 verified_against:
   - https://www.gov.uk/government/publications/medical-treatment-in-china
+  - https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html
+  - http://www.customs.gov.cn/
+  - https://cdn.who.int/media/docs/default-source/immunization/position_paper_documents/rabies/pp-rabies-summary-2018.pdf
+  - https://www.cdc.gov/rabies/hcp/clinical-care/post-exposure-prophylaxis.html
 sources:
   - raw/health-medical-guide-2026.md
 related:
@@ -12,7 +16,7 @@ related:
   - wiki/concepts/emergency-safety.md
   - wiki/concepts/tibet-permits.md
 volatility: medium
-description: "Medical care in China for foreign visitors: international hospitals, paying with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at high-elevation destinations. Updated May 2026."
+description: "Medical care in China for foreign visitors: international hospitals, paying with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at high-elevation destinations. Updated June 2026."
 faqs:
   - q: "Where do foreigners get medical care in China?"
     a: "Major cities have international hospitals and foreigner clinics with English-speaking staff (e.g., United Family, Raffles). Public hospitals are cheaper but largely Chinese-only; bring a translation app and your passport."
@@ -24,8 +28,8 @@ faqs:
     a: "Pharmacies (yaodian) are widespread and stock common remedies, but staff may not speak English and brand names differ. Bring essential prescriptions, and show the generic drug name via a translation app."
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-05-06
+  page_audit: 2026-06-15
+  citation_check: 2026-06-12
 category: guide
 ---
 
@@ -33,12 +37,7 @@ category: guide
 
 ## What are the medical emergency numbers in China?
 
-| Service | Number | Notes |
-|---|---|---|
-| Ambulance | **120** | Nationwide; Chinese-speaking operators |
-| Police | **110** | Nationwide |
-| Fire | **119** | Nationwide |
-| Beijing medical (additional) | **999** | Beijing only; some English support |
+For medical emergencies, dial **120** (ambulance — nationwide, Chinese-speaking operators). Police are **110** and fire is **119**, both nationwide. In Beijing only, **999** is an additional medical emergency line with some English support. For the complete emergency-numbers table (traffic accidents 122, the 12345 government services hotline) and practical tips on calling, see [[wiki/concepts/emergency-safety.md]].
 
 **Language issue:** 120 operators and ambulance crews typically speak Chinese only. Have a Chinese-speaking person call on your behalf, or use a translation app. Keep your hotel address written in Chinese characters for emergencies.
 
@@ -115,11 +114,12 @@ Check your government's travel health advisory for the latest China-specific rec
 ## What should I do about animal bites or rabies risk in China?
 
 Rabies is present in China. Any animal bite or scratch (dog, cat, bat, monkey) requires:
-1. Immediate wound cleaning with soap and water for 15 minutes
+1. Immediate wound cleaning with soap and water for about 15 minutes
 2. Same-day visit to a hospital or rabies vaccination center (狂犬病疫苗接种点)
-3. Full post-exposure prophylaxis (PEP) course — 4–5 injections over 2–4 weeks
+3. A full post-exposure prophylaxis (PEP) course of rabies vaccine, given over several weeks on the schedule your clinician sets
+4. **Rabies immunoglobulin (RIG)** in addition to the vaccine if you have **not** been previously vaccinated and the exposure is severe — WHO Category III, i.e. a transdermal bite or scratch, or saliva contact with broken skin or mucous membranes. RIG is given once, at the start of treatment, infiltrated into and around the wound. Ask explicitly for RIG if you have a deep or bleeding bite — it is the step most often missed (source: WHO rabies position paper, 2018; CDC rabies PEP guidance).
 
-**Do not wait.** Rabies is fatal once symptomatic. Find a vaccination center via 120 or any hospital emergency desk.
+**Do not wait.** Rabies is effectively always fatal once symptoms begin. Begin the vaccine immediately regardless of RIG availability, and find a vaccination center via any hospital emergency desk.
 
 ## What common health issues affect travelers in China?
 
@@ -152,7 +152,7 @@ Severe AMS can progress to **HACE** (confusion, inability to walk straight) or *
 - **Hydrate:** 3–4 litres of water per day; avoid alcohol for the first 2–3 days
 - **Move slowly:** no vigorous physical activity in the first 48 hours
 - **Rhodiola rosea (红景天):** traditional Chinese herbal supplement; start 1–2 weeks before arrival; available at pharmacies throughout China and in Lhasa; evidence is mixed but widely used with no known safety concerns
-- **Acetazolamide (Diamox):** prescription diuretic that speeds acclimatization; 125–250 mg twice daily, starting 1–2 days before ascent; common side effects: increased urination, tingling in hands/feet. **Obtain a prescription before travel** — declare to Chinese customs if carrying more than a 7-day supply.
+- **Acetazolamide (Diamox):** a prescription drug that speeds acclimatization. The CDC Yellow Book gives an effective prophylactic dose of **125 mg every 12 hours, beginning the day before ascent and continuing for the first two days at altitude** (longer if you keep ascending); common side effects are increased urination and tingling in the hands/feet (source: CDC Yellow Book, High-Altitude Travel & Altitude Illness, cdc.gov). Because it is prescription-only and not suitable for everyone, **discuss it with a travel-medicine clinic or your doctor before travel** and obtain a prescription. When bringing it into China, carry it in a **reasonable self-use quantity with your prescription**: China Customs admits personal-use medication on a "self-use, reasonable quantity" basis determined by a valid doctor's prescription (narcotics and Class-1 psychotropic drugs face stricter single-prescription limits — acetazolamide is neither) (source: China Customs personal-medication guidance, customs.gov.cn).
 
 Oxygen canisters are available at most Lhasa hotels, often free or for a small fee.
 

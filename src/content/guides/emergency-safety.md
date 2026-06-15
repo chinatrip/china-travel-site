@@ -1,7 +1,7 @@
 ---
 title: Emergency and Safety for Foreign Visitors
-date: 2026-06-01
-last_verified: 2026-06-09
+date: 2026-06-12
+last_verified: 2026-06-12
 verified_against:
   - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
   - https://chinasurvivalkit.com/blog/is-china-safe-tourists
@@ -13,7 +13,11 @@ verified_against:
   - https://china.usembassy-china.org.cn/services/emergency-contact/
   - https://www.intrepidtravel.com/us/china/is-china-lgbtqia-friendly
   - https://www.pacificprime.com/blog/travel-insurance-in-china.html
+  - https://safetywing.com/nomad-insurance/pricing
+  - https://www.worldnomads.com/travel-insurance/
   - https://chinasurvivalkit.com/blog/china-police-passport-check-guide
+  - https://en.nia.gov.cn/n147418/n147458/c155978/content.html
+  - https://www.fmprc.gov.cn/eng/wjb/zzjg_663340/lss_665290/xgxw_665292/202406/t20240606_11405794.html
 sources:
   - raw/realchinaguide-safety-guide-2026.md
 related:
@@ -22,10 +26,10 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/language-barrier.md
 volatility: medium
-description: "Staying safe in China as a foreigner: emergency numbers (110 police, 120 ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English help hotline. Updated June 2026."
+description: "Staying safe in China as a foreigner: emergency numbers (110 police, 120 ambulance, 119 fire), common scams, lost-passport steps, and the 12345 government services hotline (English support varies by city). Updated June 2026."
 faqs:
   - q: "What are the emergency numbers in China?"
-    a: "Police 110, ambulance 120, fire 119. For English-language help, the 12345 government service hotline can assist in many cities."
+    a: "Police 110, ambulance 120, fire 119. Operators at 110 and 120 typically speak Chinese only — use a translation app or ask a bystander to call. The 12345 government services hotline can help with non-emergencies, though English support varies by city."
   - q: "Is China safe for tourists?"
     a: "Violent crime against tourists is very rare and most travelers, including solo female travelers, feel safe. The main risks are scams and petty theft in crowded tourist areas — take normal precautions."
   - q: "What are the most common scams in China?"
@@ -34,7 +38,7 @@ faqs:
     a: "Report it to the local police for a loss report, contact your embassy or consulate for an emergency travel document, and apply for a replacement visa stamp at the local exit-entry administration."
 review:
   status: audited
-  page_audit: 2026-06-09
+  page_audit: 2026-06-15
   citation_check: null
 category: guide
 ---
@@ -49,8 +53,9 @@ category: guide
 | **Ambulance** | **120** | Nationwide; Chinese-speaking operators — see [[wiki/concepts/health-medical.md]] |
 | **Fire** | **119** | Nationwide |
 | **Traffic accident** | **122** | Road incidents; police then attend |
+| **Beijing medical (additional)** | **999** | Beijing only; some English support |
 | **Government services hotline** | **12345** | Complaints, non-emergency assistance; operated by local governments; English support varies by city |
-| **MFA Emergency Hotline** | **12308** | Ministry of Foreign Affairs 24/7 line for foreigners in emergencies (lost passport, arrest, natural disaster); Mandarin and English; can refer to other languages |
+| **Consular protection hotline** | **12308** | China's Ministry of Foreign Affairs 24/7 line — serves **Chinese citizens** seeking help from Chinese embassies abroad, **not** foreign nationals inside China. As a foreign visitor, contact **your own** country's embassy or consulate instead (see Lost or Stolen Passport below) |
 
 **Practical tips when calling:**
 - Speak slowly and clearly. Operators at 110 and 120 typically speak Chinese only — use a translation app or ask a bystander to call for you.
@@ -65,9 +70,9 @@ China is one of the safer countries in the world for physical crime by global st
 
 **Cameras and surveillance:** China has an extensive CCTV network in public spaces. This is not a safety threat to tourists but it does mean public behaviour — particularly anything that could be construed as a protest or politically sensitive activity — is monitored. This is a behavioural expectation to be aware of, not a reason to avoid travel.
 
-**Passport carry requirement:** Chinese law requires foreigners aged 16 and above to carry their **original passport** (or a valid foreign residence permit) at all times and to present it on request by public security authorities. Police do not legally accept printed copies as a substitute, though some officers may accept a clear photo during a routine check — carry the original when practical. Not producing your passport can result in being escorted to retrieve it, a fine, or, in worst cases, detention while identity is confirmed (source: chinasurvivalkit.com; chinaservicesinfo.com). Keep a separate photocopy or phone photo of your passport data page and visa as backup.
+**Passport carry requirement:** Chinese law requires foreigners aged 16 and above to carry their **original passport** (or a valid foreign residence permit) **at all times** and to present it for inspection by public security authorities. This is a legal obligation, not a discretionary one: Article 38 of the Exit and Entry Administration Law states that foreigners who have reached the age of 16 "shall carry with them their passports or other international travel documents, or foreigners' stay or residence permits, and accept the inspection of public security organs." A printed copy or phone photo is **not** a legal substitute — always carry the physical document. Some officers may, in practice, be satisfied with a clear photo during a routine check, but they are not legally obliged to accept one, so you cannot rely on this. Failing to carry or present the document can lead, under Article 76 of the same law, to a warning and a fine of up to RMB 2,000, as well as being escorted to retrieve it or, in worst cases, detention while your identity is confirmed (source: Exit and Entry Administration Law of the PRC, Articles 38 and 76, en.nia.gov.cn; chinasurvivalkit.com). Keep a separate photocopy or phone photo of your passport data page and visa as a **backup** for use after a loss, not as a stand-in for carrying the original.
 
-**Solo female travelers:** generally very safe. You can move around urban areas, including late at night, with minimal worry. Standard big-city precautions (well-lit streets, booked transport) are adequate. Traveler reports confirm walking alone in Beijing, Shanghai, Xi'an, and Guilin at all hours without incident — the most common annoyance cited is aggressive street vendors rather than any personal safety threat (source: chinasurvivalkit.com; scenerytrip.com; realchinaguide.com). The UK FCDO (updated May 2026) notes that while serious crime against foreigners is rare, 'women travelling alone or with female friends could be at slightly higher risk' of drink spiking. Standard precautions: avoid unmarked taxis, don't leave drinks unattended, and share your itinerary with someone.
+**Solo female travelers:** generally very safe. You can move around urban areas, including late at night, with minimal worry. Standard big-city precautions (well-lit streets, booked transport) are adequate. Traveler reports confirm walking alone in Beijing, Shanghai, Xi'an, and Guilin at all hours without incident — the most common annoyance cited is aggressive street vendors rather than any personal safety threat (source: chinasurvivalkit.com; scenerytrip.com; realchinaguide.com). The UK FCDO (safety-and-security page, accessed June 2026) notes that while serious crime against foreigners is rare, 'women, travelling alone or with female friends, could be at higher risk' of drink spiking. Standard precautions: avoid unmarked taxis, don't leave drinks unattended, and share your itinerary with someone.
 
 **Hostel safety:** Hostels with ratings of 8.5+ on Trip.com or Hostelworld are generally safe. Lockers are provided for valuables. Most travelers report no safety issues. Choose well-reviewed hostels and use the provided locker (source: realchinaguide.com).
 
@@ -197,7 +202,7 @@ Your embassy or consulate will issue an **Emergency Travel Document (ETD)** or a
 
 Most major countries have consulates in Shanghai, Guangzhou, Chengdu, and other cities in addition to the Beijing embassy. Check your government's travel site for the full list of posts in China.
 
-**MFA hotline 12308** can also connect you with assistance if you cannot reach your embassy directly.
+If you cannot reach your embassy's main line, use the **after-hours / emergency consular number** listed for your country above — most maintain a 24/7 duty officer for citizens in distress. (Note: China's MFA 12308 hotline is for Chinese nationals abroad, not for foreign visitors in China.)
 
 ### Step 4: Apply for a New Chinese Visa
 
@@ -262,8 +267,12 @@ Some international hospitals in Beijing and Shanghai have direct billing arrange
 
 ### Budget Insurance Providers
 
-<!-- Unverified: from summary, needs citation check -->
-Budget-friendly travel insurance options reported by travelers include World Nomads and SafetyWing, with approximate costs of $50-80 for a 2-week trip covering medical emergencies and trip interruption. Verify coverage details, exclusions, and current pricing directly with the provider before purchasing. (Source: realchinaguide.com 2026.)
+Two providers frequently used by budget travelers:
+
+- **SafetyWing (Nomad Insurance)** — published pricing: the Essential plan costs **USD $62.72 per 4 weeks** for travelers aged 18–39 (as of June 2026; higher brackets for ages 40+). Coverage spans 180+ countries; China is not listed as excluded, but confirm your destination is covered before purchase (source: safetywing.com official pricing page).
+- **World Nomads** — **quote-based pricing** (varies by age, trip length, destination, and planned activities), so no fixed price can be quoted here. China is selectable as a covered destination. Caveat from their policy terms: travel to a destination under a "do not travel" warning from your home government is not covered.
+
+Insurance pricing is volatile commercial data — always confirm current rates, coverage details, and exclusions directly with the provider before purchasing.
 
 ## See Also
 
