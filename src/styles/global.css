@@ -9,3 +9,36 @@
   --color-surface: #fafafa;
   --color-muted: #6b7280;
 }
+
+/*
+ * Accessibility fallbacks (a11y). These live in the single global stylesheet
+ * so they apply site-wide via BaseLayout's import — no per-component changes.
+ */
+
+/*
+ * Respect "reduce motion": neutralise every transition/transform/animation
+ * (including all Tailwind utilities such as GuideCard's hover:-translate-y)
+ * for users who request reduced motion. Durations drop to ~0 rather than 0 so
+ * animation/transition `end` events still fire, looping animations run once,
+ * and smooth scrolling becomes instant.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*
+ * Visible keyboard focus ring. :focus-visible (not :focus) keeps the ring for
+ * keyboard navigation while leaving mouse clicks unchanged. Uses the site
+ * primary token for a consistent, high-contrast outline with breathing room.
+ */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
