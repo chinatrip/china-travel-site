@@ -48,21 +48,21 @@ faqs:
       traveler used about 5 GB in 10 days with heavy maps use.
   - q: How much eSIM data should I buy before arriving in China?
     a: >-
-      Buy enough up front rather than counting on topping up later. Install the
-      eSIM by QR before departure and toggle data on only after you land — the
-      validity clock starts on first connection. For sizing, one traveler used
-      about 5 GB in 10 days with heavy maps use, so pre-downloading offline
-      Google Maps for your cities saves significant data; unlimited plans suit
-      streaming or continuous navigation. Check your provider's own top-up
-      policy before you travel.
+      Buy enough up front, then install the eSIM by QR before departure and
+      toggle data on only after you land — the validity clock starts on first
+      connection. For sizing, one traveler used about 5 GB in 10 days with heavy
+      maps use, so pre-downloading offline Google Maps for your cities saves
+      significant data; if you expect to upload photos, stream video, or
+      navigate continuously, choose an unlimited plan instead of a fixed cap.
   - q: Do I need a Chinese phone number?
     a: >-
-      Most travelers don't — a foreign eSIM covers data. A +86 number is still
-      useful because many domestic services (12306 train booking, DiDi tour
-      mode, attraction ticketing, hotel front-desk WeChat groups) fall back to
-      SMS verification on a +86 number. Alipay and WeChat Pay both accept
-      foreign numbers in 2026, but some sub-features remain +86-only, so for a
-      longer stay a cheap local SIM alongside your eSIM is the safest setup.
+      Not for data — a foreign eSIM gives you data only, no +86 number, which
+      suits trips of 30 days or less where you don't need one. But a +86 number
+      is more useful than it looks: many domestic services (12306 train booking,
+      DiDi tour mode, attraction ticketing, hotel front-desk WeChat groups) fall
+      back to SMS verification on a +86 number. Alipay and WeChat Pay both accept
+      foreign numbers in 2026, but some sub-features remain +86-only, so if you
+      need one for Chinese-app sign-ups, get a physical SIM in addition.
 category: guide
 ---
 
