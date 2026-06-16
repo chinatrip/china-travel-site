@@ -26,10 +26,11 @@ description: >-
 faqs:
   - q: Where do foreigners get medical care in China?
     a: >-
-      Major cities have international hospitals and foreigner clinics with
-      English-speaking staff (e.g., United Family, Raffles). Public hospitals
-      are cheaper but largely Chinese-only; bring a translation app and your
-      passport.
+      In Tier-1 cities, international or private hospitals (e.g. United Family)
+      offer English-speaking, Western-standard care; many top-tier public
+      hospitals also have a VIP / international ward (国际部) with some English
+      staff. Standard public hospitals are far cheaper but largely Chinese-only,
+      so bring a translation app and your passport.
   - q: How do I pay for a hospital visit in China?
     a: >-
       Hospitals generally expect payment up front via Alipay, WeChat Pay or
@@ -37,14 +38,19 @@ faqs:
       details handy for reimbursement.
   - q: Do I need travel insurance for China?
     a: >-
-      Strongly recommended. It covers medical emergencies and evacuation, which
-      can be costly — especially for high-altitude or remote-area trips. Confirm
-      the policy explicitly covers China.
+      Yes — travel insurance is essential, because medical evacuation or
+      repatriation is extremely expensive without it. Choose a policy that
+      covers both medical treatment and evacuation / repatriation in China. For
+      high-altitude or remote-area trips (Tibet, Qinghai), check the exclusions
+      too: standard policies often exclude treatment at altitude, air
+      evacuation, or specific regions.
   - q: Can I buy medicine over the counter in China?
     a: >-
-      Pharmacies (yaodian) are widespread and stock common remedies, but staff
-      may not speak English and brand names differ. Bring essential
-      prescriptions, and show the generic drug name via a translation app.
+      Often yes, but expect to use a local equivalent. Common Western OTC brands
+      may not be available, and local substitutes are packaged in Chinese, so
+      show the generic drug name via a translation app. Established pharmacy
+      chains (大药房) and Watson's in major cities carry some imported products.
+      Bring a full supply of any prescription medication, plus extra for delays.
 category: guide
 ---
 

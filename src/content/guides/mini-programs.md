@@ -19,14 +19,18 @@ faqs:
   - q: What are WeChat and Alipay mini-programs?
     a: >-
       They are lightweight apps that run inside WeChat or Alipay — for
-      ride-hailing, food, metro tickets, attractions and more — so you don't
-      need to install separate apps. Open them by searching or scanning a QR
-      code.
+      ride-hailing, food delivery, metro tickets, bike-sharing and event
+      ticketing — so you don't need to install separate apps. Open one by
+      searching for it by name (Chinese characters work best) in WeChat or
+      Alipay; payment connects automatically via your linked card.
   - q: Do mini-programs require a Chinese phone number?
     a: >-
-      Many work with just your wallet, but some features require a +86 number.
-      DiDi, metro and many ticketing mini-programs work for foreigners; certain
-      food and retail ones may not.
+      No. A key advantage of mini-programs is that they avoid the Chinese
+      phone number and SMS verification that standalone apps often require —
+      they run inside WeChat or Alipay and inherit your linked payment method,
+      so a foreign Visa or Mastercard is enough. The DiDi mini-program, for
+      example, sidesteps the phone-verification issues the standalone DiDi app
+      sometimes has.
   - q: How do I order a taxi without the DiDi app?
     a: >-
       Use the DiDi mini-program inside Alipay or WeChat — it works without
@@ -34,9 +38,10 @@ faqs:
       wallet.
   - q: Can I use mini-programs in English?
     a: >-
-      Some offer English or in-app translation, but many are Chinese-only. Use
-      your phone's screen translation or the host app's translate feature to
-      navigate them.
+      Some do (DiDi has an English interface), but many are Chinese-only. To
+      navigate those, use the host app's built-in translate feature — in WeChat
+      or Alipay, tap ··· → Translate (翻译), which supports 18 languages. Update
+      the app if the option is missing.
 category: guide
 ---
 
