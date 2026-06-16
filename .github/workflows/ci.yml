@@ -16,6 +16,11 @@ name: CI & Preview
 on:
   pull_request:
     branches: [main]
+  # Manual full-site SEO/GEO scan: runs `seo-review` over EVERY content page on demand
+  # (pull_request still only reviews the diff). Trigger via `gh workflow run ci.yml`
+  # or the Actions UI; the report lands in the run's Summary page (no PR to comment on).
+  # The `test` job is gated to pull_request only — dispatch runs the seo-review job alone.
+  workflow_dispatch: {}
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -27,6 +32,9 @@ permissions:
 
 jobs:
   test:
+    # PR-only: preview deploy + PR comment make no sense on manual workflow_dispatch
+    # (no PR context). Dispatch runs the `seo-review` job (full-site scan) by itself.
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     env:
       CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -169,16 +177,28 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # pull_request → review only the diff (default cap 25, plenty for a PR).
+      # workflow_dispatch → `--all` reviews EVERY content page; bump the cap to 40
+      # so the full set (~27 pages) is never truncated. Both write the report to
+      # seo-review-report.md AND $GITHUB_STEP_SUMMARY.
       - name: SEO/GEO review of changed content
         id: seo
         if: env.OPENROUTER_API_KEY != ''
-        run: node scripts/seo-review.mjs
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            node scripts/seo-review.mjs --all
+          else
+            node scripts/seo-review.mjs
+          fi
         env:
           GITHUB_BASE_REF: ${{ github.base_ref }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
+          SEO_REVIEW_MAX_FILES: ${{ github.event_name == 'workflow_dispatch' && '40' || '25' }}
 
+      # PR-only: on workflow_dispatch there is no PR to comment on (the report lives
+      # in the run Summary, written by the script via $GITHUB_STEP_SUMMARY).
       - name: Comment SEO/GEO report on PR
-        if: always() && env.OPENROUTER_API_KEY != ''
+        if: always() && github.event_name == 'pull_request' && env.OPENROUTER_API_KEY != ''
         uses: actions/github-script@v7
         with:
           script: |
