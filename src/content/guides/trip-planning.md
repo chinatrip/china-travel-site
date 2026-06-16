@@ -51,9 +51,10 @@ faqs:
       and short trips same-day via Alipay to stay flexible.
   - q: What is the best season to visit China?
     a: >-
-      Spring (April-May) and autumn (September-October) offer the best weather.
-      Avoid Golden Week (first week of October) and Lunar New Year, when crowds
-      and prices surge.
+      April-May is optimal in most regions, and late September (before October
+      1) is excellent — crowds drop immediately after Golden Week ends. Avoid
+      Golden Week (October 1-7) and Chinese New Year, when crowds and prices
+      surge.
   - q: What is a realistic daily budget for China?
     a: >-
       Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+

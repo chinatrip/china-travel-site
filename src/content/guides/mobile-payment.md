@@ -51,7 +51,7 @@ faqs:
       Pay — no Chinese bank account or phone number required.
   - q: Why does my Alipay or WeChat Pay payment keep failing in China?
     a: >-
-      The most common cause is paying to a vendor's personal QR code, which
+      One common cause is paying to a vendor's personal QR code, which
       foreign-card wallets cannot send to — only merchant codes work. A
       turned-on VPN can also block payments, so switch it off when paying.
   - q: How much does it cost to pay with a foreign card on Alipay or WeChat Pay?

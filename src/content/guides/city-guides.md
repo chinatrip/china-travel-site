@@ -26,10 +26,11 @@ faqs:
       Beijing and 2-4 days each for the others.
   - q: How many days do I need in China?
     a: >-
-      Two weeks lets you cover 3-4 cities without rushing. On a short visa-free
-      transit trip, plan around your time limit — the 240-hour transit policy
-      now allows travel across multiple provinces, while the older 144-hour
-      transit typically confines you to a single region.
+      Two weeks lets you cover 3-4 cities without rushing — the classic
+      first-timer route runs Beijing, Xi'an, Chengdu and Shanghai by high-speed
+      rail. A faster 7-10 day trip suits the east-coast cities or a single
+      region. On a short visa-free transit trip, plan tightly around your time
+      limit.
   - q: What is the best time of year to visit China?
     a: >-
       Spring (April-May) and autumn (September-October) have the most pleasant
