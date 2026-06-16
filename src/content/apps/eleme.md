@@ -20,9 +20,9 @@ review:
   citation_check: 2026-06-01
   notes: "Rebrand confirmed via ele.me official meta description: '自2025年12月起，饿了么品牌更名为淘宝闪购'. Alibaba ownership, Alipay integration, ordering flow verified."
 description: >-
-  Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app —
-  the ordering flow for foreigners, in-app translation, Alipay payment, and
-  address tips. Updated June 2026.
+  Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app:
+  ordering flow for foreigners, in-app translation, Alipay payment, and address
+  tips.
 faqs:
   - q: What is Taobao Flash Purchase / Ele.me?
     a: >-

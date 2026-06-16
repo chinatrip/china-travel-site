@@ -20,9 +20,8 @@ review:
   page_audit: 2026-06-09
   citation_check: 2026-05-06
 description: >-
-  How to order food in China without speaking Chinese: photo menus, camera
-  translation, allergy phrases, delivery apps (Meituan, Ele.me / Taobao Flash
-  Sale), and regional cuisine basics. Updated May 2026.
+  Order food in China without speaking Chinese: photo menus, camera translation,
+  allergy phrases, delivery apps (Meituan, Ele.me), and regional cuisine basics.
 faqs:
   - q: How do I order food in China if I don't speak Chinese?
     a: >-

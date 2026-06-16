@@ -20,9 +20,9 @@ review:
   page_audit: 2026-06-09
   citation_check: null
 description: >-
-  WeChat is essential in China for messaging, payments, and mini-programs — how
-  foreigners set up WeChat Pay, bind a foreign card, and the 2026 PayPal
-  integration for US users. Updated May 2026.
+  WeChat is essential in China for messaging, payments, and mini-programs: how
+  foreigners set up WeChat Pay, bind a foreign card, and use 2026 PayPal
+  integration.
 faqs:
   - q: Do I need WeChat to travel in China?
     a: >-

@@ -27,8 +27,8 @@ review:
   citation_check: 2026-05-06
 description: >-
   Which hotels in China accept foreign passports, how to book foreigner-eligible
-  stays on Trip.com/Agoda, pay with foreign cards, and handle the mandatory
-  police registration. Updated June 2026.
+  stays on Trip.com or Agoda, pay with foreign cards, and do police
+  registration.
 faqs:
   - q: Why do some hotels in China refuse foreign guests?
     a: >-
