@@ -46,11 +46,13 @@ faqs:
     a: >-
       Bargain at tourist markets and small independent stalls, but not in malls,
       chain stores, supermarkets or restaurants, which have fixed prices.
-  - q: Do people speak English in China?
+  - q: Why do people stare or ask to take photos with me in China?
     a: >-
-      Outside major hotels and tourist sites English is limited, especially
-      beyond Beijing and Shanghai. A camera-translation app and your hotel's
-      name saved in Chinese characters go a long way.
+      Foreigners with distinctive appearances attract attention, especially in
+      smaller cities and rural areas — it's curiosity, not hostility. Travelers
+      are also commonly asked to pose for photos, often by children and older
+      people. To decline politely, a smile and a gentle hand wave is universally
+      understood.
 category: guide
 ---
 

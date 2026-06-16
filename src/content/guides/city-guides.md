@@ -22,8 +22,8 @@ faqs:
     a: >-
       Most first-timers do Beijing (Great Wall, Forbidden City), Shanghai
       (modern China) and Xi'an (Terracotta Warriors), adding Chengdu (pandas) or
-      Guilin/Yangshuo (scenery) if time allows. About 4-5 days per major city is
-      comfortable.
+      Guilin/Yangshuo (scenery) if time allows. Allow roughly 4-5 days for
+      Beijing and 2-4 days each for the others.
   - q: How many days do I need in China?
     a: >-
       Two weeks lets you cover 3-4 cities without rushing. On a short visa-free
@@ -37,9 +37,11 @@ faqs:
       domestic crowds and prices peak.
   - q: How do I travel between Chinese cities?
     a: >-
-      High-speed rail is fast, frequent and connects all major cities — book on
-      12306. Flights suit very long distances; within cities use the metro, DiDi
-      and Amap.
+      High-speed rail connects the major cities on the popular routes and is the
+      default for first-timers; the classic Beijing-Xi'an-Chengdu-Shanghai trip
+      runs entirely by HSR. Domestic flights cover the long western segments
+      (such as the Silk Road), and within a city each metro has its own app to
+      set up on arrival.
 category: guide
 ---
 

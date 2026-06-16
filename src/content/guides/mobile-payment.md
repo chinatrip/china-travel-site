@@ -61,8 +61,10 @@ faqs:
       amounts below ¥200.
   - q: Should I still bring cash to China?
     a: >-
-      Mobile pay is accepted almost everywhere, but carry ¥500-1000 in cash as a
-      backup for small vendors, rural areas, and the occasional payment failure.
+      Mobile pay is accepted almost everywhere, but carry ¥200-500 in small bills
+      as a backup for small vendors, older taxis, and the occasional payment
+      failure. Tier-1 cities almost never need it; tier-2 and below occasionally
+      do.
 category: guide
 ---
 

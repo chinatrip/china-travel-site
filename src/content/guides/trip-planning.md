@@ -40,9 +40,10 @@ description: >-
 faqs:
   - q: How many days should I spend in China?
     a: >-
-      Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across
-      too many places — slowing down reduces burnout and absorbs delays from
-      weather or illness.
+      Two weeks is a comfortable length for the classic three-city route
+      (Beijing-Xi'an-Shanghai or Beijing-Chengdu-Shanghai). 5-7 days fits a
+      single city, 10 days covers two, and three weeks lets you add a secondary
+      destination such as Guilin or Zhangjiajie.
   - q: What should I pre-book versus buy on arrival?
     a: >-
       Pre-book only things that sell out — the Forbidden City, Terracotta

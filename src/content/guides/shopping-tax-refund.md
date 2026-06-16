@@ -35,8 +35,10 @@ faqs:
       rolled out an instant in-store refund at participating shops.
   - q: How much is the China tax refund?
     a: >-
-      The refund is roughly 11% of the purchase price after the service fee
-      (from the 13% VAT). It can be paid to a card or via mobile payment.
+      In practice most eligible goods give back roughly 9-11% of the purchase
+      price after the handling fee — a ¥1,000 purchase typically yields about
+      ¥90-110. The refund can be paid in cash, to a bank card, or via Alipay /
+      WeChat Pay.
   - q: What can't I claim a refund on?
     a: >-
       Consumables already used, purchases below the ¥200 threshold, and goods
