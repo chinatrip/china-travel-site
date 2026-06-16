@@ -26,9 +26,9 @@ review:
   citation_check: 2026-06-15
   notes: "Adopted into the wiki from the site GEO page (issue #18): site-route links converted to [[wiki/...]], and the full failure table consolidated here from mobile-payment.md (issue #22 item 3). Fix iteration 1 (2026-06-15): the 9 NOT_FOUND claims from the first Type-3 run were each resolved — merchant/personal-QR + P2P (receive-only), VPN-trips-fraud, unverified-account limits, 3%-on-full-amount, SMS-blocked, bank-blocks-binding, and balance-no-surcharge are now sourced to chinavigators / Wise / China Survival Kit (added to verified_against); the multi-week refund window, the platform-risk-control silent block, the redirect-filter, the checkout-unselectable card, and the WeChat contact-vouching framing are degraded in text to 'traveler-reported, not independently verified' (Shuimu BBS, outside verified_against). Re-run Type-3 (2026-06-15): 16 supported / 0 contradicted / 6 NOT_FOUND, where all 6 NOT_FOUND are the explicitly traveler-reported items (silent risk-control block, 3-D Secure binding step, checkout-unselectable card, redirect filter, WeChat contact-vouching, multi-week refund). Fees/limits are high-volatility — recheck against mobile-payment.md before update."
 description: >-
-  Alipay or WeChat Pay failing in China? The usual causes are a personal (not
-  merchant) QR code, a VPN left on, the 3% surcharge over ¥200, or an unverified
-  account. Diagnose and fix each, with fallbacks. Updated June 2026.
+  Why Alipay or WeChat Pay fails in China: a personal QR code, a VPN left on,
+  the ¥200 3% surcharge, or an unverified account — and how to fix each. Updated
+  June 2026.
 faqs:
   - q: Why does my Alipay or WeChat Pay payment keep failing in China?
     a: >-
@@ -58,8 +58,8 @@ faqs:
     a: >-
       Platform risk-control or a regulatory spending limit can block a card with
       no warning. Try the other app, unbind and re-bind the card, complete
-      passport verification if you haven't, or fall back to cash. Keeping both
-      Alipay and WeChat Pay set up covers ~99% of merchants.
+      passport verification if you haven't, or fall back to cash. With both
+      Alipay and WeChat Pay set up, nearly every merchant accepts at least one.
 category: guide
 ---
 

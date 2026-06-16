@@ -46,9 +46,12 @@ faqs:
       destination such as Guilin or Zhangjiajie.
   - q: What should I pre-book versus buy on arrival?
     a: >-
-      Pre-book only things that sell out — the Forbidden City, Terracotta
-      Warriors, peak-season long-distance trains. Buy most attraction tickets
-      and short trips same-day via Alipay to stay flexible.
+      Pre-book the things that sell out: accommodation and long-distance
+      transport, especially during peak periods, and time-sensitive attraction
+      tickets such as the Forbidden City and the Panda Base. During a holiday
+      surge like Golden Week or Spring Festival, book accommodation and
+      transport as soon as dates are confirmed and reserve those tickets weeks
+      or months ahead.
   - q: What is the best season to visit China?
     a: >-
       April-May is optimal in most regions, and late September (before October
