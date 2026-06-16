@@ -33,7 +33,7 @@ review:
 description: >-
   Staying safe in China as a foreigner: emergency numbers (110 police, 120
   ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English
-  help hotline. Updated June 2026.
+  hotline.
 faqs:
   - q: What are the emergency numbers in China?
     a: >-

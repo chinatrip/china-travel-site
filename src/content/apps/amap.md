@@ -17,8 +17,7 @@ review:
   citation_check: null
 description: >-
   Amap (Gaode) is China's top navigation app and works where Google Maps does
-  not — how to switch it to English, offline maps, transit routing, and built-in
-  ride-hailing. Updated May 2026.
+  not: switch it to English, use offline maps, transit routing, and ride-hailing.
 faqs:
   - q: Does Amap work in English?
     a: >-

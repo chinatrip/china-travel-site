@@ -22,8 +22,7 @@ review:
   citation_check: 2026-06-12
 description: >-
   Medical care in China for foreign visitors: international hospitals, paying
-  with Alipay/WeChat, pharmacies, travel insurance, and altitude sickness at
-  high-elevation destinations. Updated May 2026.
+  with Alipay or WeChat, pharmacies, travel insurance, and altitude sickness.
 faqs:
   - q: Where do foreigners get medical care in China?
     a: >-

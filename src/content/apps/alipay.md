@@ -22,9 +22,8 @@ review:
   page_audit: 2026-06-12
   citation_check: 2026-06-12
 description: >-
-  Set up Alipay as a foreigner: bind a Visa/Mastercard with no Chinese bank
-  account, passport verification, Tour Pass vs direct binding, fees, and fixing
-  payment failures. Updated June 2026.
+  Set up Alipay as a foreigner: bind a Visa or Mastercard with no Chinese bank
+  account, passport verification, fees, and fixing failed payments. Updated 2026.
 faqs:
   - q: Can I use Alipay without a Chinese bank account?
     a: >-
