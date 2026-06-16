@@ -1,5 +1,5 @@
 ---
-description: "VPN or eSIM for China in 2026? A foreign eSIM bypasses the Great Firewall with no VPN; a Chinese SIM needs one. Decision guide, the eSIM-breaks-Alipay gotcha, and what to do if your VPN dies. Updated June 2026."
+description: "VPN or eSIM for China in 2026? A foreign eSIM bypasses the Great Firewall with no VPN; a Chinese SIM needs one. A visitor decision guide. Updated June 2026."
 faqs:
   - q: "Do I need a VPN or an eSIM for China?"
     a: "For most short-stay travelers, a foreign eSIM alone is enough — it routes data through an overseas gateway and bypasses the Great Firewall, so Google, WhatsApp and Instagram work with no VPN. You need a VPN if you use a Chinese SIM card, rely on Chinese hotel Wi-Fi, or use a laptop/desktop that can't take the eSIM."
@@ -8,9 +8,9 @@ faqs:
   - q: "Why does my foreign eSIM break Alipay or WeChat Pay?"
     a: "Some foreign eSIMs (e.g. Holafly) include an always-on VPN that can't be turned off, and a non-Chinese IP occasionally trips Alipay or WeChat Pay fraud checks or stops a mini-program loading. If a payment fails, switch to Chinese Wi-Fi or a Chinese SIM for that transaction; on a normal VPN, just toggle it off while paying."
   - q: "Which VPNs still work in China in 2026?"
-    a: "Reliability is a moving target — services that worked last week can be blocked overnight, and the 2026 crackdown disrupted many (LetsVPN became largely unusable). Astrill and ExpressVPN are the most consistently recommended; newer protocols like Xray Reality and Trojan survive better than older Shadowsocks variants. Install and test two before you fly."
+    a: "Reliability is a moving target — services that worked last week can be blocked overnight, and the 2026 crackdown disrupted many (LetsVPN became largely unusable for many users). Astrill and ExpressVPN are the most consistently recommended; newer protocols like Xray Reality and Trojan survive better than older Shadowsocks variants. Install and test two before you fly."
   - q: "What do I do if my only VPN stops working while I'm already in China?"
-    a: "This is hard because VPN websites and app stores are blocked from inside China. Options: switch to your backup VPN, use a saved China mirror download link, have someone email or WeTransfer you the installer, use a different-region App Store account, or wait until Hong Kong/Macau (no firewall) to reinstall. The fix is prevention: install two VPNs and save mirror links before you arrive."
+    a: "This is hard because VPN provider websites and most VPN app-store listings are blocked from inside China. Options: switch to your backup VPN, use a saved China mirror download link, have someone email or WeTransfer you the installer, use a different-region App Store account, or wait until Hong Kong/Macau (no firewall) to reinstall. The fix is prevention: install two VPNs and save mirror links before you arrive."
   - q: "Does an iPhone support eSIM in China?"
     a: "iPhones bought outside mainland China have eSIM and work normally with a foreign China eSIM. iPhone models sold in mainland China have no eSIM hardware, so a mainland-bought iPhone can't use one — check your model before relying on an eSIM."
 category: guide
