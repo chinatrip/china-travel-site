@@ -31,9 +31,10 @@ faqs:
       Booking.com.
   - q: Can foreigners use Meituan?
     a: >-
-      Yes, though registration may require a Chinese phone number for some
-      features. Pay with Alipay or WeChat Pay, and provide your address in
-      Chinese for delivery.
+      Yes. Set up mobile payment (Alipay or WeChat Pay) before using Meituan, as
+      it does not reliably accept foreign cards directly, then pay through that.
+      For food delivery, enter your address in Chinese — use the address from
+      your hotel booking or ask staff to write it for you.
   - q: Is Meituan cheaper than Trip.com for hotels?
     a: >-
       Often yes for budget and mid-range domestic hotels, where the same room can
@@ -43,8 +44,10 @@ faqs:
       fully English, foreign-friendly booking.
   - q: Does Meituan have an English version?
     a: >-
-      Not a full one — it's largely Chinese. Use your phone's screen translation
-      to navigate ordering and checkout.
+      Not a full one — the interface is predominantly Chinese. Set your phone's
+      system language to English before first launch to get a partially-English
+      interface, and use the in-app translation tool (the ··· menu, then 翻译)
+      for menu descriptions.
 category: app
 ---
 
