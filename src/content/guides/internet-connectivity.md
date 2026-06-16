@@ -41,8 +41,9 @@ faqs:
       VPN reliability is a moving target — a service that works one week can be
       blocked the next, and the 2026 crackdown disrupted many. As of June 2026,
       Astrill (StealthVPN) and ExpressVPN (Lightway) are the most consistently
-      reported to work; only providers with TLS-based obfuscation reliably
-      bypass the firewall. Install and test two VPNs before you fly.
+      reported to work; providers relying only on standard protocols without
+      TLS-based obfuscation (plain WireGuard, OpenVPN, IKEv2) increasingly fail.
+      Install and test two VPNs before you fly.
   - q: Can I download a VPN once I'm already in China?
     a: >-
       It's very hard — app stores and VPN websites are largely blocked from

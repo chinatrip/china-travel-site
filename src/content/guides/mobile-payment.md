@@ -51,7 +51,7 @@ faqs:
       Pay — no Chinese bank account or phone number required.
   - q: Why does my Alipay or WeChat Pay payment keep failing in China?
     a: >-
-      The most common cause is paying to a vendor's personal QR code, which
+      One common cause is paying to a vendor's personal QR code, which
       foreign-card wallets cannot send to — only merchant codes work. A
       turned-on VPN can also block payments, so switch it off when paying.
   - q: How much does it cost to pay with a foreign card on Alipay or WeChat Pay?
@@ -61,8 +61,10 @@ faqs:
       amounts below ¥200.
   - q: Should I still bring cash to China?
     a: >-
-      Mobile pay is accepted almost everywhere, but carry ¥500-1000 in cash as a
-      backup for small vendors, rural areas, and the occasional payment failure.
+      Mobile pay is accepted almost everywhere, but carry ¥200-500 in small bills
+      as a backup for small vendors, older taxis, and the occasional payment
+      failure. Tier-1 cities almost never need it; tier-2 and below occasionally
+      do.
 category: guide
 ---
 

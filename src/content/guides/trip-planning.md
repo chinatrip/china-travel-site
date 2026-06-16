@@ -40,9 +40,10 @@ description: >-
 faqs:
   - q: How many days should I spend in China?
     a: >-
-      Two weeks comfortably covers 3-4 cities. Resist postcard-hopping across
-      too many places — slowing down reduces burnout and absorbs delays from
-      weather or illness.
+      Two weeks is a comfortable length for the classic three-city route
+      (Beijing-Xi'an-Shanghai or Beijing-Chengdu-Shanghai). 5-7 days fits a
+      single city, 10 days covers two, and three weeks lets you add a secondary
+      destination such as Guilin or Zhangjiajie.
   - q: What should I pre-book versus buy on arrival?
     a: >-
       Pre-book only things that sell out — the Forbidden City, Terracotta
@@ -50,9 +51,10 @@ faqs:
       and short trips same-day via Alipay to stay flexible.
   - q: What is the best season to visit China?
     a: >-
-      Spring (April-May) and autumn (September-October) offer the best weather.
-      Avoid Golden Week (first week of October) and Lunar New Year, when crowds
-      and prices surge.
+      April-May is optimal in most regions, and late September (before October
+      1) is excellent — crowds drop immediately after Golden Week ends. Avoid
+      Golden Week (October 1-7) and Chinese New Year, when crowds and prices
+      surge.
   - q: What is a realistic daily budget for China?
     a: >-
       Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+

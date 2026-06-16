@@ -26,8 +26,9 @@ faqs:
   - q: What is Meituan used for?
     a: >-
       Meituan is a super-app for food delivery, restaurant deals, hotel and
-      attraction booking, and bike rental — often 20-30% cheaper than
-      international platforms.
+      attraction booking, and bike rental. For hotels, the same room can run
+      20-30% cheaper on Meituan than on international platforms like Trip.com or
+      Booking.com.
   - q: Can foreigners use Meituan?
     a: >-
       Yes, though registration may require a Chinese phone number for some
@@ -35,9 +36,11 @@ faqs:
       Chinese for delivery.
   - q: Is Meituan cheaper than Trip.com for hotels?
     a: >-
-      Often yes for domestic hotels and local deals, but it's Chinese-first and
-      lists fewer foreigner-licensed properties. For guaranteed foreign-friendly
-      bookings, cross-check Trip.com.
+      Often yes for budget and mid-range domestic hotels, where the same room can
+      be 20-30% cheaper than on Trip.com. The catch is that the interface is
+      Chinese-language and some smaller properties cannot process foreign
+      passport check-in, so Trip.com or Booking.com are easier if you want a
+      fully English, foreign-friendly booking.
   - q: Does Meituan have an English version?
     a: >-
       Not a full one — it's largely Chinese. Use your phone's screen translation
