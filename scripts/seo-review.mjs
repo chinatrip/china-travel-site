@@ -428,6 +428,10 @@ function appendDecisions(results, mode) {
 
 function writeReport(report) {
   writeFileSync(REPORT_PATH, report);
+  // Echo to stdout so the full report is readable from run logs (`gh run view --log`).
+  // The workflow_dispatch full-scan path has no PR comment, so stdout is the only
+  // CLI-reachable copy of the report. Delimited for easy extraction.
+  console.log(`\n===== SEO/GEO REVIEW REPORT (start) =====\n${report}\n===== SEO/GEO REVIEW REPORT (end) =====\n`);
   if (process.env.GITHUB_STEP_SUMMARY) {
     try {
       appendFileSync(process.env.GITHUB_STEP_SUMMARY, report + '\n');
