@@ -27,16 +27,18 @@ review:
   page_audit: 2026-06-12
   citation_check: 2026-06-15
 description: >-
-  Foreigners must register their address within 24 hours of arrival — done by
-  the hotel, or at a police station for private stays. Online pilots and
-  required documents. Updated April 2026.
+  Foreigners must register their China address within 24 hours of arrival —
+  by the hotel, or at a police station or online for private stays. Updated
+  June 2026.
 faqs:
   - q: Do tourists need to register with the police in China?
     a: >-
       Yes. All foreigners must register their place of stay. A hotel registers
       you automatically at check-in. For private stays (friends, family,
-      rentals) you must register at the local police station within 24 hours of
-      arrival.
+      rentals), you or your host must register within 24 hours of arrival — in
+      person at the local police station, or online where an official system
+      exists (a national pilot launched in 2026 plus city systems in Shanghai
+      and Beijing).
   - q: What happens if I don't register within 24 hours?
     a: >-
       Failure to register can result in a warning or fine. Register promptly and
@@ -44,9 +46,12 @@ faqs:
       official processes.
   - q: What do I need to register a private stay?
     a: >-
-      Bring your passport (with visa/entry stamp) and the host's ID and proof of
-      address to the neighborhood police station (paichusuo). Some provinces now
-      offer online registration pilots.
+      Bring your original passport (with visa/entry stamp) plus proof of the
+      address — a lease for a rental, or the property certificate if you or your
+      host own the home. If you are staying with friends or family, bring the
+      host (and the host's ID), since first-time filings usually go faster with
+      them present. File at the neighborhood police station (paichusuo), or
+      online where an official system exists.
   - q: Does staying in a hotel count as registration?
     a: >-
       Yes — hotels report your stay to the police at check-in, so you don't need

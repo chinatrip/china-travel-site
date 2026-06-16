@@ -20,8 +20,7 @@ review:
   citation_check: 2026-05-13
 description: >-
   Foreigners need a Tibet Travel Permit (not just a China visa), arranged
-  through a registered tour — how to apply, costs, closed periods, and
-  altitude-sickness prep for Lhasa. Updated June 2026.
+  through a registered tour — how to apply, costs, and altitude prep for Lhasa.
 faqs:
   - q: Do foreigners need a special permit for Tibet?
     a: >-
@@ -30,9 +29,11 @@ faqs:
       guide, which arranges the permit.
   - q: How do I get a Tibet Travel Permit?
     a: >-
-      Book a tour with a licensed Tibet agency at least 15-20 days ahead and
-      send a scan of your passport and China visa; they obtain the permit. You
-      can't apply directly yourself.
+      Book a tour with a licensed Chinese travel agency and submit a copy of
+      your passport and China visa (or visa-free entry record); they obtain the
+      permit for you. Allow at least 10 working days before your travel date,
+      since processing takes 5-7 working days. You cannot apply directly
+      yourself.
   - q: When is Tibet closed to foreign tourists?
     a: >-
       In many past years Tibet closed to foreign visitors from around late
