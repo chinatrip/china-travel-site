@@ -49,7 +49,7 @@ faqs:
   - q: How long must my passport be valid to enter China?
     a: >-
       For a visa application your passport should be valid for at least six
-      months beyond your planned stay and have blank visa pages. For the
+      months and have at least one blank visa page. For the
       240-hour transit scheme, embassies generally advise at least three months
       of remaining validity — confirm the exact requirement with your nearest
       Chinese embassy or consulate.

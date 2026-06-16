@@ -78,8 +78,8 @@ faqs:
       major cuisines are mild: Cantonese food is light, mild, and fresh — this
       is dim sum territory — Shanghai cooking is sweet-savory and mild, Shandong
       leans salty and braised, and Yunnan favors fresh herbs and sour flavors
-      over heat. You can also control the burn anywhere: ask for 不辣 (bù là, not
-      spicy) or 少辣 (shǎo là, less spicy) when ordering. In Chengdu, where spice
+      over heat. You can also turn down the heat when ordering: ask for 不辣 (bù
+      là, not spicy) or 少辣 (shǎo là, less spicy). In Chengdu, where spice
       levels are intense, start with 微辣 (slightly spicy) — and the Haidilao
       hotpot chain there has English menus if you want guidance.
 category: guide
