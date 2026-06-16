@@ -57,9 +57,12 @@ faqs:
       policy before you travel.
   - q: Do I need a Chinese phone number?
     a: >-
-      Most travelers don't — a foreign eSIM covers data. You only need a +86
-      number for apps that gate sign-up behind it (such as Meituan or some
-      bike-share), and DiDi works without one via the Alipay mini-program.
+      Most travelers don't — a foreign eSIM covers data. A +86 number is still
+      useful because many domestic services (12306 train booking, DiDi tour
+      mode, attraction ticketing, hotel front-desk WeChat groups) fall back to
+      SMS verification on a +86 number. Alipay and WeChat Pay both accept
+      foreign numbers in 2026, but some sub-features remain +86-only, so for a
+      longer stay a cheap local SIM alongside your eSIM is the safest setup.
 category: guide
 ---
 
