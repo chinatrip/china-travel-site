@@ -13,7 +13,7 @@ review:
   notes: "Single-source (realchinaguide.com). Mini-program names and flows verified against general knowledge. City metro app names cross-checked with transportation.md."
 description: >-
   How foreigners use WeChat and Alipay mini-programs for ride-hailing, food,
-  metro and tickets — and which ones still require a Chinese phone number.
+  metro and tickets — no Chinese phone number, SMS or app download needed.
   Updated June 2026.
 faqs:
   - q: What are WeChat and Alipay mini-programs?
