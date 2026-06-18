@@ -37,8 +37,8 @@ faqs:
       your hotel booking or ask staff to write it for you.
   - q: Is Meituan cheaper than Trip.com for hotels?
     a: >-
-      Often yes for budget and mid-range domestic hotels, where the same room can
-      be 20-30% cheaper than on Trip.com. The catch is that the interface is
+      Often yes for budget and mid-range domestic hotels, where the same room
+      can be 20-30% cheaper than on Trip.com. The catch is that the interface is
       Chinese-language and some smaller properties cannot process foreign
       passport check-in, so Trip.com or Booking.com are easier if you want a
       fully English, foreign-friendly booking.
@@ -46,8 +46,8 @@ faqs:
     a: >-
       Not a full one — the interface is predominantly Chinese. Set your phone's
       system language to English before first launch to get a partially-English
-      interface, and use the in-app translation tool (the ··· menu, then 翻译)
-      for menu descriptions.
+      interface, and use the in-app translation tool (the ··· menu, then 翻译) for
+      menu descriptions.
 category: app
 ---
 
