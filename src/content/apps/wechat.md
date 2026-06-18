@@ -32,20 +32,20 @@ faqs:
   - q: Can foreigners use WeChat Pay with a foreign card?
     a: >-
       Yes — bind a foreign Visa, Mastercard, or JCB and basic payments work. Be
-      aware that some regions block the foreign-card linking feature entirely; if
-      you get stuck, use Alipay as your primary and keep some cash for
+      aware that some regions block the foreign-card linking feature entirely;
+      if you get stuck, use Alipay as your primary and keep some cash for
       WeChat-only places.
   - q: What is the WeChat Pay PayPal integration?
     a: >-
-      As of May 2026, Tencent's TenPay Global and PayPal World are interoperable,
-      so PayPal users visiting China can pay at WeChat Pay merchants using their
-      PayPal account. It is initially open to US users, with rollout to other
-      countries still to be confirmed and fees and the scan flow still open
-      questions — verify before relying on it.
+      As of May 2026, Tencent's TenPay Global and PayPal World are
+      interoperable, so PayPal users visiting China can pay at WeChat Pay
+      merchants using their PayPal account. It is initially open to US users,
+      with rollout to other countries still to be confirmed and fees and the
+      scan flow still open questions — verify before relying on it.
   - q: Alipay or WeChat Pay — which should I set up?
     a: >-
-      Set up both if you can. WeChat changes its interface often, which makes its
-      payment features harder to locate than Alipay's, but WeChat Pay is
+      Set up both if you can. WeChat changes its interface often, which makes
+      its payment features harder to locate than Alipay's, but WeChat Pay is
       essential for messaging and for merchants and exclusive mini-programs that
       only take WeChat.
 category: app

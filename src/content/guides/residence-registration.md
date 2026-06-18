@@ -27,9 +27,9 @@ review:
   page_audit: 2026-06-12
   citation_check: 2026-06-15
 description: >-
-  Foreigners must register their China address within 24 hours of arrival —
-  by the hotel, or at a police station or online for private stays. Updated
-  June 2026.
+  Foreigners must register their China address within 24 hours of arrival — by
+  the hotel, or at a police station or online for private stays. Updated June
+  2026.
 faqs:
   - q: Do tourists need to register with the police in China?
     a: >-

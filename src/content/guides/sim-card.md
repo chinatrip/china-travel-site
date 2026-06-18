@@ -60,9 +60,9 @@ faqs:
       suits trips of 30 days or less where you don't need one. But a +86 number
       is more useful than it looks: many domestic services (12306 train booking,
       DiDi tour mode, attraction ticketing, hotel front-desk WeChat groups) fall
-      back to SMS verification on a +86 number. Alipay and WeChat Pay both accept
-      foreign numbers in 2026, but some sub-features remain +86-only, so if you
-      need one for Chinese-app sign-ups, get a physical SIM in addition.
+      back to SMS verification on a +86 number. Alipay and WeChat Pay both
+      accept foreign numbers in 2026, but some sub-features remain +86-only, so
+      if you need one for Chinese-app sign-ups, get a physical SIM in addition.
 category: guide
 ---
 
