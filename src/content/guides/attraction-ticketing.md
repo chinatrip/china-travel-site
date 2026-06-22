@@ -31,8 +31,8 @@ faqs:
     a: >-
       For most globally famous sites, yes. China uses real-name, passport-linked
       ticketing with daily caps and time slots, so you cannot just show up — the
-      Forbidden City releases tickets 7 days ahead and sells out in minutes.
-      Local temples, parks, and markets are usually walk-up.
+      Forbidden City releases tickets 7 days ahead and can sell out in minutes
+      in peak season. Local temples, parks, and markets are usually walk-up.
   - q: What do I need to enter an attraction in China?
     a: >-
       Your physical passport — the same one used to book, not a photo or copy.
@@ -45,7 +45,7 @@ faqs:
       passport profiles to auto-fill future bookings.
   - q: How far ahead should I book the Forbidden City?
     a: >-
-      Book exactly 7 days ahead at 20:00 Beijing time, when the daily batch
+      Book exactly 7 days ahead at 20:00, when the daily batch
       (about 40,000 tickets) releases — it can sell out within minutes in peak
       season, and it is closed on Mondays. If it shows sold out, foreigners can
       sometimes still buy same-day at the ticket office with a passport.
