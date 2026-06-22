@@ -17,20 +17,38 @@ verified_against:
   - https://www.seat61.com/China.htm
 last_verified: 2026-06-04
 volatility: medium
-description: "Book China hotels, trains, flights, and attraction tickets on Trip.com — Ctrip's English app with foreign-card payment, no VPN needed. Updated June 2026."
-faqs:
-  - q: "Can foreigners use Trip.com to book travel in China?"
-    a: "Yes. Trip.com is Ctrip's international platform — it works in China without a VPN, has an English interface, and accepts foreign Visa/Mastercard, PayPal, and Alipay, which makes it the most practical booking app for visitors."
-  - q: "Does Trip.com charge a fee for China train tickets?"
-    a: "Yes, a small service fee — about ¥30 (roughly US$5), with some reports up to $8 depending on the route — on top of the face-value 12306 fare. It buys an English interface and avoids 12306's foreign-passport problems."
-  - q: "Can I book Chinese attraction tickets on Trip.com?"
-    a: "Yes. Trip.com offers real-name, passport-linked tickets for major attractions such as the Forbidden City. At the gate, show your passport so staff can scan and match it, using the foreign-passport or manual check-in lane where available."
-  - q: "Is Trip.com cheaper than booking directly in China?"
-    a: "Not always. Direct platforms like 12306 are free, and Chinese apps such as Meituan can list the same hotel rooms for less. Trip.com's value is its English interface and foreign-card support, which most visitors find worth a small premium."
 review:
   status: audited
   page_audit: 2026-06-17
   citation_check: null
+description: >-
+  Book China hotels, trains, flights, and attraction tickets on Trip.com —
+  Ctrip's English app with foreign-card payment, no VPN needed. Updated June
+  2026.
+faqs:
+  - q: Can foreigners use Trip.com to book travel in China?
+    a: >-
+      Yes. Trip.com is Ctrip's international platform — it works in China
+      without a VPN, has an English interface, and accepts foreign
+      Visa/Mastercard, PayPal, and Alipay, which makes it the most practical
+      booking app for visitors.
+  - q: Does Trip.com charge a fee for China train tickets?
+    a: >-
+      Yes, a small service fee — about ¥30 (roughly US$5), with some reports up
+      to $8 depending on the route — on top of the face-value 12306 fare. It
+      buys an English interface and avoids 12306's foreign-passport problems.
+  - q: Can I book Chinese attraction tickets on Trip.com?
+    a: >-
+      Yes. Trip.com offers real-name, passport-linked tickets for major
+      attractions such as the Forbidden City. At the gate, show your passport so
+      staff can scan and match it, using the foreign-passport or manual check-in
+      lane where available.
+  - q: Is Trip.com cheaper than booking directly in China?
+    a: >-
+      Not always. Direct platforms like 12306 are free, and Chinese apps such as
+      Meituan can list the same hotel rooms for less. Trip.com's value is its
+      English interface and foreign-card support, which most visitors find worth
+      a small premium.
 category: app
 ---
 

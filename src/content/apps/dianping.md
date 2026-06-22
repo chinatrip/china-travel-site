@@ -15,20 +15,35 @@ related:
   - wiki/entities/meituan.md
   - wiki/entities/amap.md
 volatility: low
-description: "Dianping (大众点评) is China's Yelp — find top-rated restaurants by star rating, photo menus, and per-person price, no Chinese needed. Updated June 2026."
-faqs:
-  - q: "What is Dianping and can foreigners use it?"
-    a: "Dianping (大众点评) is China's leading restaurant-review app, similar to Yelp. Foreigners can use it for discovery — star ratings, photo menus, and food photos are navigable without reading Chinese — though the reviews themselves are in Chinese and need a translation tool."
-  - q: "Do I need to download the Dianping app?"
-    a: "No. You can open '大众点评' as a Mini Program inside WeChat with no separate download. A standalone app (App Store / Google Play) is also available, and Amap pulls Dianping ratings directly into its map results."
-  - q: "How do I find vegetarian or halal restaurants on Dianping?"
-    a: "Search '素食' for vegetarian or '清真' for halal. Listings also show the average per-person cost (人均消费) and 'must-order' dishes (必点菜), which help you choose without reading full reviews."
-  - q: "What do Dianping star ratings mean?"
-    a: "Ratings use a 5-star scale: 4.0+ is decent, 4.5+ is very good, and anything below 3.5 is best avoided. Allow location access so that nearby restaurant results are accurate."
 review:
   status: audited
   page_audit: 2026-06-17
   citation_check: null
+description: >-
+  Dianping (大众点评) is China's Yelp — find top-rated restaurants by star rating,
+  photo menus, and per-person price, no Chinese needed. Updated June 2026.
+faqs:
+  - q: What is Dianping and can foreigners use it?
+    a: >-
+      Dianping (大众点评) is China's leading restaurant-review app, similar to Yelp.
+      Foreigners can use it for discovery — star ratings, photo menus, and food
+      photos are navigable without reading Chinese — though the reviews
+      themselves are in Chinese and need a translation tool.
+  - q: Do I need to download the Dianping app?
+    a: >-
+      No. You can open '大众点评' as a Mini Program inside WeChat with no separate
+      download. A standalone app (App Store / Google Play) is also available,
+      and Amap pulls Dianping ratings directly into its map results.
+  - q: How do I find vegetarian or halal restaurants on Dianping?
+    a: >-
+      Search '素食' for vegetarian or '清真' for halal. Listings also show the
+      average per-person cost (人均消费) and 'must-order' dishes (必点菜), which help
+      you choose without reading full reviews.
+  - q: What do Dianping star ratings mean?
+    a: >-
+      Ratings use a 5-star scale: 4.0+ is decent, 4.5+ is very good, and
+      anything below 3.5 is best avoided. Allow location access so that nearby
+      restaurant results are accurate.
 category: app
 ---
 

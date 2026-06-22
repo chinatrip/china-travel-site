@@ -18,20 +18,38 @@ verified_against:
   - https://www.bmy.com.cn/guide.html
   - https://www.badaling.cn/
 last_verified: 2026-06-04
-description: "China attraction tickets: real-name passport entry, daily caps and time slots, and how early to book the Forbidden City, Great Wall, and pandas. Updated 2026."
-faqs:
-  - q: "Do I need to book China attraction tickets in advance?"
-    a: "For most globally famous sites, yes. China uses real-name, passport-linked ticketing with daily caps and time slots, so you cannot just show up — the Forbidden City releases tickets 7 days ahead and sells out in minutes. Local temples, parks, and markets are usually walk-up."
-  - q: "What do I need to enter an attraction in China?"
-    a: "Your physical passport — the same one used to book, not a photo or copy. At the gate, staff scan your QR code and match it to your passport number; use the foreign-passport or manual check-in lane if one is available."
-  - q: "What's the best way for foreigners to book attraction tickets?"
-    a: "Trip.com is the most practical: it works without a VPN, has an English interface, accepts foreign cards, PayPal and Alipay, and saves passport profiles for reuse. Official Chinese sites are often cheaper but Chinese-only and hard to pay on."
-  - q: "How far ahead should I book the Forbidden City?"
-    a: "Book exactly 7 days ahead at 20:00 Beijing time, when the daily batch (about 40,000 tickets) releases — it can sell out within minutes in peak season, and it is closed on Mondays. If it shows sold out, foreigners can sometimes still buy same-day at the ticket office with a passport."
 review:
   status: audited
   page_audit: 2026-06-17
   citation_check: null
+description: >-
+  China attraction tickets: real-name passport entry, daily caps and time slots,
+  and how early to book the Forbidden City, Great Wall, and pandas. Updated
+  2026.
+faqs:
+  - q: Do I need to book China attraction tickets in advance?
+    a: >-
+      For most globally famous sites, yes. China uses real-name, passport-linked
+      ticketing with daily caps and time slots, so you cannot just show up — the
+      Forbidden City releases tickets 7 days ahead and sells out in minutes.
+      Local temples, parks, and markets are usually walk-up.
+  - q: What do I need to enter an attraction in China?
+    a: >-
+      Your physical passport — the same one used to book, not a photo or copy.
+      At the gate, staff scan your QR code and match it to your passport number;
+      use the foreign-passport or manual check-in lane if one is available.
+  - q: What's the best way for foreigners to book attraction tickets?
+    a: >-
+      Trip.com is the most practical: it works without a VPN, has an English
+      interface, accepts foreign cards, PayPal and Alipay, and saves passport
+      profiles for reuse. Official Chinese sites are often cheaper but
+      Chinese-only and hard to pay on.
+  - q: How far ahead should I book the Forbidden City?
+    a: >-
+      Book exactly 7 days ahead at 20:00 Beijing time, when the daily batch
+      (about 40,000 tickets) releases — it can sell out within minutes in peak
+      season, and it is closed on Mondays. If it shows sold out, foreigners can
+      sometimes still buy same-day at the ticket office with a passport.
 category: guide
 ---
 
@@ -41,7 +59,9 @@ category: guide
 
 ---
 
-## How the Real-Name System Works
+## How does China's real-name ticketing system work?
+
+Every major attraction ties its ticket to a single passport number and checks it at the gate, so tickets can't be shared — you book ahead and carry your physical passport.
 
 - Every ticket ties to a specific passport number and is checked at entry (QR + ID match)
 - Tickets cannot be shared or used by someone else
@@ -50,7 +70,9 @@ category: guide
 
 ---
 
-## Best Booking Platform for Foreigners: Trip.com
+## What's the best ticket-booking platform for foreigners?
+
+For most foreign visitors, Trip.com is the easiest option: it runs in English, accepts foreign cards, and works in China without a VPN.
 
 ### Why Trip.com
 - Works in China without VPN
@@ -71,7 +93,9 @@ category: guide
 
 ---
 
-## Major Attractions: Booking Windows & Prices (2026)
+## How far ahead should I book major attractions, and what do they cost? (2026)
+
+Booking lead times range from same-day for open parks to 7–14 days for popular sites, and up to 15–30 days for peak-season entries like Shanghai Disneyland. The table below lists each attraction's window and approximate ticket price.
 
 | Attraction | Book Ahead | Price (CNY) | Notes |
 |-----------|-----------|-------------|-------|
@@ -89,7 +113,7 @@ category: guide
 
 ---
 
-## Booking Timeline Quick Guide
+## When should I book each type of attraction?
 
 | When to Book | Attractions |
 |-------------|-------------|
@@ -101,7 +125,7 @@ category: guide
 
 ---
 
-## What Does NOT Require Pre-Booking
+## What doesn't need booking in advance?
 
 - Temple complexes: Lama Temple (Beijing), many local temples
 - Parks and gardens: Jingshan Park (Beijing), People's Park (Chengdu)
@@ -112,7 +136,7 @@ category: guide
 
 ---
 
-## Foreigner-Specific Tips
+## What ticketing tips help foreign visitors?
 
 - **Forbidden City same-day:** In rare cases, foreigners can still buy at the ticket office with passport when the app shows sold out (not guaranteed)
 - **Passport recognition issues:** Remove spaces/special characters; use passport number only; contact Trip.com support
@@ -122,7 +146,7 @@ category: guide
 
 ---
 
-## Peak Season Warnings
+## What should I watch out for in peak season?
 
 - Golden Week (Oct 1-7), Chinese New Year, and summer holidays sell out 10-15 days ahead
 - Many museums and palaces are **closed Mondays** (check before booking)
@@ -132,7 +156,7 @@ category: guide
 
 ---
 
-## Troubleshooting
+## What if a ticket is sold out or I booked the wrong date?
 
 | Problem | Solution |
 |---------|----------|

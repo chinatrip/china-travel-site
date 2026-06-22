@@ -15,20 +15,37 @@ verified_against:
   - https://www.cbp.gov/travel/us-citizens/know-before-you-go/prohibited-and-restricted-items
   - https://www.gov.uk/bringing-goods-into-uk-personal-use
 last_verified: 2026-06-04
-description: "Leaving China: airport departure steps, home-country duty-free limits, prohibited exports like medicine and antiques, and what to declare. Updated June 2026."
-faqs:
-  - q: "What can't I take out of China?"
-    a: "High-risk items include traditional Chinese medicines (often confiscated by home customs), antiques without an export permit, and counterfeits (seized and fined at home). Lithium batteries and power banks are allowed but must go in carry-on, never checked luggage."
-  - q: "Will I be taxed on what I bought in China?"
-    a: "Only if you exceed your home country's duty-free limit — for example US$800 for the US, €430 for the EU, or £390 for the UK. Above the limit you pay duty on the excess, so keep receipts for purchases over $100 and use the Red channel when in doubt."
-  - q: "Do I need to declare my laptop or camera when leaving China?"
-    a: "No — personal items you already owned before the trip don't need declaring. Declaration is about new purchases that exceed your home country's duty-free allowance."
-  - q: "How early should I get to the airport to leave China?"
-    a: "Arrive about 3 hours before an international flight. Exit immigration usually takes 5–15 minutes, and duty-free shopping is available after you clear it. Online check-in opens 24 hours ahead."
 review:
   status: audited
   page_audit: 2026-06-17
   citation_check: null
+description: >-
+  Leaving China: airport departure steps, home-country duty-free limits,
+  prohibited exports like medicine and antiques, and what to declare. Updated
+  June 2026.
+faqs:
+  - q: What can't I take out of China?
+    a: >-
+      High-risk items include traditional Chinese medicines (often confiscated
+      by home customs), antiques without an export permit, and counterfeits
+      (seized and fined at home). Lithium batteries and power banks are allowed
+      but must go in carry-on, never checked luggage.
+  - q: Will I be taxed on what I bought in China?
+    a: >-
+      Only if you exceed your home country's duty-free limit — for example
+      US$800 for the US, €430 for the EU, or £390 for the UK. Above the limit
+      you pay duty on the excess, so keep receipts for purchases over $100 and
+      use the Red channel when in doubt.
+  - q: Do I need to declare my laptop or camera when leaving China?
+    a: >-
+      No — personal items you already owned before the trip don't need
+      declaring. Declaration is about new purchases that exceed your home
+      country's duty-free allowance.
+  - q: How early should I get to the airport to leave China?
+    a: >-
+      Arrive about 3 hours before an international flight. Exit immigration
+      usually takes 5–15 minutes, and duty-free shopping is available after you
+      clear it. Online check-in opens 24 hours ahead.
 category: guide
 ---
 

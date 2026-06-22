@@ -18,20 +18,39 @@ verified_against:
   - https://en.nia.gov.cn/
   - https://global.alipay.com/platform/site/ihome
 last_verified: 2026-06-04
-description: "Getting around China without Mandarin: which translation apps work with and without a VPN, camera translation, key phrases, and survival tactics. Updated 2026."
-faqs:
-  - q: "Can I travel in China without speaking Chinese?"
-    a: "Yes. English is rare outside top hotels and major attractions — train stations, taxis, and local restaurants almost never have it — but with two translation apps, offline maps, and your hotel's address saved in Chinese, a multi-week trip is entirely manageable."
-  - q: "What is the best translation app for China?"
-    a: "Use more than one. Google Translate is the most accurate and has the best camera mode but needs a VPN; Baidu Translate and Microsoft Translator work without one. Keep Google plus one no-VPN backup, and download the offline Chinese pack before you arrive."
-  - q: "How do I order food if I can't read the menu?"
-    a: "Camera-translate the menu, then point and say '这个' (zhège, 'this one'). If there's no menu, point at other tables' dishes or check the restaurant's photos on Dianping. For QR-code ordering, scan the table code and translate inside the mini-program."
-  - q: "What should I prepare in case my phone or apps fail?"
-    a: "Carry a power bank, grab several hotel business cards for taxis, and make an emergency card with your hotel address in Chinese, '我不会说中文' (I don't speak Chinese), and the numbers 110 (police), 120 (ambulance), and 119 (fire). Save offline maps too."
 review:
   status: audited
   page_audit: 2026-06-17
   citation_check: null
+description: >-
+  Getting around China without Mandarin: which translation apps work with and
+  without a VPN, camera translation, key phrases, and survival tactics. Updated
+  2026.
+faqs:
+  - q: Can I travel in China without speaking Chinese?
+    a: >-
+      Yes. English is rare outside top hotels and major attractions — train
+      stations, taxis, and local restaurants almost never have it — but with two
+      translation apps, offline maps, and your hotel's address saved in Chinese,
+      a multi-week trip is entirely manageable.
+  - q: What is the best translation app for China?
+    a: >-
+      Use more than one. Google Translate is the most accurate and has the best
+      camera mode but needs a VPN; Baidu Translate and Microsoft Translator work
+      without one. Keep Google plus one no-VPN backup, and download the offline
+      Chinese pack before you arrive.
+  - q: How do I order food if I can't read the menu?
+    a: >-
+      Camera-translate the menu, then point and say '这个' (zhège, 'this one'). If
+      there's no menu, point at other tables' dishes or check the restaurant's
+      photos on Dianping. For QR-code ordering, scan the table code and
+      translate inside the mini-program.
+  - q: What should I prepare in case my phone or apps fail?
+    a: >-
+      Carry a power bank, grab several hotel business cards for taxis, and make
+      an emergency card with your hotel address in Chinese, '我不会说中文' (I don't
+      speak Chinese), and the numbers 110 (police), 120 (ambulance), and 119
+      (fire). Save offline maps too.
 category: guide
 ---
 
