@@ -40,10 +40,9 @@ faqs:
       use the foreign-passport or manual check-in lane if one is available.
   - q: What's the best way for foreigners to book attraction tickets?
     a: >-
-      Trip.com is the most practical: it works without a VPN, has an English
-      interface, accepts foreign cards, PayPal and Alipay, and saves passport
-      profiles for reuse. Official Chinese sites are often cheaper but
-      Chinese-only and hard to pay on.
+      Trip.com is the most practical for foreigners: it works without a VPN, has
+      an English interface, accepts foreign cards, PayPal and Alipay, and saves
+      passport profiles to auto-fill future bookings.
   - q: How far ahead should I book the Forbidden City?
     a: >-
       Book exactly 7 days ahead at 20:00 Beijing time, when the daily batch
