@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Badge from '../components/Badge.astro';
 import GuideCard from '../components/GuideCard.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 import { parseRelated } from '../lib/related.mjs';
 import { filterExternalSources, formatSourceLabel } from '../lib/trust-signals.mjs';
 import { SUPPORT_CONTACT_POINT } from '../lib/home-schema.mjs';
@@ -171,6 +172,7 @@ const faqSchema = hasFaqs
             <span> by <strong>{displayVerifiedBy}</strong></span>
           </span>
         )}
+        <ShareButtons url={canonicalURL} title={title} variant="inline" />
       </div>
     </header>
 
@@ -194,6 +196,9 @@ const faqSchema = hasFaqs
       prose-li:marker:text-primary">
       <slot />
     </div>
+
+    <!-- End-of-article share card (high-intent moment) -->
+    <ShareButtons url={canonicalURL} title={title} variant="card" />
 
     {hasFaqs && (
       <section class="mt-12 pt-8 border-t border-gray-200" aria-labelledby="faq-heading">
