@@ -56,6 +56,15 @@ test('internal referer with no utm → null (pure internal navigation is not an 
   assert.equal(point, null);
 });
 
+test('www.chinaguide.ai referer with no utm → null (www stripped before internal check)', () => {
+  // The internal-host test runs on the www-stripped host, so a same-site
+  // visit that still carries the www. prefix in its Referer is internal too.
+  const point = buildReferralDataPoint(
+    args({ referer: 'https://www.chinaguide.ai/guides/' }),
+  );
+  assert.equal(point, null);
+});
+
 test('internal referer + utm → NOT null (utm makes it a campaign entry)', () => {
   const point = buildReferralDataPoint(
     args({
@@ -141,8 +150,25 @@ test('data-point shape: 1 index, 6 blobs, doubles [1]', () => {
   assert.equal(point.indexes.length, 1);
   assert.equal(point.blobs.length, 6);
   assert.deepEqual(point.doubles, [1]);
-  // The index is the source, capped at 96 chars for AE's index limit.
+  // The index is the source, clamped to AE's 96-byte index limit.
   assert.equal(point.indexes[0], 'reddit.com');
+});
+
+test('index is clamped to ≤96 UTF-8 bytes, not 96 chars (multi-byte utm_source)', () => {
+  // 50 CJK chars = 150 UTF-8 bytes — under 96 chars but well over 96 bytes.
+  // A char-slice would have passed an oversized index to AE and been rejected.
+  const utmSource = '中'.repeat(50);
+  const point = buildReferralDataPoint(
+    args({
+      url: new URL(
+        `${ORIGIN}/guides/visa-types/?utm_source=${encodeURIComponent(utmSource)}`,
+      ),
+    }),
+  );
+  const byteLen = new TextEncoder().encode(point.indexes[0]).length;
+  assert.ok(byteLen <= 96, `index is ${byteLen} bytes, expected ≤96`);
+  // And it must remain a valid string (no trailing partial codepoint / U+FFFD).
+  assert.ok(!point.indexes[0].includes('�'));
 });
 
 // --- fetch handler integration: guarded, fire-and-forget, never throws ---

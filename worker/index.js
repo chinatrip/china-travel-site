@@ -240,6 +240,22 @@ function refererHost(referer) {
 }
 
 /**
+ * Clamp a string to at most `maxBytes` UTF-8 bytes (AE index limit is 96
+ * *bytes*, not chars — a multi-byte CJK/emoji utm_source ≤96 chars can still
+ * blow it). Truncates on the byte boundary and drops any trailing partial
+ * codepoint safely (TextDecoder is non-fatal by default).
+ *
+ * @param {string} s
+ * @param {number} [maxBytes]
+ * @returns {string}
+ */
+function clampIndexBytes(s, maxBytes = 96) {
+  const bytes = new TextEncoder().encode(s);
+  if (bytes.length <= maxBytes) return s;
+  return new TextDecoder().decode(bytes.slice(0, maxBytes));
+}
+
+/**
  * Build a Cloudflare Analytics Engine data point describing the traffic source
  * of one HTML page view, or null when the request should not be logged. Pure
  * (no I/O); the caller fires the write fire-and-forget.
@@ -256,7 +272,7 @@ function refererHost(referer) {
  * surface as referrals.
  *
  * Data point shape (writeDataPoint format) — blob index mapping:
- *   indexes: [ source (≤96 chars, AE index limit) ]
+ *   indexes: [ source (clamped to ≤96 UTF-8 bytes, the AE index limit) ]
  *   blobs:   [ 0:source, 1:medium, 2:campaign, 3:referrerHost, 4:path, 5:country ]
  *   doubles: [ 1 ]  // one view; SUM over double1 gives the view count
  *
@@ -293,7 +309,7 @@ export function buildReferralDataPoint({ method, status, contentType, url, refer
   const campaign = utmCampaign || '(none)';
 
   return {
-    indexes: [source.slice(0, 96)],
+    indexes: [clampIndexBytes(source)],
     blobs: [source, medium, campaign, externalReferrerHost, url.pathname, country || 'XX'],
     doubles: [1],
   };
