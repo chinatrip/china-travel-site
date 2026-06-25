@@ -203,6 +203,102 @@ export function alternatesLinkHeader(mdAsset) {
   return `${LLMS_TXT_LINK}, <${mdAsset}>; rel="alternate"; type="text/markdown"`;
 }
 
+// --- Edge referral attribution → Analytics Engine (privacy-clean) ---
+//
+// Per HTML page view we record where the visit came from (external referrer,
+// UTM campaign, or direct) so we can measure which promotion channels actually
+// land traffic — without any third-party analytics script in the page.
+//
+// PRIVACY STANCE: a data point carries NO IP, NO user-agent, NO cookies, and
+// NEVER the full Referer URL — only the referrer *host* (path/query/fragment,
+// which can carry PII, are discarded). Country is Cloudflare's coarse cf.country
+// (an ISO code, not a precise location). Nothing here can identify a person.
+//
+// We log only *entries* — the first/attributable hits — not internal click-
+// throughs: a same-site referrer with no UTM is pure internal navigation and
+// returns null. External referral, any UTM, or direct (no referrer at all) are
+// the three entry shapes we keep.
+
+const REFERRAL_HOST = 'chinaguide.ai';
+
+/**
+ * Parse a Referer header value into a normalized hostname, or '' when it is
+ * missing/empty/unparseable. Lowercased, with a leading `www.` stripped.
+ *
+ * @param {string | null | undefined} referer
+ * @returns {string} hostname (e.g. `reddit.com`) or '' when there is none.
+ */
+function refererHost(referer) {
+  if (!referer) return '';
+  let host;
+  try {
+    host = new URL(referer).hostname.toLowerCase();
+  } catch {
+    return ''; // garbage referer → treat as no referrer
+  }
+  return host.startsWith('www.') ? host.slice(4) : host;
+}
+
+/**
+ * Build a Cloudflare Analytics Engine data point describing the traffic source
+ * of one HTML page view, or null when the request should not be logged. Pure
+ * (no I/O); the caller fires the write fire-and-forget.
+ *
+ * Logging gate — returns null unless ALL hold:
+ *   - method === 'GET'           (not HEAD/POST)
+ *   - status === 200             (not redirects, 304s, 404s)
+ *   - contentType ~ text/html    (not .md agent fetches, assets, feeds)
+ * ...and additionally returns null for pure internal navigation: an internal
+ * referrer (host === chinaguide.ai) with no UTM params at all is not an entry.
+ *
+ * Attribution precedence: UTM params win over the referrer; the referrer wins
+ * over direct. Internal referrers are collapsed to '' so only external hosts
+ * surface as referrals.
+ *
+ * Data point shape (writeDataPoint format) — blob index mapping:
+ *   indexes: [ source (≤96 chars, AE index limit) ]
+ *   blobs:   [ 0:source, 1:medium, 2:campaign, 3:referrerHost, 4:path, 5:country ]
+ *   doubles: [ 1 ]  // one view; SUM over double1 gives the view count
+ *
+ * @param {object} req
+ * @param {string} req.method        - request.method
+ * @param {number} req.status        - response.status
+ * @param {string | null} req.contentType - response Content-Type header
+ * @param {URL} req.url              - the request URL (for pathname + UTM)
+ * @param {string | null} req.referer - the Referer header (host only is kept)
+ * @param {string | null | undefined} req.country - request.cf?.country
+ * @returns {{indexes: string[], blobs: string[], doubles: number[]} | null}
+ */
+export function buildReferralDataPoint({ method, status, contentType, url, referer, country }) {
+  if (method !== 'GET' || status !== 200) return null;
+  if (!contentType || !contentType.includes('text/html')) return null;
+
+  const host = refererHost(referer);
+  const internal = host === REFERRAL_HOST;
+  const externalReferrerHost = internal ? '' : host;
+
+  const params = url.searchParams;
+  const utmSource = params.get('utm_source');
+  const utmMedium = params.get('utm_medium');
+  const utmCampaign = params.get('utm_campaign');
+  const hasUtm = utmSource !== null || utmMedium !== null || utmCampaign !== null;
+
+  // Pure internal navigation (same-site referrer, no UTM) is not an entry.
+  if (internal && !hasUtm) return null;
+
+  const source = (utmSource ? utmSource.toLowerCase() : '') || externalReferrerHost || 'direct';
+  const medium =
+    (utmMedium ? utmMedium.toLowerCase() : '') ||
+    (externalReferrerHost ? 'referral' : 'direct');
+  const campaign = utmCampaign || '(none)';
+
+  return {
+    indexes: [source.slice(0, 96)],
+    blobs: [source, medium, campaign, externalReferrerHost, url.pathname, country || 'XX'],
+    doubles: [1],
+  };
+}
+
 /**
  * Return a copy of the response with the security header set applied.
  * Responses from Response.redirect() and ASSETS.fetch() have immutable
@@ -274,6 +370,26 @@ export default {
     // alternates; non-HTML responses (assets, feeds, …) stay untouched.
     if (response.headers.get('Content-Type')?.includes('text/html')) {
       response.headers.set('Link', alternatesLinkHeader(mdAsset));
+    }
+
+    // Edge referral attribution (privacy-clean). Fire-and-forget into Analytics
+    // Engine when the binding exists; defensively guarded so a missing binding
+    // or a throwing write can NEVER alter or block the response. No-op until the
+    // `REFERRALS` AE binding is added to wrangler.json (separate follow-up).
+    if (env.REFERRALS) {
+      try {
+        const point = buildReferralDataPoint({
+          method: request.method,
+          status: response.status,
+          contentType: response.headers.get('Content-Type'),
+          url,
+          referer: request.headers.get('Referer'),
+          country: request.cf?.country,
+        });
+        if (point) env.REFERRALS.writeDataPoint(point);
+      } catch {
+        // Analytics must never be load-bearing for serving the page.
+      }
     }
     return response;
   },
