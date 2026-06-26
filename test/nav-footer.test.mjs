@@ -65,6 +65,64 @@ test('Navbar derives active state from currentPath per top-level destination', (
   }
 });
 
+// --- Navbar: responsive mobile disclosure menu (no narrow-screen overflow) ---
+
+test('Navbar has a mobile menu toggle button with aria-expanded', () => {
+  // A <button> drives the disclosure; aria-expanded reflects open/closed state.
+  // It starts collapsed (aria-expanded="false") on initial server render.
+  assert.match(NAVBAR, /<button[^>]*aria-expanded=("|')false\1/);
+});
+
+test('Navbar toggle button points at the panel via aria-controls', () => {
+  // aria-controls must reference the id of the collapsible panel that holds the
+  // links, so assistive tech can associate the trigger with what it reveals.
+  const m = NAVBAR.match(/<button[^>]*\baria-controls=("|')([^"']+)\1/);
+  assert.ok(m, 'toggle button must declare aria-controls');
+  const panelId = m[2];
+  // The referenced id must actually exist as an element id in the markup.
+  assert.match(NAVBAR, new RegExp(`id=("|')${panelId}\\1`));
+});
+
+test('Navbar toggle button carries an aria-label naming the action', () => {
+  // e.g. "Open menu" / "Close menu" — a control with only an icon needs an
+  // accessible name.
+  assert.match(NAVBAR, /<button[^>]*aria-label=("|')[^"']*menu[^"']*\1/i);
+});
+
+test('Navbar toggle button is type="button" (not a form submit)', () => {
+  assert.match(NAVBAR, /<button[^>]*type=("|')button\1/);
+});
+
+test('Navbar mobile panel is hidden on sm+ where the inline row shows', () => {
+  // The disclosure mechanism is mobile-only: the panel and toggle collapse away
+  // at the sm breakpoint where the original inline link row is restored.
+  assert.match(NAVBAR, /sm:hidden/);
+  assert.match(NAVBAR, /sm:flex|sm:block|sm:inline-flex/);
+});
+
+test('Navbar still ships an inline first-party enhancement script', () => {
+  // Mirror ShareButtons: a single inline <script>, no third-party libs.
+  assert.match(NAVBAR, /<script>[\s\S]*<\/script>/);
+  // Esc-to-close + focus return is part of the a11y contract.
+  assert.match(NAVBAR, /Escape/);
+});
+
+test('Navbar preserves the three primary links inside the disclosure flow', () => {
+  for (const href of ['/guides/', '/apps/', '/checklist/']) {
+    assert.ok(NAVBAR.includes(`link.href`) || NAVBAR.includes(`href="${href}"`),
+      `expected the ${href} link to remain present`);
+  }
+  // Search affordance is preserved.
+  assert.match(NAVBAR, /\/search\//);
+});
+
+test('Navbar keeps the aria-current logic on links after the responsive change', () => {
+  // The split exact("page")/ancestor("location") logic must survive.
+  assert.match(NAVBAR, /aria-current=\{ariaCurrent\(/);
+  assert.match(NAVBAR, /'page'/);
+  assert.match(NAVBAR, /'location'/);
+});
+
 // --- Footer: navigation landmark + heading semantics ---
 
 test('Footer wraps its link lists in a <nav> landmark with an aria-label', () => {
