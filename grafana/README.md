@@ -75,10 +75,10 @@ query to:
 - **Body** → `Raw`, content type `text/plain`, paste the SQL from **Queries** below
 - **Parsing** → **Rows/Root selector** = `data`
 - **Columns** → add one row per SELECT alias (see each query); set the numeric
-  `views` column type to **Number**, and for the daily-trend query set `day` to
-  type **Time** (format `YYYY-MM-DD HH:mm:ss` if the axis doesn't auto-parse).
-- **Visualization**: Table for the breakdowns, Time series for the daily trend,
-  Pie/Stat for the channel split.
+  `views` column type to **Number**; the daily-trend `day` column stays a
+  **String** (it's the bar-chart category).
+- **Visualization**: Table for the breakdowns, **Bar chart** for the daily trend
+  (X field = `day`), **Pie chart** (donut) for the channel split.
 
 Blob mapping (so you can write your own queries):
 `blob1=source · blob2=medium · blob3=campaign · blob4=referrerHost · blob5=path · blob6=country`,
@@ -105,10 +105,10 @@ GROUP BY channel
 ORDER BY views DESC
 ```
 
-**Daily views trend (last 30d)** — time series:
+**Daily views trend (last 30d)** — bar chart:
 ```sql
 SELECT
-  toStartOfInterval(timestamp, INTERVAL '1' DAY) AS day,
+  toDate(timestamp) AS day,
   SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
 WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '30' DAY
@@ -169,5 +169,5 @@ LIMIT 30
 - **Auth**: the token lives only in the Grafana data-source config (server-side),
   never in this repo or the dashboard JSON.
 - **Dialect**: AE SQL is a ClickHouse subset. If a function (e.g.
-  `toStartOfInterval`) isn't accepted on your account, see the AE SQL reference
-  for the supported equivalents.
+  `toDate`) isn't accepted on your account, see the AE SQL reference for the
+  supported equivalents (e.g. `toStartOfInterval(timestamp, INTERVAL '1' DAY)`).

@@ -40,7 +40,7 @@
       "type": "piechart",
       "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
       "gridPos": { "h": 8, "w": 8, "x": 0, "y": 0 },
-      "options": { "legend": { "showLegend": true, "placement": "right" }, "reduceOptions": { "calcs": ["lastNotNull"], "fields": "/^views$/", "values": false } },
+      "options": { "legend": { "showLegend": true, "placement": "right", "values": ["value"] }, "pieType": "donut", "reduceOptions": { "calcs": ["lastNotNull"], "fields": "/^views$/", "values": true } },
       "targets": [
         {
           "refId": "A",
@@ -67,28 +67,29 @@
     {
       "id": 2,
       "title": "Daily views (last 30d)",
-      "type": "timeseries",
+      "type": "barchart",
       "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
       "gridPos": { "h": 8, "w": 16, "x": 8, "y": 0 },
-      "fieldConfig": { "defaults": { "custom": { "drawStyle": "bars", "fillOpacity": 40 } }, "overrides": [] },
+      "options": { "xField": "day", "showValue": "never" },
+      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "green" }, "custom": { "fillOpacity": 85 } }, "overrides": [] },
       "targets": [
         {
           "refId": "A",
           "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
           "type": "json",
           "source": "url",
-          "format": "timeseries",
+          "format": "table",
           "parser": "backend",
           "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
           "url_options": {
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT toStartOfInterval(timestamp, INTERVAL '1' DAY) AS day, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '30' DAY GROUP BY day ORDER BY day"
+            "data": "SELECT toDate(timestamp) AS day, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '30' DAY GROUP BY day ORDER BY day"
           },
           "root_selector": "data",
           "columns": [
-            { "selector": "day", "text": "day", "type": "timestamp", "timestampFormat": "YYYY-MM-DD HH:mm:ss" },
+            { "selector": "day", "text": "day", "type": "string" },
             { "selector": "views", "text": "views", "type": "number" }
           ]
         }
