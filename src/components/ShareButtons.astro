@@ -76,7 +76,7 @@ const iconClass = 'w-[17px] h-[17px] shrink-0';
     'share-buttons',
     isCard
       ? 'mt-8 rounded-xl border border-gray-200 bg-gradient-to-b from-white to-surface px-5 py-5'
-      : 'inline-flex items-center gap-1 sm:ml-auto',
+      : 'inline-flex flex-wrap items-center gap-1 sm:ml-auto',
   ]}
   data-share-variant={variant}
   data-share-url={copyUrl}
@@ -117,36 +117,66 @@ const iconClass = 'w-[17px] h-[17px] shrink-0';
     </>
   ) : (
     <>
-      <span class="mr-1 text-xs font-medium text-muted">Share</span>
-      <a href={whatsappHref} target="_blank" rel="noopener" class={btnClass} aria-label="Share on WhatsApp" title="WhatsApp">
-        <svg class={iconClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" /></svg>
-      </a>
-      <a href={redditHref} target="_blank" rel="noopener" class={btnClass} aria-label="Share on Reddit" title="Reddit">
-        <svg class={iconClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 1.026.59 1.911 1.449 2.347-.38.516-.583 1.103-.583 1.713 0 3.318 4.029 6.017 8.983 6.017s8.982-2.699 8.982-6.017c0-.605-.201-1.187-.575-1.7.866-.434 1.464-1.322 1.464-2.36zm-16.288 1.984c0-.829.679-1.504 1.515-1.504.836 0 1.515.675 1.515 1.504s-.679 1.504-1.515 1.504c-.836 0-1.515-.675-1.515-1.504zm8.722 4.984c-.91.902-2.642.973-3.149.973-.507 0-2.24-.07-3.148-.973-.135-.134-.135-.353 0-.488.134-.133.353-.133.488 0 .573.57 1.798.771 2.66.771.862 0 2.088-.201 2.661-.771.135-.133.354-.133.488 0 .135.135.135.354 0 .488zm-.227-3.48c-.836 0-1.515-.675-1.515-1.504s.679-1.504 1.515-1.504c.836 0 1.515.675 1.515 1.504s-.679 1.504-1.515 1.504z" /></svg>
-      </a>
-      <a href={xHref} target="_blank" rel="noopener" class={btnClass} aria-label="Share on X" title="X">
-        <svg class={iconClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
-      </a>
-      <a href={emailHref} class={btnClass} aria-label="Share via Email" title="Email">
-        <svg class={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
-      </a>
-      <button type="button" class:list={[btnClass, 'share-copy-btn']} data-share-action="copy" aria-label="Copy link" title="Copy link">
-        <svg class:list={[iconClass, 'share-copy-icon']} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
-      </button>
+      {/* Target-icon group: the "Share" label + 4 channel icons. On mobile,
+          where navigator.share exists, the inline container gets the
+          `share-has-native` class and CSS collapses this whole group (see the
+          <style> below) — leaving just the prominent native button + Copy, per
+          the approved mockup. On desktop (no native share) it stays visible. */}
+      <span class="share-targets inline-flex items-center gap-1">
+        <span class="mr-1 text-xs font-medium text-muted">Share</span>
+        <a href={whatsappHref} target="_blank" rel="noopener" class={btnClass} aria-label="Share on WhatsApp" title="WhatsApp">
+          <svg class={iconClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" /></svg>
+        </a>
+        <a href={redditHref} target="_blank" rel="noopener" class={btnClass} aria-label="Share on Reddit" title="Reddit">
+          <svg class={iconClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.329-1.015c-.189-.046-.381.063-.44.249l-1.654 5.207c-2.838.034-5.409.798-7.3 2.025-.474-.438-1.103-.712-1.799-.712-1.465 0-2.656 1.187-2.656 2.646 0 1.026.59 1.911 1.449 2.347-.38.516-.583 1.103-.583 1.713 0 3.318 4.029 6.017 8.983 6.017s8.982-2.699 8.982-6.017c0-.605-.201-1.187-.575-1.7.866-.434 1.464-1.322 1.464-2.36zm-16.288 1.984c0-.829.679-1.504 1.515-1.504.836 0 1.515.675 1.515 1.504s-.679 1.504-1.515 1.504c-.836 0-1.515-.675-1.515-1.504zm8.722 4.984c-.91.902-2.642.973-3.149.973-.507 0-2.24-.07-3.148-.973-.135-.134-.135-.353 0-.488.134-.133.353-.133.488 0 .573.57 1.798.771 2.66.771.862 0 2.088-.201 2.661-.771.135-.133.354-.133.488 0 .135.135.135.354 0 .488zm-.227-3.48c-.836 0-1.515-.675-1.515-1.504s.679-1.504 1.515-1.504c.836 0 1.515.675 1.515 1.504s-.679 1.504-1.515 1.504z" /></svg>
+        </a>
+        <a href={xHref} target="_blank" rel="noopener" class={btnClass} aria-label="Share on X" title="X">
+          <svg class={iconClass} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+        </a>
+        <a href={emailHref} class={btnClass} aria-label="Share via Email" title="Email">
+          <svg class={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+        </a>
+      </span>
       {/* Native Web Share — hidden by default, revealed by the script on
-          devices that support navigator.share. Mobile-first prominence. */}
+          devices that support navigator.share. Mobile-first prominence; on those
+          devices the target-icon group above is hidden so this + Copy is all the
+          inline placement shows (no horizontal overflow at 320px). */}
       <button
         type="button"
-        class="share-native-btn hidden inline-flex items-center gap-2 h-8 px-3 text-sm font-semibold rounded-md border border-primary bg-primary text-white transition-colors hover:bg-red-700"
+        class="share-native-btn items-center gap-2 h-8 px-3 text-sm font-semibold rounded-md border border-primary bg-primary text-white transition-colors hover:bg-red-700"
         data-share-action="native"
         aria-label="Share this guide"
       >
         <svg class={iconClass} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v13" /><path d="m7 8 5-5 5 5" /><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" /></svg>
         <span>Share this guide</span>
       </button>
+      <button type="button" class:list={[btnClass, 'share-copy-btn']} data-share-action="copy" aria-label="Copy link" title="Copy link">
+        <svg class:list={[iconClass, 'share-copy-icon']} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>
+      </button>
     </>
   )}
 </div>
+
+<style>
+  /* Native-share visibility is driven entirely by the `share-has-native` class
+     the inline script adds when navigator.share exists — using scoped CSS (not
+     Tailwind's `hidden`) so there is no display-utility specificity conflict.
+
+     Default (no JS / desktop without native share): native button hidden, the
+     target-icon group visible. When native share is detected (mobile): the
+     target group collapses and the prominent "Share this guide" button shows,
+     leaving just it + Copy. This matches the approved mockup and means the
+     inline row can never exceed a narrow (~320px) screen's width. */
+  .share-native-btn {
+    display: none;
+  }
+  .share-buttons.share-has-native .share-targets {
+    display: none;
+  }
+  .share-buttons.share-has-native .share-native-btn {
+    display: inline-flex;
+  }
+</style>
 
 <script>
   // Progressive enhancement, no third-party code, no cookies.
@@ -182,9 +212,20 @@ const iconClass = 'w-[17px] h-[17px] shrink-0';
       });
 
       // --- Native Web Share ---
+      // On devices that support it (mostly mobile), reveal the prominent native
+      // button and flag the root so CSS collapses the inline target-icon group —
+      // mobile then shows just "Share this guide" + Copy (the approved mockup),
+      // which can't overflow a 320px row. Desktop (no native share) keeps the
+      // explicit target icons. The card variant has no .share-native-btn /
+      // .share-targets, so this is a no-op there.
       if (typeof navigator !== 'undefined' && 'share' in navigator) {
-        root.querySelectorAll<HTMLButtonElement>('.share-native-btn').forEach((btn) => {
-          btn.classList.remove('hidden');
+        const nativeButtons = root.querySelectorAll<HTMLButtonElement>('.share-native-btn');
+        if (nativeButtons.length > 0) {
+          // Flag the root: scoped CSS reveals the native button and collapses
+          // the target-icon group (the visibility swap lives in CSS, not here).
+          root.classList.add('share-has-native');
+        }
+        nativeButtons.forEach((btn) => {
           btn.addEventListener('click', async () => {
             try {
               await navigator.share({ title, url: nativeUrl });

@@ -99,13 +99,26 @@ test('share affordance is present in BOTH placements (inline header + end-of-art
 
 // ---- all five channels, each with the exact UTM scheme ----------------------
 
+/**
+ * Slice out a single placement's block. Each placement's root carries a unique
+ * data-share-variant marker and they appear in DOM order (inline before card),
+ * so a block runs from its own marker up to the next placement marker (or EOF).
+ * This bounds the slice by structure rather than a brittle fixed char count —
+ * which matters since the inline block grew (native button sits between the
+ * target group and Copy).
+ */
+function placementBlock(html, variant) {
+  const idx = html.indexOf(`data-share-variant="${variant}"`);
+  assert.ok(idx >= 0, `${variant} block present`);
+  const rest = html.slice(idx + 1);
+  const nextIdx = rest.indexOf('data-share-variant="');
+  return nextIdx >= 0 ? rest.slice(0, nextIdx) : rest;
+}
+
 test('all five channels are present in each placement', () => {
   const html = loadPage();
   for (const variant of ['inline', 'card']) {
-    // Slice out just this variant's block by its data attribute boundary.
-    const idx = html.indexOf(`data-share-variant="${variant}"`);
-    assert.ok(idx >= 0, `${variant} block present`);
-    const block = html.slice(idx, idx + 6000);
+    const block = placementBlock(html, variant);
     for (const { host } of CHANNELS) {
       if (host === null) {
         assert.match(block, /data-share-action="copy"/, `${variant}: copy control present`);
@@ -166,6 +179,60 @@ test('whatsapp/reddit/x target links open in a new tab with rel noopener', () =>
       assert.match(tag, /rel="[^"]*noopener[^"]*"/, `${host} link has rel=noopener`);
     }
   }
+});
+
+// ---- responsive: inline placement must not overflow on narrow screens -------
+// True horizontal-overflow can't be measured in node, so we assert the fix
+// *mechanism* instead: (a) the inline container can wrap, and (b) the
+// native-share toggle exists and hides the target-icon group as a distinct,
+// toggleable unit (so mobile shows native "Share this guide" + Copy only).
+
+/** Slice out the inline placement's root <div ...> opening tag. */
+function inlineRootTag(html) {
+  const idx = html.indexOf('data-share-variant="inline"');
+  assert.ok(idx >= 0, 'inline placement present');
+  const start = html.lastIndexOf('<div', idx);
+  const end = html.indexOf('>', idx);
+  return html.slice(start, end + 1);
+}
+
+test('inline share container can wrap (flex-wrap) so it can never cause horizontal overflow', () => {
+  const tag = inlineRootTag(loadPage());
+  assert.match(tag, /\bflex-wrap\b/, 'inline container must carry a flex-wrap utility');
+});
+
+test('native-share toggle hides the target-icon group as a distinct, toggleable unit', () => {
+  const html = loadPage();
+
+  // (1) The target icons live in a dedicated, addressable group.
+  assert.match(html, /class="[^"]*\bshare-targets\b[^"]*"/, 'a .share-targets group wraps the channel icons');
+
+  // (2) A distinct native-share button exists (separate element from the group).
+  assert.match(html, /class="[^"]*\bshare-native-btn\b[^"]*"/, 'a .share-native-btn element exists');
+
+  // (3) CSS collapses the target group when the root is flagged native-capable.
+  //     The rule + the toggle class the script applies must both be present.
+  //     Regexes tolerate Astro's scoping ([data-astro-cid-…]) and minification.
+  assert.match(
+    html,
+    /\.share-has-native\s+\.share-targets[^{]*\{\s*display:\s*none/,
+    'CSS hides .share-targets when the root has .share-has-native',
+  );
+  assert.match(
+    html,
+    /classList\.add\(\s*['"]share-has-native['"]\s*\)/,
+    "the inline script adds 'share-has-native' to the root when navigator.share exists",
+  );
+
+  // (4) The native button reveal is gated on navigator.share support
+  //     (minifier may drop the space: `"share"in navigator`).
+  assert.match(html, /['"]share['"]\s*in\s+navigator/, 'native reveal is gated on navigator.share support');
+
+  // (5) Sanity: the group and the native button are different elements, so the
+  //     toggle genuinely swaps them rather than hiding both or neither.
+  const groupIdx = html.search(/class="[^"]*\bshare-targets\b/);
+  const nativeIdx = html.search(/class="[^"]*\bshare-native-btn\b/);
+  assert.ok(groupIdx >= 0 && nativeIdx >= 0 && groupIdx !== nativeIdx, 'group and native button are distinct elements');
 });
 
 // ---- accessibility ----------------------------------------------------------
