@@ -18,5 +18,11 @@
     "binding": "ASSETS",
     "run_worker_first": true,
     "not_found_handling": "404-page"
-  }
+  },
+  "analytics_engine_datasets": [
+    {
+      "binding": "REFERRALS",
+      "dataset": "chinaguide_referrals"
+    }
+  ]
 }
