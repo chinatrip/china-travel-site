@@ -54,7 +54,7 @@
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT CASE WHEN blob2 = 'share' THEN 'word-of-mouth (share)' WHEN blob2 IN ('forum','blog','partner','newsletter') THEN 'outreach' WHEN blob2 = 'referral' THEN 'organic referral' ELSE 'direct' END AS channel, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE timestamp > NOW() - INTERVAL '7' DAY GROUP BY channel ORDER BY views DESC"
+            "data": "SELECT CASE WHEN blob2 = 'share' THEN 'word-of-mouth (share)' WHEN blob2 IN ('forum','blog','partner','newsletter') THEN 'outreach' WHEN blob2 = 'referral' THEN 'organic referral' ELSE 'direct' END AS channel, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY channel ORDER BY views DESC"
           },
           "root_selector": "data",
           "columns": [
@@ -84,7 +84,7 @@
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT toStartOfInterval(timestamp, INTERVAL '1' DAY) AS day, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE timestamp > NOW() - INTERVAL '30' DAY GROUP BY day ORDER BY day"
+            "data": "SELECT toStartOfInterval(timestamp, INTERVAL '1' DAY) AS day, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '30' DAY GROUP BY day ORDER BY day"
           },
           "root_selector": "data",
           "columns": [
@@ -113,7 +113,7 @@
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT blob1 AS source, blob2 AS medium, blob3 AS campaign, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE timestamp > NOW() - INTERVAL '7' DAY GROUP BY source, medium, campaign ORDER BY views DESC LIMIT 50"
+            "data": "SELECT blob1 AS source, blob2 AS medium, blob3 AS campaign, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY source, medium, campaign ORDER BY views DESC LIMIT 50"
           },
           "root_selector": "data",
           "columns": [
@@ -144,7 +144,7 @@
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT blob5 AS path, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE timestamp > NOW() - INTERVAL '7' DAY GROUP BY path ORDER BY views DESC LIMIT 20"
+            "data": "SELECT blob5 AS path, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY path ORDER BY views DESC LIMIT 20"
           },
           "root_selector": "data",
           "columns": [
@@ -173,7 +173,7 @@
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT blob4 AS referrer, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob4 != '' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY referrer ORDER BY views DESC LIMIT 20"
+            "data": "SELECT blob4 AS referrer, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob4 != '' AND blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY referrer ORDER BY views DESC LIMIT 20"
           },
           "root_selector": "data",
           "columns": [
@@ -202,7 +202,7 @@
             "method": "POST",
             "body_type": "raw",
             "body_content_type": "text/plain",
-            "data": "SELECT blob6 AS country, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE timestamp > NOW() - INTERVAL '7' DAY GROUP BY country ORDER BY views DESC LIMIT 30"
+            "data": "SELECT blob6 AS country, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY country ORDER BY views DESC LIMIT 30"
           },
           "root_selector": "data",
           "columns": [

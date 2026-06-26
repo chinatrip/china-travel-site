@@ -100,7 +100,7 @@ SELECT
   END AS channel,
   SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
-WHERE timestamp > NOW() - INTERVAL '7' DAY
+WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY
 GROUP BY channel
 ORDER BY views DESC
 ```
@@ -111,7 +111,7 @@ SELECT
   toStartOfInterval(timestamp, INTERVAL '1' DAY) AS day,
   SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
-WHERE timestamp > NOW() - INTERVAL '30' DAY
+WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '30' DAY
 GROUP BY day
 ORDER BY day
 ```
@@ -121,7 +121,7 @@ ORDER BY day
 SELECT blob1 AS source, blob2 AS medium, blob3 AS campaign,
   SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
-WHERE timestamp > NOW() - INTERVAL '7' DAY
+WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY
 GROUP BY source, medium, campaign
 ORDER BY views DESC
 LIMIT 50
@@ -131,7 +131,7 @@ LIMIT 50
 ```sql
 SELECT blob5 AS path, SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
-WHERE timestamp > NOW() - INTERVAL '7' DAY
+WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY
 GROUP BY path
 ORDER BY views DESC
 LIMIT 20
@@ -141,7 +141,7 @@ LIMIT 20
 ```sql
 SELECT blob4 AS referrer, SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
-WHERE blob4 != '' AND timestamp > NOW() - INTERVAL '7' DAY
+WHERE blob4 != '' AND blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY
 GROUP BY referrer
 ORDER BY views DESC
 LIMIT 20
@@ -151,7 +151,7 @@ LIMIT 20
 ```sql
 SELECT blob6 AS country, SUM(_sample_interval * double1) AS views
 FROM chinaguide_referrals
-WHERE timestamp > NOW() - INTERVAL '7' DAY
+WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY
 GROUP BY country
 ORDER BY views DESC
 LIMIT 30
@@ -163,9 +163,9 @@ LIMIT 30
 
 - **Latency**: AE has a few-seconds-to-~1-minute ingestion delay before new data
   points are queryable.
-- **Test row**: a verification page view tagged `utm_campaign=pipeline-check`
-  was seeded when the binding went live — filter it out
-  (`WHERE blob3 != 'pipeline-check'`) once real traffic accumulates.
+- **Test row**: the default queries above already exclude the seeded
+  verification page view (`utm_campaign=pipeline-check`) via
+  `blob3 != 'pipeline-check'`. Drop that predicate if you ever want to see it.
 - **Auth**: the token lives only in the Grafana data-source config (server-side),
   never in this repo or the dashboard JSON.
 - **Dialect**: AE SQL is a ClickHouse subset. If a function (e.g.
