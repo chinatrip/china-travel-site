@@ -1,0 +1,217 @@
+{
+  "__inputs": [
+    {
+      "name": "DS_INFINITY",
+      "label": "Infinity (Cloudflare AE)",
+      "description": "The Infinity data source configured with your CF API token (Bearer) — see grafana/README.md",
+      "type": "datasource",
+      "pluginId": "yesoreyeram-infinity-datasource",
+      "pluginName": "Infinity"
+    }
+  ],
+  "__requires": [
+    { "type": "grafana", "id": "grafana", "name": "Grafana", "version": "10.0.0" },
+    { "type": "datasource", "id": "yesoreyeram-infinity-datasource", "name": "Infinity", "version": "1.0.0" }
+  ],
+  "title": "ChinaGuide.ai — Referral attribution",
+  "uid": "chinaguide-referrals",
+  "tags": ["chinaguide", "referrals", "analytics-engine"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "",
+  "time": { "from": "now-30d", "to": "now" },
+  "templating": {
+    "list": [
+      {
+        "name": "account_id",
+        "label": "Cloudflare account id",
+        "type": "textbox",
+        "query": "",
+        "current": { "text": "", "value": "" },
+        "hide": 0
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Channel split (last 7d)",
+      "type": "piechart",
+      "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 0 },
+      "options": { "legend": { "showLegend": true, "placement": "right", "values": ["value"] }, "pieType": "donut", "reduceOptions": { "calcs": ["lastNotNull"], "fields": "/^views$/", "values": true } },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
+          "url_options": {
+            "method": "POST",
+            "body_type": "raw",
+            "body_content_type": "text/plain",
+            "data": "SELECT CASE WHEN blob2 = 'share' THEN 'word-of-mouth (share)' WHEN blob2 IN ('forum','blog','partner','newsletter') THEN 'outreach' WHEN blob2 = 'referral' THEN 'organic referral' ELSE 'direct' END AS channel, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY channel ORDER BY views DESC"
+          },
+          "root_selector": "data",
+          "columns": [
+            { "selector": "channel", "text": "channel", "type": "string" },
+            { "selector": "views", "text": "views", "type": "number" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Daily views (last 30d)",
+      "type": "barchart",
+      "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+      "gridPos": { "h": 8, "w": 16, "x": 8, "y": 0 },
+      "options": { "xField": "day", "showValue": "never" },
+      "fieldConfig": { "defaults": { "color": { "mode": "fixed", "fixedColor": "green" }, "custom": { "fillOpacity": 85 } }, "overrides": [] },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
+          "url_options": {
+            "method": "POST",
+            "body_type": "raw",
+            "body_content_type": "text/plain",
+            "data": "SELECT toDate(timestamp) AS day, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '30' DAY GROUP BY day ORDER BY day"
+          },
+          "root_selector": "data",
+          "columns": [
+            { "selector": "day", "text": "day", "type": "string" },
+            { "selector": "views", "text": "views", "type": "number" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Source / medium / campaign (last 7d)",
+      "type": "table",
+      "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 8 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
+          "url_options": {
+            "method": "POST",
+            "body_type": "raw",
+            "body_content_type": "text/plain",
+            "data": "SELECT blob1 AS source, blob2 AS medium, blob3 AS campaign, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY source, medium, campaign ORDER BY views DESC LIMIT 50"
+          },
+          "root_selector": "data",
+          "columns": [
+            { "selector": "source", "text": "source", "type": "string" },
+            { "selector": "medium", "text": "medium", "type": "string" },
+            { "selector": "campaign", "text": "campaign", "type": "string" },
+            { "selector": "views", "text": "views", "type": "number" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Top landing pages (last 7d)",
+      "type": "table",
+      "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+      "gridPos": { "h": 9, "w": 12, "x": 0, "y": 17 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
+          "url_options": {
+            "method": "POST",
+            "body_type": "raw",
+            "body_content_type": "text/plain",
+            "data": "SELECT blob5 AS path, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY path ORDER BY views DESC LIMIT 20"
+          },
+          "root_selector": "data",
+          "columns": [
+            { "selector": "path", "text": "path", "type": "string" },
+            { "selector": "views", "text": "views", "type": "number" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Top referrer hosts (last 7d)",
+      "type": "table",
+      "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+      "gridPos": { "h": 9, "w": 12, "x": 12, "y": 17 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
+          "url_options": {
+            "method": "POST",
+            "body_type": "raw",
+            "body_content_type": "text/plain",
+            "data": "SELECT blob4 AS referrer, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob4 != '' AND blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY referrer ORDER BY views DESC LIMIT 20"
+          },
+          "root_selector": "data",
+          "columns": [
+            { "selector": "referrer", "text": "referrer", "type": "string" },
+            { "selector": "views", "text": "views", "type": "number" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "By country (last 7d)",
+      "type": "table",
+      "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+      "gridPos": { "h": 9, "w": 12, "x": 0, "y": 26 },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "yesoreyeram-infinity-datasource", "uid": "${DS_INFINITY}" },
+          "type": "json",
+          "source": "url",
+          "format": "table",
+          "parser": "backend",
+          "url": "https://api.cloudflare.com/client/v4/accounts/${account_id}/analytics_engine/sql",
+          "url_options": {
+            "method": "POST",
+            "body_type": "raw",
+            "body_content_type": "text/plain",
+            "data": "SELECT blob6 AS country, SUM(_sample_interval * double1) AS views FROM chinaguide_referrals WHERE blob3 != 'pipeline-check' AND timestamp > NOW() - INTERVAL '7' DAY GROUP BY country ORDER BY views DESC LIMIT 30"
+          },
+          "root_selector": "data",
+          "columns": [
+            { "selector": "country", "text": "country", "type": "string" },
+            { "selector": "views", "text": "views", "type": "number" }
+          ]
+        }
+      ]
+    }
+  ]
+}

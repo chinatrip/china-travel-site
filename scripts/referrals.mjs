@@ -26,6 +26,7 @@ const API_TOKEN = process.env.CF_API_TOKEN;
 
 // blob1=source, blob2=medium, blob3=campaign; double1 is the per-view counter.
 // _sample_interval scales sampled rows back up to a true count.
+// The seeded verification row (utm_campaign=pipeline-check) is excluded by default.
 const QUERY = `
 SELECT
   blob1 AS source,
@@ -33,7 +34,8 @@ SELECT
   blob3 AS campaign,
   SUM(_sample_interval * double1) AS views
 FROM ${DATASET}
-WHERE timestamp > NOW() - INTERVAL '7' DAY
+WHERE blob3 != 'pipeline-check'
+  AND timestamp > NOW() - INTERVAL '7' DAY
 GROUP BY source, medium, campaign
 ORDER BY views DESC
 LIMIT 50
