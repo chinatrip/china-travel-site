@@ -171,6 +171,29 @@ test('index is clamped to ≤96 UTF-8 bytes, not 96 chars (multi-byte utm_source
   assert.ok(!point.indexes[0].includes('�'));
 });
 
+// A naive byte-slice + non-fatal decode replaces a mid-codepoint cut with
+// U+FFFD (3 bytes), so the re-encoded index can be 97–98 bytes — over the AE
+// limit. These cases land the 96-byte cut MID-codepoint (3-byte € and 4-byte
+// emoji don't divide 96 evenly), so they fail the old impl and pass the new
+// last-complete-codepoint clamp.
+for (const utmSource of ['a' + '€'.repeat(40), 'ab' + '😀'.repeat(24)]) {
+  test(`index stays ≤96 UTF-8 bytes with a mid-codepoint cut (${utmSource.slice(0, 3)}…)`, () => {
+    const point = buildReferralDataPoint(
+      args({
+        url: new URL(
+          `${ORIGIN}/guides/visa-types/?utm_source=${encodeURIComponent(utmSource)}`,
+        ),
+      }),
+    );
+    const byteLen = new TextEncoder().encode(point.indexes[0]).length;
+    assert.ok(byteLen <= 96, `index is ${byteLen} bytes, expected ≤96`);
+    assert.ok(
+      !point.indexes[0].includes('�'),
+      'index must not contain a U+FFFD replacement char',
+    );
+  });
+}
+
 // --- fetch handler integration: guarded, fire-and-forget, never throws ---
 
 function siteEnv({ referrals } = {}) {

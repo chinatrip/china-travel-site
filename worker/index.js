@@ -242,17 +242,30 @@ function refererHost(referer) {
 /**
  * Clamp a string to at most `maxBytes` UTF-8 bytes (AE index limit is 96
  * *bytes*, not chars — a multi-byte CJK/emoji utm_source ≤96 chars can still
- * blow it). Truncates on the byte boundary and drops any trailing partial
- * codepoint safely (TextDecoder is non-fatal by default).
+ * blow it). Truncates at the last COMPLETE code point: we accumulate code
+ * points by their UTF-8 byte length and stop before exceeding `maxBytes`, so
+ * the result is guaranteed ≤ maxBytes and never contains a U+FFFD replacement
+ * char. (A naive byte-slice + non-fatal decode is NOT safe: a cut landing
+ * mid-codepoint turns the trailing partial bytes into U+FFFD, itself 3 bytes,
+ * which can push the re-encoded string back over the limit — 97–98 bytes.)
  *
  * @param {string} s
  * @param {number} [maxBytes]
  * @returns {string}
  */
 function clampIndexBytes(s, maxBytes = 96) {
-  const bytes = new TextEncoder().encode(s);
-  if (bytes.length <= maxBytes) return s;
-  return new TextDecoder().decode(bytes.slice(0, maxBytes));
+  const enc = new TextEncoder();
+  let used = 0;
+  let out = '';
+  for (const ch of s) {
+    // for…of iterates by code point, so `ch` is always a whole codepoint
+    // (surrogate pairs stay intact).
+    const n = enc.encode(ch).length;
+    if (used + n > maxBytes) break;
+    out += ch;
+    used += n;
+  }
+  return out;
 }
 
 /**
