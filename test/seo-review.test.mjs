@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { z } from 'zod';
 import {
   filterContentPaths,
@@ -336,4 +337,30 @@ test('reviewPage retries then throws on persistent error', async () => {
     /boom/,
   );
   assert.equal(calls, 2); // 1 + 1 retry
+});
+
+// ---- CI workflow gate config (regression) -----------------------------------
+// Read the `SEO_REVIEW_MODE` set on the `seo-review` job in ci.yml. Scoped to that
+// job's block so an unrelated occurrence elsewhere can't satisfy the assertion.
+// Plain text parse (no yaml dep) keeps this independent of the package tree.
+function seoReviewModeFromWorkflow(yamlText) {
+  const lines = yamlText.split('\n');
+  const jobIdx = lines.findIndex((l) => /^ {2}seo-review:\s*$/.test(l));
+  assert.notEqual(jobIdx, -1, 'seo-review job not found in ci.yml');
+  for (let i = jobIdx + 1; i < lines.length; i++) {
+    // A line at exactly 2-space indent that is non-blank starts the next sibling job.
+    if (/^ {2}\S/.test(lines[i])) break;
+    const m = lines[i].match(/^\s+SEO_REVIEW_MODE:\s*(\S+)\s*$/);
+    if (m) return m[1];
+  }
+  return null;
+}
+
+test('ci.yml: seo-review job runs in blocking mode (gate is enforced)', () => {
+  const ciYml = readFileSync(new URL('../.github/workflows/ci.yml', import.meta.url), 'utf8');
+  assert.equal(
+    seoReviewModeFromWorkflow(ciYml),
+    'blocking',
+    'seo-review job must set SEO_REVIEW_MODE: blocking so the SEO/GEO gate actually blocks merges',
+  );
 });
