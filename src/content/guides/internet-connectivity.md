@@ -1,7 +1,7 @@
 ---
 title: Internet Access and the Great Firewall for Foreign Visitors
-date: 2026-05-04
-last_verified: 2026-06-15
+date: 2026-07-01
+last_verified: 2026-07-01
 verified_against:
   - https://chinasurvivalkit.com/blog/china-firewall-test-websites-apps-guide
   - https://nordvpn.com/blog/vpn-for-china/
@@ -23,7 +23,8 @@ volatility: high
 review:
   status: audited
   page_audit: 2026-06-15
-  citation_check: 2026-05-06
+  citation_check: 2026-07-01
+  notes: "2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round."
 description: >-
   What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs
   still work after the 2026 crackdown, and why a foreign eSIM bypasses it with
@@ -280,7 +281,7 @@ This is a difficult situation because VPN provider websites are themselves block
 
 A foreign eSIM (Airalo, Holafly, Ubigi) routes all data through gateways outside mainland China, bypassing the GFW entirely without a VPN. Google, WhatsApp, YouTube, and all other services work natively. Costs run from a few dollars for a small fixed-data pack to roughly $70 for a 30-day unlimited plan (as of June 2026) — the current per-provider pricing table and comparison live in [[wiki/concepts/sim-card.md]].
 
-**Trade-off:** eSIMs provide data only — no Chinese phone number (+86). If you need a +86 number for app registrations or SMS verification, you will need a local physical SIM in addition.
+**Trade-off:** eSIMs provide data only — no Chinese phone number (+86). If you need a +86 number for app registrations or SMS verification, you will need a local physical SIM in addition. See [how to get a Chinese phone number](/guides/chinese-phone-number/) for the options and which apps actually require one.
 
 For visitors staying up to a few weeks who don't need a local number, the eSIM approach is the most reliable connectivity solution.
 

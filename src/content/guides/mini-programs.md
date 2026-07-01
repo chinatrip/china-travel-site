@@ -1,16 +1,17 @@
 ---
 title: "Mini-Programs (WeChat & Alipay)"
-date: 2026-06-01
+date: 2026-07-01
 sources: [raw/realchinaguide-mini-programs-2026.md]
 related: [wiki/concepts/mobile-payment.md, wiki/concepts/transportation.md, wiki/concepts/sim-card.md, wiki/concepts/attraction-ticketing.md]
-last_verified: 2026-06-09
+last_verified: 2026-07-01
 verified_against:
   - raw/realchinaguide-mini-programs-2026.md
 volatility: medium
 review:
   status: audited
   page_audit: 2026-06-09
-  notes: "Single-source (realchinaguide.com). Mini-program names and flows verified against general knowledge. City metro app names cross-checked with transportation.md."
+  citation_check: 2026-07-01
+  notes: "Single-source (realchinaguide.com). Mini-program names and flows verified against general knowledge. City metro app names cross-checked with transportation.md. 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: this page's only verified_against entry is a local raw snapshot (no online Tier-1 source to fetch), so this round's re-verify = re-reading that raw snapshot + relying on drift-scan 2026-W27 coverage; next re-verify should add an independent online source to cross-check."
 description: >-
   How foreigners use WeChat and Alipay mini-programs for ride-hailing, food,
   metro and tickets — no Chinese phone number, SMS or app download needed.
@@ -47,7 +48,7 @@ category: guide
 
 ## What are mini-programs in China?
 
-Mini-programs are lightweight applications that run inside WeChat and Alipay. They do not require separate downloads from the App Store or Google Play. For foreigners, they solve the biggest friction point in China: accessing local services without a Chinese phone number or bank account.
+Mini-programs are lightweight applications that run inside WeChat and Alipay. They do not require separate downloads from the App Store or Google Play. For foreigners, they solve the biggest friction point in China: accessing local services without a Chinese phone number or bank account. That said, a few services still gate sign-up behind a +86 number — see [when you actually need a Chinese phone number](/guides/chinese-phone-number/).
 
 **Key advantages for foreigners:**
 - Inherit your WeChat Pay or Alipay payment method automatically (foreign Visa/Mastercard works)
