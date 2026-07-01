@@ -117,9 +117,6 @@ Even with a standard TTT, the following are off-limits to foreign visitors:
 | **Alien's Travel Permit (ATP)** | Everest Base Camp, Mt. Kailash, Lake Manasarovar, certain monasteries | Arranged by guide after arriving in Lhasa |
 | **Military Permit** | Remote border regions and sensitive frontier zones | 20+ days advance notice; arranged by agency before departure |
 
-<<<<<<< site
-## How do I enter Tibet from Nepal?
-=======
 ### Border Management Area Permit (BMAP) — Now Electronic
 
 Parts of Tibet lie inside China's **border management areas** (边境管理区) — the controlled zones that run along the country's land frontiers, which also cover sections of Xinjiang, Inner Mongolia, and Yunnan. Entering these zones requires a **Border Management Area Permit (BMAP, 边境管理区通行证)**.
@@ -130,8 +127,7 @@ As of **April 15, 2026** (announced April 2, 2026), the BMAP moved to an **elect
 
 **What this means for foreign travelers:** the online route is only for Chinese mainland residents aged 16 and over. Foreign nationals — together with Hong Kong / Macau / Taiwan residents, overseas Chinese, Chinese mainland residents traveling with a child under 16, and Chinese mainland residents applying for a one-year-validity permit — must apply **in person at a county-level (or higher) public-security exit-entry office or a designated police station**. The official notice sets out no online option and no first-versus-renewal shortcut for these groups, so the electronic rollout does not remove the in-person step for foreigners. Because foreigners cannot travel Tibet's restricted border zones independently, coordinate any such permit through your registered agency and guide — the same channel that arranges your Tibet Travel Permit.
 
-## Entering Tibet from Nepal
->>>>>>> wiki
+## How do I enter Tibet from Nepal?
 
 Travelers entering via Nepal (the Friendship Highway route) **cannot use a standard China visa**. They must obtain a **China Group Visa** from the Chinese Embassy in Kathmandu. Individual visas are not accepted for this entry route.
 
