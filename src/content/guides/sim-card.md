@@ -1,7 +1,7 @@
 ---
 title: SIM Card and eSIM in China for Foreign Visitors
-date: 2026-05-02
-last_verified: 2026-06-15
+date: 2026-07-01
+last_verified: 2026-07-01
 verified_against:
   - https://www.airalo.com/china-esim
   - https://www.airalo.com/help/using-managing-esims/ZSEEHBT5HW6F/stay-connected-in-china-your-guide-to-unfiltered-internet-access-is-a-vpn-required/ZDZBNIKI4TFP
@@ -23,7 +23,8 @@ volatility: high
 review:
   status: audited
   page_audit: 2026-06-15
-  citation_check: 2026-06-15
+  citation_check: 2026-07-01
+  notes: "2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked."
 description: >-
   eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi)
   bypass the firewall with no VPN, plus when you need a +86 number.
@@ -48,12 +49,12 @@ faqs:
       traveler used about 5 GB in 10 days with heavy maps use.
   - q: How much eSIM data should I buy before arriving in China?
     a: >-
-      Buy enough up front, then install the eSIM by QR before departure and
-      toggle data on only after you land — the validity clock starts on first
-      connection. For sizing, one traveler used about 5 GB in 10 days with heavy
-      maps use, so pre-downloading offline Google Maps for your cities saves
-      significant data; if you expect to upload photos, stream video, or
-      navigate continuously, choose an unlimited plan instead of a fixed cap.
+      Plan for roughly 5 GB per 10 days of typical sightseeing — that is what one
+      traveler used with heavy Maps use — and choose an unlimited plan instead of
+      a fixed cap if you expect to upload photos, stream video, or navigate
+      continuously. Pre-downloading offline Google Maps for your cities saves
+      significant data. Install the eSIM by QR before departure and toggle data
+      on only after you land, since the validity clock starts on first connection.
   - q: Do I need a Chinese phone number?
     a: >-
       Not for data — a foreign eSIM gives you data only, no +86 number, which
@@ -78,7 +79,7 @@ Foreign visitors have three connectivity options in mainland China, each with di
 | **Local physical SIM** | Stays > 30 days; anyone signing up for Alipay / WeChat Pay accounts that prefer +86 numbers, or apps gated by SMS-to-+86 | ❌ No — Chinese-network traffic; needs a separate VPN for blocked sites | 15–30 minutes (in-person, passport + biometric) |
 | **International roaming** | Stays under a week with light data needs | Carrier-dependent (usually no) | None |
 
-A Chinese phone number is more useful than it looks: many domestic services (12306 train booking, DiDi tour mode, attraction ticketing, hotel front-desk WeChat groups) fall back to SMS verification on a +86 number. Alipay and WeChat Pay both accept foreign numbers in 2026, but some sub-features remain +86-only.
+A Chinese phone number is more useful than it looks: many domestic services (12306 train booking, DiDi tour mode, attraction ticketing, hotel front-desk WeChat groups) fall back to SMS verification on a +86 number. Alipay and WeChat Pay both accept foreign numbers in 2026, but some sub-features remain +86-only. See [our full guide to getting a Chinese phone number](/guides/chinese-phone-number/) for which services actually require one and how to obtain a +86 number.
 
 ## How does a foreign eSIM work in China?
 
