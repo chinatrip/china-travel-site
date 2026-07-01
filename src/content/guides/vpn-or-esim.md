@@ -25,6 +25,7 @@ related:
   - wiki/concepts/internet-connectivity.md
   - wiki/concepts/sim-card.md
   - wiki/concepts/mobile-payment.md
+  - wiki/concepts/chinese-phone-number.md
 volatility: high
 review:
   status: audited
@@ -66,7 +67,7 @@ A **Chinese SIM card** is the opposite: its data exits inside mainland China, so
 
 Even with an eSIM, a VPN is useful (or necessary) when:
 
-- **You use a Chinese SIM card** — needed if you want a +86 number for app registrations and SMS. A Chinese SIM is behind the firewall.
+- **You use a Chinese SIM card** — needed if you want a +86 number for app registrations and SMS. A Chinese SIM is behind the firewall. That said, most visitors don't actually need a [Chinese phone number](/guides/chinese-phone-number/) at all.
 - **You're on Chinese Wi-Fi** — hotel, café and airport Wi-Fi all sit behind the firewall. (Your eSIM's mobile data does not, so you can often just turn Wi-Fi off.)
 - **You're on a laptop or desktop** — computers connect over Wi-Fi, not your phone's eSIM, so they need either a VPN or your phone's tethered eSIM data.
 - **As a backup** — many travelers keep one VPN installed even on an eSIM, in case they end up on Chinese Wi-Fi.
