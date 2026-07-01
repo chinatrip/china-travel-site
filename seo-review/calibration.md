@@ -15,6 +15,7 @@ Format per entry: **CALL** (ACCEPT / REJECT) — situation — why.
 
 - **ACCEPT** — 120–160 chars, leads with the page's core question/intent, ends with a soft value hook ("Updated June 2026").
 - **REJECT** — Missing (relies on the site's generic fallback), or a truncated/duplicated sentence, or keyword-stuffed.
+- **REJECT** — Description overclaims beyond the body: the body/FAQ hedges ("usually no +86 number, though a few services still need one") but the description states it absolutely ("no Chinese phone number … needed"). The description is a public summary (meta / OG / Article JSON-LD) and must carry the body's hedge — same overclaim bar as `faq_grounding`. (Real case: mini-programs, 2026-07.)
 
 ## title_quality
 
