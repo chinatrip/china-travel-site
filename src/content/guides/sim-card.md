@@ -49,12 +49,12 @@ faqs:
       traveler used about 5 GB in 10 days with heavy maps use.
   - q: How much eSIM data should I buy before arriving in China?
     a: >-
-      Buy enough up front, then install the eSIM by QR before departure and
-      toggle data on only after you land — the validity clock starts on first
-      connection. For sizing, one traveler used about 5 GB in 10 days with heavy
-      maps use, so pre-downloading offline Google Maps for your cities saves
-      significant data; if you expect to upload photos, stream video, or
-      navigate continuously, choose an unlimited plan instead of a fixed cap.
+      Plan for roughly 5 GB per 10 days of typical sightseeing — that is what one
+      traveler used with heavy Maps use — and choose an unlimited plan instead of
+      a fixed cap if you expect to upload photos, stream video, or navigate
+      continuously. Pre-downloading offline Google Maps for your cities saves
+      significant data. Install the eSIM by QR before departure and toggle data
+      on only after you land, since the validity clock starts on first connection.
   - q: Do I need a Chinese phone number?
     a: >-
       Not for data — a foreign eSIM gives you data only, no +86 number, which

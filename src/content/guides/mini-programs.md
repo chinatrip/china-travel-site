@@ -26,12 +26,13 @@ faqs:
       Alipay; payment connects automatically via your linked card.
   - q: Do mini-programs require a Chinese phone number?
     a: >-
-      No. A key advantage of mini-programs is that they avoid the Chinese phone
-      number and SMS verification that standalone apps often require — they run
-      inside WeChat or Alipay and inherit your linked payment method, so a
-      foreign Visa or Mastercard is enough. The DiDi mini-program, for example,
-      sidesteps the phone-verification issues the standalone DiDi app sometimes
-      has.
+      Usually not. A key advantage of mini-programs is that most avoid the
+      Chinese phone number and SMS verification that standalone apps often
+      require — they run inside WeChat or Alipay and inherit your linked payment
+      method, so a foreign Visa or Mastercard is enough. The DiDi mini-program,
+      for example, sidesteps the phone-verification issues the standalone DiDi
+      app sometimes has. A few services do still gate sign-up behind a +86
+      number, so it is not universal.
   - q: How do I order a taxi without the DiDi app?
     a: >-
       Use the DiDi mini-program inside Alipay or WeChat — it works without
