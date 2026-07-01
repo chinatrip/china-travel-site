@@ -45,10 +45,10 @@ faqs:
       passport profiles to auto-fill future bookings.
   - q: How far ahead should I book the Forbidden City?
     a: >-
-      Book exactly 7 days ahead at 20:00, when the daily batch
-      (about 40,000 tickets) releases — it can sell out within minutes in peak
-      season, and it is closed on Mondays. If it shows sold out, foreigners can
-      sometimes still buy same-day at the ticket office with a passport.
+      Book exactly 7 days ahead at 20:00, when the daily batch (about 40,000
+      tickets) releases — it can sell out within minutes in peak season, and it
+      is closed on Mondays. If it shows sold out, foreigners can sometimes still
+      buy same-day at the ticket office with a passport.
 category: guide
 ---
 

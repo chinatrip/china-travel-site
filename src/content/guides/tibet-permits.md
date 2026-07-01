@@ -1,11 +1,13 @@
 ---
 title: Tibet Travel Permits and Altitude Health
-date: 2026-05-13
-last_verified: 2026-06-09
+date: 2026-07-01
+last_verified: 2026-07-01
 verified_against:
   - https://www.chinahighlights.com/tibet/visa-document.htm
   - https://www.gototibet.com/blog/can-foreigners-go-to-tibet.html
   - https://www.thelandofsnows.com/tibet-travel-regulations/
+  - https://english.www.gov.cn/news/202604/02/content_WS69ce1207c6d00ca5f9a0a364.html
+  - https://en.nia.gov.cn/n147418/n147468/c199270/content.html
 sources:
   - raw/tibet-travel-guide-2026.md
 related:
@@ -17,7 +19,7 @@ volatility: medium
 review:
   status: audited
   page_audit: 2026-06-09
-  citation_check: 2026-05-13
+  citation_check: 2026-07-01
 description: >-
   Foreigners need a Tibet Travel Permit (not just a China visa), arranged
   through a registered tour — how to apply, costs, and altitude prep for Lhasa.
@@ -115,7 +117,21 @@ Even with a standard TTT, the following are off-limits to foreign visitors:
 | **Alien's Travel Permit (ATP)** | Everest Base Camp, Mt. Kailash, Lake Manasarovar, certain monasteries | Arranged by guide after arriving in Lhasa |
 | **Military Permit** | Remote border regions and sensitive frontier zones | 20+ days advance notice; arranged by agency before departure |
 
+<<<<<<< site
 ## How do I enter Tibet from Nepal?
+=======
+### Border Management Area Permit (BMAP) — Now Electronic
+
+Parts of Tibet lie inside China's **border management areas** (边境管理区) — the controlled zones that run along the country's land frontiers, which also cover sections of Xinjiang, Inner Mongolia, and Yunnan. Entering these zones requires a **Border Management Area Permit (BMAP, 边境管理区通行证)**.
+
+**The BMAP is not the Tibet Travel Permit.** The TTT (above) governs tourist entry to the Tibet Autonomous Region; the BMAP governs access to border-control zones along the land frontier. They are separate documents with separate rules — one is not a substitute for the other, so don't confuse them.
+
+As of **April 15, 2026** (announced April 2, 2026), the BMAP moved to an **electronic** format, and paper permits stopped being issued on that same date. Paper permits issued before then stay valid until they expire. Mainland Chinese residents aged 16 and over can now apply **online** — through the NIA 12367 app or the WeChat / Alipay mini-programs — for a permit valid up to three months.
+
+**What this means for foreign travelers:** the online route is only for Chinese mainland residents aged 16 and over. Foreign nationals — together with Hong Kong / Macau / Taiwan residents, overseas Chinese, Chinese mainland residents traveling with a child under 16, and Chinese mainland residents applying for a one-year-validity permit — must apply **in person at a county-level (or higher) public-security exit-entry office or a designated police station**. The official notice sets out no online option and no first-versus-renewal shortcut for these groups, so the electronic rollout does not remove the in-person step for foreigners. Because foreigners cannot travel Tibet's restricted border zones independently, coordinate any such permit through your registered agency and guide — the same channel that arranges your Tibet Travel Permit.
+
+## Entering Tibet from Nepal
+>>>>>>> wiki
 
 Travelers entering via Nepal (the Friendship Highway route) **cannot use a standard China visa**. They must obtain a **China Group Visa** from the Chinese Embassy in Kathmandu. Individual visas are not accepted for this entry route.
 

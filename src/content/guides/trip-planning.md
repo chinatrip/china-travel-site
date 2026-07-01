@@ -1,7 +1,7 @@
 ---
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
-date: 2026-05-13
-last_verified: 2026-06-15
+date: 2026-07-01
+last_verified: 2026-07-01
 verified_against:
   - https://ourwander.com/p/worst-time-to-visit-china
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
@@ -11,6 +11,7 @@ verified_against:
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202512/t20251203_11765346.htm
   - https://www.trip.com/guide/info/china-arrival-card.html
   - https://en.wikipedia.org/wiki/Qinling%E2%80%93Huaihe_Line
+  - https://english.www.gov.cn/policies/featured/202511/04/content_WS6909c915c6d00ca5f9a074f7.html
 sources:
   - raw/china-practical-guide-2026.md
   - raw/realchinaguide-best-times-2026.md
@@ -32,7 +33,7 @@ volatility: low
 review:
   status: audited
   page_audit: 2026-06-15
-  citation_check: 2026-06-15
+  citation_check: 2026-07-01
 description: >-
   Planning a China trip: best seasons, how many days, what to pre-book versus
   buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3

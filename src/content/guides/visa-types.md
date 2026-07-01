@@ -1,7 +1,7 @@
 ---
 title: China Visa & Entry Options for Tourists and Visitors
-date: 2026-04-30
-last_verified: 2026-06-09
+date: 2026-07-01
+last_verified: 2026-07-01
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
@@ -12,6 +12,7 @@ verified_against:
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm
   - https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm
   - https://en.nia.gov.cn/n147418/n147463/c180637/content.html
+  - https://en.nia.gov.cn/n147423/n147478/n147725/c158420/content.html
   - https://www.visaforchina.cn
 sources: [raw/12306-guide-for-foreign-business-visitors-2025.md, raw/realchinaguide-visa-guide-2026.md]
 related:
@@ -22,7 +23,7 @@ volatility: high
 review:
   status: audited
   page_audit: 2026-06-09
-  citation_check: null
+  citation_check: 2026-07-01
 description: >-
   China visa and entry options in 2026: 30-day visa-free for 50 countries,
   240-hour transit-free at 65 ports for US citizens, and the tourist L visa.
@@ -58,7 +59,7 @@ category: guide
 
 # China Visa & Entry Options for Tourists and Visitors
 
-> **Policy changes frequently.** This page was verified on 2026-05-07. The visa-free country lists, transit policy port lists, and stay durations are updated by China's National Immigration Administration (NIA) without notice. **Always verify your specific situation at [en.nia.gov.cn](https://en.nia.gov.cn) or at your nearest Chinese embassy/consulate before booking travel.**
+> **Policy changes frequently.** This page was verified on 2026-07-01. The visa-free country lists, transit policy port lists, and stay durations are updated by China's National Immigration Administration (NIA) without notice. **Always verify your specific situation at [en.nia.gov.cn](https://en.nia.gov.cn) or at your nearest Chinese embassy/consulate before booking travel.**
 
 ---
 
@@ -246,6 +247,9 @@ All foreign nationals (regardless of nationality) may transit through China airs
 
 ### Where available
 All major international airports in China that handle international connections.
+
+### Border-inspection exemption at designated airports
+At three designated hub airports — **Beijing Capital, Shanghai Pudong (PVG), and Guangzhou Baiyun** — eligible 24-hour direct-transit passengers holding an onward interline ticket to a third country skip border inspection entirely: no immigration queue and no passport stamp, provided you stay within the airport's restricted transit area. This is a convenience for through-passengers — **not** a relaxation of the airside-only rule. You still cannot leave the airport or enter the city on 24-hour transit; to do that you must qualify under Sections A–D. The list of designated airports can change, so verify current coverage at [en.nia.gov.cn](https://en.nia.gov.cn) before relying on it.
 
 > This is the default option for anyone who does not qualify for other schemes but has a short connection. No visa of any kind is needed. If you want to leave the airport, you must qualify for one of Sections A–D above.
 
