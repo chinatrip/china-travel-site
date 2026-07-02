@@ -211,11 +211,7 @@ Two distinct QR flows confuse first-time visitors:
 
 Both apps support both flows. If a small vendor doesn't see a QR for you to scan, open the **payment / pay** button in the app to show your personal QR for them to scan instead.
 
-<<<<<<< site
 ## Can I use Apple Pay, Google Pay, or PayPal in China?
-=======
-## Alternative Wallets (Apple Pay, Google Pay, TenPayGo, UnionPay Nihao China, PayPal, e-CNY)
->>>>>>> wiki
 
 These are **not replacements** for Alipay or WeChat Pay — treat them as supplementary options.
 
