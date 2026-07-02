@@ -1,7 +1,7 @@
 ---
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
 date: 2026-06-15
-last_verified: 2026-06-15
+last_verified: 2026-07-02
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
@@ -31,12 +31,14 @@ related:
   - wiki/concepts/foreign-exchange.md
   - wiki/entities/alipay.md
   - wiki/entities/wechat.md
+  - wiki/entities/tenpaygo.md
   - wiki/concepts/remote-work-china.md
 volatility: high
 review:
   status: audited
   page_audit: 2026-06-15
-  citation_check: 2026-06-15
+  citation_check: 2026-07-02
+  notes: "2026-07-02: focused re-verify accompanying the TenPayGo alternative-wallet addition. Re-confirmed the anchor Tier-1 facts — gov.cn April 2024 circular still states the $5,000 single / $50,000 annual mobile-payment caps and the mandate that 3-star+ hotels, 4A/5A attractions, and national/provincial tourist resorts accept foreign bank cards (verbatim); the ¥200 fee-exemption / 3% foreign-card surcharge threshold remains current — anchored to the Beijing May 2025 circular already in verified_against (the Tier-1 authority; secondary 2026 travel guides corroborate but do not themselves justify it); no policy reversal found since the 2026-06-15 audit. Did NOT re-audit every downstream claim this round (limit tables, refund windows, failure modes retain their 2026-06-15 page_audit). Added the TenPayGo entry under Alternative Wallets + related link — see [[wiki/entities/tenpaygo.md]]."
 description: >-
   Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the
   April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed
@@ -209,7 +211,11 @@ Two distinct QR flows confuse first-time visitors:
 
 Both apps support both flows. If a small vendor doesn't see a QR for you to scan, open the **payment / pay** button in the app to show your personal QR for them to scan instead.
 
+<<<<<<< site
 ## Can I use Apple Pay, Google Pay, or PayPal in China?
+=======
+## Alternative Wallets (Apple Pay, Google Pay, TenPayGo, UnionPay Nihao China, PayPal, e-CNY)
+>>>>>>> wiki
 
 These are **not replacements** for Alipay or WeChat Pay — treat them as supplementary options.
 
@@ -218,6 +224,8 @@ These are **not replacements** for Alipay or WeChat Pay — treat them as supple
 **Google Pay** does not function in mainland China — Google services are blocked by the Great Firewall (source: airalo.com). Do not rely on it as a backup.
 
 **UnionPay "Nihao China"** — UnionPay officially launched a dedicated app for foreign visitors on December 19, 2025 (source: UnionPay International official announcement, accessed 2026-06-12). It supports top-up from international Visa, Mastercard, and UnionPay cards issued outside mainland China, and includes real-time English–Chinese translation and metro/bus QR access in 43 major cities. Coverage and reliability are still expanding; it is not yet as universal as Alipay or WeChat Pay, but worth installing as a supplementary option. The in-app **Tour Wallet** holds the topped-up balance for QR spending at UnionPay merchants (source: UnionPay International, accessed 2026-06-12).
+
+**TenPayGo (Tencent, new — in testing 2026)** — In late June 2026 Tencent began testing **TenPayGo**, a standalone app for overseas visitors that lets you register with **just an email** and link a foreign Visa, Mastercard, or Apple Pay, then pay at the same **WeChat Pay merchant network** — no Chinese phone number or domestic bank account. As of early July 2026 the signup gate is opening to more users, but Tencent has **not announced a formal public launch**, and fees and limits are not yet officially published (early testers report a ¥200 / 3% pattern that appears to be in gray-scale testing — go by the amount your payment screen shows). Because foreigners can already bind a foreign card directly to Alipay and WeChat Pay (above), TenPayGo is a **lighter-onboarding alternative, not a must-have**. See [[wiki/entities/tenpaygo.md]] for the full picture.
 
 **PayPal (via TenPay Global × PayPal World integration, 2026)** — As of May 27, 2026, Tencent's cross-border platform **TenPay Global** and **PayPal World** are interoperable: PayPal users can pay at **tens of millions of WeChat Pay merchants** in China using their PayPal account. Initially open to **US users**; rollout to other countries is unconfirmed. The specific scan flow (whether it uses standard WeChat Pay merchant QR codes or a separate PayPal entry point) and fee structure (whether the 3% foreign-card surcharge applies) are not yet publicly documented — verify at the PayPal or WeChat Pay help center before relying on this as your primary payment method. Source: Tencent VP announcement at the 20th Shenzhen International Financial Expo (raw/wechat-paypal-integration-2026.md).
 
