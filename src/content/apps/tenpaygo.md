@@ -36,6 +36,13 @@ faqs:
       merchant's QR code (or show your own) to pay at the tens of millions of
       merchants that accept WeChat Pay, with no Chinese phone number or domestic
       bank account. It runs on Tencent's existing WeChat Pay network.
+  - q: Which cards can I use with TenPayGo?
+    a: >-
+      Per TenPayGo's in-app guide, you can link an international Visa,
+      Mastercard, American Express, Discover, Diners Club or JCB card, or pay
+      through a card already in Apple Pay — the same foreign card networks that
+      Alipay and WeChat Pay accept. No Chinese bank account or phone number is
+      needed.
   - q: Is TenPayGo publicly available yet?
     a: >-
       Not formally. Tencent launched it as a limited test in late June 2026 and,
@@ -52,11 +59,12 @@ faqs:
       setup — if you already have those working, you likely don't need it.
   - q: What does TenPayGo charge in fees?
     a: >-
-      Tencent has not published a fee schedule. Early testers report the same
-      pattern as foreign cards on Alipay/WeChat — roughly no fee under ¥200 and
-      about 3% above — but others report 3% on all amounts, and the rule appears
-      to be in gray-scale testing. Go by the fee shown on your payment screen
-      before you confirm.
+      Tencent has not published a fee schedule. The app's own guide says a
+      payment with an international card or Apple Pay may include a service fee
+      that is always shown before you confirm, but it lists no amounts. Early
+      testers report the familiar foreign-card pattern (roughly no fee under ¥200
+      and about 3% above), while others report 3% on all amounts, so the rule
+      appears to be in testing. Go by the fee shown on your payment screen.
 category: app
 ---
 
