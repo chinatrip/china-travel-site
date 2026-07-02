@@ -27,7 +27,8 @@ review:
   notes: "2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked."
 description: >-
   eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi)
-  bypass the firewall with no VPN, plus when you need a +86 number.
+  bypass the firewall with no VPN as of June 2026, plus when you need a +86
+  number.
 faqs:
   - q: Do I need a VPN if I use a foreign eSIM in China?
     a: >-
