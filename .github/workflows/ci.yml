@@ -10,9 +10,10 @@ name: CI & Preview
 #
 # A separate `seo-review` job runs in PARALLEL and reviews the SEO/GEO quality of
 # changed content with an LLM (OpenRouter gpt-5.5). It is independent of `test`, so
-# it NEVER affects preview generation. It is BLOCKING (exits 1 on any blocking issue,
-# fail-closed on infra errors) and listed in the site required checks;
-# guarded by `env.OPENROUTER_API_KEY != ''` so it soft-passes until the secret is set.
+# it NEVER affects preview generation. It is ADVISORY (SEO_REVIEW_MODE: advisory →
+# always exits 0; blocking-class issues are reported and flagged "would block" but do
+# NOT hard-fail the check or the merge — a human weighs them). It is NOT a required
+# check; guarded by `env.OPENROUTER_API_KEY != ''` so it soft-passes until the secret is set.
 
 on:
   pull_request:
@@ -157,16 +158,17 @@ jobs:
               });
             }
 
-  # Independent required check (parallel to `test`): AI review of SEO/GEO quality of
+  # Independent advisory check (parallel to `test`): AI review of SEO/GEO quality of
   # changed content. Preview lives in `test` and is NEVER affected by this job.
-  # BLOCKING (SEO_REVIEW_MODE: blocking → exits 1 on any blocking issue, and fail-closed
-  # on infra errors). Listed in the site required checks (see .github/BRANCH_PROTECTION.md).
+  # ADVISORY (SEO_REVIEW_MODE: advisory → always exits 0; blocking-class issues are
+  # reported + flagged "would block" but never hard-fail the check or the merge — the
+  # human reviewer decides). NOT a required check (see .github/BRANCH_PROTECTION.md).
   # Still guarded by `env.OPENROUTER_API_KEY != ''` → soft-passes until the secret is set.
   seo-review:
     runs-on: ubuntu-latest
     env:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      SEO_REVIEW_MODE: blocking
+      SEO_REVIEW_MODE: advisory
     steps:
       - uses: actions/checkout@v4
         with:
