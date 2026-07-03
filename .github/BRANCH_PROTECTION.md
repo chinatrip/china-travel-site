@@ -22,7 +22,7 @@ Apply these rules to the `main` branch of both repos via GitHub Settings > Branc
 | Branch pattern | `main` |
 | Require PR before merging | Yes |
 | Required approvals | 1 |
-| Require status checks | `test`, `seo-review` (both from ci.yml) |
+| Require status checks | `test` (from ci.yml). `seo-review` runs in parallel but is **advisory** — not a required check. |
 | Require branches up to date | Yes |
 | Include administrators | No |
 
@@ -43,7 +43,6 @@ gh api repos/chinatrip/china-travel-site/branches/main/protection \
   --method PUT \
   --field 'required_status_checks[strict]=true' \
   --field 'required_status_checks[contexts][]=test' \
-  --field 'required_status_checks[contexts][]=seo-review' \
   --field 'required_pull_request_reviews[required_approving_review_count]=1' \
   --field 'enforce_admins=false' \
   --field 'restrictions=null'
@@ -55,4 +54,4 @@ gh api repos/chinatrip/china-travel-site/branches/main/protection \
 - `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` must be set as repo secrets on the site repo (used by `ci.yml` / `deploy.yml` to deploy via `wrangler`).
 - `SITE_REPO_TOKEN` must be set on the wiki repo (PAT — cross-repo `repository_dispatch` to the site repo).
 - `APP_ID` + `APP_PRIVATE_KEY` must be set on the site repo — credentials for the **`chinaguide-content-sync` GitHub App**, which authors the content PR (`sync-content.yml`). The App must be installed on **both** repos with: site `Contents` + `Pull requests` write, wiki `Contents` read. Using a GitHub App (not the default `GITHUB_TOKEN`) means the content PR triggers `CI & Preview` AND the author ≠ reviewer so `reviewers:` notifies. The old `WIKI_REPO_TOKEN` is no longer used and can be removed.
-- `OPENROUTER_API_KEY` must be set on the site repo — used by the **`seo-review`** CI job (OpenRouter `openai/gpt-5.5`) to review the SEO/GEO quality of changed content. The job is now **blocking** (`SEO_REVIEW_MODE: blocking` in `ci.yml` → exits 1 on any blocking issue, and fail-closed on infra errors) and is **listed in the site required checks** above (the table **and** the `gh api` script's `required_status_checks[contexts][]`). Until the secret is set, the job **soft-passes** (the review step is gated on `env.OPENROUTER_API_KEY != ''`, so the job stays green and never blocks).
+- `OPENROUTER_API_KEY` must be set on the site repo — used by the **`seo-review`** CI job (OpenRouter `openai/gpt-5.5`) to review the SEO/GEO quality of changed content. The job is **advisory** (`SEO_REVIEW_MODE: advisory` in `ci.yml` → always exits 0; blocking-class issues are reported and flagged "would block" but do NOT hard-fail the check or the merge). It is **not a required check** — the human reviewer weighs its report. (It was briefly set to `blocking` + required; reverted to advisory to avoid re-synced pages re-surfacing latent issues and hard-blocking unrelated deploys, and because the human already reviews every PR.) Until the secret is set, the job **soft-passes** (the review step is gated on `env.OPENROUTER_API_KEY != ''`, so the job stays green regardless).
