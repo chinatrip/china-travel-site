@@ -356,11 +356,11 @@ function seoReviewModeFromWorkflow(yamlText) {
   return null;
 }
 
-test('ci.yml: seo-review job runs in blocking mode (gate is enforced)', () => {
+test('ci.yml: seo-review job runs in advisory mode (reports but does not block)', () => {
   const ciYml = readFileSync(new URL('../.github/workflows/ci.yml', import.meta.url), 'utf8');
   assert.equal(
     seoReviewModeFromWorkflow(ciYml),
-    'blocking',
-    'seo-review job must set SEO_REVIEW_MODE: blocking so the SEO/GEO gate actually blocks merges',
+    'advisory',
+    'seo-review job must set SEO_REVIEW_MODE: advisory — the gate reports its findings but does not hard-block merges; the human reviewer is the gate',
   );
 });
