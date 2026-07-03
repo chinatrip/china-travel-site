@@ -1,7 +1,7 @@
 ---
 title: "How to Set Up Alipay in China as a Foreigner (2026)"
 date: 2026-04-30
-last_verified: 2026-06-12
+last_verified: 2026-07-03
 verified_against:
   - https://global.alipay.com
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
@@ -16,11 +16,13 @@ sources:
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/wechat.md
+  - wiki/entities/tenpaygo.md
 volatility: medium
 review:
   status: audited
   page_audit: 2026-06-12
-  citation_check: 2026-06-12
+  citation_check: 2026-07-03
+  notes: "2026-07-03: added a TenPayGo cross-link (related + See Also) and re-verified the anchor payment facts to satisfy pr-lint. The foreign-card binding rule, AMEX-since-Feb-2025, the 0%-under-¥200 / 3%-over fee threshold, and the PBOC per-transaction/annual caps were re-confirmed against the gov.cn April 2024 circular + Beijing May 2025 circular I re-checked on 2026-07-02 for mobile-payment — still current, no reversal. Tour Pass / TourCard legacy detail is unchanged and already sourced to the Bank of Shanghai / render.alipay.com agreements. Did NOT re-audit every practical-tip line this round (those retain the 2026-06-12 page_audit)."
 description: >-
   Set up Alipay as a foreigner: bind a Visa or Mastercard with no Chinese bank
   account, passport verification, fees, and fixing failed payments. Updated
@@ -109,3 +111,4 @@ The following are traveler-reported practices, not official Alipay guidance:
 ## See Also
 
 - [[wiki/concepts/mobile-payment.md]] — full setup guide, PBOC policy background, fee tables, limit tiers, common failure modes
+- [[wiki/entities/tenpaygo.md]] — TenPayGo, Tencent's newer email-signup payment app for foreign visitors (an early-stage, lighter-onboarding alternative)

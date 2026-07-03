@@ -1,7 +1,7 @@
 ---
 title: "How to Use WeChat Pay in China as a Foreigner (2026)"
 date: 2026-04-30
-last_verified: 2026-06-09
+last_verified: 2026-07-03
 verified_against:
   - https://www.wechat.com
   - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
@@ -14,11 +14,13 @@ sources:
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/alipay.md
+  - wiki/entities/tenpaygo.md
 volatility: medium
 review:
   status: audited
   page_audit: 2026-06-09
-  citation_check: null
+  citation_check: 2026-07-03
+  notes: "2026-07-03: added a TenPayGo cross-link (related + a payments-only alternative note) and re-verified the anchor payment facts to satisfy pr-lint. The foreign-card binding rule, the 0%-under-¥200 / 3%-over fee threshold, and the PBOC per-transaction/annual caps were re-confirmed against the gov.cn April 2024 circular + Beijing May 2025 circular that I re-checked on 2026-07-02 for mobile-payment — still current, no reversal. The contact-vouching thresholds remain community/guide-reported (Dragon Trail) and are already hedged in-body as indicative. The PayPal × TenPay Global integration (2026-05-27) is unchanged. Did NOT re-audit every mini-program listing this round (those retain the 2026-06-09 page_audit)."
 description: >-
   WeChat is essential in China for messaging, payments, and mini-programs: how
   foreigners set up WeChat Pay, bind a foreign card, and use 2026 PayPal
@@ -94,6 +96,7 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 - WeChat interface changes frequently, making it harder to locate payment features than Alipay.
 - Some services and exclusive mini-programs require WeChat Pay specifically and do not accept Alipay (source: realchinaguide.com 2026).
 - **Regional restrictions**: Some regions block the foreign-card linking feature entirely. If stuck, use Alipay as primary and keep ¥200 cash for WeChat-only places.
+- **Lighter payments-only alternative**: if the WeChat registration and contact-vouching step is too much friction, Tencent's newer **TenPayGo** app lets foreign visitors pay at the same WeChat Pay merchant network with just an email and a foreign card — no Chinese number or vouching. It is still an early-stage rollout; see [[wiki/entities/tenpaygo.md]].
 
 ## What are WeChat mini-programs?
 
