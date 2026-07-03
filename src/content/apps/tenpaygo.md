@@ -62,9 +62,9 @@ faqs:
       Tencent has not published a fee schedule. The app's own guide says a
       payment with an international card or Apple Pay may include a service fee
       that is always shown before you confirm, but it lists no amounts. Early
-      testers report the familiar foreign-card pattern (roughly no fee under ¥200
-      and about 3% above), while others report 3% on all amounts, so the rule
-      appears to be in testing. Go by the fee shown on your payment screen.
+      testers report the familiar foreign-card pattern (roughly no fee under
+      ¥200 and about 3% above), while others report 3% on all amounts, so the
+      rule appears to be in testing. Go by the fee shown on your payment screen.
 category: app
 ---
 
@@ -81,7 +81,7 @@ TenPayGo is Tencent's standalone app for overseas visitors. Its payment infrastr
 - **Pay three ways**: scan a merchant's QR code, show your own pay code for the merchant to scan, or check out on a supported merchant website inside the app.
 - Developer: **Tencent Technology (Shenzhen)**. Platforms: **iOS** (App Store; the iOS listing is iPhone-only) and **Android** (Google Play, package `com.tencent.wxpai`). Interface: **English**.
 
-The supported card networks are confirmed by TenPayGo's own **in-app guide**, which shows **Visa, Mastercard, American Express, Discover, Diners Club International and JCB**, plus **Apple Pay** — the same set of foreign networks Alipay and WeChat Pay accept (source: TenPayGo in-app guide, app v1.0.4, captured 2026-07-02; see `raw/tenpaygo-in-app-guide-2026.md`).
+The supported card networks are confirmed by TenPayGo's own **in-app guide**, which shows **Visa, Mastercard, American Express, Discover, Diners Club International and JCB**, plus **Apple Pay** — the same set of foreign networks Alipay and WeChat Pay accept (verified by our editors against the in-app guide, July 2026).
 
 ## Is TenPayGo available yet?
 
