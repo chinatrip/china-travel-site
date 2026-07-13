@@ -36,9 +36,11 @@ faqs:
       February 2025.
   - q: Do I need to verify my passport on Alipay?
     a: >-
-      For larger or cumulative spending Alipay asks for passport verification;
-      small spending often works right after binding a card. Complete
-      verification before your trip to avoid limits.
+      Yes — passport-based identity verification is part of setting up Alipay as
+      a foreigner, and you should complete it before your trip. A freshly bound
+      card may let you make small payments right away, but your limits stay low
+      until verification is done, and larger or cumulative spending requires it.
+      Doing it before you travel avoids hitting a limit at the register.
   - q: Why is my Alipay payment failing?
     a: >-
       Common causes: paying to a personal QR code (foreign cards can only pay
@@ -47,8 +49,11 @@ faqs:
   - q: What is Alipay Tour Pass and do I need it?
     a: >-
       Tour Pass is a prepaid mini-wallet for short visits, but since direct
-      foreign-card binding launched it's usually unnecessary and can carry fees.
-      Most visitors just bind a card directly.
+      foreign-card binding launched it's usually unnecessary. Most visitors just
+      bind a card directly, which is simpler and cheaper: the prepaid service
+      charges about a 5% fee on each top-up, versus the 3% surcharge on direct
+      card payments over ¥200. If a Tour Pass prompt appears during setup,
+      dismiss it and use the regular Bank Cards flow.
 category: app
 ---
 
