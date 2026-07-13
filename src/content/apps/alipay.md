@@ -24,31 +24,40 @@ review:
   citation_check: 2026-07-03
   notes: "2026-07-03: added a TenPayGo cross-link (related + See Also) and re-verified the anchor payment facts to satisfy pr-lint. The foreign-card binding rule, AMEX-since-Feb-2025, the 0%-under-¥200 / 3%-over fee threshold, and the PBOC per-transaction/annual caps were re-confirmed against the gov.cn April 2024 circular + Beijing May 2025 circular I re-checked on 2026-07-02 for mobile-payment — still current, no reversal. Tour Pass / TourCard legacy detail is unchanged and already sourced to the Bank of Shanghai / render.alipay.com agreements. Did NOT re-audit every practical-tip line this round (those retain the 2026-06-12 page_audit)."
 description: >-
-  Set up Alipay as a foreigner: bind a Visa or Mastercard with no Chinese bank
-  account, passport verification, fees, and fixing failed payments. Updated
-  2026.
+  Set up Alipay as a foreigner: bind a foreign Visa or Mastercard with no
+  Chinese bank account, passport verification, fees and limits, and Tour Pass.
+  Updated July 2026.
 faqs:
   - q: Can I use Alipay without a Chinese bank account?
     a: >-
       Yes. Bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card
-      directly since the April 2024 PBOC policy — no Chinese bank account
-      needed. American Express has also been supported across China since
-      February 2025.
+      directly since 2024 — no Chinese bank account needed. American Express has
+      also been supported across China since February 2025 for overseas-issued
+      cards, though cards issued by certain local partners abroad may be
+      excluded.
   - q: Do I need to verify my passport on Alipay?
     a: >-
-      For larger or cumulative spending Alipay asks for passport verification;
-      small spending often works right after binding a card. Complete
-      verification before your trip to avoid limits.
+      Yes — passport-based identity verification is part of setting up Alipay as
+      a foreigner, and you should complete it before your trip. A freshly bound
+      card may let you make small payments right away, but your limits stay low
+      until verification is done, and larger or cumulative spending requires it.
+      Doing it before you travel avoids hitting a limit at the register.
   - q: Why is my Alipay payment failing?
     a: >-
-      Common causes: paying to a personal QR code (foreign cards can only pay
-      merchant codes), having a VPN switched on, or hitting a per-transaction
-      limit. Turn off the VPN and ask for a merchant code.
+      Two Alipay-specific things to check first are whether you have completed
+      passport verification and whether you have hit your per-transaction limit —
+      both are covered under Fees and Limits above, so finish verification and
+      check your in-app limit. If a payment still fails after that, our Mobile
+      Payment guide has a full payment-troubleshooting section for the remaining
+      causes and fixes.
   - q: What is Alipay Tour Pass and do I need it?
     a: >-
       Tour Pass is a prepaid mini-wallet for short visits, but since direct
-      foreign-card binding launched it's usually unnecessary and can carry fees.
-      Most visitors just bind a card directly.
+      foreign-card binding launched it's usually unnecessary. Most visitors just
+      bind a card directly, which is simpler and cheaper: the prepaid service
+      charges about a 5% fee on each top-up, versus the 3% surcharge on direct
+      card payments over ¥200. If a Tour Pass prompt appears during setup,
+      dismiss it and use the regular Bank Cards flow.
 category: app
 ---
 
@@ -82,9 +91,9 @@ PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000
 
 **Tour Pass** (prepaid wallet) is **no longer necessary for most visitors** — direct card binding (added in 2024) is simpler and has higher limits. If the Alipay app shows a Tour Pass prompt during onboarding, dismiss it and use the standard Bank Cards flow instead.
 
-Where Tour Pass is still encountered, the underlying Bank of Shanghai prepaid-card service charges a **5% service fee on each top-up** ("5% of the card purchase amount … charged in RMB at one time") — versus the 3% surcharge on direct card binding — and the service is valid for **90 days**, after which Bank of Shanghai automatically converts the remaining balance back at the prevailing exchange rate and refunds it to the original bank card (any exchange-rate difference is borne by the user). (Source: Bank of Shanghai "Prepaid Card" User Service Agreement, hosted on render.alipay.com, accessed June 2026)
+Where Tour Pass is still encountered, the underlying Bank of Shanghai prepaid-card service charges a **5% service fee on each top-up** ("5% of the card purchase amount … charged in RMB at one time") — versus the 3% surcharge on direct card binding — and the service is valid for **90 days**, after which Bank of Shanghai automatically converts the remaining balance back at the prevailing exchange rate and refunds it to the original bank card (any exchange-rate difference is borne by the user). (Source: Bank of Shanghai's "Prepaid Card" service agreement)
 
-**TourCard** (top-up balance variant) was a prepaid balance option within Alipay — like Tour Pass, you load RMB onto the prepaid card from a foreign bank card, then "make purchases and payments by using the Prepaid Card balance via Alipay quick payment service". (Source: official "Tour Pass" Information Technology Service Agreement on render.alipay.com, accessed June 2026.) Travelers commonly reported loading ¥500 at a time, with top-ups completing within seconds (traveler-reported, not independently verified).
+**TourCard** (top-up balance variant) was a prepaid balance option within Alipay — like Tour Pass, you load RMB onto the prepaid card from a foreign bank card, then "make purchases and payments by using the Prepaid Card balance via Alipay quick payment service". (Source: the official "Tour Pass" service agreement.) Travelers commonly reported loading ¥500 at a time, with top-ups completing within seconds (traveler-reported, not independently verified).
 
 **Alipay+** allows payment via foreign e-wallets (GCash, Kakao Pay, GrabPay, TrueMoney, and others) — useful if you already use one of those apps.
 
