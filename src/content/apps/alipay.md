@@ -24,9 +24,9 @@ review:
   citation_check: 2026-07-03
   notes: "2026-07-03: added a TenPayGo cross-link (related + See Also) and re-verified the anchor payment facts to satisfy pr-lint. The foreign-card binding rule, AMEX-since-Feb-2025, the 0%-under-¥200 / 3%-over fee threshold, and the PBOC per-transaction/annual caps were re-confirmed against the gov.cn April 2024 circular + Beijing May 2025 circular I re-checked on 2026-07-02 for mobile-payment — still current, no reversal. Tour Pass / TourCard legacy detail is unchanged and already sourced to the Bank of Shanghai / render.alipay.com agreements. Did NOT re-audit every practical-tip line this round (those retain the 2026-06-12 page_audit)."
 description: >-
-  Set up Alipay as a foreigner: bind a Visa or Mastercard with no Chinese bank
-  account, passport verification, fees, and fixing failed payments. Updated
-  2026.
+  Set up Alipay as a foreigner: bind a foreign Visa or Mastercard with no
+  Chinese bank account, passport verification, fees and limits, and Tour Pass.
+  Updated July 2026.
 faqs:
   - q: Can I use Alipay without a Chinese bank account?
     a: >-
