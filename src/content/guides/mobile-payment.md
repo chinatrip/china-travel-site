@@ -50,7 +50,8 @@ faqs:
     a: >-
       Yes. Since the April 2024 PBOC policy you can bind a foreign Visa,
       Mastercard, JCB, Diners Club or Discover card directly to Alipay or WeChat
-      Pay — no Chinese bank account or phone number required.
+      Pay — no Chinese bank account or Chinese SIM needed. You register with
+      your own foreign mobile number.
   - q: Why does my Alipay or WeChat Pay payment keep failing in China?
     a: >-
       One common cause is paying to a vendor's personal QR code, which
