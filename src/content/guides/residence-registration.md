@@ -29,8 +29,8 @@ review:
   notes: "2026-07-03: reader-facing cleanup (removed an internal note that referenced a raw/ source filename) + honest re-verify to satisfy pr-lint. Re-confirmed the anchor facts against Tier-1 sources: the NIA accommodation-registration page still states the 24-hour rule (hotels auto-register; non-hotel stays register within 24 hours at the public security organ), and the gov.cn March-2026 policy interpretation still states the online-registration pilot launched 2026-03-20 in the seven regions (Hebei, Liaoning, Zhejiang, Hubei, Guangxi, Chongqing, Sichuan), with online = same legal effect and either the foreigner or the host able to file. Exit-Entry Administration Law Articles 38/39/76 are a stable 2012 statute (unchanged). Did NOT re-audit every city desk-hours / practitioner-practice line this round (those retain the 2026-06-12 page_audit)."
 description: >-
   Foreigners must register their China address within 24 hours of arrival — by
-  the hotel, or at a police station or online for private stays. Updated June
-  2026.
+  the hotel, or at a police station (or online where available) for private
+  stays. Updated July 2026.
 faqs:
   - q: Do tourists need to register with the police in China?
     a: >-
