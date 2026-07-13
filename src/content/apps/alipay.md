@@ -31,9 +31,8 @@ faqs:
   - q: Can I use Alipay without a Chinese bank account?
     a: >-
       Yes. Bind a foreign Visa, Mastercard, JCB, Diners Club or Discover card
-      directly since the April 2024 PBOC policy — no Chinese bank account
-      needed. American Express has also been supported across China since
-      February 2025.
+      directly since 2024 — no Chinese bank account needed. American Express has
+      also been supported across China since February 2025.
   - q: Do I need to verify my passport on Alipay?
     a: >-
       Yes — passport-based identity verification is part of setting up Alipay as
@@ -43,9 +42,11 @@ faqs:
       Doing it before you travel avoids hitting a limit at the register.
   - q: Why is my Alipay payment failing?
     a: >-
-      Common causes: paying to a personal QR code (foreign cards can only pay
-      merchant codes), having a VPN switched on, or hitting a per-transaction
-      limit. Turn off the VPN and ask for a merchant code.
+      Two common Alipay-specific causes are not completing passport verification
+      and hitting your per-transaction limit — both are covered under Fees and
+      Limits above, so finish verification and check your in-app limit first. If
+      a payment still fails after that, see our full payment-troubleshooting
+      guide for the other common causes and fixes.
   - q: What is Alipay Tour Pass and do I need it?
     a: >-
       Tour Pass is a prepaid mini-wallet for short visits, but since direct
