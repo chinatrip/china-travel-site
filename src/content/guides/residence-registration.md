@@ -1,7 +1,7 @@
 ---
 title: Residence Registration
 date: 2026-06-12
-last_verified: 2026-06-15
+last_verified: 2026-07-03
 verified_against:
   - https://cs.mfa.gov.cn/wgrlh/flfg/201307/t20130701_961407.shtml
   - https://en.nia.gov.cn/n147423/n147478/n147715/c158241/content.html
@@ -25,7 +25,8 @@ volatility: high
 review:
   status: audited
   page_audit: 2026-06-12
-  citation_check: 2026-06-15
+  citation_check: 2026-07-03
+  notes: "2026-07-03: reader-facing cleanup (removed an internal note that referenced a raw/ source filename) + honest re-verify to satisfy pr-lint. Re-confirmed the anchor facts against Tier-1 sources: the NIA accommodation-registration page still states the 24-hour rule (hotels auto-register; non-hotel stays register within 24 hours at the public security organ), and the gov.cn March-2026 policy interpretation still states the online-registration pilot launched 2026-03-20 in the seven regions (Hebei, Liaoning, Zhejiang, Hubei, Guangxi, Chongqing, Sichuan), with online = same legal effect and either the foreigner or the host able to file. Exit-Entry Administration Law Articles 38/39/76 are a stable 2012 statute (unchanged). Did NOT re-audit every city desk-hours / practitioner-practice line this round (those retain the 2026-06-12 page_audit)."
 description: >-
   Foreigners must register their China address within 24 hours of arrival — by
   the hotel, or at a police station or online for private stays. Updated June
@@ -139,4 +140,4 @@ Shanghai's public-security guidance (gaj.sh.gov.cn) tracks the national rule rat
 - **Online registration pilot policy interpretation** (March 2026) ([english.www.gov.cn](https://english.www.gov.cn/services/visitchina/202603/21/content_WS69ce124cc6d00ca5f9a0a368.html))
 - National Immigration Administration (NIA): https://www.nia.gov.cn — 12367 hotline and service platform
 
-> Note: the source file `raw/12306-guide-for-foreign-business-visitors-2025.md` is a comprehensive guide to working and living in China (not limited to train travel despite the filename) — it covers residence registration as part of its entry procedures chapter. The law text, the NIA pages, and the city government guides above are the authoritative primary sources.
+> The authoritative primary sources for this page are the Exit and Entry Administration Law (Articles 38, 39, 76), the National Immigration Administration's accommodation-registration pages, and the city government service guides cited above.
