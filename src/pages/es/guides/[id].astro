@@ -1,0 +1,34 @@
+---
+import { getCollection, render } from 'astro:content';
+import GuideLayout from '../../../layouts/GuideLayout.astro';
+
+// Spanish guide route. Translated entries live in the parallel `guidesEs`
+// collection (src/content/guides/es/*.md), so their ids are plain slugs and
+// render at /es/guides/<slug>/. lang="es" drives the localized chrome + hreflang.
+export async function getStaticPaths() {
+  const guides = await getCollection('guidesEs', ({ data }) => data.status === 'audited');
+  return guides.map((guide) => ({
+    params: { id: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content } = await render(guide);
+---
+
+<GuideLayout
+  lang="es"
+  title={guide.data.title}
+  description={guide.data.description}
+  date={guide.data.date}
+  lastVerified={guide.data.last_verified || guide.data.review?.page_audit || guide.data.date}
+  verifiedBy={guide.data.verified_by}
+  verifiedAgainst={guide.data.verified_against}
+  volatility={guide.data.volatility}
+  category="guide"
+  faqs={guide.data.faqs}
+  related={guide.data.related}
+>
+  <Content />
+</GuideLayout>

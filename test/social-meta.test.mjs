@@ -148,16 +148,40 @@ test('translated pages carry a reciprocal hreflang set (en ↔ es + x-default→
 });
 
 test('NO-REGRESSION: an untranslated English page keeps only en + x-default = canonical', () => {
-  // visa-types has no Spanish translation, so its head must be exactly what it
-  // was before i18n: en and x-default both pointing at its own canonical, and
+  // accommodation has no Spanish translation, so its head must be exactly what
+  // it was before i18n: en and x-default both pointing at its own canonical, and
   // crucially NO hreflang="es" leaking in.
-  const h = head('guides/visa-types/index.html');
+  const h = head('guides/accommodation/index.html');
   const alts = hreflangs(h);
-  const canonical = `${SITE}/guides/visa-types/`;
+  const canonical = `${SITE}/guides/accommodation/`;
   assert.equal(alts.en, canonical);
   assert.equal(alts['x-default'], canonical);
   assert.equal(alts.es, undefined, 'untranslated page must not advertise a Spanish alternate');
-  assert.equal(htmlLang('guides/visa-types/index.html'), 'en');
+  assert.equal(htmlLang('guides/accommodation/index.html'), 'en');
+});
+
+test('a translated guide renders under /es/guides/ with Spanish locale + reciprocal hreflang', () => {
+  assert.equal(htmlLang('es/guides/visa-types/index.html'), 'es');
+  const h = head('es/guides/visa-types/index.html');
+  assert.equal(canonicalHref(h), `${SITE}/es/guides/visa-types/`, 'self-canonical to the /es/ URL');
+  assert.equal(metaContent(h, 'property', 'og:locale'), 'es_ES');
+  const alts = hreflangs(h);
+  assert.equal(alts.en, `${SITE}/guides/visa-types/`);
+  assert.equal(alts.es, `${SITE}/es/guides/visa-types/`);
+  assert.equal(alts['x-default'], `${SITE}/guides/visa-types/`);
+});
+
+test('its English counterpart now advertises the Spanish alternate (reciprocity)', () => {
+  const alts = hreflangs(head('guides/visa-types/index.html'));
+  assert.equal(alts.es, `${SITE}/es/guides/visa-types/`);
+  assert.equal(alts.en, `${SITE}/guides/visa-types/`);
+});
+
+test('translated guide chrome is localized (breadcrumb + FAQ heading in Spanish)', () => {
+  // Read the full body, not just the head, to assert the GuideLayout chrome.
+  const html = readFileSync(join(outDir, 'es/guides/visa-types/index.html'), 'utf8');
+  assert.match(html, /Inicio/, 'localized breadcrumb "Home" → "Inicio"');
+  assert.match(html, /Preguntas frecuentes/, 'localized FAQ heading');
 });
 
 test('default og:image points at the real og-default.png product', () => {

@@ -25,7 +25,67 @@ export const OG_LOCALE = {
 // default-locale (English) path is the x-default target.
 export const TRANSLATIONS = [
   { en: '/', es: '/es/' },
+  { en: '/guides/trip-planning/', es: '/es/guides/trip-planning/' },
+  { en: '/guides/visa-types/', es: '/es/guides/visa-types/' },
+  { en: '/guides/mobile-payment/', es: '/es/guides/mobile-payment/' },
+  { en: '/guides/vpn-or-esim/', es: '/es/guides/vpn-or-esim/' },
 ];
+
+// UI chrome strings per locale. Keep keys in sync across locales; t() falls back
+// to the default locale (then the raw key) for any gap, so a missing string
+// degrades to English rather than throwing.
+export const UI = {
+  en: {
+    home: 'Home',
+    travelGuides: 'Travel Guides',
+    essentialApps: 'Essential Apps',
+    lastVerified: 'Last verified',
+    by: 'by',
+    faqHeading: 'Frequently Asked Questions',
+    relatedHeading: 'Related Guides',
+    sourcesHeading: 'Sources & verification',
+    sourcesIntro: 'This guide was checked against the following sources:',
+    editorialPre: 'Learn how we verify and update our guides in our ',
+    editorialLink: 'editorial policy',
+    editorialPost: '.',
+  },
+  es: {
+    home: 'Inicio',
+    travelGuides: 'Guías de viaje',
+    essentialApps: 'Aplicaciones esenciales',
+    lastVerified: 'Última verificación',
+    by: 'por',
+    faqHeading: 'Preguntas frecuentes',
+    relatedHeading: 'Guías relacionadas',
+    sourcesHeading: 'Fuentes y verificación',
+    sourcesIntro: 'Esta guía se contrastó con las siguientes fuentes:',
+    editorialPre: 'Consulta cómo verificamos y actualizamos nuestras guías en nuestra ',
+    editorialLink: 'política editorial',
+    editorialPost: '.',
+  },
+};
+
+/** A localized UI string, falling back to the default locale then the raw key. */
+export function t(locale, key) {
+  return UI[locale]?.[key] ?? UI[DEFAULT_LOCALE][key] ?? key;
+}
+
+/**
+ * Whether a translated page is stale relative to its English source: true when
+ * the English source has been re-verified more recently than the translation
+ * recorded. Missing translation date → treated as stale (needs attention);
+ * missing source date → not stale (nothing to compare against). ISO YYYY-MM-DD
+ * strings compare lexicographically.
+ *
+ * @param {string | undefined} sourceLastVerified - translation's recorded source_last_verified
+ * @param {string | undefined} enLastVerified - the English source's current last_verified
+ * @returns {boolean}
+ */
+export function isTranslationStale(sourceLastVerified, enLastVerified) {
+  if (!enLastVerified) return false;
+  if (!sourceLastVerified) return true;
+  return enLastVerified > sourceLastVerified;
+}
 
 /** Canonical trailing-slash form used for all registry lookups. */
 function normalize(pathname) {

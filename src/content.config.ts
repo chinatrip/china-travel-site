@@ -19,6 +19,12 @@ const contentSchema = z.object({
   status: z.string().default('audited'),
   category: z.string().optional(),
   volatility: z.string().optional(),
+  // i18n (translated pages only): locale + provenance link back to the English
+  // source, so the freshness check can flag a translation when its source page
+  // is re-verified. See src/lib/i18n.mjs + scripts/check-translation-freshness.mjs.
+  lang: z.string().optional(),
+  source_en: z.string().optional(),
+  source_last_verified: dateOrString.optional(),
   review: z.object({
     status: z.string().optional(),
     page_audit: dateOrString.optional(),
@@ -27,14 +33,23 @@ const contentSchema = z.object({
   }).optional(),
 });
 
+// Top-level `*.md` only, so a `<collection>/es/` translation subfolder is NOT
+// pulled into the English collections — every `getCollection('guides')` across
+// the site stays English-only with no per-call-site filtering. Translated pages
+// load via the parallel `guidesEs` collection and render under /es/guides/.
 const guides = defineCollection({
-  loader: glob({ base: './src/content/guides', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/guides', pattern: '*.md' }),
   schema: contentSchema,
 });
 
 const apps = defineCollection({
-  loader: glob({ base: './src/content/apps', pattern: '**/*.md' }),
+  loader: glob({ base: './src/content/apps', pattern: '*.md' }),
   schema: contentSchema,
 });
 
-export const collections = { guides, apps };
+const guidesEs = defineCollection({
+  loader: glob({ base: './src/content/guides/es', pattern: '*.md' }),
+  schema: contentSchema,
+});
+
+export const collections = { guides, apps, guidesEs };
