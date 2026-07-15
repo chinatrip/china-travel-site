@@ -54,6 +54,17 @@ export default defineConfig({
 
   trailingSlash: 'always',
 
+  // English is the default locale and stays at the site root with NO /en/
+  // prefix (prefixDefaultLocale: false) — existing URLs and their indexing are
+  // untouched. Translated locales live under a path prefix (/es/…). See #104.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
+
   markdown: {
     remarkPlugins: [remarkStripLeadingH1, remarkWikiLinks, remarkTrailingSlash],
     shikiConfig: {
