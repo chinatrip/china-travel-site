@@ -18,6 +18,7 @@ import '@fontsource/inter/700.css';
 import interLatin400Woff2 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
 import interLatin700Woff2 from '@fontsource/inter/files/inter-latin-700-normal.woff2?url';
 import '../styles/global.css';
+import { localeOf, alternatesFor, OG_LOCALE, DEFAULT_LOCALE } from '../lib/i18n.mjs';
 
 interface Props {
   title: string;
@@ -30,17 +31,30 @@ interface Props {
    * OG/Twitter crawlers, which require absolute image URLs, always get one.
    */
   image?: string;
+  /**
+   * Page locale. Defaults to the locale inferred from the URL prefix
+   * (/es/… → es, everything else → en), so callers rarely set it explicitly.
+   */
+  lang?: string;
 }
 
-const { title, description = 'Your practical guide to traveling in China as a foreigner', noindex = false, image = '/og-default.png' } = Astro.props;
+const { title, description = 'Your practical guide to traveling in China as a foreigner', noindex = false, image = '/og-default.png', lang } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href;
 const fullTitle = `${title} | ChinaGuide.ai`;
 // Absolute social-image URL (handles both absolute overrides and root-relative paths).
 const ogImage = new URL(image, Astro.site).href;
+
+// Locale + hreflang. `lang` defaults to the URL-inferred locale. `alternates`
+// is non-null ONLY for pages in the translation registry; every English-only
+// page falls back to the historical `en` + `x-default` = canonical pair, so its
+// <head> stays byte-identical to the pre-i18n output (no-regression guarantee).
+const pageLang = lang ?? localeOf(Astro.url.pathname);
+const ogLocale = OG_LOCALE[pageLang] ?? OG_LOCALE[DEFAULT_LOCALE];
+const alternates = alternatesFor(Astro.url.pathname);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={pageLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,8 +62,16 @@ const ogImage = new URL(image, Astro.site).href;
     <title>{fullTitle}</title>
     <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
     <link rel="canonical" href={canonicalURL} />
-    <link rel="alternate" hreflang="en" href={canonicalURL} />
-    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+    {alternates
+      ? alternates.map((a) => (
+          <link rel="alternate" hreflang={a.hreflang} href={new URL(a.path, Astro.site).href} />
+        ))
+      : (
+        <>
+          <link rel="alternate" hreflang="en" href={canonicalURL} />
+          <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+        </>
+      )}
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     <!-- Open Graph -->
@@ -58,7 +80,7 @@ const ogImage = new URL(image, Astro.site).href;
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:site_name" content="ChinaGuide.ai" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={ogLocale} />
     <meta property="og:image" content={ogImage} />
 
     <!-- Twitter Card -->

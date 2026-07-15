@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Spanish section landing (i18n skeleton, #104). This is the real /es/ hub, not
+// a throwaway: the Spanish minimal pilot expands its links to translated
+// cornerstone guides. Until those ship, it honestly points to the English
+// guides and says the Spanish versions are on the way. lang/hreflang/og:locale
+// come from BaseLayout via the URL prefix + translation registry.
+const title = 'Guía de viaje a China para extranjeros';
+const description =
+  'Guía práctica para viajar a China: visados y entrada sin visado, pagos móviles (Alipay y WeChat Pay), internet y VPN, y planificación del viaje. Verificado con fuentes oficiales.';
+
+// Cornerstone guides for a first-time visitor. Spanish translations are the
+// pilot's next step; for now these link to the English originals.
+const cornerstones = [
+  { href: '/guides/trip-planning/', label: 'Planificación del viaje', note: 'Cómo organizar tu viaje a China paso a paso.' },
+  { href: '/guides/visa-types/', label: 'Visados y entrada sin visado', note: 'Tipos de visado y las políticas de exención (visa-free) vigentes.' },
+  { href: '/guides/mobile-payment/', label: 'Pagos móviles: Alipay y WeChat Pay', note: 'Cómo pagar en China con una tarjeta extranjera.' },
+  { href: '/guides/vpn-or-esim/', label: 'Internet y VPN', note: 'Cómo conectarte y acceder a los servicios bloqueados.' },
+];
+---
+
+<BaseLayout title={title} description={description} lang="es">
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-secondary to-blue-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">
+        Tu guía práctica para<br />
+        <span class="text-red-400">viajar a China</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-blue-200 max-w-2xl mb-4">
+        Todo lo que un extranjero necesita saber — visados, pagos, aplicaciones, transporte y más.
+        Verificado con fuentes oficiales.
+      </p>
+      <p class="text-sm text-blue-300">
+        Estamos publicando las versiones en español. Por ahora, las guías completas están en inglés.
+        <a href="/" class="underline hover:text-white">English version →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Cornerstone guides -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold text-secondary mb-6">Empieza por aquí</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {cornerstones.map((c) => (
+        <a
+          href={c.href}
+          class="block rounded-lg border border-gray-200 p-5 hover:border-primary hover:shadow-sm transition"
+        >
+          <span class="block font-semibold text-secondary">{c.label}</span>
+          <span class="block mt-1 text-sm text-gray-600">{c.note}</span>
+          <span class="mt-2 inline-block text-xs text-muted">Guía en inglés →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

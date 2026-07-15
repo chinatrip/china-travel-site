@@ -51,6 +51,25 @@ function canonicalHref(headHtml) {
   return m ? m[1] : null;
 }
 
+/** Map of hreflang → href for every <link rel="alternate" hreflang> in a head. */
+function hreflangs(headHtml) {
+  const map = {};
+  for (const tag of headHtml.match(/<link[^>]*rel="alternate"[^>]*>/gi) || []) {
+    const hl = tag.match(/\bhreflang="([^"]*)"/i);
+    const href = tag.match(/\bhref="([^"]*)"/i);
+    if (hl && href) map[hl[1]] = href[1];
+  }
+  return map;
+}
+
+/** The <html lang="…"> of a built page (the tag sits before </head>). */
+function htmlLang(relPath) {
+  const file = join(outDir, relPath);
+  assert.ok(existsSync(file), `expected built page ${relPath}`);
+  const m = readFileSync(file, 'utf8').match(/<html[^>]*\blang="([^"]*)"/i);
+  return m ? m[1] : null;
+}
+
 // Representative pages: a static page (home), a guide (via GuideLayout→BaseLayout),
 // a listing, and the noindex search shell.
 const PAGES = [
@@ -99,6 +118,47 @@ for (const page of PAGES) {
     }
   });
 }
+
+// --- i18n skeleton: locale <html lang>, og:locale, reciprocal hreflang ---
+// The head is the surface Google reads for language targeting, so these assert
+// the real built output, not the layout source.
+
+test('English default-locale pages declare lang="en" and og:locale en_US', () => {
+  assert.equal(htmlLang('index.html'), 'en');
+  assert.equal(metaContent(head('index.html'), 'property', 'og:locale'), 'en_US');
+});
+
+test('the /es/ landing page is built with Spanish locale signals', () => {
+  assert.equal(htmlLang('es/index.html'), 'es');
+  const h = head('es/index.html');
+  assert.equal(canonicalHref(h), `${SITE}/es/`, 'self-canonical to /es/');
+  assert.equal(metaContent(h, 'property', 'og:locale'), 'es_ES');
+});
+
+test('translated pages carry a reciprocal hreflang set (en ↔ es + x-default→en)', () => {
+  const enAlts = hreflangs(head('index.html'));
+  assert.equal(enAlts.en, `${SITE}/`);
+  assert.equal(enAlts.es, `${SITE}/es/`);
+  assert.equal(enAlts['x-default'], `${SITE}/`, 'x-default targets the English URL');
+
+  const esAlts = hreflangs(head('es/index.html'));
+  assert.equal(esAlts.en, `${SITE}/`);
+  assert.equal(esAlts.es, `${SITE}/es/`);
+  assert.equal(esAlts['x-default'], `${SITE}/`);
+});
+
+test('NO-REGRESSION: an untranslated English page keeps only en + x-default = canonical', () => {
+  // visa-types has no Spanish translation, so its head must be exactly what it
+  // was before i18n: en and x-default both pointing at its own canonical, and
+  // crucially NO hreflang="es" leaking in.
+  const h = head('guides/visa-types/index.html');
+  const alts = hreflangs(h);
+  const canonical = `${SITE}/guides/visa-types/`;
+  assert.equal(alts.en, canonical);
+  assert.equal(alts['x-default'], canonical);
+  assert.equal(alts.es, undefined, 'untranslated page must not advertise a Spanish alternate');
+  assert.equal(htmlLang('guides/visa-types/index.html'), 'en');
+});
 
 test('default og:image points at the real og-default.png product', () => {
   assert.ok(existsSync(join(repoRoot, 'public', 'og-default.png')), 'public/og-default.png exists');
