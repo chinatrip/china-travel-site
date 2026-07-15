@@ -43,6 +43,12 @@ export function checkTranslationFreshness() {
       }
 
       const enLastVerified = isoDate(matter(readFileSync(srcPath, 'utf8')).data.last_verified);
+      // Fail closed: an audited English source with no last_verified can't anchor
+      // the freshness check, so flag it rather than silently passing the guard.
+      if (!enLastVerified) {
+        problems.push(`${rel}: English source \`${data.source_en}\` has no last_verified to check against`);
+        continue;
+      }
       const translated = isoDate(data.source_last_verified);
       if (isTranslationStale(translated, enLastVerified)) {
         problems.push(
