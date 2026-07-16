@@ -18,7 +18,7 @@
  * Pure helpers are exported for deterministic unit tests (the LLM call is injected/mocked).
  */
 import { readFileSync, writeFileSync, appendFileSync, existsSync, readdirSync } from 'node:fs';
-import { join, basename } from 'node:path';
+import { join } from 'node:path';
 import { execSync } from 'node:child_process';
 import matter from 'gray-matter';
 import { z } from 'zod';
@@ -74,7 +74,10 @@ export const PageVerdictSchema = z.object({
 // ---------------------------------------------------------------------------
 // Pure helpers (exported, unit-tested)
 // ---------------------------------------------------------------------------
-const CONTENT_PATH_RE = /^src\/content\/(guides|apps)\/[^/]+\.md$/;
+// Reviewable content: top-level guides/apps markdown, plus a single 2-letter
+// locale subfolder (e.g. guides/es/visa-types.md) so translated pages are NOT
+// silently skipped by the gate. Deeper nesting (guides/sub/x/y.md) stays out.
+const CONTENT_PATH_RE = /^src\/content\/(guides|apps)\/(?:[a-z]{2}\/)?[^/]+\.md$/;
 
 /** Filter an arbitrary list of repo paths down to reviewable content markdown. */
 export function filterContentPaths(paths) {
@@ -89,8 +92,11 @@ export function buildReviewInput(raw, filePath) {
   const title = typeof fm.title === 'string' ? fm.title : '';
   const description = typeof fm.description === 'string' ? fm.description : '';
   const faqs = Array.isArray(fm.faqs) ? fm.faqs : [];
-  const slug = basename(filePath, '.md');
   const collection = /\/apps\//.test(filePath) ? 'apps' : 'guides';
+  // Slug is the path relative to the collection dir (minus .md), so a locale
+  // subfolder is preserved — e.g. "es/visa-types" — keeping a translated page
+  // distinct from its English namesake in the report + decisions ledger.
+  const slug = filePath.replace(/^src\/content\/(?:guides|apps)\//, '').replace(/\.md$/, '');
   const h1 = (body.match(/^#\s+(?!#)(.+)$/m) || [, ''])[1].trim();
   const h2Headings = [...body.matchAll(/^##\s+(?!#)(.+)$/gm)].map((m) => m[1].trim());
   const h3Headings = [...body.matchAll(/^###\s+(?!#)(.+)$/gm)].map((m) => m[1].trim());
@@ -391,7 +397,15 @@ function listAllContentFiles() {
   const out = [];
   for (const dir of CONTENT_DIRS) {
     if (!existsSync(dir)) continue;
-    for (const f of readdirSync(dir)) if (f.endsWith('.md')) out.push(`${dir}/${f}`);
+    for (const ent of readdirSync(dir, { withFileTypes: true })) {
+      if (ent.isFile() && ent.name.endsWith('.md')) out.push(`${dir}/${ent.name}`);
+      // One level of 2-letter locale subdirs (e.g. guides/es/), mirroring
+      // CONTENT_PATH_RE so --all covers translated pages too.
+      else if (ent.isDirectory() && /^[a-z]{2}$/.test(ent.name)) {
+        const sub = `${dir}/${ent.name}`;
+        for (const f of readdirSync(sub)) if (f.endsWith('.md')) out.push(`${sub}/${f}`);
+      }
+    }
   }
   return out;
 }

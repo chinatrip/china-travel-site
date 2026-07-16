@@ -96,6 +96,17 @@ test('filterContentPaths empty input → []', () => {
   assert.deepEqual(filterContentPaths([]), []);
 });
 
+test('filterContentPaths includes a locale subfolder but not deeper nesting', () => {
+  // Regression: translated pages under guides/es/ must be reviewed, not skipped.
+  const out = filterContentPaths([
+    'src/content/guides/es/visa-types.md', // locale subdir — included
+    'src/content/apps/es/alipay.md',       // locale subdir — included
+    'src/content/guides/sub/deep.md',      // 3-letter dir — still excluded
+    'src/content/guides/es/deep/x.md',     // two levels — excluded
+  ]);
+  assert.deepEqual(out, ['src/content/guides/es/visa-types.md', 'src/content/apps/es/alipay.md']);
+});
+
 // ---- buildReviewInput -------------------------------------------------------
 test('buildReviewInput parses frontmatter, faqs, headings, derived', () => {
   const input = buildReviewInput(SAMPLE_MD, 'src/content/guides/getting-around.md');
@@ -116,6 +127,14 @@ test('buildReviewInput flags missing description + apps collection', () => {
   assert.equal(input.collection, 'apps');
   assert.equal(input.derived.descriptionMissing, true);
   assert.equal(input.derived.faqCount, 0);
+});
+
+test('buildReviewInput preserves the locale prefix in the slug', () => {
+  // A translated page keeps its locale in the slug so it stays distinct from the
+  // English namesake in the report + decisions ledger.
+  const input = buildReviewInput(SAMPLE_MD, 'src/content/guides/es/visa-types.md');
+  assert.equal(input.slug, 'es/visa-types');
+  assert.equal(input.collection, 'guides');
 });
 
 // ---- evaluatePageVerdict (the gate) -----------------------------------------
