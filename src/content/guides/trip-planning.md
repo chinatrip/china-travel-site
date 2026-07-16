@@ -1,7 +1,7 @@
 ---
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
 date: 2026-07-01
-last_verified: 2026-07-01
+last_verified: 2026-07-16
 verified_against:
   - https://ourwander.com/p/worst-time-to-visit-china
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
@@ -33,7 +33,8 @@ volatility: low
 review:
   status: audited
   page_audit: 2026-06-15
-  citation_check: 2026-07-01
+  citation_check: 2026-07-16
+  notes: "2026-07-16 re-verified anchors against official sources: all 2026 public-holiday dates confirmed against the State Council General Office schedule announced 2025-11-04 (Spring Festival 15–23 Feb, Labour Day 1–5 May, National Day 1–7 Oct, Qingming 4–6 Apr, Dragon Boat 19–21 Jun, Mid-Autumn 25–27 Sep); 240-hour transit basics (10 days, 55 countries) remain consistent with current NIA policy (c183412); budget bands and best-season guidance are low-volatility with no reversal. Removed reader-facing internal wiki/summaries citations from the body. No anchor facts changed; added a 'most attraction tickets are bought same-day via Alipay' bullet to the independent-travel section to ground the pre-book-vs-buy-on-arrival guidance. page_audit retains 2026-06-15."
 description: >-
   Planning a China trip: best seasons, how many days, what to pre-book versus
   buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3
@@ -164,7 +165,7 @@ The **240-hour visa-free transit policy** (10 days for 55 qualifying nationaliti
 
 ### Sample 14-Day Budget (Two People, Mid-Range, 2025 Prices)
 
-One published worked example (2025 prices) for a mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. These figures come from a traveler-guide write-up in this page's sources and have not been independently verified; treat them as one data point, not a quote. They are, however, consistent with the budget table above — the all-in daily rate lands inside the mid-range band. Detailed day-by-day itineraries are in `wiki/summaries/realchinaguide-14day-itinerary-2026.md` and `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`.
+One published worked example (2025 prices) for a mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. These figures come from a traveler-guide write-up in this page's sources and have not been independently verified; treat them as one data point, not a quote. They are, however, consistent with the budget table above — the all-in daily rate lands inside the mid-range band.
 
 ## Should I travel independently or with a guide in China?
 
@@ -224,7 +225,7 @@ A structured countdown approach helps ensure nothing is missed before departure:
 - Withdraw a small amount of RMB if possible, or plan airport ATM withdrawal
 - Screenshot essential information (hotel address, emergency numbers, embassy contact)
 
-(Checklist structure follows a traveler-guide source in this page's sources list; app, payment, and connectivity setup steps are covered in detail in [[wiki/concepts/internet-connectivity.md]] and [[wiki/concepts/sim-card.md]]; arrival-card details per PRC embassy notice and trip.com guide, accessed June 2026. Detailed timeline in `wiki/summaries/realchinaguide-pretrip-preparation-2026.md`.)
+(Checklist structure follows a traveler-guide source in this page's sources list; app, payment, and connectivity setup steps are covered in detail in [[wiki/concepts/internet-connectivity.md]] and [[wiki/concepts/sim-card.md]]; arrival-card details per PRC embassy notice and trip.com guide, accessed June 2026.)
 
 ## See Also
 

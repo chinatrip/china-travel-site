@@ -1,12 +1,12 @@
 ---
 title: China Visa & Entry Options for Tourists and Visitors
 date: 2026-07-01
-last_verified: 2026-07-01
+last_verified: 2026-07-16
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
   - https://english.www.gov.cn/news/202602/15/content_WS6991bc11c6d00ca5f9a092d6.html
-  - https://en.nia.gov.cn/n147418/n147463/c156086/content.html
+  - https://en.nia.gov.cn/n147418/n147463/c183412/content.html
   - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm
@@ -23,7 +23,8 @@ volatility: high
 review:
   status: audited
   page_audit: 2026-06-09
-  citation_check: 2026-07-01
+  citation_check: 2026-07-16
+  notes: "2026-07-16 re-verified high-volatility anchors against official sources: unilateral 30-day visa-free = 50 countries (NIA c183390, content 2026-02-17; UK & Canada added 2026-02-17; most valid to 2026-12-31); 240-hour transit = 55 countries / 65 ports / 24 regions (NIA c183412, 2025-07-04; embassy 2024-12-17); Hainan = 59 countries / 30 days (NIA c180637, 2025-02-14). CHANGED: Russia's unilateral visa-free, previously ending 2026-09-14, was extended to 2027-12-31 (MFA spokesperson 2026-05-20) — the 3 body references were corrected. Fixed the transit-policy source URL c156086 (old 72/144-hour page) → c183412 (current 240-hour page) in verified_against and body links. Removed reader-facing internal wiki/summaries citations from the body. Aligned the 240-hour transit FAQ (dropped 'exit through the 65 ports' — NIA only mandates entry through them) with Section C. Did NOT re-audit every line this round (page_audit retains 2026-06-09). Also corrected an internal contradiction: the 240-hour onward-ticket requirement is 'third country or region' (NIA c183412) and Hong Kong/Macau/Taiwan count as valid onward regions — fixed the FAQ and two body lines that wrongly restricted it to foreign countries, aligning with the existing correct TWOV example."
 description: >-
   China visa and entry options in 2026: 30-day visa-free for 50 countries,
   240-hour transit-free at 65 ports for US citizens, and the tourist L visa.
@@ -40,14 +41,15 @@ faqs:
     a: >-
       US passport holders are not on the 30-day unilateral visa-free list, but
       can use the 240-hour (10-day) transit-free policy at 65 ports when
-      travelling onward to a third country or region, and may enter Hainan visa-free. For
-      an ordinary mainland tourist trip, a tourist (L) visa is required.
+      travelling onward to a third country or region, and may enter Hainan
+      visa-free. For an ordinary mainland tourist trip, a tourist (L) visa is
+      required.
   - q: What is the 240-hour transit-free policy?
     a: >-
       It lets eligible travelers from 55 countries transit China for up to 240
-      hours (10 days) without a visa, provided they enter through one
-      of the 65 qualifying ports, stay within the 24 permitted provincial-level
-      regions, and hold an onward ticket to a third country or region.
+      hours (10 days) without a visa, provided they enter through one of the 65
+      qualifying ports, stay within the 24 permitted provincial-level regions,
+      and hold an onward ticket to a third country or region.
   - q: How long must my passport be valid to enter China?
     a: >-
       For a visa application your passport should be valid for at least six
@@ -72,7 +74,7 @@ Start here. Find your nationality in the table below to identify which section t
 |---|---|---|
 | Passport from one of 50 unilateral visa-free countries (most EU, UK, Canada, Australia, Japan, South Korea, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
 | Passport from a country with a mutual bilateral agreement (UAE, Singapore, Malaysia, Thailand, etc.) | **Bilateral visa-free** — no visa needed (up to 30–90 days depending on agreement) | [Section B](#section-b-bilateral-mutual-visa-exemption) |
-| Passport from one of 55 transit-eligible countries (includes USA + all above) AND traveling to a third country | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
+| Passport from one of 55 transit-eligible countries (includes USA + all above) AND traveling to a third country or region | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
 | Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 59 countries (broader effective coverage via other schemes) | [Section D](#section-d-hainan-province-30-day-visa-free) |
 | Any country; brief airside connection only | **24-hour airside transit** — no visa, must stay in port | [Section E](#section-e-24-hour-airside-transit) |
 | None of the above, or need a longer / work / study stay | **L-visa (tourist)** or other visa — apply before travel | [Section F](#section-f-l-visa-tourist-visa) |
@@ -95,7 +97,7 @@ Extended until **31 December 2026** for most listed countries. Verify whether yo
 ### Countries covered (as of June 2026)
 The following nationalities held unilateral 30-day visa-free entry as verified against the NIA unilateral exemption list and official embassy notices. Verify your country's current status at [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) before travel — this list changes.
 
-**Europe (~35 countries):** Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia (until 14 Sep 2026 under separate arrangement), Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom (added Feb 2026)
+**Europe (~35 countries):** Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, Russia (until 31 Dec 2027 under separate arrangement), Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom (added Feb 2026)
 
 **Americas:** Argentina, Brazil, Canada (added Feb 2026), Chile, Peru, Uruguay
 
@@ -103,7 +105,7 @@ The following nationalities held unilateral 30-day visa-free entry as verified a
 
 **Oceania:** Australia, New Zealand
 
-> Countries verified against the NIA unilateral exemption list (current as of 17 February 2026). Russia's listing on the unilateral scheme runs to 14 September 2026; most other countries are covered until 31 December 2026. Canada and the United Kingdom were added effective February 17, 2026 (per the official gov.cn announcement of 15 February 2026).
+> Countries verified against the NIA unilateral exemption list (current as of 17 February 2026). Russia's listing on the unilateral scheme runs to 31 December 2027; most other countries are covered until 31 December 2026. Canada and the United Kingdom were added effective February 17, 2026 (per the official gov.cn announcement of 15 February 2026).
 >
 > **The USA and most African and South Asian nationalities are NOT on this unilateral list** as of June 2026 — check Sections B, C, or D, or apply for a visa (Section F). Note: Japan and the Republic of Korea (South Korea) ARE on the unilateral list (Japan was reinstated effective 30 November 2024).
 
@@ -157,7 +159,7 @@ All major international airports and land/sea border crossings across the 24 per
 - **Chengdu:** Tianfu International Airport (TFU), Shuangliu International Airport (CTU)
 - **Xi'an, Chongqing, Tianjin, Nanjing, Hangzhou, Kunming:** international airports and designated ports
 
-> Verify the complete current port list at [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c156086/content.html) before travel — the list updates periodically.
+> Verify the complete current port list at [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183412/content.html) before travel — the list updates periodically.
 
 ### Permitted travel zones (24 provinces/regions)
 You may travel freely within these zones during your 240-hour stay:
@@ -184,12 +186,10 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 ### Critical restrictions
 - You **cannot** extend the 240-hour period
 - You **cannot** work, study, or conduct journalism under this status
-- Hong Kong, Macau, and Taiwan are **not** valid as "third country" destinations for the onward ticket requirement — your onward flight must go to an actual foreign country
+- Your onward ticket must be to a third country **or region** and must not return you to your origin — Hong Kong, Macau, and Taiwan **do** count as valid onward regions (they have separate immigration systems)
 - If you depart and re-enter on a new 240-hour transit, this may be scrutinized — consult the NIA FAQ
 
 ### TWOV practical tips (from 2026 traveler reports)
-
-> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 
 **Before departure:**
 - Hong Kong counts as a separate region for TWOV purposes — flying Singapore -> Shanghai -> Hong Kong qualifies
@@ -208,7 +208,7 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 
 | | Visa-free (Section A) | TWOV (Section C) |
 |---|---|---|
-| Onward ticket required? | No | Yes (to third country) |
+| Onward ticket required? | No | Yes (to third country or region) |
 | Max stay | 30 days | 240 hours (10 days) |
 | Travel zones | Entire mainland China | 24 permitted provinces only |
 | Pre-approval needed? | No | No (activated at immigration) |
@@ -318,7 +318,7 @@ Processing takes 7–10 working days; your passport is held during review — yo
 
 > These are verified patterns from official consular FAQ pages and immigration guidance. (verify at [us.china-embassy.gov.cn FAQ](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm) and [newyork.china-consulate.gov.cn](https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm))
 
-1. **Wrong or missing onward ticket (transit scheme):** For the 240-hour scheme, the onward ticket must be to a genuine third country. Your origin country or Hong Kong/Macau/Taiwan does not count as "a third country." Airline staff at check-in will verify this before you board; immigration will verify on arrival.
+1. **Wrong or missing onward ticket (transit scheme):** For the 240-hour scheme, the onward ticket must be to a genuine third country or region (Hong Kong, Macau, and Taiwan qualify) that is not your origin country. Airline staff at check-in will verify this before you board; immigration will verify on arrival.
 
 2. **Misidentifying your nationality's eligibility:** Do not assume your country is on the unilateral visa-free list because a neighboring country is. The list is specific. Check NIA or your embassy, not travel blogs.
 
@@ -366,7 +366,7 @@ For completeness, all standard China visa categories:
 ## Where do I apply for a China visa?
 
 - **Visa applications:** [visaforchina.cn](https://www.visaforchina.cn) (COVA system; also lists nearest CVASC locations)
-- **NIA transit policy:** [en.nia.gov.cn — Transit Policies](https://en.nia.gov.cn/n147418/n147463/c156086/content.html)
+- **NIA transit policy:** [en.nia.gov.cn — Transit Policies](https://en.nia.gov.cn/n147418/n147463/c183412/content.html)
 - **NIA unilateral visa-free list:** [en.nia.gov.cn — Unilateral Exemption](https://en.nia.gov.cn/n147418/n147463/c183390/content.html)
 - **NIA Hainan visa-free:** [en.nia.gov.cn — Regional Policies](https://en.nia.gov.cn/n147418/n147463/c180637/content.html)
 - **Embassy FAQ (USA-based):** [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm)
@@ -376,8 +376,6 @@ Visa policy for China changes frequently. Verify before booking travel.
 ---
 
 ## What happens at immigration when entering China?
-
-> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 
 ### Digital arrival card (pre-arrival)
 - Complete the arrival card online at [s.nia.gov.cn](https://s.nia.gov.cn) within **72 hours before boarding**
@@ -405,8 +403,6 @@ See also: [[wiki/concepts/residence-registration.md]]
 
 ## Should I use a visa agency for China?
 
-> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
-
 - Reputable agencies (e.g., Oasis China Visa) can handle in-person consulate visits for you
 - Cost: approximately **$200 total** (including service fees) vs $140 DIY
 - Useful if you live far from a Chinese consulate or CVASC
@@ -417,9 +413,7 @@ See also: [[wiki/concepts/residence-registration.md]]
 
 ## Which countries are visa-free for China in 2026?
 
-> Source: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
-
 - As of June 2026, **50 countries** have unilateral 30-day visa-free access (per the NIA list current as of 17 February 2026; the list changes — check the latest NIA announcements for updates)
 - **UK and Canada** were added to the unilateral visa-free list effective **February 17, 2026** (per the official gov.cn announcement of 15 February 2026)
-- Most visa-free policies extended until **31 December 2026** (Russia runs to 14 September 2026; verify for your specific country)
+- Most visa-free policies extended until **31 December 2026** (Russia runs to 31 December 2027; verify for your specific country)
 - The list continues to expand — always check [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) for the latest additions
