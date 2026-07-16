@@ -1,15 +1,15 @@
 ---
 title: "Visa y entrada a China: tipos y sin visa"
 date: 2026-07-01
-last_verified: 2026-07-01
+last_verified: 2026-07-16
 lang: es
 source_en: guides/visa-types
-source_last_verified: 2026-07-01
+source_last_verified: 2026-07-16
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
   - https://english.www.gov.cn/news/202602/15/content_WS6991bc11c6d00ca5f9a092d6.html
-  - https://en.nia.gov.cn/n147418/n147463/c156086/content.html
+  - https://en.nia.gov.cn/n147418/n147463/c183412/content.html
   - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm
@@ -23,9 +23,8 @@ review:
   page_audit: 2026-06-09
   citation_check: 2026-07-01
 description: >-
-  Opciones de visa y entrada a China en 2026: 30 días sin visa para 50 países,
-  tránsito sin visa de 240 horas en 65 puertos para ciudadanos de EE. UU. y la
-  visa de turista L.
+  Visa y entrada a China en 2026: 30 días sin visa (~50 países), tránsito sin
+  visa de 240 h en 65 puertos y la visa de turista L. Verifica antes de reservar.
 faqs:
   - q: ¿Qué países pueden entrar a China sin visa en 2026?
     a: >-
@@ -39,15 +38,15 @@ faqs:
       Los titulares de pasaporte de EE. UU. no están en la lista de entrada sin
       visa unilateral de 30 días, pero pueden usar la política de tránsito sin
       visa de 240 horas (10 días) en 65 puertos cuando viajan hacia un tercer
-      país, y pueden entrar a Hainan sin visa. Para un viaje turístico común a
+      país o región, y pueden entrar a Hainan sin visa. Para un viaje turístico común a
       China continental se requiere una visa de turista (L).
   - q: ¿Qué es la política de tránsito sin visa de 240 horas?
     a: >-
       Permite que los viajeros elegibles de 55 países transiten por China hasta
-      240 horas (10 días) sin visa, siempre que entren y salgan por uno de los 65
+      240 horas (10 días) sin visa, siempre que entren por uno de los 65
       puertos de entrada que califican, permanezcan dentro de las 24 regiones de
       nivel provincial permitidas y tengan un boleto de continuación hacia un
-      tercer país.
+      tercer país o región.
   - q: ¿Cuánta validez debe tener mi pasaporte para entrar a China?
     a: >-
       Para solicitar una visa, tu pasaporte debe tener una validez de al menos
@@ -72,7 +71,7 @@ Empieza aquí. Busca tu nacionalidad en la tabla siguiente para identificar qué
 |---|---|---|
 | Pasaporte de uno de los 50 países con exención de visa unilateral (la mayoría de la UE, Reino Unido, Canadá, Australia, Japón, Corea del Sur, etc.) | **Sin visa unilateral de 30 días** — no se necesita visa | [Sección A](#sección-a-entrada-sin-visa-unilateral-de-30-días) |
 | Pasaporte de un país con un acuerdo bilateral de exención mutua (Emiratos Árabes Unidos, Singapur, Malasia, Tailandia, etc.) | **Sin visa bilateral** — no se necesita visa (hasta 30–90 días según el acuerdo) | [Sección B](#sección-b-exención-de-visa-bilateral-mutua) |
-| Pasaporte de uno de los 55 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
+| Pasaporte de uno de los 55 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país o región | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
 | Entrada por o estancia solo en la provincia de Hainan | **Hainan sin visa de 30 días** — esquema separado, 59 países (cobertura efectiva más amplia mediante otros esquemas) | [Sección D](#sección-d-provincia-de-hainan-sin-visa-de-30-días) |
 | Cualquier país; solo una conexión breve en zona de tránsito (airside) | **Tránsito airside de 24 horas** — sin visa, debes permanecer en el puerto de entrada | [Sección E](#sección-e-tránsito-aeroportuario-airside-de-24-horas) |
 | Ninguna de las anteriores, o necesitas una estancia más larga / de trabajo / de estudios | **Visa L (turista)** u otra visa — solicítala antes de viajar | [Sección F](#sección-f-visa-l-visa-de-turista) |
@@ -95,7 +94,7 @@ Prorrogada hasta el **31 de diciembre de 2026** para la mayoría de los países 
 ### Países incluidos (a junio de 2026)
 Las siguientes nacionalidades tenían derecho a la entrada sin visa unilateral de 30 días, según lo verificado con la lista de exención unilateral de la NIA y los avisos oficiales de las embajadas. Verifica el estado actual de tu país en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) antes de viajar; esta lista cambia.
 
-**Europa (~35 países):** Andorra, Austria, Bélgica, Bulgaria, Croacia, Chipre, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Irlanda, Italia, Letonia, Liechtenstein, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Macedonia del Norte, Noruega, Polonia, Portugal, Rumanía, Rusia (hasta el 14 de septiembre de 2026 bajo un acuerdo separado), Eslovaquia, Eslovenia, España, Suecia, Suiza, Reino Unido (añadido en febrero de 2026)
+**Europa (~35 países):** Andorra, Austria, Bélgica, Bulgaria, Croacia, Chipre, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Irlanda, Italia, Letonia, Liechtenstein, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Macedonia del Norte, Noruega, Polonia, Portugal, Rumanía, Rusia (hasta el 31 de diciembre de 2027 bajo un acuerdo separado), Eslovaquia, Eslovenia, España, Suecia, Suiza, Reino Unido (añadido en febrero de 2026)
 
 **América:** Argentina, Brasil, Canadá (añadido en febrero de 2026), Chile, Perú, Uruguay
 
@@ -103,7 +102,7 @@ Las siguientes nacionalidades tenían derecho a la entrada sin visa unilateral d
 
 **Oceanía:** Australia, Nueva Zelanda
 
-> Países verificados con la lista de exención unilateral de la NIA (vigente al 17 de febrero de 2026). La inclusión de Rusia en el esquema unilateral se extiende hasta el 14 de septiembre de 2026; la mayoría de los demás países están cubiertos hasta el 31 de diciembre de 2026. Canadá y el Reino Unido se añadieron con efecto a partir del 17 de febrero de 2026 (según el anuncio oficial de gov.cn del 15 de febrero de 2026).
+> Países verificados con la lista de exención unilateral de la NIA (vigente al 17 de febrero de 2026). La inclusión de Rusia en el esquema unilateral se extiende hasta el 31 de diciembre de 2027; la mayoría de los demás países están cubiertos hasta el 31 de diciembre de 2026. Canadá y el Reino Unido se añadieron con efecto a partir del 17 de febrero de 2026 (según el anuncio oficial de gov.cn del 15 de febrero de 2026).
 >
 > **EE. UU. y la mayoría de las nacionalidades de África y del sur de Asia NO están en esta lista unilateral** a junio de 2026: consulta las Secciones B, C o D, o solicita una visa (Sección F). Nota: Japón y la República de Corea (Corea del Sur) SÍ están en la lista unilateral (Japón fue reincorporado con efecto a partir del 30 de noviembre de 2024).
 
@@ -157,7 +156,7 @@ Todos los principales aeropuertos internacionales y los cruces fronterizos terre
 - **Chengdu:** Aeropuerto Internacional de Tianfu (TFU), Aeropuerto Internacional de Shuangliu (CTU)
 - **Xi'an, Chongqing, Tianjin, Nanjing, Hangzhou, Kunming:** aeropuertos internacionales y puertos de entrada designados
 
-> Verifica la lista completa y actualizada de puertos de entrada en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c156086/content.html) antes de viajar; la lista se actualiza periódicamente.
+> Verifica la lista completa y actualizada de puertos de entrada en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183412/content.html) antes de viajar; la lista se actualiza periódicamente.
 
 ### Zonas de viaje permitidas (24 provincias/regiones)
 Puedes viajar libremente dentro de estas zonas durante tu estancia de 240 horas:
@@ -184,7 +183,7 @@ La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**
 ### Restricciones críticas
 - **No puedes** prorrogar el periodo de 240 horas
 - **No puedes** trabajar, estudiar ni ejercer el periodismo bajo este estatus
-- Hong Kong, Macao y Taiwán **no** son válidos como destinos de "tercer país" para el requisito del boleto de continuación; tu vuelo de continuación debe ir a un país extranjero real
+- Tu boleto de continuación debe ser a un tercer país **o región** y no puede regresarte a tu origen — Hong Kong, Macao y Taiwán **sí** cuentan como regiones de continuación válidas (tienen sistemas de inmigración separados)
 - Si sales y vuelves a entrar con un nuevo tránsito de 240 horas, esto puede ser objeto de escrutinio; consulta las preguntas frecuentes de la NIA
 
 ### Consejos prácticos de TWOV (según reportes de viajeros de 2026)
@@ -206,7 +205,7 @@ La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**
 
 | | Sin visa (Sección A) | TWOV (Sección C) |
 |---|---|---|
-| ¿Se requiere boleto de continuación? | No | Sí (a un tercer país) |
+| ¿Se requiere boleto de continuación? | No | Sí (a un tercer país o región) |
 | Estancia máxima | 30 días | 240 horas (10 días) |
 | Zonas de viaje | Toda China continental | Solo 24 provincias permitidas |
 | ¿Se necesita aprobación previa? | No | No (se activa en el control migratorio) |
@@ -316,7 +315,7 @@ La tramitación tarda de 7 a 10 días hábiles; tu pasaporte queda retenido dura
 
 > Estos son patrones verificados a partir de páginas oficiales de preguntas frecuentes consulares y orientaciones migratorias. (verifica en [preguntas frecuentes de us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm) y [newyork.china-consulate.gov.cn](https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm))
 
-1. **Boleto de continuación incorrecto o ausente (esquema de tránsito):** Para el esquema de 240 horas, el boleto de continuación debe ser hacia un tercer país genuino. Tu país de origen o Hong Kong/Macao/Taiwán no cuentan como "un tercer país". El personal de la aerolínea lo verificará al hacer el check-in antes de que embarques; migración lo verificará a la llegada.
+1. **Boleto de continuación incorrecto o ausente (esquema de tránsito):** Para el esquema de 240 horas, el boleto de continuación debe ser hacia un tercer país o región genuino (Hong Kong, Macao y Taiwán sí cuentan) que no sea tu país de origen. El personal de la aerolínea lo verificará al hacer el check-in antes de que embarques; migración lo verificará a la llegada.
 
 2. **Identificar mal la elegibilidad de tu nacionalidad:** No supongas que tu país está en la lista de entrada sin visa unilateral solo porque un país vecino lo está. La lista es específica. Consulta la NIA o tu embajada, no los blogs de viajes.
 
@@ -364,7 +363,7 @@ Para que la información sea completa, todas las categorías estándar de visa d
 ## ¿Dónde solicito una visa para China?
 
 - **Solicitudes de visa:** [visaforchina.cn](https://www.visaforchina.cn) (sistema COVA; también indica las ubicaciones de los CVASC más cercanos)
-- **Política de tránsito de la NIA:** [en.nia.gov.cn — Políticas de tránsito](https://en.nia.gov.cn/n147418/n147463/c156086/content.html)
+- **Política de tránsito de la NIA:** [en.nia.gov.cn — Políticas de tránsito](https://en.nia.gov.cn/n147418/n147463/c183412/content.html)
 - **Lista de exención unilateral de visa de la NIA:** [en.nia.gov.cn — Exención unilateral](https://en.nia.gov.cn/n147418/n147463/c183390/content.html)
 - **Hainan sin visa (NIA):** [en.nia.gov.cn — Políticas regionales](https://en.nia.gov.cn/n147418/n147463/c180637/content.html)
 - **Preguntas frecuentes de la embajada (con sede en EE. UU.):** [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm)
@@ -413,5 +412,5 @@ Ver también: [[wiki/concepts/residence-registration.md]]
 
 - A junio de 2026, **50 países** tienen acceso sin visa unilateral de 30 días (según la lista de la NIA vigente al 17 de febrero de 2026; la lista cambia: consulta los últimos anuncios de la NIA para ver actualizaciones)
 - El **Reino Unido y Canadá** se añadieron a la lista de entrada sin visa unilateral con efecto a partir del **17 de febrero de 2026** (según el anuncio oficial de gov.cn del 15 de febrero de 2026)
-- La mayoría de las políticas sin visa se prorrogaron hasta el **31 de diciembre de 2026** (Rusia se extiende hasta el 14 de septiembre de 2026; verifica para tu país específico)
+- La mayoría de las políticas sin visa se prorrogaron hasta el **31 de diciembre de 2026** (Rusia se extiende hasta el 31 de diciembre de 2027; verifica para tu país específico)
 - La lista sigue ampliándose; consulta siempre [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) para ver las últimas incorporaciones

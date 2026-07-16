@@ -49,10 +49,11 @@ faqs:
     a: >-
       Pre-book the things that sell out: accommodation and long-distance
       transport, especially during peak periods, and time-sensitive attraction
-      tickets such as the Forbidden City and the Panda Base. During a holiday
-      surge like Golden Week or Spring Festival, book accommodation and
-      transport as soon as dates are confirmed and reserve those tickets weeks
-      or months ahead.
+      tickets such as the Forbidden City and the Panda Base. Most other
+      attraction tickets and short local trips can be bought same-day via
+      Alipay, so buy those on arrival to stay flexible. During a holiday surge
+      like Golden Week or Spring Festival, book accommodation, transport, and
+      those key tickets weeks or months ahead.
   - q: What is the best season to visit China?
     a: >-
       April-May is optimal in most regions, and late September (before October
@@ -181,6 +182,7 @@ Most of mainland China is fully open to independent foreign travel — no guide 
 - **DiDi** — urban ride-hailing with no Chinese required; see [[wiki/entities/didi.md]]
 - **Amap** — English-language navigation; see [[wiki/entities/amap.md]]
 - **Alipay / WeChat Pay** — accepted everywhere; set up before arrival; see [[wiki/concepts/mobile-payment.md]]
+- **Attraction tickets & short trips** — most are bought same-day via Alipay or WeChat mini-programs, so you rarely need to pre-book them (reserve only the sell-out sites above)
 - **Major HSR stations and airports** have bilingual English/Chinese signage
 
 ### Where It Gets Harder
