@@ -44,7 +44,7 @@ faqs:
   - q: What is the 240-hour transit-free policy?
     a: >-
       It lets eligible travelers from 55 countries transit China for up to 240
-      hours (10 days) without a visa, provided they enter and exit through one
+      hours (10 days) without a visa, provided they enter through one
       of the 65 qualifying ports, stay within the 24 permitted provincial-level
       regions, and hold an onward ticket to a third country.
   - q: How long must my passport be valid to enter China?

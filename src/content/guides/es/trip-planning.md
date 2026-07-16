@@ -1,10 +1,10 @@
 ---
 title: "Viaje a China: cuándo ir, días y presupuesto"
 date: 2026-07-01
-last_verified: 2026-07-01
+last_verified: 2026-07-16
 lang: es
 source_en: guides/trip-planning
-source_last_verified: 2026-07-01
+source_last_verified: 2026-07-16
 verified_against:
   - https://ourwander.com/p/worst-time-to-visit-china
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm

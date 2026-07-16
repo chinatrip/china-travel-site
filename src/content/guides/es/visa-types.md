@@ -1,15 +1,15 @@
 ---
 title: "Visa y entrada a China: tipos y sin visa"
 date: 2026-07-01
-last_verified: 2026-07-01
+last_verified: 2026-07-16
 lang: es
 source_en: guides/visa-types
-source_last_verified: 2026-07-01
+source_last_verified: 2026-07-16
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
   - https://english.www.gov.cn/news/202602/15/content_WS6991bc11c6d00ca5f9a092d6.html
-  - https://en.nia.gov.cn/n147418/n147463/c156086/content.html
+  - https://en.nia.gov.cn/n147418/n147463/c183412/content.html
   - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm
@@ -44,7 +44,7 @@ faqs:
   - q: ¿Qué es la política de tránsito sin visa de 240 horas?
     a: >-
       Permite que los viajeros elegibles de 55 países transiten por China hasta
-      240 horas (10 días) sin visa, siempre que entren y salgan por uno de los 65
+      240 horas (10 días) sin visa, siempre que entren por uno de los 65
       puertos de entrada que califican, permanezcan dentro de las 24 regiones de
       nivel provincial permitidas y tengan un boleto de continuación hacia un
       tercer país.
@@ -95,7 +95,7 @@ Prorrogada hasta el **31 de diciembre de 2026** para la mayoría de los países 
 ### Países incluidos (a junio de 2026)
 Las siguientes nacionalidades tenían derecho a la entrada sin visa unilateral de 30 días, según lo verificado con la lista de exención unilateral de la NIA y los avisos oficiales de las embajadas. Verifica el estado actual de tu país en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) antes de viajar; esta lista cambia.
 
-**Europa (~35 países):** Andorra, Austria, Bélgica, Bulgaria, Croacia, Chipre, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Irlanda, Italia, Letonia, Liechtenstein, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Macedonia del Norte, Noruega, Polonia, Portugal, Rumanía, Rusia (hasta el 14 de septiembre de 2026 bajo un acuerdo separado), Eslovaquia, Eslovenia, España, Suecia, Suiza, Reino Unido (añadido en febrero de 2026)
+**Europa (~35 países):** Andorra, Austria, Bélgica, Bulgaria, Croacia, Chipre, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Irlanda, Italia, Letonia, Liechtenstein, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Macedonia del Norte, Noruega, Polonia, Portugal, Rumanía, Rusia (hasta el 31 de diciembre de 2027 bajo un acuerdo separado), Eslovaquia, Eslovenia, España, Suecia, Suiza, Reino Unido (añadido en febrero de 2026)
 
 **América:** Argentina, Brasil, Canadá (añadido en febrero de 2026), Chile, Perú, Uruguay
 
@@ -103,7 +103,7 @@ Las siguientes nacionalidades tenían derecho a la entrada sin visa unilateral d
 
 **Oceanía:** Australia, Nueva Zelanda
 
-> Países verificados con la lista de exención unilateral de la NIA (vigente al 17 de febrero de 2026). La inclusión de Rusia en el esquema unilateral se extiende hasta el 14 de septiembre de 2026; la mayoría de los demás países están cubiertos hasta el 31 de diciembre de 2026. Canadá y el Reino Unido se añadieron con efecto a partir del 17 de febrero de 2026 (según el anuncio oficial de gov.cn del 15 de febrero de 2026).
+> Países verificados con la lista de exención unilateral de la NIA (vigente al 17 de febrero de 2026). La inclusión de Rusia en el esquema unilateral se extiende hasta el 31 de diciembre de 2027; la mayoría de los demás países están cubiertos hasta el 31 de diciembre de 2026. Canadá y el Reino Unido se añadieron con efecto a partir del 17 de febrero de 2026 (según el anuncio oficial de gov.cn del 15 de febrero de 2026).
 >
 > **EE. UU. y la mayoría de las nacionalidades de África y del sur de Asia NO están en esta lista unilateral** a junio de 2026: consulta las Secciones B, C o D, o solicita una visa (Sección F). Nota: Japón y la República de Corea (Corea del Sur) SÍ están en la lista unilateral (Japón fue reincorporado con efecto a partir del 30 de noviembre de 2024).
 
@@ -157,7 +157,7 @@ Todos los principales aeropuertos internacionales y los cruces fronterizos terre
 - **Chengdu:** Aeropuerto Internacional de Tianfu (TFU), Aeropuerto Internacional de Shuangliu (CTU)
 - **Xi'an, Chongqing, Tianjin, Nanjing, Hangzhou, Kunming:** aeropuertos internacionales y puertos de entrada designados
 
-> Verifica la lista completa y actualizada de puertos de entrada en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c156086/content.html) antes de viajar; la lista se actualiza periódicamente.
+> Verifica la lista completa y actualizada de puertos de entrada en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183412/content.html) antes de viajar; la lista se actualiza periódicamente.
 
 ### Zonas de viaje permitidas (24 provincias/regiones)
 Puedes viajar libremente dentro de estas zonas durante tu estancia de 240 horas:
@@ -364,7 +364,7 @@ Para que la información sea completa, todas las categorías estándar de visa d
 ## ¿Dónde solicito una visa para China?
 
 - **Solicitudes de visa:** [visaforchina.cn](https://www.visaforchina.cn) (sistema COVA; también indica las ubicaciones de los CVASC más cercanos)
-- **Política de tránsito de la NIA:** [en.nia.gov.cn — Políticas de tránsito](https://en.nia.gov.cn/n147418/n147463/c156086/content.html)
+- **Política de tránsito de la NIA:** [en.nia.gov.cn — Políticas de tránsito](https://en.nia.gov.cn/n147418/n147463/c183412/content.html)
 - **Lista de exención unilateral de visa de la NIA:** [en.nia.gov.cn — Exención unilateral](https://en.nia.gov.cn/n147418/n147463/c183390/content.html)
 - **Hainan sin visa (NIA):** [en.nia.gov.cn — Políticas regionales](https://en.nia.gov.cn/n147418/n147463/c180637/content.html)
 - **Preguntas frecuentes de la embajada (con sede en EE. UU.):** [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm)
@@ -413,5 +413,5 @@ Ver también: [[wiki/concepts/residence-registration.md]]
 
 - A junio de 2026, **50 países** tienen acceso sin visa unilateral de 30 días (según la lista de la NIA vigente al 17 de febrero de 2026; la lista cambia: consulta los últimos anuncios de la NIA para ver actualizaciones)
 - El **Reino Unido y Canadá** se añadieron a la lista de entrada sin visa unilateral con efecto a partir del **17 de febrero de 2026** (según el anuncio oficial de gov.cn del 15 de febrero de 2026)
-- La mayoría de las políticas sin visa se prorrogaron hasta el **31 de diciembre de 2026** (Rusia se extiende hasta el 14 de septiembre de 2026; verifica para tu país específico)
+- La mayoría de las políticas sin visa se prorrogaron hasta el **31 de diciembre de 2026** (Rusia se extiende hasta el 31 de diciembre de 2027; verifica para tu país específico)
 - La lista sigue ampliándose; consulta siempre [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) para ver las últimas incorporaciones
