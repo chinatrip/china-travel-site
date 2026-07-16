@@ -23,9 +23,8 @@ review:
   page_audit: 2026-06-09
   citation_check: 2026-07-01
 description: >-
-  Opciones de visa y entrada a China en 2026: 30 días sin visa para 50 países,
-  tránsito sin visa de 240 horas en 65 puertos para ciudadanos de EE. UU. y la
-  visa de turista L.
+  Visa y entrada a China en 2026: 30 días sin visa (~50 países), tránsito sin
+  visa de 240 h en 65 puertos y la visa de turista L. Verifica antes de reservar.
 faqs:
   - q: ¿Qué países pueden entrar a China sin visa en 2026?
     a: >-
