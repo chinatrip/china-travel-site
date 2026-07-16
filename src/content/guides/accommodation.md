@@ -124,9 +124,6 @@ These accept foreign credit cards and tend to list properties that are licensed 
 
 **Fliggy (飞猪)** has wide coverage of smaller cities and budget properties but is harder to use without a Chinese payment method and has no English UI.
 
-<<<<<<< site
-## What do I need to check in to a hotel in China?
-=======
 ### DiDi Hotel (滴滴酒店)
 
 As of July 2026 the DiDi English app shows a **DiDi Hotel** booking option on its home screen. This is a newly-surfaced feature with **no public DiDi documentation or announcement yet**, so the notes below are **in-app observations only** — treat them as provisional and confirm in the app before relying on them:
@@ -137,8 +134,7 @@ As of July 2026 the DiDi English app shows a **DiDi Hotel** booking option on it
 
 How reliably it serves foreign guests, which cities and properties it covers, and how it compares to the platforms above are **not confirmed by any public source**. For a booking you can rely on today, use the international platforms or hotel-direct options above; as with any hotel in China, you will need your original passport for the police registration at check-in. See [[wiki/entities/didi.md]] for DiDi's ride-hailing use.
 
-## Check-In Requirements
->>>>>>> wiki
+## What do I need to check in to a hotel in China?
 
 - **Original passport is mandatory** at every check-in — a photocopy, a photo on your phone, or another ID document is not accepted. Hotels are legally required to verify and register your passport details.
 - A valid visa or entry stamp is required — the hotel will check that your passport shows a valid legal basis to be in China (a current visa, a valid entry stamp, or a qualifying visa-free entry).
