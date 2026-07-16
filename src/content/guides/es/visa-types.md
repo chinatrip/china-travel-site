@@ -1,5 +1,5 @@
 ---
-title: Opciones de visa y entrada a China para turistas y visitantes
+title: "Visa y entrada a China: tipos y sin visa"
 date: 2026-07-01
 last_verified: 2026-07-01
 lang: es
@@ -58,7 +58,7 @@ faqs:
 category: guide
 ---
 
-# Opciones de visa y entrada a China para turistas y visitantes
+# Visa y entrada a China: tipos y sin visa
 
 > **La política cambia con frecuencia.** Esta página se verificó el 2026-07-01. Las listas de países sin visa, las listas de puertos de la política de tránsito y las duraciones de estancia son actualizadas por la Administración Nacional de Inmigración de China (NIA) sin previo aviso. **Verifica siempre tu situación específica en [en.nia.gov.cn](https://en.nia.gov.cn) o en la embajada/consulado de China más cercano antes de reservar tu viaje.**
 

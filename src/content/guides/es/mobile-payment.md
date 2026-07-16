@@ -1,5 +1,5 @@
 ---
-title: Pago móvil para viajeros extranjeros (Alipay, WeChat Pay)
+title: "Pago móvil en China: Alipay y WeChat Pay"
 date: 2026-06-15
 last_verified: 2026-07-02
 lang: es
@@ -59,7 +59,7 @@ faqs:
 category: guide
 ---
 
-# Pago móvil para viajeros extranjeros (Alipay, WeChat Pay)
+# Pago móvil en China: Alipay y WeChat Pay
 
 China funciona con el pago móvil mediante código QR. Desde un importante cambio de política del Banco Popular de China (PBOC) en **abril de 2024**, los viajeros extranjeros pueden pagar casi en cualquier lugar vinculando una tarjeta Visa o Mastercard corriente directamente a **Alipay** o **WeChat Pay**: sin cuenta bancaria china, sin billetera de prepago, sin necesidad de una SIM china.
 

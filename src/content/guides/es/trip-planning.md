@@ -1,5 +1,5 @@
 ---
-title: Planificación del viaje — cuándo ir, presupuesto, duración y viaje independiente
+title: "Viaje a China: cuándo ir, días y presupuesto"
 date: 2026-07-01
 last_verified: 2026-07-01
 lang: es
@@ -55,7 +55,7 @@ faqs:
 category: guide
 ---
 
-# Planificación del viaje — cuándo ir, presupuesto, duración y viaje independiente
+# Viaje a China: cuándo ir, días y presupuesto
 
 ## ¿Cuándo debería evitar viajar a China?
 
