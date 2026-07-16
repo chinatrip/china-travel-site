@@ -13,6 +13,14 @@
 export const DEFAULT_LOCALE = 'en';
 export const LOCALES = ['en', 'es'];
 
+// Endonyms (each language named in itself) for the language switcher. Add a
+// locale here + to LOCALES (+ its TRANSLATIONS entries) and the switcher menu
+// grows automatically — no switcher markup changes needed.
+export const LOCALE_LABELS = {
+  en: 'English',
+  es: 'Español',
+};
+
 // og:locale value per locale (the region form OG crawlers expect).
 export const OG_LOCALE = {
   en: 'en_US',
@@ -68,6 +76,31 @@ export const UI = {
 /** A localized UI string, falling back to the default locale then the raw key. */
 export function t(locale, key) {
   return UI[locale]?.[key] ?? UI[DEFAULT_LOCALE][key] ?? key;
+}
+
+/** The section-hub URL for a locale (default locale lives at the site root). */
+export function localeHome(locale) {
+  return locale === DEFAULT_LOCALE ? '/' : `/${locale}/`;
+}
+
+/**
+ * All locales as switch targets for the current page: each locale's counterpart
+ * URL (from the translation registry) or its section hub as a fallback, plus its
+ * endonym label and whether it is the current locale. Drives the language-switch
+ * dropdown — the menu grows automatically as LOCALES / LOCALE_LABELS grow.
+ *
+ * @param {string} pathname
+ * @returns {{ locale: string, label: string, href: string, current: boolean }[]}
+ */
+export function localeSwitchTargets(pathname) {
+  const current = localeOf(pathname);
+  const alts = alternatesFor(pathname);
+  return LOCALES.map((locale) => ({
+    locale,
+    label: LOCALE_LABELS[locale] ?? locale,
+    href: alts?.find((a) => a.hreflang === locale)?.path ?? localeHome(locale),
+    current: locale === current,
+  }));
 }
 
 /**

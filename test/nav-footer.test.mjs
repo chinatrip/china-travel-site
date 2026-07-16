@@ -123,6 +123,19 @@ test('Navbar keeps the aria-current logic on links after the responsive change',
   assert.match(NAVBAR, /'location'/);
 });
 
+// --- Navbar: language switcher (scalable, registry-driven dropdown) ---
+
+test('Navbar language switcher is a registry-driven dropdown (scales past 2 locales)', () => {
+  // A native <details> disclosure beside the brand — not a hardcoded 2-way toggle.
+  assert.match(NAVBAR, /<details[^>]*\bdata-lang-switch/);
+  // The menu is built from the locale registry, so adding a locale grows it with
+  // no markup change.
+  assert.match(NAVBAR, /localeSwitchTargets/);
+  assert.match(NAVBAR, /langTargets\.map/);
+  // The disclosure stays keyboard-dismissible (Esc) like the rest of the nav.
+  assert.match(NAVBAR, /Escape/);
+});
+
 // --- Footer: navigation landmark + heading semantics ---
 
 test('Footer wraps its link lists in a <nav> landmark with an aria-label', () => {
