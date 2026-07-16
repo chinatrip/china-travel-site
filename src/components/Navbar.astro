@@ -2,6 +2,8 @@
 // Normalise to a single trailing slash so exact comparisons against link
 // hrefs (which are directory-format, e.g. "/guides/") are stable regardless of
 // how Astro hands us the pathname.
+import { localeOf, alternatesFor } from '../lib/i18n.mjs';
+
 const withSlash = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 const currentPath = withSlash(Astro.url.pathname);
 
@@ -32,6 +34,14 @@ const searchActive = currentPath.startsWith('/search');
 // Shared link styling for both the inline (sm+) row and the mobile panel, so
 // the disclosure feels identical to the desktop nav.
 const linkBase = 'text-sm font-medium transition-colors hover:text-primary';
+
+// Language switcher: a discoverable entry between English and Spanish on every
+// page. When the current page has a translation (per the registry) it links to
+// the counterpart; otherwise it falls back to the other locale's section hub.
+const otherLocale = localeOf(currentPath) === 'es' ? 'en' : 'es';
+const otherLocaleHref = alternatesFor(currentPath)?.find((a) => a.hreflang === otherLocale)?.path
+  ?? (otherLocale === 'es' ? '/es/' : '/');
+const otherLocaleLabel = otherLocale === 'es' ? 'Español' : 'English';
 ---
 
 <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm" aria-label="Main navigation" data-site-nav>
@@ -63,6 +73,12 @@ const linkBase = 'text-sm font-medium transition-colors hover:text-primary';
             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16z" />
           </svg>
         </a>
+        <a
+          href={otherLocaleHref}
+          hreflang={otherLocale}
+          lang={otherLocale}
+          class:list={[linkBase, 'text-gray-600']}
+        >{otherLocaleLabel}</a>
       </div>
 
       {/* < sm : a hamburger toggle that discloses the link panel below the bar. */}
@@ -107,6 +123,12 @@ const linkBase = 'text-sm font-medium transition-colors hover:text-primary';
           </svg>
           Search
         </a>
+        <a
+          href={otherLocaleHref}
+          hreflang={otherLocale}
+          lang={otherLocale}
+          class:list={[linkBase, 'py-2', 'text-gray-600']}
+        >{otherLocaleLabel}</a>
       </div>
     </div>
   </div>

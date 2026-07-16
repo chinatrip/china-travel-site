@@ -184,6 +184,27 @@ test('translated guide chrome is localized (breadcrumb + FAQ heading in Spanish)
   assert.match(html, /Preguntas frecuentes/, 'localized FAQ heading');
 });
 
+test('the Navbar exposes a language-switcher entry point (EN ↔ ES)', () => {
+  // English home → a discoverable Spanish entry (to the /es/ hub).
+  assert.match(
+    readFileSync(join(outDir, 'index.html'), 'utf8'),
+    /href="\/es\/"[^>]*>\s*Español/,
+    'English home should link to the Spanish hub',
+  );
+  // A translated English guide → its Spanish counterpart.
+  assert.match(
+    readFileSync(join(outDir, 'guides/visa-types/index.html'), 'utf8'),
+    /href="\/es\/guides\/visa-types\/"[^>]*>\s*Español/,
+    'translated guide should link to its /es/ counterpart',
+  );
+  // Spanish guide → back to English.
+  assert.match(
+    readFileSync(join(outDir, 'es/guides/visa-types/index.html'), 'utf8'),
+    /href="\/guides\/visa-types\/"[^>]*>\s*English/,
+    'Spanish guide should link back to the English counterpart',
+  );
+});
+
 test('default og:image points at the real og-default.png product', () => {
   assert.ok(existsSync(join(repoRoot, 'public', 'og-default.png')), 'public/og-default.png exists');
   const h = head('index.html');
