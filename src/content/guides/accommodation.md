@@ -1,7 +1,7 @@
 ---
 title: Accommodation for Foreign Visitors in China
 date: 2026-05-04
-last_verified: 2026-06-09
+last_verified: 2026-07-16
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://www.trip.com
@@ -20,11 +20,13 @@ related:
   - wiki/concepts/emergency-safety.md
   - wiki/entities/meituan.md
   - wiki/entities/trip-com.md
+  - wiki/entities/didi.md
 volatility: medium
 review:
   status: audited
   page_audit: 2026-06-09
   citation_check: 2026-05-06
+  notes: "2026-07-16: Added a PROVISIONAL 'DiDi Hotel' note based on in-app observation of the DiDi English app (July 2026). Per issue #21's source-verified bar, product-level claims resting only on a private product-team confirmation — nationwide coverage, foreigner-screened properties, built-for-inbound intent — are deliberately NOT included; no public DiDi announcement or product page exists yet, so verified_against is unchanged and the note is scoped to directly-observable in-app behaviour and explicitly marked provisional. Issue #21 stays OPEN pending a publicly-verifiable source to upgrade this to a source-verified entry. Other sections carried forward from the 2026-06-09 audit, not re-verified this round; page_audit unchanged."
 description: >-
   Which hotels in China accept foreign passports, how to book foreigner-eligible
   stays on Trip.com or Agoda, pay with foreign cards, and do police
@@ -122,7 +124,21 @@ These accept foreign credit cards and tend to list properties that are licensed 
 
 **Fliggy (飞猪)** has wide coverage of smaller cities and budget properties but is harder to use without a Chinese payment method and has no English UI.
 
+<<<<<<< site
 ## What do I need to check in to a hotel in China?
+=======
+### DiDi Hotel (滴滴酒店)
+
+As of July 2026 the DiDi English app shows a **DiDi Hotel** booking option on its home screen. This is a newly-surfaced feature with **no public DiDi documentation or announcement yet**, so the notes below are **in-app observations only** — treat them as provisional and confirm in the app before relying on them:
+
+- The booking flow is largely in English (some labels remain in Chinese). The guest form takes Latin-letter names, an international phone number, and an email, and the check-in ID reminder lists a **passport** among accepted IDs.
+- Payment at checkout is offered via **DiDi Payment, Alipay, or WeChat Pay** — no direct foreign-card option was shown, and prices are in CNY. A foreign Visa/Mastercard can be linked to Alipay or WeChat Pay to fund the payment (see [[wiki/concepts/mobile-payment.md]]).
+- The booking is fulfilled by a third-party travel-service provider, with DiDi acting as the technology platform.
+
+How reliably it serves foreign guests, which cities and properties it covers, and how it compares to the platforms above are **not confirmed by any public source**. For a booking you can rely on today, use the international platforms or hotel-direct options above; as with any hotel in China, you will need your original passport for the police registration at check-in. See [[wiki/entities/didi.md]] for DiDi's ride-hailing use.
+
+## Check-In Requirements
+>>>>>>> wiki
 
 - **Original passport is mandatory** at every check-in — a photocopy, a photo on your phone, or another ID document is not accepted. Hotels are legally required to verify and register your passport details.
 - A valid visa or entry stamp is required — the hotel will check that your passport shows a valid legal basis to be in China (a current visa, a valid entry stamp, or a qualifying visa-free entry).
