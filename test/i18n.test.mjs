@@ -6,6 +6,8 @@ import {
   OG_LOCALE,
   localeOf,
   alternatesFor,
+  t,
+  isTranslationStale,
 } from '../src/lib/i18n.mjs';
 
 // Unit coverage for the i18n registry helpers that drive locale detection and
@@ -37,8 +39,9 @@ test('localeOf never mistakes an English slug that merely starts with "es" for S
 
 test('alternatesFor returns null for untranslated English-only pages', () => {
   // The whole no-regression guarantee: pages with no translation get no
-  // hreflang mechanism at all, so their head is untouched.
-  assert.equal(alternatesFor('/guides/visa-types/'), null);
+  // hreflang mechanism at all, so their head is untouched. (accommodation is
+  // not part of the Spanish pilot set.)
+  assert.equal(alternatesFor('/guides/accommodation/'), null);
   assert.equal(alternatesFor('/apps/alipay/'), null);
 });
 
@@ -50,6 +53,31 @@ test('alternatesFor emits a reciprocal set for a translated page', () => {
   assert.equal(byLang.es, '/es/');
   // x-default must point at the default-locale (English) URL.
   assert.equal(byLang['x-default'], '/');
+});
+
+test('alternatesFor maps a translated guide to its /es/ counterpart both ways', () => {
+  const en = alternatesFor('/guides/visa-types/');
+  const es = alternatesFor('/es/guides/visa-types/');
+  const expected = { en: '/guides/visa-types/', es: '/es/guides/visa-types/', 'x-default': '/guides/visa-types/' };
+  assert.deepEqual(Object.fromEntries(en.map((a) => [a.hreflang, a.path])), expected);
+  assert.deepEqual(Object.fromEntries(es.map((a) => [a.hreflang, a.path])), expected);
+});
+
+test('t returns localized UI strings and falls back to English for gaps', () => {
+  assert.equal(t('en', 'faqHeading'), 'Frequently Asked Questions');
+  assert.equal(t('es', 'faqHeading'), 'Preguntas frecuentes');
+  assert.equal(t('es', 'home'), 'Inicio');
+  // Unknown locale → English fallback; unknown key → the raw key.
+  assert.equal(t('fr', 'faqHeading'), 'Frequently Asked Questions');
+  assert.equal(t('es', 'nope'), 'nope');
+});
+
+test('isTranslationStale flags a source re-verified after the translation', () => {
+  assert.equal(isTranslationStale('2026-07-01', '2026-07-05'), true);  // source newer → stale
+  assert.equal(isTranslationStale('2026-07-01', '2026-07-01'), false); // in sync
+  assert.equal(isTranslationStale('2026-07-10', '2026-07-01'), false); // translation ahead
+  assert.equal(isTranslationStale(undefined, '2026-07-01'), true);     // missing translation date → attention
+  assert.equal(isTranslationStale('2026-07-01', undefined), false);    // no source date to compare
 });
 
 test('alternatesFor is symmetric — the /es/ side resolves to the same group', () => {

@@ -2,6 +2,8 @@
 // Normalise to a single trailing slash so exact comparisons against link
 // hrefs (which are directory-format, e.g. "/guides/") are stable regardless of
 // how Astro hands us the pathname.
+import { localeOf, localeSwitchTargets } from '../lib/i18n.mjs';
+
 const withSlash = (p: string) => (p.endsWith('/') ? p : `${p}/`);
 const currentPath = withSlash(Astro.url.pathname);
 
@@ -32,17 +34,57 @@ const searchActive = currentPath.startsWith('/search');
 // Shared link styling for both the inline (sm+) row and the mobile panel, so
 // the disclosure feels identical to the desktop nav.
 const linkBase = 'text-sm font-medium transition-colors hover:text-primary';
+
+// Language switcher (dropdown next to the brand, docs-site convention). Each
+// menu item links to the current page's counterpart in that locale, or that
+// locale's section hub as a fallback. The list grows automatically with LOCALES.
+const langTargets = localeSwitchTargets(currentPath);
+const currentLangLabel = (langTargets.find((l) => l.current) ?? langTargets[0]).label;
+const showLangSwitch = langTargets.length > 1;
 ---
 
 <nav class="sticky top-0 z-50 bg-white border-b border-gray-100 shadow-sm" aria-label="Main navigation" data-site-nav>
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center gap-2 text-secondary font-bold text-lg tracking-tight" aria-label="ChinaGuide.ai home">
-        <span class="text-primary text-xl" aria-hidden="true">&#x2766;</span>
-        ChinaGuide.ai
-      </a>
+      {/* Left group: brand + language switcher (docs-site convention). */}
+      <div class="flex items-center gap-3 sm:gap-5">
+        <a href="/" class="flex items-center gap-2 text-secondary font-bold text-lg tracking-tight" aria-label="ChinaGuide.ai home">
+          <span class="text-primary text-xl" aria-hidden="true">&#x2766;</span>
+          ChinaGuide.ai
+        </a>
 
-      {/* sm+ : the original inline layout, unchanged (brand left, links + search right). */}
+        {/* Language switcher — desktop dropdown beside the brand. <details> gives a
+            zero-JS accessible disclosure; the inline script only adds outside-click /
+            Esc close. Mobile shows the same choices in the hamburger panel below. */}
+        {showLangSwitch && (
+          <details class="relative hidden sm:block" data-lang-switch>
+            <summary class="flex items-center gap-1 cursor-pointer list-none select-none text-sm font-medium text-gray-600 hover:text-primary [&::-webkit-details-marker]:hidden" aria-label="Language">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path stroke-linecap="round" d="M3 12h18M12 3c2.6 2.7 2.6 15.3 0 18M12 3c-2.6 2.7-2.6 15.3 0 18" />
+              </svg>
+              <span>{currentLangLabel}</span>
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" /></svg>
+            </summary>
+            <ul class="absolute left-0 mt-2 min-w-[9rem] rounded-md border border-gray-100 bg-white shadow-lg py-1 z-50">
+              {langTargets.map((l) => (
+                <li>
+                  {l.current ? (
+                    <span class="flex items-center gap-2 px-3 py-2 text-sm font-medium text-primary" aria-current="true">
+                      <svg class="w-4 h-4 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" /></svg>
+                      {l.label}
+                    </span>
+                  ) : (
+                    <a href={l.href} hreflang={l.locale} lang={l.locale} class="block px-3 py-2 pl-9 text-sm text-gray-700 transition-colors hover:bg-gray-50 hover:text-primary">{l.label}</a>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+      </div>
+
+      {/* sm+ : primary links + search on the right. */}
       <div class="hidden sm:flex items-center gap-6">
         {links.map((link) => (
           <a
@@ -107,6 +149,18 @@ const linkBase = 'text-sm font-medium transition-colors hover:text-primary';
           </svg>
           Search
         </a>
+        {showLangSwitch && (
+          <div class="border-t border-gray-100 mt-1 pt-2">
+            <p class="py-1 text-xs font-semibold uppercase tracking-wide text-muted">Language</p>
+            {langTargets.map((l) => (
+              l.current ? (
+                <span class="block py-2 text-sm font-medium text-primary" aria-current="true">{l.label}</span>
+              ) : (
+                <a href={l.href} hreflang={l.locale} lang={l.locale} class:list={[linkBase, 'block py-2 text-gray-600']}>{l.label}</a>
+              )
+            ))}
+          </div>
+        )}
       </div>
     </div>
   </div>
@@ -151,6 +205,25 @@ const linkBase = 'text-sm font-medium transition-colors hover:text-primary';
       // Tapping a link closes the panel so the next page starts collapsed.
       panel.querySelectorAll('a').forEach((link) => {
         link.addEventListener('click', () => setOpen(false));
+      });
+    });
+  }
+
+  // Language dropdown (<details data-lang-switch>) is a native disclosure (works
+  // with no JS); this only adds outside-click / Esc close. Bound once globally so
+  // client-side navigations never stack duplicate listeners.
+  if (!(window as any).__langSwitchBound) {
+    (window as any).__langSwitchBound = true;
+    document.addEventListener('click', (event) => {
+      document.querySelectorAll<HTMLDetailsElement>('details[data-lang-switch][open]').forEach((d) => {
+        if (!d.contains(event.target as Node)) d.open = false;
+      });
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape') return;
+      document.querySelectorAll<HTMLDetailsElement>('details[data-lang-switch][open]').forEach((d) => {
+        d.open = false;
+        d.querySelector<HTMLElement>('summary')?.focus();
       });
     });
   }

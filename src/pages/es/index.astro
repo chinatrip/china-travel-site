@@ -10,13 +10,12 @@ const title = 'Guía de viaje a China para extranjeros';
 const description =
   'Guía práctica para viajar a China: visados y entrada sin visado, pagos móviles (Alipay y WeChat Pay), internet y VPN, y planificación del viaje. Verificado con fuentes oficiales.';
 
-// Cornerstone guides for a first-time visitor. Spanish translations are the
-// pilot's next step; for now these link to the English originals.
+// Cornerstone guides for a first-time visitor — the Spanish pilot set.
 const cornerstones = [
-  { href: '/guides/trip-planning/', label: 'Planificación del viaje', note: 'Cómo organizar tu viaje a China paso a paso.' },
-  { href: '/guides/visa-types/', label: 'Visados y entrada sin visado', note: 'Tipos de visado y las políticas de exención (visa-free) vigentes.' },
-  { href: '/guides/mobile-payment/', label: 'Pagos móviles: Alipay y WeChat Pay', note: 'Cómo pagar en China con una tarjeta extranjera.' },
-  { href: '/guides/vpn-or-esim/', label: 'Internet y VPN', note: 'Cómo conectarte y acceder a los servicios bloqueados.' },
+  { href: '/es/guides/trip-planning/', label: 'Planificación del viaje', note: 'Cuándo ir, cuántos días, presupuesto e itinerarios.' },
+  { href: '/es/guides/visa-types/', label: 'Visas y entrada sin visa', note: 'Exención de 30 días, tránsito sin visa de 240 horas y la visa de turista.' },
+  { href: '/es/guides/mobile-payment/', label: 'Pago móvil: Alipay y WeChat Pay', note: 'Cómo pagar en China con una tarjeta extranjera.' },
+  { href: '/es/guides/vpn-or-esim/', label: 'Internet y VPN', note: 'Cómo conectarte y acceder a los servicios bloqueados.' },
 ];
 ---
 
@@ -33,7 +32,7 @@ const cornerstones = [
         Verificado con fuentes oficiales.
       </p>
       <p class="text-sm text-blue-300">
-        Estamos publicando las versiones en español. Por ahora, las guías completas están en inglés.
+        Guías esenciales en español; estamos ampliando la cobertura.
         <a href="/" class="underline hover:text-white">English version →</a>
       </p>
     </div>
@@ -50,7 +49,7 @@ const cornerstones = [
         >
           <span class="block font-semibold text-secondary">{c.label}</span>
           <span class="block mt-1 text-sm text-gray-600">{c.note}</span>
-          <span class="mt-2 inline-block text-xs text-muted">Guía en inglés →</span>
+          <span class="mt-2 inline-block text-xs text-muted">Leer la guía →</span>
         </a>
       ))}
     </div>

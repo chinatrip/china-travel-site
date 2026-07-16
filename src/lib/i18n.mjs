@@ -13,6 +13,14 @@
 export const DEFAULT_LOCALE = 'en';
 export const LOCALES = ['en', 'es'];
 
+// Endonyms (each language named in itself) for the language switcher. Add a
+// locale here + to LOCALES (+ its TRANSLATIONS entries) and the switcher menu
+// grows automatically — no switcher markup changes needed.
+export const LOCALE_LABELS = {
+  en: 'English',
+  es: 'Español',
+};
+
 // og:locale value per locale (the region form OG crawlers expect).
 export const OG_LOCALE = {
   en: 'en_US',
@@ -25,7 +33,92 @@ export const OG_LOCALE = {
 // default-locale (English) path is the x-default target.
 export const TRANSLATIONS = [
   { en: '/', es: '/es/' },
+  { en: '/guides/trip-planning/', es: '/es/guides/trip-planning/' },
+  { en: '/guides/visa-types/', es: '/es/guides/visa-types/' },
+  { en: '/guides/mobile-payment/', es: '/es/guides/mobile-payment/' },
+  { en: '/guides/vpn-or-esim/', es: '/es/guides/vpn-or-esim/' },
 ];
+
+// UI chrome strings per locale. Keep keys in sync across locales; t() falls back
+// to the default locale (then the raw key) for any gap, so a missing string
+// degrades to English rather than throwing.
+export const UI = {
+  en: {
+    home: 'Home',
+    travelGuides: 'Travel Guides',
+    essentialApps: 'Essential Apps',
+    lastVerified: 'Last verified',
+    by: 'by',
+    faqHeading: 'Frequently Asked Questions',
+    relatedHeading: 'Related Guides',
+    sourcesHeading: 'Sources & verification',
+    sourcesIntro: 'This guide was checked against the following sources:',
+    editorialPre: 'Learn how we verify and update our guides in our ',
+    editorialLink: 'editorial policy',
+    editorialPost: '.',
+  },
+  es: {
+    home: 'Inicio',
+    travelGuides: 'Guías de viaje',
+    essentialApps: 'Aplicaciones esenciales',
+    lastVerified: 'Última verificación',
+    by: 'por',
+    faqHeading: 'Preguntas frecuentes',
+    relatedHeading: 'Guías relacionadas',
+    sourcesHeading: 'Fuentes y verificación',
+    sourcesIntro: 'Esta guía se contrastó con las siguientes fuentes:',
+    editorialPre: 'Consulta cómo verificamos y actualizamos nuestras guías en nuestra ',
+    editorialLink: 'política editorial',
+    editorialPost: '.',
+  },
+};
+
+/** A localized UI string, falling back to the default locale then the raw key. */
+export function t(locale, key) {
+  return UI[locale]?.[key] ?? UI[DEFAULT_LOCALE][key] ?? key;
+}
+
+/** The section-hub URL for a locale (default locale lives at the site root). */
+export function localeHome(locale) {
+  return locale === DEFAULT_LOCALE ? '/' : `/${locale}/`;
+}
+
+/**
+ * All locales as switch targets for the current page: each locale's counterpart
+ * URL (from the translation registry) or its section hub as a fallback, plus its
+ * endonym label and whether it is the current locale. Drives the language-switch
+ * dropdown — the menu grows automatically as LOCALES / LOCALE_LABELS grow.
+ *
+ * @param {string} pathname
+ * @returns {{ locale: string, label: string, href: string, current: boolean }[]}
+ */
+export function localeSwitchTargets(pathname) {
+  const current = localeOf(pathname);
+  const alts = alternatesFor(pathname);
+  return LOCALES.map((locale) => ({
+    locale,
+    label: LOCALE_LABELS[locale] ?? locale,
+    href: alts?.find((a) => a.hreflang === locale)?.path ?? localeHome(locale),
+    current: locale === current,
+  }));
+}
+
+/**
+ * Whether a translated page is stale relative to its English source: true when
+ * the English source has been re-verified more recently than the translation
+ * recorded. Missing translation date → treated as stale (needs attention);
+ * missing source date → not stale (nothing to compare against). ISO YYYY-MM-DD
+ * strings compare lexicographically.
+ *
+ * @param {string | undefined} sourceLastVerified - translation's recorded source_last_verified
+ * @param {string | undefined} enLastVerified - the English source's current last_verified
+ * @returns {boolean}
+ */
+export function isTranslationStale(sourceLastVerified, enLastVerified) {
+  if (!enLastVerified) return false;
+  if (!sourceLastVerified) return true;
+  return enLastVerified > sourceLastVerified;
+}
 
 /** Canonical trailing-slash form used for all registry lookups. */
 function normalize(pathname) {
