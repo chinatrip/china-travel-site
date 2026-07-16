@@ -39,14 +39,14 @@ faqs:
     a: >-
       US passport holders are not on the 30-day unilateral visa-free list, but
       can use the 240-hour (10-day) transit-free policy at 65 ports when
-      travelling onward to a third country, and may enter Hainan visa-free. For
+      travelling onward to a third country or region, and may enter Hainan visa-free. For
       an ordinary mainland tourist trip, a tourist (L) visa is required.
   - q: What is the 240-hour transit-free policy?
     a: >-
       It lets eligible travelers from 55 countries transit China for up to 240
       hours (10 days) without a visa, provided they enter through one
       of the 65 qualifying ports, stay within the 24 permitted provincial-level
-      regions, and hold an onward ticket to a third country.
+      regions, and hold an onward ticket to a third country or region.
   - q: How long must my passport be valid to enter China?
     a: >-
       For a visa application your passport should be valid for at least six

@@ -39,7 +39,7 @@ faqs:
       Los titulares de pasaporte de EE. UU. no están en la lista de entrada sin
       visa unilateral de 30 días, pero pueden usar la política de tránsito sin
       visa de 240 horas (10 días) en 65 puertos cuando viajan hacia un tercer
-      país, y pueden entrar a Hainan sin visa. Para un viaje turístico común a
+      país o región, y pueden entrar a Hainan sin visa. Para un viaje turístico común a
       China continental se requiere una visa de turista (L).
   - q: ¿Qué es la política de tránsito sin visa de 240 horas?
     a: >-
@@ -47,7 +47,7 @@ faqs:
       240 horas (10 días) sin visa, siempre que entren por uno de los 65
       puertos de entrada que califican, permanezcan dentro de las 24 regiones de
       nivel provincial permitidas y tengan un boleto de continuación hacia un
-      tercer país.
+      tercer país o región.
   - q: ¿Cuánta validez debe tener mi pasaporte para entrar a China?
     a: >-
       Para solicitar una visa, tu pasaporte debe tener una validez de al menos
@@ -72,7 +72,7 @@ Empieza aquí. Busca tu nacionalidad en la tabla siguiente para identificar qué
 |---|---|---|
 | Pasaporte de uno de los 50 países con exención de visa unilateral (la mayoría de la UE, Reino Unido, Canadá, Australia, Japón, Corea del Sur, etc.) | **Sin visa unilateral de 30 días** — no se necesita visa | [Sección A](#sección-a-entrada-sin-visa-unilateral-de-30-días) |
 | Pasaporte de un país con un acuerdo bilateral de exención mutua (Emiratos Árabes Unidos, Singapur, Malasia, Tailandia, etc.) | **Sin visa bilateral** — no se necesita visa (hasta 30–90 días según el acuerdo) | [Sección B](#sección-b-exención-de-visa-bilateral-mutua) |
-| Pasaporte de uno de los 55 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
+| Pasaporte de uno de los 55 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país o región | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
 | Entrada por o estancia solo en la provincia de Hainan | **Hainan sin visa de 30 días** — esquema separado, 59 países (cobertura efectiva más amplia mediante otros esquemas) | [Sección D](#sección-d-provincia-de-hainan-sin-visa-de-30-días) |
 | Cualquier país; solo una conexión breve en zona de tránsito (airside) | **Tránsito airside de 24 horas** — sin visa, debes permanecer en el puerto de entrada | [Sección E](#sección-e-tránsito-aeroportuario-airside-de-24-horas) |
 | Ninguna de las anteriores, o necesitas una estancia más larga / de trabajo / de estudios | **Visa L (turista)** u otra visa — solicítala antes de viajar | [Sección F](#sección-f-visa-l-visa-de-turista) |
@@ -184,7 +184,7 @@ La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**
 ### Restricciones críticas
 - **No puedes** prorrogar el periodo de 240 horas
 - **No puedes** trabajar, estudiar ni ejercer el periodismo bajo este estatus
-- Hong Kong, Macao y Taiwán **no** son válidos como destinos de "tercer país" para el requisito del boleto de continuación; tu vuelo de continuación debe ir a un país extranjero real
+- Tu boleto de continuación debe ser a un tercer país **o región** y no puede regresarte a tu origen — Hong Kong, Macao y Taiwán **sí** cuentan como regiones de continuación válidas (tienen sistemas de inmigración separados)
 - Si sales y vuelves a entrar con un nuevo tránsito de 240 horas, esto puede ser objeto de escrutinio; consulta las preguntas frecuentes de la NIA
 
 ### Consejos prácticos de TWOV (según reportes de viajeros de 2026)
@@ -206,7 +206,7 @@ La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**
 
 | | Sin visa (Sección A) | TWOV (Sección C) |
 |---|---|---|
-| ¿Se requiere boleto de continuación? | No | Sí (a un tercer país) |
+| ¿Se requiere boleto de continuación? | No | Sí (a un tercer país o región) |
 | Estancia máxima | 30 días | 240 horas (10 días) |
 | Zonas de viaje | Toda China continental | Solo 24 provincias permitidas |
 | ¿Se necesita aprobación previa? | No | No (se activa en el control migratorio) |
@@ -316,7 +316,7 @@ La tramitación tarda de 7 a 10 días hábiles; tu pasaporte queda retenido dura
 
 > Estos son patrones verificados a partir de páginas oficiales de preguntas frecuentes consulares y orientaciones migratorias. (verifica en [preguntas frecuentes de us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm) y [newyork.china-consulate.gov.cn](https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm))
 
-1. **Boleto de continuación incorrecto o ausente (esquema de tránsito):** Para el esquema de 240 horas, el boleto de continuación debe ser hacia un tercer país genuino. Tu país de origen o Hong Kong/Macao/Taiwán no cuentan como "un tercer país". El personal de la aerolínea lo verificará al hacer el check-in antes de que embarques; migración lo verificará a la llegada.
+1. **Boleto de continuación incorrecto o ausente (esquema de tránsito):** Para el esquema de 240 horas, el boleto de continuación debe ser hacia un tercer país o región genuino (Hong Kong, Macao y Taiwán sí cuentan) que no sea tu país de origen. El personal de la aerolínea lo verificará al hacer el check-in antes de que embarques; migración lo verificará a la llegada.
 
 2. **Identificar mal la elegibilidad de tu nacionalidad:** No supongas que tu país está en la lista de entrada sin visa unilateral solo porque un país vecino lo está. La lista es específica. Consulta la NIA o tu embajada, no los blogs de viajes.
 

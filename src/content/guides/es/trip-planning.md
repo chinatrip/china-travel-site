@@ -35,11 +35,12 @@ faqs:
     a: >-
       Reserva con antelación lo que se agota: el alojamiento y el transporte de
       larga distancia, sobre todo en temporada alta, y las entradas a atracciones
-      sensibles a la fecha como la Ciudad Prohibida y la Base de Pandas. Durante
-      un pico de festividad como la Semana Dorada (Golden Week) o la Fiesta de la
-      Primavera, reserva el alojamiento y el transporte en cuanto tengas las
-      fechas confirmadas y consigue esas entradas con semanas o meses de
-      antelación.
+      sensibles a la fecha como la Ciudad Prohibida y la Base de Pandas. La
+      mayoría de las demás entradas y los trayectos cortos se pueden comprar el
+      mismo día con Alipay, así que cómpralos al llegar para mantener
+      flexibilidad. Durante un pico de festividad como la Semana Dorada (Golden
+      Week) o la Fiesta de la Primavera, reserva el alojamiento, el transporte y
+      esas entradas clave con semanas o meses de antelación.
   - q: ¿Cuál es la mejor temporada para visitar China?
     a: >-
       De abril a mayo es óptimo en la mayoría de las regiones, y finales de
@@ -169,6 +170,7 @@ La mayor parte de China continental está totalmente abierta al viaje independie
 - **DiDi**: transporte urbano con conductor (tipo Uber) sin necesidad de chino; consulta [[wiki/entities/didi.md]]
 - **Amap**: navegación en inglés; consulta [[wiki/entities/amap.md]]
 - **Alipay / WeChat Pay**: aceptados en todas partes; configúralos antes de llegar; consulta [[wiki/concepts/mobile-payment.md]]
+- **Entradas y trayectos cortos**: la mayoría se compran el mismo día con Alipay o los miniprogramas de WeChat, así que rara vez necesitas reservarlos por adelantado (reserva solo los sitios que se agotan)
 - **Las principales estaciones de tren de alta velocidad (HSR) y los aeropuertos** tienen señalización bilingüe inglés/chino
 
 ### Dónde se complica
