@@ -151,7 +151,7 @@ La **política de tránsito sin visa de 240 horas** (10 días para 55 nacionalid
 
 ### Presupuesto de ejemplo de 14 días (dos personas, gama media, precios de 2025)
 
-Un ejemplo práctico publicado (precios de 2025) para un viaje de gama media de 14 días para dos personas (ruta Beijing-Xi'an-Chengdu-Shanghái) presupuesta aproximadamente: costos diarios de ~60 EUR por persona (alojamiento + comida + transporte local + actividades), trenes entre ciudades ~300 EUR en total, eSIM/VPN ~80 EUR, seguro ~100 EUR, más un margen del 20%, para un total de aproximadamente 2,590 EUR (~$2,800 USD) sin incluir los vuelos internacionales, o alrededor de 92 EUR/$99 por persona y día con todo incluido. Estas cifras provienen de una guía de viajeros incluida en las fuentes de esta página y no han sido verificadas de forma independiente; considéralas un único dato de referencia, no una cita textual. No obstante, son coherentes con la tabla de presupuesto anterior: la tarifa diaria con todo incluido queda dentro de la banda de gama media. Los itinerarios detallados día a día están en `wiki/summaries/realchinaguide-14day-itinerary-2026.md` y `wiki/summaries/realchinaguide-alternative-itineraries-2026.md`.
+Un ejemplo práctico publicado (precios de 2025) para un viaje de gama media de 14 días para dos personas (ruta Beijing-Xi'an-Chengdu-Shanghái) presupuesta aproximadamente: costos diarios de ~60 EUR por persona (alojamiento + comida + transporte local + actividades), trenes entre ciudades ~300 EUR en total, eSIM/VPN ~80 EUR, seguro ~100 EUR, más un margen del 20%, para un total de aproximadamente 2,590 EUR (~$2,800 USD) sin incluir los vuelos internacionales, o alrededor de 92 EUR/$99 por persona y día con todo incluido. Estas cifras provienen de una guía de viajeros incluida en las fuentes de esta página y no han sido verificadas de forma independiente; considéralas un único dato de referencia, no una cita textual. No obstante, son coherentes con la tabla de presupuesto anterior: la tarifa diaria con todo incluido queda dentro de la banda de gama media.
 
 ## ¿Debería viajar por mi cuenta o con guía en China?
 
@@ -210,7 +210,7 @@ Un enfoque estructurado de cuenta regresiva ayuda a asegurarte de que no se te o
 - Retira una pequeña cantidad de RMB si es posible, o planea sacar dinero en un cajero automático del aeropuerto
 - Haz capturas de pantalla de la información esencial (dirección del hotel, números de emergencia, contacto de la embajada)
 
-(La estructura de la lista de verificación sigue una fuente de guía de viajeros de la lista de fuentes de esta página; los pasos de configuración de apps, pagos y conectividad se detallan en [[wiki/concepts/internet-connectivity.md]] y [[wiki/concepts/sim-card.md]]; los detalles de la tarjeta de llegada según el aviso de la embajada de la RPC y la guía de trip.com, consultado en junio de 2026. Cronograma detallado en `wiki/summaries/realchinaguide-pretrip-preparation-2026.md`.)
+(La estructura de la lista de verificación sigue una fuente de guía de viajeros de la lista de fuentes de esta página; los pasos de configuración de apps, pagos y conectividad se detallan en [[wiki/concepts/internet-connectivity.md]] y [[wiki/concepts/sim-card.md]]; los detalles de la tarjeta de llegada según el aviso de la embajada de la RPC y la guía de trip.com, consultado en junio de 2026.)
 
 ## Véase también
 

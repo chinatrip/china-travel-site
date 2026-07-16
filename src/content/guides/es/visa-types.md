@@ -189,8 +189,6 @@ La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**
 
 ### Consejos prácticos de TWOV (según reportes de viajeros de 2026)
 
-> Fuente: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
-
 **Antes de la salida:**
 - Hong Kong cuenta como una región separada para efectos del TWOV; volar Singapur -> Shanghai -> Hong Kong califica
 - Imprime el comprobante de elegibilidad para TWOV desde el sitio web oficial de inmigración de China (s.nia.gov.cn) antes de tu viaje
@@ -377,8 +375,6 @@ La política de visa de China cambia con frecuencia. Verifica antes de reservar 
 
 ## ¿Qué ocurre en el control migratorio al entrar a China?
 
-> Fuente: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
-
 ### Tarjeta de llegada digital (antes de la llegada)
 - Completa la tarjeta de llegada en línea en [s.nia.gov.cn](https://s.nia.gov.cn) dentro de las **72 horas previas al embarque**
 - Las tarjetas en papel se siguen aceptando a la llegada si no puedes completarla en línea
@@ -405,8 +401,6 @@ Ver también: [[wiki/concepts/residence-registration.md]]
 
 ## ¿Debería usar una agencia de visas para China?
 
-> Fuente: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
-
 - Las agencias de buena reputación (por ejemplo, Oasis China Visa) pueden encargarse de las visitas presenciales al consulado por ti
 - Costo: aproximadamente **$200 en total** (incluidas las tarifas de servicio) frente a $140 haciéndolo por tu cuenta
 - Útil si vives lejos de un consulado de China o de un CVASC
@@ -416,8 +410,6 @@ Ver también: [[wiki/concepts/residence-registration.md]]
 ---
 
 ## ¿Qué países están exentos de visa para China en 2026?
-
-> Fuente: [[wiki/summaries/realchinaguide-visa-guide-2026.md]]
 
 - A junio de 2026, **50 países** tienen acceso sin visa unilateral de 30 días (según la lista de la NIA vigente al 17 de febrero de 2026; la lista cambia: consulta los últimos anuncios de la NIA para ver actualizaciones)
 - El **Reino Unido y Canadá** se añadieron a la lista de entrada sin visa unilateral con efecto a partir del **17 de febrero de 2026** (según el anuncio oficial de gov.cn del 15 de febrero de 2026)
