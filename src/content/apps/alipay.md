@@ -45,8 +45,8 @@ faqs:
   - q: Why is my Alipay payment failing?
     a: >-
       Two Alipay-specific things to check first are whether you have completed
-      passport verification and whether you have hit your per-transaction limit —
-      both are covered under Fees and Limits above, so finish verification and
+      passport verification and whether you have hit your per-transaction limit
+      — both are covered under Fees and Limits above, so finish verification and
       check your in-app limit. If a payment still fails after that, our Mobile
       Payment guide has a full payment-troubleshooting section for the remaining
       causes and fixes.
