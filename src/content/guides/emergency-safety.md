@@ -78,9 +78,6 @@ category: guide
 - State your **location first** — give the address in Chinese if possible. Photograph your hotel's address card (in Chinese) before going out each day.
 - For 120 (ambulance), also see the Language and Hospital sections in [[wiki/concepts/health-medical.md]] for further detail on medical emergencies.
 
-<<<<<<< site
-## How safe is China for tourists?
-=======
 ## Getting Help in Person
 
 Because 110 and 120 operators usually speak only Chinese, approaching someone nearby is often the faster, more practical first move when something goes wrong — as long as there is no immediate life-threatening emergency. People who can help on the spot, or make the right call for you:
@@ -93,8 +90,7 @@ Because 110 and 120 operators usually speak only Chinese, approaching someone ne
 
 If language is the barrier, show the person a translation-app message describing your problem. For a genuine emergency — a crime in progress, a medical crisis, or a fire — still call **110 / 120 / 119** (or have someone call for you), and remember you'll need a police report (报案回执) for anything involving insurance or a lost passport. In-person help and the hotlines work together: find someone nearby to help you act, and use the emergency numbers for the formal, urgent response.
 
-## General Safety
->>>>>>> wiki
+## How safe is China for tourists?
 
 China is one of the safer countries in the world for physical crime by global standards. Violent crime against tourists is rare.
 

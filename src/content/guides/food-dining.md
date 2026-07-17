@@ -221,9 +221,6 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | **Xinjiang/Kashgar** | Da pan ji (大盘鸡, big plate chicken), lamb pilaf, naan bread, cumin lamb | Central Asian influence; halal-friendly |
 | **Yunnan** | Crossing-the-bridge noodles (过桥米线), wild mushrooms, Dai-style grilled fish | Fresh herbs, sour flavors; Dali has good Western food too |
 
-<<<<<<< site
-## Is street food safe to eat in China?
-=======
 ## Spice and Chili Tolerance
 
 China's "spice belt" — Sichuan, Chongqing, Hunan, Hubei, and Jiangxi — builds many dishes around chili, and Sichuan and Chongqing cooking adds mouth-numbing Sichuan peppercorn (麻辣, málà) on top. If you are not used to this level of heat, ease in rather than starting your trip with a Chongqing hotpot: visitors with low chili tolerance sometimes get stomach upset or diarrhea, a sore mouth or throat, or skin irritation around the lips after a very spicy meal.
@@ -236,8 +233,7 @@ Ways to pace yourself:
 
 These reactions are usually mild and short-lived. If stomach upset, a rash, or other symptoms are severe or don't settle, treat it as you would any illness and see a doctor — see [[wiki/concepts/health-medical.md]].
 
-## Food Safety
->>>>>>> wiki
+## Is street food safe to eat in China?
 
 Street food is generally safe if:
 - Freshly cooked and served hot
