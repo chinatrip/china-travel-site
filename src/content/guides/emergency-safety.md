@@ -1,7 +1,7 @@
 ---
 title: Emergency and Safety for Foreign Visitors
 date: 2026-06-12
-last_verified: 2026-06-12
+last_verified: 2026-07-17
 verified_against:
   - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
   - https://chinasurvivalkit.com/blog/is-china-safe-tourists
@@ -30,6 +30,7 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: null
+  notes: "2026-07-17: Added a 'Getting Help in Person' section (approach nearby police / attraction staff / hotel front desk when a language barrier makes phone lines hard, with 110/120/119 still the route for genuine emergencies), per traveler feedback. Grounded in the page's own stated fact that 110/120 operators are typically Chinese-only; no new external source added. Other sections carried forward from the 2026-06-15 audit, not re-verified this round; page_audit unchanged."
 description: >-
   Staying safe in China as a foreigner: emergency numbers (110 police, 120
   ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English
@@ -76,6 +77,18 @@ category: guide
 - Speak slowly and clearly. Operators at 110 and 120 typically speak Chinese only — use a translation app or ask a bystander to call for you.
 - State your **location first** — give the address in Chinese if possible. Photograph your hotel's address card (in Chinese) before going out each day.
 - For 120 (ambulance), also see the Language and Hospital sections in [[wiki/concepts/health-medical.md]] for further detail on medical emergencies.
+
+## Getting Help in Person
+
+Because 110 and 120 operators usually speak only Chinese, approaching someone nearby is often the faster, more practical first move when something goes wrong — as long as there is no immediate life-threatening emergency. People who can help on the spot, or make the right call for you:
+
+- **Uniformed police, traffic police, or auxiliary police (辅警, fǔjǐng)** on the street or at intersections.
+- **Staff at scenic areas and attractions** — ticket booths, information desks, and site security deal with foreign visitors routinely.
+- **Your hotel front desk** — often the single most useful contact: staff usually speak some English, already know your location, and can call the police, an ambulance, or a taxi and explain the situation in Chinese for you.
+- **Metro and railway station staff, mall security, and shop assistants.**
+- **Community / neighborhood service workers (社区工作人员)** in residential areas.
+
+If language is the barrier, show the person a translation-app message describing your problem. For a genuine emergency — a crime in progress, a medical crisis, or a fire — still call **110 / 120 / 119** (or have someone call for you), and remember you'll need a police report (报案回执) for anything involving insurance or a lost passport. In-person help and the hotlines work together: find someone nearby to help you act, and use the emergency numbers for the formal, urgent response.
 
 ## How safe is China for tourists?
 
