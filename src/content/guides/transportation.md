@@ -25,9 +25,9 @@ review:
   page_audit: 2026-06-09
   citation_check: null
 description: >-
-  Getting around China as a foreigner: high-speed rail via 12306, metro QR-code
-  payment, DiDi ride-hailing, taxis, and using Amap in English. Updated April
-  2026.
+  How to get around China: 12306 trains in English, metro multi-day passes
+  (Beijing Yitongxing ¥20/3 days), foreign-card tap-to-ride, DiDi, and Amap.
+  Updated June 2026.
 faqs:
   - q: How do foreigners buy high-speed train tickets in China?
     a: >-
@@ -86,6 +86,12 @@ faqs:
       apart — shared bikes (Hellobike, Meituan Bike) fill the distance for about
       ¥1.5 per trip: scan the QR code with Alipay, ride, and lock at your
       destination.
+  - q: Are there metro multi-day passes for tourists in China?
+    a: >-
+      Some cities offer them — Beijing's Yitongxing (亿通行) has a ¥20/3-day
+      unlimited pass, available as a physical card (¥20 deposit) or in-app QR.
+      Availability varies by city, so check the local metro app; where no pass
+      exists, pay per ride by QR code or foreign-card tap.
 category: guide
 ---
 
