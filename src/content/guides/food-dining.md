@@ -1,7 +1,7 @@
 ---
 title: Food and Dining in China for Foreign Visitors
 date: 2026-05-04
-last_verified: 2026-06-09
+last_verified: 2026-07-17
 verified_against:
   - https://www.chinahighlights.com
   - https://technode.com/2025/12/05/ele-me-rebrands-as-taobao-flash-sale-ending-17-years-as-an-independent-brand/
@@ -19,6 +19,7 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: 2026-05-06
+  notes: "2026-07-17: Added a 'Spice and Chili Tolerance' section (comfort/health guidance for low-tolerance visitors — pacing tips and a note that severe or persistent symptoms warrant a doctor), per traveler feedback. The chili-heat context matches the page's existing regional-cuisine content; the split-pot and milk-not-water tips are general common knowledge. No new external source added and no medication recommended. Other sections carried forward from the 2026-06-09 audit, not re-verified this round; page_audit unchanged."
 description: >-
   Order food in China without speaking Chinese: photo menus, camera translation,
   allergy phrases, delivery apps (Meituan, Ele.me), and regional cuisine basics.
@@ -188,6 +189,7 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | The menu | 菜单 | Càidān |
 | I'll have this (point) | 我要这个 | Wǒ yào zhège |
 | Not spicy | 不辣 | Bù là |
+| Slightly spicy | 微辣 | Wēi là |
 | Less spicy | 少辣 | Shǎo là |
 | No cilantro | 不要香菜 | Bù yào xiāngcài |
 | No MSG | 不要味精 | Bù yào wèijīng |
@@ -219,7 +221,23 @@ Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-st
 | **Xinjiang/Kashgar** | Da pan ji (大盘鸡, big plate chicken), lamb pilaf, naan bread, cumin lamb | Central Asian influence; halal-friendly |
 | **Yunnan** | Crossing-the-bridge noodles (过桥米线), wild mushrooms, Dai-style grilled fish | Fresh herbs, sour flavors; Dali has good Western food too |
 
+<<<<<<< site
 ## Is street food safe to eat in China?
+=======
+## Spice and Chili Tolerance
+
+China's "spice belt" — Sichuan, Chongqing, Hunan, Hubei, and Jiangxi — builds many dishes around chili, and Sichuan and Chongqing cooking adds mouth-numbing Sichuan peppercorn (麻辣, málà) on top. If you are not used to this level of heat, ease in rather than starting your trip with a Chongqing hotpot: visitors with low chili tolerance sometimes get stomach upset or diarrhea, a sore mouth or throat, or skin irritation around the lips after a very spicy meal.
+
+Ways to pace yourself:
+- Order 微辣 (wēi là, slightly spicy) or 少辣 (shǎo là, less spicy) to start, or 不辣 (bù là, not spicy) for none — see the phrase table above.
+- In hotpot places, ask for a split pot (鸳鸯锅, yuānyāng guō) so a mild broth sits alongside the spicy one.
+- Sip milk, yogurt, or sweet soy milk rather than water to calm the burn — water just spreads the chili oil around.
+- Build up over several meals instead of one extreme meal on day one.
+
+These reactions are usually mild and short-lived. If stomach upset, a rash, or other symptoms are severe or don't settle, treat it as you would any illness and see a doctor — see [[wiki/concepts/health-medical.md]].
+
+## Food Safety
+>>>>>>> wiki
 
 Street food is generally safe if:
 - Freshly cooked and served hot
