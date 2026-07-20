@@ -88,9 +88,6 @@ For both Alipay and WeChat Pay, **AMEX is bindable but merchant acceptance is un
 
 **Set up both Alipay and WeChat Pay before arrival.** Different merchants accept different apps, SMS verification is more reliable on a foreign carrier than on a fresh Chinese SIM, and WeChat may trigger a contact-vouching step during registration from a foreign number — arrange a qualifying contact before departure if possible.
 
-<<<<<<< site
-## What did the 2024 PBOC policy change for foreign visitors?
-=======
 ## Which payment method works where?
 
 Foreign cards behave differently by venue. This maps everyday situations to what actually works — ✅ works, ⚠️ conditional, ❌ won't work — and where cash is the safe fallback. Alipay and WeChat Pay behave almost identically, so they share a column.
@@ -110,8 +107,7 @@ Foreign cards behave differently by venue. This maps everyday situations to what
 
 The single most useful habit: **set up both Alipay and WeChat Pay, and carry ¥200–500 in small bills.** Between the two apps and a little cash, nearly every situation above is covered.
 
-## What Changed (2024–2025 PBOC Policy)
->>>>>>> wiki
+## What did the 2024 PBOC policy change for foreign visitors?
 
 The April 2024 circular jointly issued by the PBOC and several ministries reset the foreign-tourist payment story:
 
@@ -131,9 +127,6 @@ The earlier **Alipay Tour Pass** prepaid-wallet option is **no longer the recomm
 
 The per-platform tables below separate the **PBOC regulatory ceiling** (the maximum any platform may allow per transaction or per year) from **your actual account limit**. Alipay's and WeChat's own per-account limits are not publicly disclosed, and third-party reports of effective limits vary widely — one guide reports WeChat annual caps around ¥50,000–65,000 (chinavigators.com), far below the regulatory ceiling. Assume your effective limit may be much lower than the PBOC maximum; check in-app after completing ID verification to confirm your current account limit.
 
-<<<<<<< site
-## How do I set up Alipay as a foreigner?
-=======
 ## Is it safe to link a foreign card to Alipay or WeChat Pay?
 
 For most visitors, yes — with the same care you'd give any app that holds a card. What linking actually does, and the honest limits:
@@ -145,8 +138,7 @@ For most visitors, yes — with the same care you'd give any app that holds a ca
 
 If you'd rather not link a card at all, you can still receive RMB from a local contact into your balance and spend that, or fall back to cash.
 
-## Alipay (Recommended First)
->>>>>>> wiki
+## How do I set up Alipay as a foreigner?
 
 ### Setup
 
