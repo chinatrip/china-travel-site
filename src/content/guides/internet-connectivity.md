@@ -97,9 +97,6 @@ As of 2026, the GFW blocks thousands of domains and services (source: chinasurvi
 
 **Public Wi-Fi note:** most free public Wi-Fi in China (airports, malls, metro stations) requires SMS authentication to a Chinese mobile number to connect. Without a local SIM you may not be able to use it. A foreign eSIM or hotel Wi-Fi (which typically uses room credentials) avoids this barrier.
 
-<<<<<<< site
-## What should I set up before arriving in China?
-=======
 ## Can I access Google, Gmail and WhatsApp from my hotel in China?
 
 Usually not on the hotel Wi-Fi itself — like other in-country connections, standard hotel Wi-Fi runs through the Great Firewall, so Google, Gmail, WhatsApp and similar services are blocked unless you use a VPN or a foreign eSIM. Some business travelers report that certain international-chain hotels have had room Wi-Fi reaching international services without a VPN — one frequent visitor, for example, books Holiday Inn partly for this reason. **Treat this as individual travelers' past experience, not a guarantee:** it is not something we have verified, hotel network policies vary by property and change over time, and you should not count on it.
@@ -111,8 +108,7 @@ If reliable access to Google / WhatsApp / office tools matters for your trip:
 
 Don't rely on any single hotel's network for critical connectivity — carry your own eSIM or a tested VPN as the reliable path.
 
-## Before You Arrive — Pre-Departure Setup
->>>>>>> wiki
+## What should I set up before arriving in China?
 
 **Install and set up these apps before you leave home.** Several key setup steps — binding a foreign card, SMS verification, the WeChat vouching step — are significantly easier or only possible while you're still on your home carrier with a non-Chinese IP address.
 
