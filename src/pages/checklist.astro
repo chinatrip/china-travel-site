@@ -13,6 +13,7 @@ const checklistItemList = buildItemList('China Trip Preparation Checklist', [
   '/guides/tibet-permits/',
   '/apps/alipay/',
   '/apps/wechat/',
+  '/guides/mobile-payment/',
   '/guides/sim-card/',
   '/apps/amap/',
   '/guides/accommodation/',
@@ -92,7 +93,9 @@ const checklistItemList = buildItemList('China Trip Preparation Checklist', [
       <p class="text-sm text-muted">
         Payments come next: download <a href="/apps/alipay/" class="text-primary hover:underline">Alipay</a> or
         <a href="/apps/wechat/" class="text-primary hover:underline">WeChat Pay</a> and link a Visa or Mastercard
-        before you fly, and carry a little cash for vendors that don't take mobile payments. For connectivity, a
+        before you fly, and carry a little cash for vendors that don't take mobile payments — our
+        <a href="/guides/mobile-payment/" class="text-primary hover:underline">mobile payment guide</a> shows which
+        method works where. For connectivity, a
         foreign <a href="/guides/sim-card/" class="text-primary hover:underline">eSIM</a> bypasses the Great Firewall
         without a VPN, while a local SIM needs a VPN installed before arrival — and since Google Maps doesn't work in
         China, install <a href="/apps/amap/" class="text-primary hover:underline">Amap</a> for navigation. Round
@@ -150,6 +153,7 @@ const checklistItemList = buildItemList('China Trip Preparation Checklist', [
       { id: 'translation-app', category: 'connectivity', title: 'Install a translation app', description: 'Baidu Translate or Microsoft Translator work without VPN in China.', link: '/guides/internet-connectivity/', conditions: { concerns: ['connectivity'] }, priority: 'medium' },
 
       // PAYMENT
+      { id: 'payment-learn', category: 'payment', title: 'Learn where each payment method works', description: 'Alipay/WeChat vs foreign card vs cash — which one works at taxis, metro, street stalls, hospitals, and government offices.', link: '/guides/mobile-payment/', conditions: { concerns: ['payment'] }, priority: 'high' },
       { id: 'alipay-setup', category: 'payment', title: 'Download Alipay and bind your card', description: 'bindable card (Visa/Mastercard). 0% fee under ¥200, 3% over ¥200.', link: '/apps/alipay/', conditions: { concerns: ['payment'] }, priority: 'high' },
       { id: 'wechat-setup', category: 'payment', title: 'Download WeChat Pay and bind your card', description: 'Same fee structure as Alipay. WeChat is also essential for communication.', link: '/apps/wechat/', conditions: { concerns: ['payment'] }, priority: 'high' },
       { id: 'cash-prepare', category: 'payment', title: 'Bring some cash (¥500-1000)', description: 'Small vendors and some transport may not accept mobile pay. ATMs available at airports.', link: '/guides/foreign-exchange/', conditions: { concerns: ['payment'] }, priority: 'medium' },

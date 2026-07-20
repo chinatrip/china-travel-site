@@ -8,6 +8,16 @@ const guides = await getCollection('guides', ({ data }) => data.status === 'audi
 const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
 const totalGuides = guides.length + apps.length;
 
+// "Start here" — the three things foreign visitors ask about most, pulled to the
+// top of the page so they aren't lost in the full guide grid. Payment leads
+// (the most universal pain point); each id must be an audited guide or it's
+// silently skipped. These are excluded from the grid below to avoid duplication.
+const FEATURED_IDS = ['mobile-payment', 'visa-types', 'payment-failures'];
+const featuredGuides = FEATURED_IDS
+  .map((id) => guides.find((g) => g.id === id))
+  .filter(Boolean);
+const restGuides = guides.filter((g) => !FEATURED_IDS.includes(g.id));
+
 const description = 'Practical travel guides for foreigners visiting China — visa, mobile payment, apps, transportation, food, and safety. Verified from official sources, updated 2026.';
 const websiteSchema = buildWebsiteSchema(description);
 const organizationSchema = buildOrganizationSchema(new URL('/og-default.png', Astro.site).href);
@@ -46,6 +56,26 @@ const organizationSchema = buildOrganizationSchema(new URL('/og-default.png', As
     </div>
   </section>
 
+  <!-- Start Here — most-asked essentials pulled to the top (payment leads) -->
+  {featuredGuides.length > 0 && (
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-12">
+      <div class="mb-6">
+        <h2 class="text-2xl font-bold text-secondary">Start here</h2>
+        <p class="text-sm text-muted mt-1">The questions foreign visitors ask about most — sort these before you fly.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {featuredGuides.map((guide) => (
+          <GuideCard
+            title={guide.data.title}
+            href={`/guides/${guide.id}/`}
+            description={guide.data.description}
+            lastVerified={guide.data.last_verified}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
   <!-- Guides Section -->
   <section class="max-w-5xl mx-auto px-4 sm:px-6 py-12">
     <div class="flex items-center justify-between mb-6">
@@ -53,7 +83,7 @@ const organizationSchema = buildOrganizationSchema(new URL('/og-default.png', As
       <a href="/guides/" class="text-sm text-primary font-medium hover:underline">View all &rarr;</a>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {guides.map((guide) => (
+      {restGuides.map((guide) => (
         <GuideCard
           title={guide.data.title}
           href={`/guides/${guide.id}/`}
