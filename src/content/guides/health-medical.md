@@ -1,7 +1,7 @@
 ---
 title: Health and Medical Care for Foreign Visitors
 date: 2026-06-12
-last_verified: 2026-06-12
+last_verified: 2026-07-20
 verified_against:
   - https://www.gov.uk/government/publications/medical-treatment-in-china
   - https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html
@@ -20,6 +20,7 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: 2026-06-12
+  notes: "2026-07-20: Three traveler-feedback edits — (1) added a page-level medical disclaimer at the top (general info, not medical advice; see a professional for persistent/severe symptoms); (2) softened the acetazolamide entry to remove the specific mg dose, keeping the CDC-sourced regimen description and the 'prescription required / doctor sets the dose' framing; (3) added a 'standard vs international department' note (foreigners can ask for 普通门诊 instead of the pricier 国际部). No new external source added; other sections not re-verified this round; page_audit unchanged."
 description: >-
   Medical care in China for foreign visitors: international hospitals, paying
   with Alipay or WeChat, pharmacies, travel insurance, and altitude sickness.
@@ -56,7 +57,13 @@ category: guide
 
 # Health and Medical Care for Foreign Visitors
 
+<<<<<<< site
 ## What are the medical emergency numbers in China?
+=======
+> **Medical disclaimer:** This page is general travel-health information, not medical advice, and does not replace diagnosis or treatment by a qualified professional. Drug names, doses, and vaccine schedules are summarized from public health authorities (CDC, WHO, UK NHS) for orientation only — confirm anything that applies to you with a travel-medicine clinic or your own doctor before acting on it. If you develop a high fever, a severe allergic reaction, difficulty breathing, a persistent or worsening symptom, or anything else that alarms you, seek care at a proper medical facility promptly rather than self-treating.
+
+## Emergency Numbers
+>>>>>>> wiki
 
 For medical emergencies, dial **120** (ambulance — nationwide, Chinese-speaking operators). Police are **110** and fire is **119**, both nationwide. In Beijing only, **999** is an additional medical emergency line with some English support. For the complete emergency-numbers table (traffic accidents 122, the 12345 government services hotline) and practical tips on calling, see [[wiki/concepts/emergency-safety.md]].
 
@@ -73,6 +80,8 @@ For medical emergencies, dial **120** (ambulance — nationwide, Chinese-speakin
 **Public hospitals** are affordable and available everywhere, but are crowded (2–4 hour waits are common), operate mainly in Chinese, and English-speaking doctors are not guaranteed even at large hospitals.
 
 **VIP / international wards (国际部 or 外宾部):** many Grade 3 (三级, top-tier) public hospitals have a separate international department with English staff, shorter waits, and private facilities — at higher prices than the standard ward but lower than a private hospital. Ask for 国际部 (guójì bù) at the front desk.
+
+**Standard vs international department:** as a foreigner you may be steered toward the 国际部 by default. It is faster and English-speaking, but the process and fees are different and noticeably higher. If cost matters more to you than convenience and you can manage with a translation app, you can ask to be seen in the **regular outpatient department (普通门诊, pǔtōng ménzhěn)** instead — say you do not need the international department. For a genuine emergency, take whatever gets you seen fastest.
 
 **International / private hospitals:** English-speaking staff, Western-standard care, 24-hour English hotlines, direct billing with some insurers. Concentrated in Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu.
 
@@ -173,7 +182,7 @@ Severe AMS can progress to **HACE** (confusion, inability to walk straight) or *
 - **Hydrate:** 3–4 litres of water per day; avoid alcohol for the first 2–3 days
 - **Move slowly:** no vigorous physical activity in the first 48 hours
 - **Rhodiola rosea (红景天):** traditional Chinese herbal supplement; start 1–2 weeks before arrival; available at pharmacies throughout China and in Lhasa; evidence is mixed but widely used with no known safety concerns
-- **Acetazolamide (Diamox):** a prescription drug that speeds acclimatization. The CDC Yellow Book gives an effective prophylactic dose of **125 mg every 12 hours, beginning the day before ascent and continuing for the first two days at altitude** (longer if you keep ascending); common side effects are increased urination and tingling in the hands/feet (source: CDC Yellow Book, High-Altitude Travel & Altitude Illness, cdc.gov). Because it is prescription-only and not suitable for everyone, **discuss it with a travel-medicine clinic or your doctor before travel** and obtain a prescription. When bringing it into China, carry it in a **reasonable self-use quantity with your prescription**: China Customs admits personal-use medication on a "self-use, reasonable quantity" basis determined by a valid doctor's prescription (narcotics and Class-1 psychotropic drugs face stricter single-prescription limits — acetazolamide is neither) (source: China Customs personal-medication guidance, customs.gov.cn).
+- **Acetazolamide (Diamox):** a prescription drug that speeds acclimatization. The CDC Yellow Book describes a standard prophylactic regimen started the day before ascent and continued through the first days at altitude, with the exact dose set for the individual; common side effects are increased urination and tingling in the hands/feet (source: CDC Yellow Book, High-Altitude Travel & Altitude Illness, cdc.gov). Because it is prescription-only, the dose is individual, and it is not suitable for everyone, **discuss it with a travel-medicine clinic or your doctor before travel** — they will confirm whether it is right for you and set the dose — and obtain a prescription. When bringing it into China, carry it in a **reasonable self-use quantity with your prescription**: China Customs admits personal-use medication on a "self-use, reasonable quantity" basis determined by a valid doctor's prescription (narcotics and Class-1 psychotropic drugs face stricter single-prescription limits — acetazolamide is neither) (source: China Customs personal-medication guidance, customs.gov.cn).
 
 Oxygen canisters are available at most Lhasa hotels, often free or for a small fee.
 
