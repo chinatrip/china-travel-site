@@ -1,7 +1,7 @@
 ---
 title: "Pago móvil en China: Alipay y WeChat Pay"
 date: 2026-06-15
-last_verified: 2026-07-02
+last_verified: 2026-07-17
 lang: es
 source_en: guides/mobile-payment
 source_last_verified: 2026-07-17
