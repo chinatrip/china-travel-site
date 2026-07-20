@@ -1,10 +1,10 @@
 ---
 title: "Pago móvil en China: Alipay y WeChat Pay"
 date: 2026-06-15
-last_verified: 2026-07-02
+last_verified: 2026-07-17
 lang: es
 source_en: guides/mobile-payment
-source_last_verified: 2026-07-02
+source_last_verified: 2026-07-17
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
@@ -76,6 +76,25 @@ Tanto en Alipay como en WeChat Pay, **AMEX es vinculable pero la aceptación ent
 
 **Configura tanto Alipay como WeChat Pay antes de llegar.** Distintos comercios aceptan distintas apps, la verificación por SMS es más fiable con un operador extranjero que con una SIM china recién comprada, y WeChat puede activar un paso de aval por un contacto durante el registro desde un número extranjero: organiza un contacto que cumpla los requisitos antes de partir, si es posible.
 
+## ¿Qué método de pago funciona en cada lugar?
+
+Las tarjetas extranjeras se comportan de forma distinta según el establecimiento. Esto relaciona las situaciones cotidianas con lo que realmente funciona — ✅ funciona, ⚠️ condicional, ❌ no funciona — y dónde el efectivo es el respaldo seguro. Alipay y WeChat Pay funcionan casi igual, así que comparten columna.
+
+| Dónde pagas | Alipay / WeChat Pay + tarjeta extranjera | Tarjeta extranjera en terminal / contactless | Efectivo |
+|---|---|---|---|
+| Grandes tiendas, cadenas, restaurantes con mesa (escanear un QR) | ✅ | ⚠️ centros comerciales y hoteles grandes | ✅ |
+| Puestos callejeros, vendedores pequeños | ⚠️ solo código de comercio — un código de cobro personal rechazará el pago | ❌ | ✅ lo más seguro |
+| Taxis antiguos parados en la calle | ⚠️ muchos no tienen un QR que funcione | ❌ | ✅ |
+| DiDi (transporte con conductor) | ✅ se paga dentro de la app | ❌ | — |
+| Metro, ciudades de primer nivel (Pekín, Shanghái, etc.) | ✅ mediante el QR del mini-program del metro | ⚠️ algunas barreras aceptan tarjeta extranjera contactless — véase [[wiki/concepts/transportation.md]] | ✅ máquina de billetes |
+| Metro, ciudades más pequeñas | ❌ a menudo un sistema que solo admite tarjeta local | ❌ | ✅ máquina de billetes o tarjeta de transporte local |
+| Hoteles de 3 estrellas o más | ✅ | ✅ obligados a aceptar tarjetas extranjeras (PBOC 2024) | ✅ |
+| Entradas de atracciones 4A/5A | ✅ | ✅ obligatorio (PBOC 2024) | ✅ |
+| Mostrador de registro hospitalario | ⚠️ a menudo solo UnionPay nacional | ⚠️ solo en el mostrador de pacientes internacionales de grandes hospitales de grado 3 | ✅ |
+| Trámites gubernamentales (visado, residencia) | ❌ | ✅ pago con tarjeta donde esté disponible | ✅ |
+
+El hábito más útil de todos: **configura tanto Alipay como WeChat Pay y lleva ¥200–500 en billetes pequeños.** Entre las dos apps y algo de efectivo, quedan cubiertas casi todas las situaciones anteriores.
+
 ## ¿Qué cambió la política del PBOC de 2024 para los viajeros extranjeros?
 
 La circular de abril de 2024 emitida conjuntamente por el PBOC y varios ministerios reformuló por completo el panorama de pagos para los turistas extranjeros:
@@ -95,6 +114,17 @@ La antigua opción de billetera de prepago **Alipay Tour Pass ya no es la vía r
 2. **Límite interno de la plataforma** (el propio tope de Alipay o WeChat, más bajo en algunos casos): límites por cuenta por debajo del techo del PBOC, según si tu identidad de pasaporte está verificada.
 
 Las tablas por plataforma de abajo separan el **techo regulatorio del PBOC** (el máximo que cualquier plataforma puede permitir por transacción o por año) de **tu límite de cuenta real**. Los límites por cuenta propios de Alipay y de WeChat no se divulgan públicamente, y los informes de terceros sobre los límites efectivos varían mucho: una guía reporta límites anuales de WeChat de alrededor de ¥50,000–65,000 (chinavigators.com), muy por debajo del techo regulatorio. Asume que tu límite efectivo puede ser mucho más bajo que el máximo del PBOC; compruébalo dentro de la app tras completar la verificación de identidad para confirmar tu límite de cuenta actual.
+
+## ¿Es seguro vincular una tarjeta extranjera a Alipay o WeChat Pay?
+
+Para la mayoría de los viajeros, sí — con el mismo cuidado que tendrías con cualquier app que guarde una tarjeta. Lo que realmente hace la vinculación, y sus límites honestos:
+
+- **Estás autorizando cargos de pago por uso, no entregando un saldo.** Vincular una tarjeta permite que la app la cargue por cada pago que apruebas — no estás precargando dinero ni dando a la plataforma el control de una cuenta. Cada pago muestra el importe en RMB y el tipo de cambio antes de confirmar, así que apruebas cada cargo individualmente.
+- **No necesitas una cuenta bancaria china ni un saldo almacenado.** Vincular directamente una Visa o Mastercard extranjera es suficiente (véase [[wiki/concepts/foreign-exchange.md]]) — no hace falta abrir una cuenta nacional ni mover dinero a un saldo de billetera, lo que mantiene tu exposición limitada solo a la tarjeta vinculada.
+- **La seguridad ligada al dispositivo ayuda, pero no es una garantía.** Ambas apps vinculan los pagos a tu dispositivo con un PIN o biometría, lo que limita los cargos no autorizados si pierdes el teléfono — trátalo como una capa de seguridad, no como una promesa. Si pierdes el teléfono o te lo roban, cierra la sesión o congela la cuenta de forma remota (ambas apps permiten hacerlo desde un navegador, se explica más abajo) y llama al emisor de tu tarjeta para bloquearla.
+- **Mantén tu exposición pequeña y recuperable.** Prefiere una tarjeta con comisiones bajas por transacción en el extranjero, vigila el importe en la app en cada pago, y recuerda que el proceso de disputa del emisor de tu tarjeta es el último recurso — los reembolsos transfronterizos y los contracargos siguen volviendo a la tarjeta original.
+
+Si prefieres no vincular ninguna tarjeta, aún puedes recibir RMB de un contacto local en tu saldo y gastarlo, o recurrir al efectivo.
 
 ## ¿Cómo configuro Alipay siendo extranjero?
 
