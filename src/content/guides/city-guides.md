@@ -3,7 +3,7 @@ title: "City Guides for Foreign Visitors"
 date: 2026-06-01
 sources: [raw/realchinaguide-city-guides-2026.md]
 related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md, wiki/entities/dianping.md]
-last_verified: 2026-06-09
+last_verified: 2026-07-20
 verified_against:
   - raw/realchinaguide-city-guides-2026.md
   - https://www.travelchinaguide.com/china-trains/beijing-shanghai-highspeed.htm
@@ -12,7 +12,7 @@ volatility: low
 review:
   status: audited
   page_audit: 2026-06-09
-  notes: "City highlights and recommended days are stable facts. Best seasons cross-checked against general climate data. HSR time corrected during lint."
+  notes: "2026-07-20: Added a 'Which cities match what you want to see?' section that groups the existing table cities by theme (history / food / modern / nature / pandas) per traveler feedback — all primary cities are ones already profiled in the table above; Luoyang / Datong are named only as day-trip / add-on destinations, not primary bases, since they are not profiled here. No new city data or sourced claims introduced; theme descriptors use common-knowledge dish and landscape names (e.g. mapo tofu, sandstone pillars) for recognition, consistent with the existing Highlights. Existing content not re-verified this round; page_audit unchanged. --- City highlights and recommended days are stable facts. Best seasons cross-checked against general climate data. HSR time corrected during lint."
 description: >-
   Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin
   and more — top sights, how many days to spend, best seasons, and getting
@@ -74,6 +74,22 @@ China has dozens of cities worth visiting, each with distinct character. This pa
 | Urumqi | Far West | 1-2 | Grand Bazaar, Heavenly Lake, Xinjiang cuisine, gateway to Silk Road | Jun-Sep |
 | Kashgar | Far West | 2-3 | Old City, Sunday Market, Uyghur culture, Karakoram Highway | May-Oct |
 | Lhasa | Tibet | 3-4 | Potala Palace, Jokhang Temple, Barkhor Street (permit required) | May-Oct |
+
+## Which cities match what you want to see?
+
+If you don't know where to start, pick by what you most want out of the trip. These group the cities in the table above by theme (all reachable by high-speed rail unless noted).
+
+**History & heritage** — Beijing (Great Wall, Forbidden City) + Xi'an (Terracotta Warriors, city wall) + Nanjing (Ming city wall, Sun Yat-sen Mausoleum). The classic imperial-history arc; about 10–12 days for all three. If you want to go deeper, Datong (Yungang Grottoes) and Luoyang (Longmen Grottoes) are strong add-on / day-trip destinations rather than main bases.
+
+**Food** — Chengdu (Sichuan hotpot, mapo tofu) + Chongqing (the spiciest hotpot) + Guangzhou (Cantonese dim sum). A spice-to-subtle tour of two of China's great food traditions; about 8–10 days. Xi'an's Muslim Quarter is a strong street-food add-on. See [[wiki/concepts/food-dining.md]] for ordering and spice-tolerance tips.
+
+**Big-city & modern China** — Shanghai (the Bund, skyline) + Shenzhen (tech, modern architecture) + Beijing (capital energy alongside the history). For travelers who want contemporary China more than temples; about 8–10 days.
+
+**Nature & scenery** — Guilin / Yangshuo (karst rivers) + Zhangjiajie (the "Avatar" sandstone pillars) + the Yunnan towns (Lijiang, Dali). Slower-paced and scenic; about 10–14 days, with some segments needing a domestic flight.
+
+**Pandas & family** — Chengdu (Giant Panda Base) pairs naturally with either the food route or a short Beijing–Xi'an–Chengdu first-timer loop; easy and high-reward for kids.
+
+These are starting points, not fixed packages — mix a theme with the multi-city routes below to build your own trip.
 
 ## What are good multi-city routes for a China trip?
 
