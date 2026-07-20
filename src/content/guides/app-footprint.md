@@ -23,19 +23,33 @@ verified_against:
   - raw/realchinaguide-transport-guide-2026.md
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
 volatility: medium
-description: "Which apps foreign visitors actually need in China: a service-by-service matrix of what needs its own app versus a WeChat/Alipay mini-program. The two-wallet minimum install set."
-faqs:
-  - q: "Do I need to download a lot of apps to travel in China?"
-    a: "No. The minimum set is two wallets — WeChat and Alipay. Most services (DiDi, metro, bikes, food delivery, trains, tickets) run as mini-programs inside them, so you rarely need a separate app for each. Amap for navigation is the main standalone app, and iPhone users can use Apple Maps instead."
-  - q: "Which apps must I install as a separate download?"
-    a: "In practice just your wallets — WeChat and Alipay — and, for Android users, Amap for maps. Almost everything else is reachable through a WeChat or Alipay mini-program without its own download."
-  - q: "Can I use these China services in a web browser?"
-    a: "A few — Trip.com, 12306 (English site) and Dianping have web versions. Most Chinese services are built for the app or a mini-program rather than a browser, so plan to use your phone."
 review:
   status: audited
   page_audit: 2026-07-20
   citation_check: 2026-07-20
   notes: "2026-07-20: New reader-facing overview page created per traveler feedback (the 'I don't want to install a dozen apps for one trip' concern). It is a SYNTHESIS of already-audited pages, not new research: every three-state cell (own app / mini-program / web) is taken from existing entity and concept pages — wechat, alipay, didi, amap, dianping, meituan, eleme, 12306, trip-com, plus mini-programs / transportation / mobile-payment / attraction-ticketing. No new external claim is introduced. The 'web' column is deliberately sparse: only Dianping, Trip.com and 12306 have a documented browser option in those pages; other cells are left blank rather than guessed, since the wiki does not verify a web path for most services. page_audit = creation date."
+description: >-
+  Which apps foreign visitors actually need in China: a service-by-service
+  matrix of what needs its own app versus a WeChat/Alipay mini-program. The
+  two-wallet minimum install set.
+faqs:
+  - q: Do I need to download a lot of apps to travel in China?
+    a: >-
+      No. The minimum set is two wallets — WeChat and Alipay. Most services
+      (DiDi, metro, bikes, food delivery, trains, tickets) run as mini-programs
+      inside them, so you rarely need a separate app for each. Amap for
+      navigation is the main standalone app, and iPhone users can use Apple Maps
+      instead.
+  - q: Which apps must I install as a separate download?
+    a: >-
+      In practice just your wallets — WeChat and Alipay — and, for Android
+      users, Amap for maps. Almost everything else is reachable through a WeChat
+      or Alipay mini-program without its own download.
+  - q: Can I use these China services in a web browser?
+    a: >-
+      A few — Trip.com, 12306 (English site) and Dianping have web versions.
+      Most Chinese services are built for the app or a mini-program rather than
+      a browser, so plan to use your phone.
 category: guide
 ---
 
