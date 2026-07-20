@@ -45,8 +45,8 @@ faqs:
     a: >-
       Una IP no china procedente de una VPN puede activar los controles de fraude
       de Alipay/WeChat y provocar el rechazo de un pago. Desactiva la VPN para
-      pagar y vuelve a activarla después. En un eSIM extranjero con una VPN
-      siempre activa que no puedes desactivar, paga a través de una Wi-Fi china o
+      pagar y vuelve a activarla después. En una eSIM extranjera con una VPN
+      siempre activa que no puedes desactivar, paga a través del Wi-Fi chino o
       una SIM china para esa transacción.
   - q: ¿Por qué se rechazan los pagos de ¥200 o más?
     a: >-

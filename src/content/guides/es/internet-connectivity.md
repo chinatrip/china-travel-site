@@ -131,7 +131,7 @@ Consulta [[wiki/entities/didi.md]].
 - Instalar: busca "12306" en la App Store. En Android fuera de China, la versión de Google Play puede tener disponibilidad limitada: instala el APK desde 12306.cn si hace falta, o reserva a través del sitio web en inglés en [www.12306.cn](https://www.12306.cn)
 - Registra una cuenta con tu número de pasaporte
 - Añade la información del pasajero en **My → My Passengers**
-- Confirma que puedes buscar rutas: prueba una búsqueda Pekín → Shanghái para verificar que la cuenta funciona
+- Confirma que puedes buscar rutas: prueba una búsqueda Beijing → Shanghái para verificar que la cuenta funciona
 
 Consulta [[wiki/entities/12306.md]].
 
