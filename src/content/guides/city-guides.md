@@ -75,9 +75,6 @@ China has dozens of cities worth visiting, each with distinct character. This pa
 | Kashgar | Far West | 2-3 | Old City, Sunday Market, Uyghur culture, Karakoram Highway | May-Oct |
 | Lhasa | Tibet | 3-4 | Potala Palace, Jokhang Temple, Barkhor Street (permit required) | May-Oct |
 
-<<<<<<< site
-## What are good multi-city routes for a China trip?
-=======
 ## Which cities match what you want to see?
 
 If you don't know where to start, pick by what you most want out of the trip. These group the cities in the table above by theme (all reachable by high-speed rail unless noted).
@@ -94,8 +91,7 @@ If you don't know where to start, pick by what you most want out of the trip. Th
 
 These are starting points, not fixed packages — mix a theme with the multi-city routes below to build your own trip.
 
-## Popular Multi-City Routes
->>>>>>> wiki
+## What are good multi-city routes for a China trip?
 
 ### Classic First-Timer (14 days)
 Beijing (4-5d) > Xi'an (2-3d) > Chengdu (3-4d) > Shanghai (3-4d)
