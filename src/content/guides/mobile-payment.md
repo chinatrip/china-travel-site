@@ -1,7 +1,7 @@
 ---
 title: Mobile Payment for Foreign Visitors (Alipay, WeChat Pay)
 date: 2026-06-15
-last_verified: 2026-07-02
+last_verified: 2026-07-17
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
@@ -38,7 +38,7 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: 2026-07-02
-  notes: "2026-07-02: focused re-verify accompanying the TenPayGo alternative-wallet addition. Re-confirmed the anchor Tier-1 facts — gov.cn April 2024 circular still states the $5,000 single / $50,000 annual mobile-payment caps and the mandate that 3-star+ hotels, 4A/5A attractions, and national/provincial tourist resorts accept foreign bank cards (verbatim); the ¥200 fee-exemption / 3% foreign-card surcharge threshold remains current — anchored to the Beijing May 2025 circular already in verified_against (the Tier-1 authority; secondary 2026 travel guides corroborate but do not themselves justify it); no policy reversal found since the 2026-06-15 audit. Did NOT re-audit every downstream claim this round (limit tables, refund windows, failure modes retain their 2026-06-15 page_audit). Added the TenPayGo entry under Alternative Wallets + related link — see [[wiki/entities/tenpaygo.md]]."
+  notes: "2026-07-17: Added two reader-facing sections per traveler feedback — (1) a 'Which payment method works where?' scenario matrix grounded in the existing Quick Decision / 'Where Mobile Pay Doesn't Work' / PBOC-mandate content (no new claims), and (2) an 'Is it safe to link a foreign card?' section framing card-linking as pay-as-you-go authorization rather than a stored balance, with device-bound security described as a layer not a guarantee (consistent with the Lost Phone section) and binding a foreign card recommended over opening a domestic account. No new external source added; other sections not re-verified this round; page_audit unchanged. --- 2026-07-02: focused re-verify with the TenPayGo addition — re-confirmed anchor Tier-1 facts (gov.cn April 2024 $5,000/$50,000 caps + foreign-card POS mandate; ¥200/3% threshold via the Beijing May 2025 circular); no policy reversal since the 2026-06-15 audit. Limit tables, refund windows, and failure modes retain their 2026-06-15 page_audit."
 description: >-
   Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the
   April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed
@@ -88,7 +88,30 @@ For both Alipay and WeChat Pay, **AMEX is bindable but merchant acceptance is un
 
 **Set up both Alipay and WeChat Pay before arrival.** Different merchants accept different apps, SMS verification is more reliable on a foreign carrier than on a fresh Chinese SIM, and WeChat may trigger a contact-vouching step during registration from a foreign number — arrange a qualifying contact before departure if possible.
 
+<<<<<<< site
 ## What did the 2024 PBOC policy change for foreign visitors?
+=======
+## Which payment method works where?
+
+Foreign cards behave differently by venue. This maps everyday situations to what actually works — ✅ works, ⚠️ conditional, ❌ won't work — and where cash is the safe fallback. Alipay and WeChat Pay behave almost identically, so they share a column.
+
+| Where you're paying | Alipay / WeChat Pay + foreign card | Foreign card at POS / tap | Cash |
+|---|---|---|---|
+| Big stores, chains, sit-down restaurants (scan a QR) | ✅ | ⚠️ larger malls & hotels | ✅ |
+| Street stalls, small vendors | ⚠️ merchant QR only — a personal collect code will refuse | ❌ | ✅ safest |
+| Older street-hail taxis | ⚠️ many have no working QR | ❌ | ✅ |
+| DiDi ride-hailing | ✅ paid inside the app | ❌ | — |
+| Metro, Tier-1 cities (Beijing, Shanghai, etc.) | ✅ via the metro mini-program QR | ⚠️ some gates take foreign contactless tap — see [[wiki/concepts/transportation.md]] | ✅ ticket machine |
+| Metro, smaller cities | ❌ often a local-card-only system | ❌ | ✅ ticket machine or local transit card |
+| 3-star-plus hotels | ✅ | ✅ required to accept foreign cards (PBOC 2024) | ✅ |
+| 4A/5A attraction ticketing | ✅ | ✅ required (PBOC 2024) | ✅ |
+| Hospital registration desk | ⚠️ often domestic UnionPay only | ⚠️ international patient desk at big Grade-3 hospitals only | ✅ |
+| Government services (visa, residence) | ❌ | ✅ swipe where available | ✅ |
+
+The single most useful habit: **set up both Alipay and WeChat Pay, and carry ¥200–500 in small bills.** Between the two apps and a little cash, nearly every situation above is covered.
+
+## What Changed (2024–2025 PBOC Policy)
+>>>>>>> wiki
 
 The April 2024 circular jointly issued by the PBOC and several ministries reset the foreign-tourist payment story:
 
@@ -108,7 +131,22 @@ The earlier **Alipay Tour Pass** prepaid-wallet option is **no longer the recomm
 
 The per-platform tables below separate the **PBOC regulatory ceiling** (the maximum any platform may allow per transaction or per year) from **your actual account limit**. Alipay's and WeChat's own per-account limits are not publicly disclosed, and third-party reports of effective limits vary widely — one guide reports WeChat annual caps around ¥50,000–65,000 (chinavigators.com), far below the regulatory ceiling. Assume your effective limit may be much lower than the PBOC maximum; check in-app after completing ID verification to confirm your current account limit.
 
+<<<<<<< site
 ## How do I set up Alipay as a foreigner?
+=======
+## Is it safe to link a foreign card to Alipay or WeChat Pay?
+
+For most visitors, yes — with the same care you'd give any app that holds a card. What linking actually does, and the honest limits:
+
+- **You're authorizing pay-as-you-go charges, not handing over a balance.** Binding a card lets the app charge it for each payment you approve — you are not pre-loading money or giving the platform control of an account. Every payment shows the RMB amount and the FX rate before you confirm, so you approve each charge individually.
+- **You don't need a Chinese bank account or a stored balance.** Binding a foreign Visa or Mastercard directly is enough (see [[wiki/concepts/foreign-exchange.md]]) — there's no need to open a domestic account or move money into a wallet balance, which keeps your exposure to just the linked card.
+- **Device-bound security helps, but isn't a guarantee.** Both apps tie payments to your device with a PIN or biometric, which limits unauthorized charges if you lose the phone — treat it as a safety layer, not a promise. If your phone is lost or stolen, remotely sign out or freeze the account (both apps let you do this from a browser, covered further below) and call your card issuer to flag the card.
+- **Keep your exposure small and recoverable.** Prefer a card with low foreign-transaction fees, watch the in-app amount on every payment, and remember your card issuer's dispute process is the final backstop — cross-border refunds and chargebacks still route back to the original card.
+
+If you'd rather not link a card at all, you can still receive RMB from a local contact into your balance and spend that, or fall back to cash.
+
+## Alipay (Recommended First)
+>>>>>>> wiki
 
 ### Setup
 
@@ -292,7 +330,7 @@ Foreign visitors generally cannot complete either step. This blocks access to se
 
 ## City Metro Mini-Programs (Quick Reference)
 
-Metro systems in major cities use dedicated mini-programs accessible through both WeChat and Alipay. Generate a QR code, scan at turnstile entry, scan again at exit — payment auto-deducts from your linked card.
+Metro systems in major cities use dedicated mini-programs accessible through both WeChat and Alipay. Generate a QR code, scan at turnstile entry, scan again at exit — payment auto-deducts from your linked card. In addition, some Tier-1 city gates now accept a foreign contactless card tapped directly at the turnstile (Beijing's full network and Shanghai, as of mid-2026) — see [[wiki/concepts/transportation.md]] for which cities and cards support it.
 
 For the complete city-by-city metro mini-program table (with sources), see [[wiki/concepts/transportation.md#city-by-city-metro-apps]].
 
