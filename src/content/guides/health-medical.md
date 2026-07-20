@@ -57,13 +57,9 @@ category: guide
 
 # Health and Medical Care for Foreign Visitors
 
-<<<<<<< site
-## What are the medical emergency numbers in China?
-=======
 > **Medical disclaimer:** This page is general travel-health information, not medical advice, and does not replace diagnosis or treatment by a qualified professional. Drug names, doses, and vaccine schedules are summarized from public health authorities (CDC, WHO, UK NHS) for orientation only — confirm anything that applies to you with a travel-medicine clinic or your own doctor before acting on it. If you develop a high fever, a severe allergic reaction, difficulty breathing, a persistent or worsening symptom, or anything else that alarms you, seek care at a proper medical facility promptly rather than self-treating.
 
-## Emergency Numbers
->>>>>>> wiki
+## What are the medical emergency numbers in China?
 
 For medical emergencies, dial **120** (ambulance — nationwide, Chinese-speaking operators). Police are **110** and fire is **119**, both nationwide. In Beijing only, **999** is an additional medical emergency line with some English support. For the complete emergency-numbers table (traffic accidents 122, the 12345 government services hotline) and practical tips on calling, see [[wiki/concepts/emergency-safety.md]].
 
