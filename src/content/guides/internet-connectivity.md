@@ -1,7 +1,7 @@
 ---
 title: Internet Access and the Great Firewall for Foreign Visitors
 date: 2026-07-01
-last_verified: 2026-07-01
+last_verified: 2026-07-20
 verified_against:
   - https://chinasurvivalkit.com/blog/china-firewall-test-websites-apps-guide
   - https://nordvpn.com/blog/vpn-for-china/
@@ -24,7 +24,7 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: 2026-07-01
-  notes: "2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round."
+  notes: "2026-07-20: Added a reader-facing 'Can I access Google/Gmail/WhatsApp from my hotel in China?' section per traveler feedback. Its one non-generic claim — that some international-chain hotels (e.g. Holiday Inn, per one business traveler's report) have had room Wi-Fi reaching international services without a VPN — is explicitly framed as an unverified individual anecdote (not a guarantee, varies by property, changes over time); no hotel is presented as a reliable or endorsed option, and readers are steered to ask the hotel directly and to bring their own eSIM/VPN. No new external source added (the anecdote is traveler feedback, deliberately NOT asserted as verified fact); other sections not re-verified this round; page_audit unchanged. --- 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round."
 description: >-
   What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs
   still work after the 2026 crackdown, and why a foreign eSIM bypasses it with
@@ -96,6 +96,17 @@ As of 2026, the GFW blocks thousands of domains and services (source: chinasurvi
 | Search | Baidu (Chinese-language results) |
 
 **Public Wi-Fi note:** most free public Wi-Fi in China (airports, malls, metro stations) requires SMS authentication to a Chinese mobile number to connect. Without a local SIM you may not be able to use it. A foreign eSIM or hotel Wi-Fi (which typically uses room credentials) avoids this barrier.
+
+## Can I access Google, Gmail and WhatsApp from my hotel in China?
+
+Usually not on the hotel Wi-Fi itself — like other in-country connections, standard hotel Wi-Fi runs through the Great Firewall, so Google, Gmail, WhatsApp and similar services are blocked unless you use a VPN or a foreign eSIM. Some business travelers report that certain international-chain hotels have had room Wi-Fi reaching international services without a VPN — one frequent visitor, for example, books Holiday Inn partly for this reason. **Treat this as individual travelers' past experience, not a guarantee:** it is not something we have verified, hotel network policies vary by property and change over time, and you should not count on it.
+
+If reliable access to Google / WhatsApp / office tools matters for your trip:
+
+- **Ask the hotel directly before booking** — "Does the room Wi-Fi have unrestricted international access, or will I need a VPN?"
+- **Bring your own option that doesn't depend on the hotel:** a foreign eSIM reaches international services without a VPN (covered in the foreign-eSIM section further down this page, and in [[wiki/concepts/sim-card.md]]), and a VPN — including a company VPN — set up before arrival is the standard business solution (see the VPN setup section further down this page).
+
+Don't rely on any single hotel's network for critical connectivity — carry your own eSIM or a tested VPN as the reliable path.
 
 ## What should I set up before arriving in China?
 
