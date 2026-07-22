@@ -74,6 +74,15 @@ const alternates = alternatesFor(Astro.url.pathname);
       )}
     <link rel="sitemap" href="/sitemap-index.xml" />
 
+    <!-- Favicons / touch icon / web manifest. Branded ❦ (brand red #dc2626)
+         replacing the Astro starter default; declared so Google (favicon-in-search)
+         and Yandex (>=120px) show it in results. -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content={fullTitle} />
