@@ -17,6 +17,7 @@ sources:
 related:
   - wiki/concepts/sim-card.md
   - wiki/concepts/mobile-payment.md
+  - wiki/concepts/payment-failures.md
   - wiki/concepts/remote-work-china.md
   - wiki/concepts/language-barrier.md
 volatility: high
