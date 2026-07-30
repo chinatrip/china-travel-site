@@ -33,6 +33,7 @@ related:
   - wiki/entities/wechat.md
   - wiki/entities/tenpaygo.md
   - wiki/concepts/remote-work-china.md
+  - wiki/concepts/sim-card.md
 volatility: high
 review:
   status: audited
