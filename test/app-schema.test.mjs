@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readdirSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 import { buildSoftwareApplication, APP_SLUGS } from '../src/lib/app-schema.mjs';
@@ -53,13 +53,31 @@ test('SoftwareApplication nodes carry no fabricated ratings or reviews', () => {
   }
 });
 
+const APP_CONTENT_FILES = readdirSync(APPS_DIR).filter((f) => f.endsWith('.md'));
+
 test('every mapped slug points at a real app content file', () => {
-  const contentSlugs = new Set(
-    readdirSync(APPS_DIR)
-      .filter((f) => f.endsWith('.md'))
-      .map((f) => f.replace(/\.md$/, '')),
-  );
+  const contentSlugs = new Set(APP_CONTENT_FILES.map((f) => f.replace(/\.md$/, '')));
   for (const slug of APP_SLUGS) {
     assert.ok(contentSlugs.has(slug), `${slug}: mapped in app-schema but no src/content/apps/${slug}.md`);
+  }
+});
+
+// Reverse direction (guards against silent drift): every app page that will
+// actually build must have a mapping, or it ships with no SoftwareApplication
+// `about` and nothing catches it. apps/[id].astro builds only status: audited
+// pages, and the content schema defaults an omitted status to 'audited', so an
+// absent status field still means the page builds.
+test('every built (audited) app content file has a SoftwareApplication mapping', () => {
+  const mapped = new Set(APP_SLUGS);
+  for (const f of APP_CONTENT_FILES) {
+    const slug = f.replace(/\.md$/, '');
+    const src = readFileSync(join(APPS_DIR, f), 'utf8');
+    const m = src.match(/^status:\s*["']?([^"'\n]+?)["']?\s*$/m);
+    const status = m ? m[1].trim() : 'audited';
+    if (status !== 'audited') continue; // unbuilt drafts don't need a mapping
+    assert.ok(
+      mapped.has(slug),
+      `${slug}: audited app page will build with no SoftwareApplication — add it to APPS in src/lib/app-schema.mjs`,
+    );
   }
 });
