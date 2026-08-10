@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import GuideLayout from '../../layouts/GuideLayout.astro';
+import { buildSoftwareApplication } from '../../lib/app-schema.mjs';
 
 export async function getStaticPaths() {
   const apps = await getCollection('apps', ({ data }) => data.status === 'audited');
@@ -12,6 +13,9 @@ export async function getStaticPaths() {
 
 const { app } = Astro.props;
 const { Content } = await render(app);
+
+// Entity-link this app guide to the SoftwareApplication it documents (about node).
+const softwareApp = buildSoftwareApplication(app.id);
 ---
 
 <GuideLayout
@@ -25,6 +29,7 @@ const { Content } = await render(app);
   category="app"
   faqs={app.data.faqs}
   related={app.data.related}
+  softwareApp={softwareApp}
 >
   <Content />
 </GuideLayout>
