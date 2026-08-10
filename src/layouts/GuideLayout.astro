@@ -22,9 +22,12 @@ interface Props {
   related?: string[];
   /** Page locale — drives the localized chrome (breadcrumb, headings, dates). */
   lang?: string;
+  /** Optional SoftwareApplication node embedded as the Article's `about`
+   *  (app pages only; built in src/lib/app-schema.mjs). */
+  softwareApp?: Record<string, unknown> | null;
 }
 
-const { title, description, date, lastVerified, verifiedBy, verifiedAgainst, volatility, category, faqs, related, lang = 'en' } = Astro.props;
+const { title, description, date, lastVerified, verifiedBy, verifiedAgainst, volatility, category, faqs, related, softwareApp, lang = 'en' } = Astro.props;
 
 // Visible verifier byline — falls back to the team byline so every page
 // carries an accountable name even before per-page verified_by lands (#38).
@@ -122,12 +125,15 @@ const articleSchema = {
   "headline": title,
   ...(description && { "description": description }),
   "url": canonicalURL,
+  "inLanguage": lang,
   "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalURL },
   "image": [defaultImage],
   ...(date && { "datePublished": toISODate(date) }),
   ...(lastVerified && { "dateModified": toISODate(lastVerified) }),
   "author": organization,
   "publisher": organization,
+  // App pages entity-link the guide to the software it documents (about node).
+  ...(softwareApp && { "about": softwareApp }),
 };
 
 const breadcrumbSchema = {
@@ -145,6 +151,7 @@ const faqSchema = hasFaqs
   ? {
       "@context": "https://schema.org",
       "@type": "FAQPage",
+      "inLanguage": lang,
       "mainEntity": faqs!.map((f) => ({
         "@type": "Question",
         "name": f.q,
