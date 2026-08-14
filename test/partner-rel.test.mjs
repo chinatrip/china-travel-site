@@ -28,8 +28,24 @@ test('matches a partner domain and its subdomains', () => {
 test('does not match lookalike or unrelated domains', () => {
   assert.equal(isPartnerUrl('https://notnomadesim.com/'), false, 'suffix lookalike must not match');
   assert.equal(isPartnerUrl('https://nomadesim.com.evil.test/'), false, 'domain-in-subdomain must not match');
+  assert.equal(isPartnerUrl('https://nomadesim.com@attacker.test/'), false, 'userinfo must not be read as the host');
+  assert.equal(isPartnerUrl('https://xn--nmadesim-p1a.com/'), false, 'punycode homograph must not match');
   assert.equal(isPartnerUrl('https://www.airalo.com/china-esim'), false);
   assert.equal(isPartnerUrl('https://esim.holafly.com/esim-china/'), false);
+});
+
+// Both of these render as working outbound partner links, so missing them
+// would ship an unqualified paid link — the dangerous direction.
+test('matches partner links that are protocol-relative or use a trailing-dot FQDN', () => {
+  assert.equal(isPartnerUrl('//nomadesim.com/x'), true, 'protocol-relative link resolves to https');
+  assert.equal(isPartnerUrl('//www.nomadesim.com/china-eSIM'), true);
+  assert.equal(isPartnerUrl('https://nomadesim.com./x'), true, 'trailing root label is the same host');
+  assert.equal(isPartnerUrl('https://www.nomadesim.com./x'), true);
+});
+
+test('tolerates a configured domain written with stray dots', () => {
+  assert.equal(isPartnerUrl('https://example.test/a', ['.example.test.']), true);
+  assert.equal(isPartnerUrl('https://example.test/a', ['']), false, 'empty entry must not match everything');
 });
 
 test('ignores internal, relative, non-http and malformed URLs', () => {
@@ -100,11 +116,40 @@ test('non-anchor elements and childless nodes do not crash the walk', () => {
   assert.equal(img.properties.rel, undefined);
 });
 
+// ---- pipeline wiring -------------------------------------------------------
+// The unit tests above import the plugin directly, so they all pass even if the
+// plugin is never registered. This renders markdown through the *configured*
+// pipeline, so deleting the `rehypePlugins` line in astro.config.mjs fails here.
+
+test('the configured markdown pipeline stamps rel="sponsored" on partner links', async () => {
+  const [{ createMarkdownProcessor }, { default: astroConfig }] = await Promise.all([
+    import('@astrojs/markdown-remark'),
+    import('../astro.config.mjs'),
+  ]);
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: astroConfig.markdown?.remarkPlugins ?? [],
+    rehypePlugins: astroConfig.markdown?.rehypePlugins ?? [],
+  });
+  const { code } = await processor.render(
+    '[Nomad eSIM](https://www.nomadesim.com/china-eSIM) and [Airalo](https://www.airalo.com/china-esim).',
+  );
+
+  const anchors = [...code.matchAll(/<a\b[^>]*>/g)].map((m) => m[0]);
+  const partner = anchors.find((t) => t.includes('nomadesim.com'));
+  const other = anchors.find((t) => t.includes('airalo.com'));
+
+  assert.ok(partner, `expected a partner anchor in rendered output:\n${code}`);
+  assert.match(partner, /\srel="(?:[^"]*\s)?sponsored(?:\s[^"]*)?"/, 'partner link must be qualified by the configured pipeline');
+  assert.ok(other, 'expected the non-partner anchor too');
+  assert.doesNotMatch(other, /\srel=/, 'non-partner link must be left alone');
+});
+
 // ---- build output ----------------------------------------------------------
 // Guards the real contract: whatever the content says, no built page may link
-// to a partner domain without the qualifier. Vacuous until the first partner
-// link lands in content (it arrives via the wiki sync) — the unit tests above
-// are the always-on guard.
+// to a partner domain without the qualifier. Currently vacuous — the first
+// partner link arrives via the wiki sync — and it only runs at all because an
+// earlier test file builds dist/ in a before() hook, so treat it as a bonus
+// net: the wiring test above is what actually pins the registration.
 
 const DIST = join(here, '..', 'dist');
 const distSkip = !existsSync(DIST) && 'dist/ not built (unit tests cover the contract)';

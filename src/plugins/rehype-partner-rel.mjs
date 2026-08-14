@@ -5,9 +5,14 @@
 // markdown. Raw <a rel="..."> in a page would be the only HTML in the corpus,
 // it would round-trip through the wiki vault, and it would show up verbatim in
 // the `.md` siblings and llms.txt we serve to AI agents. Applying the qualifier
-// at render time keeps the source clean and makes the rule impossible to forget:
-// a partner link can never reach a built page without its qualifier, because the
-// list lives here rather than in prose.
+// at render time keeps the source clean and means the rule lives in one place
+// rather than in every author's memory.
+//
+// Coverage limit, stated honestly: this transforms parsed markdown links. A raw
+// inline <a> written into a page stays a `raw` node at this stage and is NOT
+// rewritten. No content in this repo or the wiki vault uses raw anchors — the
+// whole point of this plugin is that none has to — but "markdown links only" is
+// the guarantee, not "every anchor".
 //
 // rel="sponsored" is Google's documented value for links created as part of a
 // compensation or link-exchange agreement. Editorial links to the same domain
@@ -19,10 +24,32 @@
 /** Domains whose outbound links must carry rel="sponsored". */
 export const PARTNER_DOMAINS = ['nomadesim.com'];
 
+/** Site origin, used only as a resolution base — never matched against. */
+const RESOLUTION_BASE = 'https://chinaguide.ai/';
+
 /**
- * True when `url` is an absolute http(s) URL whose host is a partner domain —
- * exact match or a subdomain of one. Lookalikes ("notnomadesim.com") and
- * relative/internal links do not match.
+ * Normalize a host for comparison: lowercase, and drop the DNS root label so
+ * "nomadesim.com." (a valid, working FQDN) compares equal to "nomadesim.com".
+ * Also tolerates a configured domain written with stray leading/trailing dots.
+ */
+function normalizeHost(value) {
+  return String(value).toLowerCase().replace(/^\.+/, '').replace(/\.+$/, '');
+}
+
+/**
+ * True when `url` resolves to an http(s) URL whose host is a partner domain —
+ * exact match or a subdomain of one.
+ *
+ * Resolution uses a base so that protocol-relative links ("//partner.com/x"),
+ * which render as working outbound links, are still caught; the protocol check
+ * then rejects mailto:/javascript:/etc, and relative links resolve to our own
+ * host and fall through as non-partner. Missing a real partner link is the
+ * dangerous direction — it means an unqualified paid link ships — so the parse
+ * is deliberately permissive while the host comparison stays strict.
+ *
+ * Lookalikes ("notnomadesim.com"), domain-in-subdomain
+ * ("nomadesim.com.evil.test"), userinfo ("nomadesim.com@attacker.test") and
+ * punycode homographs do not match.
  * @param {unknown} url
  * @param {string[]} [domains]
  * @returns {boolean}
@@ -31,14 +58,15 @@ export function isPartnerUrl(url, domains = PARTNER_DOMAINS) {
   if (typeof url !== 'string') return false;
   let host;
   try {
-    const parsed = new URL(url);
+    const parsed = new URL(url, RESOLUTION_BASE);
     if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return false;
-    host = parsed.hostname.toLowerCase();
+    host = normalizeHost(parsed.hostname);
   } catch {
-    return false; // relative/internal link, or malformed
+    return false; // malformed beyond resolution
   }
   return domains.some((entry) => {
-    const domain = String(entry).toLowerCase();
+    const domain = normalizeHost(entry);
+    if (!domain) return false;
     return host === domain || host.endsWith(`.${domain}`);
   });
 }
