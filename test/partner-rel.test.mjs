@@ -6,6 +6,7 @@ import { join, dirname } from 'node:path';
 import rehypePartnerRel, {
   isPartnerUrl,
   withSponsored,
+  assertValidDomains,
   PARTNER_DOMAINS,
 } from '../src/plugins/rehype-partner-rel.mjs';
 
@@ -55,6 +56,41 @@ test('ignores internal, relative, non-http and malformed URLs', () => {
   for (const url of [undefined, null, 42, {}]) {
     assert.equal(isPartnerUrl(url), false, `${JSON.stringify(url)} must not match`);
   }
+});
+
+// ---- partner list validation -----------------------------------------------
+// The list is where a future partner gets added, and every wrong way of writing
+// an entry fails silently in the fail-open direction. It must throw instead.
+
+test('the shipped PARTNER_DOMAINS list is well-formed', () => {
+  assert.doesNotThrow(() => assertValidDomains(PARTNER_DOMAINS));
+  assert.ok(PARTNER_DOMAINS.length > 0);
+});
+
+test('malformed partner entries throw rather than matching nothing', () => {
+  for (const bad of [
+    'https://nomadesim.com',     // scheme
+    'nomadesim.com/china-eSIM',  // path
+    'nomadesim.com:443',         // port
+    'nomadesim',                 // no TLD
+    'nomädesim.com',             // unicode IDN — must be punycode
+    '',
+    '   ',
+    null,
+    42,
+  ]) {
+    assert.throws(
+      () => assertValidDomains([bad]),
+      /invalid partner domain|must be an array/,
+      `${JSON.stringify(bad)} must be rejected`,
+    );
+  }
+  assert.throws(() => assertValidDomains('nomadesim.com'), TypeError, 'a bare string is not a list');
+});
+
+test('the plugin factory validates a custom domain list', () => {
+  assert.throws(() => rehypePartnerRel({ domains: ['https://example.test'] }), /invalid partner domain/);
+  assert.doesNotThrow(() => rehypePartnerRel({ domains: ['example.test'] }));
 });
 
 // ---- rel merging -----------------------------------------------------------

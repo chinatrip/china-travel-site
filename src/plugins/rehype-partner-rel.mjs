@@ -36,6 +36,34 @@ function normalizeHost(value) {
   return String(value).toLowerCase().replace(/^\.+/, '').replace(/\.+$/, '');
 }
 
+/** A bare, already-punycoded host: "example.com", "a.example.co.uk". */
+const BARE_HOST = /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+$/;
+
+/**
+ * Reject malformed partner entries loudly at load time. This list is the one
+ * place a future partner gets added, and every way of writing it wrong
+ * ("https://partner.com", "partner.com/china", a unicode IDN) fails silently in
+ * the fail-open direction — matching nothing, shipping unqualified paid links.
+ * A build-time throw is the cheap end of that trade.
+ * @param {string[]} domains
+ * @returns {string[]} the same list, when valid
+ */
+export function assertValidDomains(domains) {
+  if (!Array.isArray(domains)) throw new TypeError('rehype-partner-rel: domains must be an array');
+  for (const entry of domains) {
+    if (typeof entry !== 'string' || !BARE_HOST.test(normalizeHost(entry))) {
+      throw new Error(
+        `rehype-partner-rel: invalid partner domain ${JSON.stringify(entry)} — ` +
+          'expected a bare host such as "example.com" (no scheme, no path, no port; ' +
+          'use the punycode form for internationalised domains)',
+      );
+    }
+  }
+  return domains;
+}
+
+assertValidDomains(PARTNER_DOMAINS);
+
 /**
  * True when `url` resolves to an http(s) URL whose host is a partner domain —
  * exact match or a subdomain of one.
@@ -90,7 +118,7 @@ export function withSponsored(rel) {
  * @param {{ domains?: string[] }} [options]
  */
 export default function rehypePartnerRel(options = {}) {
-  const domains = options.domains ?? PARTNER_DOMAINS;
+  const domains = assertValidDomains(options.domains ?? PARTNER_DOMAINS);
   return (tree) => {
     const walk = (node) => {
       if (!node || typeof node !== 'object') return;
