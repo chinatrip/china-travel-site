@@ -1,5 +1,6 @@
-import { test } from 'node:test';
+import { test, before } from 'node:test';
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, dirname, sep } from 'node:path';
@@ -12,8 +13,8 @@ import { SUPPORT_CONTACT_POINT } from '../src/lib/home-schema.mjs';
 // ways:
 //   1. Source-level (hermetic, build-independent): the layout shares the
 //      SUPPORT_CONTACT_POINT export rather than re-spelling the value.
-//   2. Build-output (when a fresh dist exists): the emitted Article schema's
-//      author + publisher actually carry the contactPoint.
+//   2. Build-output (builds dist/ on demand, so it always runs): the emitted
+//      Article schema's author + publisher actually carry the contactPoint.
 
 const here = dirname(fileURLToPath(import.meta.url));
 const GUIDE_LAYOUT = join(here, '..', 'src', 'layouts', 'GuideLayout.astro');
@@ -56,8 +57,22 @@ test('GuideLayout embeds the optional SoftwareApplication as the Article about n
   );
 });
 
-// ---- 2. build-output assertion (runs only against a fresh dist) ------------
-const DIST = join(here, '..', 'dist');
+// ---- 2. build-output assertions (always run; dist/ is built on demand) -----
+const ROOT = join(here, '..');
+const DIST = join(ROOT, 'dist');
+
+// Build on demand. These assertions previously skipped in CI on every run: the
+// `npm test` chain runs `node --test` BEFORE `astro build`, and the only reason
+// dist/ ever existed at this point was that listing-pages-seo.test.mjs builds it
+// in a before() hook — and that file sorts AFTER this one alphabetically, so it
+// never helped here. The result was five end-to-end schema checks reporting
+// "# SKIP dist/ not built" while the suite looked green.
+function ensureBuilt() {
+  if (existsSync(join(DIST, 'index.html'))) return;
+  execFileSync('npx', ['astro', 'build'], { cwd: ROOT, stdio: 'ignore' });
+}
+
+before(() => ensureBuilt(), { timeout: 180_000 });
 
 /** Recursively collect .html files under dir. */
 function collectHtml(dir, out = []) {
@@ -95,17 +110,14 @@ function guideArticleSchemas() {
   return schemas;
 }
 
-// Note: in the `npm test` chain `node --test` runs before `astro build`, so on
-// a clean checkout there is no dist yet and these skip; the source-level tests
-// above are the always-on guard. When a (fresh) dist is present they verify the
-// emitted JSON-LD end-to-end.
-const distSkip = !existsSync(DIST) && 'dist/ not built (source-level tests cover the contract)';
-
-test('built guide pages emit an Article schema', { skip: distSkip }, () => {
+// These build dist/ themselves (see ensureBuilt above), so they verify the
+// emitted JSON-LD end-to-end on every run rather than silently skipping. The
+// source-level tests above remain the cheap first line of defence.
+test('built guide pages emit an Article schema', () => {
   assert.ok(guideArticleSchemas().length > 0, 'expected at least one built Article schema');
 });
 
-test('built Article author + publisher Organizations carry the support contactPoint (#38)', { skip: distSkip }, () => {
+test('built Article author + publisher Organizations carry the support contactPoint (#38)', () => {
   for (const { file, schema } of guideArticleSchemas()) {
     assert.equal(schema.publisher?.['@type'], 'Organization', `${file}: publisher must be an Organization`);
     assert.equal(schema.publisher['@id'], 'https://chinaguide.ai/#organization', `${file}: publisher @id must match the canonical entity`);
@@ -114,7 +126,7 @@ test('built Article author + publisher Organizations carry the support contactPo
   }
 });
 
-test('every built Article declares a supported inLanguage', { skip: distSkip }, () => {
+test('every built Article declares a supported inLanguage', () => {
   const schemas = guideArticleSchemas();
   assert.ok(schemas.length > 0, 'expected built Article schemas');
   for (const { file, schema } of schemas) {
@@ -125,7 +137,7 @@ test('every built Article declares a supported inLanguage', { skip: distSkip }, 
   }
 });
 
-test('built Spanish guide Articles declare inLanguage "es"', { skip: distSkip }, () => {
+test('built Spanish guide Articles declare inLanguage "es"', () => {
   const esArticles = guideArticleSchemas().filter(({ file }) => file.includes(`${sep}es${sep}`));
   assert.ok(esArticles.length > 0, 'expected at least one built /es/ Article');
   for (const { file, schema } of esArticles) {
@@ -133,7 +145,7 @@ test('built Spanish guide Articles declare inLanguage "es"', { skip: distSkip },
   }
 });
 
-test('built app pages embed a SoftwareApplication about node (no fabricated ratings)', { skip: distSkip }, () => {
+test('built app pages embed a SoftwareApplication about node (no fabricated ratings)', () => {
   const appArticles = guideArticleSchemas().filter(({ file }) => file.includes(`${sep}apps${sep}`));
   assert.ok(appArticles.length > 0, 'expected built /apps/ Article pages');
   for (const { file, schema } of appArticles) {
