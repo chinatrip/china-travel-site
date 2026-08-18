@@ -34,10 +34,18 @@ faqs:
   - q: 'Do I need a VPN to access Google, WhatsApp and Instagram in China?'
     a: >-
       Only if you connect through a Chinese SIM or local Wi-Fi. A foreign eSIM
-      (Airalo, Holafly, Nomad) routes your data via international roaming
+      (Airalo, Holafly, Nomad eSIM) routes your data via international roaming
       through gateways outside mainland China, so it bypasses the Great Firewall
       and blocked services work without a VPN. With a Chinese SIM or local Wi-Fi
       you do need a working VPN.
+  - q: What is the best eSIM for tourists visiting China?
+    a: >-
+      There is no single best one — they all bypass the Great Firewall without a
+      separate VPN, so pick by what you care about. Want a VPN bundled in:
+      Holafly. Want the cheapest short fixed-data pack: Airalo. Want both
+      fixed-data and unlimited plans plus hotspot sharing: Nomad eSIM. Want the
+      cheapest small data caps: Ubigi. Check the provider's current China page
+      before buying — plans and prices change often.
   - q: Which VPNs still work in China in 2026?
     a: >-
       As of June 2026, Astrill (StealthVPN) and ExpressVPN (Lightway) are the
