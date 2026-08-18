@@ -11,6 +11,7 @@ import matter from 'gray-matter';
 import remarkWikiLinks from './src/plugins/remark-wikilinks.mjs';
 import remarkTrailingSlash from './src/plugins/remark-trailing-slash.mjs';
 import remarkStripLeadingH1 from './src/plugins/remark-strip-leading-h1.mjs';
+import rehypePartnerRel from './src/plugins/rehype-partner-rel.mjs';
 import { buildLastmodMap, lastmodFor } from './src/lib/sitemap-dates.mjs';
 
 // Sitemap <lastmod>: read content frontmatter (last_verified || date) at build
@@ -67,6 +68,9 @@ export default defineConfig({
 
   markdown: {
     remarkPlugins: [remarkStripLeadingH1, remarkWikiLinks, remarkTrailingSlash],
+    // Qualifies outbound partner/sponsored links at render time so content
+    // stays plain markdown (see src/plugins/rehype-partner-rel.mjs).
+    rehypePlugins: [rehypePartnerRel],
     shikiConfig: {
       theme: 'github-light',
     },
