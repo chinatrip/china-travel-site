@@ -1,7 +1,9 @@
-import { test } from 'node:test';
+import { test, before } from 'node:test';
 import assert from 'node:assert/strict';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
-import { join } from 'node:path';
+import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
+import { join, dirname } from 'node:path';
 
 // Accessibility fallbacks live in the single global stylesheet (imported by
 // BaseLayout, so they apply site-wide). Two gaps these guards lock in:
@@ -10,8 +12,8 @@ import { join } from 'node:path';
 //      touching individual components (e.g. GuideCard hover:-translate-y).
 //   2. :focus-visible — a visible, high-contrast keyboard focus ring instead
 //      of relying on the (unverified-contrast) browser default.
-// We assert on the *source* CSS (deterministic, no build needed) and, when a
-// dist build is present, that both blocks survive Tailwind/Astro bundling.
+// We assert on the *source* CSS (deterministic, no build needed) and, against a
+// dist built on demand, that both blocks survive Tailwind/Astro bundling.
 
 const SOURCE_CSS = 'src/styles/global.css';
 const ASTRO_DIR = join('dist', '_astro');
@@ -70,16 +72,27 @@ test('source global.css defines a :focus-visible outline ring', () => {
   assert.match(rule, /outline-offset:/, ':focus-visible should set outline-offset');
 });
 
-// Build-product guard: only runs when a dist build already exists. The npm
-// test chain runs `node --test` before `astro build`, so this is best-effort
-// here; the full chain still rebuilds dist afterwards.
-const cssFiles = existsSync(ASTRO_DIR)
-  ? readdirSync(ASTRO_DIR)
-      .filter((f) => f.endsWith('.css'))
-      .map((f) => join(ASTRO_DIR, f))
-  : [];
+// Build-product guard. This used to be best-effort — `npm test` runs
+// `node --test` before `astro build`, so on a clean checkout dist/ did not
+// exist yet and the assertion silently reported "# SKIP". This file sorts first
+// alphabetically, so nothing else had built dist/ for it either: in CI it
+// skipped on every run. It now builds on demand, and resolves the CSS files
+// inside the test rather than at module load, so the build has already happened
+// by the time they are read.
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-test('built dist CSS keeps both a11y blocks (skipped if no dist build)', { skip: cssFiles.length === 0 }, () => {
+function ensureBuilt() {
+  if (existsSync(ASTRO_DIR)) return;
+  execFileSync('npx', ['astro', 'build'], { cwd: ROOT, stdio: 'ignore' });
+}
+
+before(() => ensureBuilt(), { timeout: 180_000 });
+
+test('built dist CSS keeps both a11y blocks', () => {
+  const cssFiles = readdirSync(ASTRO_DIR)
+    .filter((f) => f.endsWith('.css'))
+    .map((f) => join(ASTRO_DIR, f));
+  assert.ok(cssFiles.length > 0, 'expected at least one built CSS bundle in dist/_astro');
   const dist = squash(cssFiles.map((f) => readFileSync(f, 'utf8')).join('\n'));
   assert.match(dist, /@media\s*\(\s*prefers-reduced-motion:\s*reduce\s*\)/, 'reduced-motion block missing from built CSS');
   assert.match(dist, /animation-duration:\s*0?\.01ms\s*!important/, 'reduced-motion duration reset missing from built CSS');
