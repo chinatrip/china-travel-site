@@ -9,6 +9,7 @@ import rehypePartnerRel, {
   assertValidDomains,
   PARTNER_DOMAINS,
 } from '../src/plugins/rehype-partner-rel.mjs';
+import { outboundRel } from '../src/lib/partner-links.mjs';
 
 // Outbound links to commercial partners must carry rel="sponsored" (Google's
 // value for compensated / link-exchange placements). The plugin applies it at
@@ -150,6 +151,26 @@ test('non-anchor elements and childless nodes do not crash the walk', () => {
   const text = { type: 'text', value: 'https://nomadesim.com/' };
   assert.doesNotThrow(() => rehypePartnerRel()(tree(img, text)));
   assert.equal(img.properties.rel, undefined);
+});
+
+// ---- component-rendered links -----------------------------------------------
+// The "Sources & verification" list and the /updates/ feed build their anchors
+// in .astro, so they never reach the rehype plugin. They ask for the rel here.
+// This gap shipped once: adding a partner URL to a page's verified_against
+// produced an unqualified partner link, caught by the dist guard below.
+
+test('outboundRel appends sponsored only for partner links', () => {
+  assert.equal(outboundRel('https://www.nomadesim.com/china-eSIM'), 'nofollow noopener sponsored');
+  assert.equal(outboundRel('//nomadesim.com/x'), 'nofollow noopener sponsored');
+  assert.equal(outboundRel('https://www.airalo.com/china-esim'), 'nofollow noopener');
+  assert.equal(outboundRel('https://esim.holafly.com/esim-china/'), 'nofollow noopener');
+  assert.equal(outboundRel('https://en.nia.gov.cn/x'), 'nofollow noopener');
+});
+
+test('outboundRel honours a custom base rel and never duplicates', () => {
+  assert.equal(outboundRel('https://nomadesim.com/x', 'noopener'), 'noopener sponsored');
+  assert.equal(outboundRel('https://nomadesim.com/x', 'noopener sponsored'), 'noopener sponsored');
+  assert.equal(outboundRel('https://example.test/x', 'noopener'), 'noopener');
 });
 
 // ---- pipeline wiring -------------------------------------------------------
