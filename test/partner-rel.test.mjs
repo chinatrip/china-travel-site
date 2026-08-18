@@ -1,5 +1,6 @@
-import { test } from 'node:test';
+import { test, before } from 'node:test';
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
@@ -201,6 +202,24 @@ test('the configured markdown pipeline stamps rel="sponsored" on partner links',
   assert.doesNotMatch(other, /\srel=/, 'non-partner link must be left alone');
 });
 
+// ---- component call sites ---------------------------------------------------
+// The dist guard only catches these when partner content happens to be present,
+// so pin the wiring itself: reverting either call site to a hard-coded rel must
+// fail here, not wait for a content change to expose it.
+
+test('the components that render outbound source links ask for outboundRel', () => {
+  for (const rel of [
+    ['src/layouts/GuideLayout.astro', /rel=\{outboundRel\(src\)\}/],
+    ['src/pages/updates.astro', /rel=\{outboundRel\(src\.url\)\}/],
+  ]) {
+    const [file, pattern] = rel;
+    const src = readFileSync(join(here, '..', file), 'utf8');
+    assert.match(src, /from ['"](\.\.\/)+lib\/partner-links\.mjs['"]/, `${file} must import the partner-link policy`);
+    assert.match(src, pattern, `${file} must set rel via outboundRel, not a hard-coded string`);
+    assert.doesNotMatch(src, /rel="nofollow noopener"/, `${file} must not hard-code an outbound rel`);
+  }
+});
+
 // ---- build output ----------------------------------------------------------
 // Guards the real contract: whatever the content says, no built page may link
 // to a partner domain without the qualifier. Currently vacuous — the first
@@ -208,8 +227,21 @@ test('the configured markdown pipeline stamps rel="sponsored" on partner links',
 // earlier test file builds dist/ in a before() hook, so treat it as a bonus
 // net: the wiring test above is what actually pins the registration.
 
-const DIST = join(here, '..', 'dist');
-const distSkip = !existsSync(DIST) && 'dist/ not built (unit tests cover the contract)';
+const ROOT = join(here, '..');
+const DIST = join(ROOT, 'dist');
+
+// Build on demand rather than hoping dist/ already exists. It previously did —
+// but only because listing-pages-seo.test.mjs builds it in a before() hook and
+// sorts earlier alphabetically under --test-concurrency=1. Renaming either file
+// would have turned this guard green-but-inert with no signal, which for a guard
+// whose whole job is catching unqualified paid links is the worst failure mode.
+// (Same accident currently skips guide-layout-schema.test.mjs's dist assertions.)
+function ensureBuilt() {
+  if (existsSync(join(DIST, 'index.html'))) return;
+  execFileSync('npx', ['astro', 'build'], { cwd: ROOT, stdio: 'ignore' });
+}
+
+before(() => ensureBuilt(), { timeout: 180_000 });
 
 function collectHtml(dir, out = []) {
   for (const entry of readdirSync(dir, { withFileTypes: true })) {
@@ -220,7 +252,7 @@ function collectHtml(dir, out = []) {
   return out;
 }
 
-test('no built page links to a partner domain without rel="sponsored"', { skip: distSkip }, () => {
+test('no built page links to a partner domain without rel="sponsored"', () => {
   const offenders = [];
   for (const file of collectHtml(DIST)) {
     const html = readFileSync(file, 'utf8');
