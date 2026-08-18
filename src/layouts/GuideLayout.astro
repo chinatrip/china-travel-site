@@ -8,6 +8,7 @@ import { parseRelated } from '../lib/related.mjs';
 import { filterExternalSources, formatSourceLabel } from '../lib/trust-signals.mjs';
 import { SUPPORT_CONTACT_POINT } from '../lib/home-schema.mjs';
 import { t } from '../lib/i18n.mjs';
+import { outboundRel } from '../lib/partner-links.mjs';
 
 interface Props {
   title: string;
@@ -249,7 +250,7 @@ const faqSchema = hasFaqs
                 <li>
                   <a
                     href={src}
-                    rel="nofollow noopener"
+                    rel={outboundRel(src)}
                     target="_blank"
                     class="text-primary hover:underline break-all"
                   >{formatSourceLabel(src)}</a>

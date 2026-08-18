@@ -1,4 +1,5 @@
 ---
+import { outboundRel } from '../lib/partner-links.mjs';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { resolveRecentlyVerified } from '../lib/recent-verified.mjs';
@@ -50,7 +51,7 @@ const records = resolveRecentlyVerified([...guides, ...apps]);
                   {i > 0 && <span aria-hidden="true">, </span>}
                   <a
                     href={src.url}
-                    rel="nofollow noopener"
+                    rel={outboundRel(src.url)}
                     target="_blank"
                     class="text-primary hover:underline break-words"
                   >{src.label}</a>
