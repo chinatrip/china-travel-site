@@ -26,27 +26,30 @@ review:
   citation_check: 2026-07-01
   notes: "2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked."
 description: >-
-  eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Ubigi)
-  bypass the firewall with no VPN as of June 2026, plus when you need a +86
-  number.
+  eSIM vs SIM vs roaming for China: which foreign eSIMs (Airalo, Holafly, Nomad,
+  Ubigi) bypass the firewall with no VPN as of June 2026, plus when you need a
+  +86 number.
 faqs:
   - q: Do I need a VPN if I use a foreign eSIM in China?
     a: >-
       No, as of June 2026. The major foreign travel eSIMs sold for China
-      (Airalo, Holafly, Ubigi) route data through an overseas gateway, so they
-      bypass the Great Firewall and Google, WhatsApp and Instagram work without
-      a VPN on eSIM data — Airalo confirms this in its help docs, and Holafly
-      and Ubigi state the same on their China pages. This is high-volatility, so
+      (Airalo, Holafly, Nomad eSIM, Ubigi) route data through an overseas
+      gateway, so they bypass the Great Firewall and Google, WhatsApp and
+      Instagram work without a VPN on eSIM data — Airalo and Nomad confirm this
+      in their help docs, and Holafly and Ubigi state the same on their China
+      pages. This is high-volatility, so
       confirm your provider's current China page before buying. You only need a
       VPN on Chinese hotel or airport Wi-Fi, which is still firewalled.
   - q: Which eSIMs work best for China?
     a: >-
-      Airalo, Holafly and Ubigi are popular and route data abroad to bypass the
-      firewall without a separate VPN (Airalo states this officially; the others
-      advertise the same). They mainly differ by underlying network — Airalo
-      uses China Unicom (stronger in cities), while Holafly uses China Mobile
-      (stronger in rural areas). Pick by network preference and by whether you
-      want an unlimited plan or a cheaper fixed-cap one; for reference, one
+      Airalo, Holafly, Nomad eSIM and Ubigi all route data abroad to bypass the
+      firewall without a separate VPN (Airalo and Nomad state this in their help
+      docs; the others advertise the same), so there is no single best pick —
+      choose by what you care about. Bundled VPN: Holafly. Cheapest short
+      fixed-data pack: Airalo. Both fixed-data and unlimited plans plus hotspot
+      sharing: Nomad eSIM. Cheapest small data caps: Ubigi. They also differ by
+      underlying network — Airalo uses China Unicom (stronger in cities),
+      Holafly uses China Mobile (stronger in rural areas). For sizing, one
       traveler used about 5 GB in 10 days with heavy maps use.
   - q: How much eSIM data should I buy before arriving in China?
     a: >-
