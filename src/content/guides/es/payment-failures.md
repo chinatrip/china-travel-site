@@ -1,5 +1,5 @@
 ---
-title: "Pagos fallidos en China: solución de problemas para extranjeros (2026)"
+title: "Pagos fallidos en China: soluciones para extranjeros (2026)"
 date: 2026-06-15
 last_verified: 2026-06-15
 lang: es
@@ -22,9 +22,9 @@ review:
   citation_check: 2026-06-15
   notes: "Adopted into the wiki from the site GEO page (issue #18): site-route links converted to [[wiki/...]], and the full failure table consolidated here from mobile-payment.md (issue #22 item 3). Fix iteration 1 (2026-06-15): the 9 NOT_FOUND claims from the first Type-3 run were each resolved — merchant/personal-QR + P2P (receive-only), VPN-trips-fraud, unverified-account limits, 3%-on-full-amount, SMS-blocked, bank-blocks-binding, and balance-no-surcharge are now sourced to chinavigators / Wise / China Survival Kit (added to verified_against); the multi-week refund window, the platform-risk-control silent block, the redirect-filter, the checkout-unselectable card, and the WeChat contact-vouching framing are degraded in text to 'traveler-reported, not independently verified' (Shuimu BBS, outside verified_against). Re-run Type-3 (2026-06-15): 16 supported / 0 contradicted / 6 NOT_FOUND, where all 6 NOT_FOUND are the explicitly traveler-reported items (silent risk-control block, 3-D Secure binding step, checkout-unselectable card, redirect filter, WeChat contact-vouching, multi-week refund). Fees/limits are high-volatility — recheck against mobile-payment.md before update."
 description: >-
-  Por qué falla Alipay o WeChat Pay en China: un código QR personal, una VPN
-  encendida, el recargo del 3% a partir de ¥200 o una cuenta no verificada — y
-  cómo resolver cada caso. Actualizado en junio de 2026.
+  Por qué falla Alipay o WeChat Pay en China: QR personal, VPN encendida,
+  recargo del 3% desde ¥200 o cuenta sin verificar, y cómo resolverlo. Junio
+  de 2026.
 faqs:
   - q: ¿Por qué mi pago con Alipay o WeChat Pay sigue fallando en China?
     a: >-

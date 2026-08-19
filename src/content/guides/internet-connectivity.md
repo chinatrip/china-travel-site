@@ -42,10 +42,11 @@ faqs:
     a: >-
       There is no single best one — they all bypass the Great Firewall without a
       separate VPN, so pick by what you care about. Want a VPN bundled in:
-      Holafly. Want the cheapest short fixed-data pack: Airalo. Want both
-      fixed-data and unlimited plans plus hotspot sharing: Nomad eSIM. Want the
-      cheapest small data caps: Ubigi. Check the provider's current China page
-      before buying — plans and prices change often.
+      Holafly. Comfortable with a little setup and after a budget option:
+      Airalo. Want both fixed-data and unlimited plans plus hotspot sharing:
+      Nomad eSIM. Plans and prices change often, so check the provider's current
+      China page before buying — the per-provider comparison lives in the SIM
+      card guide.
   - q: Which VPNs still work in China in 2026?
     a: >-
       As of June 2026, Astrill (StealthVPN) and ExpressVPN (Lightway) are the

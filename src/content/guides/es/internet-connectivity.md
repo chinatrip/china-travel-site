@@ -17,7 +17,10 @@ review:
   page_audit: 2026-06-15
   citation_check: 2026-07-01
   notes: "2026-07-20: Added a reader-facing 'Can I access Google/Gmail/WhatsApp from my hotel in China?' section per traveler feedback. Its one non-generic claim — that some international-chain hotels (e.g. Holiday Inn, per one business traveler's report) have had room Wi-Fi reaching international services without a VPN — is explicitly framed as an unverified individual anecdote (not a guarantee, varies by property, changes over time); no hotel is presented as a reliable or endorsed option, and readers are steered to ask the hotel directly and to bring their own eSIM/VPN. No new external source added (the anecdote is traveler feedback, deliberately NOT asserted as verified fact); other sections not re-verified this round; page_audit unchanged. --- 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round."
-description: "Qué bloquea el Gran Cortafuegos de China (Google, WhatsApp, Instagram), qué VPN siguen funcionando tras la ofensiva de 2026 y por qué una eSIM extranjera lo evita sin VPN. Actualizado en junio de 2026."
+description: >-
+  Qué bloquea el Gran Cortafuegos (Google, WhatsApp, Instagram), qué VPN
+  funcionan tras la ofensiva de 2026 y por qué una eSIM extranjera lo evita
+  sin VPN.
 faqs:
   - q: "¿Necesito una VPN para acceder a Google, WhatsApp e Instagram en China?"
     a: "Solo si te conectas a través de una SIM china o del Wi-Fi local. Una eSIM extranjera (Airalo, Holafly, Nomad) enruta tus datos mediante itinerancia internacional a través de pasarelas fuera de China continental, así que evita el Gran Cortafuegos y los servicios bloqueados funcionan sin VPN. Con una SIM china o el Wi-Fi local sí necesitas una VPN que funcione."

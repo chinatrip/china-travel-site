@@ -15,17 +15,18 @@ review:
   page_audit: 2026-06-09
   notes: "2026-07-20: Added a 'Which cities match what you want to see?' section that groups the existing table cities by theme (history / food / modern / nature / pandas) per traveler feedback — all primary cities are ones already profiled in the table above; Luoyang / Datong are named only as day-trip / add-on destinations, not primary bases, since they are not profiled here. No new city data or sourced claims introduced; theme descriptors use common-knowledge dish and landscape names (e.g. mapo tofu, sandstone pillars) for recognition, consistent with the existing Highlights. Existing content not re-verified this round; page_audit unchanged. --- City highlights and recommended days are stable facts. Best seasons cross-checked against general climate data. HSR time corrected during lint."
 description: >-
-  Guías de ciudades enfocadas en extranjeros para Beijing, Shanghái, Xi'an,
-  Chengdu, Guilin y más: principales atractivos, cuántos días dedicar, mejores
-  temporadas y cómo moverse. Actualizado en junio de 2026.
+  Guías de Beijing, Shanghái, Xi'an, Chengdu, Guilin y más para viajeros
+  extranjeros: qué ver, cuántos días dedicar y cómo moverse. Actualizado en
+  junio de 2026.
 faqs:
   - q: ¿Qué ciudades debería visitar en un primer viaje a China?
     a: >-
-      La mayoría de los primerizos hacen Beijing (Gran Muralla, Ciudad
-      Prohibida), Shanghái (la China moderna) y Xi'an (Guerreros de Terracota),
-      añadiendo Chengdu (pandas) o Guilin/Yangshuo (paisajes) si el tiempo lo
-      permite. Calcula unos 4-5 días para Beijing y de 2 a 4 días para cada una
-      de las demás.
+      Beijing (Gran Muralla, Ciudad Prohibida) y Shanghái (la China moderna)
+      son buenos puntos de partida y combinan bien en un viaje de 5-7 días:
+      están a unas 4.5 horas en tren de alta velocidad. Con más tiempo, añade
+      Xi'an (Guerreros de Terracota), Chengdu (pandas) o Guilin/Yangshuo
+      (paisajes). Calcula unos 4-5 días para Beijing y de 2 a 4 días para cada
+      una de las demás.
   - q: ¿Cuántos días necesito en China?
     a: >-
       Dos semanas te permiten cubrir de 3 a 4 ciudades sin prisas: la ruta

@@ -21,8 +21,7 @@ review:
   citation_check: 2026-05-06
 description: >-
   Cash and currency in China for foreigners: ATM withdrawals, where foreign
-  cards work, how much cash to carry, and the RMB 20,000 / USD 5,000 customs
-  cash limit. Updated June 2026.
+  cards work, how much cash to carry, and the USD 5,000 declaration threshold.
 faqs:
   - q: Should I bring cash or use ATMs in China?
     a: >-

@@ -4,7 +4,7 @@ faqs:
   - q: "Do I need a VPN or an eSIM for China?"
     a: "For most short-stay travelers, a foreign eSIM alone is enough — it routes data through an overseas gateway and bypasses the Great Firewall, so Google, WhatsApp and Instagram work with no VPN. You need a VPN if you use a Chinese SIM card, rely on Chinese hotel Wi-Fi, or use a laptop/desktop that can't take the eSIM."
   - q: "Why would I need a VPN if I already have an eSIM?"
-    a: "You don't, as long as you stay on the foreign eSIM's mobile data. The confusion arises because a Chinese SIM and Chinese Wi-Fi are behind the firewall and do need a VPN, and because laptops (which use Wi-Fi, not the eSIM) still need one. Many travelers keep one VPN installed purely as a backup for those cases."
+    a: "You don't, as long as you stay on the foreign eSIM's mobile data. The confusion arises because a Chinese SIM and Chinese Wi-Fi are behind the firewall and do need a VPN, and because laptops use Wi-Fi rather than your eSIM, so they need either a VPN or your phone's tethered eSIM data. Many travelers keep one VPN installed purely as a backup for those cases."
   - q: "Why does my foreign eSIM break Alipay or WeChat Pay?"
     a: "Some foreign eSIMs (e.g. Holafly) include an always-on VPN that can't be turned off, and a non-Chinese IP occasionally trips Alipay or WeChat Pay fraud checks or stops a mini-program loading. If a payment fails, switch to Chinese Wi-Fi or a Chinese SIM for that transaction; on a normal VPN, just toggle it off while paying."
   - q: "Which VPNs still work in China in 2026?"

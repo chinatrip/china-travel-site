@@ -33,7 +33,7 @@ review:
   notes: "2026-07-17: Added a 'Getting Help in Person' section (approach nearby police / attraction staff / hotel front desk when a language barrier makes phone lines hard, with 110/120/119 still the route for genuine emergencies), per traveler feedback. Grounded in the page's own stated fact that 110/120 operators are typically Chinese-only; no new external source added. Other sections carried forward from the 2026-06-15 audit, not re-verified this round; page_audit unchanged."
 description: >-
   Staying safe in China as a foreigner: emergency numbers (110 police, 120
-  ambulance, 119 fire), common scams, lost-passport steps, and the 12345 English
+  ambulance, 119 fire), common scams, lost-passport steps, and the 12345
   hotline.
 faqs:
   - q: What are the emergency numbers in China?
