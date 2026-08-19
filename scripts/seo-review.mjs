@@ -55,6 +55,16 @@ export const CRITERION_IDS = [...BLOCKING_IDS, ...ADVISORY_IDS];
 export function resolveEnforcedIds(raw) {
   if (raw === undefined || raw === null || String(raw).trim() === '') return [...BLOCKING_IDS];
   const ids = [...new Set(String(raw).split(',').map((x) => x.trim()).filter(Boolean))];
+  // A non-empty value that parses to nothing (",", " , , ") is a typo, not a
+  // configuration. Returning [] there would enforce NOTHING while the workflow
+  // still says blocking — a required gate silently disabled by a stray comma.
+  // Unset/blank already means "all" above, so this can only be a mistake: throw.
+  if (!ids.length) {
+    throw new Error(
+      `seo-review: SEO_REVIEW_ENFORCED_IDS=${JSON.stringify(String(raw))} contains no ids. ` +
+        `Leave it unset to enforce every blocking criterion, or name a subset of: ${BLOCKING_IDS.join(', ')}`,
+    );
+  }
   const unknown = ids.filter((id) => !BLOCKING_IDS.includes(id));
   if (unknown.length) {
     throw new Error(

@@ -276,6 +276,16 @@ test('resolveEnforcedIds: parses, trims and de-dupes a subset', () => {
   assert.deepEqual(resolveEnforcedIds('faq_grounding,faq_grounding'), ['faq_grounding']);
 });
 
+test('resolveEnforcedIds: a value that parses to no ids throws instead of enforcing nothing', () => {
+  // The dangerous shape: SEO_REVIEW_ENFORCED_IDS="," would silently enforce
+  // NOTHING while the workflow still declares blocking mode — a gate disabled
+  // by a stray comma. Unset/blank already means "all", so this can only be a
+  // typo, and it must be loud.
+  for (const raw of [',', ' , , ', ',,,', ' ,']) {
+    assert.throws(() => resolveEnforcedIds(raw), /contains no ids/, `${JSON.stringify(raw)} must throw`);
+  }
+});
+
 test('resolveEnforcedIds: rejects ids that are not blocking-class', () => {
   // An advisory id here would silently enforce nothing — fail loudly instead.
   assert.throws(() => resolveEnforcedIds('h2_question_form'), /not blocking-class/);
