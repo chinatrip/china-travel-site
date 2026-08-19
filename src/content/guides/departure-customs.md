@@ -21,8 +21,8 @@ review:
   citation_check: null
 description: >-
   Leaving China: airport departure steps, home-country duty-free limits,
-  prohibited exports like medicine and antiques, and what to declare. Updated
-  June 2026.
+  high-risk items like traditional medicine and unpermitted antiques, and what
+  to declare.
 faqs:
   - q: What can't I take out of China?
     a: >-

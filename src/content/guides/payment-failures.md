@@ -56,8 +56,9 @@ faqs:
       amounts under ¥200 (which have no surcharge), or switch to the other app.
   - q: 'My card worked fine, then suddenly stopped — what happened?'
     a: >-
-      Platform risk-control or a regulatory spending limit can block a card with
-      no warning. Try the other app, unbind and re-bind the card, complete
+      Platform risk-control or a spending limit can block a card with no warning
+      — this one is traveler-reported rather than independently verified. Try
+      the other app, unbind and re-bind the card, complete
       passport verification if you haven't, or fall back to cash. With both
       Alipay and WeChat Pay set up, nearly every merchant accepts at least one.
 category: guide

@@ -20,10 +20,11 @@ description: >-
 faqs:
   - q: Which cities should I visit on a first trip to China?
     a: >-
-      Most first-timers do Beijing (Great Wall, Forbidden City), Shanghai
-      (modern China) and Xi'an (Terracotta Warriors), adding Chengdu (pandas) or
-      Guilin/Yangshuo (scenery) if time allows. Allow roughly 4-5 days for
-      Beijing and 2-4 days each for the others.
+      Beijing (Great Wall, Forbidden City) and Shanghai (modern China) are both
+      good starting points and pair well on a 5-7 day trip — they are about 4.5
+      hours apart by high-speed rail. With more time, add Xi'an (Terracotta
+      Warriors), Chengdu (pandas) or Guilin/Yangshuo (scenery). Allow roughly
+      4-5 days for Beijing and 2-4 days each for the others.
   - q: How many days do I need in China?
     a: >-
       Two weeks lets you cover 3-4 cities without rushing — the classic
