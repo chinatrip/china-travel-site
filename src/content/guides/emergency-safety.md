@@ -38,8 +38,9 @@ description: >-
 faqs:
   - q: What are the emergency numbers in China?
     a: >-
-      Police 110, ambulance 120, fire 119. For English-language help, the 12345
-      government service hotline can assist in many cities.
+      Police 110, ambulance 120, fire 119. The 12345 government service hotline
+      handles non-emergency help and complaints, though whether you reach
+      English support depends on the city.
   - q: Is China safe for tourists?
     a: >-
       Violent crime against tourists is very rare and most travelers, including

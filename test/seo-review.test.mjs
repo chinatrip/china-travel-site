@@ -434,17 +434,49 @@ function seoReviewModeFromWorkflow(yamlText) {
   for (let i = jobIdx + 1; i < lines.length; i++) {
     // A line at exactly 2-space indent that is non-blank starts the next sibling job.
     if (/^ {2}\S/.test(lines[i])) break;
-    const m = lines[i].match(/^\s+SEO_REVIEW_MODE:\s*(\S+)\s*$/);
-    if (m) return m[1];
+    const m = lines[i].match(/^(\s+)SEO_REVIEW_MODE:\s*(\S.*?)\s*$/);
+    if (!m) continue;
+    const [, indent, value] = m;
+    // Plain scalar — return as written.
+    if (!/^[>|][-+]?$/.test(value)) return value;
+    // Folded/literal block: collect the more-indented lines that follow and join
+    // them, so the assertions can see the expression rather than the '>-' marker.
+    const body = [];
+    for (let j = i + 1; j < lines.length; j++) {
+      if (lines[j].trim() === '') continue;
+      if (lines[j].search(/\S/) <= indent.length) break;
+      body.push(lines[j].trim());
+    }
+    return body.join(' ');
   }
   return null;
 }
 
-test('ci.yml: seo-review job runs in advisory mode (reports but does not block)', () => {
+// The gate blocks on content PRs and stays advisory on the wiki sync branch and
+// the manual full-site scan. That exemption is the whole reason the previous
+// blocking rollout could be re-attempted, so it is pinned here: a sync PR
+// bundles every pending page and the gate re-reviews each in full, so latent
+// issues on untouched pages would otherwise hard-block an unrelated deploy.
+test('ci.yml: seo-review blocks on content PRs but not on the sync branch or the manual scan', () => {
   const ciYml = readFileSync(new URL('../.github/workflows/ci.yml', import.meta.url), 'utf8');
-  assert.equal(
-    seoReviewModeFromWorkflow(ciYml),
-    'advisory',
-    'seo-review job must set SEO_REVIEW_MODE: advisory — the gate reports its findings but does not hard-block merges; the human reviewer is the gate',
+  const expr = seoReviewModeFromWorkflow(ciYml);
+  assert.ok(expr, 'seo-review job must set SEO_REVIEW_MODE');
+
+  assert.match(expr, /github\.event_name == 'pull_request'/, 'blocking must be scoped to pull_request events');
+  assert.match(expr, /github\.head_ref != 'auto\/content-sync'/, 'the wiki sync branch must stay advisory');
+  assert.match(expr, /'blocking'/, 'the expression must be able to yield blocking');
+  assert.match(expr, /'advisory'/, 'and must fall back to advisory');
+});
+
+test('ci.yml: enforcement is scoped to faq_grounding only', () => {
+  const ciYml = readFileSync(new URL('../.github/workflows/ci.yml', import.meta.url), 'utf8');
+  const m = ciYml.match(/^\s+SEO_REVIEW_ENFORCED_IDS:\s*(\S+)\s*$/m);
+  assert.ok(m, 'seo-review job must pin which criteria are enforced');
+  // Widening this is a deliberate decision, not a drive-by edit: every id added
+  // here can hard-fail a content PR, and each needs its backlog cleared first.
+  assert.deepEqual(
+    resolveEnforcedIds(m[1]),
+    ['faq_grounding'],
+    'only faq_grounding is enforced today — its backlog was cleared; the other four have not been',
   );
 });
