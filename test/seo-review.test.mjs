@@ -8,6 +8,8 @@ import {
   evaluatePageVerdict,
   aggregateResults,
   decideExitCode,
+  resolveEnforcedIds,
+  BLOCKING_IDS,
   renderMarkdownReport,
   loadPageHistory,
   reviewPage,
@@ -254,6 +256,69 @@ test('aggregateResults: one blocked page fails overall', () => {
   assert.equal(agg.overallPass, false);
   assert.equal(agg.pageCount, 2);
   assert.deepEqual(agg.failedPages, ['b']);
+});
+
+// ---- staged enforcement ----------------------------------------------------
+// The gate can be hardened one blocking-class criterion at a time. A criterion
+// that is not enforced is still reported, it just cannot fail the run — this is
+// what keeps a wiki-sync PR from being hard-blocked by latent issues on pages
+// it did not touch (the reason a previous blocking rollout was reverted).
+
+test('resolveEnforcedIds: unset means every blocking criterion', () => {
+  for (const raw of [undefined, null, '', '   ']) {
+    assert.deepEqual(resolveEnforcedIds(raw), BLOCKING_IDS, `${JSON.stringify(raw)} must mean all`);
+  }
+});
+
+test('resolveEnforcedIds: parses, trims and de-dupes a subset', () => {
+  assert.deepEqual(resolveEnforcedIds('faq_grounding'), ['faq_grounding']);
+  assert.deepEqual(resolveEnforcedIds(' faq_grounding , title_quality '), ['faq_grounding', 'title_quality']);
+  assert.deepEqual(resolveEnforcedIds('faq_grounding,faq_grounding'), ['faq_grounding']);
+});
+
+test('resolveEnforcedIds: a value that parses to no ids throws instead of enforcing nothing', () => {
+  // The dangerous shape: SEO_REVIEW_ENFORCED_IDS="," would silently enforce
+  // NOTHING while the workflow still declares blocking mode — a gate disabled
+  // by a stray comma. Unset/blank already means "all", so this can only be a
+  // typo, and it must be loud.
+  for (const raw of [',', ' , , ', ',,,', ' ,']) {
+    assert.throws(() => resolveEnforcedIds(raw), /contains no ids/, `${JSON.stringify(raw)} must throw`);
+  }
+});
+
+test('resolveEnforcedIds: rejects ids that are not blocking-class', () => {
+  // An advisory id here would silently enforce nothing — fail loudly instead.
+  assert.throws(() => resolveEnforcedIds('h2_question_form'), /not blocking-class/);
+  assert.throws(() => resolveEnforcedIds('faq_grounding,nonsense'), /nonsense/);
+});
+
+test('only enforced criteria fail the run', () => {
+  const blocked = evaluatePageVerdict(
+    withCriterion(cleanVerdict(), 'meta_description', { passed: false, severity: 'high', rationale: 'too long' }),
+    cleanDerived(),
+  );
+  assert.equal(blocked.pass, false, 'still reported as a blocking-class finding');
+
+  const enforcingOther = aggregateResults([blocked], ['faq_grounding']);
+  assert.equal(enforcingOther.enforcedPass, true, 'unenforced finding must not fail the run');
+  assert.equal(enforcingOther.overallPass, false, 'but it is still counted as blocking');
+  assert.equal(decideExitCode(enforcingOther, 'blocking'), 0);
+
+  const enforcingThis = aggregateResults([blocked], ['meta_description']);
+  assert.equal(enforcingThis.enforcedPass, false);
+  assert.equal(decideExitCode(enforcingThis, 'blocking'), 1);
+});
+
+test('report distinguishes enforced from not-yet-enforced findings', () => {
+  const blocked = evaluatePageVerdict(
+    withCriterion(cleanVerdict(), 'meta_description', { passed: false, severity: 'high', rationale: 'too long' }),
+    cleanDerived(),
+  );
+  const md = renderMarkdownReport(aggregateResults([blocked], ['faq_grounding']), { mode: 'blocking' });
+  assert.match(md, /WOULD BLOCK \(not yet enforced\)/, 'unenforced finding must not be labelled BLOCKING');
+  assert.doesNotMatch(md, /\*\*⛔ BLOCKING:\*\*/, 'nothing is actually blocking in this run');
+  assert.match(md, /Enforced: `faq_grounding`/, 'report states what is enforced');
+  assert.match(md, /Still advisory:.*meta_description/, 'and what is not');
 });
 
 test('decideExitCode: advisory always 0; blocking 1 on fail; infra fail-closed', () => {
