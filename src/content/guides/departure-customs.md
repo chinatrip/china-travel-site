@@ -36,11 +36,11 @@ faqs:
       US$800 for the US, €430 for the EU, or £390 for the UK. Above the limit
       you pay duty on the excess, so keep receipts for purchases over $100 and
       use the Red channel when in doubt.
-  - q: Do I need to declare my laptop or camera when leaving China?
+  - q: Do I need to declare my laptop when leaving China?
     a: >-
-      No — personal items you already owned before the trip don't need
-      declaring. Declaration is about new purchases that exceed your home
-      country's duty-free allowance.
+      No — a laptop you already owned before the trip doesn't need declaring.
+      Declaration is about new purchases that exceed your home country's
+      duty-free allowance.
   - q: How early should I get to the airport to leave China?
     a: >-
       Arrive about 3 hours before an international flight. Exit immigration

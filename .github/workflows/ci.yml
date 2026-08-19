@@ -10,10 +10,11 @@ name: CI & Preview
 #
 # A separate `seo-review` job runs in PARALLEL and reviews the SEO/GEO quality of
 # changed content with an LLM (OpenRouter gpt-5.5). It is independent of `test`, so
-# it NEVER affects preview generation. It is ADVISORY (SEO_REVIEW_MODE: advisory →
-# always exits 0; blocking-class issues are reported and flagged "would block" but do
-# NOT hard-fail the check or the merge — a human weighs them). It is NOT a required
-# check; guarded by `env.OPENROUTER_API_KEY != ''` so it soft-passes until the secret is set.
+# it NEVER affects preview generation. On ordinary content PRs it BLOCKS on one
+# criterion, `faq_grounding` — everything else, plus the wiki sync branch and the manual
+# full-site scan, stays advisory (reported, flagged "would block", exits 0). It is NOT a
+# required check, so a red run is a signal to the reviewer rather than a hard merge stop;
+# guarded by `env.OPENROUTER_API_KEY != ''` so it soft-passes until the secret is set.
 
 on:
   pull_request:
@@ -160,15 +161,30 @@ jobs:
 
   # Independent advisory check (parallel to `test`): AI review of SEO/GEO quality of
   # changed content. Preview lives in `test` and is NEVER affected by this job.
-  # ADVISORY (SEO_REVIEW_MODE: advisory → always exits 0; blocking-class issues are
-  # reported + flagged "would block" but never hard-fail the check or the merge — the
-  # human reviewer decides). NOT a required check (see .github/BRANCH_PROTECTION.md).
+  # BLOCKING for content PRs, on `faq_grounding` only (SEO_REVIEW_ENFORCED_IDS).
+  # Every other blocking-class criterion, and every run on the sync branch or the
+  # manual scan, stays advisory — reported and flagged "would block", never
+  # hard-failing. NOT a required check (see .github/BRANCH_PROTECTION.md), so a
+  # red run is a signal to the human reviewer rather than a hard merge stop.
   # Still guarded by `env.OPENROUTER_API_KEY != ''` → soft-passes until the secret is set.
   seo-review:
     runs-on: ubuntu-latest
     env:
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-      SEO_REVIEW_MODE: advisory
+      # Blocking for ordinary content PRs; advisory everywhere else.
+      #
+      # Exempt: the wiki sync PR (auto/content-sync) and the manual full-site
+      # scan. The sync PR bundles every pending page and the gate re-reviews
+      # each in full, so a latent issue on a page the sync never touched would
+      # hard-block an unrelated deploy — that is exactly why an earlier blocking
+      # rollout was reverted. The dispatch scan is an audit, not a gate.
+      SEO_REVIEW_MODE: >-
+        ${{ (github.event_name == 'pull_request' && github.head_ref != 'auto/content-sync')
+            && 'blocking' || 'advisory' }}
+      # Enforce one criterion at a time. faq_grounding is the one we have
+      # cleaned the backlog for and seen catch a real live defect; the other
+      # four still report as "would block" without failing the run.
+      SEO_REVIEW_ENFORCED_IDS: faq_grounding
     steps:
       - uses: actions/checkout@v4
         with:
