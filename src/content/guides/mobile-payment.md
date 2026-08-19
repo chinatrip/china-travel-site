@@ -41,9 +41,9 @@ review:
   citation_check: 2026-07-02
   notes: "2026-07-17: Added two reader-facing sections per traveler feedback — (1) a 'Which payment method works where?' scenario matrix grounded in the existing Quick Decision / 'Where Mobile Pay Doesn't Work' / PBOC-mandate content (no new claims), and (2) an 'Is it safe to link a foreign card?' section framing card-linking as pay-as-you-go authorization rather than a stored balance, with device-bound security described as a layer not a guarantee (consistent with the Lost Phone section) and binding a foreign card recommended over opening a domestic account. No new external source added; other sections not re-verified this round; page_audit unchanged. --- 2026-07-02: focused re-verify with the TenPayGo addition — re-confirmed anchor Tier-1 facts (gov.cn April 2024 $5,000/$50,000 caps + foreign-card POS mandate; ¥200/3% threshold via the Beijing May 2025 circular); no policy reversal since the 2026-06-15 audit. Limit tables, refund windows, and failure modes retain their 2026-06-15 page_audit."
 description: >-
-  Foreign visitors can bind a Visa/Mastercard to Alipay or WeChat Pay since the
-  April 2024 PBOC policy. 0% fee under ¥200, 3% over, plus how to fix failed
-  payments. Updated May 2026.
+  Bind a foreign Visa/Mastercard to Alipay or WeChat Pay since the April 2024
+  PBOC policy. No platform fee under ¥200, ~3% over plus your card's FX fee.
+  Updated May 2026.
 faqs:
   - q: >-
       Can foreigners use Alipay or WeChat Pay in China without a Chinese bank
@@ -60,9 +60,12 @@ faqs:
       turned-on VPN can also block payments, so switch it off when paying.
   - q: How much does it cost to pay with a foreign card on Alipay or WeChat Pay?
     a: >-
-      Transactions under ¥200 have no fee; transactions of ¥200 or more carry
-      about a 3% surcharge. To avoid it, ask the merchant to split the bill into
-      amounts below ¥200.
+      Under ¥200 there is no platform surcharge — confirmed for WeChat Pay by
+      the Beijing municipal circular (May 2025), and widely reported for Alipay
+      although Alipay publishes no fee schedule confirming it. At ¥200 or more
+      both charge about 3% on the full amount. Your card issuer's foreign
+      transaction fee is separate and applies either way. To avoid the
+      surcharge, ask the merchant to split the bill into amounts below ¥200.
   - q: Should I still bring cash to China?
     a: >-
       Mobile pay is accepted almost everywhere, but carry ¥200-500 in small

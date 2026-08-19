@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import { z } from 'zod';
 import {
   filterContentPaths,
@@ -477,6 +477,44 @@ test('ci.yml: enforcement is scoped to faq_grounding only', () => {
   assert.deepEqual(
     resolveEnforcedIds(m[1]),
     ['faq_grounding'],
-    'only faq_grounding is enforced today — its backlog was cleared; the other four have not been',
+    'only faq_grounding is enforced today — it is the one criterion we have swept for; the other four have not been',
+  );
+});
+
+// ---- full-site scan coverage (regression) -----------------------------------
+// `workflow_dispatch` runs `seo-review.mjs --all`, which reviews every content
+// file — but only up to SEO_REVIEW_MAX_FILES, then prints a warning and drops
+// the rest. That warning lands in a CI log nobody reads, so a "full-site scan"
+// can quietly cover less than the full site. It already did: on 2026-08-19 the
+// cap was 40 against a 41-file corpus, so apps/wechat.md was never reviewed and
+// the run still reported as a complete scan. This test is the tripwire — when
+// the corpus grows past the cap, it fails here instead of silently truncating.
+function dispatchScanCap(yamlText) {
+  const m = yamlText.match(
+    /SEO_REVIEW_MAX_FILES:\s*\$\{\{\s*github\.event_name == 'workflow_dispatch'\s*&&\s*'(\d+)'\s*\|\|\s*'(\d+)'\s*\}\}/,
+  );
+  return m ? { dispatch: Number(m[1]), pullRequest: Number(m[2]) } : null;
+}
+
+function countContentFiles(dir) {
+  let n = 0;
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    if (entry.isDirectory()) n += countContentFiles(new URL(`${entry.name}/`, dir));
+    else if (entry.name.endsWith('.md')) n += 1;
+  }
+  return n;
+}
+
+test('ci.yml: the manual full-site scan cap covers the whole content corpus', () => {
+  const ciYml = readFileSync(new URL('../.github/workflows/ci.yml', import.meta.url), 'utf8');
+  const caps = dispatchScanCap(ciYml);
+  assert.ok(caps, 'seo-review job must set SEO_REVIEW_MAX_FILES per event type');
+
+  const contentFiles = countContentFiles(new URL('../src/content/', import.meta.url));
+  assert.ok(contentFiles > 0, 'expected to find content files');
+  assert.ok(
+    caps.dispatch >= contentFiles,
+    `workflow_dispatch cap (${caps.dispatch}) must be >= the ${contentFiles} content files, ` +
+      'or `--all` silently reviews only part of the site while reporting a full scan',
   );
 });

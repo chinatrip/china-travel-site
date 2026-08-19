@@ -29,7 +29,7 @@ faqs:
   - q: "¿Puedo descargar una VPN cuando ya estoy en China?"
     a: "Es muy difícil: las tiendas de aplicaciones y los sitios web de las VPN están en gran medida bloqueados desde dentro de China. Descarga y prueba tu VPN antes de llegar. Si tu única VPN deja de funcionar, algunas opciones son una cuenta de App Store de otra región o pedir que alguien te envíe el archivo de instalación."
   - q: "¿Es legal que los turistas usen una VPN en China?"
-    a: "Oficialmente está restringido, no es libremente legal: el Departamento de Estado de EE. UU. (2026) advierte de que el uso de una VPN es ilegal en la mayoría de los casos y podría acarrear la confiscación del dispositivo, una multa o la detención, y China exige que las VPN cuenten con licencia del gobierno. En la práctica, la aplicación de la ley se ha dirigido a los proveedores y distribuidores, más que a los turistas concretos que usan una VPN para su comunicación personal, y la seguridad del aeropuerto no revisa los dispositivos; pero valora tú mismo el riesgo y consulta el aviso oficial de viaje de tu país."
+    a: "Oficialmente está restringido, no es libremente legal: el Departamento de Estado de EE. UU. (2026) advierte de que el uso de una VPN es ilegal en la mayoría de los casos y podría acarrear la confiscación del dispositivo, una multa o la detención, y China exige que las VPN cuenten con licencia del gobierno. En la práctica, la aplicación de la ley se ha dirigido a los proveedores y distribuidores, más que a los turistas concretos que usan una VPN para su comunicación personal, y no tenemos constancia de informes de que la seguridad del aeropuerto revise los dispositivos de los viajeros en busca de apps de VPN, aunque eso es una ausencia de informes y no una garantía. Valora tú mismo el riesgo y consulta el aviso oficial de viaje de tu país."
 category: guide
 ---
 
@@ -230,7 +230,7 @@ La fiabilidad de las VPN en China no está garantizada. El GFW usa aprendizaje a
 
 **Situación legal (importante):** El Departamento de Estado de EE. UU. (actualizado en mayo de 2026) afirma que el uso de una VPN en China es «ilegal en la mayoría de los casos y puede acarrear la confiscación de tu dispositivo, una multa o la detención». El FCDO del Reino Unido señala que las VPN deben contar con licencia del gobierno chino. En la práctica, la aplicación de la ley históricamente ha ido dirigida a los proveedores y distribuidores de VPN, más que a los turistas extranjeros que usan una VPN para su comunicación personal. Aun así, los viajeros deben ser conscientes del riesgo legal y tomar su propia decisión informada. Este wiki solo proporciona información: consulta el aviso oficial de viaje de tu país.
 
-La seguridad del aeropuerto no comprueba si hay apps de VPN en los dispositivos.
+No tenemos constancia de informes de que la seguridad del aeropuerto revise los dispositivos de los viajeros que llegan en busca de apps de VPN. Eso es una ausencia de informes y no una política documentada —esta página no dispone de una fuente autorizada en ningún sentido— y no reduce el riesgo legal descrito más arriba.
 
 ### Resolución de problemas de VPN
 

@@ -181,9 +181,12 @@ jobs:
       SEO_REVIEW_MODE: >-
         ${{ (github.event_name == 'pull_request' && github.head_ref != 'auto/content-sync')
             && 'blocking' || 'advisory' }}
-      # Enforce one criterion at a time. faq_grounding is the one we have
-      # cleaned the backlog for and seen catch a real live defect; the other
-      # four still report as "would block" without failing the run.
+      # Enforce one criterion at a time. faq_grounding is the one we have swept
+      # for and seen catch a real live defect; the other four still report as
+      # "would block" without failing the run. "Swept", not "clean": the judge
+      # is non-deterministic, so a page that read clean one run can surface a
+      # finding the next — the 2026-08-19 full scan turned up three that the
+      # pre-rollout sweep had not reported.
       SEO_REVIEW_ENFORCED_IDS: faq_grounding
     steps:
       - uses: actions/checkout@v4
@@ -198,9 +201,13 @@ jobs:
         run: npm install
 
       # pull_request → review only the diff (default cap 25, plenty for a PR).
-      # workflow_dispatch → `--all` reviews EVERY content page; bump the cap to 40
-      # so the full set (~27 pages) is never truncated. Both write the report to
-      # seo-review-report.md AND $GITHUB_STEP_SUMMARY.
+      # workflow_dispatch → `--all` reviews EVERY content page, so the cap must
+      # stay comfortably above the content-file count or the "full-site" scan
+      # silently isn't. It has already been wrong once: the cap was 40 while the
+      # corpus had grown to 41, so the 2026-08-19 scan skipped apps/wechat.md and
+      # still reported as a full scan. 200 buys years of headroom, and
+      # test/seo-review.test.mjs now fails if the corpus ever catches up.
+      # Both write the report to seo-review-report.md AND $GITHUB_STEP_SUMMARY.
       - name: SEO/GEO review of changed content
         id: seo
         if: env.OPENROUTER_API_KEY != ''
@@ -213,7 +220,7 @@ jobs:
         env:
           GITHUB_BASE_REF: ${{ github.base_ref }}
           GITHUB_EVENT_NAME: ${{ github.event_name }}
-          SEO_REVIEW_MAX_FILES: ${{ github.event_name == 'workflow_dispatch' && '40' || '25' }}
+          SEO_REVIEW_MAX_FILES: ${{ github.event_name == 'workflow_dispatch' && '200' || '25' }}
 
       # PR-only: on workflow_dispatch there is no PR to comment on (the report lives
       # in the run Summary, written by the script via $GITHUB_STEP_SUMMARY).
