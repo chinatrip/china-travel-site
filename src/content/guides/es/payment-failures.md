@@ -56,8 +56,9 @@ faqs:
       cambia a la otra app.
   - q: 'Mi tarjeta funcionaba bien y de repente dejó de hacerlo, ¿qué pasó?'
     a: >-
-      El control de riesgo de la plataforma o un límite de gasto regulatorio
-      pueden bloquear una tarjeta sin previo aviso. Prueba la otra app, desvincula
+      El control de riesgo de la plataforma o un límite de gasto pueden bloquear
+      una tarjeta sin previo aviso — esto lo reportan viajeros y no está
+      verificado de forma independiente. Prueba la otra app, desvincula
       y vuelve a vincular la tarjeta, completa la verificación de pasaporte si no
       lo has hecho o recurre al efectivo. Con Alipay y WeChat Pay configurados,
       casi todos los comercios aceptan al menos uno.
