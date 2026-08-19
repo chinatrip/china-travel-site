@@ -37,6 +37,34 @@ export const BLOCKING_IDS = ['faq_grounding', 'faq_wellformed', 'meta_descriptio
 export const ADVISORY_IDS = ['h2_question_form', 'direct_answer_geo', 'internal_linking', 'keyword_intent_match', 'no_keyword_stuffing', 'faqs_present'];
 export const CRITERION_IDS = [...BLOCKING_IDS, ...ADVISORY_IDS];
 
+/**
+ * Which blocking-class criteria are actually enforced (i.e. can fail the check).
+ * Lets the gate be hardened one criterion at a time instead of all five at once:
+ * a criterion not listed here still gets reported as "would block", it just does
+ * not fail the run. Empty/unset = every BLOCKING_ID, which is the historical
+ * behaviour of `SEO_REVIEW_MODE=blocking`.
+ *
+ * Staged rollout matters here: this gate was briefly blocking + required before
+ * and was reverted, because a wiki sync PR bundles several pages, the gate
+ * re-reviews each in full, and latent issues on pages unrelated to the change
+ * then hard-blocked the deploy. Enforcing one well-understood criterion keeps
+ * that blast radius small.
+ * @param {string|undefined|null} raw Comma-separated ids (env SEO_REVIEW_ENFORCED_IDS).
+ * @returns {string[]}
+ */
+export function resolveEnforcedIds(raw) {
+  if (raw === undefined || raw === null || String(raw).trim() === '') return [...BLOCKING_IDS];
+  const ids = [...new Set(String(raw).split(',').map((x) => x.trim()).filter(Boolean))];
+  const unknown = ids.filter((id) => !BLOCKING_IDS.includes(id));
+  if (unknown.length) {
+    throw new Error(
+      `seo-review: SEO_REVIEW_ENFORCED_IDS contains id(s) that are not blocking-class: ${unknown.join(', ')}. ` +
+        `Must be a subset of: ${BLOCKING_IDS.join(', ')}`,
+    );
+  }
+  return ids;
+}
+
 // Meta-description hard length window (blocking outside this; ideal 120–160 is the model's call).
 const META_MIN = 50;
 const META_MAX = 180;
@@ -218,10 +246,17 @@ export function evaluatePageVerdict(verdict, derived) {
   };
 }
 
-export function aggregateResults(pages) {
+export function aggregateResults(pages, enforcedIds = BLOCKING_IDS) {
   const blockingCount = pages.reduce((n, p) => n + p.blocking.length, 0);
   const advisoryCount = pages.reduce((n, p) => n + p.advisory.length, 0);
+  const isEnforced = (b) => enforcedIds.includes(b.id);
+  const enforcedBlockingCount = pages.reduce((n, p) => n + p.blocking.filter(isEnforced).length, 0);
   return {
+    enforcedIds: [...enforcedIds],
+    enforcedBlockingCount,
+    // Only enforced findings can fail the run; overallPass still reflects every
+    // blocking-class finding, so the report can distinguish the two.
+    enforcedPass: pages.every((p) => !p.blocking.some(isEnforced)),
     overallPass: pages.every((p) => p.pass),
     pageCount: pages.length,
     blockingCount,
@@ -235,31 +270,56 @@ export function aggregateResults(pages) {
 export function decideExitCode(aggregate, mode, { infraError = false } = {}) {
   if (mode === 'blocking') {
     if (infraError) return 1;
-    return aggregate.overallPass ? 0 : 1;
+    // Fall back to overallPass for aggregates built without an enforced set
+    // (which defaults to every BLOCKING_ID, so the two agree).
+    const pass = aggregate.enforcedPass ?? aggregate.overallPass;
+    return pass ? 0 : 1;
   }
   return 0; // advisory
 }
 
 export function renderMarkdownReport(aggregate, { mode, infraError = false } = {}) {
   const lines = [MARKER];
-  const blockLabel = mode === 'blocking' ? '⛔ BLOCKING' : '⛔ WOULD BLOCK (advisory)';
+  const enforced = aggregate.enforcedIds ?? BLOCKING_IDS;
+  const isEnforced = (id) => mode === 'blocking' && enforced.includes(id);
+  // In blocking mode the two kinds of blocking-class finding must be told apart:
+  // one fails the run, the other is still only a warning.
+  const labelFor = (id) =>
+    mode !== 'blocking'
+      ? '⛔ WOULD BLOCK (advisory)'
+      : isEnforced(id)
+        ? '⛔ BLOCKING'
+        : '⛔ WOULD BLOCK (not yet enforced)';
   if (infraError) {
     lines.push(`## 🟥 SEO/GEO review could not complete`);
     lines.push('', 'The review hit an infrastructure error (LLM/API). ' + (mode === 'blocking' ? 'Failing closed.' : 'Advisory — not blocking.'));
     return lines.join('\n');
   }
+  const runFails = mode === 'blocking' && (aggregate.enforcedPass ?? aggregate.overallPass) === false;
   const head = aggregate.overallPass
     ? `## ✅ SEO/GEO review: PASS (${aggregate.pageCount} page${aggregate.pageCount === 1 ? '' : 's'})`
-    : `## ${mode === 'blocking' ? '❌' : '⚠️'} SEO/GEO review: ${aggregate.blockingCount} blocking · ${aggregate.advisoryCount} advisory`;
+    : `## ${runFails ? '❌' : '⚠️'} SEO/GEO review: ${aggregate.blockingCount} blocking · ${aggregate.advisoryCount} advisory`;
   lines.push(head, '');
-  if (mode === 'advisory') lines.push('_Advisory mode — this check does not block merge yet. Issues marked **WOULD BLOCK** are what will be enforced once hardened._', '');
+  if (mode === 'advisory') {
+    lines.push('_Advisory mode — this check does not block merge yet. Issues marked **WOULD BLOCK** are what will be enforced once hardened._', '');
+  } else {
+    const notYet = BLOCKING_IDS.filter((id) => !enforced.includes(id));
+    lines.push(
+      `_Enforced: ${enforced.map((id) => `\`${id}\``).join(', ')} — a failure there fails this check._` +
+        (notYet.length ? ` Still advisory: ${notYet.map((id) => `\`${id}\``).join(', ')}.` : ''),
+      '',
+    );
+  }
 
   for (const p of aggregate.pages) {
-    const status = p.pass ? '✅' : (mode === 'blocking' ? '❌' : '⚠️');
+    const pageFails = p.blocking.some((b) => isEnforced(b.id));
+    const status = p.pass ? '✅' : (pageFails ? '❌' : '⚠️');
     lines.push(`### ${status} \`${p.collection}/${p.slug}\` — score ${p.overallScore}/5`);
-    if (p.blocking.length) {
-      lines.push(`**${blockLabel}:**`);
-      for (const b of p.blocking) for (const d of b.detail) lines.push(`- \`${b.id}\` — ${d}`);
+    for (const group of [true, false]) {
+      const items = p.blocking.filter((b) => isEnforced(b.id) === group);
+      if (!items.length) continue;
+      lines.push(`**${labelFor(items[0].id)}:**`);
+      for (const b of items) for (const d of b.detail) lines.push(`- \`${b.id}\` — ${d}`);
     }
     if (p.advisory.length) {
       lines.push('**Advisory:**');
@@ -460,6 +520,7 @@ function writeReport(report) {
 // ---------------------------------------------------------------------------
 async function main() {
   const mode = process.env.SEO_REVIEW_MODE === 'blocking' ? 'blocking' : 'advisory';
+  const enforcedIds = resolveEnforcedIds(process.env.SEO_REVIEW_ENFORCED_IDS);
   const args = process.argv.slice(2);
   const all = args.includes('--all');
   const fileArgs = filterContentPaths(args.filter((a) => !a.startsWith('--')));
@@ -509,14 +570,18 @@ async function main() {
     console.error(`❌ SEO/GEO review infra error: ${err?.message || err}`);
   }
 
-  const aggregate = aggregateResults(results);
+  const aggregate = aggregateResults(results, enforcedIds);
   let report = renderMarkdownReport(aggregate, { mode, infraError });
   if (dropped.length) report += `\n> ⚠️ ${dropped.length} additional changed file(s) not reviewed this run (cap ${MAX_FILES}): ${dropped.join(', ')}`;
   writeReport(report);
   if (results.length) appendDecisions(results, mode);
 
   const code = decideExitCode(aggregate, mode, { infraError });
-  console.log(`${code === 0 ? '✅' : '❌'} SEO/GEO review done — mode=${mode}, ${aggregate.blockingCount} blocking, exit ${code}.`);
+  console.log(
+    `${code === 0 ? '✅' : '❌'} SEO/GEO review done — mode=${mode}` +
+      (mode === 'blocking' ? `, enforced=[${enforcedIds.join(',')}]` : '') +
+      `, ${aggregate.blockingCount} blocking (${aggregate.enforcedBlockingCount} enforced), exit ${code}.`,
+  );
   process.exit(code);
 }
 
