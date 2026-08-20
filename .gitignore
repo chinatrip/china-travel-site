@@ -34,3 +34,9 @@ sync-report.md
 
 # SEO/GEO review run artifact (regenerated each CI run; the PR comment is the durable output)
 seo-review-report.md
+
+# Claude Code local state (agent worktrees). Nothing here is shared.
+# NOTE: this ignores the whole directory. If project-level Claude config meant
+# for the team is ever added (.claude/settings.json, .claude/agents/, ...), it
+# needs an explicit un-ignore line here or it will be silently uncommittable.
+.claude/
