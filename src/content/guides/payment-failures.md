@@ -58,9 +58,9 @@ faqs:
     a: >-
       Platform risk-control or a spending limit can block a card with no warning
       — this one is traveler-reported rather than independently verified. Try
-      the other app, unbind and re-bind the card, complete
-      passport verification if you haven't, or fall back to cash. With both
-      Alipay and WeChat Pay set up, nearly every merchant accepts at least one.
+      the other app, unbind and re-bind the card, complete passport verification
+      if you haven't, or fall back to cash. With both Alipay and WeChat Pay set
+      up, nearly every merchant accepts at least one.
 category: guide
 ---
 
