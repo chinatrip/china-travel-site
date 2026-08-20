@@ -47,8 +47,9 @@ faqs:
     a: >-
       Not always. Direct platforms like 12306 are free, and Chinese apps such as
       Meituan can list the same hotel rooms for less. What Trip.com offers in
-      exchange is an English interface and foreign-card support, so the trade-off
-      is a possible small premium for a booking you can actually complete.
+      exchange is an English interface and foreign-card support, so the
+      trade-off is a possible small premium for a booking you can actually
+      complete.
 category: app
 ---
 

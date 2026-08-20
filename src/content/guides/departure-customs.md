@@ -28,8 +28,8 @@ faqs:
     a: >-
       High-risk items include traditional Chinese medicines (often confiscated
       by home customs), antiques without an export permit, and counterfeits
-      (which risk confiscation and fines at home). Lithium batteries and power banks are allowed
-      but must go in carry-on, never checked luggage.
+      (which risk confiscation and fines at home). Lithium batteries and power
+      banks are allowed but must go in carry-on, never checked luggage.
   - q: Will I be taxed on what I bought in China?
     a: >-
       Only if you exceed your home country's duty-free limit — for example

@@ -41,9 +41,9 @@ faqs:
       In many past years Tibet closed to foreign visitors from around late
       February into late March or early April, but this administrative closure
       is not guaranteed every year — Tibet travel agencies report it did not
-      happen in 2026 and that the region stayed
-      open through that period. Dates vary, so always confirm the current status
-      with your agency before planning.
+      happen in 2026 and that the region stayed open through that period. Dates
+      vary, so always confirm the current status with your agency before
+      planning.
   - q: How do I avoid altitude sickness in Tibet?
     a: >-
       Lhasa sits at about 3,650 m. Acclimatize slowly, stay hydrated, avoid

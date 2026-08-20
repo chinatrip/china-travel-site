@@ -20,9 +20,8 @@ review:
   page_audit: 2026-06-17
   citation_check: null
 description: >-
-  Dianping (大众点评) is China's Yelp — top-rated restaurants by star rating,
-  photo menus and per-person price; reviews are in Chinese, bring a
-  translation tool.
+  Dianping (大众点评) is China's Yelp — top-rated restaurants by star rating, photo
+  menus and per-person price; reviews are in Chinese, bring a translation tool.
 faqs:
   - q: What is Dianping and can foreigners use it?
     a: >-
