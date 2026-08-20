@@ -8,7 +8,7 @@ faqs:
   - q: "How do I use Chinese services without a Chinese phone number?"
     a: "Use the mini-program version inside WeChat or Alipay instead of the standalone app — mini-programs generally need no phone number or SMS verification. For example, run DiDi as a mini-program inside Alipay. Many ordering, ticket and ride services work this way."
   - q: "How do I get a Chinese phone number if I need one?"
-    a: "Buy a prepaid Chinese SIM (China Mobile, Unicom or Telecom) at the airport or a carrier shop with your passport — real-name registration is required. Some travel eSIM packages also bundle a usable number. Note that a Chinese SIM is behind the Great Firewall, so you'll also want a VPN."
+    a: "Buy a prepaid Chinese SIM (China Mobile, Unicom or Telecom) at the airport or a carrier shop with your passport — real-name registration is required. Some travel eSIM packages also bundle a usable number. Note that a Chinese SIM's data sits behind the Great Firewall, so pair it with a VPN if you want Google, WhatsApp or Instagram — or run a dual setup: a foreign eSIM for firewall-free data plus a cheap Chinese SIM purely for the number."
   - q: "Why doesn't my foreign number receive the Chinese app's verification code?"
     a: "Many Chinese apps accept a foreign number at signup but silently fail to deliver the SMS, so the code never arrives. Use the mini-program version, register before you travel while on your home carrier, or get a Chinese number for that app."
 category: guide

@@ -68,8 +68,10 @@ faqs:
       confiscation, a fine, or detention, and China requires VPNs to be
       government-licensed. In practice, enforcement has targeted providers and
       distributors rather than individual tourists using a VPN for personal
-      communication, and airport security doesn't check devices — but weigh the
-      risk yourself and check your country's official travel advisory.
+      communication, and we know of no reports of airport security screening
+      arriving travellers' devices for VPN apps — but that is an absence of
+      reports, not a guarantee. Weigh the risk yourself and check your
+      country's official travel advisory.
 category: guide
 ---
 
@@ -270,7 +272,7 @@ VPN reliability in China is not guaranteed. The GFW uses machine learning to det
 
 **Legal status (important):** The US State Department (updated May 2026) states that VPN use in China is 'illegal in most cases and may result in confiscation of your device, a fine, or detention.' The UK FCDO notes that VPNs need to be licensed by the Chinese government. In practice, enforcement has historically targeted VPN providers and distributors rather than individual foreign tourists using VPNs for personal communication. However, travelers should be aware of the legal risk and make their own informed decision. This wiki provides information only — consult your country's official travel advisory.
 
-Airport security does not check for VPN apps on devices.
+We know of no reports of airport security screening arriving travellers' devices for VPN apps. That is an absence of reports rather than a documented policy — this page has no authoritative source either way — and it does not lessen the legal risk described above.
 
 ### VPN Troubleshooting
 
