@@ -58,9 +58,11 @@ faqs:
   - q: Can I download a VPN once I'm already in China?
     a: >-
       It's very hard — app stores and VPN websites are largely blocked from
-      inside China. Download and test your VPN before arrival. If your only VPN
-      stops working, options include a different-region App Store account or
-      having someone send you the installer file.
+      inside China. Download and test your VPN before arrival. If you did not,
+      the workarounds are limited and none is reliable: mirror download links
+      saved before you flew, help from your hotel, airport Wi-Fi on landing,
+      briefly borrowing a device that already has a VPN, or waiting until Hong
+      Kong or Macau.
   - q: Is it legal for tourists to use a VPN in China?
     a: >-
       Officially it's restricted, not freely legal: the US State Department
