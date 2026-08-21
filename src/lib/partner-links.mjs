@@ -17,8 +17,23 @@
 // exempted: the URL is on the page because of the arrangement, and over-qualifying
 // costs nothing while under-qualifying is the failure that matters.
 
-/** Domains whose outbound links must carry rel="sponsored". */
-export const PARTNER_DOMAINS = ['nomadesim.com'];
+/**
+ * Domains whose outbound links must carry rel="sponsored".
+ *
+ * Empty as of 2026-08-21: the Nomad eSIM link exchange — the only entry this list
+ * ever had — was ended by the site owner, and the outbound link went with it.
+ *
+ * The list being empty is not the same as this module being dead. It stays for two
+ * reasons. First, the next arrangement only needs a string added here, not the
+ * matching logic rebuilt — and that logic is the part with the sharp edges
+ * (protocol-relative URLs, trailing-root-label FQDNs, `partner.com.evil.test`,
+ * `partner.com@attacker.test`), each of which is a real fail-open this module has
+ * already had to close. Second, with the list empty the dist guard in
+ * test/partner-rel.test.mjs inverts into something more useful than it was before:
+ * it now asserts that NO built page emits rel="sponsored" at all, which catches an
+ * undisclosed compensated link being added without a corresponding entry here.
+ */
+export const PARTNER_DOMAINS = [];
 
 /** Site origin, used only as a resolution base — never matched against. */
 const RESOLUTION_BASE = 'https://chinaguide.ai/';
@@ -114,6 +129,6 @@ export function withSponsored(rel) {
  * @param {string} [base] Base rel this site puts on outbound links.
  * @returns {string}
  */
-export function outboundRel(url, base = 'nofollow noopener') {
-  return isPartnerUrl(url) ? withSponsored(base).join(' ') : base;
+export function outboundRel(url, base = 'nofollow noopener', domains = PARTNER_DOMAINS) {
+  return isPartnerUrl(url, domains) ? withSponsored(base).join(' ') : base;
 }
