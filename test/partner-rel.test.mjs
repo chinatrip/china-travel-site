@@ -19,31 +19,39 @@ import { outboundRel } from '../src/lib/partner-links.mjs';
 
 const here = dirname(fileURLToPath(import.meta.url));
 
+// The URL-matching rules are the durable part of this module — they outlive any one
+// commercial arrangement — so they are exercised against a fixture list rather than
+// against whatever PARTNER_DOMAINS currently holds. Pinning them to the live roster
+// meant every matching test here went red the moment a partnership ended, which is
+// precisely when you least want these guarantees to go dark. nomadesim.com below is
+// a test string, not a statement about who we have a deal with.
+const FIXTURE = ['nomadesim.com'];
+
 // ---- URL matching ----------------------------------------------------------
 
 test('matches a partner domain and its subdomains', () => {
-  assert.equal(isPartnerUrl('https://www.nomadesim.com/china-eSIM'), true);
-  assert.equal(isPartnerUrl('https://nomadesim.com/'), true);
-  assert.equal(isPartnerUrl('http://help.nomadesim.com/article'), true);
-  assert.equal(isPartnerUrl('https://NOMADESIM.COM/x'), true, 'host match is case-insensitive');
+  assert.equal(isPartnerUrl('https://www.nomadesim.com/china-eSIM', FIXTURE), true);
+  assert.equal(isPartnerUrl('https://nomadesim.com/', FIXTURE), true);
+  assert.equal(isPartnerUrl('http://help.nomadesim.com/article', FIXTURE), true);
+  assert.equal(isPartnerUrl('https://NOMADESIM.COM/x', FIXTURE), true, 'host match is case-insensitive');
 });
 
 test('does not match lookalike or unrelated domains', () => {
-  assert.equal(isPartnerUrl('https://notnomadesim.com/'), false, 'suffix lookalike must not match');
-  assert.equal(isPartnerUrl('https://nomadesim.com.evil.test/'), false, 'domain-in-subdomain must not match');
-  assert.equal(isPartnerUrl('https://nomadesim.com@attacker.test/'), false, 'userinfo must not be read as the host');
-  assert.equal(isPartnerUrl('https://xn--nmadesim-p1a.com/'), false, 'punycode homograph must not match');
-  assert.equal(isPartnerUrl('https://www.airalo.com/china-esim'), false);
-  assert.equal(isPartnerUrl('https://esim.holafly.com/esim-china/'), false);
+  assert.equal(isPartnerUrl('https://notnomadesim.com/', FIXTURE), false, 'suffix lookalike must not match');
+  assert.equal(isPartnerUrl('https://nomadesim.com.evil.test/', FIXTURE), false, 'domain-in-subdomain must not match');
+  assert.equal(isPartnerUrl('https://nomadesim.com@attacker.test/', FIXTURE), false, 'userinfo must not be read as the host');
+  assert.equal(isPartnerUrl('https://xn--nmadesim-p1a.com/', FIXTURE), false, 'punycode homograph must not match');
+  assert.equal(isPartnerUrl('https://www.airalo.com/china-esim', FIXTURE), false);
+  assert.equal(isPartnerUrl('https://esim.holafly.com/esim-china/', FIXTURE), false);
 });
 
 // Both of these render as working outbound partner links, so missing them
 // would ship an unqualified paid link — the dangerous direction.
 test('matches partner links that are protocol-relative or use a trailing-dot FQDN', () => {
-  assert.equal(isPartnerUrl('//nomadesim.com/x'), true, 'protocol-relative link resolves to https');
-  assert.equal(isPartnerUrl('//www.nomadesim.com/china-eSIM'), true);
-  assert.equal(isPartnerUrl('https://nomadesim.com./x'), true, 'trailing root label is the same host');
-  assert.equal(isPartnerUrl('https://www.nomadesim.com./x'), true);
+  assert.equal(isPartnerUrl('//nomadesim.com/x', FIXTURE), true, 'protocol-relative link resolves to https');
+  assert.equal(isPartnerUrl('//www.nomadesim.com/china-eSIM', FIXTURE), true);
+  assert.equal(isPartnerUrl('https://nomadesim.com./x', FIXTURE), true, 'trailing root label is the same host');
+  assert.equal(isPartnerUrl('https://www.nomadesim.com./x', FIXTURE), true);
 });
 
 test('tolerates a configured domain written with stray dots', () => {
@@ -64,9 +72,17 @@ test('ignores internal, relative, non-http and malformed URLs', () => {
 // The list is where a future partner gets added, and every wrong way of writing
 // an entry fails silently in the fail-open direction. It must throw instead.
 
+// An empty roster is a legitimate state — it is what "we currently have no paid or
+// exchanged placements" looks like — so this no longer asserts the list is non-empty.
+// What must stay true either way is that every entry is a bare host: a scheme, path,
+// port or stray whitespace in here silently matches nothing, which fails open.
 test('the shipped PARTNER_DOMAINS list is well-formed', () => {
   assert.doesNotThrow(() => assertValidDomains(PARTNER_DOMAINS));
-  assert.ok(PARTNER_DOMAINS.length > 0);
+  assert.ok(Array.isArray(PARTNER_DOMAINS));
+  for (const entry of PARTNER_DOMAINS) {
+    assert.equal(typeof entry, 'string');
+    assert.doesNotMatch(entry, /[:/\s]/, `partner domain ${JSON.stringify(entry)} must be a bare host`);
+  }
 });
 
 test('malformed partner entries throw rather than matching nothing', () => {
@@ -126,7 +142,7 @@ test('plugin marks partner anchors and leaves others untouched', () => {
   const partner = a('https://www.nomadesim.com/china-eSIM');
   const other = a('https://www.airalo.com/china-esim');
   const internal = a('/guides/sim-card/');
-  rehypePartnerRel()(tree(partner, other, internal));
+  rehypePartnerRel({ domains: FIXTURE })(tree(partner, other, internal));
 
   assert.deepEqual(partner.properties.rel, ['sponsored']);
   assert.equal(other.properties.rel, undefined, 'non-partner link must not be touched');
@@ -136,8 +152,8 @@ test('plugin marks partner anchors and leaves others untouched', () => {
 test('plugin is idempotent and preserves existing rel', () => {
   const node = a('https://nomadesim.com/x', { rel: ['noopener'] });
   const t = tree(node);
-  rehypePartnerRel()(t);
-  rehypePartnerRel()(t);
+  rehypePartnerRel({ domains: FIXTURE })(t);
+  rehypePartnerRel({ domains: FIXTURE })(t);
   assert.deepEqual(node.properties.rel, ['noopener', 'sponsored']);
 });
 
@@ -161,16 +177,23 @@ test('non-anchor elements and childless nodes do not crash the walk', () => {
 // produced an unqualified partner link, caught by the dist guard below.
 
 test('outboundRel appends sponsored only for partner links', () => {
-  assert.equal(outboundRel('https://www.nomadesim.com/china-eSIM'), 'nofollow noopener sponsored');
-  assert.equal(outboundRel('//nomadesim.com/x'), 'nofollow noopener sponsored');
-  assert.equal(outboundRel('https://www.airalo.com/china-esim'), 'nofollow noopener');
-  assert.equal(outboundRel('https://esim.holafly.com/esim-china/'), 'nofollow noopener');
-  assert.equal(outboundRel('https://en.nia.gov.cn/x'), 'nofollow noopener');
+  assert.equal(outboundRel('https://www.nomadesim.com/china-eSIM', undefined, FIXTURE), 'nofollow noopener sponsored');
+  assert.equal(outboundRel('//nomadesim.com/x', undefined, FIXTURE), 'nofollow noopener sponsored');
+  assert.equal(outboundRel('https://www.airalo.com/china-esim', undefined, FIXTURE), 'nofollow noopener');
+  assert.equal(outboundRel('https://esim.holafly.com/esim-china/', undefined, FIXTURE), 'nofollow noopener');
+  assert.equal(outboundRel('https://en.nia.gov.cn/x', undefined, FIXTURE), 'nofollow noopener');
 });
 
 test('outboundRel honours a custom base rel and never duplicates', () => {
-  assert.equal(outboundRel('https://nomadesim.com/x', 'noopener'), 'noopener sponsored');
-  assert.equal(outboundRel('https://nomadesim.com/x', 'noopener sponsored'), 'noopener sponsored');
+  assert.equal(outboundRel('https://nomadesim.com/x', 'noopener', FIXTURE), 'noopener sponsored');
+  assert.equal(outboundRel('https://nomadesim.com/x', 'noopener sponsored', FIXTURE), 'noopener sponsored');
+  assert.equal(outboundRel('https://example.test/x', 'noopener', FIXTURE), 'noopener');
+});
+
+// With the live roster empty, the shipped default must qualify nothing at all.
+test('outboundRel qualifies nothing while the partner roster is empty', () => {
+  assert.equal(PARTNER_DOMAINS.length, 0, 'update this test when a partner is added back');
+  assert.equal(outboundRel('https://www.nomadesim.com/china-eSIM'), 'nofollow noopener');
   assert.equal(outboundRel('https://example.test/x', 'noopener'), 'noopener');
 });
 
@@ -179,7 +202,7 @@ test('outboundRel honours a custom base rel and never duplicates', () => {
 // plugin is never registered. This renders markdown through the *configured*
 // pipeline, so deleting the `rehypePlugins` line in astro.config.mjs fails here.
 
-test('the configured markdown pipeline stamps rel="sponsored" on partner links', async () => {
+test('the partner-rel plugin is registered in the configured markdown pipeline', async () => {
   const [{ createMarkdownProcessor }, { default: astroConfig }] = await Promise.all([
     import('@astrojs/markdown-remark'),
     import('../astro.config.mjs'),
@@ -188,18 +211,25 @@ test('the configured markdown pipeline stamps rel="sponsored" on partner links',
     remarkPlugins: astroConfig.markdown?.remarkPlugins ?? [],
     rehypePlugins: astroConfig.markdown?.rehypePlugins ?? [],
   });
+  // With the roster empty the pipeline cannot stamp anything, so an end-to-end
+  // "was it stamped" assertion is not available until a partner exists again. The
+  // thing that must not silently rot in the meantime is the registration itself —
+  // deleting the `rehypePlugins` line would otherwise go unnoticed and the next
+  // partner link would ship unqualified. Pin it by identity.
+  const registered = astroConfig.markdown?.rehypePlugins ?? [];
+  assert.ok(
+    registered.includes(rehypePartnerRel),
+    'rehype-partner-rel must stay registered in astro.config.mjs rehypePlugins',
+  );
+
   const { code } = await processor.render(
     '[Nomad eSIM](https://www.nomadesim.com/china-eSIM) and [Airalo](https://www.airalo.com/china-esim).',
   );
-
   const anchors = [...code.matchAll(/<a\b[^>]*>/g)].map((m) => m[0]);
-  const partner = anchors.find((t) => t.includes('nomadesim.com'));
-  const other = anchors.find((t) => t.includes('airalo.com'));
-
-  assert.ok(partner, `expected a partner anchor in rendered output:\n${code}`);
-  assert.match(partner, /\srel="(?:[^"]*\s)?sponsored(?:\s[^"]*)?"/, 'partner link must be qualified by the configured pipeline');
-  assert.ok(other, 'expected the non-partner anchor too');
-  assert.doesNotMatch(other, /\srel=/, 'non-partner link must be left alone');
+  assert.equal(anchors.length, 2, `expected both anchors in rendered output:\n${code}`);
+  for (const tag of anchors) {
+    assert.doesNotMatch(tag, /sponsored/, 'nothing may be qualified while the roster is empty');
+  }
 });
 
 // ---- component call sites ---------------------------------------------------
@@ -252,17 +282,33 @@ function collectHtml(dir, out = []) {
   return out;
 }
 
-test('no built page links to a partner domain without rel="sponsored"', () => {
-  const offenders = [];
+// Two directions, and the second one is why this guard is worth more now than it
+// was while a partnership existed:
+//   under-qualified — a link to a rostered partner that is missing rel="sponsored"
+//   over-qualified  — anything carrying rel="sponsored" that is NOT on the roster,
+//                     i.e. a compensated placement that shipped without being
+//                     declared here. With the roster empty this reduces to "no page
+//                     may emit rel=sponsored at all", which is the state we want to
+//                     hold until a new arrangement is deliberately added.
+test('built pages carry rel="sponsored" on exactly the rostered partner links', () => {
+  const underQualified = [];
+  const overQualified = [];
   for (const file of collectHtml(DIST)) {
     const html = readFileSync(file, 'utf8');
     for (const m of html.matchAll(/<a\b[^>]*>/g)) {
       const tag = m[0];
       const href = tag.match(/\shref="([^"]*)"/)?.[1];
-      if (!href || !isPartnerUrl(href, PARTNER_DOMAINS)) continue;
       const rel = tag.match(/\srel="([^"]*)"/)?.[1] ?? '';
-      if (!rel.split(/\s+/).includes('sponsored')) offenders.push(`${file}: ${tag}`);
+      const sponsored = rel.split(/\s+/).includes('sponsored');
+      const partner = Boolean(href) && isPartnerUrl(href, PARTNER_DOMAINS);
+      if (partner && !sponsored) underQualified.push(`${file}: ${tag}`);
+      if (sponsored && !partner) overQualified.push(`${file}: ${tag}`);
     }
   }
-  assert.deepEqual(offenders, [], `partner links missing rel="sponsored":\n${offenders.join('\n')}`);
+  assert.deepEqual(underQualified, [], `partner links missing rel="sponsored":\n${underQualified.join('\n')}`);
+  assert.deepEqual(
+    overQualified, [],
+    'rel="sponsored" on a link whose host is not in PARTNER_DOMAINS — either the ' +
+      `roster is out of date or an undisclosed paid link shipped:\n${overQualified.join('\n')}`,
+  );
 });
