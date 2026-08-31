@@ -43,6 +43,9 @@ jobs:
       CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # See deploy.yml — the sitemap build reads git history for <lastmod>.
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
