@@ -13,24 +13,48 @@ import remarkTrailingSlash from './src/plugins/remark-trailing-slash.mjs';
 import remarkStripLeadingH1 from './src/plugins/remark-strip-leading-h1.mjs';
 import rehypePartnerRel from './src/plugins/rehype-partner-rel.mjs';
 import { buildLastmodMap, lastmodFor } from './src/lib/sitemap-dates.mjs';
+import { contentCommitDates } from './src/lib/git-dates.mjs';
 
-// Sitemap <lastmod>: read content frontmatter (last_verified || date) at build
-// time. Non-content pages (/, /checklist/, listings, …) have no reliable date
-// and get no lastmod — a missing lastmod beats a fabricated one.
-function loadContentEntries() {
+// Sitemap <lastmod>: the content file's last COMMIT date, resolved in one git
+// pass at build time. Frontmatter `last_verified` / `date` are fact-checking
+// dates and only stand in when there is no git history — see src/lib/sitemap-dates.mjs
+// for why the two were wrong to conflate. Non-content pages (/, /checklist/,
+// listings, …) have no reliable date and get no lastmod — a missing lastmod
+// beats a fabricated one.
+const CONTENT_SOURCES = [
+  { collection: 'guides', dir: 'src/content/guides' },
+  { collection: 'apps', dir: 'src/content/apps' },
+  // Translations live in a subfolder of guides/ and load via the parallel
+  // `guidesEs` collection (src/content.config.ts); they render at /es/guides/<slug>/.
+  { collection: 'guidesEs', dir: 'src/content/guides/es' },
+];
+
+function loadContentEntries(gitDates) {
   const entries = [];
-  for (const collection of ['guides', 'apps']) {
-    const dir = new URL(`./src/content/${collection}/`, import.meta.url);
-    for (const file of readdirSync(dir)) {
+  for (const { collection, dir } of CONTENT_SOURCES) {
+    const base = new URL(`./${dir}/`, import.meta.url);
+    for (const file of readdirSync(base)) {
       if (!file.endsWith('.md')) continue;
-      const { data } = matter(readFileSync(new URL(file, dir), 'utf8'));
-      entries.push({ collection, slug: file.replace(/\.md$/, ''), data });
+      const { data } = matter(readFileSync(new URL(file, base), 'utf8'));
+      entries.push({
+        collection,
+        slug: file.replace(/\.md$/, ''),
+        data,
+        gitDate: gitDates.get(`${dir}/${file}`),
+      });
     }
   }
   return entries;
 }
 
-const lastmodMap = buildLastmodMap(loadContentEntries());
+// Throws on a shallow clone rather than emitting the tip commit's date for every
+// page; returns an empty map outside a repository, where the fallback applies.
+const contentDates = contentCommitDates(
+  CONTENT_SOURCES.map(({ dir }) => dir),
+  { cwd: fileURLToPath(new URL('.', import.meta.url)) },
+);
+
+const lastmodMap = buildLastmodMap(loadContentEntries(contentDates));
 
 // Custom integration: run Pagefind after build using its Node API
 function pagefindIntegration() {
