@@ -42,7 +42,7 @@ faqs:
       China continental se requiere una visa de turista (L).
   - q: ¿Qué es la política de tránsito sin visa de 240 horas?
     a: >-
-      Permite que los viajeros elegibles de 55 países transiten por China hasta
+      Permite que los viajeros elegibles de 57 países transiten por China hasta
       240 horas (10 días) sin visa, siempre que entren por uno de los 65
       puertos de entrada que califican, permanezcan dentro de las 24 regiones de
       nivel provincial permitidas y tengan un boleto de continuación hacia un
@@ -71,7 +71,7 @@ Empieza aquí. Busca tu nacionalidad en la tabla siguiente para identificar qué
 |---|---|---|
 | Pasaporte de uno de los 50 países con exención de visa unilateral (la mayoría de la UE, Reino Unido, Canadá, Australia, Japón, Corea del Sur, etc.) | **Sin visa unilateral de 30 días** — no se necesita visa | [Sección A](#sección-a-entrada-sin-visa-unilateral-de-30-días) |
 | Pasaporte de un país con un acuerdo bilateral de exención mutua (Emiratos Árabes Unidos, Singapur, Malasia, Tailandia, etc.) | **Sin visa bilateral** — no se necesita visa (hasta 30–90 días según el acuerdo) | [Sección B](#sección-b-exención-de-visa-bilateral-mutua) |
-| Pasaporte de uno de los 55 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país o región | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
+| Pasaporte de uno de los 57 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país o región | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
 | Entrada por o estancia solo en la provincia de Hainan | **Hainan sin visa de 30 días** — esquema separado, 59 países (cobertura efectiva más amplia mediante otros esquemas) | [Sección D](#sección-d-provincia-de-hainan-sin-visa-de-30-días) |
 | Cualquier país; solo una conexión breve en zona de tránsito (airside) | **Tránsito airside de 24 horas** — sin visa, debes permanecer en el puerto de entrada | [Sección E](#sección-e-tránsito-aeroportuario-airside-de-24-horas) |
 | Ninguna de las anteriores, o necesitas una estancia más larga / de trabajo / de estudios | **Visa L (turista)** u otra visa — solicítala antes de viajar | [Sección F](#sección-f-visa-l-visa-de-turista) |
@@ -136,10 +136,10 @@ El esquema estrella de tránsito sin visa permite que los viajeros elegibles que
 
 Esto responde a las preguntas Q1 y Q18 del registro de preguntas de la wiki: sí, puedes salir del aeropuerto, pero solo si cumples todos los criterios a continuación.
 
-### Quién califica (55 países a junio de 2026)
-Albania, Argentina, Australia, Austria, Bielorrusia, Bélgica, Bosnia y Herzegovina, Brasil, Brunéi, Bulgaria, Canadá, Chile, Croacia, Chipre, República Checa, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Indonesia, Irlanda, Italia, Japón, Letonia, Lituania, Luxemburgo, Malta, México, Mónaco, Montenegro, Países Bajos, Nueva Zelanda, Macedonia del Norte, Noruega, Polonia, Portugal, Catar, República de Corea, Rumanía, Rusia, Serbia, Singapur, Eslovaquia, Eslovenia, España, Suecia, Suiza, Ucrania, Emiratos Árabes Unidos, Reino Unido, Estados Unidos.
+### Quién califica (57 países, según la lista de la NIA actualizada el 20 de agosto de 2026)
+Albania, Argentina, Australia, Austria, Bielorrusia, Bélgica, Bosnia y Herzegovina, Brasil, Brunéi, Bulgaria, Canadá, Chile, Croacia, Chipre, República Checa, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Indonesia, Irlanda, Italia, Japón, Kirguistán, Letonia, Lituania, Luxemburgo, Malta, México, Mónaco, Montenegro, Países Bajos, Nueva Zelanda, Macedonia del Norte, Noruega, Polonia, Portugal, Catar, República de Corea, Rumanía, Rusia, Serbia, Singapur, Eslovaquia, Eslovenia, España, Suecia, Suiza, Ucrania, Emiratos Árabes Unidos, Reino Unido, Estados Unidos, Vietnam.
 
-> Fuente: Embajada de China en Estados Unidos (us.china-embassy.gov.cn) y el anuncio del Consejo de Estado del 4 de noviembre de 2025 (english.www.gov.cn). Indonesia se añadió al esquema de tránsito en junio de 2025, elevando el total a 55 países.
+> Fuente: [la página de la NIA sobre el tránsito de 240 horas](https://en.nia.gov.cn/n147418/n147463/c183412/content.html), actualizada el 20 de agosto de 2026, que agrupa los 57 países en 40 europeos, 2 norteamericanos, 4 sudamericanos, 2 de Oceanía y 9 asiáticos. **Kirguistán y Vietnam son las incorporaciones más recientes (20 de agosto de 2026)**; Indonesia se sumó en junio de 2025 y el esquema se anunció el 17 de diciembre de 2024.
 
 ### Requisitos: deben cumplirse todos
 1. **Boleto de continuación:** Boleto confirmado con asiento asignado y fecha de salida hacia un **tercer país o región** (no China, ni tu país de origen si regresas por la misma ruta). Con salida dentro de las 240 horas.
@@ -209,7 +209,7 @@ La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**
 | Estancia máxima | 30 días | 240 horas (10 días) |
 | Zonas de viaje | Toda China continental | Solo 24 provincias permitidas |
 | ¿Se necesita aprobación previa? | No | No (se activa en el control migratorio) |
-| Países elegibles | 50 (a junio de 2026; la lista cambia) | 55 (incluye EE. UU.) |
+| Países elegibles | 50 (a junio de 2026; la lista cambia) | 57 (a 20 de agosto de 2026; incluye EE. UU.) |
 
 ---
 

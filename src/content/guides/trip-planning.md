@@ -159,7 +159,7 @@ China is broadly mid-tier in Asia for travel costs: travelers consistently repor
 | **2 weeks** | Classic 3-city route (Beijing–Xi'an–Shanghai or Beijing–Chengdu–Shanghai); comfortable pace |
 | **3 weeks+** | Add a secondary destination (Guilin, Zhangjiajie, Yunnan, Chongqing); or Tibet add-on (requires 10+ working days permit lead time) |
 
-The **240-hour visa-free transit policy** (10 days for 55 qualifying nationalities) works well for a focused 1–2 city trip from one of the approved entry regions (Beijing, Shanghai, Guangzhou-Shenzhen, Chengdu, Harbin). See [[wiki/concepts/visa-types.md]].
+The **240-hour visa-free transit policy** (10 days for 57 qualifying nationalities) works well for a focused 1–2 city trip from one of the approved entry regions (Beijing, Shanghai, Guangzhou-Shenzhen, Chengdu, Harbin). See [[wiki/concepts/visa-types.md]].
 
 **Peak season note:** add 20–30% buffer time to any itinerary during Golden Week or Spring Festival.
 

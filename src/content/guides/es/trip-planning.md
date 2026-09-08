@@ -146,7 +146,7 @@ China se sitúa, en términos generales, en un nivel intermedio de Asia en cuant
 | **2 semanas** | Ruta clásica de 3 ciudades (Beijing–Xi'an–Shanghái o Beijing–Chengdu–Shanghái); ritmo cómodo |
 | **3 semanas o más** | Añade un destino secundario (Guilin, Zhangjiajie, Yunnan, Chongqing); o una extensión al Tíbet (requiere un plazo de tramitación del permiso de más de 10 días hábiles) |
 
-La **política de tránsito sin visa de 240 horas** (10 días para 55 nacionalidades que cumplen los requisitos) funciona bien para un viaje concentrado de 1 o 2 ciudades desde una de las regiones de entrada aprobadas (Beijing, Shanghái, Guangzhou-Shenzhen, Chengdu, Harbin). Consulta [[wiki/concepts/visa-types.md]].
+La **política de tránsito sin visa de 240 horas** (10 días para 57 nacionalidades que cumplen los requisitos) funciona bien para un viaje concentrado de 1 o 2 ciudades desde una de las regiones de entrada aprobadas (Beijing, Shanghái, Guangzhou-Shenzhen, Chengdu, Harbin). Consulta [[wiki/concepts/visa-types.md]].
 
 **Nota sobre la temporada alta:** añade un 20–30% de tiempo de margen a cualquier itinerario durante la Semana Dorada o la Fiesta de la Primavera.
 

@@ -46,7 +46,7 @@ faqs:
       required.
   - q: What is the 240-hour transit-free policy?
     a: >-
-      It lets eligible travelers from 55 countries transit China for up to 240
+      It lets eligible travelers from 57 countries transit China for up to 240
       hours (10 days) without a visa, provided they enter through one of the 65
       qualifying ports, stay within the 24 permitted provincial-level regions,
       and hold an onward ticket to a third country or region.
@@ -74,7 +74,7 @@ Start here. Find your nationality in the table below to identify which section t
 |---|---|---|
 | Passport from one of 50 unilateral visa-free countries (most EU, UK, Canada, Australia, Japan, South Korea, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
 | Passport from a country with a mutual bilateral agreement (UAE, Singapore, Malaysia, Thailand, etc.) | **Bilateral visa-free** — no visa needed (up to 30–90 days depending on agreement) | [Section B](#section-b-bilateral-mutual-visa-exemption) |
-| Passport from one of 55 transit-eligible countries (includes USA + all above) AND traveling to a third country or region | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
+| Passport from one of 57 transit-eligible countries (includes USA + all above) AND traveling to a third country or region | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
 | Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 59 countries (broader effective coverage via other schemes) | [Section D](#section-d-hainan-province-30-day-visa-free) |
 | Any country; brief airside connection only | **24-hour airside transit** — no visa, must stay in port | [Section E](#section-e-24-hour-airside-transit) |
 | None of the above, or need a longer / work / study stay | **L-visa (tourist)** or other visa — apply before travel | [Section F](#section-f-l-visa-tourist-visa) |
@@ -139,10 +139,10 @@ The flagship transit-free scheme allows eligible travelers transiting through Ch
 
 This answers Q1 and Q18 in the wiki's question ledger: yes, you can leave the airport — but only if you meet all criteria below.
 
-### Who qualifies (55 countries as of June 2026)
-Albania, Argentina, Australia, Austria, Belarus, Belgium, Bosnia-Herzegovina, Brazil, Brunei, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Indonesia, Ireland, Italy, Japan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, Netherlands, New Zealand, North Macedonia, Norway, Poland, Portugal, Qatar, Republic of Korea, Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Arab Emirates, United Kingdom, United States.
+### Who qualifies (57 countries, per NIA's list updated 20 August 2026)
+Albania, Argentina, Australia, Austria, Belarus, Belgium, Bosnia-Herzegovina, Brazil, Brunei, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Indonesia, Ireland, Italy, Japan, Kyrgyzstan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, Netherlands, New Zealand, North Macedonia, Norway, Poland, Portugal, Qatar, Republic of Korea, Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Arab Emirates, United Kingdom, United States, Vietnam.
 
-> Source: Chinese Embassy in the United States (us.china-embassy.gov.cn) and the State Council announcement of 4 November 2025 (english.www.gov.cn). Indonesia was added to the transit scheme in June 2025, bringing the total to 55 countries.
+> Source: [NIA's 240-hour transit policy page](https://en.nia.gov.cn/n147418/n147463/c183412/content.html), updated 20 August 2026, which groups the 57 countries as 40 European, 2 North American, 4 South American, 2 Oceanian and 9 Asian. **Kyrgyzstan and Vietnam are the most recent additions (20 August 2026)**; Indonesia joined in June 2025, and the scheme itself was announced 17 December 2024.
 
 ### Requirements — all must be met
 1. **Onward ticket:** Confirmed ticket with assigned seat and departure date to a **third country or region** (not China, not your origin country if returning via same route). Departing within 240 hours.
@@ -212,7 +212,7 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 | Max stay | 30 days | 240 hours (10 days) |
 | Travel zones | Entire mainland China | 24 permitted provinces only |
 | Pre-approval needed? | No | No (activated at immigration) |
-| Eligible countries | 50 (as of June 2026; list changes) | 55 (includes USA) |
+| Eligible countries | 50 (as of June 2026; list changes) | 57 (as of 20 August 2026; includes USA) |
 
 ---
 
