@@ -1,10 +1,10 @@
 ---
 title: "Visa y entrada a China: tipos y sin visa"
 date: 2026-07-01
-last_verified: 2026-07-16
+last_verified: 2026-09-08
 lang: es
 source_en: guides/visa-types
-source_last_verified: 2026-07-16
+source_last_verified: 2026-09-08
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
