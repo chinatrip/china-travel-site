@@ -1,7 +1,7 @@
 ---
 title: China Visa & Entry Options for Tourists and Visitors
 date: 2026-07-01
-last_verified: 2026-07-16
+last_verified: 2026-09-08
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
@@ -24,7 +24,7 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: 2026-07-16
-  notes: "2026-07-16 re-verified high-volatility anchors against official sources: unilateral 30-day visa-free = 50 countries (NIA c183390, content 2026-02-17; UK & Canada added 2026-02-17; most valid to 2026-12-31); 240-hour transit = 55 countries / 65 ports / 24 regions (NIA c183412, 2025-07-04; embassy 2024-12-17); Hainan = 59 countries / 30 days (NIA c180637, 2025-02-14). CHANGED: Russia's unilateral visa-free, previously ending 2026-09-14, was extended to 2027-12-31 (MFA spokesperson 2026-05-20) — the 3 body references were corrected. Fixed the transit-policy source URL c156086 (old 72/144-hour page) → c183412 (current 240-hour page) in verified_against and body links. Removed reader-facing internal wiki/summaries citations from the body. Aligned the 240-hour transit FAQ (dropped 'exit through the 65 ports' — NIA only mandates entry through them) with Section C. Did NOT re-audit every line this round (page_audit retains 2026-06-09). Also corrected an internal contradiction: the 240-hour onward-ticket requirement is 'third country or region' (NIA c183412) and Hong Kong/Macau/Taiwan count as valid onward regions — fixed the FAQ and two body lines that wrongly restricted it to foreign countries, aligning with the existing correct TWOV example."
+  notes: "2026-09-08: the 240-hour transit count moved 55 -> 57. NIA's transit page (c183412) was updated 2026-08-20 and now reads verbatim \"China is implementing this policy for nationals of 57 countries\"; Kyrgyzstan and Vietnam are the additions, both in its Asian group (now 9: Brunei, Indonesia, Japan, Kyrgyzstan, Qatar, Singapore, South Korea, UAE, Vietnam). Re-fetched 2026-09-08 and the full list diffed against ours programmatically, not by eye: exactly two additions, zero removals, 40 EU / 2 NA / 4 SA / 2 OC / 9 AS = 57. All five live occurrences on this page updated (FAQ, decision table, section heading, country list, comparison table) plus the source note, which had credited Indonesia with bringing the total to 55 and is now cited to c183412 directly. last_verified BUMPED to 2026-09-08 because the transit anchor genuinely was re-verified today; NOTHING ELSE on this page was re-checked this round and page_audit is unchanged. NOT CHANGED: the unilateral 30-day figure stays at 50. NIA's homepage headlines Kyrgyzstan and Vietnam as joining \"the 240-hour visa-free transit and 30-day visa-free entry program\", but the authoritative unilateral list (c183390) is still dated 2026-02-17, still says 50, and contains neither country. Two official pages disagree and a headline is not a basis for moving that number. Also added summaries/visa-transit-guide-2026.md to sources: — it described itself in prose as feeding this page while appearing in no machine-readable provenance field, which is why the two drifted apart undetected before 2026-08-18. Found by /drift-scan 2026-W37. --- 2026-07-16 re-verified high-volatility anchors against official sources: unilateral 30-day visa-free = 50 countries (NIA c183390, content 2026-02-17; UK & Canada added 2026-02-17; most valid to 2026-12-31); 240-hour transit = 55 countries / 65 ports / 24 regions (NIA c183412, 2025-07-04; embassy 2024-12-17); Hainan = 59 countries / 30 days (NIA c180637, 2025-02-14). CHANGED: Russia's unilateral visa-free, previously ending 2026-09-14, was extended to 2027-12-31 (MFA spokesperson 2026-05-20) — the 3 body references were corrected. Fixed the transit-policy source URL c156086 (old 72/144-hour page) → c183412 (current 240-hour page) in verified_against and body links. Removed reader-facing internal wiki/summaries citations from the body. Aligned the 240-hour transit FAQ (dropped 'exit through the 65 ports' — NIA only mandates entry through them) with Section C. Did NOT re-audit every line this round (page_audit retains 2026-06-09). Also corrected an internal contradiction: the 240-hour onward-ticket requirement is 'third country or region' (NIA c183412) and Hong Kong/Macau/Taiwan count as valid onward regions — fixed the FAQ and two body lines that wrongly restricted it to foreign countries, aligning with the existing correct TWOV example."
 description: >-
   China visa and entry options in 2026: 30-day visa-free for 50 countries,
   240-hour transit-free at 65 ports for US citizens, and the tourist L visa.
@@ -46,7 +46,7 @@ faqs:
       required.
   - q: What is the 240-hour transit-free policy?
     a: >-
-      It lets eligible travelers from 55 countries transit China for up to 240
+      It lets eligible travelers from 57 countries transit China for up to 240
       hours (10 days) without a visa, provided they enter through one of the 65
       qualifying ports, stay within the 24 permitted provincial-level regions,
       and hold an onward ticket to a third country or region.
@@ -74,7 +74,7 @@ Start here. Find your nationality in the table below to identify which section t
 |---|---|---|
 | Passport from one of 50 unilateral visa-free countries (most EU, UK, Canada, Australia, Japan, South Korea, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
 | Passport from a country with a mutual bilateral agreement (UAE, Singapore, Malaysia, Thailand, etc.) | **Bilateral visa-free** — no visa needed (up to 30–90 days depending on agreement) | [Section B](#section-b-bilateral-mutual-visa-exemption) |
-| Passport from one of 55 transit-eligible countries (includes USA + all above) AND traveling to a third country or region | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
+| Passport from one of 57 transit-eligible countries (includes USA + all above) AND traveling to a third country or region | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
 | Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 59 countries (broader effective coverage via other schemes) | [Section D](#section-d-hainan-province-30-day-visa-free) |
 | Any country; brief airside connection only | **24-hour airside transit** — no visa, must stay in port | [Section E](#section-e-24-hour-airside-transit) |
 | None of the above, or need a longer / work / study stay | **L-visa (tourist)** or other visa — apply before travel | [Section F](#section-f-l-visa-tourist-visa) |
@@ -139,10 +139,10 @@ The flagship transit-free scheme allows eligible travelers transiting through Ch
 
 This answers Q1 and Q18 in the wiki's question ledger: yes, you can leave the airport — but only if you meet all criteria below.
 
-### Who qualifies (55 countries as of June 2026)
-Albania, Argentina, Australia, Austria, Belarus, Belgium, Bosnia-Herzegovina, Brazil, Brunei, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Indonesia, Ireland, Italy, Japan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, Netherlands, New Zealand, North Macedonia, Norway, Poland, Portugal, Qatar, Republic of Korea, Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Arab Emirates, United Kingdom, United States.
+### Who qualifies (57 countries, per NIA's list updated 20 August 2026)
+Albania, Argentina, Australia, Austria, Belarus, Belgium, Bosnia-Herzegovina, Brazil, Brunei, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Indonesia, Ireland, Italy, Japan, Kyrgyzstan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, Netherlands, New Zealand, North Macedonia, Norway, Poland, Portugal, Qatar, Republic of Korea, Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Arab Emirates, United Kingdom, United States, Vietnam.
 
-> Source: Chinese Embassy in the United States (us.china-embassy.gov.cn) and the State Council announcement of 4 November 2025 (english.www.gov.cn). Indonesia was added to the transit scheme in June 2025, bringing the total to 55 countries.
+> Source: [NIA's 240-hour transit policy page](https://en.nia.gov.cn/n147418/n147463/c183412/content.html), updated 20 August 2026, which groups the 57 countries as 40 European, 2 North American, 4 South American, 2 Oceanian and 9 Asian. **Kyrgyzstan and Vietnam are the most recent additions (20 August 2026)**; Indonesia joined in June 2025, and the scheme itself was announced 17 December 2024.
 
 ### Requirements — all must be met
 1. **Onward ticket:** Confirmed ticket with assigned seat and departure date to a **third country or region** (not China, not your origin country if returning via same route). Departing within 240 hours.
@@ -212,7 +212,7 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 | Max stay | 30 days | 240 hours (10 days) |
 | Travel zones | Entire mainland China | 24 permitted provinces only |
 | Pre-approval needed? | No | No (activated at immigration) |
-| Eligible countries | 50 (as of June 2026; list changes) | 55 (includes USA) |
+| Eligible countries | 50 (as of June 2026; list changes) | 57 (as of 20 August 2026; includes USA) |
 
 ---
 

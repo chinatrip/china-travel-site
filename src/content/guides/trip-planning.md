@@ -1,7 +1,7 @@
 ---
 title: Trip Planning — Timing, Budget, Length, and Independent Travel
 date: 2026-07-01
-last_verified: 2026-07-16
+last_verified: 2026-09-08
 verified_against:
   - https://ourwander.com/p/worst-time-to-visit-china
   - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
@@ -34,7 +34,7 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: 2026-07-16
-  notes: "2026-07-16 re-verified anchors against official sources: all 2026 public-holiday dates confirmed against the State Council General Office schedule announced 2025-11-04 (Spring Festival 15–23 Feb, Labour Day 1–5 May, National Day 1–7 Oct, Qingming 4–6 Apr, Dragon Boat 19–21 Jun, Mid-Autumn 25–27 Sep); 240-hour transit basics (10 days, 55 countries) remain consistent with current NIA policy (c183412); budget bands and best-season guidance are low-volatility with no reversal. Removed reader-facing internal wiki/summaries citations from the body. No anchor facts changed; added a 'most attraction tickets are bought same-day via Alipay' bullet to the independent-travel section to ground the pre-book-vs-buy-on-arrival guidance. page_audit retains 2026-06-15."
+  notes: "2026-09-08: the 240-hour transit count in this page's body moved 55 -> 57. NIA's transit page (c183412) was updated 2026-08-20; re-fetched 2026-09-08 and the full official list diffed against ours programmatically — exactly two additions (Kyrgyzstan, Vietnam), zero removals. Only that one sentence changed here; visa-types.md carries the full correction and the country list. last_verified BUMPED because the single high-volatility anchor this page states was genuinely re-verified today, and it is the only claim on the page that moved. NOTHING ELSE was re-checked this round — the 2026 public-holiday dates, budget bands and season guidance all retain their 2026-07-16 verification, and page_audit is unchanged at 2026-06-15. --- 2026-07-16 re-verified anchors against official sources: all 2026 public-holiday dates confirmed against the State Council General Office schedule announced 2025-11-04 (Spring Festival 15–23 Feb, Labour Day 1–5 May, National Day 1–7 Oct, Qingming 4–6 Apr, Dragon Boat 19–21 Jun, Mid-Autumn 25–27 Sep); 240-hour transit basics (10 days, 55 countries) remain consistent with current NIA policy (c183412); budget bands and best-season guidance are low-volatility with no reversal. Removed reader-facing internal wiki/summaries citations from the body. No anchor facts changed; added a 'most attraction tickets are bought same-day via Alipay' bullet to the independent-travel section to ground the pre-book-vs-buy-on-arrival guidance. page_audit retains 2026-06-15."
 description: >-
   Planning a China trip: best seasons, how many days, what to pre-book versus
   buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3
@@ -159,7 +159,7 @@ China is broadly mid-tier in Asia for travel costs: travelers consistently repor
 | **2 weeks** | Classic 3-city route (Beijing–Xi'an–Shanghai or Beijing–Chengdu–Shanghai); comfortable pace |
 | **3 weeks+** | Add a secondary destination (Guilin, Zhangjiajie, Yunnan, Chongqing); or Tibet add-on (requires 10+ working days permit lead time) |
 
-The **240-hour visa-free transit policy** (10 days for 55 qualifying nationalities) works well for a focused 1–2 city trip from one of the approved entry regions (Beijing, Shanghai, Guangzhou-Shenzhen, Chengdu, Harbin). See [[wiki/concepts/visa-types.md]].
+The **240-hour visa-free transit policy** (10 days for 57 qualifying nationalities) works well for a focused 1–2 city trip from one of the approved entry regions (Beijing, Shanghai, Guangzhou-Shenzhen, Chengdu, Harbin). See [[wiki/concepts/visa-types.md]].
 
 **Peak season note:** add 20–30% buffer time to any itinerary during Golden Week or Spring Festival.
 
