@@ -1,7 +1,8 @@
 import { test, before } from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
-import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { mkdtempSync, readdirSync, readFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { join, dirname } from 'node:path';
 import { buildLastmodMap, lastmodFor } from '../src/lib/sitemap-dates.mjs';
@@ -139,14 +140,25 @@ test('lastmodFor resolves Spanish routes', () => {
 // was green while the shipped file advertised 2026-07-20 as the newest change.
 
 const ROOT = join(here, '..');
-const DIST = join(ROOT, 'dist');
 
-function ensureBuilt() {
-  if (existsSync(join(DIST, 'sitemap-0.xml'))) return;
-  execFileSync('npx', ['astro', 'build'], { cwd: ROOT, stdio: 'ignore' });
-}
+// Build into an isolated dist, the same way favicon/social-meta/custom-404 do, so
+// these assertions never read a stale artifact.
+//
+// The previous version reused the repo's `dist/` and skipped the build whenever
+// `dist/sitemap-0.xml` already existed. That made the result depend on how old
+// `dist/` happened to be, because `node --test` runs BEFORE `npm test`'s own
+// `astro build` step. In CI the checkout is fresh, `dist/` is absent, the build
+// always ran and the check was sound — which is why CI never surfaced this. Locally
+// it failed both ways: a stale `dist/` from another branch reported a lastmod
+// mismatch on a perfectly correct tree (observed on main, 2026-09-17), and the
+// reverse pairing — edited-but-uncommitted content whose stale lastmod still matches
+// its stale commit date — would pass while proving nothing.
+let DIST;
 
-before(() => ensureBuilt(), { timeout: 180_000 });
+before(() => {
+  DIST = mkdtempSync(join(tmpdir(), 'sitemap-dist-'));
+  execFileSync('npx', ['astro', 'build', '--outDir', DIST], { cwd: ROOT, stdio: 'ignore' });
+}, { timeout: 180_000 });
 
 /** [{ loc, lastmod }] from the built sitemap. */
 function sitemapEntries() {
