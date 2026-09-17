@@ -1,13 +1,14 @@
 ---
 title: "Pagos fallidos en China: soluciones para extranjeros (2026)"
 date: 2026-06-15
-last_verified: 2026-06-15
+last_verified: 2026-09-17
 lang: es
 source_en: guides/payment-failures
-source_last_verified: 2026-06-15
+source_last_verified: 2026-09-17
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
+  - https://english.beijing.gov.cn/travellinginbeijing/essentials/inboundtourismfacilitationmeasures/202603/t20260326_4566766.html
   - https://wise.com/sg/blog/link-wise-card-alipay-wechat-china
   - https://m.unionpayintl.com/ZT/en/NHCAPP/
   - https://www.unionpayintl.com/cn/mediaCenter/newsCenter/companyNews/3016318.shtml
@@ -20,10 +21,10 @@ review:
   status: audited
   page_audit: 2026-06-12
   citation_check: 2026-06-15
-  notes: "Adopted into the wiki from the site GEO page (issue #18): site-route links converted to [[wiki/...]], and the full failure table consolidated here from mobile-payment.md (issue #22 item 3). Fix iteration 1 (2026-06-15): the 9 NOT_FOUND claims from the first Type-3 run were each resolved — merchant/personal-QR + P2P (receive-only), VPN-trips-fraud, unverified-account limits, 3%-on-full-amount, SMS-blocked, bank-blocks-binding, and balance-no-surcharge are now sourced to chinavigators / Wise / China Survival Kit (added to verified_against); the multi-week refund window, the platform-risk-control silent block, the redirect-filter, the checkout-unselectable card, and the WeChat contact-vouching framing are degraded in text to 'traveler-reported, not independently verified' (Shuimu BBS, outside verified_against). Re-run Type-3 (2026-06-15): 16 supported / 0 contradicted / 6 NOT_FOUND, where all 6 NOT_FOUND are the explicitly traveler-reported items (silent risk-control block, 3-D Secure binding step, checkout-unselectable card, redirect filter, WeChat contact-vouching, multi-week refund). Fees/limits are high-volatility — recheck against mobile-payment.md before update."
+  notes: "2026-09-17 re-verification of the fee and limit anchors, prompted by the page crossing its 90-day high-volatility threshold (94 days) and blocking --ci-mode repo-wide. The notes below asked for exactly this: 'Fees/limits are high-volatility — recheck against mobile-payment.md before update.' THE NUMBERS SURVIVED; THE ATTRIBUTIONS DID NOT. (1) The ¥200 / 3% terms are still current, and now rest on a NEWER official source than before: Beijing municipal government 2026-03-26, verbatim 'All international bank card users are eligible for a waiver of the 3 percent transaction fee on every single transaction under 200 yuan' (added to verified_against; the May-2025 notice is kept as the earlier record). Also confirmed there that the threshold is PER TRANSACTION. (2) OVERCLAIM CORRECTED: the page asserted the ¥200/3% terms for 'Alipay and WeChat' and cited the Beijing notice as confirmation. That notice — and its March 2026 successor — cover WeChat Pay ONLY. The Alipay consumer help pages reachable from global.alipay.com describe merchant settlement, not foreign-card consumer fees, and the 3% in our Wise citation is Taobao/Tmall e-commerce, not offline merchant QR. Also tried: bjchy.gov.cn overseas-cards page (HTTP 473), english.shanghai.gov.cn banking-services page (content not extractable). Alipay's terms are now stated as the uniform secondary-source report they are, explicitly not as officially confirmed. The figure was NOT changed — only the strength of the claim. (3) UNDERCLAIM CORRECTED, opposite direction: the $5,000/transaction and $50,000/year figures were attributed to Wise and hedged as verification 'may be able to increase your limit to' them. They are the regulatory ceiling raised by the State Council in April 2024, and english.www.gov.cn — already in verified_against — states them verbatim. The hedge was removed and the attribution moved to the official source. The unverified-tier figures (~$500 / ~$2,000) remain Wise-only and are still attributed that way; that Wise page is dated 2025-07-30 and self-labels as over a year old. (4) ADDED, officially sourced and previously absent: the 60-consecutive-day full waiver on daily sub-¥1,000 transactions for new WeChat Pay users, capped at ¥30 per transaction. It explains the common 'my companion was not charged' case. Added to the body and to the ¥200 FAQ. SCOPE: last_verified BUMPED to 2026-09-17 because the fee and limit anchors genuinely were re-fetched today. NOTHING ELSE was re-checked — the merchant-vs-personal-QR rule, P2P send/receive asymmetry, VPN risk-control, SMS blocking, bank-blocks-binding and all six traveler-reported items retain their 2026-06-15 status, and page_audit (2026-06-12) and citation_check (2026-06-15) are unchanged. (5) CROSS-CHECK RESULT, and it inverts what I first assumed: mobile-payment.md had ALREADY made this distinction correctly and needs no fix. Its Alipay fee table says the Beijing circular confirms the threshold for the foreign-card 3% fee, then adds verbatim that 'Alipay is widely reported to apply the same ¥200 threshold, though Alipay does not publish an Alipay-specific fee schedule confirming it (traveler-/guide-reported for Alipay specifically, not independently verified from an Alipay source)'. It also already books $5,000/$50,000 as the regulatory PBOC ceiling. So payment-failures.md was the DEGRADED copy of a distinction its sibling already drew — and this page's own notes have said 'recheck against mobile-payment.md before update' since 2026-06-15, which is exactly the check that would have caught it. Worth naming as a gate blind spot: the two pages agreed on every NUMBER, so no consistency check flags them; they differed only in how strongly each claimed its evidence, and nothing compares that. mobile-payment.md is left unmodified here (its claims are sound); it could optionally cite the 2026-03-26 notice in place of the May-2025 one. Found by /wiki-lint 2026-09-17. --- Adopted into the wiki from the site GEO page (issue #18): site-route links converted to [[wiki/...]], and the full failure table consolidated here from mobile-payment.md (issue #22 item 3). Fix iteration 1 (2026-06-15): the 9 NOT_FOUND claims from the first Type-3 run were each resolved — merchant/personal-QR + P2P (receive-only), VPN-trips-fraud, unverified-account limits, 3%-on-full-amount, SMS-blocked, bank-blocks-binding, and balance-no-surcharge are now sourced to chinavigators / Wise / China Survival Kit (added to verified_against); the multi-week refund window, the platform-risk-control silent block, the redirect-filter, the checkout-unselectable card, and the WeChat contact-vouching framing are degraded in text to 'traveler-reported, not independently verified' (Shuimu BBS, outside verified_against). Re-run Type-3 (2026-06-15): 16 supported / 0 contradicted / 6 NOT_FOUND, where all 6 NOT_FOUND are the explicitly traveler-reported items (silent risk-control block, 3-D Secure binding step, checkout-unselectable card, redirect filter, WeChat contact-vouching, multi-week refund). Fees/limits are high-volatility — recheck against mobile-payment.md before update."
 description: >-
   Por qué falla Alipay o WeChat Pay en China: QR personal, VPN encendida,
-  recargo del 3% desde ¥200 o cuenta sin verificar, y cómo resolverlo. Junio
+  posible recargo del 3% desde ¥200 o cuenta sin verificar, y la solución. Sept.
   de 2026.
 faqs:
   - q: ¿Por qué mi pago con Alipay o WeChat Pay sigue fallando en China?
@@ -50,10 +51,15 @@ faqs:
       una SIM china para esa transacción.
   - q: ¿Por qué se rechazan los pagos de ¥200 o más?
     a: >-
-      Los pagos de ¥200 o más llevan un recargo del 3% por tarjeta extranjera
-      sobre el importe total, y algunos emisores lo rechazan. Pide al comercio que
-      divida la cuenta en importes inferiores a ¥200 (que no tienen recargo) o
-      cambia a la otra app.
+      Normalmente tu emisor rechazó el recargo del 3% por tarjeta extranjera que la
+      billetera añade por encima de ¥200. WeChat Pay exime oficialmente esa comisión
+      en cada transacción inferior a ¥200; se reporta de forma uniforme que Alipay
+      aplica el mismo umbral, pero no publica confirmación. Pide al comercio que
+      divida la cuenta por debajo de ¥200 — el umbral de WeChat es por transacción,
+      así que varios pagos pequeños quedan exentos — o cambia de app. Los nuevos
+      usuarios de WeChat Pay tienen además 60 días de exención total en
+      transacciones diarias inferiores a ¥1,000, por eso puede que a tu acompañante
+      le cobren y a ti no.
   - q: 'Mi tarjeta funcionaba bien y de repente dejó de hacerlo, ¿qué pasó?'
     a: >-
       El control de riesgo de la plataforma o un límite de gasto pueden bloquear
@@ -71,7 +77,7 @@ category: guide
 
 1. estás pagando a un código QR **personal**, no a uno de **comercio**,
 2. tu **VPN está encendida**,
-3. el pago es de **¥200 o más** y tu banco rechazó el recargo del 3%, o
+3. el pago es de **¥200 o más** y tu banco rechazó el recargo del 3% de la billetera, o
 4. tu cuenta está **sin verificar** y alcanzó un límite bajo.
 
 Configura **ambas** apps, Alipay y WeChat Pay, completa la **verificación de pasaporte** y lleva **¥200-500 en efectivo** — entre las dos apps y el efectivo, quedas cubierto en casi todas las situaciones de pago que encontrará un visitante. La tabla de síntomas de abajo también cubre los fallos en la etapa de configuración y los casos excepcionales. Para el detalle completo de configuración y comisiones, consulta [[wiki/concepts/mobile-payment.md]].
@@ -116,12 +122,43 @@ Una VPN hace que tu tráfico parezca provenir de fuera de China, lo que puede ac
 
 ## ¿Por qué se rechazan los pagos de ¥200 o más?
 
-Los pagos **inferiores a ¥200 no tienen comisión**, pero a partir de **¥200 o más** Alipay y WeChat añaden un **recargo del 3% por tarjeta extranjera sobre el importe total pagado con la tarjeta** (el umbral de ¥200 y la tasa del 3% están confirmados por el aviso municipal de servicios de pago de Beijing, mayo de 2025; que la comisión se cobra sobre el importe total de la tarjeta —no solo sobre la parte por encima de ¥200— lo indica Wise: "handling fee is only charged on the amount paid by credit card") — y algunos emisores de tarjetas rechazan el importe con recargo.
+**Respuesta corta: tu emisor rechazó el recargo.** Por encima de un umbral de ¥200 la
+billetera añade una comisión del 3% por tarjeta extranjera sobre el importe total pagado
+con la tarjeta, y algunos emisores rechazan el total con recargo.
 
-- **Pide al comercio que divida la cuenta** en importes inferiores a ¥200 cada uno — están acostumbrados y evita el recargo por completo.
+**La firmeza con la que está establecido ese umbral de ¥200 difiere según la app**, así
+que esta sección presenta las dos por separado en lugar de como una regla única: las
+cifras de abajo son oficiales para WeChat Pay y reportadas-pero-sin-confirmar para
+Alipay.
+
+**WeChat Pay — confirmado por un aviso oficial.** Gobierno municipal de Beijing,
+26 de marzo de 2026: "All international bank card users are eligible for a waiver of the
+3 percent transaction fee on every single transaction under 200 yuan". El umbral es
+**por transacción**, así que varios pagos separados inferiores a ¥200 en un mismo día
+quedan todos exentos.
+
+**¿Eres nuevo en WeChat Pay? Puede que no pagues nada durante 60 días.** El mismo aviso
+describe "a full waiver of the 3 percent transaction fee on daily transactions under
+1,000 yuan for 60 consecutive days starting from their first transactions", con un tope
+de ¥30 de ahorro por transacción. Si a tu acompañante le cobran y a ti no, lo más
+probable es que estéis en ventanas de exención distintas — no que haya un problema con
+ninguna de las dos tarjetas.
+
+**Alipay — ampliamente reportado con los mismos términos de ¥200 / 3%, pero no pudimos
+confirmarlo en una fuente oficial.** Todas las páginas gubernamentales que pudimos
+consultar sobre esto (municipales de Beijing, mayo de 2025 y marzo de 2026) indican la
+exención de ¥200 solo para WeChat Pay; las páginas de ayuda al consumidor de Alipay a
+las que pudimos acceder tratan la liquidación para comercios, no las comisiones por
+tarjeta extranjera del consumidor; y la cifra del 3% en la fuente de Wise que citamos
+describe compras de **comercio electrónico** en Taobao/Tmall, no pagos con código QR en
+comercios físicos. Toma ¥200 / 3% como el supuesto de trabajo para Alipay — es lo que
+reportan de forma uniforme las fuentes secundarias — pero cuenta con la posibilidad de
+que sus términos difieran, y no lo cites como oficial.
+
+- **Pide al comercio que divida la cuenta** en importes inferiores a ¥200 cada uno — están acostumbrados. En WeChat Pay eso elimina la comisión por completo; se reporta que Alipay se comporta igual, así que sigue siendo lo primero que conviene intentar allí.
 - O cambia a la **otra app**, o paga una parte en efectivo.
-- Una tarjeta con **0% de comisión por transacción en el extranjero** evita la parte del emisor, pero el 3% de la plataforma sigue aplicándose a partir de ¥200.
-- Si un amigo chino puede enviarte RMB, **los pagos con el saldo de la billetera no llevan el recargo por tarjeta extranjera** — Wise señala que la comisión del 3% se cobra "only charged on the amount paid by credit card", mientras que gastar desde el saldo de la cuenta de Alipay "not calculated for handling fees" (véase la alternativa n.º 4 más abajo).
+- Una tarjeta con **0% de comisión por transacción en el extranjero** evita la parte del emisor pero no la de la billetera — el 3% de WeChat Pay se aplica a partir de ¥200, y se reporta que Alipay coincide.
+- Si un amigo chino puede enviarte RMB, **los pagos con el saldo de la billetera no llevan el recargo por tarjeta extranjera** — Wise indica que la comisión se cobra "only charged on the amount paid by credit card", mientras que gastar desde el saldo de la cuenta de Alipay "not calculated for handling fees" (ese texto proviene de la página de comisiones de comercio electrónico de Wise, así que interprétalo como que la comisión va ligada a la tarjeta y no a la billetera, no como una garantía específica para pagos en comercios físicos; véase la alternativa n.º 4 más abajo).
 
 ## Mi tarjeta funcionaba y de repente dejó de hacerlo, ¿por qué?
 
@@ -129,7 +166,7 @@ Los viajeros informan de que el control de riesgo de Alipay/WeChat o un tope de 
 
 - Cambia a la **otra app** (si Alipay falla, WeChat normalmente funciona, y viceversa).
 - **Desvincula y vuelve a vincular** la tarjeta.
-- Asegúrate de que tu **verificación de identidad con pasaporte** esté completa — Wise informa de que las cuentas extranjeras no verificadas tienen un tope bajo (~$500 por transacción / ~$2,000 al año) y de que la verificación "may be able to increase your limit to 5,000 USD per transaction or 50,000 USD per year".
+- Asegúrate de que tu **verificación de identidad con pasaporte** esté completa. Las cuentas extranjeras no verificadas tienen un tope bajo — Wise informa de aproximadamente **$500 por transacción / $2,000 al año**. El techo para cuentas verificadas no es una estimación de terceros sino un límite regulatorio, elevado en abril de 2024 y recogido textualmente en `english.www.gov.cn`: "The single transaction limit for overseas visitors using mobile payments on payment platforms has now been raised from 1,000 U.S. dollars to **5,000 dollars**. The annual cumulative transaction cap has been increased from 10,000 dollars to **50,000 dollars**". La verificación no es que "pueda" subirte el límite — te sitúa en ese techo publicado.
 - Recurre al **efectivo** o, en los establecimientos cubiertos (hoteles de 3 estrellas o más, atracciones 4A/5A, complejos turísticos nacionales/provinciales), a un **pago con tarjeta extranjera en el terminal de pago**.
 
 ## ¿Cuál es mi alternativa cuando nada funciona?
