@@ -51,10 +51,10 @@ faqs:
       una SIM china para esa transacción.
   - q: ¿Por qué se rechazan los pagos de ¥200 o más?
     a: >-
-      WeChat Pay exime oficialmente su comisión del 3% por tarjeta extranjera en
-      cada transacción inferior a ¥200, y se reporta ampliamente que Alipay aplica
-      el mismo umbral aunque no publica confirmación. Por encima, cuenta con un 3%
-      sobre el importe total, que algunos emisores rechazan. Pide al comercio que
+      Normalmente tu emisor rechazó el recargo del 3% por tarjeta extranjera que la
+      billetera añade por encima de ¥200. WeChat Pay exime oficialmente esa comisión
+      en cada transacción inferior a ¥200; se reporta de forma uniforme que Alipay
+      aplica el mismo umbral, pero no publica confirmación. Pide al comercio que
       divida la cuenta por debajo de ¥200 — el umbral de WeChat es por transacción,
       así que varios pagos pequeños quedan exentos — o cambia de app. Los nuevos
       usuarios de WeChat Pay tienen además 60 días de exención total en
@@ -77,7 +77,7 @@ category: guide
 
 1. estás pagando a un código QR **personal**, no a uno de **comercio**,
 2. tu **VPN está encendida**,
-3. el pago es de **¥200 o más** y tu banco rechazó el recargo del 3%, o
+3. el pago es de **¥200 o más** y tu banco rechazó el recargo del 3% de la billetera, o
 4. tu cuenta está **sin verificar** y alcanzó un límite bajo.
 
 Configura **ambas** apps, Alipay y WeChat Pay, completa la **verificación de pasaporte** y lleva **¥200-500 en efectivo** — entre las dos apps y el efectivo, quedas cubierto en casi todas las situaciones de pago que encontrará un visitante. La tabla de síntomas de abajo también cubre los fallos en la etapa de configuración y los casos excepcionales. Para el detalle completo de configuración y comisiones, consulta [[wiki/concepts/mobile-payment.md]].
@@ -122,12 +122,14 @@ Una VPN hace que tu tráfico parezca provenir de fuera de China, lo que puede ac
 
 ## ¿Por qué se rechazan los pagos de ¥200 o más?
 
-Los pagos **inferiores a ¥200 no tienen comisión**, pero a partir de **¥200 o más** se
-aplica un **recargo del 3% por tarjeta extranjera** sobre el importe total pagado con la
-tarjeta — y algunos emisores de tarjetas rechazan el importe con recargo.
+**Respuesta corta: tu emisor rechazó el recargo.** Por encima de un umbral de ¥200 la
+billetera añade una comisión del 3% por tarjeta extranjera sobre el importe total pagado
+con la tarjeta, y algunos emisores rechazan el total con recargo.
 
-**La solidez de la evidencia no es igual para ambas apps, así que esta sección las
-presenta por separado.**
+**La firmeza con la que está establecido ese umbral de ¥200 difiere según la app**, así
+que esta sección presenta las dos por separado en lugar de como una regla única: las
+cifras de abajo son oficiales para WeChat Pay y reportadas-pero-sin-confirmar para
+Alipay.
 
 **WeChat Pay — confirmado por un aviso oficial.** Gobierno municipal de Beijing,
 26 de marzo de 2026: "All international bank card users are eligible for a waiver of the
@@ -153,9 +155,9 @@ comercios físicos. Toma ¥200 / 3% como el supuesto de trabajo para Alipay — 
 reportan de forma uniforme las fuentes secundarias — pero cuenta con la posibilidad de
 que sus términos difieran, y no lo cites como oficial.
 
-- **Pide al comercio que divida la cuenta** en importes inferiores a ¥200 cada uno — están acostumbrados y evita el recargo por completo.
+- **Pide al comercio que divida la cuenta** en importes inferiores a ¥200 cada uno — están acostumbrados. En WeChat Pay eso elimina la comisión por completo; se reporta que Alipay se comporta igual, así que sigue siendo lo primero que conviene intentar allí.
 - O cambia a la **otra app**, o paga una parte en efectivo.
-- Una tarjeta con **0% de comisión por transacción en el extranjero** evita la parte del emisor, pero el 3% de la plataforma sigue aplicándose a partir de ¥200.
+- Una tarjeta con **0% de comisión por transacción en el extranjero** evita la parte del emisor pero no la de la billetera — el 3% de WeChat Pay se aplica a partir de ¥200, y se reporta que Alipay coincide.
 - Si un amigo chino puede enviarte RMB, **los pagos con el saldo de la billetera no llevan el recargo por tarjeta extranjera** — Wise indica que la comisión se cobra "only charged on the amount paid by credit card", mientras que gastar desde el saldo de la cuenta de Alipay "not calculated for handling fees" (ese texto proviene de la página de comisiones de comercio electrónico de Wise, así que interprétalo como que la comisión va ligada a la tarjeta y no a la billetera, no como una garantía específica para pagos en comercios físicos; véase la alternativa n.º 4 más abajo).
 
 ## Mi tarjeta funcionaba y de repente dejó de hacerlo, ¿por qué?
