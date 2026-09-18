@@ -210,49 +210,6 @@ Same two-number distinction as Alipay (regulatory ceiling vs. your account limit
 
 | Fee | Note |
 |---|---|
-| Single payment **under ¥200** (i.e., up to ¥199.99) | **0%** Alipay fee on merchant payments. The ¥200 fee-exemption threshold is confirmed for the foreign-card 3% fee by the Beijing municipal circular (May 2025); Alipay is widely reported to apply the same ¥200 threshold, though Alipay does not publish an Alipay-specific fee schedule confirming it (traveler-/guide-reported for Alipay specifically, not independently verified from an Alipay source) |
-| Single payment **¥200 or over** | **3%** Alipay foreign-card surcharge **on the full amount** — Wise documents Alipay charging "a flat rate of 3% of the transaction amount as a service fee," and that the fee is "only charged on the amount paid by credit card" (i.e., the full card amount, not just the portion above ¥200) |
-| Card-issuer foreign-transaction fee | Typically **1–3%**, set by your bank — not Alipay (trip.com Alipay guide) |
-| FX rate | Shown in-app before you confirm each payment — check the displayed amount for large purchases. |
-
-Limits are tied to the verified passport identity.
-
-### Where Alipay Works
-
-- In-store QR payment at the overwhelming majority of merchants
-- Online checkout on Chinese-domestic sites
-- Public transit in Beijing, Shanghai, Guangzhou, Shenzhen, Chongqing, Chengdu metros (and many more — see [[wiki/concepts/transportation.md]])
-- DiDi, 12306, attraction ticketing through embedded Mini Programs
-- Bike-sharing (Hello Bike, Meituan Bike)
-
-### Refunds
-
-Refunds clear back to the original foreign card after the merchant initiates the return. Cross-border settlement can take up to **30 days** (a widely cited travel-guide figure; Alipay's official refund policy may reflect a shorter or different window — check the app's Help center for the current figure). If the refund has not appeared after 30 days, escalate in this order: (1) contact the merchant directly, (2) raise a dispute in the Alipay app under Help → Dispute, (3) dispute the charge with your card issuer. Don't close the bound card until in-flight refunds have all landed.
-
-## WeChat Pay
-
-### Setup
-
-1. Install **WeChat** (App Store / Google Play).
-2. Register with your foreign number. WeChat may require an existing contact to scan a QR code to verify your new account — this is a risk-control measure, not always triggered, but the probability is high for foreign-number registrations. The vouching contact must meet WeChat's conditions: signed up for WeChat **over 1 month ago** (international user) or **over 6 months ago** (Chinese mainland user); has **activated WeChat Pay** if they are a Chinese mainland user; **hasn't done "Help Friend Register" for others in the past month** (one user can help a maximum of 3 people to register per year); and **hasn't been blocked in the past month** (source: Dragon Trail International, "How to Get a WeChat Account from Overseas"). In practice these conditions are strict enough that many overseas contacts do not qualify. If you cannot find a qualifying contact, WeChat's in-app customer support can reportedly unlock the account, though the timeline is traveler-reported and not independently verified.
-3. Complete passport identity verification.
-4. **Me → Services → Wallet → Bank Cards → Add Bank Card.**
-5. Bind a Visa, Mastercard, JCB, Diners Club, or Discover card; AMEX is bindable but support is inconsistent — Visa or Mastercard is the safest default.
-
-### Limits and Fees (2026)
-
-Same two-number distinction as Alipay (regulatory ceiling vs. your account limit):
-
-| | PBOC regulatory ceiling (legal maximum any platform may allow) | Your actual WeChat Pay account limit |
-|---|---|---|
-| Single transaction | **$5,000 USD** (~¥36,000) for verified users (Beijing municipal government) | **Not publicly disclosed**; set at or below the ceiling — check in-app (Wallet → Pay → Settings → Daily Limit) |
-| Annual | **$50,000 USD** (~¥360,000) (Beijing municipal government) | **Not publicly disclosed and often far lower** — one guide reports effective WeChat annual caps around **¥50,000–65,000** for foreign-card users (chinavigators), well below the ceiling |
-| Before ID verification | n/a | low — complete passport verification before any purchase |
-
-**Plan large payments off your in-app limit, not the ~¥36,000 / ~¥360,000 regulatory ceilings** — WeChat's effective cap is reported to be much lower than the PBOC maximum.
-
-| Fee | Note |
-|---|---|
 | Single payment **under ¥200** (i.e., up to ¥199.99) | **0%** WeChat fee. Beijing's municipal government, 26 March 2026: "All international bank card users are eligible for a waiver of the 3 percent transaction fee on every single transaction under 200 yuan." The threshold is **per transaction**, so several separate sub-¥200 payments in one day each stay fee-free |
 | Single payment **¥200 or over** | **3%** WeChat foreign-card surcharge on the full transaction amount — a payment of exactly ¥200 is subject to the 3% fee (same notice; also confirmed by the earlier Beijing circular of May 2025) |
 | **New WeChat Pay users — first 60 days** | **0%** on daily transactions under **¥1,000**, capped at ¥30 saved per transaction, "for 60 consecutive days starting from their first transactions" (same notice). This is a promotional window, **not** the standing threshold — ¥1,000 circulates in secondary sources as though it were, and it is not. It also explains the common case where a travel companion is charged and you are not |
