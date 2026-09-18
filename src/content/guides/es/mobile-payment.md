@@ -1,13 +1,14 @@
 ---
 title: "Pago móvil en China: Alipay y WeChat Pay"
 date: 2026-06-15
-last_verified: 2026-07-17
+last_verified: 2026-09-18
 lang: es
 source_en: guides/mobile-payment
-source_last_verified: 2026-07-17
+source_last_verified: 2026-09-18
 verified_against:
   - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
   - https://english.beijing.gov.cn/specials/paymentservices/news/202505/t20250528_4100629.html
+  - https://english.beijing.gov.cn/travellinginbeijing/essentials/inboundtourismfacilitationmeasures/202603/t20260326_4566766.html
   - https://www.trip.com/guide/phone/how-to-use-alipay.html
   - https://render.alipay.com/p/c/k0mtcsgi/1572520436172.html
   - https://render.alipay.com/p/c/k2ffmmxp
@@ -25,7 +26,7 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: 2026-07-02
-  notes: "2026-07-02: focused re-verify accompanying the TenPayGo alternative-wallet addition. Re-confirmed the anchor Tier-1 facts — gov.cn April 2024 circular still states the $5,000 single / $50,000 annual mobile-payment caps and the mandate that 3-star+ hotels, 4A/5A attractions, and national/provincial tourist resorts accept foreign bank cards (verbatim); the ¥200 fee-exemption / 3% foreign-card surcharge threshold remains current — anchored to the Beijing May 2025 circular already in verified_against (the Tier-1 authority; secondary 2026 travel guides corroborate but do not themselves justify it); no policy reversal found since the 2026-06-15 audit. Did NOT re-audit every downstream claim this round (limit tables, refund windows, failure modes retain their 2026-06-15 page_audit). Added the TenPayGo entry under Alternative Wallets + related link — see [[wiki/entities/tenpaygo.md]]."
+  notes: "2026-09-18: added the 60-day new-user fee waiver and moved the WeChat fee rows onto a newer official source. Recommendation 3 of the 2026-09-17 lint report, which found this page — the one that owns the fee tables — lagging behind its own troubleshooting sibling after PR #83. That PR fixed payment-failures.md and overshot: it cited the 2026-03-26 Beijing notice and carried the 60-day waiver, while this page still cited only the May-2025 circular and did not mention the waiver at all. A reader who lands on the fee page rather than the troubleshooting page learned neither. Fixing one copy of an asymmetric pair created the asymmetry in the other direction, and no numeric check sees it because both pages agree on every number. ADDED: a third row for the promotional window — 0% on daily sub-¥1,000 transactions for 60 consecutive days from first use, capped at ¥30 saved per transaction, quoted from the 2026-03-26 notice, and flagged explicitly as a promotion rather than the standing threshold because ¥1,000 circulates in secondary sources as if it were. UPDATED: the under-¥200 row now quotes the 2026-03-26 wording verbatim and states that the threshold is PER TRANSACTION, which the May-2025 citation did not establish. The May-2025 circular is kept as the earlier record. SCOPE: WeChat rows only. The Alipay fee table is untouched — it already carried the correct hedge that Alipay publishes no fee schedule of its own, which is the distinction payment-failures.md was missing before #83. Limit tables, Tour Pass fees and refund windows were NOT re-verified; last_verified BUMPED to 2026-09-18 for the WeChat fee anchor only, page_audit and citation_check unchanged. --- 2026-07-17: Added two reader-facing sections per traveler feedback — (1) a 'Which payment method works where?' scenario matrix grounded in the existing Quick Decision / 'Where Mobile Pay Doesn't Work' / PBOC-mandate content (no new claims), and (2) an 'Is it safe to link a foreign card?' section framing card-linking as pay-as-you-go authorization rather than a stored balance, with device-bound security described as a layer not a guarantee (consistent with the Lost Phone section) and binding a foreign card recommended over opening a domestic account. No new external source added; other sections not re-verified this round; page_audit unchanged. --- 2026-07-02: focused re-verify with the TenPayGo addition — re-confirmed anchor Tier-1 facts (gov.cn April 2024 $5,000/$50,000 caps + foreign-card POS mandate; ¥200/3% threshold via the Beijing May 2025 circular); no policy reversal since the 2026-06-15 audit. Limit tables, refund windows, and failure modes retain their 2026-06-15 page_audit."
 description: >-
   Extranjeros pueden vincular una Visa/Mastercard a Alipay o WeChat Pay desde la
   política del PBOC de abril de 2024. 0% bajo ¥200, 3% por encima. Cómo resolver
@@ -193,8 +194,9 @@ La misma distinción de dos cifras que en Alipay (techo regulatorio frente a tu 
 
 | Comisión | Nota |
 |---|---|
-| Pago único **inferior a ¥200** (es decir, hasta ¥199.99) | Comisión de WeChat del **0%** (confirmado por la circular municipal de Beijing, mayo de 2025) |
-| Pago único de **¥200 o más** | Recargo del **3%** de WeChat por tarjeta extranjera sobre el importe total de la transacción; un pago de exactamente ¥200 está sujeto al recargo del 3% (confirmado por la circular municipal de Beijing, mayo de 2025) |
+| Pago único **inferior a ¥200** (es decir, hasta ¥199.99) | Comisión de WeChat del **0%**. Gobierno municipal de Beijing, 26 de marzo de 2026: "All international bank card users are eligible for a waiver of the 3 percent transaction fee on every single transaction under 200 yuan." El umbral es **por transacción**, así que varios pagos separados inferiores a ¥200 en un mismo día quedan todos exentos |
+| Pago único de **¥200 o más** | Recargo del **3%** de WeChat por tarjeta extranjera sobre el importe total de la transacción; un pago de exactamente ¥200 está sujeto al recargo del 3% (mismo aviso; confirmado también por la circular municipal de Beijing de mayo de 2025) |
+| **Nuevos usuarios de WeChat Pay — primeros 60 días** | **0%** en transacciones diarias inferiores a **¥1,000**, con un tope de ¥30 de ahorro por transacción, "for 60 consecutive days starting from their first transactions" (mismo aviso). Es una ventana promocional, **no** el umbral permanente — ¥1,000 circula en fuentes secundarias como si lo fuera, y no lo es. También explica el caso habitual en que a tu acompañante le cobran y a ti no |
 | Comisión por transacción en el extranjero del emisor de la tarjeta | Normalmente **1–3%**, fijada por tu banco |
 | Tipo de cambio | Se muestra dentro de la app antes de que confirmes; revisa el importe en RMB mostrado en compras grandes. |
 
