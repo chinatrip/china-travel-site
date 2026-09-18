@@ -22,7 +22,7 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: 2026-07-01
-  notes: "2026-09-18: acted on the high finding from /drift-scan 2026-W38. NIA suspended issuance of electronic Border Management Area Permits for Shigatse from 00:00 on 2026-08-28 (notice published 08-27), cause given as the 2026-08-26 mudslide on the Nepal side at Gyirong Port; holders of existing permits are told 「暂勿前往上述地区」 and resumption is 「另行发布」 with no date. RE-CHECKED TODAY (2026-09-18, 22 days on): NIA has published no resumption notice — its homepage September items were enumerated and contain none — and the original notice page carries no revision. UK FCDO still reads 2026-08-27 and corroborates the disaster but NOT the permit suspension, so NIA remains the only source for that; that asymmetry is stated in the page so a reader who checks FCDO does not conclude the permit problem is invented. FOUR EDITS: (1) a dated suspension box at the head of the BMAP section, stating explicitly that EBC on the Tibet side and the Gyirong crossing both sit inside Shigatse prefecture — the page previously explained how foreigners obtain this permit with no indication it cannot currently be obtained; (2) the Nepal-route section gains the crossing's reliability record rather than only the current closure: Resuo/Friendship Bridge destroyed by flooding 2025-07-08, port resumed 2026-01-01, interrupted again 2026-08-26 — twice in fourteen months and unusable for most of that period, which reframes it from a routine option to an unreliable one; (3) the acclimatisation line, which actively recommended Lhasa -> Shigatse -> EBC, now cross-references the suspension; (4) volatility medium -> HIGH, because a single notice invalidated part of this page well inside the 180-day medium threshold, and border-zone access changes on events rather than on a schedule. SCOPE: last_verified BUMPED to 2026-09-18 for the border-permit and Nepal-route anchors, which genuinely were re-fetched today. NOTHING ELSE was re-verified — TTT process and cost, ATP/Military permits, the closed-period history, and all altitude and insurance content retain their 2026-07-01 state; page_audit (2026-06-09) and citation_check (2026-07-01) are unchanged. NOT DONE, and stated in the page rather than papered over: the Tibet Autonomous Region sites carrying day-to-day port status (xizang.gov.cn, wlt.xizang.gov.cn) served a firewall block page to automated retrieval, so the 2025-26 timeline dates come from search results citing those announcements rather than from the announcements themselves — the page tells readers to confirm current port status with their agency rather than rely on it."
+  notes: "2026-09-18 (review fix): TWO CORRECTIONS, the first a real overreach. (1) The suspension box said the permit gap affects 'itineraries running through Shigatse' and the acclimatisation note said 'Shigatse and EBC currently require a permit that is not being issued'. Both overstate the notice. NIA suspended 「前往西藏自治区日喀则市电子边境管理区通行证」 — the permit for the BORDER MANAGEMENT AREA inside Shigatse prefecture, not permission to visit Shigatse. Shigatse city (Samzhubze) and Tashilhunpo Monastery are outside the border zone and need no BMAP, so the earlier wording would have wrongly discouraged a reader whose itinerary only reaches the city. Replaced with an explicit affected/unaffected table: city no, EBC (Tingri county) yes, Gyirong port yes. (2) The Nepal section concluded 'for most of the period since mid-2025 this crossing has not been usable' — contradicted by the dates in the same paragraph: ~177 days closed (2025-07-08 to 2026-01-01) versus ~237 days open (2026-01-01 to 2026-08-26), so open exceeded closed. Rewritten to state the day counts and make the point about RECURRENCE rather than about a majority of days. My own table refuted my own conclusion, which is the same 'infer a mechanism from an impression' error this page's previous note warns about. ALSO: a reviewer identified https://jtt.xizang.gov.cn (TAR Dept of Transport) as carrying a 2026-09-14 road-control notice for the port direction. It is registered in wiki/sources.md, but socket-closed for us on 2026-09-18, so NOTHING from it was written into this page — its content is known only through the reviewer's reading, and second-hand knowledge of a source is not verification. --- 2026-09-18: acted on the high finding from /drift-scan 2026-W38. NIA suspended issuance of electronic Border Management Area Permits for Shigatse from 00:00 on 2026-08-28 (notice published 08-27), cause given as the 2026-08-26 mudslide on the Nepal side at Gyirong Port; holders of existing permits are told 「暂勿前往上述地区」 and resumption is 「另行发布」 with no date. RE-CHECKED TODAY (2026-09-18, 22 days on): NIA has published no resumption notice — its homepage September items were enumerated and contain none — and the original notice page carries no revision. UK FCDO still reads 2026-08-27 and corroborates the disaster but NOT the permit suspension, so NIA remains the only source for that; that asymmetry is stated in the page so a reader who checks FCDO does not conclude the permit problem is invented. FOUR EDITS: (1) a dated suspension box at the head of the BMAP section, stating explicitly that EBC on the Tibet side and the Gyirong crossing both sit inside Shigatse prefecture — the page previously explained how foreigners obtain this permit with no indication it cannot currently be obtained; (2) the Nepal-route section gains the crossing's reliability record rather than only the current closure: Resuo/Friendship Bridge destroyed by flooding 2025-07-08, port resumed 2026-01-01, interrupted again 2026-08-26 — twice in fourteen months and unusable for most of that period, which reframes it from a routine option to an unreliable one; (3) the acclimatisation line, which actively recommended Lhasa -> Shigatse -> EBC, now cross-references the suspension; (4) volatility medium -> HIGH, because a single notice invalidated part of this page well inside the 180-day medium threshold, and border-zone access changes on events rather than on a schedule. SCOPE: last_verified BUMPED to 2026-09-18 for the border-permit and Nepal-route anchors, which genuinely were re-fetched today. NOTHING ELSE was re-verified — TTT process and cost, ATP/Military permits, the closed-period history, and all altitude and insurance content retain their 2026-07-01 state; page_audit (2026-06-09) and citation_check (2026-07-01) are unchanged. NOT DONE, and stated in the page rather than papered over: the Tibet Autonomous Region sites carrying day-to-day port status (xizang.gov.cn, wlt.xizang.gov.cn) served a firewall block page to automated retrieval, so the 2025-26 timeline dates come from search results citing those announcements rather than from the announcements themselves — the page tells readers to confirm current port status with their agency rather than rely on it."
 description: >-
   Foreigners need a Tibet Travel Permit (not just a China visa), arranged
   through a registered tour — how to apply, costs, and altitude prep for Lhasa.
@@ -137,11 +137,21 @@ Even with a standard TTT, the following are off-limits to foreign visitors:
 > date given. Re-checked on 18 September 2026: NIA has published no resumption notice,
 > and the original notice carries no revision.
 >
-> **This affects Everest Base Camp.** EBC on the Tibet side sits inside Shigatse
-> prefecture, as does the Gyirong crossing to Nepal. Anything in this page describing
-> how to obtain a BMAP, or itineraries running through Shigatse, is describing a
-> document that is **currently not being issued**. Confirm status with your agency
-> before booking, and see the Nepal-route note below.
+> **What this does and does not cover.** The suspended document is the permit for the
+> **border management area** inside Shigatse prefecture — not permission to visit
+> Shigatse generally.
+>
+> | Destination | Affected? |
+> |---|---|
+> | Shigatse city itself (Samzhubze), Tashilhunpo Monastery | **No** — the city is not in the border management area and needs no BMAP |
+> | **Everest Base Camp** (Tibet side, Tingri county) | **Yes** — inside the border management area |
+> | **Gyirong** port and the Nepal land crossing | **Yes** — inside the border management area |
+> | Lhasa, Shannan, and the rest of the TAR | No — a separate matter; the TTT still applies everywhere |
+>
+> So this does not stop you visiting Shigatse. It stops you entering the border zone
+> within it, which is where EBC and the Nepal crossing are. Anything in this page
+> describing how to obtain a BMAP describes a document **currently not being issued**;
+> confirm status with your agency before booking, and see the Nepal-route note below.
 >
 > Source: [NIA notice](https://www.nia.gov.cn/n897453/c1797217/content.html) ·
 > corroborated for the disaster itself by [UK FCDO travel advice](https://www.gov.uk/foreign-travel-advice/china)
@@ -170,7 +180,11 @@ interrupted by natural disaster twice in fourteen months:
 | 1 January 2026 | Port resumed passenger and freight clearance |
 | 26 August 2026 | Mudslide on the Nepal side; Shigatse BMAP issuance suspended from 28 August (see above), no resumption announced as of 18 September 2026 |
 
-So for most of the period since mid-2025 this crossing has not been usable. If your
+Interrupted twice in fourteen months, then — roughly 177 days closed from the 2025
+flood to the January reopening, about 237 days open after it, and closed again since
+26 August. The point is the recurrence, not a majority of days: a reader told only
+"currently suspended" will assume it is routine again next month, and the record does
+not support that assumption either way. If your
 itinerary depends on entering or leaving Tibet overland via Nepal, confirm the port's
 current status with your agency **before** committing to flights, and keep a fly-in
 alternative. The 2025–26 dates above come from Tibet Autonomous Region government
@@ -207,7 +221,7 @@ Both HACE and HAPE require **immediate descent**. Do not wait until morning.
 
 ### Prevention
 
-**Acclimatize:** arrive in Lhasa and rest for 1–2 full days before traveling to higher elevations (Shigatse, EBC). Do not fly from a low-altitude city and hike the same day. *(Shigatse and EBC currently require a permit that is not being issued — see the suspension notice under Restricted Areas before planning this leg.)*
+**Acclimatize:** arrive in Lhasa and rest for 1–2 full days before traveling to higher elevations (Shigatse, EBC). Do not fly from a low-altitude city and hike the same day. *(EBC — not Shigatse city — sits inside the border management area whose permit is currently suspended; see the suspension notice under Restricted Areas before planning this leg.)*
 
 **Hydrate:** 3–4 litres of water per day at altitude; avoid alcohol for the first 2–3 days.
 
