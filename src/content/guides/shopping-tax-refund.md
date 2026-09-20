@@ -1,7 +1,7 @@
 ---
 title: Shopping and Tax Refund for Foreign Visitors
 date: 2026-05-07
-last_verified: 2026-06-09
+last_verified: 2026-09-20
 verified_against:
   - https://www.china-briefing.com/news/chinas-new-instant-vat-refund-policy-boost-to-tourism-and-retail-amid-tariff-tensions/
   - https://www.visahq.com/news/2025-12-11/cn/china-broadens-visa-free-entry-and-streamlines-tax-refunds-to-woo-foreign-visitors/
@@ -18,6 +18,7 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: null
+  notes: "2026-09-20: verified the customs rows against GACC's passenger clearance guide, reachable again over http:// after the misdiagnosis fixed in the previous PR. CORRECTED A CATEGORY ERROR: the tobacco and alcohol rows read 'Up to 400 cigarettes … duty-free on entry' and 'Up to 1,500 ml … duty-free'. Those are GACC's RED-CHANNEL DECLARATION THRESHOLDS, not duty-free allowances. Verbatim: 'CAUTION: Inward passengers with the articles listed below SHALL choose GOODS TO DECLARE (RED CHANNEL) … 1,500ml or above of alcoholic drinks (containing 12% or above alcoholic content); 400 sticks or above of cigarettes; 100 sticks or above of cigars; 500g or above of tobacco.' The practical outcome is similar — below the line you take the green channel and goods are released as personal effects — but 'up to 400 duty-free' promises an entitlement the source does not give: release is 'within the limitation set by the Customs' and explicitly 'subject to REASONABLE QUANTITY control'. Rewritten as thresholds with that caveat. ALSO: the foreign-currency row claimed larger amounts need a permit from an authorised Chinese bank. GACC's guide does not say that — it is a foreign-exchange rule under a different authority — so it is labelled unverified here rather than cited to customs. ADDED: the inbound personal-article thresholds (¥5,000 residents / ¥2,000 non-residents), which this page never carried and which are the context those tobacco figures sit in. SCOPE: last_verified BUMPED to 2026-09-20 for the customs-threshold anchors only. The VAT refund scheme, the ¥200 minimum, the 11% rate and the instant-refund mechanics were NOT re-verified this round."
 description: >-
   China's tourist VAT refund: minimum ¥200 per store per day, the new instant
   in-store refund, eligible shops, and how to claim at the airport on departure.
@@ -132,11 +133,12 @@ These are the limits when **leaving China** (what foreign customs at your destin
 
 | Item | Duty-free limit on exit from China |
 |---|---|
+| **Inbound personal articles** (context for the thresholds below) | Red channel required at **¥5,000 or above** for Chinese residents, **¥2,000 or above** for non-residents, on articles staying in China. The excess is dutiable |
 | **Personal goods generally** | No outbound duty for reasonable personal-use quantities — China's customs duty limits apply to *incoming* goods; what you buy and take out is your home country's concern |
 | **RMB cash** | ¥20,000 per person outbound (source: customs.gov.cn) |
-| **Foreign currency** | USD $5,000 equivalent without a permit; larger amounts require a permit issued by an authorized Chinese bank — apply before departure |
-| **Tobacco** | Up to 400 cigarettes, 100 cigars, or 500 g smoking tobacco duty-free on entry to China; outbound limits are set by your destination country |
-| **Alcohol** | Up to 1,500 ml (alcohol content 12%+) duty-free on entry to China |
+| **Foreign currency** | Declare at **USD $5,000 equivalent or above** on the way out (GACC). The further claim that larger amounts need a permit from an authorised Chinese bank is a **foreign-exchange rule, not a customs one** — GACC's passenger guide does not mention it, so it is unverified here; confirm with your bank |
+| **Tobacco** | **Declaration thresholds, not duty-free allowances.** GACC requires the red channel at **400 cigarettes or above**, **100 cigars or above**, or **500 g of tobacco or above** on entry. Below those you may use the green channel and goods are released duty-free as personal effects — but that is "within the limitation set by the Customs" and subject to reasonable-quantity judgement, not an entitlement. Outbound limits are your destination country's concern |
+| **Alcohol** | Same shape: red channel required at **1,500 ml or above** of drinks at 12%+ ABV. Below it, released as personal effects under the same reasonable-quantity caveat |
 | **Chinese medicinal materials** | No more than ¥300 worth if taking to a foreign country |
 
 **Note on counterfeit goods:** it is a legal risk in China to purchase counterfeit branded goods, and many countries (EU, US, UK, Australia) impose fines or confiscation at the border for importing them. Counterfeit goods are also excluded from VAT refund eligibility. See the scam-avoidance section in [[wiki/concepts/emergency-safety.md]] for market shopping tips.
