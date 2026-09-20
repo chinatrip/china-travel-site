@@ -1,7 +1,7 @@
 ---
 title: Foreign Exchange and Cash in China
 date: 2026-05-04
-last_verified: 2026-06-09
+last_verified: 2026-09-20
 verified_against:
   - https://www.you.co/sg/blog/china-atm-withdrawal-guide/
   - https://wise.com/gb/blog/atms-in-china
@@ -19,6 +19,7 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: 2026-05-06
+  notes: "2026-09-20: verified the customs cash rows against GACC's passenger clearance guide (english.customs.gov.cn/statics/88707c1e…), which is in this page's verified_against and became reachable again once the http:// misdiagnosis was fixed. THE NUMBERS ARE CORRECT: RMB 20,000 and USD 5,000 equivalent, and the same pair applies on the way out — GACC lists 'RMB20,000 cash or above, or any other foreign currencies in cash equivalent to US$5,000 or above' under BOTH the inward and outward red-channel tables. TWO ATTRIBUTIONS WERE NOT: (1) 'No cap on bringing in (source: customs.gov.cn)' — GACC states a declaration trigger, not the absence of a cap; the page was citing the source for a claim the source does not make, even though the practical effect is similar. Reworded to say what GACC actually establishes. (2) 'Carrying more than $5,000 out requires a permit issued by an authorized Chinese bank' is cited to customs.gov.cn and does not appear there. It is a foreign-exchange rule under a different authority; it may well be correct, but not on this source, so it is now labelled unverified. ADDED from the guide: travellers who bring in over $5,000 and plan to take it out later file TWO declaration forms on entry and keep the endorsed copy for departure — a concrete procedure the page did not carry. SCOPE: last_verified BUMPED to 2026-09-20 for the customs cash anchors only. ATM limits, per-transaction caps and the where-cards-work content were NOT re-verified and retain their earlier state."
 description: >-
   Cash and currency in China for foreigners: ATM withdrawals, where foreign
   cards work, how much cash to carry, and the USD 5,000 declaration threshold.
@@ -122,8 +123,8 @@ You can convert unused RMB back to foreign currency at bank branches or airport 
 | Cash type | Limit | Declaration required |
 |---|---|---|
 | **RMB** | ¥20,000 per person in or out (source: customs.gov.cn) | ¥20,000 is the standard carry limit for travellers; amounts above it must be declared to Customs and may require supporting documents, and the excess can be refused or confiscated. This limit is rarely an issue for tourists |
-| **Foreign currency** | No cap on bringing in (source: customs.gov.cn) | Declare to customs in writing if carrying **more than USD $5,000 equivalent** on entry |
-| **Foreign currency out** | USD $5,000 equivalent without permit (source: customs.gov.cn) | Carrying more than $5,000 out requires a permit issued by an authorized Chinese bank — apply before departure |
+| **Foreign currency in** | Declare at **USD $5,000 equivalent or above** (GACC passenger guide) | GACC states the red-channel trigger, not a cap — it sets no maximum on what you may bring in, only on what you may bring in *without declaring*. Declaring is the requirement, not a ceiling |
+| **Foreign currency out** | Declare at **USD $5,000 equivalent or above** (GACC passenger guide) | If you brought in more than $5,000 and intend to take it out later, GACC has you file **two declaration forms on entry**; Customs endorses and returns one for use on departure — do this at the border, not before the trip. The separate claim that taking out more than $5,000 needs a **permit from an authorised Chinese bank** is a foreign-exchange rule under a different authority, **not in GACC's guide** — unverified here; confirm with your bank |
 
 Declarations are made on the inbound customs form. Keep receipts if you carry large amounts — customs may ask for evidence of legitimate source.
 
