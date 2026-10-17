@@ -9,12 +9,13 @@ name: CI & Preview
 # CLOUDFLARE_API_TOKEN secret is configured the workflow still passes (test only).
 #
 # A separate `seo-review` job runs in PARALLEL and reviews the SEO/GEO quality of
-# changed content with an LLM (OpenRouter gpt-5.5). It is independent of `test`, so
+# changed content with an LLM (DeepSeek `deepseek-chat` by default; OpenRouter gpt-5.5 as fallback). It is independent of `test`, so
 # it NEVER affects preview generation. On ordinary content PRs it BLOCKS on one
 # criterion, `faq_grounding` — everything else, plus the wiki sync branch and the manual
 # full-site scan, stays advisory (reported, flagged "would block", exits 0). It is NOT a
 # required check, so a red run is a signal to the reviewer rather than a hard merge stop;
-# guarded by `env.OPENROUTER_API_KEY != ''` so it soft-passes until the secret is set.
+# guarded by `env.DEEPSEEK_API_KEY != '' || env.OPENROUTER_API_KEY != ''` so it soft-passes
+# until one of the secrets is set.
 
 on:
   pull_request:
@@ -169,10 +170,14 @@ jobs:
   # manual scan, stays advisory — reported and flagged "would block", never
   # hard-failing. NOT a required check (see .github/BRANCH_PROTECTION.md), so a
   # red run is a signal to the human reviewer rather than a hard merge stop.
-  # Still guarded by `env.OPENROUTER_API_KEY != ''` → soft-passes until the secret is set.
+  # Still guarded by the DEEPSEEK_API_KEY / OPENROUTER_API_KEY presence check → soft-passes
+  # until one of the secrets is set.
   seo-review:
     runs-on: ubuntu-latest
     env:
+      # DeepSeek (preferred) and OpenRouter (fallback). The backend is chosen by
+      # scripts/seo-review.mjs `resolveBackend()`; DeepSeek wins when both are set.
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       # Blocking for ordinary content PRs; advisory everywhere else.
       #
@@ -213,7 +218,7 @@ jobs:
       # Both write the report to seo-review-report.md AND $GITHUB_STEP_SUMMARY.
       - name: SEO/GEO review of changed content
         id: seo
-        if: env.OPENROUTER_API_KEY != ''
+        if: env.DEEPSEEK_API_KEY != '' || env.OPENROUTER_API_KEY != ''
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             node scripts/seo-review.mjs --all
@@ -228,7 +233,7 @@ jobs:
       # PR-only: on workflow_dispatch there is no PR to comment on (the report lives
       # in the run Summary, written by the script via $GITHUB_STEP_SUMMARY).
       - name: Comment SEO/GEO report on PR
-        if: always() && github.event_name == 'pull_request' && env.OPENROUTER_API_KEY != ''
+        if: always() && github.event_name == 'pull_request' && (env.DEEPSEEK_API_KEY != '' || env.OPENROUTER_API_KEY != '')
         uses: actions/github-script@v7
         with:
           script: |

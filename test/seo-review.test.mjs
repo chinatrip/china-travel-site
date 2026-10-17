@@ -17,6 +17,9 @@ import {
   PageVerdictSchema,
   CRITERION_IDS,
   ADVISORY_IDS,
+  resolveBackend,
+  parseJsonObject,
+  callDeepSeek,
 } from '../scripts/seo-review.mjs';
 
 // ---- fixtures ---------------------------------------------------------------
@@ -516,5 +519,81 @@ test('ci.yml: the manual full-site scan cap covers the whole content corpus', ()
     caps.dispatch >= contentFiles,
     `workflow_dispatch cap (${caps.dispatch}) must be >= the ${contentFiles} content files, ` +
       'or `--all` silently reviews only part of the site while reporting a full scan',
+  );
+});
+
+// ---- LLM backend selection (DeepSeek default, OpenRouter fallback) ----------
+// The gate must never be silently disabled by key rotation: DeepSeek is the
+// first-party account, OpenRouter is kept as a fallback, and the pure resolver
+// is the single place that decides. Issue #156 is why this is tested.
+
+test('resolveBackend prefers DeepSeek, falls back to OpenRouter, else null', () => {
+  assert.equal(resolveBackend({}), null);
+
+  const deepseek = resolveBackend({ DEEPSEEK_API_KEY: 'dk' });
+  assert.equal(deepseek.kind, 'deepseek');
+  assert.equal(deepseek.model, 'deepseek-chat');
+  assert.equal(deepseek.baseURL, 'https://api.deepseek.com');
+
+  const openrouter = resolveBackend({ OPENROUTER_API_KEY: 'or' });
+  assert.equal(openrouter.kind, 'openrouter');
+  assert.equal(openrouter.model, 'openai/gpt-5.5');
+
+  // Both present: DeepSeek wins.
+  assert.equal(resolveBackend({ DEEPSEEK_API_KEY: 'dk', OPENROUTER_API_KEY: 'or' }).kind, 'deepseek');
+
+  // Model and endpoint are overridable without a code change.
+  const overridden = resolveBackend({
+    DEEPSEEK_API_KEY: 'dk',
+    SEO_REVIEW_MODEL: 'deepseek-reasoner',
+    DEEPSEEK_BASE_URL: 'https://gateway.example/v1',
+  });
+  assert.equal(overridden.model, 'deepseek-reasoner');
+  assert.equal(overridden.baseURL, 'https://gateway.example/v1');
+});
+
+test('parseJsonObject accepts plain, fenced and prose-wrapped JSON', () => {
+  assert.deepEqual(parseJsonObject('{"a":1}'), { a: 1 });
+  assert.deepEqual(parseJsonObject('```json\n{"a":2}\n```'), { a: 2 });
+  assert.deepEqual(parseJsonObject('Here you go: {"a":3} — done.'), { a: 3 });
+  assert.throws(() => parseJsonObject('no object here'), /no JSON object/);
+  assert.throws(() => parseJsonObject('[1,2]'), /no JSON object/);
+});
+
+test('callDeepSeek posts JSON mode and validates the verdict against the schema', async () => {
+  // Schema-valid verdict (PageVerdictSchema requires problemQuote/bodySupport on each FAQ item).
+  const validVerdict = cleanVerdict({
+    faqGrounding: [
+      { question: 'Do I need a Chinese number?', groundingStatus: 'grounded', problemQuote: null, bodySupport: 'the body says no' },
+    ],
+  });
+  const calls = [];
+  const fetchImpl = async (url, init) => {
+    calls.push({ url, init });
+    return {
+      ok: true,
+      status: 200,
+      text: async () => JSON.stringify({ choices: [{ message: { content: JSON.stringify(validVerdict) } }] }),
+    };
+  };
+  const backend = { kind: 'deepseek', apiKey: 'dk', model: 'deepseek-chat', baseURL: 'https://api.deepseek.com' };
+  const verdict = await callDeepSeek({ system: 'sys', prompt: 'prompt', backend, fetchImpl });
+
+  assert.equal(verdict.slug, 'getting-around');
+  assert.equal(calls.length, 1);
+  assert.equal(calls[0].url, 'https://api.deepseek.com/chat/completions');
+  assert.equal(calls[0].init.headers.Authorization, 'Bearer dk');
+  const body = JSON.parse(calls[0].init.body);
+  assert.equal(body.model, 'deepseek-chat');
+  assert.deepEqual(body.response_format, { type: 'json_object' });
+  assert.match(body.messages[0].content, /JSON object/);
+});
+
+test('callDeepSeek surfaces the HTTP status and body on failure', async () => {
+  const fetchImpl = async () => ({ ok: false, status: 401, text: async () => '{"error":"Unauthorized"}' });
+  const backend = { kind: 'deepseek', apiKey: 'bad', model: 'deepseek-chat', baseURL: 'https://api.deepseek.com' };
+  await assert.rejects(
+    () => callDeepSeek({ system: 's', prompt: 'p', backend, fetchImpl }),
+    /DeepSeek API 401.*Unauthorized/,
   );
 });
