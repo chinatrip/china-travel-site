@@ -12,7 +12,7 @@ faqs:
   - q: "Why doesn't my foreign number receive the Chinese app's verification code?"
     a: "Many Chinese apps accept a foreign number at signup but silently fail to deliver the SMS, so the code never arrives. Use the mini-program version, register before you travel while on your home carrier, or get a Chinese number for that app."
 category: guide
-title: "Do You Need a Chinese Phone Number? +86 for Foreigners in 2026"
+title: "Do You Need a +86 Number in China?"
 date: 2026-06-04
 last_verified: 2026-06-12
 verified_against:
