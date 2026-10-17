@@ -523,24 +523,19 @@ test('ci.yml: the manual full-site scan cap covers the whole content corpus', ()
 });
 
 // ---- LLM backend selection (DeepSeek default, OpenRouter fallback) ----------
-// The gate must never be silently disabled by key rotation: DeepSeek is the
-// first-party account, OpenRouter is kept as a fallback, and the pure resolver
-// is the single place that decides. Issue #156 is why this is tested.
+// The gate must never be silently disabled by key rotation: DeepSeek is the only
+// backend, and the pure resolver is the single place that decides. Issue #156 is
+// why this is tested.
 
-test('resolveBackend prefers DeepSeek, falls back to OpenRouter, else null', () => {
+test('resolveBackend requires the DeepSeek key and ignores every other key', () => {
   assert.equal(resolveBackend({}), null);
+  // A leftover/revoked OpenRouter key must NOT re-enable the gate.
+  assert.equal(resolveBackend({ OPENROUTER_API_KEY: 'stale' }), null);
 
   const deepseek = resolveBackend({ DEEPSEEK_API_KEY: 'dk' });
   assert.equal(deepseek.kind, 'deepseek');
   assert.equal(deepseek.model, 'deepseek-chat');
   assert.equal(deepseek.baseURL, 'https://api.deepseek.com');
-
-  const openrouter = resolveBackend({ OPENROUTER_API_KEY: 'or' });
-  assert.equal(openrouter.kind, 'openrouter');
-  assert.equal(openrouter.model, 'openai/gpt-5.5');
-
-  // Both present: DeepSeek wins.
-  assert.equal(resolveBackend({ DEEPSEEK_API_KEY: 'dk', OPENROUTER_API_KEY: 'or' }).kind, 'deepseek');
 
   // Model and endpoint are overridable without a code change.
   const overridden = resolveBackend({
@@ -579,14 +574,20 @@ test('callDeepSeek posts JSON mode and validates the verdict against the schema'
   const backend = { kind: 'deepseek', apiKey: 'dk', model: 'deepseek-chat', baseURL: 'https://api.deepseek.com' };
   const verdict = await callDeepSeek({ system: 'sys', prompt: 'prompt', backend, fetchImpl });
 
-  assert.equal(verdict.slug, 'getting-around');
+  // slug/collection are filled in by reviewPage(), not requested from the model.
+  assert.equal(verdict.criteria.length, CRITERION_IDS.length);
+  assert.equal(verdict.overallScore, 5);
   assert.equal(calls.length, 1);
   assert.equal(calls[0].url, 'https://api.deepseek.com/chat/completions');
   assert.equal(calls[0].init.headers.Authorization, 'Bearer dk');
   const body = JSON.parse(calls[0].init.body);
   assert.equal(body.model, 'deepseek-chat');
   assert.deepEqual(body.response_format, { type: 'json_object' });
-  assert.match(body.messages[0].content, /JSON object/);
+  // The output contract must be in the prompt — DeepSeek does not get the schema
+  // injected, and its absence is what broke the first full-site scan (#156).
+  assert.match(body.messages[0].content, /OUTPUT CONTRACT/);
+  assert.match(body.messages[0].content, /"severity"/);
+  assert.match(body.messages[0].content, /faq_grounding/);
 });
 
 test('callDeepSeek surfaces the HTTP status and body on failure', async () => {

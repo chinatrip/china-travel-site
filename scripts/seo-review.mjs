@@ -9,10 +9,9 @@
  *
  * Modes (env SEO_REVIEW_MODE): "advisory" (default — always exit 0, comment-only) | "blocking".
  * Runtime: GitHub Actions ephemeral runner.
- * Model: DeepSeek `deepseek-chat` by default (direct API, JSON mode); OpenRouter
- * `openai/gpt-5.5` remains as a fallback when only OPENROUTER_API_KEY is set.
- * Which backend is used is decided by `resolveBackend()` — DeepSeek wins when both
- * keys are present.
+ * Model: DeepSeek `deepseek-chat` (direct API, JSON mode), selected by
+ * `resolveBackend()`. `SEO_REVIEW_MODEL` overrides the model; `DEEPSEEK_BASE_URL`
+ * points the call at a compatible gateway. No LLM backend = soft-pass.
  *
  * Usage:
  *   node scripts/seo-review.mjs                 # CI: review files changed vs GITHUB_BASE_REF
@@ -34,10 +33,8 @@ const CALIBRATION_PATH = join(MEMORY_DIR, 'calibration.md');
 const DECISIONS_PATH = join(MEMORY_DIR, 'decisions.jsonl');
 const REPORT_PATH = 'seo-review-report.md';
 const MARKER = '<!-- seo-review-bot -->';
-// LLM backends, in priority order. DeepSeek is the default because the project has
-// a first-party DeepSeek account; OpenRouter stays as a fallback so a missing key on
-// either side degrades to the other instead of silently disabling the gate.
-const OPENROUTER_MODEL = 'openai/gpt-5.5';
+// LLM backend. DeepSeek is the project's first-party account and the only backend;
+// the old OpenRouter path was removed in 2026-10 after its key was revoked (#156).
 const DEEPSEEK_BASE_URL = 'https://api.deepseek.com';
 const DEEPSEEK_MODEL = 'deepseek-chat';
 const MAX_FILES = Number(process.env.SEO_REVIEW_MAX_FILES || 25);
@@ -431,30 +428,21 @@ export function buildUserPrompt(derived, history = []) {
 // ---------------------------------------------------------------------------
 
 /**
- * Pick the review backend from the environment. DeepSeek wins when both keys are
- * present; `SEO_REVIEW_MODEL` overrides the model name; `DEEPSEEK_BASE_URL` exists
- * so the endpoint can be pointed at a compatible gateway without a code change.
- * Returns null when neither key is configured (the gate then soft-passes).
+ * Pick the review backend from the environment. DeepSeek only: `DEEPSEEK_API_KEY`
+ * is required, `SEO_REVIEW_MODEL` overrides the model name, and `DEEPSEEK_BASE_URL`
+ * exists so the endpoint can be pointed at a compatible gateway without a code
+ * change. Returns null when the key is missing (the gate then soft-passes).
  * @param {Record<string, string|undefined>} env
- * @returns {{kind: 'deepseek'|'openrouter', apiKey: string, model: string, baseURL?: string}|null}
+ * @returns {{kind: 'deepseek', apiKey: string, model: string, baseURL: string}|null}
  */
 export function resolveBackend(env = process.env) {
-  if (env.DEEPSEEK_API_KEY) {
-    return {
-      kind: 'deepseek',
-      apiKey: env.DEEPSEEK_API_KEY,
-      model: env.SEO_REVIEW_MODEL || DEEPSEEK_MODEL,
-      baseURL: env.DEEPSEEK_BASE_URL || DEEPSEEK_BASE_URL,
-    };
-  }
-  if (env.OPENROUTER_API_KEY) {
-    return {
-      kind: 'openrouter',
-      apiKey: env.OPENROUTER_API_KEY,
-      model: env.SEO_REVIEW_MODEL || OPENROUTER_MODEL,
-    };
-  }
-  return null;
+  if (!env.DEEPSEEK_API_KEY) return null;
+  return {
+    kind: 'deepseek',
+    apiKey: env.DEEPSEEK_API_KEY,
+    model: env.SEO_REVIEW_MODEL || DEEPSEEK_MODEL,
+    baseURL: env.DEEPSEEK_BASE_URL || DEEPSEEK_BASE_URL,
+  };
 }
 
 /**
@@ -477,9 +465,40 @@ export function parseJsonObject(text) {
 }
 
 /**
+ * The exact JSON contract the model must return. JSON-mode APIs do not inject a
+ * schema the way `generateObject` did, so the field names/enums are spelled out
+ * here. `slug`/`collection` are deliberately NOT requested: reviewPage() sets them
+ * from the file path after the call, and asking the model to echo them was the
+ * first thing DeepSeek got wrong.
+ */
+export const OUTPUT_CONTRACT = `OUTPUT CONTRACT — return exactly one JSON object with these keys and nothing else:
+{
+  "criteria": [ { "id": "<criterion id>", "score": <0-5 number>, "severity": "none"|"low"|"medium"|"high", "passed": <boolean>, "rationale": "<one sentence>" } ],
+  "faqGrounding": [ { "question": "<FAQ question verbatim>", "groundingStatus": "grounded"|"partially_grounded"|"ungrounded"|"overclaims", "problemQuote": <string|null>, "bodySupport": <string|null> } ],
+  "blockingIssues": [ "<string>" ],
+  "suggestions": [ "<string>" ],
+  "overallScore": <0-5 number>,
+  "modelPassRecommendation": <boolean>
+}
+"criteria" must contain EXACTLY these ids, one entry each: ${CRITERION_IDS.join(', ')}. Use only the allowed enum values for "severity" and "groundingStatus".`;
+
+// The model is not asked for slug/collection (reviewPage fills them in), so validate
+// against the page-verdict schema without those two required fields.
+const ModelVerdictSchema = PageVerdictSchema.omit({ slug: true, collection: true });
+
+function summarizeIssues(err) {
+  const issues = err?.issues;
+  if (!Array.isArray(issues)) return err?.message || String(err);
+  return issues
+    .slice(0, 5)
+    .map((i) => `${(i.path || []).join('.') || '(root)'}: ${i.message}`)
+    .join('; ');
+}
+
+/**
  * Call DeepSeek's OpenAI-compatible chat endpoint in JSON mode and validate the
- * result against PageVerdictSchema. `fetchImpl` is injectable so the request/parse
- * path is unit-testable without network access.
+ * result against the page-verdict schema. `fetchImpl` is injectable so the
+ * request/parse path is unit-testable without network access.
  */
 export async function callDeepSeek({ system, prompt, backend = resolveBackend(), fetchImpl = fetch }) {
   if (!backend || backend.kind !== 'deepseek') throw new Error('callDeepSeek requires a deepseek backend');
@@ -492,7 +511,7 @@ export async function callDeepSeek({ system, prompt, backend = resolveBackend(),
       temperature: 0,
       response_format: { type: 'json_object' },
       messages: [
-        { role: 'system', content: `${system}\n\nReturn exactly one JSON object and nothing else.` },
+        { role: 'system', content: `${system}\n\n${OUTPUT_CONTRACT}\n\nReturn exactly one JSON object and nothing else.` },
         { role: 'user', content: prompt },
       ],
     }),
@@ -507,7 +526,11 @@ export async function callDeepSeek({ system, prompt, backend = resolveBackend(),
   }
   const content = payload?.choices?.[0]?.message?.content;
   if (!content) throw new Error('DeepSeek returned no message content');
-  return PageVerdictSchema.parse(parseJsonObject(content));
+  try {
+    return ModelVerdictSchema.parse(parseJsonObject(content));
+  } catch (err) {
+    throw new Error(`DeepSeek output failed validation: ${summarizeIssues(err)}`);
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -515,25 +538,8 @@ export async function callDeepSeek({ system, prompt, backend = resolveBackend(),
 // ---------------------------------------------------------------------------
 async function defaultCallModel({ system, prompt }) {
   const backend = resolveBackend();
-  if (!backend) throw new Error('no LLM backend configured (set DEEPSEEK_API_KEY or OPENROUTER_API_KEY)');
-  if (backend.kind === 'deepseek') return callDeepSeek({ system, prompt, backend });
-
-  const { createOpenRouter } = await import('@openrouter/ai-sdk-provider');
-  const { generateObject } = await import('ai');
-  const openrouter = createOpenRouter({ apiKey: backend.apiKey });
-  try {
-    const { object } = await generateObject({
-      model: openrouter.chat(backend.model),
-      schema: PageVerdictSchema,
-      temperature: 0,
-      system,
-      prompt,
-    });
-    return object;
-  } catch (err) {
-    // Surface the provider error instead of a bare "User not found." (issue #156).
-    throw new Error(`OpenRouter call failed: ${err?.message || err}`);
-  }
+  if (!backend) throw new Error('no LLM backend configured (set DEEPSEEK_API_KEY)');
+  return callDeepSeek({ system, prompt, backend });
 }
 
 export async function reviewPage(input, memory, { callModel = defaultCallModel, retries = 2 } = {}) {
@@ -639,10 +645,10 @@ async function main() {
 
   const backend = resolveBackend();
   if (!backend) {
-    const msg = '⏭️  No LLM backend configured (DEEPSEEK_API_KEY / OPENROUTER_API_KEY) — skipping SEO/GEO review (soft pass).';
+    const msg = '⏭️  No LLM backend configured (DEEPSEEK_API_KEY) — skipping SEO/GEO review (soft pass).';
     console.log(msg);
     writeReport(
-      `${MARKER}\n## ⏭️ SEO/GEO review skipped\n\n_No LLM backend configured_ — set \`DEEPSEEK_API_KEY\` (preferred) or \`OPENROUTER_API_KEY\`; the review is inert until then.`,
+      `${MARKER}\n## ⏭️ SEO/GEO review skipped\n\n_No LLM backend configured_ — set \`DEEPSEEK_API_KEY\`; the review is inert until then.`,
     );
     process.exit(0);
   }
