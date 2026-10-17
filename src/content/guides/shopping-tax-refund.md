@@ -4,7 +4,8 @@ date: 2026-05-07
 last_verified: 2026-09-20
 verified_against:
   - https://www.china-briefing.com/news/chinas-new-instant-vat-refund-policy-boost-to-tourism-and-retail-amid-tariff-tensions/
-  - https://www.visahq.com/news/2025-12-11/cn/china-broadens-visa-free-entry-and-streamlines-tax-refunds-to-woo-foreign-visitors/
+  - https://www.gov.cn/zhengce/jiedu/tujie/202504/content_7021304.htm
+  - https://www.shio.gov.cn/TrueCMS/shxwbgs/ywts/content/4eb5dc1c-f2ff-425f-b92f-a1c6df388d95.html
   - https://www.chinavigators.com/china-vat-refund-guide/
   - https://www.trip.com/guide/info/china-tax-refund.html
   - http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html
@@ -20,7 +21,7 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: null
-  notes: "2026-09-20: verified the customs rows against GACC's passenger clearance guide, reachable again over http:// after the misdiagnosis fixed in the previous PR. CORRECTED A CATEGORY ERROR: the tobacco and alcohol rows read 'Up to 400 cigarettes … duty-free on entry' and 'Up to 1,500 ml … duty-free'. Those are GACC's RED-CHANNEL DECLARATION THRESHOLDS, not duty-free allowances. Verbatim: 'CAUTION: Inward passengers with the articles listed below SHALL choose GOODS TO DECLARE (RED CHANNEL) … 1,500ml or above of alcoholic drinks (containing 12% or above alcoholic content); 400 sticks or above of cigarettes; 100 sticks or above of cigars; 500g or above of tobacco.' The practical outcome is similar — below the line you take the green channel and goods are released as personal effects — but 'up to 400 duty-free' promises an entitlement the source does not give: release is 'within the limitation set by the Customs' and explicitly 'subject to REASONABLE QUANTITY control'. Rewritten as thresholds with that caveat. ALSO: the foreign-currency row claimed larger amounts need a permit from an authorised Chinese bank. GACC's guide does not say that — it is a foreign-exchange rule under a different authority — so it is labelled unverified here rather than cited to customs. ADDED: the inbound personal-article thresholds (¥5,000 residents / ¥2,000 non-residents), which this page never carried and which are the context those tobacco figures sit in. SCOPE: last_verified BUMPED to 2026-09-20 for the customs-threshold anchors only. The VAT refund scheme, the ¥200 minimum, the 11% rate and the instant-refund mechanics were NOT re-verified this round."
+  notes: "2026-09-20: verified the customs rows against GACC's passenger clearance guide, reachable again over http:// after the misdiagnosis fixed in the previous PR. CORRECTED A CATEGORY ERROR: the tobacco and alcohol rows read 'Up to 400 cigarettes … duty-free on entry' and 'Up to 1,500 ml … duty-free'. Those are GACC's RED-CHANNEL DECLARATION THRESHOLDS, not duty-free allowances. Verbatim: 'CAUTION: Inward passengers with the articles listed below SHALL choose GOODS TO DECLARE (RED CHANNEL) … 1,500ml or above of alcoholic drinks (containing 12% or above alcoholic content); 400 sticks or above of cigarettes; 100 sticks or above of cigars; 500g or above of tobacco.' The practical outcome is similar — below the line you take the green channel and goods are released as personal effects — but 'up to 400 duty-free' promises an entitlement the source does not give: release is 'within the limitation set by the Customs' and explicitly 'subject to REASONABLE QUANTITY control'. Rewritten as thresholds with that caveat. ALSO: the foreign-currency row claimed larger amounts need a permit from an authorised Chinese bank. GACC's guide does not say that — it is a foreign-exchange rule under a different authority — so it is labelled unverified here rather than cited to customs. ADDED: the inbound personal-article thresholds (¥5,000 residents / ¥2,000 non-residents), which this page never carried and which are the context those tobacco figures sit in. SCOPE: last_verified BUMPED to 2026-09-20 for the customs-threshold anchors only. The VAT refund scheme, the ¥200 minimum, the 11% rate and the instant-refund mechanics were NOT re-verified this round. --- 2026-10-17: source-list maintenance only, no claim changes. Replaced the dead visahq.com URL (HTTP 404, no Wayback snapshot) with the official gov.cn April 2025 policy chart for the ¥200 threshold, and rewrote the Shanghai outlet sentence against the Shanghai government's 2025-12-26 release (1,700+ registered refund stores, 1,000+ added in 2025, instant refund city-wide via 9 + 17 + N points). last_verified NOT bumped."
 description: >-
   China's tourist VAT refund: minimum ¥200 per store per day, the new instant
   in-store refund, eligible shops, and how to claim at the airport on departure.
@@ -59,7 +60,7 @@ China operates a departure VAT refund scheme for overseas visitors. A significan
 ### Eligibility
 
 - Overseas visitor staying in mainland China for **no more than 183 consecutive days**
-- Minimum spend: **¥200 or more from a single participating store on the same day** (source: china-briefing.com April 2025; visahq.com December 2025)
+- Minimum spend: **¥200 or more from a single participating store on the same day** (source: gov.cn, April 2025 policy notice; china-briefing.com April 2025)
 - Goods must be for personal use and taken out of the country unused and in original packaging
 
 ### Refund Rate
@@ -85,7 +86,7 @@ At designated tax-free retailers (primarily in major cities and airports):
 3. A credit-card pre-authorization hold is placed on a card you provide as a deposit.
 4. **At departure**, present your goods, invoices, and ID at the customs kiosk for verification. If compliant, the hold is cancelled and the refund is finalised.
 
-Shanghai alone had over 1,700 authorised instant-refund outlets as of late 2025, with electronic refund kiosks at all exit gates including Hongqiao Railway Station (source: visahq.com).
+Shanghai had **more than 1,700 registered refund stores by the end of November 2025** (over 1,000 added that year), and "instant refund" (即买即退) is available city-wide through 9 city-wide refund points, 17 centralised points and store-level points (source: Shanghai municipal government, shio.gov.cn, December 2025).
 
 ### Path 2: Airport Departure Claim (Traditional)
 

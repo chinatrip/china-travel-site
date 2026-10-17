@@ -1,5 +1,5 @@
 ---
-title: Trip Planning — Timing, Budget, Length, and Independent Travel
+title: "China Trip Planning: Timing, Budget, Length"
 date: 2026-07-01
 last_verified: 2026-09-08
 verified_against:

@@ -1,5 +1,5 @@
 ---
-title: "TenPayGo: Tencent's Payment App for Foreign Visitors to China (2026)"
+title: "TenPayGo: Tencent's Payment App (2026)"
 date: 2026-07-02
 last_verified: 2026-10-08
 verified_against:
