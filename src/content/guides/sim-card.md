@@ -96,13 +96,9 @@ Foreign visitors have three connectivity options in mainland China, each with di
 
 On roaming, a China SIM guide notes that "if your roaming uses home-country routing, it usually works; if your traffic is routed through local Chinese networks, it may still be blocked by the firewall" — and that roaming is usually expensive (chinaguidelines.com, checked 2026-10-08).
 
-<<<<<<< site
-## Which eSIM should I buy for China, and what does it cost?
-=======
 For most short trips a Chinese phone number matters less than you might expect. The same guide says core travel needs — "payments, ride-hailing, public transportation, hotel booking, and high-speed rail tickets usually do not require a Chinese phone number": Alipay, WeChat Pay and DiDi accept international numbers, and 12306 / Trip.com can use email registration. Where a +86 number still helps is some local lifestyle apps (Meituan, Dianping, Amap and similar), where foreign numbers are "supported inconsistently". See [our full guide to getting a Chinese phone number](/guides/chinese-phone-number/) for which services actually require one and how to obtain a +86 number.
->>>>>>> wiki
 
-## Foreign eSIM (Recommended for Most Tourists)
+## Which eSIM should I buy for China, and what does it cost?
 
 > **Note:** Three of the four major foreign travel eSIMs marketed for China state in their own materials that data is routed outside mainland China, so blocked sites work with **no separate VPN** (checked 2026-10-08). Airalo's help centre: "a VPN is NOT required"; "your traffic is routed through secure gateways outside mainland China". Nomad: "no external VPN needed". Holafly's China page: you can use WhatsApp, Google and Instagram "without installing an additional VPN", and it also says a VPN is included in the plan. **Ubigi is unclear:** its China plan page no longer says anything about VPNs or the firewall, and its own China blog post (July 2026) says both that Ubigi routes data "through networks outside mainland China" so you "could access" Google and WhatsApp without a VPN, and, further down, that "an eSIM … does not bypass the Great Firewall" and "you will need a VPN". Ask Ubigi before relying on it. These are the providers' own statements, not an independent routing audit, and this is high-volatility — confirm the provider's current China page before buying. The bypass applies only to eSIM data — Chinese hotel/airport Wi-Fi is still behind the Great Firewall.
 
