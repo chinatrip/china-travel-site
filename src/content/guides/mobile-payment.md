@@ -35,6 +35,7 @@ related:
   - wiki/entities/tenpaygo.md
   - wiki/concepts/remote-work-china.md
   - wiki/concepts/sim-card.md
+  - wiki/concepts/app-footprint.md
 volatility: high
 review:
   status: audited

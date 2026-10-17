@@ -192,7 +192,11 @@ announcements; note that those sites blocked automated retrieval when this page 
 last checked, so the port's day-to-day status could not be verified directly — ask
 your agency rather than relying on this page for it.
 
+<<<<<<< site
 ## How do I avoid altitude sickness in Tibet?
+=======
+## Altitude Sickness
+>>>>>>> wiki
 
 Tibet is at extreme elevation — Lhasa alone is 3,650 m (12,000 ft), roughly 1,200 m higher than the highest ski resorts in the Alps. Most visitors experience some symptoms within 6–12 hours of arrival.
 

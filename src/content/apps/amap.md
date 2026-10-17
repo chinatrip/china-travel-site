@@ -10,6 +10,8 @@ related:
   - wiki/concepts/transportation.md
   - wiki/concepts/internet-connectivity.md
   - wiki/entities/didi.md
+  - wiki/concepts/language-barrier.md
+  - wiki/entities/dianping.md
 volatility: low
 review:
   status: audited

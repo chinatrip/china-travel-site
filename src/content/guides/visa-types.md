@@ -14,7 +14,7 @@ verified_against:
   - https://en.nia.gov.cn/n147418/n147463/c180637/content.html
   - https://en.nia.gov.cn/n147423/n147478/n147725/c158420/content.html
   - https://www.visaforchina.cn
-sources: [raw/12306-guide-for-foreign-business-visitors-2025.md, raw/realchinaguide-visa-guide-2026.md]
+sources: [raw/12306-guide-for-foreign-business-visitors-2025.md, raw/realchinaguide-visa-guide-2026.md, summaries/visa-transit-guide-2026.md]
 related:
   - wiki/concepts/residence-permit.md
   - wiki/concepts/residence-registration.md

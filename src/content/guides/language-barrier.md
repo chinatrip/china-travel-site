@@ -11,6 +11,7 @@ related:
   - wiki/concepts/emergency-safety.md
   - wiki/concepts/cultural-etiquette.md
   - wiki/entities/amap.md
+  - wiki/concepts/trip-planning.md
 volatility: low
 verified_against:
   - https://travel.state.gov/en/international-travel/travel-advisories/china.html

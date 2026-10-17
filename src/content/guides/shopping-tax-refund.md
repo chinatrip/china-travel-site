@@ -13,6 +13,8 @@ sources: []
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/foreign-exchange.md
+  - wiki/concepts/cultural-etiquette.md
+  - wiki/concepts/departure-customs.md
 volatility: medium
 review:
   status: audited

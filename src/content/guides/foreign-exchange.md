@@ -16,6 +16,7 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/accommodation.md
   - wiki/concepts/shopping-tax-refund.md
+  - wiki/concepts/payment-failures.md
 volatility: medium
 review:
   status: audited
@@ -30,18 +31,19 @@ faqs:
     a: >-
       Mobile pay covers most spending, but keep some cash for small vendors.
       Withdrawing RMB from a Chinese ATM (Bank of China, ICBC) is usually more
-      convenient than counter exchange and lands close to the bank rate minus fees —
-      check your own bank's foreign-ATM charges first.
+      convenient than counter exchange and lands close to the bank rate minus
+      fees — check your own bank's foreign-ATM charges first.
   - q: How much cash can I bring into China?
     a: >-
-      Coming in, there is no limit on the amount — only a declaration duty. Declare
-      RMB 20,000 in cash or above, or the equivalent of USD 5,000 or above in
-      foreign currency; the threshold is inclusive, so exactly ¥20,000 already needs
-      the red channel. Going out differs by currency: RMB is the same ¥20,000-or-
-      above rule, but foreign currency is governed by what you declared on entry —
-      anything beyond that record needs a certificate from the Foreign Exchange
-      Bureau or an authorised bank. If you arrive with over $5,000 and plan to leave
-      with it, file the entry declaration and keep the endorsed copy.
+      Coming in, there is no limit on the amount — only a declaration duty.
+      Declare RMB 20,000 in cash or above, or the equivalent of USD 5,000 or
+      above in foreign currency; the threshold is inclusive, so exactly ¥20,000
+      already needs the red channel. Going out differs by currency: RMB is the
+      same ¥20,000-or- above rule, but foreign currency is governed by what you
+      declared on entry — anything beyond that record needs a certificate from
+      the Foreign Exchange Bureau or an authorised bank. If you arrive with over
+      $5,000 and plan to leave with it, file the entry declaration and keep the
+      endorsed copy.
   - q: Do shops in China accept foreign Visa or Mastercard?
     a: >-
       Direct foreign-card acceptance is limited mostly to international hotels,

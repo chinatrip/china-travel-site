@@ -13,6 +13,7 @@ related:
   - wiki/entities/alipay.md
   - wiki/entities/wechat.md
   - wiki/entities/eleme.md
+  - wiki/entities/dianping.md
 volatility: medium
 review:
   status: audited

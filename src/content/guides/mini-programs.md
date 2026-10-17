@@ -2,7 +2,7 @@
 title: "Mini-Programs (WeChat & Alipay)"
 date: 2026-07-01
 sources: [raw/realchinaguide-mini-programs-2026.md]
-related: [wiki/concepts/mobile-payment.md, wiki/concepts/transportation.md, wiki/concepts/sim-card.md, wiki/concepts/attraction-ticketing.md]
+related: [wiki/concepts/mobile-payment.md, wiki/concepts/transportation.md, wiki/concepts/sim-card.md, wiki/concepts/attraction-ticketing.md, wiki/concepts/app-footprint.md]
 last_verified: 2026-07-01
 verified_against:
   - raw/realchinaguide-mini-programs-2026.md

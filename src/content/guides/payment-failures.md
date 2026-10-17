@@ -51,14 +51,14 @@ faqs:
       Chinese SIM for that transaction.
   - q: Why do payments of ¥200 or more get declined?
     a: >-
-      Usually your card issuer refused the 3% foreign-card surcharge the wallet adds
-      above ¥200. WeChat Pay officially waives that fee on every transaction under
-      ¥200; Alipay is uniformly reported at the same threshold but publishes no
-      confirmation. Ask the merchant to split the bill under ¥200 — WeChat's
-      threshold is per transaction, so several small payments each stay fee-free —
-      or switch apps. New WeChat Pay users also get a 60-day full waiver on daily
-      transactions under ¥1,000, which is why a companion may be charged when you
-      are not.
+      Usually your card issuer refused the 3% foreign-card surcharge the wallet
+      adds above ¥200. WeChat Pay officially waives that fee on every
+      transaction under ¥200; Alipay is uniformly reported at the same threshold
+      but publishes no confirmation. Ask the merchant to split the bill under
+      ¥200 — WeChat's threshold is per transaction, so several small payments
+      each stay fee-free — or switch apps. New WeChat Pay users also get a
+      60-day full waiver on daily transactions under ¥1,000, which is why a
+      companion may be charged when you are not.
   - q: 'My card worked fine, then suddenly stopped — what happened?'
     a: >-
       Platform risk-control or a spending limit can block a card with no warning
