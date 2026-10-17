@@ -1,9 +1,12 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { readdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import {
   DEFAULT_LOCALE,
   LOCALES,
   OG_LOCALE,
+  TRANSLATIONS,
   localeOf,
   alternatesFor,
   t,
@@ -96,4 +99,21 @@ test('alternatesFor normalizes a missing trailing slash before lookup', () => {
 test('OG_LOCALE maps every locale to a region form', () => {
   assert.equal(OG_LOCALE.en, 'en_US');
   assert.equal(OG_LOCALE.es, 'es_ES');
+});
+
+test('every published ES guide is registered in TRANSLATIONS (reciprocal hreflang)', () => {
+  // Three translated pages shipped without a registry entry and emitted a
+  // self-referential hreflang instead of an English alternate. The content dir
+  // is the source of truth; the registry must keep up with it.
+  const esDir = fileURLToPath(new URL('../src/content/guides/es', import.meta.url));
+  const slugs = readdirSync(esDir)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => f.replace(/\.md$/, ''));
+  const registered = new Set(TRANSLATIONS.map((entry) => entry.es));
+  const missing = slugs.filter((slug) => !registered.has(`/es/guides/${slug}/`));
+  assert.deepEqual(
+    missing,
+    [],
+    `ES pages without a TRANSLATIONS entry (no reciprocal hreflang): ${missing.join(', ')}`,
+  );
 });
