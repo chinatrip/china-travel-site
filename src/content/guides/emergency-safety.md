@@ -25,6 +25,7 @@ related:
   - wiki/concepts/accommodation.md
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/language-barrier.md
+  - wiki/concepts/tibet-permits.md
 volatility: medium
 review:
   status: audited

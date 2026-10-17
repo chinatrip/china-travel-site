@@ -2,7 +2,7 @@
 title: "City Guides for Foreign Visitors"
 date: 2026-06-01
 sources: [raw/realchinaguide-city-guides-2026.md]
-related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md, wiki/entities/dianping.md]
+related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md, wiki/entities/dianping.md, wiki/concepts/attraction-ticketing.md]
 last_verified: 2026-07-20
 verified_against:
   - raw/realchinaguide-city-guides-2026.md

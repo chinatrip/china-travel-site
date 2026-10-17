@@ -15,6 +15,7 @@ related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/alipay.md
   - wiki/entities/tenpaygo.md
+  - wiki/entities/meituan.md
 volatility: medium
 review:
   status: audited
