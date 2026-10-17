@@ -1,5 +1,5 @@
 ---
-title: "Why Did My Payment Fail in China? Troubleshooting for Foreigners (2026)"
+title: "Why Did My Payment Fail in China?"
 date: 2026-06-15
 last_verified: 2026-09-17
 verified_against:

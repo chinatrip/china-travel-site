@@ -5,7 +5,6 @@ last_verified: 2026-06-12
 verified_against:
   - https://govt.chinadaily.com.cn/topics/travelandtourism/practicalinfo/page_3.html
   - https://www.chinadaily.com.cn/a/201811/22/WS5bf622b0a310eff30328a681_2.html
-  - https://www.chinadaily.com.cn/english/doc/2004-01/09/content_297514.htm
   - https://www.chinastory.cn/ywdbk/english/v1/detail/20190720/1012700000042741563622374424635323_1.html
   - https://www.who.int/news-room/feature-stories/detail/creating-a-smoke-free-city-beijing-china
   - https://commisceo-global.com/country-guides/china-guide/
@@ -28,6 +27,7 @@ review:
   status: audited
   page_audit: 2026-06-12
   citation_check: 2026-06-12
+  notes: "2026-10-17: removed a dead chinadaily.com.cn 2004 URL (HTTP 404, no Wayback snapshot) from verified_against. It was one of twelve etiquette sources and no claim rested on it alone, so no content changed. last_verified NOT bumped."
 description: >-
   Practical etiquette for foreign visitors to China: tipping is not expected,
   queuing, dining customs, gift-giving, and avoiding common cultural faux pas.
