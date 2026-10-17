@@ -33,9 +33,12 @@ export const OG_LOCALE = {
 // default-locale (English) path is the x-default target.
 export const TRANSLATIONS = [
   { en: '/', es: '/es/' },
+  { en: '/guides/city-guides/', es: '/es/guides/city-guides/' },
+  { en: '/guides/internet-connectivity/', es: '/es/guides/internet-connectivity/' },
+  { en: '/guides/mobile-payment/', es: '/es/guides/mobile-payment/' },
+  { en: '/guides/payment-failures/', es: '/es/guides/payment-failures/' },
   { en: '/guides/trip-planning/', es: '/es/guides/trip-planning/' },
   { en: '/guides/visa-types/', es: '/es/guides/visa-types/' },
-  { en: '/guides/mobile-payment/', es: '/es/guides/mobile-payment/' },
   { en: '/guides/vpn-or-esim/', es: '/es/guides/vpn-or-esim/' },
 ];
 

@@ -1,13 +1,13 @@
 ---
 title: "Acceso a internet y el Gran Cortafuegos para visitantes extranjeros"
 date: 2026-07-01
-last_verified: 2026-07-20
+last_verified: 2026-10-17
 lang: es
 source_en: guides/internet-connectivity
-source_last_verified: 2026-07-20
+source_last_verified: 2026-10-17
 verified_against:
   - https://chinasurvivalkit.com/blog/china-firewall-test-websites-apps-guide
-  - https://nordvpn.com/blog/vpn-for-china/
+  - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
   - https://landingin.syncosmic.com/blog/vpn-china-2026-what-actually-works
   - https://www.airalo.com/china-esim
   - https://www.airalo.com/help/using-managing-esims/ZSEEHBT5HW6F/stay-connected-in-china-your-guide-to-unfiltered-internet-access-is-a-vpn-required/ZDZBNIKI4TFP
@@ -15,27 +15,27 @@ volatility: high
 review:
   status: audited
   page_audit: 2026-06-15
-  citation_check: 2026-07-01
-  notes: "2026-07-20: Added a reader-facing 'Can I access Google/Gmail/WhatsApp from my hotel in China?' section per traveler feedback. Its one non-generic claim — that some international-chain hotels (e.g. Holiday Inn, per one business traveler's report) have had room Wi-Fi reaching international services without a VPN — is explicitly framed as an unverified individual anecdote (not a guarantee, varies by property, changes over time); no hotel is presented as a reliable or endorsed option, and readers are steered to ask the hotel directly and to bring their own eSIM/VPN. No new external source added (the anecdote is traveler feedback, deliberately NOT asserted as verified fact); other sections not re-verified this round; page_audit unchanged. --- 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round."
+  citation_check: 2026-10-17
+  notes: "2026-07-20: Added a reader-facing 'Can I access Google/Gmail/WhatsApp from my hotel in China?' section per traveler feedback. Its one non-generic claim — that some international-chain hotels (e.g. Holiday Inn, per one business traveler's report) have had room Wi-Fi reaching international services without a VPN — is explicitly framed as an unverified individual anecdote (not a guarantee, varies by property, changes over time); no hotel is presented as a reliable or endorsed option, and readers are steered to ask the hotel directly and to bring their own eSIM/VPN. No new external source added (the anecdote is traveler feedback, deliberately NOT asserted as verified fact); other sections not re-verified this round; page_audit unchanged. --- 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round. --- 2026-10-17: translation re-checked against the corrected English source and updated where the source changed: eSIM bypass attributed to providers and scoped to eSIM data (plus the not-every-China-eSIM-routes-abroad caveat), blocked list (Line removed, Google Maps largely blocked), public Wi-Fi 'often requires SMS', free-VPN and detection-mechanism overstatements corrected, LetsVPN April/May-2026 status, legal section now cites UK FCDO with no unverifiable State Department date, eSIM routing paragraph rewritten, verified_against: nordvpn.com (403) replaced by the FCDO URL. No other sections re-checked."
 description: >-
   Qué bloquea el Gran Cortafuegos (Google, WhatsApp, Instagram), qué VPN
-  funcionan tras la ofensiva de 2026 y por qué una eSIM extranjera lo evita
+  siguen funcionando y por qué una eSIM de viaje extranjera puede evitarlo
   sin VPN.
 faqs:
   - q: "¿Necesito una VPN para acceder a Google, WhatsApp e Instagram en China?"
-    a: "Solo si te conectas a través de una SIM china o del Wi-Fi local. Una eSIM extranjera (Airalo, Holafly, Nomad) enruta tus datos mediante itinerancia internacional a través de pasarelas fuera de China continental, así que evita el Gran Cortafuegos y los servicios bloqueados funcionan sin VPN. Con una SIM china o el Wi-Fi local sí necesitas una VPN que funcione."
+    a: "Solo si te conectas a través de una SIM china o del Wi-Fi local. Las eSIM de viaje extranjeras (Airalo, Holafly, Nomad) enrutan los datos por pasarelas fuera de China continental; los proveedores afirman que así los servicios bloqueados funcionan sin VPN. Es una afirmación del proveedor sobre el enrutamiento, no una auditoría independiente, y se aplica solo a los datos de la eSIM: el Wi-Fi del hotel y el público siguen filtrados. Con una SIM china o el Wi-Fi local sí necesitas una VPN que funcione."
   - q: "¿Qué VPN siguen funcionando en China en 2026?"
-    a: "A junio de 2026, Astrill (StealthVPN) y ExpressVPN (Lightway) son las que más consistentemente se reporta que funcionan. Aun así, la fiabilidad de las VPN es un blanco móvil: un servicio que funciona una semana puede quedar bloqueado a la siguiente, la ofensiva de 2026 afectó a muchos, y los proveedores que dependen solo de protocolos estándar sin ofuscación basada en TLS (WireGuard puro, OpenVPN, IKEv2) fallan cada vez más. Instala y prueba dos VPN antes de volar."
+    a: "A mediados de 2026, Astrill (StealthVPN) y ExpressVPN (Lightway) son las que más consistentemente se reporta que funcionan. Aun así, la fiabilidad de las VPN es un blanco móvil: un servicio que funciona una semana puede quedar bloqueado a la siguiente. En abril de 2026 LetsVPN suspendió su servicio en China continental y, aunque lo reanudó a nivel mundial en mayo, no garantiza disponibilidad allí; los proveedores con ofuscación basada en TLS son más resistentes. Instala y prueba dos VPN antes de volar."
   - q: "¿Puedo descargar una VPN cuando ya estoy en China?"
     a: "Es muy difícil: las tiendas de aplicaciones y los sitios web de las VPN están en gran medida bloqueados desde dentro de China. Descarga y prueba tu VPN antes de llegar. Si no lo hiciste, las soluciones son limitadas y ninguna es fiable: enlaces espejo de descarga guardados antes de volar, ayuda del hotel, el Wi-Fi del aeropuerto al aterrizar, pedir prestado un momento un dispositivo que ya tenga VPN, o esperar hasta Hong Kong o Macao."
   - q: "¿Es legal que los turistas usen una VPN en China?"
-    a: "Oficialmente está restringido, no es libremente legal: el Departamento de Estado de EE. UU. (2026) advierte de que el uso de una VPN es ilegal en la mayoría de los casos y podría acarrear la confiscación del dispositivo, una multa o la detención, y China exige que las VPN cuenten con licencia del gobierno. En la práctica, la aplicación de la ley se ha dirigido a los proveedores y distribuidores, más que a los turistas concretos que usan una VPN para su comunicación personal, y no tenemos constancia de informes de que la seguridad del aeropuerto revise los dispositivos de los viajeros en busca de apps de VPN, aunque eso es una ausencia de informes y no una garantía. Valora tú mismo el riesgo y consulta el aviso oficial de viaje de tu país."
+    a: "Oficialmente está restringido, no es libremente legal: el aviso de viaje del Departamento de Estado de EE. UU. advierte de que el uso de una VPN puede ser ilegal en la mayoría de los casos y podría acarrear la confiscación del dispositivo, una multa o la detención, y la [UK FCDO](https://www.gov.uk/foreign-travel-advice/china/safety-and-security) señala que las VPN necesitan licencia del gobierno chino. Fuentes de viajes e industria informan de que la aplicación se ha dirigido a proveedores y distribuidores más que a turistas concretos; no encontramos confirmación oficial de ello, ni informes de que la seguridad del aeropuerto revise dispositivos en busca de apps de VPN. Es una ausencia de informes, no una garantía. Valora tú mismo el riesgo y consulta el aviso oficial de viaje de tu país."
 category: guide
 ---
 
 # Acceso a internet y el Gran Cortafuegos para visitantes extranjeros
 
-El internet de China está filtrado por el **Gran Cortafuegos (GFW, 防火长城)**, un sistema de alcance nacional que bloquea miles de sitios web y apps extranjeros. Toda conexión a internet dentro de China continental —el Wi-Fi de los hoteles, los datos de una SIM local— pasa por él, **salvo que uses una eSIM extranjera** (véase la sección de la eSIM extranjera más abajo). Esta página cubre qué está bloqueado, qué funciona de forma nativa y cómo prepararte.
+El internet de China está filtrado por el **Gran Cortafuegos (GFW, 防火长城)**, un sistema de alcance nacional que bloquea miles de sitios web y apps extranjeros. Toda conexión a internet dentro de China continental —el Wi-Fi de los hoteles, los datos de una SIM local— pasa por él, **salvo que uses una eSIM de viaje extranjera que enrute los datos fuera del continente** (véase la sección de la eSIM extranjera más abajo). Esta página cubre qué está bloqueado, qué funciona de forma nativa y cómo prepararte.
 
 ## ¿Qué está bloqueado en China?
 
@@ -43,12 +43,12 @@ El internet de China está filtrado por el **Gran Cortafuegos (GFW, 防火长城
 |---|---|
 | Búsqueda | Google, DuckDuckGo; Bing (intermitente) |
 | Correo | Gmail (app y web) |
-| Mensajería | WhatsApp, Telegram, Signal, Discord, Slack, Line |
+| Mensajería | WhatsApp, Telegram, Signal, Discord, Slack |
 | Redes sociales | Facebook, Instagram, Twitter/X, Reddit, Snapchat, Pinterest, TikTok internacional |
 | Vídeo | YouTube, Netflix, Twitch, Vimeo |
 | Noticias | BBC, CNN, NYT, Reuters, Bloomberg, The Guardian y la mayoría de los grandes medios extranjeros |
 | Nube / productividad | Google Drive, Docs, Sheets, Meet; Dropbox; Notion; Medium |
-| Navegación | Google Maps, Google Translate (web y app) |
+| Navegación | Google Maps (en gran medida bloqueado; intermitente y poco fiable), Google Translate (web y app) |
 | Infraestructura de VPN | Sitios web de proveedores de VPN, la mayoría de las fichas de VPN en las tiendas de aplicaciones |
 
 En 2026, el GFW bloquea miles de dominios y servicios (fuente: chinasurvivalkit.com). La lista cambia: de vez en cuando algunos servicios se bloquean o se desbloquean sin aviso.
@@ -65,7 +65,7 @@ En 2026, el GFW bloquea miles de dominios y servicios (fuente: chinasurvivalkit.
 | Vídeo | Bilibili, iQiyi, Youku, Tencent Video (contenido chino) |
 | Búsqueda | Baidu (resultados en chino) |
 
-**Nota sobre el Wi-Fi público:** la mayor parte del Wi-Fi público gratuito en China (aeropuertos, centros comerciales, estaciones de metro) requiere autenticación por SMS a un número de móvil chino para conectarse. Sin una SIM local puede que no puedas usarlo. Una eSIM extranjera o el Wi-Fi de un hotel (que normalmente usa las credenciales de la habitación) evita esta barrera.
+**Nota sobre el Wi-Fi público:** la mayor parte del Wi-Fi público gratuito en China (aeropuertos, centros comerciales, estaciones de metro) a menudo requiere autenticación por SMS a un número de móvil chino para conectarse. Sin una SIM local puede que no puedas usarlo. Una eSIM extranjera o el Wi-Fi de un hotel (que normalmente usa las credenciales de la habitación) evita esta barrera.
 
 ## ¿Puedo acceder a Google, Gmail y WhatsApp desde mi hotel en China?
 
@@ -112,7 +112,7 @@ Consulta [[wiki/concepts/mobile-payment.md]] para conocer los detalles de comisi
 
 Consulta [[wiki/entities/wechat.md]] y [[wiki/concepts/mobile-payment.md]].
 
-**3. Amap (高德地图 / Gaode Maps)** — Google Maps está bloqueado por el Gran Cortafuegos. Amap es el sustituto estándar para la navegación paso a paso, las indicaciones de transporte público y el transporte con conductor.
+**3. Amap (高德地图 / Gaode Maps)** — Google Maps está en gran medida bloqueado por el Gran Cortafuegos y es poco fiable para navegar en China. Amap es el sustituto estándar para la navegación paso a paso, las indicaciones de transporte público y el transporte con conductor.
 
 - Instalar: busca "Amap" o "Gaode Maps" en App Store / Google Play
 - Abre la app, cambia al inglés (Settings → Language) y confirma que el mapa carga tu ciudad de origen: así verificas que la instalación funciona antes de necesitarla en China
@@ -183,7 +183,7 @@ Consulta [[wiki/entities/meituan.md]].
 
 ### Por qué necesitas una VPN
 
-Sin una VPN pierdes el acceso a Gmail, WhatsApp, Google Maps, YouTube y la mayoría de las herramientas de comunicación occidentales. Para muchos visitantes son esenciales. Una VPN que funcione restaura el acceso completo a internet.
+Sin una VPN pierdes el acceso a Gmail, WhatsApp, Google Maps, YouTube y la mayoría de las herramientas de comunicación occidentales. Para muchos visitantes son esenciales. Una VPN que funcione puede restaurar el acceso a la mayoría de los servicios bloqueados.
 
 ### Instálala antes de llegar
 
@@ -205,7 +205,7 @@ Los costes mensuales aproximados de abajo son las tarifas habituales de los plan
 
 La fiabilidad de las VPN cambia rápidamente a medida que evoluciona el GFW. Ningún proveedor garantiza la conectividad. El rendimiento se degrada durante los periodos políticamente sensibles (Día Nacional, sesiones de la APN, etc.). Instala siempre 2 o más proveedores antes de salir.
 
-**Las VPN gratuitas no funcionan.** Las VPN gratuitas fallan de forma sistemática en China: carecen de la ofuscación necesaria para evadir el GFW y suelen quedar bloqueadas en cuestión de días. Los viajeros con experiencia coinciden de forma abrumadora en que solo los proveedores de pago, probados en China, tienen alguna posibilidad.
+**Las VPN gratuitas rara vez funcionan.** Las VPN gratuitas a menudo fallan en China: carecen de la ofuscación necesaria para evadir el GFW y suelen quedar bloqueadas en cuestión de días. Los viajeros con experiencia coinciden de forma abrumadora en que solo los proveedores de pago, probados en China, tienen alguna posibilidad.
 
 Consulta reseñas actuales de sitios tecnológicos centrados en China (por ejemplo, VPNmentor, las guías de China de Comparitech) justo antes de viajar: la detección del GFW mejora constantemente y las clasificaciones de proveedores cambian.
 
@@ -220,7 +220,7 @@ Consulta reseñas actuales de sitios tecnológicos centrados en China (por ejemp
 
 ### ¿Qué fiabilidad tienen las VPN?
 
-La fiabilidad de las VPN en China no está garantizada. El GFW usa aprendizaje automático para detectar y bloquear el tráfico de VPN. Las conexiones se degradan en torno a las fechas políticamente sensibles (Día Nacional, Congreso del Partido, grandes aniversarios). Incluso las VPN fiables sufren cortes. Mantén dos proveedores instalados y cambia si uno falla.
+La fiabilidad de las VPN en China no está garantizada. El GFW usa inspección profunda de paquetes para detectar y bloquear el tráfico de VPN. Las conexiones se degradan en torno a las fechas políticamente sensibles (Día Nacional, Congreso del Partido, grandes aniversarios). Incluso las VPN fiables sufren cortes. Mantén dos proveedores instalados y cambia si uno falla.
 
 **Degradación en horas punta:** las velocidades de las VPN suelen volverse inutilizables entre las 19:00 y las 22:00, cuando la congestión de la red es máxima. Planifica las tareas que consumen muchos datos (videollamadas, streaming) fuera de estas horas.
 
@@ -276,7 +276,7 @@ Los tres proveedores de abajo evitan el GFW mediante itinerancia internacional (
 | **Airalo** | No | Viajeros con presupuesto ajustado que se manejan bien con la tecnología | Opción económica popular. Funciona sin ninguna VPN mediante itinerancia. Los precios actuales de los planes se mantienen en [[wiki/concepts/sim-card.md]]. |
 | **Nomad** | No | Flexibilidad y variedad de planes | Funciona mediante itinerancia, sin necesidad de VPN. Suele ser más barata que Holafly: plan ilimitado de 7 días **$25** frente a los **$27,50** de Holafly (ambos precios consultados el 14-08-2026). |
 
-**Cómo funciona el sorteo del bloqueo:** una eSIM de viaje extranjera se conecta mediante *itinerancia internacional (roaming)*, no a través de la red doméstica de China; tus datos se enrutan por pasarelas fuera de China continental (normalmente Hong Kong o Singapur), así que ante el GFW apareces como un usuario de itinerancia internacional. Esto significa que una eSIM de solo datos como Airalo evita el cortafuegos por sí sola: Google, WhatsApp y las redes sociales funcionan sin ninguna VPN. La propia documentación de Airalo confirma que "NO se requiere una VPN" con su eSIM para China (fuente: airalo.com, consultado en junio de 2026). Una VPN incluida (como con Holafly) es una comodidad, no un requisito, y algunos viajeros siguen llevando una VPN aparte como respaldo por si el enrutamiento de la itinerancia se degrada.
+**Cómo funciona el desvío:** una eSIM de viaje extranjera se conecta mediante *itinerancia internacional (roaming)*, no a través de la red doméstica de China; tus datos se enrutan por pasarelas fuera de China continental (los puntos de salida varían según proveedor y plan), así que ante el GFW apareces como un usuario de itinerancia internacional. Es la descripción de los proveedores, no una auditoría independiente: no todas las "eSIM para China" evitan el cortafuegos (algunas eSIM turísticas de China Unicom enrutan dentro del país). En las que sí enrutan fuera, Google, WhatsApp y las redes sociales suelen funcionar sin VPN; la propia documentación de Airalo afirma que "NO se requiere una VPN" con su eSIM para China (fuente: airalo.com, consultado el 2026-10-17). Una VPN incluida (como con Holafly) es una comodidad, no un requisito, y algunos viajeros siguen llevando una VPN aparte como respaldo por si el enrutamiento de la itinerancia se degrada.
 
 **Sobrecarga de datos de la VPN:** en los planes de datos con límite, el cifrado de la VPN añade aproximadamente entre un 20 % y un 30 % de consumo de datos adicional. Tenlo en cuenta al elegir tu plan de datos.
 
