@@ -225,6 +225,16 @@ jobs:
           GITHUB_EVENT_NAME: ${{ github.event_name }}
           SEO_REVIEW_MAX_FILES: ${{ github.event_name == 'workflow_dispatch' && '200' || '25' }}
 
+      # Keep the report as an artifact: workflow_dispatch has no PR to comment on,
+      # and the step summary cannot be retrieved via the API after the run.
+      - name: Upload SEO/GEO report
+        if: always() && env.DEEPSEEK_API_KEY != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-review-report
+          path: seo-review-report.md
+          if-no-files-found: ignore
+
       # PR-only: on workflow_dispatch there is no PR to comment on (the report lives
       # in the run Summary, written by the script via $GITHUB_STEP_SUMMARY).
       - name: Comment SEO/GEO report on PR
