@@ -1,9 +1,15 @@
-// Build-time guard: fail if any internal link in the built HTML lacks a trailing
-// slash. Pages are emitted in directory format (canonical = `/apps/`), so any
-// internal link to `/apps` (no slash) triggers a 307 on Cloudflare Pages and
-// splits canonical signals. This scans dist/ and exits non-zero on offenders.
-import { readdirSync, readFileSync } from 'node:fs';
+// Build-time guard for internal links in the built HTML:
+//  1. every internal link must carry its trailing slash (pages are emitted in
+//     directory format; `/apps` triggers a 307 and splits canonical signals);
+//  2. every internal link must point at something that was actually emitted —
+//     a directory with an index.html, or a real file product. Guard 1 cannot see
+//     a link to a page that was never published (e.g. a wiki page still in
+//     draft): the href is well-formed, it just 404s. That happened once with
+//     `/guides/residence-permit/`, so check the target too.
+// This scans dist/ and exits non-zero on offenders.
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { LICENSE_URL } from '../src/lib/llms.mjs';
 
 const DIST = 'dist';
@@ -72,6 +78,25 @@ export function isOffender(href) {
   return !path.endsWith('/');
 }
 
+// Does an internal href point at something that exists in dist/? Directory-style
+// links must have an index.html; file-style links (e.g. /llms.txt, /guides/x.md)
+// must exist as a file. External/relative/protocol-relative hrefs are not ours
+// to check, and generated asset paths are skipped.
+export function routeTargetExists(href, distRoot = DIST) {
+  if (!href.startsWith('/') || href.startsWith('//')) return true;
+  if (href.startsWith('/_astro/') || href.includes('cdn-cgi')) return true;
+  let cut = href.length;
+  const h = href.indexOf('#');
+  const q = href.indexOf('?');
+  if (h !== -1) cut = Math.min(cut, h);
+  if (q !== -1) cut = Math.min(cut, q);
+  const path = href.slice(0, cut);
+  if (path === '' || path === '/') return existsSync(join(distRoot, 'index.html'));
+  const rel = path.slice(1);
+  if (path.endsWith('/')) return existsSync(join(distRoot, rel, 'index.html'));
+  return existsSync(join(distRoot, rel));
+}
+
 function main() {
   let files;
   try {
@@ -82,6 +107,7 @@ function main() {
   }
   const hrefRe = /href="([^"]*)"/g;
   const byHref = new Map();
+  const missing = new Map();
   for (const f of files) {
     // Strip script/style so client-side string-built hrefs don't false-positive.
     const html = readFileSync(f, 'utf8')
@@ -89,9 +115,13 @@ function main() {
       .replace(/<style[\s\S]*?<\/style>/gi, '');
     let m;
     while ((m = hrefRe.exec(html)) !== null) {
-      if (isOffender(m[1])) {
-        if (!byHref.has(m[1])) byHref.set(m[1], new Set());
-        byHref.get(m[1]).add(f);
+      const href = m[1];
+      if (isOffender(href)) {
+        if (!byHref.has(href)) byHref.set(href, new Set());
+        byHref.get(href).add(f);
+      } else if (!routeTargetExists(href)) {
+        if (!missing.has(href)) missing.set(href, new Set());
+        missing.get(href).add(f);
       }
     }
   }
@@ -113,6 +143,10 @@ function main() {
         const key = 'https://chinaguide.ai' + m[1];
         if (!byHref.has(key)) byHref.set(key, new Set());
         byHref.get(key).add(join(DIST, txt));
+      } else if (!routeTargetExists(m[1])) {
+        const key = 'https://chinaguide.ai' + m[1];
+        if (!missing.has(key)) missing.set(key, new Set());
+        missing.get(key).add(join(DIST, txt));
       }
     }
     for (const marker of ['<!--', '[[wiki/']) {
@@ -133,15 +167,25 @@ function main() {
     process.exit(1);
   }
 
-  if (byHref.size) {
-    console.error(`❌ ${byHref.size} internal link(s) without trailing slash:`);
-    for (const [href, fileset] of byHref) {
-      console.error(`  ${href}  — ${fileset.size} file(s), e.g. ${[...fileset][0]}`);
+  if (byHref.size || missing.size) {
+    if (byHref.size) {
+      console.error(`❌ ${byHref.size} internal link(s) without trailing slash:`);
+      for (const [href, fileset] of byHref) {
+        console.error(`  ${href}  — ${fileset.size} file(s), e.g. ${[...fileset][0]}`);
+      }
+    }
+    if (missing.size) {
+      console.error(`❌ ${missing.size} internal link(s) point at pages that were not built (would 404):`);
+      for (const [href, fileset] of missing) {
+        console.error(`  ${href}  — ${fileset.size} file(s), e.g. ${[...fileset][0]}`);
+      }
     }
     process.exit(1);
   }
-  console.log('✅ All internal links use trailing slashes.');
+  console.log('✅ All internal links use trailing slashes and resolve to built pages.');
   console.log('✅ Every content page ships a clean markdown sibling.');
 }
 
-main();
+// Only run when executed directly (`node scripts/check-internal-links.mjs`), so
+// the unit tests can import the pure helpers without building dist/.
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) main();
