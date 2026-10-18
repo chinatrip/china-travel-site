@@ -35,10 +35,10 @@ faqs:
       routes need 10-14 days.
   - q: What is the best time of year to visit China?
     a: >-
-      It depends on the city: the table above lists each city's best season
-      (for example, Beijing April and September-October; Guangzhou
-      October-March; Chengdu April and October). There is no single best season
-      for the whole country.
+      It depends on the city: the table above lists each city's best season (for
+      example, Beijing April and September-October; Guangzhou October-March;
+      Chengdu April and October). There is no single best season for the whole
+      country.
   - q: How do I travel between Chinese cities?
     a: >-
       High-speed rail connects the major cities on the popular routes and is the

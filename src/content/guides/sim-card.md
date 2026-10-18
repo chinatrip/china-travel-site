@@ -42,10 +42,10 @@ description: >-
 faqs:
   - q: Do I need a VPN if I use a foreign eSIM in China?
     a: >-
-      Usually not — but that is the providers' claim, not an independent
-      routing audit. Airalo, Holafly and Nomad each state that their China eSIM
-      data routes outside mainland China, so Google, WhatsApp and Instagram work
-      on eSIM data without a separate VPN (checked October 2026). Ubigi's own
+      Usually not — but that is the providers' claim, not an independent routing
+      audit. Airalo, Holafly and Nomad each state that their China eSIM data
+      routes outside mainland China, so Google, WhatsApp and Instagram work on
+      eSIM data without a separate VPN (checked October 2026). Ubigi's own
       materials contradict each other, so ask Ubigi before relying on it. You
       still need a VPN on Chinese hotel or airport Wi-Fi, which is firewalled.
   - q: Which eSIMs work best for China?
@@ -71,11 +71,11 @@ faqs:
     a: >-
       Most short-term travelers don't. Alipay, WeChat Pay and DiDi accept
       foreign numbers, train booking (12306 or Trip.com) can use email
-      registration, and Ant Group says visitors can use Alipay without a mainland
-      China phone number. A +86 number mainly helps with some local lifestyle
-      apps such as Meituan, Dianping or Amap, where foreign numbers work
-      inconsistently — get a physical SIM in addition only if you need one of
-      those.
+      registration, and Ant Group says visitors can use Alipay without a
+      mainland China phone number. A +86 number mainly helps with some local
+      lifestyle apps such as Meituan, Dianping or Amap, where foreign numbers
+      work inconsistently — get a physical SIM in addition only if you need one
+      of those.
 category: guide
 ---
 
