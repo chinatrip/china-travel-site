@@ -24,19 +24,21 @@ faqs:
       good starting points and pair well on a 5-7 day trip — they are about 4.5
       hours apart by high-speed rail. With more time, add Xi'an (Terracotta
       Warriors), Chengdu (pandas) or Guilin/Yangshuo (scenery). Allow roughly
-      4-5 days for Beijing and 2-4 days each for the others.
+      4-5 days for Beijing, 3-4 for Shanghai or Chengdu, and 2-3 for most of the
+      others (Suzhou 1-2).
   - q: How many days do I need in China?
     a: >-
-      Two weeks lets you cover 3-4 cities without rushing — the classic
-      first-timer route runs Beijing, Xi'an, Chengdu and Shanghai by high-speed
-      rail. A faster 7-10 day trip suits the east-coast cities or a single
-      region. On a short visa-free transit trip, plan tightly around your time
-      limit.
+      Two weeks fits the Classic First-Timer route: Beijing (4-5 days), Xi'an
+      (2-3), Chengdu (3-4) and Shanghai (3-4), all by high-speed rail. With 7-10
+      days, the East Coast Express (Shanghai, Hangzhou, Suzhou, Nanjing) or the
+      Silk Road (Xi'an, Urumqi, Kashgar) fits; the Southwest Nature and Yunnan
+      routes need 10-14 days.
   - q: What is the best time of year to visit China?
     a: >-
-      Spring (April-May) and autumn (September-October) have the most pleasant
-      weather. Avoid Golden Week (early October) and Lunar New Year, when
-      domestic crowds and prices peak.
+      It depends on the city: the table above lists each city's best season
+      (for example, Beijing April and September-October; Guangzhou
+      October-March; Chengdu April and October). There is no single best season
+      for the whole country.
   - q: How do I travel between Chinese cities?
     a: >-
       High-speed rail connects the major cities on the popular routes and is the

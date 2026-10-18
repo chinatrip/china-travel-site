@@ -34,9 +34,11 @@ faqs:
       booking app for visitors.
   - q: Does Trip.com charge a fee for China train tickets?
     a: >-
-      Yes, a small service fee — about ¥30 (roughly US$5), with some reports up
-      to $8 depending on the route — on top of the face-value 12306 fare. It
-      buys an English interface and avoids 12306's foreign-passport problems.
+      It depends on the route and can be zero: Trip.com advertises "no booking
+      fees", while Seat61 reports roughly ¥30 (~US$5) on train tickets and user
+      reports range $5-8 depending on the route, charged only if the booking
+      succeeds. The practical trade-off is an English interface that avoids
+      12306's foreign-passport problems.
   - q: Can I book Chinese attraction tickets on Trip.com?
     a: >-
       Yes. Trip.com offers real-name, passport-linked tickets for major

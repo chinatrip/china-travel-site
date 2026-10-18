@@ -47,8 +47,8 @@ faqs:
     a: >-
       Book exactly 7 days ahead at 20:00, when the daily batch (about 40,000
       tickets) releases — it can sell out within minutes in peak season, and it
-      is closed on Mondays. If it shows sold out, foreigners can sometimes still
-      buy same-day at the ticket office with a passport.
+      is closed on Mondays. If it shows sold out, pick another date and book at
+      the next 20:00 release rather than counting on walk-up tickets.
 category: guide
 ---
 

@@ -25,21 +25,20 @@ faqs:
       son buenos puntos de partida y combinan bien en un viaje de 5-7 días:
       están a unas 4.5 horas en tren de alta velocidad. Con más tiempo, añade
       Xi'an (Guerreros de Terracota), Chengdu (pandas) o Guilin/Yangshuo
-      (paisajes). Calcula unos 4-5 días para Beijing y de 2 a 4 días para cada
-      una de las demás.
+      (paisajes). Calcula unos 4-5 días para Beijing, 3-4 para Shanghái o
+      Chengdu, y 2-3 para la mayoría de las demás (Suzhou 1-2).
   - q: ¿Cuántos días necesito en China?
     a: >-
-      Dos semanas te permiten cubrir de 3 a 4 ciudades sin prisas: la ruta
-      clásica para primerizos recorre Beijing, Xi'an, Chengdu y Shanghái en tren
-      de alta velocidad. Un viaje más rápido de 7 a 10 días se adapta a las
-      ciudades de la costa este o a una sola región. En un viaje corto con
-      tránsito sin visa, planifica ajustándote bien a tu límite de tiempo.
+      Dos semanas encajan sin prisas en cualquiera de las rutas temáticas de
+      arriba: la histórica (Beijing–Xi'an–Nanjing) pide unos 10-12 días; la
+      gastronómica (Chengdu–Chongqing–Guangzhou) unos 8-10; y la de naturaleza
+      (Guilin–Zhangjiajie–Yunnan) unos 10-14. Para un primer viaje también
+      funciona el circuito Beijing–Xi'an–Chengdu/Shanghái.
   - q: ¿Cuál es la mejor época del año para visitar China?
     a: >-
-      La primavera (abril-mayo) y el otoño (septiembre-octubre) tienen el clima
-      más agradable. Evita la Semana Dorada (Golden Week, a principios de
-      octubre) y el Año Nuevo chino, cuando las multitudes internas y los precios
-      alcanzan su punto máximo.
+      La mejor temporada depende de cada ciudad y está en la tabla de arriba
+      (por ejemplo, Beijing abril y septiembre-octubre; Guangzhou octubre-marzo;
+      Chengdu abril y octubre). No hay una única mejor época para todo el país.
   - q: ¿Cómo me desplazo entre las ciudades chinas?
     a: >-
       El tren de alta velocidad (HSR) conecta las principales ciudades en las
