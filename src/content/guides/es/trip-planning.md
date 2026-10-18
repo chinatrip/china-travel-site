@@ -43,11 +43,12 @@ faqs:
       esas entradas clave con semanas o meses de antelación.
   - q: ¿Cuál es la mejor temporada para visitar China?
     a: >-
-      De abril a mayo es óptimo en la mayoría de las regiones, y finales de
-      septiembre (antes del 1 de octubre) es excelente: las multitudes disminuyen
-      inmediatamente después de que termina la Semana Dorada. Evita la Semana
-      Dorada (del 1 al 7 de octubre) y el Año Nuevo chino, cuando las multitudes y
-      los precios se disparan.
+      De abril a mayo es óptimo en la mayoría de las regiones. Finales de
+      septiembre (antes del 1 de octubre) es excelente por el clima otoñal; si
+      buscas menos multitudes, espera a que termine la Semana Dorada (del 1 al 7
+      de octubre), cuando disminuyen inmediatamente. Evita la propia Semana
+      Dorada y el Año Nuevo chino, cuando las multitudes y los precios se
+      disparan.
   - q: ¿Cuál es un presupuesto diario realista para China?
     a: >-
       Aproximadamente ¥200-400 al día para mochileros, ¥500-1,000 para gama media

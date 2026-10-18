@@ -37,30 +37,27 @@ review:
   citation_check: 2026-10-08
   notes: "2026-10-08 FIX ITERATION 2 (PR #94 review round 3) — CORRECTION to the entry below: it said Trip.com lists only the passport. That misreported the source. Trip.com's 'Types of SIM Cards in China' table says of local physical SIMs: 'Needs passport + visa to register; only at carrier stores'; its 'no exceptions' sentence is about passport registration for all SIM purchases and its buying tips for airport/online tourist SIMs mention only the passport. The Shanghai government guide and chinaguidelines list only the passport. Body rewritten to attribute each source separately (re-read via WebFetch today; curl still gets 432). Also: the Ubigi 30-day unlimited URL (china-unlimited-30-days-2) now 301-redirects to china-unlimited-30-days; replaced in verified_against after confirming the new page shows the same 30d US$69 plan and 2 Mbps fair-use terms. --- 2026-10-08 FULL RE-VERIFICATION (page was 99 days past last_verified and turning repo-wide --ci-mode red). CHECKED: all 12 prior verified_against URLs fetched today with curl (11 returned 200; trip.com returned 432 to curl, a bot block, and was read via WebFetch instead, so it is a tool limitation, not a dead source; none dropped). Airalo: china-esim page and esimdb re-read, unlimited ladder unchanged (3d 11.50 / 5d 19 / 7d 27 / 10d 35 / 15d 49 / 30d 69), fixed 1 GB/3d 4, 5 GB/30d 15.50, 20 GB/30d 39-40, 50 GB/30d 49-59 unchanged; added Airalo's own unlimited terms (3 GB/day full speed, then 1 Mbps). Holafly CHANGED: 10d 36.50 to 37.50, 15d 50.50 to 51.50, 30d 73.90 to 76.50; 3/5/7d unchanged; network CMCC and mainland-only confirmed; the ~90 GB/month FUP figure is NOT on the cited page (it now says FUP slows speed for no more than one day) so it was removed. Nomad: all prices unchanged (10 GB and 20 GB now shown as sale prices, regular 22 and 30, noted); help-centre no-VPN and hotspot statements unchanged. Ubigi CHANGED: a 7-day unlimited plan now exists at 24 (page previously said none, checked 2026-08-21); unlimited plans give 5 GB per DAY then 2 Mbps; plan pages list China Telecom as the network (page said China Mobile / Unicom); fixed plans unchanged. Ubigi no-VPN claim DOWNGRADED: its China page no longer says anything about VPN or the firewall, and its July 2026 China blog contradicts itself (says data is routed outside mainland China and could reach Google without a VPN, and also that an eSIM does not bypass the Great Firewall and you will need a VPN). Ubigi removed from every 'route abroad, no VPN' statement in body, description and faqs; the other three keep it, each attributed to the provider's own wording. Roaming row CORRECTED: was 'usually no' GFW bypass; chinaguidelines says home-routed roaming usually works. C5 RESOLVED: the +86-for-Alipay-registration claim (Dual-SIM section) was wrong; Ant International press release (2024-07) says visitors who bind an international card can use Alipay 'without needing a mainland China bank account or phone number', and chinaguidelines lists Alipay, WeChat Pay and DiDi as not needing a Chinese number. Also removed the same claim from the free-SIM paragraph and the 'some sub-features remain +86-only' line (unsourced), and rewrote the +86 paragraph: chinaguidelines says payments, ride-hailing, transport, hotels and HSR usually do not need a Chinese number, 12306 / Trip.com can use email registration; Meituan, Dianping, Amap are 'maybe'. faqs +86 answer: dropped bike-share (unsourced) and 'DiDi via the Alipay mini-program' (DiDi accepts foreign numbers directly per chinaguidelines); Meituan softened to 'work inconsistently' (C14). Local SIM: hotline numbers confirmed against Beijing and Shanghai gov pages; '24/7' and 'press 2 for English' REMOVED (neither page says so). Visa / entry stamp / Chinese address as required documents DOWNGRADED to 'some stores may ask' (Trip.com, Shanghai and chinaguidelines list only the passport). Real-name: 'since 2019' rewritten as the 1 December 2019 MIIT face-match rule, sourced to TechNode (added). Removed the exclusive claim that the carriers offer no online sign-up; Nihao quote unchanged and confirmed. Airport '20-30% premium' and minute estimates REMOVED (sources say only 'pricier'); the unsourced RMB plan table REPLACED with chinaguidelines' airport/online tourist package table. Top-up list: dropped 'all have English UI' and 'Chinese-only kiosks' (unsourced), added the Beijing guide's SMS balance codes. Failure-mode row 'eSIM QR scanned but no service / most providers reset' replaced with the data-roaming toggle (Holafly and Ubigi say roaming must be on). Device list softened (Pixel 3 not supported by any checked source; Ubigi blog says XS onward). Unsourced ExpressVPN ~8 price dropped; VPN overhead 20-30% kept but attributed to the raw traveler guide. ADDED to verified_against: three Ubigi unlimited plan pages, the Ubigi China blog, the Ant International press release, TechNode. citation_check bumped because every verified_against URL was opened today. NOT CHECKED: the free China Mobile tourist SIM promotion (still labelled unverified); Reddit-derived comparison rows (Support, Best for) and traveler anecdotes, which rest on the raw sources, not re-read; the Nomad unlimited plan's own fair-use terms (its page describes a daily allowance for per-day plans only); whether Ubigi data is actually routed abroad. Stale banner removed. --- 2026-08-18 (later same day): re-verified the last un-rechecked row, Airalo, against airalo.com/china-esim and esimdb.com. Unlimited prices UNCHANGED from the 2026-06-12 figures (3d $11.50 / 5d $19 / 7d $27 / 10d $35 / 15d $49 / 30d $69) — recorded as confirmed rather than assumed. Fixed-cap plans tightened: 1 GB/3d $4 confirmed, but the old 'roughly $40-50' for the 20-50 GB tier understated it — 20 GB/30d is $39-40 and 50 GB/30d runs $49-59 depending on the underlying operator. Also added a symmetry note: neither provider's 'unlimited' is uncapped (Holafly has a documented ~90 GB/month FUP; Airalo's is listed by esimdb as a daily full-speed allowance with reduced speed beyond), attributed rather than asserted. All four rows in the table now carry the same verification date, so the per-row date caveat is retired. last_verified still NOT bumped: this was the pricing block only. --- 2026-08-18 REVIEW FIX: (a) Nomad's official URLs were missing from verified_against while this page carried new Nomad facts — inconsistent with how Airalo/Holafly/Ubigi are handled here (their vendor pages are listed) and it left those claims with no recorded provenance. Added nomadesim.com/china-eSIM plus the two help-centre articles. Note the contrast with internet-connectivity.md, where Nomad is deliberately NOT in verified_against because that page cites Nomad inline at each claim; here there is no inline citation, so the source list is the provenance. (b) Ubigi prices were stale and the PR had just added a 'cheapest for small data caps' judgement resting on them — re-checked against cellulardata.ubigi.com the same day: 3 GB/30d is $7 (was $8) and 25 GB/30d is $33 (was $35). Corrected; the judgement holds and is now better supported ($7 vs Nomad's $9 for 3 GB). Airalo remains the only row not re-checked this round. --- 2026-08-18: added Nomad eSIM alongside Airalo/Holafly/Ubigi so this page stops contradicting internet-connectivity.md, which now names Nomad — previously the two pages gave different answers to 'which eSIM', including in their FAQ schema, which meant two conflicting machine-readable answers shipped. Nomad figures verified the same day against nomadesim.com/china-eSIM and its help centre: unlimited 3d $12 / 5d $18 / 7d $25 / 10d $33, fixed-data 1GB/7d $4 through 50GB/45d $35, network China Unicom / China Telecom, hotspot/tethering supported, 'no external VPN needed'. NOTE: Nomad is named here but NOT linked — the reciprocal-link agreement covers one outbound link, on internet-connectivity.md only; alignment must not quietly become extra link placement. Holafly's prices were also re-checked and had ALL drifted from the 2026-06-01 figures recorded here (3d $11.90, 5d $20.50, 7d $27.50, 10d $36.50, 15d $50.50, 30d $73.90) — corrected, and the table footnote now states per-row verification dates rather than one blanket 'as of June 2026'. Airalo and Ubigi prices were NOT re-checked this round and are still labelled June 2026. last_verified NOT bumped: only the eSIM pricing block was re-verified, not the page. --- 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked."
 description: >-
-  Airalo, Holafly, Nomad and Ubigi China eSIM prices, checked August 2026. All
-  four bypassed the firewall with no VPN as of June 2026. Plus local +86 SIMs.
+  Airalo, Holafly and Nomad say their China eSIMs avoid the firewall without a
+  VPN; Ubigi's status is unclear. Prices checked October 2026. Plus +86 SIMs.
 faqs:
   - q: Do I need a VPN if I use a foreign eSIM in China?
     a: >-
-      No, as of June 2026. The major foreign travel eSIMs sold for China
-      (Airalo, Holafly, Nomad eSIM, Ubigi) route data through an overseas
-      gateway, so they bypass the Great Firewall and Google, WhatsApp and
-      Instagram work without a VPN on eSIM data — Airalo and Nomad confirm this
-      in their help docs, and Holafly and Ubigi state the same on their China
-      pages. This is high-volatility, so confirm your provider's current China
-      page before buying. You only need a VPN on Chinese hotel or airport Wi-Fi,
-      which is still firewalled.
+      Usually not — but that is the providers' claim, not an independent
+      routing audit. Airalo, Holafly and Nomad each state that their China eSIM
+      data routes outside mainland China, so Google, WhatsApp and Instagram work
+      on eSIM data without a separate VPN (checked October 2026). Ubigi's own
+      materials contradict each other, so ask Ubigi before relying on it. You
+      still need a VPN on Chinese hotel or airport Wi-Fi, which is firewalled.
   - q: Which eSIMs work best for China?
     a: >-
-      Airalo, Holafly, Nomad eSIM and Ubigi all route data abroad to bypass the
-      firewall without a separate VPN (Airalo and Nomad state this in their help
-      docs; the others advertise the same), so there is no single best pick —
-      choose by what you care about. Unlimited data on China Mobile, stronger in
-      rural areas, with 1 GB/day hotspot sharing: Holafly. China Unicom
-      coverage, stronger in cities, or a cheap short fixed-data pack: Airalo.
-      Both fixed-data and unlimited plans with hotspot/tethering: Nomad eSIM.
-      Cheapest small data caps: Ubigi. For sizing, one traveler used about 5 GB
-      in 10 days with heavy maps use.
+      There is no single best pick. Holafly sells unlimited-only plans on China
+      Mobile and says a VPN is included; Airalo runs on China Unicom and sells
+      both unlimited and fixed-data packs; Nomad eSIM offers fixed-data and
+      unlimited plans with hotspot sharing; Ubigi had the cheapest 7-day
+      unlimited plan ($24) and a cheap 3 GB pack ($7) in October 2026, but its
+      no-VPN status is unclear. Airalo, Holafly and Nomad state that their eSIMs
+      work without a separate VPN — treat that as a provider claim, not an
+      audited fact. For data sizing, see the data-usage notes below.
   - q: How much eSIM data should I buy before arriving in China?
     a: >-
       Plan for roughly 5 GB per 10 days as a rough starting point — that figure
@@ -72,13 +69,13 @@ faqs:
       after you land, since the validity clock starts on first connection.
   - q: Do I need a Chinese phone number?
     a: >-
-      Not for data — a foreign eSIM gives you data only, no +86 number, which
-      suits trips of 30 days or less where you don't need one. But a +86 number
-      is more useful than it looks: many domestic services (12306 train booking,
-      DiDi tour mode, attraction ticketing, hotel front-desk WeChat groups) fall
-      back to SMS verification on a +86 number. Alipay and WeChat Pay both
-      accept foreign numbers in 2026, but some sub-features remain +86-only, so
-      if you need one for Chinese-app sign-ups, get a physical SIM in addition.
+      Most short-term travelers don't. Alipay, WeChat Pay and DiDi accept
+      foreign numbers, train booking (12306 or Trip.com) can use email
+      registration, and Ant Group says visitors can use Alipay without a mainland
+      China phone number. A +86 number mainly helps with some local lifestyle
+      apps such as Meituan, Dianping or Amap, where foreign numbers work
+      inconsistently — get a physical SIM in addition only if you need one of
+      those.
 category: guide
 ---
 

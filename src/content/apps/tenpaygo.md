@@ -40,9 +40,8 @@ review:
   citation_check: 2026-10-08
   notes: "2026-10-08 re-verification (page was 98 days past last_verified). STATUS CHANGED: Tencent formally launched TenPayGo on 2026-09-24 at the Qianhai international payment services event in Shenzhen — confirmed by Xinhua (english.news.cn, quoting Tencent), CLS via 21jingji (quoting WeChat Pay innovation-product lead Ge Wen) and Jiemian via sina.cn; no Tencent-hosted press release was found (tencent.com news index fetched, no TenPayGo item in the server-rendered HTML — not treated as proof none exists). Page reframed from 'testing / not formally launched' to 'officially launched 2026-09-24'. Fetched and checked: App Store page + itunes lookup JSON (v1.1.2, 2026-09-24; the 'e-wallets from multiple countries and regions' release note first appears on v1.1.0, 2026-09-12; still 'Only for iPhone'; EN only; seller Tencent Technology (Shenzhen); full version history v1.0 2026-06-21 to v1.1.2 confirms v1.0.4 = 2026-07-01); Google Play listing (now fetchable by curl, so moved INTO verified_against: com.tencent.wxpai, updated 2026-09-24, 10K+ downloads, 'payment capabilities powered by Weixin Pay'); TechNode 2026-06-29 and qq.com 2026-06-28 (both live, unchanged, now cited only for the June test phase); raw in-app guide (unchanged file, v1.0.4 capture — cited as July-2026 app guide, not as current app state). CHANGED: (1) card networks — Tencent now says seven networks incl. Visa/Mastercard; CLS names UnionPay among them, so UnionPay added as press-reported; the six from the in-app guide kept. (2) Overseas e-wallets added — Starryblu named by Tencent via Xinhua; ~60 wallets is reported inconsistently (CLS 'can bind nearly 60' vs Jiemian 'first batch Starryblu, about 60 by year-end'), page uses the conservative framing. (3) Shenzhen bus/metro ride code — Shenzhen Special Zone Daily says full opening expected mid-October 2026; not confirmed live as of 2026-10-08. (4) Signup: email registration confirmed post-launch; WeChat Pay's Ge Wen says payment-stage verification follows applicable rules — replaces the old 'passport will be added' community speculation and the testing-era 'use Gmail to get past the gate' tip (removed). (5) Fees: added Tenpay's own 2026-01-15 international-card rule (posts.tenpay.com: free up to ¥200, 3% above) as the WeChat-client benchmark — it does NOT name TenPayGo, so the TenPayGo amount stays user-reported. (6) Extra services added only as announced/reported: departure tax refund + AI menu translation (Tencent via China.org.cn/Xinhua 2026-09-25), object ID (Lowyat.NET 2026-09-25; it also lists Hipay/Octopus wallets — not used, single secondary source). NOT checked: current in-app guide text (no device access — pay methods, limits and refund rules are attributed to the July v1.0.4 guide); the Zhihu/Reddit items from the original notes (no longer relied on — the claims they supported were removed); Bloomberg and SCMP (paywall / 403). The April-2024 PBOC foreign-card binding context in the 'Do you need it' section was not re-checked here (owned by mobile-payment.md). Two items the brief called duplicated in verified_against were not found duplicated on this branch (four distinct entries); none dropped as dead. --- New page created 2026-07-02 from the late-June-2026 TenPayGo launch. Press-confirmed facts (email-only signup; link Visa/Mastercard/Apple Pay; no Chinese number or bank account; pay at WeChat Pay merchants via scan-or-be-scanned — TechNode confirms BOTH directions ('generate QR codes for merchants to scan, or scan merchant QR codes themselves'); WeChat Pay rails; limited-test status) grounded to TechNode 2026-06-29 + Apple App Store listing (v1.0.4, listed iPhone-only) + Tencent's official 2026-06-28 response via qq.com. Platform: iOS (App Store) and Android (Google Play, com.tencent.wxpai). Android availability + successful card binding were firsthand-confirmed by the site owner on 2026-07-02 (downloaded from Google Play, bound a card successfully). The Google Play listing page itself is JS-gated and could not be auto-fetched for citation, so Android rests on this firsthand confirmation rather than a fetched listing — the Play URL is in sources as the download link, not in verified_against. The intro pitch claims only 'no Chinese phone number / no domestic bank account' (both source-confirmed); the 'no real-name/passport' looseness is kept only in the hedged Availability section as a testing-period observation, not stated as settled fact. Status is fast-moving: official word (2026-06-28) was 'still testing, not fully open'; a user's firsthand test on 2026-07-02 could register when blocked days earlier — framed here as an opening-but-not-formally-launched rollout, NOT a confirmed public release (no official launch announcement found in search). 2026-07-02 UPGRADE via the app's own in-app guide (app v1.0.4, captured by the site owner; verbatim screenshot + transcription in raw/tenpaygo-in-app-guide-2026.jpeg / .md, now in verified_against): the following are PRIMARY-confirmed and no longer community-hedged — card networks (Visa, Mastercard, American Express, Discover, Diners Club, JCB + Apple Pay, read directly off the Part Two logos), the three pay methods (scan / show pay code / merchant-website checkout), the 'service fee may apply, shown before you confirm' behavior, the per-transaction/day/year limit structure, and refund-to-original-card (Parts Five/Six). Still community/firsthand-reported and explicitly hedged: the specific 0%-under-¥200 / 3%-over fee AMOUNTS (the app publishes no amounts and the pattern appears to be in gray-scale testing) and the 'signup looseness will tighten' read (Zhihu column + Reddit r/travelchina). volatility: high — app is in active weekly iteration (v1.0 2026-06-21 → v1.0.4 2026-07-01); re-verify frequently."
 description: >-
-  TenPayGo is Tencent's new app for foreign visitors to China — email signup,
-  link a foreign card or Apple Pay, pay at WeChat Pay merchants, no Chinese
-  number needed.
+  TenPayGo: Tencent's app for foreign visitors. Email signup, international card
+  or Apple Pay, pay at WeChat Pay merchants — no domestic bank account needed.
 faqs:
   - q: What is TenPayGo?
     a: >-
@@ -54,18 +53,19 @@ faqs:
       bank account. It runs on Tencent's existing WeChat Pay network.
   - q: Which cards can I use with TenPayGo?
     a: >-
-      Per TenPayGo's in-app guide, you can link an international Visa,
-      Mastercard, American Express, Discover, Diners Club or JCB card, or pay
-      through a card already in Apple Pay — the same foreign card networks that
-      Alipay and WeChat Pay accept. No Chinese bank account or phone number is
-      needed.
+      TenPayGo's July 2026 in-app guide shows Visa, Mastercard, American
+      Express, Discover, Diners Club and JCB, plus Apple Pay. Tencent's launch
+      material says seven international networks are supported, and launch-day
+      press names UnionPay among them (Xinhua; CLS via 21jingji, 2026-09-24).
+      Check the app for current support before relying on a card. No Chinese
+      bank account or phone number is needed to sign up.
   - q: Is TenPayGo publicly available yet?
     a: >-
-      Not formally. Tencent launched it as a limited test in late June 2026 and,
-      as of early July 2026, has not announced a full public release — though
-      the signup gate has been opening to more users, so some who were blocked
-      days earlier can now register. Availability, onboarding and rules are
-      still changing week to week, so treat it as an early-stage rollout.
+      Yes — Tencent formally launched it on 24 September 2026, after a limited
+      test from late June 2026 (source: Xinhua, 2026-09-24). It is on the App
+      Store and Google Play, English-only, and overseas e-wallet support has
+      been expanding since September 2026 — check the app for whether your card
+      or wallet is supported yet.
   - q: Do I need TenPayGo if I can already use Alipay or WeChat Pay?
     a: >-
       Probably not. Since the April 2024 PBOC policy, foreigners can bind a
