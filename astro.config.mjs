@@ -102,8 +102,22 @@ export default defineConfig({
 
   integrations: [
     sitemap({
-      // /search/ is a functional shell page (noindex) — keep it out of the sitemap.
-      filter: (page) => new URL(page).pathname !== '/search/',
+      // Only human HTML pages belong in the sitemap: exclude the client-side
+      // search shell (noindex) and the machine-readable layer (JSON endpoints,
+      // per-page .md, llms*.txt, AGENTS.md) — agents discover those via
+      // llms.txt/AGENTS.md, not via the sitemap.
+      filter: (page) => {
+        const { pathname } = new URL(page);
+        if (pathname === '/search/') return false;
+        if (pathname.startsWith('/api/')) return false;
+        if (pathname.endsWith('.md') || pathname.endsWith('.json') || pathname.endsWith('.txt')) {
+          return false;
+        }
+        if (pathname === '/AGENTS.md' || pathname === '/llms.txt' || pathname === '/llms-full.txt') {
+          return false;
+        }
+        return true;
+      },
       serialize(item) {
         const lastmod = lastmodFor(item.url, lastmodMap);
         return lastmod ? { ...item, lastmod } : item;
