@@ -101,6 +101,14 @@ Full text of every page in a single file: ${SITE}/llms-full.txt
 ## Site
 ${SITE_PAGES.map(sitePageLine).join('\n')}
 
+## Agent API
+Machine-readable layer (schema v1). Usage, provenance semantics and citation rules: ${SITE}/AGENTS.md
+Page index: ${SITE}/api/v1/pages.json
+Page model: /guides/<slug>.json and /apps/<slug>.json (append to the site host)
+Spanish page model: /es/guides/<slug>.json
+Fact lookup: /api/v1/facts/<fact-id>.json
+Change feed: ${SITE}/api/v1/changes.json
+
 ## Guides
 ${g.map((e) => entryLine('guides', e)).join('\n')}
 

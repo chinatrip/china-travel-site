@@ -35,6 +35,26 @@ npm test               # node:test + astro build + 内链尾斜杠 guard
 3. 合并到 wiki/main → 自动同步、开内容 PR → 审阅合并即上线。
 4. 只有 `review.status: audited` 的页会进站。
 
+## Agent API (machine-readable layer)
+
+AI agents get a build-time JSON layer alongside the HTML — no backend, no extra
+dependencies, generated from the same content collections:
+
+| Endpoint | Contents |
+|---|---|
+| `/api/v1/pages.json` | discovery index (tldr, dates, fact counts, content hash) |
+| `/guides/<slug>.json` · `/apps/<slug>.json` · `/es/guides/<slug>.json` | one page model, including facts |
+| `/api/v1/facts/<fact-id>.json` | one addressable fact (claim + sources + verified_at + confidence) |
+| `/api/v1/changes.json` | git-backed change feed (180 days; labelled fallback when git is unavailable) |
+| `/AGENTS.md` | how to use the API, provenance semantics, citation rules |
+
+Facts are promoted from authored FAQ entries, so ids (`<slug>.faq.<n>`) are stable and
+nothing is invented. `confidence` mirrors the page's review status (`audited` /
+`verified` / `draft`); `stale_after` is `last_verified` + the volatility window
+(90/180/365 days). The machine layer is excluded from the sitemap — agents discover it
+via `llms.txt` and `AGENTS.md`. Builders live in `src/lib/facts.mjs` and
+`src/lib/git-changes.mjs`; `test/facts.test.mjs` and `test/git-changes.test.mjs` cover them.
+
 ## Deployment
 
 GitHub Actions 用 `wrangler` 部署到 Cloudflare Worker（Cloudflare 原生 Git 集成已关闭，部署由 Actions 显式发起）：

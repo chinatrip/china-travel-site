@@ -83,6 +83,26 @@ GitHub 默认**不会因为 check 变绿就推送你**,所以本流程主动制�
 | **生产部署** | site 仓 **Actions** → `Deploy (production)`(✅ = 已上生产) |
 | 线上 | https://chinaguide.ai |
 
+## Agent 数据层（/api/v1 + AGENTS.md）
+
+给 AI Agent 的机器可读层，全部在 `astro build` 时静态生成，无后端、无额外依赖：
+
+- `/api/v1/pages.json` — 页面索引（tldr、日期、fact 数、content_hash）
+- `/guides/<slug>.json`、`/apps/<slug>.json`、`/es/guides/<slug>.json` — 单页模型（含 facts）
+- `/api/v1/facts/<fact-id>.json` — 单条事实（claim + sources + verified_at + confidence）
+- `/api/v1/changes.json` — 内容 git 变更流（180 天；无 git 时降级为带标记的日期快照）
+- `/AGENTS.md` — 使用方式、来源语义、引用规则；`llms.txt` 里有入口
+
+生成器：`src/lib/facts.mjs`（fact / page model / 索引）与 `src/lib/git-changes.mjs`
+（构建期一次 `git log`）。单测：`test/facts.test.mjs`、`test/git-changes.test.mjs`。
+
+不变量：
+- 只有 `status: audited` 的页面进入机器层（与人类页面同一道门）。
+- facts 来自作者写的 FAQ，id 稳定（`<slug>.faq.<n>`），不凭空生成。
+- `confidence` 只反映核验状态（audited/verified/draft），不表示"真相"。
+- `stale_after = last_verified + volatility 窗口`（high 90 / medium 180 / low 365）。
+- 机器层不进 sitemap，通过 `llms.txt` / `AGENTS.md` 分发。
+
 ## Secrets / Token
 
 | Secret | 在哪 | 用途 |
