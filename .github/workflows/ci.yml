@@ -116,8 +116,10 @@ jobs:
       # Runs on `always()` so the single marker comment ALWAYS reflects the
       # CURRENT commit. With `if: outcome == success` a later failing push would
       # leave a stale "✅ ready" comment (same marker) pointing at an old version.
+      # Fork PRs receive a read-only GITHUB_TOKEN. Their test/build results stay
+      # in checks and the job summary; do not fail green tests trying to comment.
       - name: Comment preview URL on PR
-        if: always()
+        if: always() && github.event.pull_request.head.repo.full_name == github.repository
         uses: actions/github-script@v7
         env:
           TESTS_OUTCOME: ${{ steps.tests.outcome }}
