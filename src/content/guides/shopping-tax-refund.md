@@ -1,15 +1,21 @@
 ---
 title: Shopping and Tax Refund for Foreign Visitors
-date: 2026-05-07
+date: '2026-11-17'
 last_verified: 2026-09-20
 verified_against:
-  - https://www.china-briefing.com/news/chinas-new-instant-vat-refund-policy-boost-to-tourism-and-retail-amid-tariff-tensions/
-  - https://www.gov.cn/zhengce/jiedu/tujie/202504/content_7021304.htm
-  - https://www.shio.gov.cn/TrueCMS/shxwbgs/ywts/content/4eb5dc1c-f2ff-425f-b92f-a1c6df388d95.html
-  - https://www.chinavigators.com/china-vat-refund-guide/
-  - https://www.trip.com/guide/info/china-tax-refund.html
-  - http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html
-  - https://en.people.cn/n3/2025/0508/c90000-20312163.html
+  - >-
+    https://www.china-briefing.com/news/chinas-new-instant-vat-refund-policy-boost-to-tourism-and-retail-amid-tariff-tensions/
+  - 'https://www.gov.cn/zhengce/jiedu/tujie/202504/content_7021304.htm'
+  - >-
+    https://www.shio.gov.cn/TrueCMS/shxwbgs/ywts/content/4eb5dc1c-f2ff-425f-b92f-a1c6df388d95.html
+  - 'https://www.chinavigators.com/china-vat-refund-guide/'
+  - 'https://www.trip.com/guide/info/china-tax-refund.html'
+  - >-
+    http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html
+  - 'https://en.people.cn/n3/2025/0508/c90000-20312163.html'
+  - >-
+    https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html
+  - 'https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html'
 sources: []
 related:
   - wiki/concepts/mobile-payment.md
@@ -21,11 +27,45 @@ review:
   status: audited
   page_audit: 2026-06-09
   citation_check: null
-  notes: "2026-09-20: verified the customs rows against GACC's passenger clearance guide, reachable again over http:// after the misdiagnosis fixed in the previous PR. CORRECTED A CATEGORY ERROR: the tobacco and alcohol rows read 'Up to 400 cigarettes … duty-free on entry' and 'Up to 1,500 ml … duty-free'. Those are GACC's RED-CHANNEL DECLARATION THRESHOLDS, not duty-free allowances. Verbatim: 'CAUTION: Inward passengers with the articles listed below SHALL choose GOODS TO DECLARE (RED CHANNEL) … 1,500ml or above of alcoholic drinks (containing 12% or above alcoholic content); 400 sticks or above of cigarettes; 100 sticks or above of cigars; 500g or above of tobacco.' The practical outcome is similar — below the line you take the green channel and goods are released as personal effects — but 'up to 400 duty-free' promises an entitlement the source does not give: release is 'within the limitation set by the Customs' and explicitly 'subject to REASONABLE QUANTITY control'. Rewritten as thresholds with that caveat. ALSO: the foreign-currency row claimed larger amounts need a permit from an authorised Chinese bank. GACC's guide does not say that — it is a foreign-exchange rule under a different authority — so it is labelled unverified here rather than cited to customs. ADDED: the inbound personal-article thresholds (¥5,000 residents / ¥2,000 non-residents), which this page never carried and which are the context those tobacco figures sit in. SCOPE: last_verified BUMPED to 2026-09-20 for the customs-threshold anchors only. The VAT refund scheme, the ¥200 minimum, the 11% rate and the instant-refund mechanics were NOT re-verified this round. --- 2026-10-17: source-list maintenance only, no claim changes. Replaced the dead visahq.com URL (HTTP 404, no Wayback snapshot) with the official gov.cn April 2025 policy chart for the ¥200 threshold, and rewrote the Shanghai outlet sentence against the Shanghai government's 2025-12-26 release (1,700+ registered refund stores, 1,000+ added in 2025, instant refund city-wide via 9 + 17 + N points). last_verified NOT bumped."
+  notes: >-
+    2026-11-17 scoped correction: Correct net-refund example and reform date;
+    remove unsupported post-validation deadline. Sources checked on this date
+    are listed in the correction section below. last_verified, page_audit and
+    citation_check retain their earlier scope; this is not a whole-page
+    re-audit.
+
+    2026-09-20: verified the customs rows against GACC's passenger clearance
+    guide, reachable again over http:// after the misdiagnosis fixed in the
+    previous PR. CORRECTED A CATEGORY ERROR: the tobacco and alcohol rows read
+    'Up to 400 cigarettes … duty-free on entry' and 'Up to 1,500 ml …
+    duty-free'. Those are GACC's RED-CHANNEL DECLARATION THRESHOLDS, not
+    duty-free allowances. Verbatim: 'CAUTION: Inward passengers with the
+    articles listed below SHALL choose GOODS TO DECLARE (RED CHANNEL) … 1,500ml
+    or above of alcoholic drinks (containing 12% or above alcoholic content);
+    400 sticks or above of cigarettes; 100 sticks or above of cigars; 500g or
+    above of tobacco.' The practical outcome is similar — below the line you
+    take the green channel and goods are released as personal effects — but 'up
+    to 400 duty-free' promises an entitlement the source does not give: release
+    is 'within the limitation set by the Customs' and explicitly 'subject to
+    REASONABLE QUANTITY control'. Rewritten as thresholds with that caveat.
+    ALSO: the foreign-currency row claimed larger amounts need a permit from an
+    authorised Chinese bank. GACC's guide does not say that — it is a
+    foreign-exchange rule under a different authority — so it is labelled
+    unverified here rather than cited to customs. ADDED: the inbound
+    personal-article thresholds (¥5,000 residents / ¥2,000 non-residents), which
+    this page never carried and which are the context those tobacco figures sit
+    in. SCOPE: last_verified BUMPED to 2026-09-20 for the customs-threshold
+    anchors only. The VAT refund scheme, the ¥200 minimum, the 11% rate and the
+    instant-refund mechanics were NOT re-verified this round. --- 2026-10-17:
+    source-list maintenance only, no claim changes. Replaced the dead visahq.com
+    URL (HTTP 404, no Wayback snapshot) with the official gov.cn April 2025
+    policy chart for the ¥200 threshold, and rewrote the Shanghai outlet
+    sentence against the Shanghai government's 2025-12-26 release (1,700+
+    registered refund stores, 1,000+ added in 2025, instant refund city-wide via
+    9 + 17 + N points). last_verified NOT bumped.
 description: >-
-  China's tourist VAT refund: minimum ¥200 per store per day, the new instant
-  in-store refund, eligible shops, and how to claim at the airport on departure.
-  Updated May 2026.
+  China tourist tax refunds: the CNY 200 purchase threshold, departure procedure
+  and the difference between the gross refund rate and net payout.
 faqs:
   - q: Can foreign tourists get a VAT refund in China?
     a: >-
@@ -39,10 +79,10 @@ faqs:
       rolled out an instant in-store refund at participating shops.
   - q: How much is the China tax refund?
     a: >-
-      In practice most eligible goods give back roughly 9-11% of the purchase
-      price after the handling fee — a ¥1,000 purchase typically yields about
-      ¥90-110. The refund can be paid in cash, to a bank card, or via Alipay /
-      WeChat Pay.
+      Under the cited Shanghai tax-authority fee schedule, the net refund is 9%
+      or 6% of the invoice value: an 11% or 8% refund rate less a 2% handling
+      fee. A CNY 1,000 purchase therefore yields CNY 90 or CNY 60 under that
+      schedule. Check the applicable local agent fee and customs verification.
   - q: What can't I claim a refund on?
     a: >-
       Consumables already used, purchases below the ¥200 threshold, and goods
@@ -55,7 +95,7 @@ category: guide
 
 ## Can tourists get a VAT refund in China?
 
-China operates a departure VAT refund scheme for overseas visitors. A significant expansion took effect **April 8, 2025**: the minimum purchase threshold was cut from ¥500 to **¥200** per receipt at a single store on the same day, and a new **instant refund at point of sale** mechanism was introduced alongside the traditional airport-departure claim process.
+The national 2025 No.11 amendment dated 26 April 2025 reduced the qualifying purchase threshold to CNY 200 at the same refund shop on the same day. Keep this amendment separate from instant-refund rollout dates.
 
 ### Eligibility
 
@@ -67,7 +107,7 @@ China operates a departure VAT refund scheme for overseas visitors. A significan
 
 The refund uses the formula: **Refund = (invoice amount incl. VAT × refund rate) − handling fee**.
 
-In practice, most eligible goods attract **9–11% of the purchase price** back (source: chinavigators.com; trip.com). The exact rate depends on the applicable VAT rate for each product category. A ¥1,000 purchase typically yields approximately ¥90–110 in refund after the handling fee.
+The Shanghai tax authority guide calculates net refund as invoice value × (11% or 8% refund rate minus 2% handling fee), i.e. 9% or 6%. A CNY 1,000 example yields CNY 90 or CNY 60 under that published fee schedule. Check the applicable local agent fee and customs verification; do not present the gross rate as the net payout.
 
 **Ineligible goods:** services (hotels, restaurants, transport), food and beverages, tobacco, alcohol, and items consumed inside China. Most physical retail goods — clothing, electronics, cosmetics, watches, jewelry, luggage, sporting goods — are eligible.
 
@@ -127,7 +167,7 @@ Land border crossings and ferry ports also process refunds — check signage at 
 ### Key Rules and Deadlines
 
 - Validate your refund form at customs **within 90 days of purchase**
-- Claim the refund at the desk **within 30 days of customs validation**
+- Follow the departure-port customs inspection and refund-agent procedure. The cited national rules do not establish a general 30-day-after-validation claim window.
 - Goods must be **unused and in original packaging** at customs inspection — do not open packaging or wear purchased items before leaving China
 
 ## What are the customs duty limits when leaving China?
@@ -218,3 +258,11 @@ For Alipay/WeChat Pay setup with a foreign card, see [[wiki/concepts/mobile-paym
 - [[wiki/concepts/mobile-payment.md]] — Alipay / WeChat Pay setup for daily payments
 - [[wiki/concepts/foreign-exchange.md]] — Cash, ATMs, foreign-card POS use
 - [[wiki/concepts/emergency-safety.md]] — Scam avoidance, counterfeit goods risk
+
+
+## Scoped source check — 17 November 2026
+
+Correct net-refund example and reform date; remove unsupported post-validation deadline. This check does not re-verify the rest of the page.
+
+- [境外旅客购物离境退税政策指引](https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html) — 国家税务总局上海市税务局; government. Scope: Shanghai refund calculation and departure procedure; page published 2025-08-12. Accessed 2026-11-17.
+- [国家税务总局公告2025年第11号](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html) — 国家税务总局; government. Scope: 200-yuan threshold amendment dated 2025-04-26. Accessed 2026-11-17.

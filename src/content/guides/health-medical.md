@@ -1,13 +1,16 @@
 ---
 title: Health and Medical Care for Foreign Visitors
-date: 2026-06-12
+date: '2026-11-17'
 last_verified: 2026-07-20
 verified_against:
-  - https://www.gov.uk/government/publications/medical-treatment-in-china
-  - https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html
-  - http://www.customs.gov.cn/
-  - https://cdn.who.int/media/docs/default-source/immunization/position_paper_documents/rabies/pp-rabies-summary-2018.pdf
-  - https://www.cdc.gov/rabies/hcp/clinical-care/post-exposure-prophylaxis.html
+  - 'https://www.gov.uk/government/publications/medical-treatment-in-china'
+  - >-
+    https://www.cdc.gov/yellow-book/hcp/environmental-hazards-risks/high-altitude-travel-and-altitude-illness.html
+  - 'http://www.customs.gov.cn/'
+  - >-
+    https://cdn.who.int/media/docs/default-source/immunization/position_paper_documents/rabies/pp-rabies-summary-2018.pdf
+  - 'https://www.cdc.gov/rabies/hcp/clinical-care/post-exposure-prophylaxis.html'
+  - 'https://www.nccih.nih.gov/health/rhodiola'
 sources:
   - raw/health-medical-guide-2026.md
 related:
@@ -20,7 +23,21 @@ review:
   status: audited
   page_audit: 2026-06-15
   citation_check: 2026-06-12
-  notes: "2026-07-20: Three traveler-feedback edits — (1) added a page-level medical disclaimer at the top (general info, not medical advice; see a professional for persistent/severe symptoms); (2) softened the acetazolamide entry to remove the specific mg dose, keeping the CDC-sourced regimen description and the 'prescription required / doctor sets the dose' framing; (3) added a 'standard vs international department' note (foreigners can ask for 普通门诊 instead of the pricier 国际部). No new external source added; other sections not re-verified this round; page_audit unchanged."
+  notes: >-
+    2026-11-17 scoped correction: Correct unsupported Rhodiola safety claim;
+    withdraw unverified universal fluid and evacuation assertions rather than
+    invent substitutes. Sources checked on this date are listed in the
+    correction section below. last_verified, page_audit and citation_check
+    retain their earlier scope; this is not a whole-page re-audit.
+
+    2026-07-20: Three traveler-feedback edits — (1) added a page-level medical
+    disclaimer at the top (general info, not medical advice; see a professional
+    for persistent/severe symptoms); (2) softened the acetazolamide entry to
+    remove the specific mg dose, keeping the CDC-sourced regimen description and
+    the 'prescription required / doctor sets the dose' framing; (3) added a
+    'standard vs international department' note (foreigners can ask for 普通门诊
+    instead of the pricier 国际部). No new external source added; other sections
+    not re-verified this round; page_audit unchanged.
 description: >-
   Medical care in China for foreign visitors: international hospitals, paying
   with Alipay or WeChat, pharmacies, travel insurance, and altitude sickness.
@@ -175,9 +192,9 @@ Severe AMS can progress to **HACE** (confusion, inability to walk straight) or *
 ### Prevention
 
 - **Acclimatize:** spend 1–2 full days resting in Lhasa before going to higher elevations (Shigatse, Everest Base Camp)
-- **Hydrate:** 3–4 litres of water per day; avoid alcohol for the first 2–3 days
+**Hydration:** This guide has not established a single daily fluid target suitable for every traveler; seek individualized guidance for altitude and health conditions.
 - **Move slowly:** no vigorous physical activity in the first 48 hours
-- **Rhodiola rosea (红景天):** traditional Chinese herbal supplement; start 1–2 weeks before arrival; available at pharmacies throughout China and in Lhasa; evidence is mixed but widely used with no known safety concerns
+**Rhodiola rosea (红景天):** NIH reports insufficient reliable evidence of health benefit, possible side effects and reported interaction with losartan. Pregnancy/breastfeeding safety is not established. Discuss any intended use with a clinician; do not assume the supplement is risk-free.
 - **Acetazolamide (Diamox):** a prescription drug that speeds acclimatization. The CDC Yellow Book describes a standard prophylactic regimen started the day before ascent and continued through the first days at altitude, with the exact dose set for the individual; common side effects are increased urination and tingling in the hands/feet (source: CDC Yellow Book, High-Altitude Travel & Altitude Illness, cdc.gov). Because it is prescription-only, the dose is individual, and it is not suitable for everyone, **discuss it with a travel-medicine clinic or your doctor before travel** — they will confirm whether it is right for you and set the dose — and obtain a prescription. When bringing it into China, carry it in a **reasonable self-use quantity with your prescription**: China Customs admits personal-use medication on a "self-use, reasonable quantity" basis determined by a valid doctor's prescription (narcotics and Class-1 psychotropic drugs face stricter single-prescription limits — acetazolamide is neither) (source: China Customs personal-medication guidance, customs.gov.cn).
 
 Oxygen canisters are available at most Lhasa hotels, often free or for a small fee.
@@ -186,7 +203,7 @@ Oxygen canisters are available at most Lhasa hotels, often free or for a small f
 
 Standard policies frequently exclude high-altitude emergencies. Verify that your policy:
 - Covers medical treatment at altitude
-- Covers **helicopter or air evacuation** — ground ambulance from Everest Base Camp to Lhasa takes 6+ hours; helicopter is the only practical emergency option
+**Evacuation planning:** Confirm local rescue availability, access constraints and insurance coverage before travel. This guide does not verify that a helicopter will be available.
 - Does not exclude Tibet or Xinjiang as conflict/restricted zones
 
 ## Useful Phrases
@@ -206,3 +223,10 @@ Keep a card with your blood type, allergies, current medications, and emergency 
 - [[wiki/concepts/mobile-payment.md]] — Alipay / WeChat Pay setup (required for hospital payment)
 - [[wiki/concepts/internet-connectivity.md]] — AQI apps (IQAir, Air Matters) work without VPN. **Note:** Google Translate is blocked in China without a VPN — use Baidu Translate or Microsoft Translator as VPN-free alternatives for emergency communication.
 - [[wiki/concepts/tibet-permits.md]] — Tibet Travel Permit process, altitude sickness detail, evacuation insurance requirements
+
+
+## Scoped source check — 17 November 2026
+
+Correct unsupported Rhodiola safety claim; withdraw unverified universal fluid and evacuation assertions rather than invent substitutes. This check does not re-verify the rest of the page.
+
+- [Rhodiola](https://www.nccih.nih.gov/health/rhodiola) — NIH NCCIH; government. Scope: Evidence limitations and safety of Rhodiola rosea. Accessed 2026-11-17.

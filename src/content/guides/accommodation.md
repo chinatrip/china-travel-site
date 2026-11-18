@@ -1,13 +1,16 @@
 ---
 title: Accommodation for Foreign Visitors in China
-date: 2026-05-04
+date: '2026-11-17'
 last_verified: 2026-07-16
 verified_against:
-  - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
-  - https://www.trip.com
-  - https://www.agoda.com
-  - https://www.cnbc.com/2022/05/23/airbnb-is-closing-its-domestic-business-in-china-sources-say.html
-  - https://skift.com/2025/03/20/airbnb-stopped-listing-in-china-but-it-still-wants-chinese-travelers/
+  - >-
+    https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
+  - 'https://www.trip.com'
+  - 'https://www.agoda.com'
+  - >-
+    https://www.cnbc.com/2022/05/23/airbnb-is-closing-its-domestic-business-in-china-sources-say.html
+  - >-
+    https://skift.com/2025/03/20/airbnb-stopped-listing-in-china-but-it-still-wants-chinese-travelers/
 sources:
   - raw/12306-guide-for-foreign-business-visitors-2025.md
   - raw/reddit-pain-points-research-2026.md
@@ -21,12 +24,29 @@ related:
   - wiki/entities/meituan.md
   - wiki/entities/trip-com.md
   - wiki/entities/didi.md
+  - wiki/concepts/china-accommodation-registration-online.md
 volatility: medium
 review:
   status: audited
   page_audit: 2026-06-09
   citation_check: 2026-05-06
-  notes: "2026-07-16: Added a PROVISIONAL 'DiDi Hotel' note based on in-app observation of the DiDi English app (July 2026). Per issue #21's source-verified bar, product-level claims resting only on a private product-team confirmation — nationwide coverage, foreigner-screened properties, built-for-inbound intent — are deliberately NOT included; no public DiDi announcement or product page exists yet, so verified_against is unchanged and the note is scoped to directly-observable in-app behaviour and explicitly marked provisional. Issue #21 stays OPEN pending a publicly-verifiable source to upgrade this to a source-verified entry. Other sections carried forward from the 2026-06-09 audit, not re-verified this round; page_audit unchanged."
+  notes: >-
+    2026-11-17 scoped correction: Resolve internal contradiction without making
+    a new legal claim. Sources checked on this date are listed in the correction
+    section below. last_verified, page_audit and citation_check retain their
+    earlier scope; this is not a whole-page re-audit.
+
+    2026-07-16: Added a PROVISIONAL 'DiDi Hotel' note based on in-app
+    observation of the DiDi English app (July 2026). Per issue #21's
+    source-verified bar, product-level claims resting only on a private
+    product-team confirmation — nationwide coverage, foreigner-screened
+    properties, built-for-inbound intent — are deliberately NOT included; no
+    public DiDi announcement or product page exists yet, so verified_against is
+    unchanged and the note is scoped to directly-observable in-app behaviour and
+    explicitly marked provisional. Issue #21 stays OPEN pending a
+    publicly-verifiable source to upgrade this to a source-verified entry. Other
+    sections carried forward from the 2026-06-09 audit, not re-verified this
+    round; page_audit unchanged.
 description: >-
   Which hotels in China accept foreign passports, how to book foreigner-eligible
   stays on Trip.com or Agoda, pay with foreign cards, and do police
@@ -216,7 +236,7 @@ Trip.com is Ctrip's international brand. Same company, same inventory, same hote
 ### Price Differences Between Platforms
 The same room can cost more on international OTAs (Trip.com, Booking.com, Agoda) than on domestic platforms (Meituan, Fliggy) — travelers report differences in the rough range of **20–30%**, though this is an anecdotal estimate that varies by property and date. The gap exists because domestic apps target local consumers with lower prices. To access domestic pricing, you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]).
 
-**Cost-saving strategy:** Use international platforms for guaranteed foreigner acceptance and foreign-card payment, or set up Alipay/WeChat Pay first and book via Meituan to access the lower domestic rates on the same room.
+**Cost-saving strategy:** International platforms may simplify booking, but neither foreign-guest acceptance nor foreign-card payment is guaranteed; confirm directly with the property, or set up Alipay/WeChat Pay first and book via Meituan to access the lower domestic rates on the same room.
 
 ### Platform Reliability
 Traveler reports confirm Trip.com works well for extended trips — one user booked 8 hotels, 4 trains, and 2 flights over 3 weeks with no issues. English customer support helped with date changes. Regular Visa card accepted for all bookings.
@@ -247,3 +267,15 @@ The nightly ranges below are rough indications only (approximate, as of June 202
 - [[wiki/concepts/residence-registration.md]] — legal registration requirements for all accommodation types
 - [[wiki/concepts/mobile-payment.md]] — setting up Alipay / WeChat Pay for hotel payments
 - [[wiki/concepts/foreign-exchange.md]] — cash and ATM access for properties that don't accept foreign cards
+
+
+## Scoped source check — 17 November 2026
+
+Resolve internal contradiction without making a new legal claim. This check does not re-verify the rest of the page.
+
+
+
+
+## Related preparation guides
+
+- [[wiki/concepts/china-accommodation-registration-online.md]]
