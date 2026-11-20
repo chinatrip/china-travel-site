@@ -9,8 +9,9 @@ const dateOrString = z.union([z.coerce.string(), z.date().transform((d) => d.toI
 const contentSchema = z.object({
   title: z.string(),
   description: z.string().optional(),
-  faqs: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
+  faqs: z.array(z.object({ q: z.string(), a: z.string(), sources: z.array(z.string().url()).optional(), checked_at: dateOrString.optional(), fact_number: z.number().int().positive().optional(), aliases: z.array(z.object({ q: z.string(), fact_number: z.number().int().positive() })).optional() })).optional(),
   date: dateOrString.optional(),
+  reader_question_numbers: z.record(z.string(), z.number().int().positive()).optional(),
   last_verified: dateOrString.optional(),
   verified_against: z.array(z.string()).optional(),
   verified_by: z.string().optional(),
@@ -31,7 +32,10 @@ const contentSchema = z.object({
     citation_check: dateOrString.optional(),
     notes: z.string().optional(),
   }).optional(),
-});
+}).transform((page) => ({
+  ...page,
+  status: page.status === 'audited' && page.review?.status === 'audited' && page.verified_against?.length ? 'audited' : 'draft',
+}));
 
 // Top-level `*.md` only, so a `<collection>/es/` translation subfolder is NOT
 // pulled into the English collections — every `getCollection('guides')` across

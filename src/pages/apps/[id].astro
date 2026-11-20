@@ -15,7 +15,7 @@ const { app } = Astro.props;
 const { Content } = await render(app);
 
 // Entity-link this app guide to the SoftwareApplication it documents (about node).
-const softwareApp = buildSoftwareApplication(app.id);
+const softwareApp = buildSoftwareApplication(app.id, app.data.verified_against);
 ---
 
 <GuideLayout

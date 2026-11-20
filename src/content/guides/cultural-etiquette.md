@@ -1,22 +1,16 @@
 ---
-title: Cultural Etiquette for Foreign Visitors
-date: 2026-06-12
-last_verified: 2026-06-12
+title: Local rules for visitors in China
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
-  - https://govt.chinadaily.com.cn/topics/travelandtourism/practicalinfo/page_3.html
-  - https://www.chinadaily.com.cn/a/201811/22/WS5bf622b0a310eff30328a681_2.html
-  - https://www.chinastory.cn/ywdbk/english/v1/detail/20190720/1012700000042741563622374424635323_1.html
-  - https://www.who.int/news-room/feature-stories/detail/creating-a-smoke-free-city-beijing-china
-  - https://commisceo-global.com/country-guides/china-guide/
-  - https://www.ef.edu/epi/regions/asia/china/
-  - https://www.travelchinaguide.com/essential/tipping.htm
-  - https://www.travelchinaguide.com/essential/bargaining.htm
-  - https://www.chinahighlights.com/travelguide/guidebook/etiquette.htm
-  - https://therealtraveler.com/china/china-travel-tips
-  - https://nessahuangg.com/culture-shock-in-china
-sources:
-  - raw/china-practical-guide-2026.md
-  - raw/realchinaguide-cultural-differences-2026.md
+  - https://www.beijing.gov.cn/zhengce/dfxfg/202111/t20211103_2528426.html
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+  - https://www.12306.cn/en/faq.html
+  - https://english.shanghai.gov.cn/en-ServicesandGuides-FAQs-DailyLife/20261010/e9b9ae3c71bb4d12ae0c366cfce1ab12.html
+  - https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html
+  - https://english.shanghai.gov.cn/en-LearnChinese/20240308/d0979306259d4239bd63ea8e55e13035.html
+  - https://www.trade.gov/country-commercial-guides/china-business-travel
+sources: []
 related:
   - wiki/concepts/food-dining.md
   - wiki/concepts/trip-planning.md
@@ -25,128 +19,135 @@ related:
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-12
-  citation_check: 2026-06-12
-  notes: "2026-10-17: removed a dead chinadaily.com.cn 2004 URL (HTTP 404, no Wayback snapshot) from verified_against. It was one of twelve etiquette sources and no claim rested on it alone, so no content changed. last_verified NOT bumped."
-description: >-
-  Practical etiquette for foreign visitors to China: tipping is not expected,
-  queuing, dining customs, gift-giving, and avoiding common cultural faux pas.
-  Updated May 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Check Beijing’s indoor smoking rules and official advice on photography.
 faqs:
-  - q: Do I need to tip in China?
-    a: >-
-      No. Tipping is not customary in China and isn't expected at restaurants,
-      taxis or hotels. Leaving nothing is completely normal.
-  - q: What are common cultural faux pas to avoid in China?
-    a: >-
-      Avoid sticking chopsticks upright in rice, be ready for direct queuing,
-      don't expect home personal-space norms, and accept cards or gifts with
-      both hands as a sign of respect.
-  - q: Is bargaining expected in China?
-    a: >-
-      Bargain at tourist markets and small independent stalls, but not in malls,
-      chain stores, supermarkets or restaurants, which have fixed prices.
-  - q: Why do people stare or ask to take photos with me in China?
-    a: >-
-      Foreigners with distinctive appearances attract attention, especially in
-      smaller cities and rural areas — it's curiosity, not hostility. Travelers
-      are also commonly asked to pose for photos, often by children and older
-      people. To decline politely, a smile and a gentle hand wave is universally
-      understood.
+  - q: Where is smoking restricted in Beijing?
+    a: Beijing prohibits smoking in indoor areas of public places and workplaces and on public transport. Check local rules when visiting another city.
+    sources:
+      - https://www.beijing.gov.cn/zhengce/dfxfg/202111/t20211103_2528426.html
+    fact_number: 5
+  - q: Can I photograph military facilities?
+    a: The Ministry of Commerce guide advises visitors not to photograph military sites, including buildings and facilities used directly for military purposes.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://www.12306.cn/en/faq.html
+    fact_number: 6
+  - q: Do restaurants and hotels in Shanghai expect a tip?
+    a: Shanghai’s municipal guide says that most local restaurants and hotels do not expect a tip. Check the bill if you want to know whether a particular venue has included a service charge.
+    sources:
+      - https://english.shanghai.gov.cn/en-ServicesandGuides-FAQs-DailyLife/20261010/e9b9ae3c71bb4d12ae0c366cfce1ab12.html
+    fact_number: 7
+  - q: Which chopsticks should I use to serve food from a shared dish?
+    a: Use the communal serving chopsticks (公筷, gōngkuài) when provided, and keep your personal chopsticks for eating. The dining guide also advises against leaving chopsticks stuck upright in food.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html
+    fact_number: 8
+  - q: How can I offer a business card at a meeting?
+    a: Offer the card with both hands. If one side is printed in Chinese, turn that side face up. When someone offers you a card, accept it with both hands and take a moment to read it.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html
+      - https://www.trade.gov/country-commercial-guides/china-business-travel
+    fact_number: 9
+  - q: What does 干杯 mean at a toast?
+    a: 干杯 (gānbēi) means “cheers” or “bottoms up”; the literal sense is “dry cup”.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html
+    fact_number: 10
+  - q: How do I thank someone who pours tea without interrupting the conversation?
+    a: Shanghai’s etiquette guide describes a light tap on the table with the index and middle fingers as a way to acknowledge the person pouring tea.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html
+    fact_number: 11
+  - q: Is tapping my bowl with my chopsticks customary?
+    a: Shanghai’s guide advises against tapping the rim of a bowl with your chopsticks. It describes a historical association with begging.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240308/d0979306259d4239bd63ea8e55e13035.html
+    fact_number: 12
 category: guide
+reader_question_numbers:
+  Do I need to tip in China?: 1
+  What are common cultural faux pas to avoid in China?: 2
+  Is bargaining expected in China?: 3
+  Why do people stare or ask to take photos with me in China?: 4
 ---
 
-# Cultural Etiquette for Foreign Visitors
+# Local rules for visitors in China
 
-This page covers behavioral norms that commonly surprise first-time visitors to China. None of these behaviors are hostile — they reflect different cultural defaults.
+## Where is smoking restricted in Beijing?
 
-## How does queuing work in China?
+Beijing prohibits smoking in indoor areas of public places and workplaces and on public transport. Check local rules when visiting another city.
 
-Queue discipline varies by city tier and demographic. In major Tier-1 cities (especially Shanghai), queuing is generally observed at metro stations, ticket counters, and shops. In smaller cities and among older demographics, cutting in line is common — staff may serve whoever approaches first.
+[www.beijing.gov.cn](https://www.beijing.gov.cn/zhengce/dfxfg/202111/t20211103_2528426.html)
 
-**Strategy:** position yourself clearly at the front and don't leave gaps. A direct, visible approach is normal.
+## Can I photograph military facilities?
 
-## Why do people stare or ask for photos in China?
+The Ministry of Commerce guide advises visitors not to photograph military sites, including buildings and facilities used directly for military purposes.
 
-Foreigners with distinctive appearances (blond hair, very tall, non-East-Asian features) attract attention, especially in smaller cities and rural areas. This is curiosity, not hostility. Travelers also commonly report being asked to pose for photos — particularly by children and older people — or being photographed directly.
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [www.12306.cn](https://www.12306.cn/en/faq.html)
 
-To decline politely: a smile and a gentle hand wave (indicating "no") is universally understood.
+## Do restaurants and hotels in Shanghai expect a tip?
 
-## Is it normal for people to be loud in public in China?
+Shanghai’s municipal guide says that most local restaurants and hotels do not expect a tip. Check the bill if you want to know whether a particular venue has included a service charge.
 
-Conversations, phone calls, and video calls are conducted at higher volumes in enclosed spaces (trains, elevators, waiting rooms) than Western visitors typically expect. This is a social norm, not rudeness. Noise-cancelling headphones are a practical solution on long journeys.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-ServicesandGuides-FAQs-DailyLife/20261010/e9b9ae3c71bb4d12ae0c366cfce1ab12.html)
 
-## Why is communication so direct in China?
+## Which chopsticks should I use to serve food from a shared dish?
 
-Small talk and pleasantries are not a standard opener. Questions are posed directly and immediately. Common ice-breakers among acquaintances:
+Use the communal serving chopsticks (公筷, gōngkuài) when provided, and keep your personal chopsticks for eating. The dining guide also advises against leaving chopsticks stuck upright in food.
 
-- "Where are you from?"
-- "Are you married?"
-- "How much do you earn?"
-- "How old are you?"
-- "You've gained / lost weight"
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html)
 
-Questions about salary, age, and marital status are normal conversation starters — not considered intrusive. The age question is partly practical: age and seniority shape how people address one another (elders are greeted first and given formal titles). In many travelers' experience such questions come more often from older people; younger urban Chinese tend to ask less. You're not obligated to answer; a laugh and a deflection ("Too complicated!") works well.
+## How can I offer a business card at a meeting?
 
-Note the asymmetry: personal *questions* are direct, but *disagreement* is usually expressed indirectly. Open criticism, blunt refusals, or losing your temper in public cause a loss of **face (面子, miànzi)** — for both sides — and will make interactions harder, not easier. Stay calm and give people a graceful way out. When meeting a group, greet the eldest or most senior person first.
+Offer the card with both hands. If one side is printed in Chinese, turn that side face up. When someone offers you a card, accept it with both hands and take a moment to read it.
 
-## What are the smoking norms in China?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html) · [www.trade.gov](https://www.trade.gov/country-commercial-guides/china-business-travel)
 
-Smoking is legally prohibited in many indoor public spaces. According to the WHO, Beijing's 2015 Smoking Control Ordinance — the strictest in the country — requires all indoor public places (and many outdoor ones, including public transport) to be 100% smoke-free; rules elsewhere are generally looser. Enforcement is uneven even in Beijing: the WHO reports residents logged nearly 25,000 violations between 2015 and 2018 via the city's WeChat reporting system. Smoking in hotel rooms, smaller restaurants, and some transit areas does occur despite bans, especially outside Tier-1 cities.
+## What does 干杯 mean at a toast?
 
-**Practical:** request non-smoking rooms explicitly when booking; in travelers' experience, chain hotels tend to enforce the rule more consistently than budget guesthouses.
+干杯 (gānbēi) means “cheers” or “bottoms up”; the literal sense is “dry cup”.
 
-## Why do sales staff follow you around in Chinese shops?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html)
 
-In clothing stores, electronics shops, and souvenir markets, staff may follow you closely and continue offering recommendations after you've declined. This is proactive service culture, not pressure (though markets do involve genuine bargaining — see below).
+## How do I thank someone who pours tea without interrupting the conversation?
 
-A clear, repeated **"不用了"** (bù yòng le, "I'm fine, thank you") signals you want to browse alone.
+Shanghai’s etiquette guide describes a light tap on the table with the index and middle fingers as a way to acknowledge the person pouring tea.
 
-## Is bargaining expected in China?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240910/e8fe407acb494a41a5836f606eedf44b.html)
 
-Bargaining is **expected** at markets, souvenir stalls, and small independent shops. It is **not** expected at supermarkets, shopping malls, chain stores, or restaurants — venues with fixed printed prices where staff cannot grant discounts.
+## Is tapping my bowl with my chopsticks customary?
 
-**How low to counter:**
-- At ordinary markets, a common rule of thumb is to counter at around **half the asking price** and negotiate from there
-- At heavily touristed souvenir markets, opening quotes are often inflated several-fold, so counter lower than half and be prepared to walk away — final prices vary widely by market, city, and item
-- Don't show enthusiasm for the item you want; casual indifference keeps the price down
-- Agreeing to a price creates an expectation to buy — walking away after verbally accepting is generally considered poor form
+Shanghai’s guide advises against tapping the rim of a bowl with your chopsticks. It describes a historical association with begging.
 
-## Do I need to tip in China?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240308/d0979306259d4239bd63ea8e55e13035.html)
 
-Tipping is **not practiced** in China — at restaurants, taxis, or for everyday services. Cash left on a restaurant table may simply be returned to you. Instead of tips, some restaurants — typically higher-end ones and hotel dining — add a service charge directly to the bill, so check before adding anything.
+## Travel tip — Photos, queues and conversation
 
-Exceptions where tips have become accepted (not required): hotel bellhops (¥10–30), and guides and drivers on organized private tours, where tipping at the end of a tour has become common practice in the inbound tourism industry. Tipping luggage porters at airports or railway stations is unnecessary.
+Ask before photographing someone. A simple “不了，谢谢” (no, thank you) can help you decline a photo, a sales offer or a personal question. When the queue is unclear, ask who is last rather than guessing.
 
-## What are the dining etiquette customs in China?
+## Travel tip — Shopping and dining with others
 
-- Dishes are ordered for the table and **shared**; individual portions are not the norm at traditional Chinese meals
-- It is considered courteous to top up your neighbours' tea or drinks before your own; when someone refills your tea, tapping the table lightly with two fingers is a widely understood "thank you"
-- Leaving a small amount of food is acceptable — if you can't finish, a polite "thank you" and leaving it there is fine. (The older convention that a cleared table implies the host under-provided is fading; norms vary by region and generation)
-- **Chopstick etiquette:** never stand chopsticks upright in a bowl of rice — it resembles incense sticks offered to the dead; don't tap your bowl with chopsticks (associated with begging); use the serving chopsticks for shared dishes where provided. Details vary by region — there is no single national standard
-- **Toasting (干杯, gānbēi):** meals with alcohol usually open with a group toast initiated by the host, with individual toasts following; when clinking with someone senior, hold your glass slightly lower than theirs as a sign of respect; around a large table, tapping your glass on the table or the lazy-susan glass is an accepted substitute for clinking. Gānbēi literally means "dry the glass" — juniors typically drain theirs, seniors may just sip
+Ask for the price before agreeing to buy. If a price is negotiable, decide what you are willing to pay and politely decline if needed. At a shared meal, follow the host’s lead or ask about a custom that is unfamiliar.
 
-## Gifts and Business Cards
+## Travel tip — Declining a drink or invitation
 
-- Present and receive gifts, business cards, and anything handed to you formally **with both hands** — it signals respect
-- Don't be surprised if a gift is set aside rather than opened in front of you; opening gifts immediately is not the convention
-- Received a business card? Look at it for a moment before putting it away — pocketing it unread is dismissive
-- Avoid gifting clocks, and avoid sets of four (the number four sounds like "death" in Chinese); skip white or black gift wrap, which is associated with funerals
+A friendly “谢谢，不用了” (thank you, no need) works as a short refusal. Choose a non-alcoholic drink or ask how to join a toast if you prefer not to drink.
 
-## Useful Phrases
+## Travel tip — When a custom is unfamiliar
 
-| Situation | Chinese | Pinyin |
-|---|---|---|
-| I'm just browsing | 我随便看看 | Wǒ suíbiàn kànkan |
-| No thanks | 不用了 | Bù yòng le |
-| How much? | 多少钱？ | Duōshǎo qián? |
-| Too expensive | 太贵了 | Tài guì le |
-| Can you go lower? | 能便宜点吗？ | Néng piányí diǎn ma? |
-| Cheers! | 干杯 | Gānbēi |
+Use the serving chopsticks when they are provided. If you are unsure what is expected, ask your host or follow their example. A simple 谢谢 (thank you) is enough to express appreciation.
 
-## See Also
+## Travel tip — When you have had enough food
 
-- [[wiki/concepts/food-dining.md]] — Ordering, dietary restrictions, regional cuisines, useful dining phrases
-- [[wiki/concepts/trip-planning.md]] — Trip timing, budget, and planning context
-- [[wiki/concepts/shopping-tax-refund.md]] — Shopping, VAT refunds, bargaining norms
-- [[wiki/concepts/language-barrier.md]] — English proficiency expectations, translation apps, survival phrases
+If a host offers another serving, try 谢谢，我吃饱了 (Thank you, I’m full). If you have food left, thank the host or restaurant and ask 可以打包吗？ (Could I take this away?) if you want it. Follow the situation and your appetite.
+
+## Questions from travellers
+
+- Do I need to tip in China? — Shanghai’s visitor guide says tips are generally not expected in local restaurants and hotels. Check the setting if you are on a tour or using a service elsewhere. [Do restaurants and hotels in Shanghai expect a tip?](#do-restaurants-and-hotels-in-shanghai-expect-a-tip)
+- What are common cultural faux pas to avoid in China? — Ask permission before taking someone’s photo, follow the queue and use serving chopsticks when provided. If you are unsure at a meal, ask your host. [Travel tip — Photos, queues and conversation](#travel-tip--photos-queues-and-conversation) · [Travel tip — Shopping and dining with others](#travel-tip--shopping-and-dining-with-others)
+- Is bargaining expected in China? — Ask whether the price is negotiable in a market before offering another price. In a shop with fixed prices, use the displayed price or decline politely. [Travel tip — Shopping and dining with others](#travel-tip--shopping-and-dining-with-others)
+- Why do people stare or ask to take photos with me in China? — You can ask what someone means and decide whether you want a photo. [Travel tip — Photos, queues and conversation](#travel-tip--photos-queues-and-conversation) · [Travel tip — Declining a drink or invitation](#travel-tip--declining-a-drink-or-invitation)

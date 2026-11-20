@@ -1,354 +1,144 @@
 ---
-title: Internet Access and the Great Firewall for Foreign Visitors
-date: 2026-07-01
-last_verified: 2026-10-17
+title: Internet connectivity and mobile data in China
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://chinasurvivalkit.com/blog/china-firewall-test-websites-apps-guide
-  - https://landingin.syncosmic.com/blog/vpn-china-2026-what-actually-works
-  - https://www.airalo.com/china-esim
-  - https://www.airalo.com/help/using-managing-esims/ZSEEHBT5HW6F/stay-connected-in-china-your-guide-to-unfiltered-internet-access-is-a-vpn-required/ZDZBNIKI4TFP
-  - https://www.nomadesim.com/help-center/en/articles/9886332-stay-connected-in-china-with-nomad-esim
-  - https://www.getnomad.app/china-esim
-  - https://esim.holafly.com/esim-china/
   - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
-  - https://www.travel.state.gov/content/travel/en/traveladvisories/traveladvisories/china-travel-advisory.html
-sources:
-  - raw/internet-gfw-guide-2026.md
-  - raw/realchinaguide-vpn-guide-2026.md
-  - raw/realchinaguide-remote-work-2026.md
-  - raw/realchinaguide-tech-setup-2026.md
-  - raw/realchinaguide-troubleshooting-2026.md
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+  - https://english.beijing.gov.cn/quickguideservices/purchasingsimcards/
+  - https://english.beijing.gov.cn/latest/news/202512/t20251205_4322494.html
+  - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20261116/04a076e8d4094ffcbea6fdce548932fe.html
+  - https://support.google.com/translate/answer/6142473?hl=en
+  - https://support.apple.com/en-us/105084
+  - https://cellulardata.ubigi.com/rates-and-coverage/china-data-plans/china-unlimited-7-days/
+sources: []
 related:
   - wiki/concepts/sim-card.md
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/payment-failures.md
   - wiki/concepts/remote-work-china.md
   - wiki/concepts/language-barrier.md
+  - wiki/entities/wechat.md
+  - wiki/entities/amap.md
+  - wiki/entities/didi.md
+  - wiki/entities/12306.md
+  - wiki/entities/meituan.md
 volatility: high
 review:
   status: audited
-  page_audit: 2026-06-15
-  citation_check: 2026-10-17
-  notes: "2026-08-21: The Nomad eSIM partnership was ended by the site owner; this page carried all three of its artefacts and they are removed here. (a) The outbound link in the eSIM comparison table is gone — the row stays, because Nomad is a real provider and dropping it would leave the three-way comparison incomplete, but the link does not, because the site's rehype plugin stamps rel=\"sponsored\" on partner links and that label is wrong once nothing is exchanged. (b) The link-exchange disclosure blockquote is deleted: with no exchange it would be a false statement, and it was already half-wrong — the partner had linked back only from the zh-hans version of one article, not the two pages the arrangement described. (c) The standalone paragraph recommending Nomad (\"one of the easiest options to recommend\") is replaced by a pick-by-criterion sentence covering Holafly / Airalo / Nomad equally. That paragraph should not have survived the 2026-08-18 pass: that round rewrote the \"best eSIM\" FAQ away from a lead-with-a-recommendation shape for reading like advertising, and this paragraph had the same shape but was missed. The sentence \"A strong option for travelers who want straightforward China connectivity\" was also dropped from the table row for the same reason — neither the Holafly nor the Airalo row carries an endorsement like it. What is KEPT: Nomad in the neutral provider lists, the verified price comparison against Holafly ($25 vs $27.50, both fetched 2026-08-14), and Nomad's own quoted caveats about encryption and third-party VPNs — those are facts about a real vendor, checked independently, and they do not depend on a commercial relationship. last_verified NOT bumped: nothing was re-verified, commercial artefacts were removed. --- 2026-08-19: Rewrote the unsupported absolute in the VPN legal-status section. It read \"Airport security does not check for VPN apps on devices.\" — a flat safety assertion with no citation, sitting three lines under this page's own US State Department warning about device confiscation. qa/audits/internet-connectivity.md had already recorded it as high|unsupported on 2026-06-15 and left it untouched; the site's seo-review gate surfaced the FAQ restatement of it on 2026-08-19, which is what brought it back up. Its only traceable origin is summaries/realchinaguide-vpn-guide-2026.md (a third-party travel guide, review.status: draft, verified_against empty) — not a basis for asserting it as fact. Now stated as an absence of reports, explicitly not a documented policy, with no authoritative source claimed in either direction, and noting it does not lessen the legal risk stated above. The third-party summary itself was left as written: it faithfully records what that guide says. last_verified NOT bumped — nothing on this page was re-verified this round, a claim was weakened to match the evidence. The identical sentence was changed in the site copy in the same pass so the next content sync sees no divergence. Review of PR #71 caught that the first revision fixed only the body and left the SAME claim standing in this page's frontmatter FAQ (\"airport security doesn't check devices\") — the FAQ is what feeds the site's FAQPage JSON-LD and the answer engines that read it, so fixing the prose alone fixed the less-read half. Both now carry the same hedge. A full-vault sweep for every phrasing of the claim (not just the one string originally grepped) found no other live occurrence: raw/realchinaguide-*.md are verbatim captures of the third-party source and summaries/realchinaguide-vpn-guide-2026.md reports what that source says, so all four are correct as written. The other four high-severity audit items on this page remain open and untouched. --- 2026-08-14: Nomad eSIM added to the eSIM section under a reciprocal-link partnership (they link to /guides/internet-connectivity/ and /guides/vpn-or-esim/; we link to their China page). The outbound link carries rel=\"sponsored\" — applied at render time by the site's rehype-partner-rel plugin, which is why the markdown here is a plain link. Every Nomad claim was checked against Nomad's own official pages on 2026-08-14 before publishing: 'no external VPN needed' + routing via international servers (help-center article 9886332); both fixed-data (1GB/7d $4 … 50GB/45d $35) and unlimited (3d $12 / 5d $18 / 7d $25 / 10d $33) plans, network China Unicom / China Telecom (nomadesim.com/china-eSIM); hotspot/tethering supported, with Nomad's own caveat that stability varies by device and network (help-center article 9886336). The retained 'cheaper than Holafly' comparison: Nomad 7-day unlimited $25 vs Holafly $27.50, BOTH sides fetched from the vendors' own pages on 2026-08-14. (Review caught an error in the first revision of this PR: it cited Holafly at $27.30 — sim-card.md's 2026-06-01 figure — while labelling the comparison 'checked August 2026', i.e. an August verification date on a June number. Corrected. Separate follow-up: holafly.com's whole China ladder has drifted since 2026-06-01 — 3d $11.90, 5d $20.50, 7d $27.50, 10d $36.50, 15d $50.50, 30d $73.90 — so sim-card.md's Holafly prices are stale and need their own re-verification pass.) 2026-08-18 follow-ups (owner decisions): (a) the 'best eSIM' FAQ answer was rewritten from a lead-with-a-recommendation shape into a pick-by-criterion one covering Holafly / Airalo / Nomad / Ubigi equally — same reader intent, but it no longer reads as advertising and no longer conflicts with sim-card.md's FAQ; (b) a reader-facing disclosure of the link exchange now sits directly under the table, deliberately as body text rather than relying on rel=\"sponsored\", because the rel attribute cannot reach the .md siblings, llms.txt, or the FAQ JSON-LD that AI answer engines read; (c) sim-card.md was updated in the same PR to name Nomad, since it previously omitted it entirely while this page pointed readers there for pricing — Nomad is named there but NOT linked, as the agreement covers one outbound link on this page only. Nomad's own countervailing caveat is quoted in the body alongside its no-VPN claim: the eSIM 'does not encrypt data in the same way a traditional VPN would'. (Review iteration 2 caught an over-correction in that same passage: it had read 'if you want your traffic encrypted... you still want a VPN', which is false — HTTPS encrypts site traffic regardless, and what a VPN actually adds is concealing WHICH sites you reach from the network carrying the traffic. Rewritten accordingly, the unsourced 'true of roaming-based eSIMs generally' extrapolation dropped, and Nomad's hedge no longer restated more sharply than the source states it. The same help-center article's warning that a third-party VPN alongside the eSIM 'may interfere with its optimized functionality' is now included too, since the page advises carrying a backup VPN.) These vendor URLs are deliberately NOT added to verified_against — that list is for the independent sources the page's own claims are checked against, and a vendor page can only source claims about itself; the Nomad citations appear inline at the claim instead. last_verified NOT bumped: only the Nomad material was verified this round, the rest of the page was not re-checked. --- 2026-07-20: Added a reader-facing 'Can I access Google/Gmail/WhatsApp from my hotel in China?' section per traveler feedback. Its one non-generic claim — that some international-chain hotels (e.g. Holiday Inn, per one business traveler's report) have had room Wi-Fi reaching international services without a VPN — is explicitly framed as an unverified individual anecdote (not a guarantee, varies by property, changes over time); no hotel is presented as a reliable or endorsed option, and readers are steered to ask the hotel directly and to bring their own eSIM/VPN. No new external source added (the anecdote is traveler feedback, deliberately NOT asserted as verified fact); other sections not re-verified this round; page_audit unchanged. --- 2026-07-01: added cross-link to /guides/chinese-phone-number/; re-verified — drift-scan 2026-W27 confirmed no Tier-1 drift, key sources spot-checked. Caveat: verified_against source nordvpn.com/blog/vpn-for-china/ returned HTTP 403 this pass and was NOT re-confirmed; the page's headline claim (foreign eSIM bypasses the GFW without a VPN) is supported by the Airalo primary source + the State Dept citation + drift-scan 2026-W27 no-drift, so the date bump holds, but the NordVPN article itself was not re-checked this round. --- 2026-10-17: FULL RE-VERIFICATION (page was 89 days past last_verified and crosses the high-volatility 90-day gate on 2026-10-18). Sources read today: Airalo China page + help article, Nomad shop page + help article, Holafly China page (EN + zh), FCDO China safety page (updated 2026-08-27), chinasurvivalkit (updated 2026-10-08) and syncosmic (2026-03-30) as secondary/commercial sources, Shanghai gov Nihao China article. CORRECTED: (1) Holafly no longer sells a 7-day China unlimited plan (now 16-90 days; 16d $54.50, 30d $76.50), so the '$25 vs $27.50' Nomad-Holafly comparison was removed; Nomad's $25/7-day (2 GB/day then 1 Mbps) re-confirmed. (2) Dropped the unsourced 'Great Unplug' campaign claim and the 'WireGuard/OpenVPN/IKEv2 blocked with near-total accuracy' absolute, which contradicted this page's own troubleshooting advice. (3) Removed three over-absolute claims: eSIM 'bypasses the GFW entirely / all services work natively' is now attributed to providers and scoped to eSIM data; 'You cannot download a VPN after arrival' -> 'almost impossible in practice'; 'Free VPNs do not work' -> 'rarely work'. (4) 'typically Hong Kong or Singapore' -> 'exit points vary by provider and plan' (neither provider states fixed locations). (5) Google Maps is described as largely blocked/intermittent (not flatly blocked); Line removed from the blocked list (no source). (6) Legal section: added the live FCDO URL; removed the unverifiable State Department 'updated May 2026' stamp and the flat 'illegal in most cases' phrasing (travel.state.gov returns 403 to automated fetch; the advisory is cited without a retrieval claim); enforcement-targeting sentence is now attributed to travel/industry sources with no official confirmation claimed. (7) Fixed internal contradictions: multi-VPN budget $10-15 -> $15-40/month; '+86 needed for Alipay registration' -> Alipay accepts foreign numbers; Google Translate 'slower than native' removed as it contradicted the Baidu comparison. (8) Provider reliability could not be independently tested; the table is now dated 'mid-2026' and says so. DROPPED from verified_against: nordvpn.com (403 to fetch and vendor-interested). ADDED: Nomad help + shop, Holafly, FCDO, State Dept advisory URL. NOT CHECKED: actual provider reliability in China; Ubigi/Airalo 'cheapest' claims; existence of airport device screening."
-description: >-
-  What China's Great Firewall blocks (Google, WhatsApp, Instagram), which VPNs
-  still work after the 2026 crackdown, and why a foreign eSIM bypasses it with
-  no VPN. Updated June 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026. The 20 November 2026 follow-up covered the restored travel tips on this page.
+description: Check access to essential services and what your operator supports for your device.
 faqs:
-  - q: 'Do I need a VPN to access Google, WhatsApp and Instagram in China?'
-    a: >-
-      Only if you connect through a Chinese SIM or local Wi-Fi. A foreign eSIM
-      (Airalo, Holafly, Nomad eSIM) routes your data via international roaming
-      through gateways outside mainland China, so it bypasses the Great Firewall
-      and blocked services work without a VPN. With a Chinese SIM or local Wi-Fi
-      you do need a working VPN.
-  - q: What is the best eSIM for tourists visiting China?
-    a: >-
-      There is no single best one — they all bypass the Great Firewall without a
-      separate VPN, so pick by what you care about. Want a VPN bundled in:
-      Holafly. Comfortable with a little setup and after a budget option:
-      Airalo. Want both fixed-data and unlimited plans plus hotspot sharing:
-      Nomad eSIM. Plans and prices change often, so check the provider's current
-      China page before buying — the per-provider comparison lives in the SIM
-      card guide.
-  - q: Which VPNs still work in China in 2026?
-    a: >-
-      As of June 2026, Astrill (StealthVPN) and ExpressVPN (Lightway) are the
-      most consistently reported to work. VPN reliability is a moving target,
-      though — a service that works one week can be blocked the next, the 2026
-      crackdown disrupted many, and providers relying only on standard protocols
-      without TLS-based obfuscation (plain WireGuard, OpenVPN, IKEv2)
-      increasingly fail. Install and test two VPNs before you fly.
-  - q: Can I download a VPN once I'm already in China?
-    a: >-
-      It's very hard — app stores and VPN websites are largely blocked from
-      inside China. Download and test your VPN before arrival. If you did not,
-      the workarounds are limited and none is reliable: mirror download links
-      saved before you flew, help from your hotel, airport Wi-Fi on landing,
-      briefly borrowing a device that already has a VPN, or waiting until Hong
-      Kong or Macau.
-  - q: Is it legal for tourists to use a VPN in China?
-    a: >-
-      Officially it's restricted, not freely legal: the US State Department
-      (2026) warns VPN use is illegal in most cases and could lead to device
-      confiscation, a fine, or detention, and China requires VPNs to be
-      government-licensed. In practice, enforcement has targeted providers and
-      distributors rather than individual tourists using a VPN for personal
-      communication, and we know of no reports of airport security screening
-      arriving travellers' devices for VPN apps — but that is an absence of
-      reports, not a guarantee. Weigh the risk yourself and check your country's
-      official travel advisory.
+  - q: Will my usual online services be available?
+    a: The UK government’s China travel advice lists Google, Facebook, YouTube and X among blocked services and notes licensing rules for VPN services. Save your itinerary and booking details offline. Check arrangements for essential communications before buying connectivity.
+    sources:
+      - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
+    fact_number: 6
+  - q: Where can I get a local SIM card?
+    a: Bring your passport or Foreign Permanent Resident ID Card to a service centre of a telecom operator such as China Mobile, China Telecom or China Unicom. Ask about data, voice minutes and the documents needed for the plan you want.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://english.beijing.gov.cn/quickguideservices/purchasingsimcards/
+    fact_number: 7
+  - q: Will a particular eSIM work on my phone?
+    a: The Ministry of Commerce says some operators offer eSIM service. Before buying, give the operator your exact handset model, purchase region and travel dates and ask which plan it can activate. Verify roaming and access to any service you depend on with your provider.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://english.beijing.gov.cn/quickguideservices/purchasingsimcards/
+    fact_number: 8
+  - q: Can I get online at Beijing Daxing Airport without a Chinese mobile number?
+    a: Connect to BDIA-FREE-WIFI at Beijing Daxing International Airport (北京大兴国际机场). Its login page lets foreign visitors authenticate by photographing the passport information page. The airport also lists kiosk authentication. Once online, you can use the National Immigration Administration’s arrival-card service.
+    sources:
+      - https://english.beijing.gov.cn/latest/news/202512/t20251205_4322494.html
+    fact_number: 9
+  - q: Can I connect to Wi-Fi at Shanghai Hongqiao Terminal 1 without a local phone?
+    a: At Shanghai Hongqiao International Airport Terminal 1 (上海虹桥国际机场一号航站楼), select Airport-FreeWiFi-HQ. Overseas visitors without a local number can authenticate with a passport. The terminal also offers access codes through self-service kiosks.
+    sources:
+      - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20261116/04a076e8d4094ffcbea6fdce548932fe.html
+    fact_number: 10
+  - q: Can I prepare an offline translation or map before arrival?
+    a: In Google Translate, check whether a download is offered for your language pair and download it while connected. On iOS 17 or later, Apple Maps offers offline downloads in supported areas. Look up your exact destination and check for the download option before depending on it.
+    sources:
+      - https://support.google.com/translate/answer/6142473?hl=en
+      - https://support.apple.com/en-us/105084
+    fact_number: 11
+    checked_at: 2026-11-20
 category: guide
+reader_question_numbers:
+  Do I need a VPN to access Google, WhatsApp and Instagram in China?: 1
+  What is the best eSIM for tourists visiting China?: 2
+  Which VPNs still work in China in 2026?: 3
+  Can I download a VPN once I'm already in China?: 4
+  Is it legal for tourists to use a VPN in China?: 5
 ---
 
-# Internet Access and the Great Firewall for Foreign Visitors
+# Internet connectivity and mobile data in China
 
-China's internet is filtered by the **Great Firewall (GFW, 防火长城)** — a nationwide system that blocks thousands of foreign websites and apps. Every internet connection inside mainland China — hotel Wi-Fi, local SIM data — passes through it, **unless you use a foreign eSIM** (see [Foreign eSIM](#how-does-a-foreign-esim-get-online-without-a-vpn) below). This page covers what's blocked, what works natively, and how to prepare.
+<span id="vpn-setup"></span>
 
-## What is blocked in China?
+<span id="how-do-i-set-up-a-vpn-for-china"></span>
 
-| Category | Blocked services |
-|---|---|
-| Search | Google, DuckDuckGo; Bing (intermittent) |
-| Email | Gmail (app and web) |
-| Messaging | WhatsApp, Telegram, Signal, Discord, Slack |
-| Social media | Facebook, Instagram, Twitter/X, Reddit, Snapchat, Pinterest, international TikTok |
-| Video | YouTube, Netflix, Twitch, Vimeo |
-| News | BBC, CNN, NYT, Reuters, Bloomberg, The Guardian and most major foreign outlets |
-| Cloud / productivity | Google Drive, Docs, Sheets, Meet; Dropbox; Notion; Medium |
-| Navigation | Google Maps (largely blocked; works intermittently and is unreliable), Google Translate (web and app) |
-| VPN infrastructure | VPN provider websites, most VPN app store listings |
+## Will my usual online services be available?
 
-As of 2026, the GFW blocks thousands of domains and services (source: chinasurvivalkit.com). The list changes — services occasionally get blocked or unblocked without announcement.
+The UK government’s China travel advice lists Google, Facebook, YouTube and X among blocked services and notes licensing rules for VPN services. Save your itinerary and booking details offline. Check arrangements for essential communications before buying connectivity.
 
-## What works in China without a VPN?
+[www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/safety-and-security)
 
-| Category | Working services |
-|---|---|
-| Email | Outlook / Hotmail, Yahoo Mail, Apple iCloud Mail |
-| Messaging | **WeChat** (dominant — set up before arrival), iMessage between Apple devices via phone number (requires iMessage enabled and cellular or Wi-Fi data) |
-| Navigation | **Amap / Gaode (高德地图)** ✅ recommended; Baidu Maps; Apple Maps |
-| Translation | Baidu Translate, DeepL, Microsoft Translator, WeChat in-app translation |
-| Payment | Alipay, WeChat Pay, most international banking apps |
-| Video | Bilibili, iQiyi, Youku, Tencent Video (Chinese content) |
-| Search | Baidu (Chinese-language results) |
+## Where can I get a local SIM card?
 
-**Public Wi-Fi note:** most free public Wi-Fi in China (airports, malls, metro stations) often requires SMS authentication to a Chinese mobile number to connect. Without a local SIM you may not be able to use it. A foreign eSIM or hotel Wi-Fi (which typically uses room credentials) avoids this barrier.
+Bring your passport or Foreign Permanent Resident ID Card to a service centre of a telecom operator such as China Mobile, China Telecom or China Unicom. Ask about data, voice minutes and the documents needed for the plan you want.
 
-## Can I access Google, Gmail and WhatsApp from my hotel in China?
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/quickguideservices/purchasingsimcards/)
 
-Usually not on the hotel Wi-Fi itself — like other in-country connections, standard hotel Wi-Fi runs through the Great Firewall, so Google, Gmail, WhatsApp and similar services are blocked unless you use a VPN or a foreign eSIM. Some business travelers report that certain international-chain hotels have had room Wi-Fi reaching international services without a VPN — one frequent visitor, for example, books Holiday Inn partly for this reason. **Treat this as individual travelers' past experience, not a guarantee:** it is not something we have verified, hotel network policies vary by property and change over time, and you should not count on it.
+<span id="foreign-esim--the-vpn-free-alternative"></span>
 
-If reliable access to Google / WhatsApp / office tools matters for your trip:
+<span id="how-does-a-foreign-esim-get-online-without-a-vpn"></span>
 
-- **Ask the hotel directly before booking** — "Does the room Wi-Fi have unrestricted international access, or will I need a VPN?"
-- **Bring your own option that doesn't depend on the hotel:** a foreign eSIM reaches international services without a VPN (covered in the foreign-eSIM section further down this page, and in [[wiki/concepts/sim-card.md]]), and a VPN — including a company VPN — set up before arrival is the standard business solution (see the VPN setup section further down this page).
+## Will a particular eSIM work on my phone?
 
-Don't rely on any single hotel's network for critical connectivity — carry your own eSIM or a tested VPN as the reliable path.
+The Ministry of Commerce says some operators offer eSIM service. Before buying, give the operator your exact handset model, purchase region and travel dates and ask which plan it can activate. Verify roaming and access to any service you depend on with your provider.
 
-## What should I set up before arriving in China?
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/quickguideservices/purchasingsimcards/)
 
-**Install and set up these apps before you leave home.** Several key setup steps — binding a foreign card, SMS verification, the WeChat vouching step — are significantly easier or only possible while you're still on your home carrier with a non-Chinese IP address.
+## Can I get online at Beijing Daxing Airport without a Chinese mobile number?
 
-Once in China:
-- Google Play is blocked (Android users without a VPN cannot download apps).
-- App Store works but is region-restricted for some apps — the Chinese App Store version differs from the international one.
-- SMS verification for new accounts is less reliable on a fresh Chinese SIM.
+Connect to BDIA-FREE-WIFI at Beijing Daxing International Airport (北京大兴国际机场). Its login page lets foreign visitors authenticate by photographing the passport information page. The airport also lists kiosk authentication. Once online, you can use the National Immigration Administration’s arrival-card service.
 
-### Must-Have Apps
+[english.beijing.gov.cn](https://english.beijing.gov.cn/latest/news/202512/t20251205_4322494.html)
 
-**1. Alipay** — Primary payment method. Accepted at the overwhelming majority of merchants, restaurants, transport, and attractions.
+## Can I connect to Wi-Fi at Shanghai Hongqiao Terminal 1 without a local phone?
 
-- Install: App Store / Google Play (available outside China)
-- Register with your foreign phone number
-- Complete passport identity verification in-app
-- Bind a Visa or Mastercard under **Me → Bank Cards → Add Bank Card** (skip the "Tour Pass" prompt if it appears)
-- Make a small test payment (≤ ¥10) to confirm the card works
-- Call your card issuer to notify them of China travel — some issuers block the Alipay merchant code without pre-trip notification
+At Shanghai Hongqiao International Airport Terminal 1 (上海虹桥国际机场一号航站楼), select Airport-FreeWiFi-HQ. Overseas visitors without a local number can authenticate with a passport. The terminal also offers access codes through self-service kiosks.
 
-See [[wiki/concepts/mobile-payment.md]] for fee details and limits.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Latest-WhatsNew/20261116/04a076e8d4094ffcbea6fdce548932fe.html)
 
-**2. WeChat** — Messaging, WeChat Pay (second payment method), Mini Programs (embedded apps for DiDi, 12306, attractions, hotels), and receiving money from local contacts.
+## Travel tip — Preparing for an unreliable connection
 
-> **Attraction booking via Mini Programs:** Many major attractions in China — including Tiananmen Square, the Palace Museum, and popular sites during peak periods — require advance ticket reservation through WeChat Mini Programs. Walk-up entry is often unavailable. During Golden Week and national holidays, unreserved visitors are turned away. Complete WeChat setup before departure so you can reserve tickets in advance. (Source: Reddit r/travelchina, 2026-05-08)
+Download the materials you will need while offline and test them in airplane mode. Keep hotel directions and tickets available separately from cloud storage. Agree on a second way to contact your companions if your usual service is unavailable.
 
-- Install: App Store / Google Play
-- Register with your foreign phone number
-- WeChat may require an existing WeChat contact to scan a QR code to verify your new account — this is a risk-control step that is frequently triggered for foreign-number registrations. Your contact must be registered for 6+ months, have WeChat Pay for 3+ months, not have vouched for another account in the past month, and not be banned. Find a qualifying contact and complete this step **before departure** — it can take days if done mid-trip.
-- Bind a Visa or Mastercard: **Me → Services → Wallet → Bank Cards → Add Bank Card**
-- Complete passport identity verification
+## Can I prepare an offline translation or map before arrival?
 
-See [[wiki/entities/wechat.md]] and [[wiki/concepts/mobile-payment.md]].
+In Google Translate, check whether a download is offered for your language pair and download it while connected. On iOS 17 or later, Apple Maps offers offline downloads in supported areas. Look up your exact destination and check for the download option before depending on it.
 
-**3. Amap (高德地图 / Gaode Maps)** — Google Maps is largely blocked by the Great Firewall and unreliable for navigation in China. Amap is the standard replacement for turn-by-turn navigation, transit directions, and ride-hailing.
+[support.google.com](https://support.google.com/translate/answer/6142473?hl=en) · [support.apple.com](https://support.apple.com/en-us/105084)
 
-- Install: Search "Amap" or "Gaode Maps" on App Store / Google Play
-- Open the app, switch to English (Settings → Language), and confirm the map loads your home city — this verifies the install is working before you need it in China
+## Travel tip — Asking about hotel Wi-Fi
 
-See [[wiki/entities/amap.md]].
+Ask the property how to sign in to its Wi-Fi, whether reception can help with registration, and how to contact your provider if the connection fails. Save the support contact while you still have internet access.
 
-**4. DiDi** — Main ride-hailing app. Cheaper and more available than taxis in most cities; English UI available.
+## Travel tip — Compare a seven-day Ubigi eSIM
 
-- Install: App Store / Google Play. On Google Play, install the **China DiDi** version — the global version does not work properly in mainland China.
-- Register with your foreign phone number
-- Bind a payment method (Alipay, WeChat Pay, or a foreign card directly in DiDi)
-- Set the app to English: Settings → Language
-- **Shortcut:** DiDi is also available as a Mini Program inside Alipay — if Alipay is already set up, you can hail rides directly from there without a separate DiDi app.
+Ubigi listed a one-off China unlimited-data eSIM for seven days at US$24 on its US-dollar product page when checked on 20 November 2026. Before buying, check the price in your currency, the activation conditions and the fair-use terms for high-speed data.
 
-See [[wiki/entities/didi.md]].
+[Ubigi China seven-day plan](https://cellulardata.ubigi.com/rates-and-coverage/china-data-plans/china-unlimited-7-days/)
 
-**5. 12306 (China Railway)** — Required for purchasing high-speed rail (高铁) tickets. Foreigners can book directly with a passport number.
+## Questions from travellers
 
-- Install: Search "12306" on App Store. On Android outside China, the Google Play version may have limited availability — install the APK from 12306.cn if needed, or book via the English website at [www.12306.cn](https://www.12306.cn)
-- Register an account with your passport number
-- Add passenger information under **My → My Passengers**
-- Confirm you can search routes — try a Beijing → Shanghai search to verify the account works
-
-See [[wiki/entities/12306.md]].
-
-**6. VPN (2+ providers)** — If you need access to blocked services (Google, Gmail, WhatsApp, Instagram, Facebook, YouTube, most Western news sites).
-
-- **Critical:** Download and test your VPN **before departure**. The VPN provider's own website is often blocked in China, making it impossible to download or purchase from within China.
-- Install your chosen VPN (see [VPN Setup](#how-do-i-set-up-a-vpn-for-china) below for provider recommendations)
-- Subscribe to a plan and verify it connects in your home country
-- Keep the app updated — outdated VPN apps often stop working after firewall updates
-- Note: using a VPN for payment apps (Alipay, WeChat Pay) can occasionally trigger fraud detection. Disable the VPN when completing payments if a transaction is declined unexpectedly.
-
-### Recommended Apps
-
-**7. Meituan (美团)** — Food delivery, hotel booking, bike-sharing, and local entertainment in one app.
-
-- Install: App Store / Google Play. The international version has partial English support; the full Chinese version has more features.
-- Register with your foreign phone number. An English-language interface is available in Settings, though some menus remain in Chinese.
-
-See [[wiki/entities/meituan.md]].
-
-**8. UnionPay "Nihao China"** — Supplementary payment app launched December 2025, designed specifically for foreign visitors. Accepts international Visa, Mastercard, and UnionPay cards. Useful as a backup if Alipay or WeChat Pay fails, and includes transit card top-up in major cities.
-
-- Install: Search "Nihao China" or "UnionPay Nihao China" on App Store / Google Play
-- Register and bind a card. Coverage is still expanding — treat it as a backup, not a primary.
-
-### Translation Apps
-
-| App | Works without VPN | Notes |
-|---|---|---|
-| **Baidu Translate** | ✅ Yes | Best VPN-free option; camera/photo translation included; free but ad-heavy |
-| **WeChat translate** | ✅ Yes | Tap-to-translate inside WeChat conversations; also translates menus via camera in the WeChat scan feature |
-| **Google Translate** | VPN required | Photo/camera mode works and is accurate; requires a VPN. Download language packs offline before arrival. |
-| **DeepL** | ✅ Yes | Good for European languages; limited Chinese UX |
-| **Microsoft Translator** | ✅ Yes | Solid camera translation; less popular but reliable |
-
-**Practical tip for restaurants:** QR-code menus are nearly universal in China and are in Chinese only. Google Translate camera mode (with a VPN) or Baidu Translate camera mode (no VPN needed) both work for photographing and translating menus. Baidu is slower but requires no VPN.
-
-### Additional Pre-Departure Checklist
-
-- [ ] **Download offline maps** (Apple Maps or Google Maps offline areas — for reference when VPN is down)
-- [ ] **Download Google Translate offline packs** for the languages you need
-- [ ] **Download entertainment** (Netflix shows, music) for offline use — assume VPN may fail at times
-- [ ] **Download Baidu Translate** as a VPN-free translation fallback
-
-## How do I set up a VPN for China?
-
-### Why You Need a VPN
-
-Without a VPN you lose access to Gmail, WhatsApp, Google Maps, YouTube, and most Western communication tools. For many visitors these are essential. A working VPN can restore access to most blocked services.
-
-### Install Before Arrival
-
-VPN provider websites are blocked in China. App stores remove VPN apps for users on Chinese accounts. **It is almost impossible in practice to download or set up a VPN after arrival.** Install at least two VPN apps and purchase subscriptions before your flight.
-
-### Reliable Providers (as of mid-2026)
-
-Approximate monthly costs below are typical long-term plan rates and shift with promotions — check each provider's site before buying. Rankings reflect the China-focused expat and traveler community as of mid-2026 and change as the GFW evolves; we have no independent China testing and could not re-test provider reliability in October 2026.
-
-| Provider | Protocol for China | Approx. cost | Reliability | Notes |
-|---|---|---|---|---|
-| **Astrill** | StealthVPN | ~$15–30/month | Often rated most consistently reliable by the China expat community; stealth protocol | Long track record against the GFW; expensive |
-| **ExpressVPN** | Lightway with obfuscation | ~$8–13/month | Well-regarded; Lightway protocol; frequent updates for China | 30-day money-back guarantee; in-app chat works even when VPN is down |
-| **Surfshark** | NoBorders mode | ~$2–5/month | Mixed reports; NoBorders mode helps but inconsistent | Budget option; enable NoBorders before arriving |
-| **NordVPN** | Obfuscated servers | ~$4–8/month | Has had significant difficulties in China in recent years; not recommended as primary | China's deep packet inspection has outpaced NordVPN's obfuscation; keep as backup only. |
-| **Shadowsocks** | SOCKS5 proxy | Self-hosted / varies | Very high (self-hosted) | Technical option for advanced users; harder to block than commercial VPNs; not user-friendly |
-
-> Note: providers that rely only on standard, un-obfuscated protocols (WireGuard, OpenVPN, IKEv2) often fail in China; providers with TLS-based obfuscation are the ones still reported to work. GFW detection improves continuously, so treat any provider ranking as perishable.
-
-VPN reliability changes rapidly as the GFW evolves. No provider guarantees connectivity. Performance degrades during politically sensitive periods (National Day, NPC sessions, etc.). Always install 2+ providers before departure.
-
-**Free VPNs rarely work.** Free VPNs often fail in China — they lack the obfuscation needed to evade the GFW and are typically blocked quickly. Experienced travelers overwhelmingly report that only paid, China-tested providers stand a chance.
-
-Check current reviews from China-focused tech sites (e.g. VPNmentor, Comparitech China guides) immediately before travel — GFW detection improves constantly and provider rankings shift.
-
-### Multi-VPN Backup Strategy
-
-**Subscribe to at least 2 VPN providers** (~$15–40/month total depending on the pair). This is the single most important VPN recommendation from experienced China travelers.
-
-- If one VPN gets blocked, switch immediately to the backup.
-- Recommended combinations: ExpressVPN + Astrill, or ExpressVPN + Surfshark.
-- Multiple travelers report catastrophic failures with single-VPN setups (stuck without Western internet for days, unable to download alternatives because VPN websites are also blocked).
-- During politically sensitive periods (National Day Oct 1, Party Congress), even the best VPNs struggle — backups become critical.
-
-### How Reliable Are VPNs?
-
-VPN reliability in China is not guaranteed. The GFW uses machine learning to detect and block VPN traffic. Connections degrade around politically sensitive dates (National Day, Party Congress, major anniversaries). Even reliable VPNs experience outages. Keep two providers installed and switch if one fails.
-
-**Peak-hour degradation:** VPN speeds often become unusable during 7–10 PM when network congestion is highest. Plan data-heavy tasks (video calls, streaming) outside these hours.
-
-**Battery drain:** Maintaining a VPN connection continuously drains battery significantly. Carry a power bank.
-
-### Legal Status for Foreign Visitors
-
-**Legal status (important):** The US State Department's China travel advisory warns that VPN use may be 'illegal in most cases' and may result in confiscation of your device, a fine, or detention (travel.state.gov, China travel advisory). The [UK FCDO](https://www.gov.uk/foreign-travel-advice/china/safety-and-security) notes that VPNs need to be licensed by the Chinese government. Travel and industry sources report that enforcement has historically targeted VPN providers and distributors rather than individual foreign tourists using VPNs for personal communication — we found no official confirmation of that. Travelers should be aware of the legal risk and make their own informed decision. This wiki provides information only — consult your country's official travel advisory.
-
-We know of no reports of airport security screening arriving travellers' devices for VPN apps. That is an absence of reports rather than a documented policy — this page has no authoritative source either way — and it does not lessen the legal risk described above.
-
-### VPN Troubleshooting
-
-When your VPN stops working in China, try these steps in order:
-
-1. **Switch server locations** — try Hong Kong, Japan, Singapore, or US servers.
-2. **Change protocols** — cycle through OpenVPN, Lightway (ExpressVPN), IKEv2, L2TP.
-3. **Force close and restart** the VPN app.
-4. **Clear browser cache and cookies** — some apps cache blocks even with VPN active. Try incognito/private browsing mode.
-5. **Restart your device** — sometimes the network stack needs a full reset.
-6. **Contact VPN support** — ExpressVPN and Astrill offer 24/7 chat. ExpressVPN's in-app chat works even when the VPN itself is down. Save support email addresses offline as backup.
-7. **Switch to backup VPN** — if the primary fails for 30+ minutes, activate your second provider.
-
-**Common timing issues:** VPN that worked yesterday may not work today — the GFW updates blocking lists continuously. Try again later; often connections restore within hours.
-
-### If You Forgot to Install VPN Before China
-
-This is a difficult situation because VPN provider websites are themselves blocked. Options:
-
-1. **Ask your hotel** — some hotels will help guests set up VPN on their devices, or offer business center computers with VPN access.
-2. **Use saved mirror links** — ExpressVPN provides special China mirror download URLs to subscribers. If you saved these in your notes app before arrival, they may still work.
-3. **Wait until Hong Kong or Macau** — the GFW does not apply there; you can freely download and configure VPN apps, then return to the mainland.
-4. **Airport WiFi** — upon landing, airport WiFi may allow initial VPN connections. Test immediately before leaving the airport.
-5. **Use another traveler's device** — as a last resort, briefly access a VPN website from a device that already has VPN working.
-
-**Prevention:** Save VPN setup guides as offline PDFs. Save mirror links in your notes app. Email VPN download links to yourself (accessible via Outlook/Yahoo which work without VPN).
-
-## How does a foreign eSIM get online without a VPN?
-
-A foreign eSIM (Airalo, Holafly, Nomad eSIM, Ubigi) routes data through gateways outside mainland China, so blocked services generally work without a VPN — a provider claim about routing, not an independent audit, and it applies to eSIM data only (hotel and public Wi-Fi are still filtered). Costs run from a few dollars for a small fixed-data pack to roughly $70–$77 for a 30-day unlimited plan (checked 2026-10-17) — the current per-provider pricing table and comparison live in [[wiki/concepts/sim-card.md]].
-
-**Trade-off:** eSIMs provide data only — no Chinese phone number (+86). If you need a +86 number for app registrations or SMS verification, you will need a local physical SIM in addition. See [how to get a Chinese phone number](/guides/chinese-phone-number/) for the options and which apps actually require one.
-
-For visitors staying up to a few weeks who don't need a local number, the eSIM approach is the most reliable connectivity solution.
-
-### eSIM + VPN Combinations
-
-All three providers below bypass the GFW via international roaming — none *requires* a VPN. The "built-in VPN" column indicates whether the provider also bundles a VPN app for added redundancy.
-
-| eSIM Provider | Built-in VPN? | Best for | Notes |
-|---|---|---|---|
-| **Holafly** | Yes (bundled) | Travelers who want zero setup hassle | Frequently recommended in traveler communities. Unlimited data. The bundled VPN can be slower than a dedicated VPN during peak evening hours — some carry a backup VPN. |
-| **Airalo** | No | Budget travelers comfortable with tech | Popular budget choice. Works without any VPN via roaming. Current plan pricing is maintained in [[wiki/concepts/sim-card.md]]. |
-| **Nomad eSIM** | No | Flexibility, ease of use and plan choice | Flexible fixed-data and unlimited plans for different trip lengths. Works without a separate VPN via international roaming, with hotspot/tethering support. Its 7-day unlimited plan is **$25** (2 GB/day at 4G/5G, then 1 Mbps; checked 2026-10-17). Holafly's China unlimited plans now start at 16 days, so compare current prices before buying. |
-
-Which one to pick depends on what you care about: a bundled VPN for redundancy (Holafly), a common budget choice for short fixed-data packs (Airalo), or both fixed-data and unlimited options with hotspot support (Nomad eSIM). All three route data outside the mainland, so the choice is about plan shape and price, not about firewall access.
-
-**How the bypass works:** A foreign travel eSIM from providers such as Nomad eSIM, Airalo or Holafly connects through *international roaming*, with mobile data routed through infrastructure outside mainland China (exit points vary by provider and plan) — so to the GFW you appear as an international roaming user. This allows services such as Google, WhatsApp and social media to remain accessible without a separate VPN. Standalone travel eSIMs such as Airalo and Nomad eSIM work this way, while some providers may also bundle a separate VPN service. Airalo's own documentation confirms "a VPN is NOT required" with its China eSIM (source: airalo.com, accessed 2026-10-17), and Nomad states the same for its China plans — "no external VPN needed" (nomadesim.com, accessed 2026-10-17). Note what this does and does not give you: the bypass is a *routing* effect. It changes **where your data exits**, not how it is encrypted — your connections to websites still run over ordinary HTTPS, exactly as they do at home. Nomad makes the same point about its own product, saying the eSIM "does not encrypt data in the same way a traditional VPN would" (nomadesim.com, accessed 2026-10-17). What a VPN adds on top is concealing **which** sites you connect to from the network carrying your traffic; an eSIM on its own does not do that. Both no-VPN statements above are provider claims rather than an independent routing audit, and some travelers still carry a separate VPN as a backup in case roaming routing is degraded — though note that Nomad's own help pages caution that running a third-party VPN alongside the eSIM "may interfere with its optimized functionality," so if your connection misbehaves, try turning the VPN off before assuming the eSIM is at fault.
-
-**VPN data overhead:** On capped data plans, VPN encryption adds roughly 20–30% extra data usage. Factor this into your data plan choice.
-
-**Dual-SIM strategy:** Some travelers buy a Holafly eSIM for data + VPN convenience, plus a local China Mobile physical SIM (~$10) for a Chinese phone number (useful for some local services; Alipay itself accepts foreign numbers). Best of both worlds.
-
-## Quick Reference: Blocked → Alternative
-
-| Blocked | Use instead | VPN needed? |
-|---|---|---|
-| Google Maps | Amap (高德地图) | No |
-| Google Translate | Baidu Translate / WeChat translate | No |
-| WhatsApp | WeChat | No |
-| Gmail | Outlook or Yahoo Mail | No (or VPN) |
-| YouTube | VPN, or Bilibili for Chinese content | Yes for YouTube |
-| Google Search | VPN | Yes |
-| Instagram / Twitter | VPN | Yes |
-
-## Does the Great Firewall apply in Hong Kong, Macau, and Taiwan?
-
-The GFW does **not** apply in Hong Kong, Macau, or Taiwan. All standard international services work normally in these territories without a VPN.
-
-## See Also
-
-- [[wiki/concepts/sim-card.md]] — foreign eSIM options that bypass GFW natively; local SIM options
-- [[wiki/concepts/mobile-payment.md]] — WeChat and Alipay setup before arrival
+- Do I need a VPN to access Google, WhatsApp and Instagram in China? — It depends on the network and the specific plan. A travel eSIM’s roaming data and the hotel’s local Wi-Fi can give you different access. [Will my usual online services be available?](#will-my-usual-online-services-be-available)
+- What is the best eSIM for tourists visiting China? — Compare plans for the same dates and check device support, hotspot use, top-ups and whether you need calls or SMS. [Will a particular eSIM work on my phone?](#will-a-particular-esim-work-on-my-phone)
+- Which VPNs still work in China in 2026? — Availability varies by network and time. [Will my usual online services be available?](#will-my-usual-online-services-be-available) · [Travel tip — Preparing for an unreliable connection](#travel-tip--preparing-for-an-unreliable-connection)
+- Can I download a VPN once I'm already in China? — Save the materials you need before the trip. [Travel tip — Preparing for an unreliable connection](#travel-tip--preparing-for-an-unreliable-connection)
+- Is it legal for tourists to use a VPN in China? — Consult the official travel advice and rules for your situation. A provider’s connectivity claim does not determine whether a particular use is permitted. [Will my usual online services be available?](#will-my-usual-online-services-be-available)

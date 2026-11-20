@@ -1,17 +1,24 @@
 ---
-title: Foreign Exchange and Cash in China
-date: 2026-05-04
-last_verified: 2026-09-20
+title: RMB cash, currency exchange and ATMs
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://www.you.co/sg/blog/china-atm-withdrawal-guide/
-  - https://wise.com/gb/blog/atms-in-china
-  - https://www.travelchinacheaper.com/how-to-exchange-money-in-china
-  - http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html
-  - https://en.nia.gov.cn/n147428/n147498/n147770/n147895/c158995/content.html
-  - https://english.shanghai.gov.cn/en-CustomsRegulations/20231212/9a3c7f512d464e0798be3fc76c8dd6f2.html
-  - https://www.bankofchina.com/sourcedb/whpj/enindex_1619.html
-sources:
-  - raw/12306-guide-for-foreign-business-visitors-2025.md
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+  - https://www.12306.cn/en/faq.html
+  - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html
+  - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
+  - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
+  - https://www.safe.gov.cn/tianjin/2021/0524/1665.html
+  - https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+  - https://www.safe.gov.cn/beijing/file/file/20250901/f03a39d891024861a8ce859dab124f06.pdf
+  - https://english.shanghai.gov.cn/en-BankingServices/20240204/dde94493721e442589a68c93ef933693.html
+  - https://www.quanzhou.gov.cn/zfb/hdjl/zxft/fthf/20151119/20151119/
+  - https://travel.state.gov/content/dam/NEWTravelAssets/pdfs/Checklist%20for%20Holiday%20Travel.pdf
+  - https://english.shanghai.gov.cn/en-PaymentMethods/20240313/6f4e58272f1a4cea9aec59c518915bdf.html
+  - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260920/4fc94c2f0e6b47e7939969415e5feb04.html
+  - https://www.xuancheng.gov.cn/OpennessContent/show/1562053.html
+  - https://english.beijing.gov.cn/latest/specials/essentialtipsfornewarrivals/paymentservices/202408/t20240830_3785647.html
+sources: []
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/accommodation.md
@@ -20,147 +27,216 @@ related:
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-05-06
-  notes: "2026-09-20 (review fix 5): third FAQ/body divergence on this page in one session, same cause each time — I rewrote the body table and did not re-read the FAQs against it. This round the outbound rule stopped being symmetric: RMB is still the 20,000-or-above rule in both directions, but foreign currency out is now governed by the entry declaration, so the FAQ's 'the same pair applies on the way out' had become false for half of what it covered. FAQ 1 now splits by direction and by currency. Also grounded FAQ 0, flagged twice by seo-review: it compared ATM withdrawal to 'exchanging cash at home', which the body never discusses; it now makes the comparison the body does support, against counter exchange. Standing rule for this page: frontmatter faqs are a second copy of the body's claims, they feed FAQPage JSON-LD, and SITE_OWNED_FIELDS means they do not sync — so any body edit here needs a FAQ pass in the same commit, not the next review round. --- 2026-09-20 (review fix 4): MY PREVIOUS NOTE WAS WRONG AND I DELETED A CORRECT CLAIM BECAUSE OF IT. I recorded that three sources were checked and none stated a no-limit rule, and removed 'no cap on bringing in' on that basis. The Shanghai municipal reprint of the GACC guide — which I had already fetched, extracted and searched — says verbatim: 'Foreign exchange control. There are no quantitative restrictions imposed on foreign currencies, traveler's checks, or letters of credit brought in.' It was in the text I already had. I missed it because I searched exact phrases (no limit, unlimited, no quantity, no restriction) while the source says 'no quantitative restrictions' — plural, with a word in between. A false negative produced by my search method, then written up as a finding about the sources. Search by word stem, and never record 'no source says X' on the strength of phrase matching. THE SAME PARAGRAPH ALSO SETTLES THE BANK-CERTIFICATE QUESTION I had labelled unverified: 'Customs shall release the cash at passengers' departure upon the declaration made at the last entry. Without a previous declaration record of foreign currencies in cash, or if the recorded amount is less than what the passengers carry at the current time, Customs shall release the discrepancies upon certificate issued by the Foreign Exchange Bureau or its authorized banks.' So the certificate requirement is real, but it attaches to the EXCESS OVER YOUR ENTRY DECLARATION, not to every departure above $5,000 — the page had the mechanism roughly right and the scope wrong, and my 'unverified' label was wrong too. Both FX rows are rewritten from that text. FOUND IN THE SOURCE AND RECORDED RATHER THAN RESOLVED: the guide contradicts itself on the threshold — its red-channel table says '$5,000 or above' while its foreign-exchange section says 'more than $5,000USD'. The page states both and advises declaring at exactly $5,000. The Shanghai reprint is added to verified_against; it carries 'Source: General Administration of Customs' on the page, so it is an official reprint rather than a third party — but it is a reprint, and the page says so. --- 2026-09-20 (review fix 3): the body and my own review note contradicted each other, and the note was the correct one. The note said GACC states a declaration trigger and cannot support 'no cap on bringing in'; the replacement body text then said GACC 'sets no maximum on what you may bring in'. I removed an over-attribution and wrote a new one into the same row. Checked three sources for a no-limit statement before deciding: GACC's passenger guide, the Shanghai municipal reprint of it, and NIA's financial-management page. NONE of them says there is no quantitative limit — all three give only the USD 5,000 declaration trigger. Secondary summaries do assert 'no quantitative limit', which is how it got in. The row now says what the sources say: a declaration trigger, with an explicit note that the guide does not address whether a ceiling exists, and an instruction not to assume either way. ADDED from NIA (2021-03-27, now in verified_against): the written declaration is not required for travellers making multiple entries on the same day or within a short period — a carve-out none of our pages carried. Pattern worth naming: this is the third time this session that FIXING an over-claim introduced a new one — pre-1911 ('no reachable primary source states it' while an unread law reportedly does), the cash FAQ boundary, and now this. When rewriting a sentence to remove an unsupported claim, check that the replacement is not itself unsupported. --- 2026-09-20 (review fix 2): seo-review blocked again, on a different half of the same error. The previous fix made the FAQ inclusive but I had only corrected the two FOREIGN-CURRENCY rows in the body table — the RMB row still read 'amounts above it must be declared'. So the FAQ was now more accurate than the body it is supposed to be grounded in, which is exactly what faq_grounding checks, regardless of which side is right. GACC applies 'or above' to both figures in the same sentence: 'RMB20,000 cash or above, or any other foreign currencies in cash equivalent to US$5,000 or above'. The RMB row now says so. Lesson beyond the boundary itself: when a threshold appears in several rows of one table, fixing the rows that prompted the review and leaving the sibling row is how a page ends up internally inconsistent in a new way. --- 2026-09-20 (review fix): the cash FAQ said 'up to RMB 20,000 … without declaring it at customs; above that you must declare', which puts the boundary on the wrong side. GACC lists 'RMB20,000 cash OR ABOVE' as the red-channel trigger, so exactly ¥20,000 already requires declaration. I corrected the body table in the same pass, explicitly checked the FAQ, and judged it consistent — it is not, because 'up to X without declaring' silently claims X itself is exempt. SECOND TIME THIS SESSION for the same boundary error: work-permit.md had 'a points score above 85' where the standard says 「85分以上」, which includes 85. Chinese 以上 and English 'or above' include the boundary; 'above' and 'up to' exclude it. When a threshold comes from a Chinese source, state the inclusive side explicitly rather than translating the preposition. Caught by seo-review faq_grounding, not by me. --- 2026-09-20: verified the customs cash rows against GACC's passenger clearance guide (english.customs.gov.cn/statics/88707c1e…), which is in this page's verified_against and became reachable again once the http:// misdiagnosis was fixed. THE NUMBERS ARE CORRECT: RMB 20,000 and USD 5,000 equivalent, and the same pair applies on the way out — GACC lists 'RMB20,000 cash or above, or any other foreign currencies in cash equivalent to US$5,000 or above' under BOTH the inward and outward red-channel tables. TWO ATTRIBUTIONS WERE NOT: (1) 'No cap on bringing in (source: customs.gov.cn)' — GACC states a declaration trigger, not the absence of a cap; the page was citing the source for a claim the source does not make, even though the practical effect is similar. Reworded to say what GACC actually establishes. (2) 'Carrying more than $5,000 out requires a permit issued by an authorized Chinese bank' is cited to customs.gov.cn and does not appear there. It is a foreign-exchange rule under a different authority; it may well be correct, but not on this source, so it is now labelled unverified. ADDED from the guide: travellers who bring in over $5,000 and plan to take it out later file TWO declaration forms on entry and keep the endorsed copy for departure — a concrete procedure the page did not carry. SCOPE: last_verified BUMPED to 2026-09-20 for the customs cash anchors only. ATM limits, per-transaction caps and the where-cards-work content were NOT re-verified and retain their earlier state."
-description: >-
-  Cash and currency in China for foreigners: ATM withdrawals, where foreign
-  cards work, how much cash to carry, and the USD 5,000 declaration threshold.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Check the border cash limit and find exchange options or local withdrawal guidance.
 faqs:
-  - q: Should I bring cash or use ATMs in China?
-    a: >-
-      Mobile pay covers most spending, but keep some cash for small vendors.
-      Withdrawing RMB from a Chinese ATM (Bank of China, ICBC) is usually more
-      convenient than counter exchange and lands close to the bank rate minus
-      fees — check your own bank's foreign-ATM charges first.
-  - q: How much cash can I bring into China?
-    a: >-
-      Coming in, there is no limit on the amount — only a declaration duty.
-      Declare RMB 20,000 in cash or above, or the equivalent of USD 5,000 or
-      above in foreign currency; the threshold is inclusive, so exactly ¥20,000
-      already needs the red channel. Going out differs by currency: RMB is the
-      same ¥20,000-or- above rule, but foreign currency is governed by what you
-      declared on entry — anything beyond that record needs a certificate from
-      the Foreign Exchange Bureau or an authorised bank. If you arrive with over
-      $5,000 and plan to leave with it, file the entry declaration and keep the
-      endorsed copy.
-  - q: Do shops in China accept foreign Visa or Mastercard?
-    a: >-
-      Direct foreign-card acceptance is limited mostly to international hotels,
-      large department stores and some chains. For everyday spending, bind your
-      card to Alipay or WeChat Pay instead.
+  - q: How much Chinese currency can I carry across the border?
+    a: The limit for Chinese renminbi cash is CNY 20,000 per person on each entry or exit. Foreign currency is subject to separate rules. The RMB limit is a cap, including when cash is declared.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+    fact_number: 5
+  - q: Where can I obtain RMB cash?
+    a: The Ministry of Commerce lists commercial banks, authorized money changers and self-service exchange machines. Look for currency-exchange signage. An ATM that accepts your international card is another option.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://www.12306.cn/en/faq.html
+    fact_number: 6
+  - q: How much can I withdraw at an ATM in Shanghai?
+    a: Shanghai’s guide gives CNY 3,000 as a typical per-transaction limit for overseas cards. The machine may have its own limit and your issuer may set daily or monthly limits. Check both before relying on a particular amount.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html
+    fact_number: 7
+  - q: What can I do if I lose my bank card?
+    a: The Ministry of Commerce advises reporting a lost bank card promptly to the issuing bank. Keep its contact number where you can find it without the card.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+    fact_number: 8
+  - q: How can I apply for a bank card in China?
+    a: The Ministry of Commerce directs foreign nationals to a commercial bank branch with their passport or Foreign Permanent Resident ID Card to apply for a bank card. Ask the branch which additional information it needs for your application.
+    sources:
+      - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
+    fact_number: 9
+  - q: Which tourism venues are covered by the bank-card acceptance policy?
+    a: A joint government circular calls for acceptance of domestic and overseas bank cards at three-star and higher tourist hotels, national 4A and 5A attractions, national and provincial tourist resorts, and national tourism and leisure districts. Check the card network with the specific venue before paying.
+    sources:
+      - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
+    fact_number: 10
+    aliases:
+      - q: Do shops in China accept foreign Visa or Mastercard?
+        fact_number: 3
+  - q: When must I declare foreign cash on entry?
+    a: On an ordinary entry into mainland China, make a written Customs declaration if the foreign cash you carry exceeds the equivalent of US$5,000. On the second and subsequent entries by a same-day or short-term frequent traveller, foreign cash must be declared regardless of amount. Renminbi cash has a separate cap.
+    sources:
+      - https://www.safe.gov.cn/tianjin/2021/0524/1665.html
+    fact_number: 11
+  - q: Do I need a permit to take foreign cash out of China?
+    a: For an ordinary departure without a recent inbound declaration covering the amount, up to the equivalent of US$5,000 generally needs no carrying permit. Above US$5,000 and up to US$10,000 inclusive, apply to a designated bank for a carrying permit. Larger amounts are ordinarily prohibited, with limited exceptions requiring foreign-exchange-authority approval. Frequent crossings and previously declared cash have separate rules.
+    sources:
+      - https://www.safe.gov.cn/tianjin/2024/0430/2466.html
+      - https://www.safe.gov.cn/beijing/file/file/20250901/f03a39d891024861a8ce859dab124f06.pdf
+    fact_number: 12
+  - q: Can I change leftover RMB back into foreign currency at Bank of China?
+    a: For RMB left over from an earlier exchange, Bank of China’s guide allows you to exchange back the equivalent of USD 500 or less in total per day using valid identification. Above that amount, bring the original exchange memo. The memo is valid for 24 months from the original exchange.
+    sources:
+      - https://english.shanghai.gov.cn/en-BankingServices/20240204/dde94493721e442589a68c93ef933693.html
+    fact_number: 13
+  - q: Where can I get small RMB notes for everyday payments?
+    a: Commercial bank branches offer exchanges for smaller RMB notes. Ask at the counter for small denominations or for a change purse (零钱包) containing the equivalent amount in mixed denominations. Some branches also offer self-service exchange.
+    sources:
+      - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
+    fact_number: 14
+  - q: Which logo should I look for when withdrawing RMB in Shanghai?
+    a: Look on the ATM for the payment network shown on your overseas bank card. Shanghai’s payment guide says compatible ATMs can dispense RMB. The machine and your card issuer may each set withdrawal limits.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html
+    fact_number: 15
+  - q: Which two security features can I check on a 2015-edition 100-yuan note?
+    a: Held up to the light, the 2015 note shows a white “100” watermark in the lower-left area on the front. The printed name 中国人民银行 near the top has raised lettering. These checks describe this denomination and edition.
+    sources:
+      - https://www.quanzhou.gov.cn/zfb/hdjl/zxft/fthf/20151119/20151119/
+    fact_number: 16
+  - q: Should I tell my bank that I plan to use my card overseas?
+    a: The US State Department’s overseas travel checklist suggests telling your bank or credit card company about the trip. Check how your issuer handles travel notices.
+    sources:
+      - https://travel.state.gov/content/dam/NEWTravelAssets/pdfs/Checklist%20for%20Holiday%20Travel.pdf
+    fact_number: 17
+  - q: Can I open an e-CNY wallet with an overseas mobile number?
+    a: Shanghai’s payment guide says visitors can register in the People’s Bank of China’s e-CNY app using an overseas mobile number. Check the wallet’s top-up options and use it at merchants that accept digital yuan.
+    sources:
+      - https://english.shanghai.gov.cn/en-PaymentMethods/20240313/6f4e58272f1a4cea9aec59c518915bdf.html
+      - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260920/4fc94c2f0e6b47e7939969415e5feb04.html
+    fact_number: 18
+  - q: What is China UnionPay (中国银联)?
+    a: China UnionPay operates a nationwide bank-card transaction processing and clearing network. The People’s Bank of China approved its establishment in 2002.
+    sources:
+      - https://www.xuancheng.gov.cn/OpennessContent/show/1562053.html
+    fact_number: 19
   - q: Where can I exchange money in China?
-    a: >-
-      Bank of China branches and airport counters exchange major currencies —
-      bring your passport. ATM withdrawals are often more convenient and
-      competitive than counter exchange.
+    a: For example, Beijing’s payment guide identifies bank counters and ATMs at the airport and in the city for obtaining RMB. Ask a bank counter about exchange of your particular notes and possible fees. For a card withdrawal, check the ATM and issuer terms.
+    sources:
+      - https://english.beijing.gov.cn/latest/specials/essentialtipsfornewarrivals/paymentservices/202408/t20240830_3785647.html
+    fact_number: 4
+    checked_at: 2026-11-20
 category: guide
+reader_question_numbers:
+  Should I bring cash or use ATMs in China?: 1
+  How much cash can I bring into China?: 2
 ---
 
-# Foreign Exchange and Cash in China
+# RMB cash, currency exchange and ATMs
 
-Mobile payment (Alipay / WeChat Pay) covers the overwhelming majority of daily spending in China, but cash remains essential for street vendors, small taxis, rural areas, and as a backup. This page covers ATM access, currency exchange, and cash handling.
+## How much Chinese currency can I carry across the border?
 
-## How much cash should I carry in China?
+The limit for Chinese renminbi cash is CNY 20,000 per person on each entry or exit. Foreign currency is subject to separate rules. The RMB limit is a cap, including when cash is declared.
 
-**Recommended on hand at all times: ¥200–500 in small bills** (¥10, ¥20, ¥50 denominations).
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html)
 
-This covers: street food and market stalls, older taxis without working QR placards, small-town transit, and emergencies when mobile payment fails. Larger cities (Beijing, Shanghai, Guangzhou, Shenzhen) rarely require it; smaller cities and rural areas depend on it more.
+## Where can I obtain RMB cash?
 
-## How do I withdraw cash from ATMs in China?
+The Ministry of Commerce lists commercial banks, authorized money changers and self-service exchange machines. Look for currency-exchange signage. An ATM that accepts your international card is another option.
 
-### Which Banks to Use
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [www.12306.cn](https://www.12306.cn/en/faq.html)
 
-Not all ATMs in China accept foreign cards. Look for the **Visa**, **Mastercard**, or **UnionPay** logo on the machine. The most reliable banks for foreign cards:
+## How much can I withdraw at an ATM in Shanghai?
 
-| Bank | Coverage | Notes |
-|---|---|---|
-| **Bank of China (中国银行)** | Nationwide, all major cities and tourist sites | Most consistently reliable for Visa and Mastercard; English ATM UI |
-| **ICBC (工商银行)** | Largest ATM network in China | Widely accepts foreign cards; good airport and city coverage |
-| **China Construction Bank (建设银行)** | Strong urban coverage | Generally reliable for Visa/Mastercard |
-| **HSBC / Citibank branches** | Major cities only | Lowest fees for cardholders of those banks |
+Shanghai’s guide gives CNY 3,000 as a typical per-transaction limit for overseas cards. The machine may have its own limit and your issuer may set daily or monthly limits. Check both before relying on a particular amount.
 
-Avoid: small rural bank ATMs and convenience-store ATMs — foreign card acceptance is unreliable.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html)
 
-### Fees and Limits
+## What can I do if I lose my bank card?
 
-| Item | Typical figure | Notes |
-|---|---|---|
-| Chinese bank ATM fee | **¥20–30 per transaction** (source: YouTrip 2026 ATM guide; varies by bank) | Charged by the Chinese bank regardless of your card issuer |
-| Your home bank fee | **1–3% + flat fee** | Set by your bank; varies widely — check before travel |
-| Per-transaction limit | **¥2,500–5,000** (source: YouTrip 2026 ATM guide) | Varies by machine and bank |
-| Daily withdrawal limit | **¥20,000** (source: Wise, as of June 2026; YouTrip cites a lower ¥10,000 cap, so confirm with your bank) | Across all ATM transactions in one day; your home bank may impose a lower limit |
+The Ministry of Commerce advises reporting a lost bank card promptly to the issuing bank. Keep its contact number where you can find it without the card.
 
-**Strategy:** withdraw larger amounts less frequently to minimise per-transaction fees. ¥2,000–3,000 at a time is practical for most short trips.
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html)
 
-### ATM Practical Tips
+## How can I apply for a bank card in China?
 
-- Use ATMs inside bank branches during business hours where possible — lower skimming risk and staff available if the card is retained.
-- If the ATM retains your card, go directly to the bank counter immediately. Bring your passport; the branch can hold the card for you to collect or advise on the return process. Retained foreign cards may not be returnable on the spot, so do not rely on a single card.
-- Some ATMs time out quickly; have your PIN ready before inserting the card.
+The Ministry of Commerce directs foreign nationals to a commercial bank branch with their passport or Foreign Permanent Resident ID Card to apply for a bank card. Ask the branch which additional information it needs for your application.
+
+[english.www.gov.cn](https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf)
+
+## Which tourism venues are covered by the bank-card acceptance policy?
+
+A joint government circular calls for acceptance of domestic and overseas bank cards at three-star and higher tourist hotels, national 4A and 5A attractions, national and provincial tourist resorts, and national tourism and leisure districts. Check the card network with the specific venue before paying.
+
+[english.www.gov.cn](https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html)
+
+## When must I declare foreign cash on entry?
+
+On an ordinary entry into mainland China, make a written Customs declaration if the foreign cash you carry exceeds the equivalent of US$5,000. On the second and subsequent entries by a same-day or short-term frequent traveller, foreign cash must be declared regardless of amount. Renminbi cash has a separate cap.
+
+[www.safe.gov.cn](https://www.safe.gov.cn/tianjin/2021/0524/1665.html)
+
+## Do I need a permit to take foreign cash out of China?
+
+For an ordinary departure without a recent inbound declaration covering the amount, up to the equivalent of US$5,000 generally needs no carrying permit. Above US$5,000 and up to US$10,000 inclusive, apply to a designated bank for a carrying permit. Larger amounts are ordinarily prohibited, with limited exceptions requiring foreign-exchange-authority approval. Frequent crossings and previously declared cash have separate rules.
+
+[www.safe.gov.cn](https://www.safe.gov.cn/tianjin/2024/0430/2466.html) · [www.safe.gov.cn](https://www.safe.gov.cn/beijing/file/file/20250901/f03a39d891024861a8ce859dab124f06.pdf)
+
+## Can I change leftover RMB back into foreign currency at Bank of China?
+
+For RMB left over from an earlier exchange, Bank of China’s guide allows you to exchange back the equivalent of USD 500 or less in total per day using valid identification. Above that amount, bring the original exchange memo. The memo is valid for 24 months from the original exchange.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-BankingServices/20240204/dde94493721e442589a68c93ef933693.html)
+
+## Where can I get small RMB notes for everyday payments?
+
+Commercial bank branches offer exchanges for smaller RMB notes. Ask at the counter for small denominations or for a change purse (零钱包) containing the equivalent amount in mixed denominations. Some branches also offer self-service exchange.
+
+[english.www.gov.cn](https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf)
+
+## Which logo should I look for when withdrawing RMB in Shanghai?
+
+Look on the ATM for the payment network shown on your overseas bank card. Shanghai’s payment guide says compatible ATMs can dispense RMB. The machine and your card issuer may each set withdrawal limits.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html)
+
+## Which two security features can I check on a 2015-edition 100-yuan note?
+
+Held up to the light, the 2015 note shows a white “100” watermark in the lower-left area on the front. The printed name 中国人民银行 near the top has raised lettering. These checks describe this denomination and edition.
+
+[www.quanzhou.gov.cn](https://www.quanzhou.gov.cn/zfb/hdjl/zxft/fthf/20151119/20151119/)
+
+## Should I tell my bank that I plan to use my card overseas?
+
+The US State Department’s overseas travel checklist suggests telling your bank or credit card company about the trip. Check how your issuer handles travel notices.
+
+[travel.state.gov](https://travel.state.gov/content/dam/NEWTravelAssets/pdfs/Checklist%20for%20Holiday%20Travel.pdf)
+
+## Can I open an e-CNY wallet with an overseas mobile number?
+
+Shanghai’s payment guide says visitors can register in the People’s Bank of China’s e-CNY app using an overseas mobile number. Check the wallet’s top-up options and use it at merchants that accept digital yuan.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-PaymentMethods/20240313/6f4e58272f1a4cea9aec59c518915bdf.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260920/4fc94c2f0e6b47e7939969415e5feb04.html)
+
+## What is China UnionPay (中国银联)?
+
+China UnionPay operates a nationwide bank-card transaction processing and clearing network. The People’s Bank of China approved its establishment in 2002.
+
+[www.xuancheng.gov.cn](https://www.xuancheng.gov.cn/OpennessContent/show/1562053.html)
+
+## Travel tip — Getting some cash for small purchases
+
+Check your issuer’s withdrawal and conversion fees. Before accepting an ATM conversion, read the currency and total shown. Put a spare card and a little cash somewhere separate from your primary wallet.
 
 ## Where can I exchange money in China?
 
-### Where to Exchange
+For example, Beijing’s payment guide identifies bank counters and ATMs at the airport and in the city for obtaining RMB. Ask a bank counter about exchange of your particular notes and possible fees. For a card withdrawal, check the ATM and issuer terms.
 
-| Channel | Rate quality | Speed | Notes |
-|---|---|---|---|
-| **Bank of China branch** | Best available (bank's selling rate — slightly below the mid-rate, but the closest rate available to retail customers) | Slow (30–60 min, queues) | Passport required; present at the FX counter; best for large amounts |
-| **Airport exchange counter** | Markedly worse than bank (commonly 10–20% worse, source: travelchinacheaper.com) | Fast | Useful for a small amount on arrival to cover immediate costs; avoid for large exchanges |
-| **ATM withdrawal** | Close to bank rate (minus fees) | Fast | Practically equivalent to bank rate for small/medium amounts; convenient |
-| **Hotel exchange desk** | Variable, often poor | Fast | Use only as a last resort |
-| **Unofficial street exchange** | Avoid | — | Counterfeit notes and short-changing are common; illegal |
+[english.beijing.gov.cn](https://english.beijing.gov.cn/latest/specials/essentialtipsfornewarrivals/paymentservices/202408/t20240830_3785647.html)
 
-**Recommended approach:** withdraw ¥500–1,000 from a Bank of China ATM on arrival for immediate needs; exchange larger amounts at a bank branch if you need significant cash for a longer trip.
+## Travel tip — Using an ATM when support is nearby
 
-### Supported Currencies
+If you might need help, choose a bank branch during its opening hours. Check the withdrawal and currency-conversion charges and keep the bank’s contact information.
 
-Major currencies exchangeable into RMB at Bank of China and most commercial banks:
-USD, EUR, GBP, JPY, HKD, AUD, CAD, CHF, SGD, KRW, THB.
+## Travel tip — Budgeting in the currency you actually spend
 
-Less common currencies may only be exchangeable at Bank of China main branches in major cities — confirm before travelling to smaller cities with non-major currencies.
+In RealChinaGuide’s September 2025 travel account the two visitors spent around €50 per room-night in Beijing and Shanghai. To use a historical budget, note whether a price was per room or per person, then look up the price in yuan for your dates and your own card’s conversion charges.
 
-### Exchange Rate Reference
+## Questions from travellers
 
-Bank of China publishes live exchange rates at bankofchina.com (English version available). The rate used at the counter is the bank's selling rate (卖出价), which is slightly worse than the mid-rate. ATM withdrawals use a rate close to the mid-rate plus the card network's conversion spread.
-
-### Converting Leftover RMB at Departure
-
-You can convert unused RMB back to foreign currency at bank branches or airport exchange counters. Keep your original exchange receipt (水单) — banks may require it to verify the RMB was obtained through legitimate channels, particularly for larger amounts. The reconversion process requires your passport.
-
-## How much cash can I bring into China?
-
-| Cash type | Limit | Declaration required |
-|---|---|---|
-| **RMB** | Declare at **¥20,000 or above**, in or out (GACC passenger guide) | The threshold is **inclusive** — GACC's red-channel table reads "RMB20,000 cash or above", so exactly ¥20,000 already requires declaration, not just amounts over it. Declared amounts may require supporting documents and the excess can be refused or confiscated. Rarely an issue for tourists |
-| **Foreign currency in** | **No quantitative limit** on the amount; declare at **USD $5,000 equivalent** | GACC's guide states it directly: *“There are no quantitative restrictions imposed on foreign currencies, traveler's checks, or letters of credit brought in.”* Declaring is the obligation, not a ceiling. **Note an inconsistency inside the guide itself**: its red-channel table says “$5,000 or above” while its foreign-exchange section says “more than $5,000USD”. Declare at exactly $5,000 to be safe. NIA adds a carve-out: no written declaration for travellers making multiple entries on the same day or within a short period |
-| **Foreign currency out** | Governed by what you **declared on entry** | GACC: *“Customs shall release the cash at passengers' departure upon the declaration made at the last entry.”* So file **two declaration forms on entry** if you bring in over $5,000 and plan to take it out — Customs endorses and returns one for departure. **If you have no entry declaration, or carry more than it records**, GACC releases only *“the discrepancies upon certificate issued by the Foreign Exchange Bureau or its authorized banks”* — that is the real basis for the “bank permit” you may read about elsewhere, and it attaches to the **excess over your declared amount**, not to every departure above $5,000 |
-
-Declarations are made on the inbound customs form. Keep receipts if you carry large amounts — customs may ask for evidence of legitimate source.
-
-## Do shops in China accept foreign cards?
-
-Beyond ATMs, foreign Visa and Mastercard can be used at the POS in:
-
-- 3-star and above hotels (required by the PBOC April 2024 circular, source: english.www.gov.cn — compliance varies in practice; see [[wiki/concepts/accommodation.md]])
-- International chain restaurants and major department stores
-- Some supermarkets (Walmart, Carrefour, Metro)
-
-Most ordinary merchants, street vendors, small restaurants, and budget shops do **not** accept foreign cards at POS — this is why Alipay or WeChat Pay with a bound foreign card is the practical daily solution (see [[wiki/concepts/mobile-payment.md]]).
-
-## Can a foreigner open a Chinese bank account?
-
-Foreign visitors can open a Chinese bank account and obtain a **UnionPay debit card** at commercial bank branches. This is useful for longer stays — a Chinese bank card enables full functionality in Alipay and WeChat Pay (including P2P transfers, higher limits, and services that reject foreign cards).
-
-**Requirements:** valid passport (or Foreign Permanent Resident ID card). Some banks may also request proof of residence, employment, or enrollment.
-
-**Process:** present your passport at the bank counter at any commercial bank outlet (Bank of China, ICBC, CCB, and others all offer this service). Allow time for paperwork and identity checks; the process is usually completed during a single branch visit.
-
-**Practical note:** keep the card secure. If lost, report it to the bank immediately. Short-term tourists generally do not need a Chinese bank card — binding a foreign card to Alipay / WeChat Pay is sufficient for daily spending.
-
-> Source: *A Guide to Working and Living in China as Business Expatriates 2025* (english.www.gov.cn).
-
-## See Also
-
-- [[wiki/concepts/mobile-payment.md]] — binding a foreign card to Alipay / WeChat Pay for daily spending
-- [[wiki/concepts/accommodation.md]] — foreign-card payment at hotel front desks
+- Should I bring cash or use ATMs in China? — You can combine an ATM withdrawal with a small cash backup. Look for your card network’s logo and check fees before confirming. [Where can I obtain RMB cash?](#where-can-i-obtain-rmb-cash) · [Travel tip — Getting some cash for small purchases](#travel-tip--getting-some-cash-for-small-purchases)
+- How much cash can I bring into China? — Check the separate customs rules for yuan and for foreign currency. Use the rule for the currency and amount you will actually carry. [How much Chinese currency can I carry across the border?](#how-much-chinese-currency-can-i-carry-across-the-border) · [When must I declare foreign cash on entry?](#when-must-i-declare-foreign-cash-on-entry)

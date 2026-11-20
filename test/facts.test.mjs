@@ -99,6 +99,20 @@ test('buildFacts tolerates malformed FAQ entries', () => {
   assert.equal(facts[0].id, 'sim-card.faq.1');
 });
 
+test('English and Spanish FAQ endpoints cannot overwrite each other', () => {
+  const english = buildPageModel(makeEntry(), 'guides');
+  const spanish = buildPageModel(makeEntry({
+    faqs: [{ q: '¿Necesito una VPN?', a: 'Normalmente no.' }],
+  }), 'guidesEs');
+  const allFacts = [...english.facts, ...spanish.facts];
+  assert.equal(new Set(allFacts.map(f => f.id)).size, allFacts.length);
+  assert.equal(english.facts[0].id, 'sim-card.faq.1');
+  assert.equal(spanish.facts[0].id, 'es.sim-card.faq.1');
+  assert.equal(buildFactDetail(english, 'sim-card.faq.1').fact.question, 'Do I need a VPN?');
+  assert.equal(buildFactDetail(spanish, 'es.sim-card.faq.1').fact.question, '¿Necesito una VPN?');
+  assert.equal(buildFactDetail(spanish, 'sim-card.faq.1'), null);
+});
+
 test('buildPageModel carries urls, dates, sections and facts', () => {
   const model = buildPageModel(makeEntry(), 'guides');
   assert.equal(model.schema_version, SCHEMA_VERSION);
@@ -149,4 +163,18 @@ test('buildFactDetail returns one fact plus its page, null when unknown', () => 
   assert.equal(detail.page.slug, 'sim-card');
   assert.equal(detail.page.confidence, 'audited');
   assert.equal(buildFactDetail(model, 'nope'), null);
+});
+
+test('a historical reader question keeps its number and links to the visible guidance', async () => {
+  const { buildReaderGuidanceDetails } = await import('../src/lib/facts.mjs');
+  const model = { lang: 'es', slug: 'city-guides', url: 'https://chinaguide.ai/es/guides/city-guides/', title: 'Ciudades' };
+  const question = '¿Cuántos días necesito?';
+  const body = '- ' + question + ' — Prueba dos ciudades en una semana. [Ruta](#ruta)';
+  const [detail] = buildReaderGuidanceDetails(model, body, { [question]: 3 });
+  assert.equal(detail.fact.id, 'es.city-guides.faq.3');
+  assert.equal(detail.fact.type, 'reader_guidance');
+  assert.equal(detail.fact.claim, 'Prueba dos ciudades en una semana.');
+  assert.deepEqual(detail.fact.sources, [model.url + '#ruta']);
+  assert.equal(detail.fact.verified_at, null);
+  assert.throws(() => buildReaderGuidanceDetails(model, '', { [question]: 3 }), /Missing reader answer/);
 });

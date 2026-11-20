@@ -1,134 +1,104 @@
 ---
-title: "Ele.me (Taobao Flash Purchase) for Foreigners (2026)"
-date: 2026-06-01
-sources:
-  - raw/realchinaguide-food-dining-2026.md
-  - https://www.ele.me (verified 2026-06-01, meta description confirms rebrand)
+title: "Food delivery in Shanghai: Taobao Instant Commerce"
+date: 2026-11-19
+sources: []
 related:
   - wiki/concepts/food-dining.md
   - wiki/concepts/mobile-payment.md
   - wiki/entities/meituan.md
   - wiki/entities/alipay.md
-last_verified: 2026-06-09
+last_verified: 2026-11-19
 verified_against:
-  - raw/realchinaguide-food-dining-2026.md
-  - https://www.ele.me
+  - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+  - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+  - https://www.samr.gov.cn/xw/zj/art/2026/art_9714ee2bef9244819134ef4ffdd14017.html
+  - https://apps.apple.com/us/app/id507161324
+  - https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-06-01
-  notes: "Rebrand confirmed via ele.me official meta description: '自2025年12月起，饿了么品牌更名为淘宝闪购'. Alibaba ownership, Alipay integration, ordering flow verified."
-description: >-
-  Taobao Flash Purchase (formerly Ele.me) is a major China food-delivery app:
-  ordering flow for foreigners, in-app translation, Alipay payment, and address
-  tips.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Check the ordering channel identified by Shanghai’s visitor guide and arrange collection at your accommodation.
 faqs:
-  - q: What is Taobao Flash Purchase / Ele.me?
-    a: >-
-      It's one of China's two big food-delivery platforms (rebranded from Ele.me
-      / 饿了么 in late 2025), owned by Alibaba and integrated with Alipay.
-  - q: Can foreigners order on Ele.me / Taobao Flash Purchase?
-    a: >-
-      Yes, if you can register (some features need a Chinese phone number) and
-      pay with Alipay. You'll need a delivery address in Chinese; the app shows
-      photos and offers in-app translation.
+  - q: How can I order a meal in Shanghai?
+    a: Shanghai’s guide describes ordering on Meituan (美团) and Taobao Instant Commerce (淘宝闪购). Choose a delivery address, review the order and check the total before paying. Ask your accommodation where deliveries can be collected.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+    fact_number: 5
+    aliases:
+      - q: Can foreigners order on Ele.me / Taobao Flash Purchase?
+        fact_number: 2
+  - q: What delivery details can I enter on Taobao Flash Shopping?
+    a: Enter the recipient’s name, phone number and delivery address, including the road, building and floor or flat number. The order notes field (订单备注) lets you add a message for the restaurant or delivery rider.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+    fact_number: 6
+  - q: Why do I see 淘宝闪购 when looking for 饿了么?
+    a: China’s market regulator identifies the delivery platform formerly known as Ele.me (饿了么) as Taobao Flash Shopping (淘宝闪购). Shanghai publishes its ordering instructions under the newer name.
+    sources:
+      - https://www.samr.gov.cn/xw/zj/art/2026/art_9714ee2bef9244819134ef4ffdd14017.html
+      - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+    fact_number: 7
+    aliases:
+      - q: What is Taobao Flash Purchase / Ele.me?
+        fact_number: 1
+  - q: Where can I download 淘宝闪购 (Taobao Flash Shopping) on iPhone?
+    a: Look for 淘宝闪购 (Taobao Flash Shopping) in the App Store. The US storefront listed the download at no charge on 20 November 2026. Service charges and purchases inside the app are separate. Check availability in the storefront used by your Apple account.
+    sources:
+      - https://apps.apple.com/us/app/id507161324
+    fact_number: 8
+    checked_at: 2026-11-20
   - q: Ele.me or Meituan — which should I use?
-    a: >-
-      Both are similar; Meituan has the larger nationwide merchant network,
-      while Ele.me / Taobao Flash Purchase ties tightly into Alipay. Try
-      whichever has better coverage where you're staying.
-  - q: How do I translate the Ele.me app?
-    a: >-
-      Tap the ··· menu and choose 翻译 (translate) for multi-language dish
-      descriptions, or use your phone's screen translation.
+    a: Shanghai lists both Meituan (美团) and Taobao Flash Shopping (淘宝闪购, formerly Ele.me) for food delivery. Enter the same address and compare available restaurants, delivery charges and total price. There is no need to choose from a market-share ranking.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+    fact_number: 3
+    checked_at: 2026-11-20
 category: app
+reader_question_numbers:
+  How do I translate the Ele.me app?: 4
 ---
 
-# Ele.me (Taobao Flash Purchase) for Foreigners (2026)
+# Food delivery in Shanghai: Taobao Instant Commerce
 
-> **Brand update (December 2025):** "饿了么" (Ele.me) has been officially rebranded to "淘宝闪购" (Taobao Flash Purchase). The domain ele.me still works and redirects. Older guides and some in-app references may still use the "饿了么" name.
+## How can I order a meal in Shanghai?
 
-Taobao Flash Purchase (formerly Ele.me) is China's second-largest instant delivery platform, owned by Alibaba. It integrates natively with Alipay and the Taobao ecosystem, and serves as a practical alternative (or backup) to [[wiki/entities/meituan.md|Meituan]] for foreigners ordering food delivery and other on-demand services.
+Shanghai’s guide describes ordering on Meituan (美团) and Taobao Instant Commerce (淘宝闪购). Choose a delivery address, review the order and check the total before paying. Ask your accommodation where deliveries can be collected.
 
-## Key Facts
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html)
 
-| Attribute | Detail |
-|-----------|--------|
-| Owner | Alibaba Group |
-| Current name | 淘宝闪购 (Taobao Flash Purchase) |
-| Former name | 饿了么 (Ele.me, used until Dec 2025) |
-| Positioning | 即时电商平台 (instant e-commerce platform) |
-| Market share | ~30-35% (Meituan holds ~65-70%) |
-| Payment | Alipay (primary); WeChat Pay also supported |
-| Best access method | Alipay mini-program or Taobao app (no separate download needed) |
-| English support | Minimal — similar to Meituan |
-| Coverage | 2000+ cities, 400M+ users |
+## What delivery details can I enter on Taobao Flash Shopping?
 
-## How do I access Taobao Flash Purchase (Ele.me)?
+Enter the recipient’s name, phone number and delivery address, including the road, building and floor or flat number. The order notes field (订单备注) lets you add a message for the restaurant or delivery rider.
 
-### Option 1: Alipay Mini-Program (Recommended for foreigners)
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html)
 
-1. Open Alipay.
-2. Search "淘宝闪购" or "饿了么" (old name still works) in the search bar.
-3. The mini-program opens directly — no separate download needed.
-4. Allow location permissions for nearby restaurant results.
+## Why do I see 淘宝闪购 when looking for 饿了么?
 
-### Option 2: Taobao App
+China’s market regulator identifies the delivery platform formerly known as Ele.me (饿了么) as Taobao Flash Shopping (淘宝闪购). Shanghai publishes its ordering instructions under the newer name.
 
-The service is now integrated into the Taobao app. If you have Taobao installed, look for the "闪购" (Flash Purchase) entry on the homepage.
+[www.samr.gov.cn](https://www.samr.gov.cn/xw/zj/art/2026/art_9714ee2bef9244819134ef4ffdd14017.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html)
 
-### Option 3: Standalone App (legacy)
+## Travel tip — Getting the right delivery
 
-- **iOS**: App Store → search "饿了么" or "淘宝闪购"
-- **Android**: Google Play → search "Eleme"
+Check the map pin, building, unit and contact number before paying. If two apps list the same meal, compare the delivered totals, including packaging and delivery charges.
 
-Note: The app may still show as "饿了么" in some app stores during the transition period.
+## Where can I download 淘宝闪购 (Taobao Flash Shopping) on iPhone?
 
-The Alipay mini-program route is preferred because it inherits your Alipay payment method automatically.
+Look for 淘宝闪购 (Taobao Flash Shopping) in the App Store. The US storefront listed the download at no charge on 20 November 2026. Service charges and purchases inside the app are separate. Check availability in the storefront used by your Apple account.
 
-## How do I order on Ele.me as a foreigner?
+[apps.apple.com](https://apps.apple.com/us/app/id507161324)
 
-1. Open 淘宝闪购 (via Alipay mini-program, Taobao, or standalone app).
-2. Browse restaurants by category, rating, or delivery time.
-3. Add items to cart — dish photos and ratings are visible.
-4. Set delivery address in Chinese characters (same as Meituan: paste hotel address from front desk).
-5. Checkout and pay with Alipay.
-6. Track delivery in real-time within the app.
-7. Digital confirmation/receipt appears in your orders (订单).
+## Ele.me or Meituan — which should I use?
 
-The ordering flow is nearly identical to Meituan once set up.
+Shanghai lists both Meituan (美团) and Taobao Flash Shopping (淘宝闪购, formerly Ele.me) for food delivery. Enter the same address and compare available restaurants, delivery charges and total price. There is no need to choose from a market-share ranking.
 
-## Tips for Foreigners
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html)
 
-- **Use as Meituan backup.** Some restaurants are exclusive to one platform. If you cannot find a restaurant on Meituan, check 淘宝闪购.
-- **Payment fallback.** If Meituan payment fails, 淘宝闪购 through Alipay often works since it uses Alipay's payment infrastructure directly.
-- **Same address setup.** Paste the same Chinese hotel address you use for Meituan.
-- **In-app translation.** Tap the ··· menu then 翻译 for multi-language dish descriptions.
-- **Alipay/Taobao bundled promotions.** Frequently offers discounts for Alipay/Taobao users (coupons appear in Alipay homepage).
-- **Search tip:** Both "饿了么" and "淘宝闪购" work when searching in Alipay/WeChat. Use whichever appears.
+## Questions from travellers
 
-## Should I use Taobao Flash Purchase or Meituan?
-
-| Scenario | Recommendation |
-|----------|---------------|
-| Default food delivery | Meituan (larger selection, broader coverage) |
-| Restaurant only on one platform | Check both; some are exclusive |
-| Meituan payment issues | Use 淘宝闪购 via Alipay as backup |
-| Already in Alipay/Taobao | 淘宝闪购 mini-program is convenient (no app switch) |
-| Alipay/Taobao promotions available | 淘宝闪购 may be cheaper with coupons |
-
-## What are Ele.me's limitations for foreigners?
-
-- Interface is predominantly Chinese — same challenge as Meituan.
-- Requires Alipay or WeChat Pay (no direct foreign card payment).
-- Customer support is Chinese-language only.
-- Coverage in smaller cities is weaker than Meituan (though 2000+ cities covered).
-- Name transition may cause confusion — some searches/references still use "饿了么".
-
-## See Also
-
-- [[wiki/concepts/food-dining.md]] — Complete food and dining guide for foreigners
-- [[wiki/entities/meituan.md]] — Primary food delivery alternative
-- [[wiki/entities/alipay.md]] — Required payment method (Alipay setup)
-- [[wiki/concepts/mobile-payment.md]] — Payment setup overview
+- How do I translate the Ele.me app? — If the interface is unfamiliar, try translating a screenshot before submitting an order. [Travel tip — Getting the right delivery](#travel-tip--getting-the-right-delivery)

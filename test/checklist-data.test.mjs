@@ -11,16 +11,10 @@ const source = readFileSync(
   'utf8',
 );
 
-// ---- fact guard: nationwide visa-free count is 50 (NIA list, 2026-02-17) ----
-test('visa-free country count is 50, not 59 (59 is the Hainan-only program)', () => {
-  assert.ok(!source.includes('59 countries'), 'stale "59 countries" claim found in checklist.astro');
-  assert.ok(source.includes('50 countries'), 'expected the corrected "50 countries" claim in checklist.astro');
-  // "unilateral" keeps the claim aligned with the visa-types FAQ: bilateral
-  // mutual-exemption countries (Singapore, UAE, Thailand, ...) are not in the 50.
-  assert.ok(
-    source.includes('unilateral visa-free entry'),
-    'the 50-country claim must be qualified as "unilateral visa-free entry"',
-  );
+test('checklist asks for the entry route and covers uncertain travellers without assigning eligibility by nationality', () => {
+  assert.match(source, /Your planned entry route/);
+  assert.match(source, /value="unsure"/);
+  assert.doesNotMatch(source, /USA \(240-hour transit only|Other \(visa required\)|\d+ countries qualify/);
 });
 
 // ---- link guard: checklist data links must use the canonical trailing-slash form ----

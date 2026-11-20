@@ -1,312 +1,271 @@
 ---
-title: Emergency and Safety for Foreign Visitors
-date: 2026-06-12
-last_verified: 2026-07-17
+title: Emergency contacts and a lost passport in China
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+  - https://www.gov.uk/foreign-travel-advice/china/getting-help
+  - https://en.nia.gov.cn/n147418/n147463/c183401/content.html
+  - https://travel.gc.ca/destinations/china
+  - https://english.shanghai.gov.cn/en-MobileAndInternet/20241211/32ddf9d6f6f1464bb982a90846261d50.html
+  - https://english.shanghai.gov.cn/en-EmergencyNumbers/20240104/8eec5a3d2b864187af8f383cc6b94ae5.html
   - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
-  - https://chinasurvivalkit.com/blog/is-china-safe-tourists
-  - https://theroamingrenegades.com/scams-in-china-beijing-tea-house-scam-fake-money-shanghai/
-  - https://chinaoffbeat.com/blog/avoid-scams-in-china-travel-guide
-  - https://www.chinalegalexperts.com/news/emergency-numbers-and-getting-help-in-china
-  - https://www.chinalegalexperts.com/news/lost-my-passport-and-visa-in-china
-  - https://www.chinadiscovery.com/chinese-visa/lost-passport-in-china.html
-  - https://china.usembassy-china.org.cn/services/emergency-contact/
-  - https://www.intrepidtravel.com/us/china/is-china-lgbtqia-friendly
-  - https://www.pacificprime.com/blog/travel-insurance-in-china.html
-  - https://safetywing.com/nomad-insurance/pricing
-  - https://www.worldnomads.com/travel-insurance/
-  - https://chinasurvivalkit.com/blog/china-police-passport-check-guide
-  - https://en.nia.gov.cn/n147418/n147458/c155978/content.html
-  - https://www.fmprc.gov.cn/eng/wjb/zzjg_663340/lss_665290/xgxw_665292/202406/t20240606_11405794.html
-sources:
-  - raw/realchinaguide-safety-guide-2026.md
+  - https://english.shanghai.gov.cn/en-ImmigrationCustoms/20240409/0a88d0dfa144414884f91996f6b23e64.html
+  - https://www.hko.gov.hk/en/informtc/precaution.htm
+  - https://www.mem.gov.cn/kp/zrzh/202208/t20220809_419856.shtml
+  - https://english.shanghai.gov.cn/en-EmergencyNumbers/20241210/cbc5280b9f96440a93234bfc5e0c1023.html
+  - https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html
+  - https://travel.gc.ca/assistance/embassies-consulates/china
+  - https://english.beijing.gov.cn/travellinginbeijing/quickguideontravelservices/traveltips/202108/t20210811_2466839.html
+sources: []
 related:
   - wiki/concepts/health-medical.md
   - wiki/concepts/accommodation.md
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/language-barrier.md
   - wiki/concepts/tibet-permits.md
+  - wiki/entities/didi.md
+  - wiki/concepts/shopping-tax-refund.md
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-15
-  citation_check: null
-  notes: "2026-07-17: Added a 'Getting Help in Person' section (approach nearby police / attraction staff / hotel front desk when a language barrier makes phone lines hard, with 110/120/119 still the route for genuine emergencies), per traveler feedback. Grounded in the page's own stated fact that 110/120 operators are typically Chinese-only; no new external source added. Other sections carried forward from the 2026-06-15 audit, not re-verified this round; page_audit unchanged."
-description: >-
-  Staying safe in China as a foreigner: emergency numbers (110 police, 120
-  ambulance, 119 fire), common scams, lost-passport steps, and the 12345
-  hotline.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Save the numbers for urgent help and find guidance on replacement travel documents.
 faqs:
-  - q: What are the emergency numbers in China?
-    a: >-
-      Police 110, ambulance 120, fire 119. The 12345 government service hotline
-      handles non-emergency help and complaints, though whether you reach
-      English support depends on the city.
-  - q: Is China safe for tourists?
-    a: >-
-      Violent crime against tourists is very rare and most travelers, including
-      solo female travelers, feel safe. The main risks are scams and petty theft
-      in crowded tourist areas — take normal precautions.
-  - q: What are the most common scams in China?
-    a: >-
-      The classic ones are the tea-house / bar 'invitation' scam (a friendly
-      stranger runs up a huge bill), the art-student gallery scam, and fake
-      taxis. If a stranger picks the venue and drinks heavily, be cautious — and
-      you can report scams via 110 or the 12345 hotline.
-  - q: What should I do if I lose my passport in China?
-    a: >-
-      Report it to the local police for a loss report, contact your embassy or
-      consulate for an emergency travel document, and apply for a replacement
-      visa stamp at the local exit-entry administration.
+  - q: Which numbers should I save for mainland China?
+    a: Call 110 for police, 119 for fire and 120 for emergency medical assistance. For immigration or entry and exit enquiries, call 12367.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://www.gov.uk/foreign-travel-advice/china/getting-help
+    fact_number: 5
+    aliases:
+      - q: What are the emergency numbers in China?
+        fact_number: 1
+  - q: What if I lose my passport after entering under a mutual visa exemption?
+    a: Report the loss to the police and contact your consulate. Under NIA’s guidance for mutual visa exemption, border inspection checks identity and entry records or supporting documentation when you present a replacement travel document to depart. Ask what documentation your circumstances require.
+    sources:
+      - https://en.nia.gov.cn/n147418/n147463/c183401/content.html
+    fact_number: 6
+  - q: What should I watch for when a stranger invites me out?
+    a: Canada’s travel advisory warns about unsolicited invitations to practise English or visit a teahouse, gallery or unfamiliar venue. Its taxi advice is to use a licensed taxi or reputable ride service and request the meter, or agree on the fare before departure if there is no meter.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 7
+  - q: What can I do if I lose a phone linked to my mobile wallet?
+    a: Contact the mobile operator to suspend the SIM and contact your bank about linked cards. Shanghai’s lost-phone guide lists 95188 for an Alipay account freeze and 95017 for WeChat Pay support within China.
+    sources:
+      - https://english.shanghai.gov.cn/en-MobileAndInternet/20241211/32ddf9d6f6f1464bb982a90846261d50.html
+    fact_number: 8
+  - q: Which Shanghai public-service number handles my question?
+    a: For non-emergency government services in Shanghai, call 12345. The municipal directory lists 12306 for train tickets, 12366 for tax and 12360 for Customs.
+    sources:
+      - https://english.shanghai.gov.cn/en-EmergencyNumbers/20240104/8eec5a3d2b864187af8f383cc6b94ae5.html
+    fact_number: 9
+  - q: When can typhoons disrupt travel on China’s coast?
+    a: Typhoons normally affect the southern and eastern coasts from May to November. Storms can disrupt flights and other transport. Check local weather warnings and your carrier’s updates before travelling.
+    sources:
+      - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
+    fact_number: 10
+  - q: Where should I take extra care with belongings and transport?
+    a: Canada’s travel advisory reports pickpocketing and phone or bag theft in tourist areas and on public transport, including overnight trains. It specifically flags scam approaches around the Bund (外滩) and East Nanjing Road (南京东路) in Shanghai. Use marked, metered taxis and keep your drink in sight.
+    sources:
+      - https://travel.gc.ca/destinations/china
+      - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
+    fact_number: 11
+  - q: What should I do in Shanghai if I lose my passport?
+    a: Report the loss to Shanghai’s public security exit-entry administration. Take its loss report to your consulate to request a replacement passport. Complete the corresponding residence formalities within 30 days of the report being issued, and update your accommodation registration with the new passport number.
+    sources:
+      - https://english.shanghai.gov.cn/en-ImmigrationCustoms/20240409/0a88d0dfa144414884f91996f6b23e64.html
+    fact_number: 12
+  - q: What does the UK travel advisory say about same-sex relationships in China?
+    a: The UK Foreign Office states that same-sex relationships are legal in China. It cautions travellers that public displays of affection may attract negative attention. Experiences can vary by setting.
+    sources:
+      - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
+    fact_number: 13
+  - q: Where should I shelter during a typhoon?
+    a: If you are already in a safe building, stay inside and move away from exposed windows and glass doors. Follow local evacuation instructions if your location is at risk of flooding.
+    sources:
+      - https://www.hko.gov.hk/en/informtc/precaution.htm
+      - https://www.mem.gov.cn/kp/zrzh/202208/t20220809_419856.shtml
+    fact_number: 14
+  - q: Can I call the emergency services in English in Shanghai?
+    a: Yes. Shanghai lists English for police (110), fire (119) and ambulance (120). Tell the operator where you are and what happened. For a fire, give the street address or a nearby landmark and say whether anyone is trapped or injured.
+    sources:
+      - https://english.shanghai.gov.cn/en-EmergencyNumbers/20241210/cbc5280b9f96440a93234bfc5e0c1023.html
+    fact_number: 15
+  - q: What does Canada’s travel advisory say about video surveillance in China?
+    a: Canada advises travellers that Chinese law enforcement widely uses video surveillance and facial recognition, including to monitor demonstrations.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 16
+  - q: Should I consider earthquake risk when travelling in China?
+    a: Canada’s travel advisory identifies China as an active seismic zone where earthquakes can occur. Follow local emergency instructions if an earthquake affects your trip.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 17
+  - q: What security measures should I expect when travelling in Xinjiang?
+    a: Canada’s regional advisory describes a heightened police presence and security measures in Xinjiang. Read the current regional advisory when planning your route.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 18
+  - q: What should I do if the ground starts shaking?
+    a: If indoors, drop down, protect your head and neck under sturdy furniture if available, and hold on. Stay inside while the ground is shaking and avoid lifts. If you are already outside, move away from buildings and overhead hazards to an open area.
+    sources:
+      - https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html
+    fact_number: 19
+  - q: How can Canadians reach their embassy in Beijing during business hours?
+    a: Global Affairs Canada lists +86 10 5139 4000 for Canadian citizen services in Beijing during business hours. Use the embassy directory for the current after-hours options.
+    sources:
+      - https://travel.gc.ca/assistance/embassies-consulates/china
+    fact_number: 20
+  - q: What number does Beijing give for a traffic accident?
+    a: Call 122 for the traffic police and give the location of the accident. Beijing’s travel guide says traffic police will attend the scene.
+    sources:
+      - https://english.beijing.gov.cn/travellinginbeijing/quickguideontravelservices/traveltips/202108/t20210811_2466839.html
+    fact_number: 21
+  - q: What does UK travel advice say about personal safety for women in China?
+    a: The UK advises keeping control of your drink and declining drinks from strangers. It says sexual assaults are rare but possible and flags a potentially higher risk for women travelling alone or with female friends.
+    sources:
+      - https://www.gov.uk/foreign-travel-advice/china/safety-and-security
+    fact_number: 22
 category: guide
+reader_question_numbers:
+  Is China safe for tourists?: 2
+  What are the most common scams in China?: 3
+  What should I do if I lose my passport in China?: 4
 ---
 
-# Emergency and Safety for Foreign Visitors
+# Emergency contacts and a lost passport in China
 
-## What are the emergency phone numbers in China?
+## Which numbers should I save for mainland China?
 
-| Service | Number | Notes |
-|---|---|---|
-| **Police** | **110** | Nationwide; report crimes, request help |
-| **Ambulance** | **120** | Nationwide; Chinese-speaking operators — see [[wiki/concepts/health-medical.md]] |
-| **Fire** | **119** | Nationwide |
-| **Traffic accident** | **122** | Road incidents; police then attend |
-| **Beijing medical (additional)** | **999** | Beijing only; some English support |
-| **Government services hotline** | **12345** | Complaints, non-emergency assistance; operated by local governments; English support varies by city |
-| **Consular protection hotline** | **12308** | China's Ministry of Foreign Affairs 24/7 line — serves **Chinese citizens** seeking help from Chinese embassies abroad, **not** foreign nationals inside China. As a foreign visitor, contact **your own** country's embassy or consulate instead (see Lost or Stolen Passport below) |
+Call 110 for police, 119 for fire and 120 for emergency medical assistance. For immigration or entry and exit enquiries, call 12367.
 
-**Practical tips when calling:**
-- Speak slowly and clearly. Operators at 110 and 120 typically speak Chinese only — use a translation app or ask a bystander to call for you.
-- State your **location first** — give the address in Chinese if possible. Photograph your hotel's address card (in Chinese) before going out each day.
-- For 120 (ambulance), also see the Language and Hospital sections in [[wiki/concepts/health-medical.md]] for further detail on medical emergencies.
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/getting-help)
 
-## Getting Help in Person
+## What if I lose my passport after entering under a mutual visa exemption?
 
-Because 110 and 120 operators usually speak only Chinese, approaching someone nearby is often the faster, more practical first move when something goes wrong — as long as there is no immediate life-threatening emergency. People who can help on the spot, or make the right call for you:
+Report the loss to the police and contact your consulate. Under NIA’s guidance for mutual visa exemption, border inspection checks identity and entry records or supporting documentation when you present a replacement travel document to depart. Ask what documentation your circumstances require.
 
-- **Uniformed police, traffic police, or auxiliary police (辅警, fǔjǐng)** on the street or at intersections.
-- **Staff at scenic areas and attractions** — ticket booths, information desks, and site security deal with foreign visitors routinely.
-- **Your hotel front desk** — often the single most useful contact: staff usually speak some English, already know your location, and can call the police, an ambulance, or a taxi and explain the situation in Chinese for you.
-- **Metro and railway station staff, mall security, and shop assistants.**
-- **Community / neighborhood service workers (社区工作人员)** in residential areas.
+[en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183401/content.html)
 
-If language is the barrier, show the person a translation-app message describing your problem. For a genuine emergency — a crime in progress, a medical crisis, or a fire — still call **110 / 120 / 119** (or have someone call for you), and remember you'll need a police report (报案回执) for anything involving insurance or a lost passport. In-person help and the hotlines work together: find someone nearby to help you act, and use the emergency numbers for the formal, urgent response.
+## What should I watch for when a stranger invites me out?
 
-## How safe is China for tourists?
+Canada’s travel advisory warns about unsolicited invitations to practise English or visit a teahouse, gallery or unfamiliar venue. Its taxi advice is to use a licensed taxi or reputable ride service and request the meter, or agree on the fare before departure if there is no meter.
 
-China is one of the safer countries in the world for physical crime by global standards. Violent crime against tourists is rare.
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-**Petty theft** does occur in crowded tourist areas, subway systems, markets, and on overnight trains. Standard precautions apply: use a bag that closes, keep your phone in a front pocket, and watch your belongings on long train journeys. Compared with major European tourist destinations, petty theft is less prevalent, but not absent (source: chinasurvivalkit.com; UK FCDO travel advice).
+## What can I do if I lose a phone linked to my mobile wallet?
 
-**Cameras and surveillance:** China has an extensive CCTV network in public spaces. This is not a safety threat to tourists but it does mean public behaviour — particularly anything that could be construed as a protest or politically sensitive activity — is monitored. This is a behavioural expectation to be aware of, not a reason to avoid travel.
+Contact the mobile operator to suspend the SIM and contact your bank about linked cards. Shanghai’s lost-phone guide lists 95188 for an Alipay account freeze and 95017 for WeChat Pay support within China.
 
-**Passport carry requirement:** Chinese law requires foreigners aged 16 and above to carry their **original passport** (or a valid foreign residence permit) **at all times** and to present it for inspection by public security authorities. This is a legal obligation, not a discretionary one: Article 38 of the Exit and Entry Administration Law states that foreigners who have reached the age of 16 "shall carry with them their passports or other international travel documents, or foreigners' stay or residence permits, and accept the inspection of public security organs." A printed copy or phone photo is **not** a legal substitute — always carry the physical document. Some officers may, in practice, be satisfied with a clear photo during a routine check, but they are not legally obliged to accept one, so you cannot rely on this. Failing to carry or present the document can lead, under Article 76 of the same law, to a warning and a fine of up to RMB 2,000, as well as being escorted to retrieve it or, in worst cases, detention while your identity is confirmed (source: Exit and Entry Administration Law of the PRC, Articles 38 and 76, en.nia.gov.cn; chinasurvivalkit.com). Keep a separate photocopy or phone photo of your passport data page and visa as a **backup** for use after a loss, not as a stand-in for carrying the original.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-MobileAndInternet/20241211/32ddf9d6f6f1464bb982a90846261d50.html)
 
-**Solo female travelers:** generally very safe. You can move around urban areas, including late at night, with minimal worry. Standard big-city precautions (well-lit streets, booked transport) are adequate. Traveler reports confirm walking alone in Beijing, Shanghai, Xi'an, and Guilin at all hours without incident — the most common annoyance cited is aggressive street vendors rather than any personal safety threat (source: chinasurvivalkit.com; scenerytrip.com; realchinaguide.com). The UK FCDO (safety-and-security page, accessed June 2026) notes that while serious crime against foreigners is rare, 'women, travelling alone or with female friends, could be at higher risk' of drink spiking. Standard precautions: avoid unmarked taxis, don't leave drinks unattended, and share your itinerary with someone.
+## Which Shanghai public-service number handles my question?
 
-**Hostel safety:** Hostels with ratings of 8.5+ on Trip.com or Hostelworld are generally safe. Lockers are provided for valuables. Most travelers report no safety issues. Choose well-reviewed hostels and use the provided locker (source: realchinaguide.com).
+For non-emergency government services in Shanghai, call 12345. The municipal directory lists 12306 for train tickets, 12366 for tax and 12360 for Customs.
 
-**LGBTQ+ travelers:** same-sex relationships are not criminalised in China. Public displays of affection draw attention and are generally discouraged — this applies to same-sex and opposite-sex couples alike in Chinese cultural norms. Major cities (Beijing, Shanghai, Chengdu in particular) have established queer scenes and are more tolerant. Rural areas are more conservative. There is no legal framework for same-sex partnerships. Homophobic violence is rare. Exercise the same discretion you would in any socially conservative urban environment (source: intrepidtravel.com; wildchina.com).
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-EmergencyNumbers/20240104/8eec5a3d2b864187af8f383cc6b94ae5.html)
 
-## What are the most common scams in China?
+## When can typhoons disrupt travel on China’s coast?
 
-China's scams are well-documented and almost entirely predictable. Knowing them in advance is the best defence.
+Typhoons normally affect the southern and eastern coasts from May to November. Storms can disrupt flights and other transport. Check local weather warnings and your carrier’s updates before travelling.
 
-### Tea Ceremony / Teahouse Scam
+[www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/safety-and-security)
 
-**How it works:** A friendly English-speaking "student" (often a young woman) approaches you near a major tourist site and starts a conversation. They invite you to join them for a "traditional tea ceremony" at a nearby teahouse. Once inside, you share tea and snacks. When the bill arrives, it is enormous — commonly ¥500 to ¥5,000, and documented cases run as high as ¥30,000. When you refuse to pay, staff become aggressive or block the exit. In some cases, the venue is fake and staged.
+## Where should I take extra care with belongings and transport?
 
-**Where it happens:** Wangfujing and Tiananmen area in Beijing; Nanjing Road and the Bund in Shanghai; major tourist sites nationwide.
+Canada’s travel advisory reports pickpocketing and phone or bag theft in tourist areas and on public transport, including overnight trains. It specifically flags scam approaches around the Bund (外滩) and East Nanjing Road (南京东路) in Shanghai. Use marked, metered taxis and keep your drink in sight.
 
-**How to avoid:** Decline all unsolicited invitations to tea, coffee, art galleries, or cultural events from strangers near tourist sites. If you want tea, go to a venue you chose yourself. This scam has been documented continuously since the late 1990s and shows no sign of stopping (source: chinaoffbeat.com; theroamingrenegades.com).
+[travel.gc.ca](https://travel.gc.ca/destinations/china) · [www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/safety-and-security)
 
-**If you've paid:** Contact 110. The police in major tourist districts know this scam well. File a report — some victims have recovered money, or at least ensured the venue faces scrutiny.
+## What should I do in Shanghai if I lose my passport?
 
-### Art Student Scam
+Report the loss to Shanghai’s public security exit-entry administration. Take its loss report to your consulate to request a replacement passport. Complete the corresponding residence formalities within 30 days of the report being issued, and update your accommodation registration with the new passport number.
 
-**How it works:** A "student" tells you there is a special art exhibition nearby showcasing their final-year work. Inside, you are shown paintings, calligraphy, or silk art and subjected to heavy pressure to buy. The art is mass-produced; pieces sold for ¥300–¥2,000 are worth a fraction of that (source: chinaoffbeat.com; chinadiscovery.com).
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-ImmigrationCustoms/20240409/0a88d0dfa144414884f91996f6b23e64.html)
 
-**How to avoid:** Same response as tea ceremony: decline unsolicited street invitations. Real art exhibitions do not need to be hawked on tourist streets.
+## What does the UK travel advisory say about same-sex relationships in China?
 
-### Fake Taxi / Black Car (黑车)
+The UK Foreign Office states that same-sex relationships are legal in China. It cautions travellers that public displays of affection may attract negative attention. Experiences can vary by setting.
 
-**How it works:** Unlicensed "black cars" (黑车, hēi chē) wait outside airports, rail stations, and major tourist attractions. Drivers approach you offering rides. They may rig the meter, charge a preset inflated price, misrepresent rates (e.g., quote a per-person price that sounded per-journey), or in worst cases drive off with luggage still in the boot to coerce payment.
+[www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/safety-and-security)
 
-**How to avoid:** Always use **DiDi** (see [[wiki/entities/didi.md]]) or join the official **taxi queue** at the designated rank. At airports, follow the "Taxi" or "出租车" signs to the official rank inside the terminal — do not accept rides offered before you reach the rank. DiDi shows you the route, driver details, and calculated fare before you board.
+## Where should I shelter during a typhoon?
 
-**Pudong airport note (2025):** Overcharging by drivers at the official queue at PVG has also been documented — if a driver quotes a fixed price rather than using the meter, decline and take the next cab.
+If you are already in a safe building, stay inside and move away from exposed windows and glass doors. Follow local evacuation instructions if your location is at risk of flooding.
 
-### Restaurant Overcharging
+[www.hko.gov.hk](https://www.hko.gov.hk/en/informtc/precaution.htm) · [www.mem.gov.cn](https://www.mem.gov.cn/kp/zrzh/202208/t20220809_419856.shtml)
 
-**How it works:** Restaurants near major tourist sites (particularly around the Forbidden City, West Lake, Zhangjiajie, etc.) display attractive menus outside but serve at inflated prices, add undisclosed "service fees," or charge for items you did not order.
+## Can I call the emergency services in English in Shanghai?
 
-**How to avoid:** Always look at the menu and confirm prices before sitting down. Check the bill item by item before paying. Take a photo of the menu for reference. If the bill is significantly wrong, stay calm, dispute politely, and involve 110 if the dispute is serious and no resolution is reached.
+Yes. Shanghai lists English for police (110), fire (119) and ambulance (120). Tell the operator where you are and what happened. For a fire, give the street address or a nearby landmark and say whether anyone is trapped or injured.
 
-### Counterfeit Money in Change
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-EmergencyNumbers/20241210/cbc5280b9f96440a93234bfc5e0c1023.html)
 
-**How it works:** When vendors give change for a large note, they may include a fake ¥50 or ¥100 note. Fake notes circulate at markets and informal vendors.
+## What does Canada’s travel advisory say about video surveillance in China?
 
-**How to avoid:** Check large bills when you receive them. Genuine notes have a raised feel, a watermark visible when held to the light, and a colour-shifting security strip. When in doubt, pay with mobile (Alipay/WeChat Pay) rather than cash — there is no counterfeit risk in digital transactions.
+Canada advises travellers that Chinese law enforcement widely uses video surveillance and facial recognition, including to monitor demonstrations.
 
-### Unofficial Guides / Park Gate Touts
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-**How it works:** Unofficial "guides" approach tourists at the entrance to parks, scenic areas, and historical sites offering tours at negotiated prices. They lack credentials, may provide inaccurate information, lead you to commission-paying shops, or demand higher fees than agreed once the tour is underway.
+## Should I consider earthquake risk when travelling in China?
 
-**How to avoid:** Book guides through official channels (the ticket office, your hotel, or licensed platforms like Klook/GetYourGuide). Legitimate guides at major sites have visible ID badges issued by the local tourism bureau.
+Canada’s travel advisory identifies China as an active seismic zone where earthquakes can occur. Follow local emergency instructions if an earthquake affects your trip.
 
-(Source: realchinaguide.com)
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-### General Scam-Avoidance Rules
+## What security measures should I expect when travelling in Xinjiang?
 
-- **Firm "no" and walk away** — do not engage. Engaging gives scammers an opening to escalate.
-- **No one is giving you something for free near a tourist site.** If a stranger's offer seems unusually generous, it is.
-- **If you've paid and been defrauded:** call 110. Keep any receipts, messaging, or photos as evidence.
-- **Reduce cash exposure:** Keep most cash in your hotel safe; carry only ~100 yuan daily for incidentals. Use Alipay/WeChat Pay for all other transactions — digital payments eliminate counterfeit risk and make overcharging easier to dispute (source: realchinaguide.com).
+Canada’s regional advisory describes a heightened police presence and security measures in Xinjiang. Read the current regional advisory when planning your route.
 
-## How common is crime against tourists in China?
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-Violent crime against tourists in China is virtually zero risk. China consistently ranks among the safest countries globally for physical crime against visitors. The primary risks are financial (scams, overcharging) rather than physical. City-by-city context (source: realchinaguide.com):
+## What should I do if the ground starts shaking?
 
-| City | Safety Level | Notes |
-|---|---|---|
-| Shanghai | Extremely safe | Very low violent crime; one of the safest major cities in the world |
-| Beijing | Very safe | Low crime rates; main concerns are scams and pollution |
-| Shenzhen | Very safe | Modern with excellent infrastructure |
-| Hangzhou | Extremely safe | Well-organized for tourists |
-| Chengdu | Very safe | Locals famously friendly and laid-back |
-| Xi'an | Very safe | Well-established tourism infrastructure |
-| Guangzhou | Generally safe | Standard large-city precautions apply |
-| Chongqing | Generally safe | Complex terrain can be disorienting |
-| Suzhou / Xiamen / Nanjing | Extremely safe | Tourist-friendly |
-| Kunming / Dali / Yangshuo | Very safe | Backpacker/expat communities established |
+If indoors, drop down, protect your head and neck under sturdy furniture if available, and hold on. Stay inside while the ground is shaking and avoid lifts. If you are already outside, move away from buildings and overhead hazards to an open area.
 
-Petty crime (pickpocketing) is concentrated in crowded tourist markets and transit hubs — not residential or business districts.
+[www.cdc.gov](https://www.cdc.gov/earthquakes/safety/stay-safe-during-an-earthquake.html)
 
-## Is China safe at night?
+## How can Canadians reach their embassy in Beijing during business hours?
 
-Walking at night in Chinese cities is generally safe for foreign travelers. Key points:
+Global Affairs Canada lists +86 10 5139 4000 for Canadian citizen services in Beijing during business hours. Use the embassy directory for the current after-hours options.
 
-- **Metro systems** are well-lit with security staff at stations and busy until closing time (typically 22:30–23:30 depending on city and line). Beijing Metro safe until closing at 23:30.
-- **After metro closes**, use DiDi (ride-hailing) for late-night travel rather than flagging street taxis.
-- **Well-lit commercial and residential areas** are safe to walk at night. Travelers consistently report feeling safer walking at night in Chinese cities than in comparable Western cities.
-- **Areas to exercise standard caution** at night: poorly lit construction zones, isolated parks after closing, areas around train stations late at night (touts, not violence).
+[travel.gc.ca](https://travel.gc.ca/assistance/embassies-consulates/china)
 
-(Source: realchinaguide.com; chinasurvivalkit.com)
+## What number does Beijing give for a traffic accident?
 
-## How much surveillance and police presence is there in China?
+Call 122 for the traffic police and give the location of the accident. Beijing’s travel guide says traffic police will attend the scene.
 
-China has one of the world's most extensive public surveillance networks. Practical implications for tourists:
+[english.beijing.gov.cn](https://english.beijing.gov.cn/travellinginbeijing/quickguideontravelservices/traveltips/202108/t20210811_2466839.html)
 
-- **CCTV is ubiquitous** in public spaces — streets, transport, tourist sites, malls. This contributes to low street crime but means all public behaviour is recorded.
-- **Xinjiang region** (Urumqi, Kashgar, Turpan) has noticeably heavier security: frequent checkpoints, ID checks, bag scans at public venues. Tourists are not targeted but should carry passport at all times and allow extra time for security procedures.
-- **Police presence at tourist sites** is generally helpful rather than intimidating. Officers at major sites often have basic English or access to translation.
-- **PSB registration** is mandatory within 24 hours of arrival at any location. Hotels handle this automatically. Private stays (Airbnb, friends) require a visit to the local police station (派出所) — your host should accompany you. Keep the registration form; police may ask for it during routine checks.
-- **Routine police checks**: Foreigners may be asked to show their passport, particularly in Xinjiang, Tibet, or during major political events. Comply calmly — these are administrative, not accusatory.
+## What does UK travel advice say about personal safety for women in China?
 
-(Source: realchinaguide.com; chinasurvivalkit.com; UK FCDO)
+The UK advises keeping control of your drink and declining drinks from strangers. It says sexual assaults are rare but possible and flags a potentially higher risk for women travelling alone or with female friends.
 
-## What do I do if my passport is lost or stolen in China?
+[www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/safety-and-security)
 
-Act immediately — do not wait.
+## Travel tip — Getting help if you lose your phone or wallet
 
-### Step 1: File a Police Report
+Keep your hotel address, a companion’s number, insurer and card issuer contacts on paper or another device. Record your taxi or booking details if something is left behind. Agree on a meeting point if your group gets separated.
 
-Go to the nearest **police station (派出所, pàichūsuǒ)** or call 110 to report the loss. You will receive a **Receipt of Report (报案回执)**. You need this for every subsequent step. In Beijing and Shanghai, some police stations in major tourist districts have English-speaking officers — call 110 first and ask to be directed.
+## Travel tip — Unexpected invitations or bills
 
-### Step 2: Get a Confirmation Certificate
+Choose a venue yourself, read the prices before ordering and decline offers you are uncomfortable with. Keep your belongings in reach in busy areas.
 
-Take the Receipt of Report to the **Exit and Entry Administration (出入境管理局)** of the local Public Security Bureau (PSB) and obtain an official **Confirmation of Reporting the Loss of Passport**. This certificate is valid for **30 days only** — you must complete Steps 3 and 4 within that window or face a fine and potential detention for overstay.
+## Travel tip — Keeping evidence of a disputed price
 
-### Step 3: Contact Your Embassy or Consulate
+Ask to see the menu or price list and order only what you understand. Keep the receipt and relevant messages if there is a dispute. Leave an unsafe situation and seek local help.
 
-Your embassy or consulate will issue an **Emergency Travel Document (ETD)** or a replacement passport. An ETD can typically be issued within 24 hours but is only valid for the specific travel purpose (usually returning home). Bring: the police report confirmation, copies of the lost passport (or any proof of identity), two recent passport-format photos.
+## Travel tip — Keeping a backup if your passport goes missing
 
-**Embassy emergency contacts (verify current numbers before travel at the official embassy website):**
+Keep a separate copy of the passport identity page and visa, and save the contact details of the consulate responsible for the cities on your route. Ask the local authorities which originals are needed when reporting a loss.
 
-| Country | Beijing main line | Emergency / after-hours | Official website |
-|---|---|---|---|
-| **United States** | +86-10-8531-4000 | 24/7 American Citizen Services: listed at china.usembassy-china.org.cn/services/emergency-contact/ | china.usembassy-china.org.cn |
-| **United Kingdom** | +86-10-5192-4000 | Consular assistance: +86-10-8529-6600 | gov.uk/world/china |
-| **Australia** | +86-10-5140-4111 | After-hours emergency: follow switchboard prompts; or +61-2-6261-3305 from outside China | china.embassy.gov.au |
-| **Canada** | +86-10-5139-4000 | After-hours: follow recorded prompts; or call collect +1-613-996-8885 (Emergency Operations Centre, 24/7) | china.gc.ca |
+## Questions from travellers
 
-Most major countries have consulates in Shanghai, Guangzhou, Chengdu, and other cities in addition to the Beijing embassy. Check your government's travel site for the full list of posts in China.
-
-If you cannot reach your embassy's main line, use the **after-hours / emergency consular number** listed for your country above — most maintain a 24/7 duty officer for citizens in distress. (Note: China's MFA 12308 hotline is for Chinese nationals abroad, not for foreign visitors in China.)
-
-### Step 4: Apply for a New Chinese Visa
-
-Once you have a replacement travel document, apply for a new Chinese visa (or visa-free entry endorsement, if applicable) at the local PSB Exit and Entry Administration office before your authorized stay expires. This step is needed only if you plan to remain in China — if departing immediately on the ETD, coordinate with the PSB.
-
-## What natural hazards should I prepare for in China?
-
-### Typhoons
-
-The **south and east coast** — Guangdong, Fujian, Hainan, Zhejiang, and Shanghai — are exposed to typhoon season, which runs from **July through October**, with August and September being peak months. Around seven tropical cyclones affect China's eastern coastal areas annually (source: GFDRR). During a typhoon:
-- Follow local government advisories and evacuation orders (distributed via mobile alert systems).
-- Flights are frequently cancelled 12–24 hours before a typhoon makes landfall.
-- Stay indoors; away from windows; avoid flood-prone ground-floor areas.
-- Check your travel insurance policy for typhoon-related trip cancellation coverage.
-
-### Earthquakes
-
-Earthquake-prone zones include **Sichuan, Yunnan, Xinjiang, Gansu, and Tibet**. These regions experience significant seismic activity. On arrival at your hotel in these areas, locate the emergency exits and the building's designated assembly point. If an earthquake occurs: take cover under a solid table, away from windows; do not use elevators; exit calmly when shaking stops; move to open ground away from buildings.
-
-### Air Quality
-
-Air quality varies significantly by city and season. Beijing and northern cities experience higher pollution in winter (heating season, temperature inversions). Southern cities can have pollution spikes year-round.
-
-**How to check:**
-- **aqicn.org** — accessible in China without a VPN; draws from official Chinese environmental monitoring data; covers all major cities with real-time PM2.5 readings.
-- **IQAir** and **Air Matters** apps — also accessible without a VPN (confirmed in [[wiki/concepts/health-medical.md]]).
-
-**What the numbers mean:**
-
-| AQI | PM2.5 (µg/m³) | Guidance |
-|---|---|---|
-| 0–50 | 0–12 | Good — no precautions needed |
-| 51–100 | 12–35 | Moderate — sensitive groups take care |
-| 101–150 | 35–55 | Unhealthy for sensitive groups — limit prolonged outdoor activity |
-| 151–200 | 55–150 | **Unhealthy** — wear N95/KN95 mask for extended outdoor exposure |
-| 200+ | 150+ | Very unhealthy / hazardous — minimise outdoor time; N95/KN95 essential |
-
-N95 and KN95 masks are widely available in Chinese pharmacies (大药房) and convenience stores.
-
-China's national average PM2.5 for 2025 was 29.6 µg/m³ (AQI ~87, "Moderate") — but individual city readings vary widely from this average, and winter episodes in northern cities regularly push AQI above 150 (source: IQAir; China Research Center).
-
-## Do I need travel insurance for China?
-
-Travel insurance is **strongly recommended** for China. Chinese hospitals — including public hospitals — require upfront payment before treatment is provided. This applies to ambulance services too, which in some documented cases have required cash payment before transporting a patient. Without insurance, a serious injury or illness requiring medical evacuation can cost **USD $250,000 or more** (source: pacificprime.com).
-
-**Minimum recommended coverage:**
-
-| Coverage type | Recommended minimum |
-|---|---|
-| Medical treatment | USD $100,000 |
-| Medical evacuation / repatriation | Unlimited or as high as possible |
-| Emergency dental | Included |
-| Trip cancellation / interruption | Sufficient to cover your non-refundable bookings |
-
-**Key things to check in your policy:**
-- Does it cover **pre-existing conditions**? Many standard travel policies exclude them.
-- Does it cover **"high-risk" activities** you plan to do — hiking, skiing, motorcycling, water sports?
-- Is there **direct billing** to Chinese hospitals, or do you pay upfront and claim reimbursement? Most Chinese public hospitals do not accept direct insurer billing — budget for out-of-pocket payments and retain all receipts for reimbursement.
-- Does it cover **natural disasters** (typhoon, earthquake) as a reason for trip cancellation?
-
-Some international hospitals in Beijing and Shanghai have direct billing arrangements with major international insurers (AXA, Cigna, Allianz). Confirm with the hospital and your insurer before any non-emergency visit. For full hospital detail, see [[wiki/concepts/health-medical.md]].
-
-### Budget Insurance Providers
-
-Two providers frequently used by budget travelers:
-
-- **SafetyWing (Nomad Insurance)** — published pricing: the Essential plan costs **USD $62.72 per 4 weeks** for travelers aged 18–39 (as of June 2026; higher brackets for ages 40+). Coverage spans 180+ countries; China is not listed as excluded, but confirm your destination is covered before purchase (source: safetywing.com official pricing page).
-- **World Nomads** — **quote-based pricing** (varies by age, trip length, destination, and planned activities), so no fixed price can be quoted here. China is selectable as a covered destination. Caveat from their policy terms: travel to a destination under a "do not travel" warning from your home government is not covered.
-
-Insurance pricing is volatile commercial data — always confirm current rates, coverage details, and exclusions directly with the provider before purchasing.
-
-## See Also
-
-- [[wiki/concepts/health-medical.md]] — Emergency numbers (ambulance/fire), hospital grades, payment, medicines, and medical emergency detail
-- [[wiki/concepts/accommodation.md]] — Hotel check-in requirements, residence registration
-- [[wiki/concepts/mobile-payment.md]] — Alipay / WeChat Pay (reduces counterfeit-cash and overpayment risk)
-- [[wiki/concepts/shopping-tax-refund.md]] — Scam avoidance at markets, counterfeit goods risk
+- Is China safe for tourists? — Look up current travel advice for your route. [Where should I take extra care with belongings and transport?](#where-should-i-take-extra-care-with-belongings-and-transport)
+- What are the most common scams in China? — These are examples of reported risks. [What should I watch for when a stranger invites me out?](#what-should-i-watch-for-when-a-stranger-invites-me-out)
+- What should I do if I lose my passport in China? — Contact local police and the embassy or consulate responsible for your passport. Ask what report you need for a replacement document and what to do about your departure. [What if I lose my passport after entering under a mutual visa exemption?](#what-if-i-lose-my-passport-after-entering-under-a-mutual-visa-exemption) · [What should I do in Shanghai if I lose my passport?](#what-should-i-do-in-shanghai-if-i-lose-my-passport)

@@ -116,8 +116,10 @@ jobs:
       # Runs on `always()` so the single marker comment ALWAYS reflects the
       # CURRENT commit. With `if: outcome == success` a later failing push would
       # leave a stale "✅ ready" comment (same marker) pointing at an old version.
+      # Fork PRs receive a read-only GITHUB_TOKEN. Their test/build results stay
+      # in checks and the job summary; do not fail green tests trying to comment.
       - name: Comment preview URL on PR
-        if: always()
+        if: always() && github.event.pull_request.head.repo.full_name == github.repository
         uses: actions/github-script@v7
         env:
           TESTS_OUTCOME: ${{ steps.tests.outcome }}
@@ -138,8 +140,7 @@ jobs:
             if (tests !== 'success') {
               body = `${marker}\n❌ **CI 失败** — 本次提交测试/构建未通过,预览不可用。见 Actions logs。\n\n${stamp}`;
             } else if (preview === 'success') {
-              // @1Feng — see note: if the PR author IS this user, the mention won't notify.
-              body = `${marker}\n✅ **CI 通过,预览就绪**:${url}\n\n@1Feng 可审阅合并。${stamp}`;
+              body = `${marker}\n✅ **CI 通过,预览就绪**:${url}\n\n审核人见本 PR 的 Reviewers 栏。${stamp}`;
             } else if (preview === 'failure') {
               body = `${marker}\n⚠️ **CI 通过,但预览部署失败** — 见 Actions logs。\n\n${stamp}`;
             } else if (!hasToken) {
