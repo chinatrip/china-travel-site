@@ -1,18 +1,23 @@
 ---
 title: China Visa & Entry Options for Tourists and Visitors
 date: 2026-07-01
-last_verified: 2026-09-18
+last_verified: 2026-11-20
 verified_against:
   - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
   - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
   - https://english.www.gov.cn/news/202602/15/content_WS6991bc11c6d00ca5f9a092d6.html
   - https://en.nia.gov.cn/n147418/n147463/c183412/content.html
+  - https://www.nia.gov.cn/n741440/n741577/c1731205/content.html
+  - https://www.nia.gov.cn/n897453/c1751080/content.html
   - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm
   - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm
   - https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm
   - https://en.nia.gov.cn/n147418/n147463/c180637/content.html
   - https://en.nia.gov.cn/n147423/n147478/n147725/c158420/content.html
+  - https://en.nia.gov.cn/n147418/n147468/c237295/content.html
+  - https://en.nia.gov.cn/n147418/n147463/c237273/content.html
+  - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
   - https://www.visaforchina.cn
 sources: [raw/12306-guide-for-foreign-business-visitors-2025.md, raw/realchinaguide-visa-guide-2026.md, summaries/visa-transit-guide-2026.md]
 related:
@@ -62,7 +67,7 @@ category: guide
 
 # China Visa & Entry Options for Tourists and Visitors
 
-> **Policy changes frequently.** This page was verified on 2026-07-01. The visa-free country lists, transit policy port lists, and stay durations are updated by China's National Immigration Administration (NIA) without notice. **Always verify your specific situation at [en.nia.gov.cn](https://en.nia.gov.cn) or at your nearest Chinese embassy/consulate before booking travel.**
+> **Policy changes frequently.** The transit rules below were rechecked on 2026-11-20. **Before booking, confirm your eligibility, ports, and permitted stay areas with the [National Immigration Administration (NIA)](https://en.nia.gov.cn) or your nearest Chinese embassy or consulate.**
 
 ---
 
@@ -74,9 +79,9 @@ Start here. Find your nationality in the table below to identify which section t
 |---|---|---|
 | Passport from one of 50 unilateral visa-free countries (most EU, UK, Canada, Australia, Japan, South Korea, etc.) | **Unilateral 30-day visa-free** — no visa needed | [Section A](#section-a-unilateral-30-day-visa-free-entry) |
 | Passport from a country with a mutual bilateral agreement (UAE, Singapore, Malaysia, Thailand, etc.) | **Bilateral visa-free** — no visa needed (up to 30–90 days depending on agreement) | [Section B](#section-b-bilateral-mutual-visa-exemption) |
-| Passport from one of 57 transit-eligible countries (includes USA + all above) AND traveling to a third country or region | **240-hour transit visa-free** — no visa, but you must have an onward ticket | [Section C](#section-c-240-hour-transit-visa-free) |
+| Ordinary passport from one of the 57 countries listed in Section C and a confirmed onward ticket to a third country or region | **240-hour transit visa-free** — designated ports and stay areas only | [Section C](#section-c-240-hour-transit-visa-free) |
 | Entering through or staying only in Hainan province | **Hainan 30-day visa-free** — separate scheme, 61 countries (broader effective coverage via other schemes) | [Section D](#section-d-hainan-province-30-day-visa-free) |
-| Any country; brief airside connection only | **24-hour airside transit** — no visa, must stay in port | [Section E](#section-e-24-hour-airside-transit) |
+| Any nationality with qualifying onward transit of up to 24 hours | **24-hour visa-free transit** — stay in the port's restricted area unless a temporary entry permit is granted | [Section E](#section-e-24-hour-airside-transit) |
 | None of the above, or need a longer / work / study stay | **L-visa (tourist)** or other visa — apply before travel | [Section F](#section-f-l-visa-tourist-visa) |
 
 > **USA passport holders:** As of June 2026, the US is NOT on the unilateral 30-day visa-free list, but US citizens DO qualify for the 240-hour transit visa-free scheme (Section C) and may enter Hainan visa-free (Section D). For unrestricted mainland China travel, a visa is required.
@@ -139,20 +144,20 @@ The flagship transit-free scheme allows eligible travelers transiting through Ch
 
 This answers Q1 and Q18 in the wiki's question ledger: yes, you can leave the airport — but only if you meet all criteria below.
 
-### Who qualifies (57 countries, per NIA's list updated 20 August 2026)
+### Who qualifies (ordinary passports from 57 countries, per NIA's list updated 20 August 2026)
 Albania, Argentina, Australia, Austria, Belarus, Belgium, Bosnia-Herzegovina, Brazil, Brunei, Bulgaria, Canada, Chile, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Iceland, Indonesia, Ireland, Italy, Japan, Kyrgyzstan, Latvia, Lithuania, Luxembourg, Malta, Mexico, Monaco, Montenegro, Netherlands, New Zealand, North Macedonia, Norway, Poland, Portugal, Qatar, Republic of Korea, Romania, Russia, Serbia, Singapore, Slovakia, Slovenia, Spain, Sweden, Switzerland, Ukraine, United Arab Emirates, United Kingdom, United States, Vietnam.
 
-> Source: [NIA's 240-hour transit policy page](https://en.nia.gov.cn/n147418/n147463/c183412/content.html), updated 20 August 2026, which groups the 57 countries as 40 European, 2 North American, 4 South American, 2 Oceanian and 9 Asian. **Kyrgyzstan and Vietnam are the most recent additions (20 August 2026)**; Indonesia joined in June 2025, and the scheme itself was announced 17 December 2024.
+> The [NIA's Chinese-language policy](https://www.nia.gov.cn/n741440/n741577/c1731205/content.html) lists all 57 countries, including Kyrgyzstan and Vietnam, which joined on 20 August 2026. Liechtenstein appears on the separate [unilateral visa-exemption list](https://en.nia.gov.cn/n147418/n147463/c183390/content.html).
 
 ### Requirements — all must be met
 1. **Onward ticket:** Confirmed ticket with assigned seat and departure date to a **third country or region** (not China, not your origin country if returning via same route). Departing within 240 hours.
-2. **Passport validity:** Chinese embassies generally advise at least 3 months of remaining validity at time of entry. This is standard consular guidance rather than a figure stated on the NIA transit pages — confirm the exact requirement with your nearest Chinese embassy or consulate.
+2. **Passport validity:** Your ordinary passport must have at least three months of validity remaining at entry, and you must meet the entry requirements of your onward destination. See the [NIA notice](https://www.nia.gov.cn/n897453/c1751080/content.html).
 3. **Digital arrival card:** As of November 2025, complete the arrival card at [s.nia.gov.cn](https://s.nia.gov.cn) within 72 hours before boarding. Paper cards still accepted on arrival if you cannot complete online.
 4. **Entry through eligible port:** Must enter through one of the 65 designated ports (see below).
-5. **Stay within permitted zones:** Travel limited to the 24 permitted provinces/regions.
+5. **Stay within permitted zones:** Limit your itinerary to the designated areas below, including city or prefecture limits where applicable.
 
-### Eligible ports (65 total, as of June 2026)
-All major international airports and land/sea border crossings across the 24 permitted provinces. Key entry points include:
+### Eligible entry ports (65 total)
+Only designated ports qualify. Key entry points include:
 - **Beijing:** Beijing Capital International Airport (PEK), Beijing Daxing International Airport (PKX)
 - **Shanghai:** Pudong International Airport (PVG), Hongqiao International Airport (SHA)
 - **Guangzhou:** Guangzhou Baiyun International Airport (CAN); plus Zhuhai Hengqin, Zhongshan, Hong Kong-Zhuhai-Macao Bridge, West Kowloon Express Rail Link Station (all added Dec 2024)
@@ -164,11 +169,17 @@ All major international airports and land/sea border crossings across the 24 per
 ### Permitted travel zones (24 provinces/regions)
 You may travel freely within these zones during your 240-hour stay:
 
-**Full province access:** Beijing, Tianjin, Hebei, Liaoning, Heilongjiang, Shanghai, Jiangsu, Zhejiang, Fujian, Shandong, Henan, Hubei, Hunan, Guangdong, Guangxi, Chongqing, Sichuan, Yunnan, Shaanxi, Anhui, Hainan, Guizhou
+**Entire province or municipality:** Beijing, Tianjin, Hebei, Liaoning, Shanghai, Jiangsu, Zhejiang, Fujian, Shandong, Henan, Hubei, Hunan, Guangdong, Chongqing, Shaanxi, Anhui, Hainan, Guizhou
 
 **Restricted access within province:**
+- Heilongjiang: Harbin only
+- Guangxi: Nanning, Liuzhou, Guilin, Wuzhou, Beihai, Fangchenggang, Qinzhou, Guigang, Yulin, Hezhou, Hechi, and Laibin only
+- Sichuan: Chengdu, Zigong, Luzhou, Deyang, Suining, Neijiang, Leshan, Yibin, Ya'an, Meishan, and Ziyang only
+- Yunnan: Kunming, Yuxi, Chuxiong, Honghe, Wenshan, Pu'er, Xishuangbanna, Dali, and Lijiang only
 - Shanxi: Taiyuan and Datong only
 - Jiangxi: Nanchang and Jingdezhen only
+
+> **Jiuzhaigou is outside the permitted area.** It is in Aba Prefecture, which is outside Sichuan's 11 listed cities. Check your entire itinerary and ports against the [Chinese Consulate in Toronto's September 2026 table](https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm) before booking.
 
 **Excluded (not permitted under this scheme):**
 Xinjiang, Tibet, Inner Mongolia, Ningxia, Qinghai, Gansu, Jilin — you may NOT travel to these regions under the 240-hour transit visa-free scheme. Entering them is an immigration violation.
@@ -181,7 +192,7 @@ There is no pre-approval; you activate the transit status at immigration:
 4. You must depart China before your 240-hour window closes — track the expiry time carefully.
 
 ### 240-hour clock calculation
-The 240-hour window starts at **00:00 on the day after entry**. Example: arrive Monday at 18:00 → clock starts Tuesday 00:00 → you must depart by Wednesday of the following week at 00:00 (exactly 10 calendar days later). Plan your onward flight before this deadline.
+The 240-hour window starts at **00:00 China time on the day after entry**. If you enter on Monday at 18:00, the clock starts on Tuesday at 00:00 and the full 240 hours end at **00:00 on Friday of the following week** (the midnight that ends Thursday). Check the expiry on your permit and book your departure before it.
 
 ### Critical restrictions
 - You **cannot** extend the 240-hour period
@@ -200,7 +211,7 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 **In China with TWOV:**
 - Immigration stamp process is smooth and fast once you arrive in China — officers are experienced with the policy
 - Hotels and domestic flights accept the TWOV sticker without issues (confirmed by recent 2026 travelers)
-- For 240-hour TWOV: domestic travel across permitted provinces is allowed
+- For 240-hour TWOV, you may cross provincial borders as long as you stay within the designated areas.
 - For 144-hour TWOV: typically restricted to the specific region of entry (e.g., Beijing-Tianjin-Hebei)
 - Must depart before time expires — overstaying = fines and future visa problems
 
@@ -210,7 +221,7 @@ The 240-hour window starts at **00:00 on the day after entry**. Example: arrive 
 |---|---|---|
 | Onward ticket required? | No | Yes (to third country or region) |
 | Max stay | 30 days | 240 hours (10 days) |
-| Travel zones | Entire mainland China | 24 permitted provinces only |
+| Travel zones | Entire mainland China | Designated areas across 24 provincial-level regions |
 | Pre-approval needed? | No | No (activated at immigration) |
 | Eligible countries | 50 (as of June 2026; list changes) | 57 (as of 20 August 2026; includes USA) |
 
@@ -238,21 +249,18 @@ Tourism, business visits, visiting relatives, medical treatment, conferences and
 ## Section E: 24-Hour Airside Transit
 
 ### What it is
-All foreign nationals (regardless of nationality) may transit through China airside — without clearing immigration — for up to **24 hours**, provided they remain within the international transit zone of the airport.
+The [NIA's 24-hour visa-free transit policy](https://en.nia.gov.cn/n147418/n147463/c183412/content.html) applies to travelers of any nationality transiting through China to a third country or region for up to **24 hours**.
 
 ### Requirements
 - Valid international travel documents
-- Onward connecting ticket with confirmed seat to a third country
-- Must not leave the airport international zone (airside only)
-- Stay within the designated port — cannot enter the city
+- Confirmed onward international flight, ship, or train ticket to a third country or region
+- Stay in the port's restricted area unless immigration inspection at that port grants a **temporary entry permit**. Apply at the port if you need to leave the restricted area. Approval is required before you leave, and the 24-hour limit still applies.
 
 ### Where available
-All major international airports in China that handle international connections.
+All ports in China open to international entry and exit.
 
 ### Border-inspection exemption at designated airports
-At three designated hub airports — **Beijing Capital, Shanghai Pudong (PVG), and Guangzhou Baiyun** — eligible 24-hour direct-transit passengers holding an onward interline ticket to a third country skip border inspection entirely: no immigration queue and no passport stamp, provided you stay within the airport's restricted transit area. This is a convenience for through-passengers — **not** a relaxation of the airside-only rule. You still cannot leave the airport or enter the city on 24-hour transit; to do that you must qualify under Sections A–D. The list of designated airports can change, so verify current coverage at [en.nia.gov.cn](https://en.nia.gov.cn) before relying on it.
-
-> This is the default option for anyone who does not qualify for other schemes but has a short connection. No visa of any kind is needed. If you want to leave the airport, you must qualify for one of Sections A–D above.
+Some airports let eligible direct-transit passengers with an onward interline ticket skip border inspection while staying in the airport's restricted area. Check with your airline or the port before relying on this procedure.
 
 ---
 
@@ -324,13 +332,13 @@ Processing takes 7–10 working days; your passport is held during review — yo
 
 3. **Passport validity:** Chinese consulates generally require at least 6 months validity for a visa application, and advise at least 3 months remaining for the transit scheme. Check both your passport and any dependent/family member passports before booking.
 
-4. **Entering restricted zones:** Traveling to Xinjiang, Tibet, Inner Mongolia, Ningxia, Qinghai, Gansu, or Jilin under the 240-hour transit visa-free scheme is an immigration violation.
+4. **Leaving the permitted stay area:** Some participating provinces have city or prefecture limits. Check every stop in your 240-hour itinerary against the [official stay-area table](https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm).
 
 5. **Activity mismatch:** Conducting journalism, working, or studying on a tourist visa or visa-free entry is illegal. Chinese border officials can and do deny entry or deport if they believe the stated purpose does not match actual intent.
 
 6. **Overstaying (applies to ALL entry types):** Overstaying is a serious criminal offense. Fines start at CNY 500/day. Stays over 10 days of overstay can result in detention (5–15 days) and deportation. Overstays of 1+ month risk a 1–5 year re-entry ban.
 
-7. **Not registering accommodation:** All visitors must register with local police within 24 hours of each new accommodation. Hotels do this automatically. If staying in private accommodation (Airbnb, with friends), you must go to the local police station to register. Failure can result in fines.
+7. **Not registering accommodation:** All visitors must complete accommodation registration with the public security authorities within 24 hours of each new accommodation. Hotels do this automatically. If staying in private accommodation (Airbnb, with friends), you or your host can complete registration online nationwide through the NIA website, the NIA 12367 App or WeChat mini program, or the Alipay mini program; the offline police-station route remains available. Failure to register may result in a warning and possible fine.
 
 8. **Application form errors on L-visa:** Inconsistent information between passport, application form, flight itinerary, and hotel booking is the most common reason for rejection. Name spelling, passport number, travel dates, and employment details must be exactly consistent across all documents.
 
