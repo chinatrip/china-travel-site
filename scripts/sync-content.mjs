@@ -60,7 +60,7 @@ const REPORT_PATH = join(import.meta.dirname, '../sync-report.md');
  *   is REPORTED (not applied) so it can be deliberately back-ported to the wiki single-source.
  * - neither has it → `category` is still injected from defaultCategory.
  */
-export const SITE_OWNED_FIELDS = ['description', 'faqs', 'category'];
+export const SITE_OWNED_FIELDS = ['description', 'faqs', 'category', 'reader_question_numbers'];
 
 // Collection ↔ wiki directory mapping
 const COLLECTIONS = [

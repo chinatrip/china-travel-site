@@ -51,8 +51,8 @@ cookies, or required headers. Cache responses for at most 5 minutes.
     {
       "id": "sim-card.faq.1",
       "type": "faq",
-      "question": "Do I need a VPN if I use a foreign eSIM in China?",
-      "claim": "Usually not — but that is the providers' claim, not an independent routing audit. ...",
+      "question": "Where can I get a local SIM card?",
+      "claim": "See the published guide for the current answer and its supporting source.",
       "sources": ["https://..."],
       "verified_at": "2026-10-08",
       "stale_after": "2027-01-06",
@@ -71,6 +71,7 @@ cookies, or required headers. Cache responses for at most 5 minutes.
 - `last_verified` — when the page was last checked against its sources. Use this date in citations.
 - `stale_after` — after this date the page should be treated as possibly out of date.
   `volatility` drives the window: high = 90 days, medium = 180, low = 365.
+- A historical FAQ URL can return `fact.type: "reader_guidance"` and `confidence: "editorial"`. Its answer and section links match the visible reader guide. These entries have no claim verification date and are excluded from the verified facts feed. Preserve attribution and dates when citing a travel account or a worked budget.
 - `confidence` — how the claim is verified, **not** how true it is:
   - `audited` — checked against `verified_against` sources on `last_verified`.
   - `verified` — independently verified by a named reviewer.

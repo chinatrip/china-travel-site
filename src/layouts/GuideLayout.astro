@@ -19,7 +19,7 @@ interface Props {
   verifiedAgainst?: string[];
   volatility?: string;
   category?: string;
-  faqs?: { q: string; a: string }[];
+  faqs?: { q: string; a: string; sources?: string[] }[];
   related?: string[];
   /** Page locale — drives the localized chrome (breadcrumb, headings, dates). */
   lang?: string;
@@ -202,7 +202,7 @@ const faqSchema = hasFaqs
       prose-h2:text-2xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-200
       prose-h3:text-xl prose-h3:mt-8
       prose-a:text-primary prose-a:no-underline hover:prose-a:underline
-      prose-table:text-sm
+      prose-table:text-sm max-sm:prose-table:block max-sm:prose-table:overflow-x-auto
       prose-th:bg-gray-50 prose-th:font-semibold
       prose-td:border-gray-200 prose-th:border-gray-200
       prose-blockquote:border-l-primary prose-blockquote:bg-red-50/30 prose-blockquote:py-1 prose-blockquote:rounded-r-md
@@ -222,7 +222,7 @@ const faqSchema = hasFaqs
           {faqs!.map((f) => (
             <div>
               <dt class="font-semibold text-gray-900">{f.q}</dt>
-              <dd class="mt-1 text-gray-700 leading-relaxed">{f.a}</dd>
+              <dd class="mt-1 text-gray-700 leading-relaxed">{f.a}{f.sources?.length && <span class="block text-sm mt-1">{f.sources.map((url, i) => <>{i > 0 && " · "}<a href={url}>{new URL(url).hostname}</a></>)}</span>}</dd>
             </div>
           ))}
         </dl>

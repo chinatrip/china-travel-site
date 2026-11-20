@@ -18,7 +18,7 @@ const APPS = {
   'amap':     { name: 'Amap',     applicationCategory: 'TravelApplication' },
   'dianping': { name: 'Dianping', applicationCategory: 'LifestyleApplication' },
   'didi':     { name: 'DiDi',     applicationCategory: 'TravelApplication' },
-  'eleme':    { name: 'Ele.me',   applicationCategory: 'LifestyleApplication' },
+  'eleme':    { name: 'Taobao Flash Shopping',   applicationCategory: 'LifestyleApplication' },
   'meituan':  { name: 'Meituan',  applicationCategory: 'LifestyleApplication' },
   'tenpaygo': { name: 'TenPayGo', applicationCategory: 'FinanceApplication' },
   'trip-com': { name: 'Trip.com', applicationCategory: 'TravelApplication' },
@@ -32,17 +32,18 @@ const APPS = {
  * @param {string} slug App content id / route param (e.g. 'amap').
  * @returns {object|null} schema.org SoftwareApplication node, or null.
  */
-export function buildSoftwareApplication(slug) {
+export function buildSoftwareApplication(slug, sources = []) {
   const app = APPS[slug];
   if (!app) return null;
+  const ios = sources.find(url => url.startsWith('https://apps.apple.com/us/app/'));
+  const android = sources.find(url => url.startsWith('https://play.google.com/store/apps/details?') ||
+    (slug === '12306' && url.startsWith('https://kyfw.12306.cn/otn/appDownload/')));
+  const platforms = [ios && 'iOS', android && 'Android'].filter(Boolean);
   return {
+    ...(platforms.length && { operatingSystem: platforms, downloadUrl: [ios, android].filter(Boolean) }),
     '@type': 'SoftwareApplication',
     name: app.name,
     applicationCategory: app.applicationCategory,
-    // Every listed app ships on both mobile platforms.
-    operatingSystem: 'Android, iOS',
-    // The apps are free to download; in-app fees vary and are covered in prose.
-    offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
   };
 }
 

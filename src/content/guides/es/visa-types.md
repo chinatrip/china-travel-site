@@ -1,417 +1,411 @@
 ---
-title: "Visa y entrada a China: tipos y sin visa"
-date: 2026-07-01
-last_verified: 2026-09-18
-lang: es
-source_en: guides/visa-types
-source_last_verified: 2026-09-18
+title: Visado y entrada sin visado a China
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://english.www.gov.cn/news/202412/17/content_WS6760ead6c6d0868f4e8ee0c1.html
-  - https://english.www.gov.cn/news/202511/04/content_WS69094ae0c6d00ca5f9a07472.html
-  - https://english.www.gov.cn/news/202602/15/content_WS6991bc11c6d00ca5f9a092d6.html
-  - https://en.nia.gov.cn/n147418/n147463/c183412/content.html
+  - https://en.nia.gov.cn/n147418/n147463/c237273/content.html
+  - https://en.nia.gov.cn/n147418/n147468/c237295/content.html
   - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
-  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202412/t20241217_11495647.htm
-  - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm
-  - https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm
+  - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+  - https://sg.china-embassy.gov.cn/eng/lsfwx/va/zgqz/202609/t20260918_12025190.htm
+  - https://en.nia.gov.cn/n147418/n147463/c183412/content.html
+  - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+  - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
   - https://en.nia.gov.cn/n147418/n147463/c180637/content.html
-  - https://en.nia.gov.cn/n147423/n147478/n147725/c158420/content.html
-  - https://www.visaforchina.cn
+  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm
+  - https://en.nia.gov.cn/n147418/n147458/c155978/content.html
+  - https://www.nia.gov.cn/n897453/c1806111/content.html
+  - https://cs.mfa.gov.cn/lh/lhqz_149493/cjwd/
+  - https://www.mzv.sk/en/pressreleasedetail?articleId=60664557&groupId=10182&p_p_id=sk_mzv_portal_pressrelease_detail_portlet_PressReleaseDetailPortlet&p_p_lifecycle=0
+  - https://enfaohn.hainan.gov.cn/News/Latest/202608/t20260822_4133032.html
+  - https://english.shanghai.gov.cn/en-VisaClassification/20231209/2855b4cd70084cc680c2887c4b0a77f8.html
+  - https://sg.china-embassy.gov.cn/eng/lsfwx/va/cjwd/202609/t20260917_12024749.htm
+  - https://www.nia.gov.cn/n741440/n741577/c1731205/content.html
+  - https://la.china-embassy.gov.cn/lsfw/zshfl/lszjfhqz/
+  - https://www.nia.gov.cn/n741435/n1194535/n1689182/n1689239/index.html
+  - https://www.fmprc.gov.cn/web/wjbz_673089/xghd_673097/202603/t20260308_11870492.shtml
+  - https://cs.mfa.gov.cn/zggmcgx/cgqzapecswlxk/ylb/202607/t20260716_11984014.html
+  - https://ve.china-embassy.gov.cn/chn/lsyw/1002A/fuhuaqianzheng/202401/t20240106_11219314.htm
+  - https://www.nia.gov.cn/n794014/n1050181/n1050489/c1722957/content.html
+  - https://en.nia.gov.cn/n147418/n147468/c187308/content.html
+  - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241227_11519914.htm
+  - https://chicago.china-consulate.gov.cn/eng/ywsz/va/Visa/202510/t20251022_11738238.htm
+  - https://en.nia.gov.cn/n147423/n147478/n147715/c158215/content.html
+  - https://www.nia.gov.cn/n794014/n1050181/n1050479/c757592/content.html
+  - https://in.china-embassy.gov.cn/eng/lsfw/qz/202408/t20240820_11476941.htm
+  - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
+  - https://us.china-embassy.gov.cn/eng./lsfw/zj/qz2021/202309/t20230919_11144908.htm
+sources: []
+related:
+  - wiki/concepts/residence-permit.md
+  - wiki/concepts/residence-registration.md
+  - wiki/concepts/work-permit.md
+  - wiki/concepts/china-entry-country-rules.md
+  - wiki/concepts/china-arrival-card.md
+  - wiki/concepts/china-transit-area-check.md
 volatility: high
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-07-01
-  notes: "2026-09-18: Hainan 30-day visa-free count 59 -> 61, acting on recommendation 1 of the 2026-09-17 lint report and the medium finding in /drift-scan 2026-W38. NIA's own Hainan policy page c180637 — already in verified_against and already linked from Section D — now reads verbatim 'Foreign nationals holding ordinary passports from 61 countries may enter and stay within the administrative region of Hainan Province for a maximum of 30 days without a visa', and its content date moved 2025-02-14 -> 2026-08-20 with Kyrgyzstan and Vietnam in the list. Three live locations on this page updated (decision table, Section D body twice including the trailing 'broader than' figure, Section D country note), plus the stale source date 14 February 2025 -> 20 August 2026 in the same sentence — a date that would otherwise have kept pointing readers at an 18-month-old snapshot of a page that has changed. This is the SAME 2026-08-20 notice that moved the 240-hour transit count 55 -> 57 on 2026-09-08: one notice changed two figures and that pass processed only the one its headline emphasised. ALSO SUPERSEDED HERE: the note below asserting 'Two official pages disagree' about whether Kyrgyzstan and Vietnam joined the nationwide unilateral scheme. W38 resolved that in favour of keeping 50 — the Chinese original says 240小时过境免签 and 海南30天入境免签, so they joined transit + Hainan, not the unilateral list, and the English headline had dropped 'Hainan'. The sentence is annotated rather than deleted, since the caution it records was correct at the time and is what kept the 50 from being wrongly changed. SCOPE: the unilateral 30-day figure stays at 50 and the 240-hour transit figure stays at 57 — neither was re-checked today and neither needed to be. last_verified BUMPED to 2026-09-18 for the Hainan anchor only; page_audit and citation_check unchanged. --- 2026-09-08: the 240-hour transit count moved 55 -> 57. NIA's transit page (c183412) was updated 2026-08-20 and now reads verbatim \"China is implementing this policy for nationals of 57 countries\"; Kyrgyzstan and Vietnam are the additions, both in its Asian group (now 9: Brunei, Indonesia, Japan, Kyrgyzstan, Qatar, Singapore, South Korea, UAE, Vietnam). Re-fetched 2026-09-08 and the full list diffed against ours programmatically, not by eye: exactly two additions, zero removals, 40 EU / 2 NA / 4 SA / 2 OC / 9 AS = 57. All five live occurrences on this page updated (FAQ, decision table, section heading, country list, comparison table) plus the source note, which had credited Indonesia with bringing the total to 55 and is now cited to c183412 directly. last_verified BUMPED to 2026-09-08 because the transit anchor genuinely was re-verified today; NOTHING ELSE on this page was re-checked this round and page_audit is unchanged. NOT CHANGED: the unilateral 30-day figure stays at 50. NIA's homepage headlines Kyrgyzstan and Vietnam as joining \"the 240-hour visa-free transit and 30-day visa-free entry program\", but the authoritative unilateral list (c183390) is still dated 2026-02-17, still says 50, and contains neither country. Two official pages appeared to disagree and a headline is not a basis for moving that number. RESOLVED 2026-09-17 by /drift-scan 2026-W38, in favour of keeping 50: NIA's Chinese wording is precise — '新增吉尔吉斯斯坦、越南为240小时过境免签和海南30天入境免签政策适用国家' — so the two countries joined the 240-hour transit scheme and the HAINAN 30-day scheme, not the nationwide unilateral list. The English headline had dropped 'Hainan'. Confirmed independently the same day by Shanghai FAO ('240小时过境免签政策，适用国家+2！（附57国名单）') and Hainan's provincial tourism department ('8月20日起，海南30天入境免签政策适用国家增至61国'). There was never a contradiction. Also added summaries/visa-transit-guide-2026.md to sources: — it described itself in prose as feeding this page while appearing in no machine-readable provenance field, which is why the two drifted apart undetected before 2026-08-18. Found by /drift-scan 2026-W37. --- 2026-07-16 re-verified high-volatility anchors against official sources: unilateral 30-day visa-free = 50 countries (NIA c183390, content 2026-02-17; UK & Canada added 2026-02-17; most valid to 2026-12-31); 240-hour transit = 55 countries / 65 ports / 24 regions (NIA c183412, 2025-07-04; embassy 2024-12-17); Hainan = 59 countries / 30 days (NIA c180637, 2025-02-14). CHANGED: Russia's unilateral visa-free, previously ending 2026-09-14, was extended to 2027-12-31 (MFA spokesperson 2026-05-20) — the 3 body references were corrected. Fixed the transit-policy source URL c156086 (old 72/144-hour page) → c183412 (current 240-hour page) in verified_against and body links. Removed reader-facing internal wiki/summaries citations from the body. Aligned the 240-hour transit FAQ (dropped 'exit through the 65 ports' — NIA only mandates entry through them) with Section C. Did NOT re-audit every line this round (page_audit retains 2026-06-09). Also corrected an internal contradiction: the 240-hour onward-ticket requirement is 'third country or region' (NIA c183412) and Hong Kong/Macau/Taiwan count as valid onward regions — fixed the FAQ and two body lines that wrongly restricted it to foreign countries, aligning with the existing correct TWOV example."
-description: >-
-  Visa y entrada a China en 2026: 30 días sin visa (~50 países), tránsito sin
-  visa de 240 h en 65 puertos y la visa de turista L. Verifica antes de reservar.
+  auditor: Codex
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Revisión del contenido conservado y las FAQ, y alineación con la versión inglesa, el 18 de noviembre de 2026. Fuentes fechadas, no verificación en tiempo real. Revisión local; sin publicación. El 20 de noviembre de 2026 se revisó el consejo de viaje añadido.
+description: Compara la entrada sin visado, el tránsito de 240 horas y el visado L para China. Revisa pasaporte, zonas permitidas y plazos antes de reservar.
 faqs:
-  - q: ¿Qué países pueden entrar a China sin visa en 2026?
-    a: >-
-      A junio de 2026, 50 países califican para la entrada sin visa unilateral de
-      30 días: la mayoría de la UE, el Reino Unido, Canadá, Australia, Nueva
-      Zelanda, además de Japón y la República de Corea (Corea del Sur). Confirma
-      siempre el estado actual de tu nacionalidad en el sitio de la Administración
-      Nacional de Inmigración antes de reservar.
-  - q: ¿Pueden los ciudadanos de EE. UU. visitar China sin visa?
-    a: >-
-      Los titulares de pasaporte de EE. UU. no están en la lista de entrada sin
-      visa unilateral de 30 días, pero pueden usar la política de tránsito sin
-      visa de 240 horas (10 días) en 65 puertos cuando viajan hacia un tercer
-      país o región, y pueden entrar a Hainan sin visa. Para un viaje turístico común a
-      China continental se requiere una visa de turista (L).
-  - q: ¿Qué es la política de tránsito sin visa de 240 horas?
-    a: >-
-      Permite que los viajeros elegibles de 57 países transiten por China hasta
-      240 horas (10 días) sin visa, siempre que entren por uno de los 65
-      puertos de entrada que califican, permanezcan dentro de las 24 regiones de
-      nivel provincial permitidas y tengan un boleto de continuación hacia un
-      tercer país o región.
-  - q: ¿Cuánta validez debe tener mi pasaporte para entrar a China?
-    a: >-
-      Para solicitar una visa, tu pasaporte debe tener una validez de al menos
-      seis meses y al menos una página de visa en blanco. Para el esquema de
-      tránsito de 240 horas, las embajadas generalmente aconsejan al menos tres
-      meses de validez restante; confirma el requisito exacto con la embajada o el
-      consulado de China más cercano.
+  - q: ¿Qué países pueden usar la exención unilateral de 30 días?
+    a: La lista citada incluye 50 nacionalidades con pasaporte ordinario, entre ellas Japón, Alemania y Francia. Brunéi no tiene vencimiento indicado; Rusia, hasta el 31 de diciembre de 2027; los otros 48, hasta el 31 de diciembre de 2026 según el aviso. Singapur usa otro acuerdo bilateral.
+    sources:
+      - https://en.nia.gov.cn/n147418/n147463/c183390/content.html
+      - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+      - https://sg.china-embassy.gov.cn/eng/lsfwx/va/zgqz/202609/t20260918_12025190.htm
+      - https://cs.mfa.gov.cn/lh/lhqz_149493/cjwd/
+      - https://www.mzv.sk/en/pressreleasedetail?articleId=60664557&groupId=10182&p_p_id=sk_mzv_portal_pressrelease_detail_portlet_PressReleaseDetailPortlet&p_p_lifecycle=0
+    fact_number: 5
+  - q: ¿Puedo visitar Jiuzhaigou con el tránsito de 240 horas?
+    a: "No según la tabla citada: Sichuan está limitada a 11 ciudades y Aba, donde está Jiuzhaigou, no figura. Heilongjiang, Guangxi y Yunnan también tienen zonas restringidas."
+    sources:
+      - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+      - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
+    fact_number: 6
+  - q: ¿Cómo se cuentan las 240 horas?
+    a: Empiezan a las 00:00 del día posterior a la entrada. Llegar el 16 de noviembre de 2026 da un inicio el 17 a las 00:00 y un límite el 27 a las 00:00, hora de China. Respeta el plazo autorizado por el control fronterizo.
+    sources:
+      - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
+    fact_number: 7
+  - q: ¿Puedo salir del aeropuerto durante un tránsito de 24 horas?
+    a: Primero debes obtener autorización de entrada temporal del control fronterizo para salir de la zona restringida. La aprobación no está garantizada.
+    sources:
+      - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+      - https://en.nia.gov.cn/n147418/n147458/c155978/content.html
+    fact_number: 8
+  - q: ¿Siempre se exigen seis meses de vigencia del pasaporte?
+    a: "No hay una regla única: la exención unilateral exige pasaporte ordinario válido durante la estancia; el tránsito de 240 horas, al menos tres meses restantes. La solicitud de visado citada para Estados Unidos exige más de seis meses y dos páginas en blanco."
+    sources:
+      - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+      - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
+      - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm
+    fact_number: 9
+    aliases:
+      - q: ¿Cuánta validez debe tener mi pasaporte para entrar a China?
+        fact_number: 4
+  - q: ¿Qué permite la exención de visado propia de Hainan?
+    a: Quienes tengan un pasaporte ordinario de uno de los 61 países de la lista oficial de Hainan, incluido Estados Unidos, pueden entrar por sus puertos habilitados y permanecer en la provincia hasta 30 días. El plazo cuenta desde las 00:00 del día siguiente a la llegada. Se admiten el turismo y las visitas comerciales o familiares. Se excluyen el trabajo y los estudios. Antes de reservar un viaje fuera de Hainan, comprueba qué permiso o exención te permite continuar.
+    sources:
+      - https://en.nia.gov.cn/n147418/n147463/c180637/content.html
+      - https://enfaohn.hainan.gov.cn/News/Latest/202608/t20260822_4133032.html
+    fact_number: 10
+  - q: ¿Qué letras corresponden al turismo, los negocios y los intercambios?
+    a: La L corresponde al turismo, la M a actividades comerciales y la F a intercambios, visitas y viajes de estudios. La Z corresponde al trabajo, la G al tránsito, la C a tripulaciones que reúnan los requisitos y la D a quienes deseen establecerse de forma permanente. Comprueba las entradas y la duración concedidas en tu propio visado.
+    sources:
+      - https://english.shanghai.gov.cn/en-VisaClassification/20231209/2855b4cd70084cc680c2887c4b0a77f8.html
+    fact_number: 11
+  - q: ¿Cómo se aplican los 180 días a los visados de estudios, familiares y prensa?
+    a: Para estudios, X1 corresponde a más de 180 días y X2 a un máximo de 180. Q1 cubre la reunificación familiar de larga duración y determinados casos de acogida. Q2 cubre visitas cortas a familiares que sean ciudadanos chinos residentes en China o extranjeros con residencia permanente. J1 se dirige a periodistas extranjeros residentes por más de 180 días y J2 a quienes hagan reportajes de hasta 180 días.
+    sources:
+      - https://english.shanghai.gov.cn/en-VisaClassification/20231209/2855b4cd70084cc680c2887c4b0a77f8.html
+    fact_number: 12
+  - q: ¿Necesito una cita para las huellas dactilares si solicito un visado chino de corta estancia?
+    a: Consulta la oficina donde presentarás la solicitud, la duración de la estancia y el número de entradas. Hasta el 31 de diciembre de 2026, la embajada china en Singapur indica que están exentos los visados de una o dos entradas para estancias de hasta 180 días. En India, la embajada china exige en principio huellas para visados de entradas múltiples y para los solicitantes D, J1, Q1, S1, X1 y Z que deban obtener un permiso de residencia tras entrar. Su aviso recoge exenciones personales, entre ellas la de los menores de 14 años.
+    sources:
+      - https://sg.china-embassy.gov.cn/eng/lsfwx/va/zgqz/202609/t20260918_12025190.htm
+      - https://in.china-embassy.gov.cn/eng/lsfw/qz/202408/t20240820_11476941.htm
+    fact_number: 13
+  - q: ¿Qué significan la validez, la duración de la estancia y las entradas de mi visado chino?
+    a: "La fecha de validez indica hasta cuándo puedes entrar en China. La duración de la estancia es el máximo por entrada. El campo de entradas indica cuántas se permiten durante la vigencia del visado: 01 para una, 02 para dos y M para múltiples entradas."
+    sources:
+      - https://sg.china-embassy.gov.cn/eng/lsfwx/va/cjwd/202609/t20260917_12024749.htm
+    fact_number: 14
+  - q: ¿Qué condiciones publica China para el tránsito de 240 horas?
+    a: La Administración Nacional de Inmigración incluye 57 nacionalidades, entre ellas la estadounidense, y 65 puntos de entrada habilitados en 24 divisiones de nivel provincial. Se requiere pasaporte ordinario y un viaje de continuación confirmado a un tercer país o región. La estancia se limita a las zonas autorizadas. Se permiten el turismo y las visitas de negocios o familiares. El trabajo, los estudios y la actividad periodística que requieran autorización previa exigen el visado correspondiente.
+    sources:
+      - https://www.nia.gov.cn/n741440/n741577/c1731205/content.html
+    fact_number: 15
+    aliases:
+      - q: ¿Qué es la política de tránsito sin visa de 240 horas?
+        fact_number: 3
+  - q: Para solicitar un visado L en Laos, ¿puedo presentar una invitación en lugar de reservas de hotel?
+    a: Sí. La embajada china en Laos admite justificantes de viaje, como las reservas de vuelos de ida y vuelta y de hotel, o una invitación que cumpla los requisitos emitida por una persona u organización en China. Otros consulados pueden pedir documentos distintos.
+    sources:
+      - https://la.china-embassy.gov.cn/lsfw/zshfl/lszjfhqz/
+    fact_number: 16
+  - q: ¿Qué hago si una urgencia me obliga a superar el tránsito de 240 horas?
+    a: Si por un motivo urgente y justificado o por fuerza mayor necesitas quedarte más tiempo o salir de la zona autorizada, debes solicitar de antemano un permiso de estancia ante la autoridad local de seguridad pública encargada de entradas y salidas. La autorización depende de su decisión.
+    sources:
+      - https://www.nia.gov.cn/n741435/n1194535/n1689182/n1689239/index.html
+    fact_number: 17
+  - q: ¿Cómo compruebo si un acuerdo bilateral de exención de visado cubre mi pasaporte?
+    a: El 8 de marzo de 2026, el ministro de Asuntos Exteriores informó de exenciones mutuas integrales con 29 países. Consulta tu país y la categoría de tu pasaporte en la tabla de tratados del Ministerio. Algunos acuerdos solo cubren pasaportes diplomáticos o de servicio.
+    sources:
+      - https://www.fmprc.gov.cn/web/wjbz_673089/xghd_673097/202603/t20260308_11870492.shtml
+      - https://cs.mfa.gov.cn/zggmcgx/cgqzapecswlxk/ylb/202607/t20260716_11984014.html
+    fact_number: 18
+  - q: ¿En qué puertos se aplica el tránsito de 24 horas y qué billete necesito?
+    a: Se aplica en todos los pasos fronterizos abiertos. Necesitas un documento de viaje internacional válido y un billete confirmado de avión, barco o tren a un tercer país o región. Permanece en la zona restringida salvo que el control fronterizo te conceda un permiso de entrada temporal.
+    sources:
+      - https://www.nia.gov.cn/n741440/n741577/c1731205/content.html
+    fact_number: 19
+  - q: ¿Qué fondo y tamaño pide la embajada china para la foto del visado?
+    a: La embajada china en Venezuela indica 48 mm de alto por 33 mm de ancho, con fondo blanco o casi blanco. Consulta las instrucciones de la oficina donde presentes la solicitud.
+    sources:
+      - https://ve.china-embassy.gov.cn/chn/lsyw/1002A/fuhuaqianzheng/202401/t20240106_11219314.htm
+    fact_number: 20
+  - q: ¿Cuándo debo solicitar una prórroga de estancia con visado en China?
+    a: Si tu visado autoriza una estancia de hasta 180 días y necesitas más tiempo, solicita la prórroga ante la autoridad local de entradas y salidas de seguridad pública siete días antes de vencer tu estancia. Presenta documentación que justifique la solicitud. Si se aprueba, el total de las prórrogas no puede superar la duración original de estancia indicada en el visado. Si se deniega, sal antes de que venza el plazo original.
+    sources:
+      - https://en.nia.gov.cn/n147418/n147458/c155978/content.html
+    fact_number: 21
+  - q: ¿Cuándo se incorporaron Indonesia y los cinco nuevos pasos al tránsito de 240 horas?
+    a: Indonesia se incorporó el 12 de junio de 2025, cuando la lista llegó a 55 países. El 5 de noviembre de 2025 se añadieron cinco pasos de entrada y el total pasó de 60 a 65. Son la terminal de ferris de Guangzhou Pazhou, Hengqin, el puente Hong Kong–Zhuhai–Macao, el puerto de pasajeros de Zhongshan y la estación de tren de alta velocidad de West Kowloon. Para tu viaje, consulta la lista vigente de nacionalidades y zonas de estancia.
+    sources:
+      - https://www.nia.gov.cn/n794014/n1050181/n1050489/c1722957/content.html
+      - https://en.nia.gov.cn/n147418/n147468/c187308/content.html
+    fact_number: 22
+  - q: ¿Cuánto cuesta un visado chino de turismo en EE. UU. y cuánto tarda el trámite urgente en Chicago?
+    a: Hasta el 31 de diciembre de 2026, el trámite ordinario para un visado turístico de una entrada cuesta 140 USD para ciudadanos estadounidenses y habitualmente 23 USD para otras nacionalidades, con excepciones. El suplemento urgente es de 25 USD. En Chicago, quien tenga un viaje urgente puede presentar justificantes al entregar el pasaporte. Si se acepta la solicitud urgente, el consulado indica tres días laborables. La revisión en línea es previa y algunos casos requieren más tiempo.
+    sources:
+      - https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241227_11519914.htm
+      - https://chicago.china-consulate.gov.cn/eng/ywsz/va/Visa/202510/t20251022_11738238.htm
+    fact_number: 23
+  - q: ¿Qué hago si necesito quedarme más de los 30 días de la exención unilateral?
+    a: Si ya prevés pasar más de 30 días en China, solicita antes del viaje en una embajada o consulado chino un visado adecuado al motivo de tu estancia. Si las circunstancias cambian después de entrar sin visado y tienes motivos suficientes para quedarte más tiempo, solicita un permiso de estancia a la autoridad local de entradas y salidas de seguridad pública antes de que expire el plazo autorizado. Aporta los justificantes correspondientes. La aprobación es individual.
+    sources:
+      - https://cs.mfa.gov.cn/lh/lhqz_149493/cjwd/
+      - https://en.nia.gov.cn/n147423/n147478/n147715/c158215/content.html
+    fact_number: 24
+  - q: ¿Pueden denegarme la entrada si la actividad prevista es incompatible con mi visado?
+    a: Sí. El artículo 25 de la Ley de Administración de Salidas y Entradas exige denegar la entrada si la persona puede realizar actividades incompatibles con su tipo de visado. Según el artículo 26, si se deniega la entrada se ordena el regreso. La expulsión prevista en el artículo 81 es una medida distinta con requisitos propios.
+    sources:
+      - https://www.nia.gov.cn/n794014/n1050181/n1050479/c757592/content.html
+    fact_number: 25
+  - q: ¿Necesito siempre un visado chino si mi pasaporte no figura en la lista del tránsito de 240 horas?
+    a: El artículo 15 de la Ley de Administración de Salidas y Entradas exige, como regla general, solicitar visado salvo que exista una excepción legal. Comprueba también tu documentación y tu itinerario. El artículo 22 incluye a quienes tienen un permiso chino de residencia para extranjeros válido y determinados supuestos de tránsito internacional. Si no se aplica ninguna excepción, solicita antes de viajar el visado adecuado para el motivo de tu visita.
+    sources:
+      - https://www.nia.gov.cn/n794014/n1050181/n1050479/c757592/content.html
+      - https://www.nia.gov.cn/n741440/n741577/c1731205/content.html
+    fact_number: 26
 category: guide
+lang: es
+source_en: guides/visa-types
+source_last_verified: 2026-11-20
+reader_question_numbers:
+  ¿Qué países pueden entrar a China sin visa en 2026?: 1
+  ¿Pueden los ciudadanos de EE. UU. visitar China sin visa?: 2
 ---
 
-# Visa y entrada a China: tipos y sin visa
+# Visado y entrada sin visado a China
 
-> **La política cambia con frecuencia.** Esta página se verificó el 2026-07-01. Las listas de países sin visa, las listas de puertos de la política de tránsito y las duraciones de estancia son actualizadas por la Administración Nacional de Inmigración de China (NIA) sin previo aviso. **Verifica siempre tu situación específica en [en.nia.gov.cn](https://en.nia.gov.cn) o en la embajada/consulado de China más cercano antes de reservar tu viaje.**
+La vía de entrada depende del pasaporte, el motivo, las fechas y el itinerario. Una exención no garantiza la admisión. Confirma tu caso con la embajada china competente o la NIA antes de comprar billetes no reembolsables.
 
----
+## ¿Qué vía de entrada corresponde a mi viaje?
 
-## ¿Qué vía de entrada te corresponde?
-
-Empieza aquí. Busca tu nacionalidad en la tabla siguiente para identificar qué sección leer.
-
-| Tu situación | Vía de entrada | Sección |
+| Vía | Condición principal | Estancia y zona |
 |---|---|---|
-| Pasaporte de uno de los 50 países con exención de visa unilateral (la mayoría de la UE, Reino Unido, Canadá, Australia, Japón, Corea del Sur, etc.) | **Sin visa unilateral de 30 días** — no se necesita visa | [Sección A](#sección-a-entrada-sin-visa-unilateral-de-30-días) |
-| Pasaporte de un país con un acuerdo bilateral de exención mutua (Emiratos Árabes Unidos, Singapur, Malasia, Tailandia, etc.) | **Sin visa bilateral** — no se necesita visa (hasta 30–90 días según el acuerdo) | [Sección B](#sección-b-exención-de-visa-bilateral-mutua) |
-| Pasaporte de uno de los 57 países elegibles para tránsito (incluye EE. UU. + todos los anteriores) Y con viaje hacia un tercer país o región | **Tránsito sin visa de 240 horas** — sin visa, pero debes tener un boleto de continuación | [Sección C](#sección-c-tránsito-sin-visa-de-240-horas) |
-| Entrada por o estancia solo en la provincia de Hainan | **Hainan sin visa de 30 días** — esquema separado, 61 países (cobertura efectiva más amplia mediante otros esquemas) | [Sección D](#sección-d-provincia-de-hainan-sin-visa-de-30-días) |
-| Cualquier país; solo una conexión breve en zona de tránsito (airside) | **Tránsito airside de 24 horas** — sin visa, debes permanecer en el puerto de entrada | [Sección E](#sección-e-tránsito-aeroportuario-airside-de-24-horas) |
-| Ninguna de las anteriores, o necesitas una estancia más larga / de trabajo / de estudios | **Visa L (turista)** u otra visa — solicítala antes de viajar | [Sección F](#sección-f-visa-l-visa-de-turista) |
+| Exención unilateral | Pasaporte ordinario de la lista de 50 países y motivo admitido | Hasta 30 días; comprobar la fecha de vigencia |
+| Acuerdo bilateral | Pasaporte y motivo incluidos en el acuerdo correspondiente | Depende del acuerdo; no siempre son 30 días |
+| Tránsito de 240 horas | Nacionalidad admitida, puerto designado y viaje confirmado a un tercer país o región | 240 horas en las zonas permitidas |
+| Exención de Hainan | Pasaporte ordinario de la lista independiente de 61 países | Hasta 30 días dentro de 海南 (Hainan) |
+| Tránsito de 24 horas | Documento de viaje internacional válido y plaza confirmada en avión, barco o tren hacia un tercer país o región | Zona restringida del puerto; salir exige autorización temporal |
+| Visado turístico L | Turismo no cubierto por una exención | Según las entradas, vigencia y estancia autorizadas |
 
-> **Titulares de pasaporte de EE. UU.:** A junio de 2026, EE. UU. NO está en la lista de entrada sin visa unilateral de 30 días, pero los ciudadanos de EE. UU. SÍ califican para el esquema de tránsito sin visa de 240 horas (Sección C) y pueden entrar a Hainan sin visa (Sección D). Para viajar sin restricciones por China continental se requiere una visa.
+Son regímenes distintos: cumplir uno no implica cumplir los demás. Las fuentes de cada régimen aparecen a continuación.
 
----
+<span id="sección-a-entrada-sin-visa-unilateral-de-30-días"></span>
 
-## Sección A: Entrada sin visa unilateral de 30 días
+## ¿Quién puede usar la exención unilateral de 30 días?
 
-### Qué es
-China concede la entrada sin visa unilateral (de una sola parte) a los titulares de pasaporte ordinario de 50 países (a junio de 2026, según la lista de la NIA vigente al 17 de febrero de 2026; la lista cambia: consulta los últimos anuncios de la NIA para ver actualizaciones). Sin solicitud de visa ni tarifas. Se permite la entrada para turismo, visitas de negocios, visitas a familiares, visitas de intercambio o tránsito.
+La [lista de la NIA](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) incluye **50 países**, entre ellos Japón, Alemania, Francia, Reino Unido y Canadá. Estados Unidos y Singapur no están en esta lista unilateral; Singapur tiene un acuerdo bilateral separado.
 
-### Duración de la estancia
-Hasta **30 días** por entrada, calculados a partir de las 00:00 del día siguiente a la llegada. Se aplican límites específicos según la nacionalidad; algunos acuerdos bilaterales (Sección B) permiten estancias más largas.
-
-### Vigencia de la política
-Prorrogada hasta el **31 de diciembre de 2026** para la mayoría de los países de la lista. Verifica si se ha confirmado la prórroga de tu país; algunos países se añadieron o prorrogaron en fechas distintas.
-
-### Países incluidos (a junio de 2026)
-Las siguientes nacionalidades tenían derecho a la entrada sin visa unilateral de 30 días, según lo verificado con la lista de exención unilateral de la NIA y los avisos oficiales de las embajadas. Verifica el estado actual de tu país en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) antes de viajar; esta lista cambia.
-
-**Europa (~35 países):** Andorra, Austria, Bélgica, Bulgaria, Croacia, Chipre, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Irlanda, Italia, Letonia, Liechtenstein, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Macedonia del Norte, Noruega, Polonia, Portugal, Rumanía, Rusia (hasta el 31 de diciembre de 2027 bajo un acuerdo separado), Eslovaquia, Eslovenia, España, Suecia, Suiza, Reino Unido (añadido en febrero de 2026)
-
-**América:** Argentina, Brasil, Canadá (añadido en febrero de 2026), Chile, Perú, Uruguay
-
-**Asia (7):** Baréin, Brunéi Darussalam, Japón, Kuwait, Omán, República de Corea (Corea del Sur), Arabia Saudita
-
-**Oceanía:** Australia, Nueva Zelanda
-
-> Países verificados con la lista de exención unilateral de la NIA (vigente al 17 de febrero de 2026). La inclusión de Rusia en el esquema unilateral se extiende hasta el 31 de diciembre de 2027; la mayoría de los demás países están cubiertos hasta el 31 de diciembre de 2026. Canadá y el Reino Unido se añadieron con efecto a partir del 17 de febrero de 2026 (según el anuncio oficial de gov.cn del 15 de febrero de 2026).
->
-> **EE. UU. y la mayoría de las nacionalidades de África y del sur de Asia NO están en esta lista unilateral** a junio de 2026: consulta las Secciones B, C o D, o solicita una visa (Sección F). Nota: Japón y la República de Corea (Corea del Sur) SÍ están en la lista unilateral (Japón fue reincorporado con efecto a partir del 30 de noviembre de 2024).
-
-### Restricciones
-- Solo pasaportes ordinarios (de turista); las reglas para pasaportes diplomáticos/de servicio son diferentes
-- No se puede trabajar, estudiar, ejercer el periodismo ni realizar actividades que requieran una categoría de visa distinta
-- No otorga el derecho a tramitar un permiso de residencia ni un permiso de trabajo
-- Las entradas/salidas de Hong Kong, Macao y Taiwán NO cuentan como entradas a China para efectos de esta política; son jurisdicciones separadas
-
----
-
-## Sección B: Exención de visa bilateral (mutua)
-
-### Qué es
-China ha firmado tratados de exención mutua de visa con aproximadamente 29 países. Son acuerdos recíprocos: ambos países eximen de visa a los ciudadanos del otro. Si tu país está en este grupo, no necesitas visa para estancias cortas.
-
-### Duración de la estancia
-Normalmente hasta **30 días**, aunque algunos acuerdos permiten 60 o 90 días. El límite específico depende del tratado bilateral; consulta el acuerdo concreto de tu país.
-
-### Países con acuerdos bilaterales (selección)
-Emiratos Árabes Unidos, Singapur, Malasia, Tailandia, Brunéi, Maldivas, Kazajistán, Georgia, Armenia, Catar y otros. Muchos de estos países también figuran en la lista unilateral; si tu país está en ambas, te beneficias de cualquiera de las dos.
-
-> **Verifica con la embajada china de tu país:** La lista bilateral y sus condiciones son específicas de cada tratado. Los términos (duración, número de entradas, tipos de pasaporte elegibles) varían según el acuerdo. Fuente: [chinadiscovery.com/mutual-visa-exemption](https://www.chinadiscovery.com/chinese-visa/mutual-visa-exemption.html) (verifica en en.nia.gov.cn).
-
----
-
-## Sección C: Tránsito sin visa de 240 horas
-
-### Qué es
-El esquema estrella de tránsito sin visa permite que los viajeros elegibles que transitan por China salgan del aeropuerto, viajen por las regiones permitidas y permanezcan hasta **240 horas (10 días)** sin visa. Anunciado el 17 de diciembre de 2024; ampliado a partir de las ventanas anteriores de 72/144 horas.
-
-Esto responde a las preguntas Q1 y Q18 del registro de preguntas de la wiki: sí, puedes salir del aeropuerto, pero solo si cumples todos los criterios a continuación.
-
-### Quién califica (57 países, según la lista de la NIA actualizada el 20 de agosto de 2026)
-Albania, Argentina, Australia, Austria, Bielorrusia, Bélgica, Bosnia y Herzegovina, Brasil, Brunéi, Bulgaria, Canadá, Chile, Croacia, Chipre, República Checa, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Indonesia, Irlanda, Italia, Japón, Kirguistán, Letonia, Lituania, Luxemburgo, Malta, México, Mónaco, Montenegro, Países Bajos, Nueva Zelanda, Macedonia del Norte, Noruega, Polonia, Portugal, Catar, República de Corea, Rumanía, Rusia, Serbia, Singapur, Eslovaquia, Eslovenia, España, Suecia, Suiza, Ucrania, Emiratos Árabes Unidos, Reino Unido, Estados Unidos, Vietnam.
-
-> Fuente: [la página de la NIA sobre el tránsito de 240 horas](https://en.nia.gov.cn/n147418/n147463/c183412/content.html), actualizada el 20 de agosto de 2026, que agrupa los 57 países en 40 europeos, 2 norteamericanos, 4 sudamericanos, 2 de Oceanía y 9 asiáticos. **Kirguistán y Vietnam son las incorporaciones más recientes (20 de agosto de 2026)**; Indonesia se sumó en junio de 2025 y el esquema se anunció el 17 de diciembre de 2024.
-
-### Requisitos: deben cumplirse todos
-1. **Boleto de continuación:** Boleto confirmado con asiento asignado y fecha de salida hacia un **tercer país o región** (no China, ni tu país de origen si regresas por la misma ruta). Con salida dentro de las 240 horas.
-2. **Validez del pasaporte:** Las embajadas de China generalmente aconsejan al menos 3 meses de validez restante al momento de la entrada. Esta es una orientación consular estándar y no una cifra indicada en las páginas de tránsito de la NIA; confirma el requisito exacto con la embajada o el consulado de China más cercano.
-3. **Tarjeta de llegada digital:** Desde noviembre de 2025, completa la tarjeta de llegada en [s.nia.gov.cn](https://s.nia.gov.cn) dentro de las 72 horas previas al embarque. Las tarjetas en papel se siguen aceptando a la llegada si no puedes completarla en línea.
-4. **Entrada por un puerto de entrada elegible:** Debes entrar por uno de los 65 puertos de entrada designados (ver más abajo).
-5. **Permanecer dentro de las zonas permitidas:** El viaje se limita a las 24 provincias/regiones permitidas.
-
-### Puertos de entrada elegibles (65 en total, a junio de 2026)
-Todos los principales aeropuertos internacionales y los cruces fronterizos terrestres/marítimos de las 24 provincias permitidas. Los principales puntos de entrada incluyen:
-- **Beijing:** Aeropuerto Internacional de Beijing Capital (PEK), Aeropuerto Internacional de Beijing Daxing (PKX)
-- **Shanghai:** Aeropuerto Internacional de Pudong (PVG), Aeropuerto Internacional de Hongqiao (SHA)
-- **Guangzhou:** Aeropuerto Internacional de Guangzhou Baiyun (CAN); además de Zhuhai Hengqin, Zhongshan, el Puente Hong Kong-Zhuhai-Macao y la estación del tren exprés West Kowloon (West Kowloon Express Rail Link Station) (todos añadidos en diciembre de 2024)
-- **Chengdu:** Aeropuerto Internacional de Tianfu (TFU), Aeropuerto Internacional de Shuangliu (CTU)
-- **Xi'an, Chongqing, Tianjin, Nanjing, Hangzhou, Kunming:** aeropuertos internacionales y puertos de entrada designados
-
-> Verifica la lista completa y actualizada de puertos de entrada en [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183412/content.html) antes de viajar; la lista se actualiza periódicamente.
-
-### Zonas de viaje permitidas (24 provincias/regiones)
-Puedes viajar libremente dentro de estas zonas durante tu estancia de 240 horas:
-
-**Acceso completo a la provincia:** Beijing, Tianjin, Hebei, Liaoning, Heilongjiang, Shanghai, Jiangsu, Zhejiang, Fujian, Shandong, Henan, Hubei, Hunan, Guangdong, Guangxi, Chongqing, Sichuan, Yunnan, Shaanxi, Anhui, Hainan, Guizhou
-
-**Acceso restringido dentro de la provincia:**
-- Shanxi: solo Taiyuan y Datong
-- Jiangxi: solo Nanchang y Jingdezhen
-
-**Excluidas (no permitidas bajo este esquema):**
-Xinjiang, Tíbet, Mongolia Interior, Ningxia, Qinghai, Gansu, Jilin: NO puedes viajar a estas regiones bajo el esquema de tránsito sin visa de 240 horas. Entrar en ellas es una infracción migratoria.
-
-### Cómo activarlo a la llegada
-No hay aprobación previa; activas el estatus de tránsito en el control migratorio:
-1. Presenta tu pasaporte, el boleto de continuación confirmado (impreso o digital) y la tarjeta de llegada completada.
-2. Los agentes de migración sellarán tu pasaporte con un permiso de tránsito que indica el periodo permitido (hasta 240 horas desde las 00:00 del día siguiente).
-3. Quedas inmediatamente libre para salir del aeropuerto y viajar dentro de las zonas permitidas.
-4. Debes salir de China antes de que se cierre tu ventana de 240 horas; controla cuidadosamente la hora de vencimiento.
-
-### Cálculo del reloj de 240 horas
-La ventana de 240 horas comienza a las **00:00 del día siguiente a la entrada**. Ejemplo: llegas el lunes a las 18:00 → el reloj comienza el martes a las 00:00 → debes salir a más tardar el miércoles de la semana siguiente a las 00:00 (exactamente 10 días naturales después). Planifica tu vuelo de continuación antes de esta fecha límite.
-
-### Restricciones críticas
-- **No puedes** prorrogar el periodo de 240 horas
-- **No puedes** trabajar, estudiar ni ejercer el periodismo bajo este estatus
-- Tu boleto de continuación debe ser a un tercer país **o región** y no puede regresarte a tu origen — Hong Kong, Macao y Taiwán **sí** cuentan como regiones de continuación válidas (tienen sistemas de inmigración separados)
-- Si sales y vuelves a entrar con un nuevo tránsito de 240 horas, esto puede ser objeto de escrutinio; consulta las preguntas frecuentes de la NIA
-
-### Consejos prácticos de TWOV (según reportes de viajeros de 2026)
-
-**Antes de la salida:**
-- Hong Kong cuenta como una región separada para efectos del TWOV; volar Singapur -> Shanghai -> Hong Kong califica
-- Imprime el comprobante de elegibilidad para TWOV desde el sitio web oficial de inmigración de China (s.nia.gov.cn) antes de tu viaje
-- Llega al aeropuerto de salida **2-3 horas antes**; el personal de check-in de la aerolínea en algunos países no conoce bien las reglas del TWOV y puede negarte el embarque inicialmente
-- Prepárate para explicar la política con calma y mostrar la documentación impresa
-
-**En China con TWOV:**
-- El proceso de sellado migratorio es fluido y rápido una vez que llegas a China; los agentes tienen experiencia con la política
-- Los hoteles y los vuelos nacionales aceptan la etiqueta (sticker) de TWOV sin problemas (confirmado por viajeros recientes de 2026)
-- Para el TWOV de 240 horas: se permite el viaje nacional por las provincias permitidas
-- Para el TWOV de 144 horas: normalmente se restringe a la región específica de entrada (por ejemplo, Beijing-Tianjin-Hebei)
-- Debes salir antes de que se agote el tiempo; excederte (overstay) = multas y problemas futuros con la visa
-
-### TWOV vs. sin visa: comparación rápida
-
-| | Sin visa (Sección A) | TWOV (Sección C) |
-|---|---|---|
-| ¿Se requiere boleto de continuación? | No | Sí (a un tercer país o región) |
-| Estancia máxima | 30 días | 240 horas (10 días) |
-| Zonas de viaje | Toda China continental | Solo 24 provincias permitidas |
-| ¿Se necesita aprobación previa? | No | No (se activa en el control migratorio) |
-| Países elegibles | 50 (a junio de 2026; la lista cambia) | 57 (a 20 de agosto de 2026; incluye EE. UU.) |
-
----
-
-## Sección D: Provincia de Hainan sin visa de 30 días
-
-### Qué es
-Un esquema sin visa separado, a nivel provincial, para Hainan (la provincia insular más al sur de China y Puerto de Libre Comercio). El esquema específico de Hainan cubre a los titulares de pasaporte ordinario de **61 países** (según la página de la política de Hainan de la NIA, con contenido vigente al 20 de agosto de 2026). En la práctica, los ciudadanos de otros países también pueden entrar a Hainan sin visa mediante los esquemas nacionales unilateral y bilateral, por lo que la cobertura combinada efectiva es más amplia que 61.
-
-### Duración de la estancia
-Hasta **30 días** dentro de la provincia de Hainan.
-
-### Países incluidos
-El esquema específico de Hainan enumera 61 países, entre ellos Estados Unidos y muchas naciones que no están en la lista nacional unilateral. Los ciudadanos cubiertos por los esquemas nacionales unilateral y bilateral también pueden entrar a Hainan sin visa. Verifica la lista actual en [en.nia.gov.cn/n147418/n147463/c180637](https://en.nia.gov.cn/n147418/n147463/c180637/content.html).
-
-### Restricción crítica
-**No puedes viajar de Hainan a China continental** sin una visa apropiada. Si entras a Hainan con el esquema sin visa de Hainan y quieres continuar a Beijing, Shanghai o cualquier otro lugar del continente, necesitas una visa china separada. Los puertos de entrada y salida de Hainan son distintos del esquema de tránsito de China continental.
-
-### Actividades permitidas
-Turismo, visitas de negocios, visitas a familiares, tratamiento médico, conferencias y exposiciones, competiciones deportivas. No se permite trabajar ni estudiar.
-
----
-
-## Sección E: Tránsito aeroportuario (airside) de 24 horas
-
-### Qué es
-Todos los ciudadanos extranjeros (sin importar la nacionalidad) pueden transitar por China en zona de tránsito (airside), sin pasar por el control migratorio, hasta **24 horas**, siempre que permanezcan dentro de la zona de tránsito internacional del aeropuerto.
-
-### Requisitos
-- Documentos de viaje internacionales válidos
-- Boleto de conexión de continuación con asiento confirmado hacia un tercer país
-- No se debe salir de la zona internacional del aeropuerto (solo zona de tránsito / airside)
-- Permanecer dentro del puerto de entrada designado; no se puede entrar a la ciudad
-
-### Dónde está disponible
-Todos los principales aeropuertos internacionales de China que gestionan conexiones internacionales.
-
-### Exención del control fronterizo en aeropuertos designados
-En tres aeropuertos-hub designados —**Beijing Capital, Shanghai Pudong (PVG) y Guangzhou Baiyun**— los pasajeros elegibles de tránsito directo de 24 horas que tengan un boleto interline de continuación hacia un tercer país se saltan por completo el control fronterizo: sin fila de migración y sin sello en el pasaporte, siempre que permanezcas dentro del área restringida de tránsito del aeropuerto. Esto es una comodidad para los pasajeros en tránsito, **no** una flexibilización de la regla de permanecer solo en zona de tránsito (airside). Aun así no puedes salir del aeropuerto ni entrar a la ciudad con el tránsito de 24 horas; para hacerlo debes calificar bajo las Secciones A–D. La lista de aeropuertos designados puede cambiar, así que verifica la cobertura actual en [en.nia.gov.cn](https://en.nia.gov.cn) antes de confiar en ella.
-
-> Esta es la opción por defecto para quien no califica para otros esquemas pero tiene una conexión corta. No se necesita ninguna visa de ningún tipo. Si quieres salir del aeropuerto, debes calificar para una de las Secciones A–D anteriores.
-
----
-
-## Sección F: Visa L (visa de turista)
-
-### Cuándo la necesitas
-- Tu nacionalidad no está cubierta por ningún esquema sin visa o de tránsito sin visa para China continental, O
-- Quieres quedarte más tiempo del que permite el periodo sin visa, O
-- Quieres visitar regiones no cubiertas por las zonas de tránsito de 240 horas (Xinjiang, Tíbet, etc.)
-
-### Duración estándar de la estancia
-Normalmente **30 días** por entrada para la mayoría de las nacionalidades. A los **ciudadanos de EE. UU. y Canadá** se les suelen otorgar estancias de 60 días por entrada, a menudo en visas de entradas múltiples válidas por hasta 10 años (verifica con tu consulado local; esto depende de la nacionalidad).
-
-### Tipos de entrada
-| Tipo de entrada | Descripción |
+| Región | Nacionalidades con pasaporte ordinario |
 |---|---|
-| Única | Una entrada; si sales de China, la visa queda usada |
-| Doble | Se permiten dos entradas dentro de la ventana de validez |
-| Múltiple | Entradas ilimitadas dentro de la ventana de validez |
+| Europa (35) | Andorra, Austria, Bélgica, Bulgaria, Croacia, Chipre, Dinamarca, Estonia, Finlandia, Francia, Alemania, Grecia, Hungría, Islandia, Irlanda, Italia, Letonia, Liechtenstein, Luxemburgo, Malta, Mónaco, Montenegro, Países Bajos, Macedonia del Norte, Noruega, Polonia, Portugal, Rumanía, Rusia, Eslovaquia, Eslovenia, España, Suecia, Suiza, Reino Unido |
+| Oceanía (2) | Australia, Nueva Zelanda |
+| Asia (7) | Baréin, Brunéi, Japón, Kuwait, Omán, Corea del Sur, Arabia Saudí |
+| América (6) | Argentina, Brasil, Canadá, Chile, Perú, Uruguay |
 
-Ventanas de validez: normalmente 3 meses, 6 meses, 1 año o 10 años. **La validez (ventana para entrar) ≠ la estancia permitida (cuánto tiempo puedes permanecer después de entrar).** Ambas están impresas en la visa; léelas con atención.
+Las [preguntas frecuentes de la embajada, del 19 de agosto de 2026](https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm), establecen estas condiciones:
 
-### Proceso de solicitud
+- Turismo, negocios, visitas a familiares/amigos, intercambios y tránsito; no trabajo, estudios ni periodismo.
+- Pasaporte ordinario válido durante la estancia prevista. Los documentos temporales o de emergencia no cumplen esta exención.
+- Brunéi no tiene fecha de vencimiento indicada; Rusia está cubierta hasta el **31 de diciembre de 2027** y los otros 48 países hasta el **31 de diciembre de 2026** en ese aviso. El [Ministerio de Exteriores eslovaco](https://www.mzv.sk/en/pressreleasedetail?articleId=60664557&groupId=10182&p_p_id=sk_mzv_portal_pressrelease_detail_portlet_PressReleaseDetailPortlet&p_p_lifecycle=0) comunicó el 10 de noviembre que China estaba dispuesta a prorrogar la exención para sus ciudadanos. Para viajes en 2027, consulta las [condiciones publicadas por China](https://cs.mfa.gov.cn/lh/lhqz_149493/cjwd/) antes de reservar.
+- Los 30 días empiezan el día siguiente a la entrada. Lleva pruebas acordes con el motivo del viaje, como alojamiento y transporte de salida.
+- Si planeas quedarte más tiempo, solicita el visado adecuado. Una necesidad imprevista de prolongar la estancia exige solicitar un permiso a la administración local de entrada y salida; no se concede automáticamente.
 
-**Paso 1 — Comprueba si el sistema en línea (sistema COVA) está disponible para ti**
-El nuevo sistema China Online Visa Application (COVA) de China se lanzó el 30 de septiembre de 2025 para los solicitantes en EE. UU. y se está implementando en otros países. Consulta la disponibilidad en visaforchina.cn o en el sitio web de la embajada china local. El sistema COVA permite el envío preliminar del formulario y la carga de documentos antes de cualquier visita presencial.
+<span id="sección-b-exención-de-visa-bilateral-mutua"></span>
 
-**Paso 2 — Prepara los documentos**
+## ¿En qué se diferencia el acuerdo bilateral de Singapur?
 
-| Documento | Notas |
+Según la [embajada en Singapur](https://sg.china-embassy.gov.cn/eng/lsfwx/va/zgqz/202609/t20260918_12025190.htm), el acuerdo vigente desde el 9 de febrero de 2024 permite visitas de hasta 30 días con pasaporte ordinario. Las actividades que requieren aprobación previa, como empleo o periodismo, y las estancias superiores a 30 días necesitan el visado correspondiente. No apliques estas condiciones a otras nacionalidades sin consultar su acuerdo.
+
+<span id="sección-c-tránsito-sin-visa-de-240-horas"></span>
+
+## ¿Quién puede utilizar el tránsito de 240 horas?
+
+La [política de tránsito de la NIA, actualizada el 20 de agosto de 2026](https://en.nia.gov.cn/n147418/n147463/c183412/content.html), incluye **57 nacionalidades**, **65 puertos de entrada designados** y zonas permitidas en **24 regiones de nivel provincial**. Exige pasaporte ordinario y billete confirmado, con fecha y plaza, a un tercer país o región. Volver al mismo país o región inmediatamente anterior a China no cumple ese patrón de tránsito. Consulta las listas completas de nacionalidades y puertos de la fuente; pertenecer a la lista unilateral no basta.
+
+El [anexo de condiciones de la NIA](https://www.nia.gov.cn/n741440/n741542/c1751080/content.html) exige al menos **tres meses** de vigencia restante del documento. Su cifra antigua de nacionalidades no sustituye la lista posterior de 57. Trabajo, estudios y periodismo siguen requiriendo autorización previa y visado adecuado.
+
+## ¿Puedo recorrer toda la provincia durante el tránsito?
+
+No. La [tabla consular de septiembre de 2026](https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm) limita seis regiones:
+
+| Región | Ciudades o prefecturas permitidas |
 |---|---|
-| Pasaporte válido | Al menos 6 meses de validez; al menos una página de visa en blanco |
-| Formulario de solicitud completado | Mediante el sistema COVA (en línea) o el formulario impreso de visaforchina.cn |
-| Foto tamaño pasaporte | Fondo blanco; las especificaciones exactas varían según el centro de solicitud; consulta los requisitos antes de imprimir |
-| Reserva de vuelo de regreso o de continuación | Itinerario confirmado; se acepta el código de reserva (puede que no se exija la compra completa del boleto en todos los consulados) |
-| Reservas de hotel o itinerario | Que muestren el alojamiento durante toda la estancia |
-| Tarifa de la visa | Varía según la nacionalidad y la rapidez de tramitación |
+| 山西 (Shanxi) | Taiyuan, Datong |
+| 黑龙江 (Heilongjiang) | Solo Harbin |
+| 江西 (Jiangxi) | Nanchang, Jingdezhen |
+| 广西 (Guangxi) | Nanning, Liuzhou, Guilin, Wuzhou, Beihai, Fangchenggang, Qinzhou, Guigang, Yulin, Hezhou, Hechi, Laibin |
+| 四川 (Sichuan) | Chengdu, Zigong, Luzhou, Deyang, Suining, Neijiang, Leshan, Yibin, Yaan, Meishan, Ziyang |
+| 云南 (Yunnan) | Kunming, Yuxi, Chuxiong, Honghe, Wenshan, Puer, Xishuangbanna, Dali, Lijiang |
 
-**Paso 3 — Envía la solicitud y acude a la toma de datos biométricos**
-Los datos biométricos (huellas dactilares) se recogen en persona para la mayoría de los solicitantes. Debes acudir en persona a una embajada o consulado de China, o a un Centro de Servicio para la Solicitud de Visa China (CVASC) autorizado. El sistema COVA puede agilizar el componente presencial, pero no lo elimina por completo para la mayoría de los solicitantes.
+**阿坝州 (prefectura de Aba), donde está 九寨沟 (Jiuzhaigou), queda fuera de la lista de Sichuan.** No debe ofrecerse como parada permitida bajo este régimen. Viajar entre zonas autorizadas no permite recorrer zonas excluidas. Comprueba cada parada y el puerto de salida, no solo el aeropuerto de llegada. Véase [[wiki/concepts/china-transit-area-check.md]]. [Gobierno de la prefectura de Aba](https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml).
 
-**Paso 4 — Tramitación**
-Tramitación estándar: aproximadamente **6–8 días hábiles**. Exprés: 3–5 días hábiles. Urgente: variable. Los tiempos de tramitación varían según el lugar y la temporada; prevé tiempo adicional en torno a los días festivos oficiales de China.
+## ¿Cuándo termina el plazo de 240 horas?
 
-### Lista de verificación para solicitar la visa L
-- [ ] Pasaporte válido por más de 6 meses, con páginas en blanco
-- [ ] Foto que cumpla la especificación local exacta (fondo blanco, verifica las dimensiones)
-- [ ] Formulario de solicitud completado sin errores (los formularios manuscritos son rechazados)
-- [ ] El itinerario de vuelo coincide con las fechas del formulario de solicitud
-- [ ] Las reservas de hotel cubren toda la estancia prevista
-- [ ] Extractos bancarios o comprobante de fondos si tu consulado lo solicita
-- [ ] Solicitud enviada mediante el sistema COVA (donde esté disponible) o en persona
-- [ ] Cita para datos biométricos reservada
+El reloj empieza a las 00:00 del día posterior a la entrada. Si llegas el lunes **16 de noviembre de 2026**, empieza el martes **17 de noviembre a las 00:00**; sumar 240 horas lleva al **viernes 27 de noviembre a las 00:00**, hora de China. Planea salir antes de ese límite y respeta el plazo realmente autorizado por el control fronterizo. El cálculo no garantiza el permiso. Fuente: [condiciones de la NIA](https://www.nia.gov.cn/n741440/n741542/c1751080/content.html).
 
-### Prórroga de la visa L dentro del país
-Si necesitas más tiempo, puedes solicitar una prórroga **al menos 7 días antes de que venza tu estancia permitida** en la oficina de Administración de Entradas y Salidas de la Oficina de Seguridad Pública (PSB) de tu ciudad. Las prórrogas normalmente se conceden una vez por estancia. Documentos requeridos: pasaporte, foto de pasaporte, registro de residencia temporal y documentación de los motivos de la prórroga (por ejemplo, el itinerario de viaje).
+<span id="sección-e-tránsito-aeroportuario-airside-de-24-horas"></span>
 
-La tramitación tarda de 7 a 10 días hábiles; tu pasaporte queda retenido durante la revisión y recibes un recibo temporal. Las tarifas van de aproximadamente CNY 160 a 940 según la nacionalidad. No excedas tu estancia mientras esperas; solicita con antelación.
+## ¿Puedo salir del aeropuerto durante un tránsito de 24 horas?
 
----
+La norma cubre aviones, barcos y trenes internacionales en puertos abiertos. Permanecer hasta 24 horas en la zona restringida es distinto de entrar en la ciudad. Para salir de esa zona, primero debes obtener autorización de entrada temporal del control fronterizo del puerto. Su aprobación no está garantizada. Fuente: [política de tránsito de la NIA](https://en.nia.gov.cn/n147418/n147463/c183412/content.html).
 
-## ¿Qué errores de visa hacen que a los visitantes les nieguen la entrada a China?
+<span id="sección-d-provincia-de-hainan-sin-visa-de-30-días"></span>
 
-> Estos son patrones verificados a partir de páginas oficiales de preguntas frecuentes consulares y orientaciones migratorias. (verifica en [preguntas frecuentes de us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm) y [newyork.china-consulate.gov.cn](https://newyork.china-consulate.gov.cn/eng/tzgg/202511/t20251118_11754975.htm))
+## ¿La exención de Hainan permite viajar fuera de la isla?
 
-1. **Boleto de continuación incorrecto o ausente (esquema de tránsito):** Para el esquema de 240 horas, el boleto de continuación debe ser hacia un tercer país o región genuino (Hong Kong, Macao y Taiwán sí cuentan) que no sea tu país de origen. El personal de la aerolínea lo verificará al hacer el check-in antes de que embarques; migración lo verificará a la llegada.
+Este régimen admite pasaportes ordinarios de **61 países**, incluido Estados Unidos, por hasta 30 días dentro de 海南 (Hainan). Incluye turismo, negocios, visitas, tratamiento médico, congresos y deporte; excluye trabajo y estudios. No autoriza por sí solo viajar fuera de Hainan: se necesita otra base de entrada o autorización aplicable. Fuente: [políticas regionales de la NIA](https://en.nia.gov.cn/n147418/n147463/c180637/content.html).
 
-2. **Identificar mal la elegibilidad de tu nacionalidad:** No supongas que tu país está en la lista de entrada sin visa unilateral solo porque un país vecino lo está. La lista es específica. Consulta la NIA o tu embajada, no los blogs de viajes.
+<span id="sección-f-visa-l-visa-de-turista"></span>
 
-3. **Validez del pasaporte:** Los consulados de China generalmente exigen al menos 6 meses de validez para una solicitud de visa, y aconsejan al menos 3 meses restantes para el esquema de tránsito. Revisa tanto tu pasaporte como los de cualquier dependiente/familiar antes de reservar.
+## ¿Cómo solicito un visado turístico o una prórroga?
 
-4. **Entrar en zonas restringidas:** Viajar a Xinjiang, Tíbet, Mongolia Interior, Ningxia, Qinghai, Gansu o Jilin bajo el esquema de tránsito sin visa de 240 horas es una infracción migratoria.
+Para turismo que requiera visado, solicita un **visado L** mediante la embajada o consulado competente por tu lugar de solicitud y su canal designado. No existe aquí una promesa de lista documental, precio, plazo de tramitación o estancia concedida universal.
 
-5. **Discrepancia de actividad:** Ejercer el periodismo, trabajar o estudiar con una visa de turista o una entrada sin visa es ilegal. Los agentes fronterizos chinos pueden negar la entrada o deportar —y lo hacen— si creen que el propósito declarado no coincide con la intención real.
+Por ejemplo, las [instrucciones para solicitudes en Estados Unidos](https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm) exigen más de seis meses de vigencia del pasaporte y al menos dos páginas de visado en blanco. La simplificación citada elimina las reservas de vuelos/hotel, itinerario e invitación para solicitudes ordinarias de visado L dentro de Estados Unidos, aunque pueden pedir documentación adicional según el caso. Es una regla del lugar de solicitud, no de todos los estadounidenses en cualquier país.
 
-6. **Exceder la estancia (aplica a TODOS los tipos de entrada):** Exceder la estancia (overstay) es un delito grave. Las multas comienzan en CNY 500/día. Los excesos de más de 10 días pueden dar lugar a detención (5–15 días) y deportación. Los excesos de 1 mes o más arriesgan una prohibición de reingreso de 1 a 5 años.
+Para un visado que autoriza una estancia de hasta 180 días, el artículo 29 exige que quien necesite una prórroga la solicite ante la administración local de entrada y salida siete días antes de su vencimiento. La aprobación no está garantizada. Vigencia del visado, número de entradas y duración de estancia son datos diferentes. Fuente: [Ley de Administración de Entrada y Salida, artículos 29 y 37](https://en.nia.gov.cn/n147418/n147458/c155978/content.html).
 
-7. **No registrar el alojamiento:** Todos los visitantes deben registrarse con la policía local dentro de las 24 horas de cada nuevo alojamiento. Los hoteles lo hacen automáticamente. Si te alojas en un alojamiento privado (Airbnb, con amigos), debes ir a la estación de policía local para registrarte. No hacerlo puede acarrear multas.
+## ¿Qué preparo para la llegada?
 
-8. **Errores en el formulario de solicitud de la visa L:** La información inconsistente entre el pasaporte, el formulario de solicitud, el itinerario de vuelo y la reserva de hotel es la razón más común de rechazo. La ortografía del nombre, el número de pasaporte, las fechas de viaje y los datos laborales deben ser exactamente coherentes en todos los documentos.
+Consulta [[wiki/concepts/china-arrival-card.md|la guía de tarjeta de llegada]]: rellenarla en línea es una opción, no un plazo universal obligatorio de 72 horas. Los hoteles tramitan el registro de alojamiento; fuera de hoteles, tú o tu anfitrión debéis registrarlo en 24 horas, también mediante los canales nacionales en línea. Véanse [[wiki/concepts/accommodation.md]] y el [aviso de registro de la NIA](https://www.nia.gov.cn/n897453/c1806111/content.html).
 
-9. **Categoría de visa incorrecta:** Asistir a reuniones de negocios, firmar contratos o participar en ferias comerciales con una visa L en lugar de una visa M puede llevar a la denegación. Si tu viaje incluye actividad comercial, solicita la visa correcta.
+Para un alojamiento privado, el servicio nacional está disponible en el portal de la NIA, en la aplicación NIA 12367 y en sus miniprogramas de WeChat o Alipay. También puedes hacer el trámite en persona ante la autoridad local de seguridad pública. [Anuncio n.º 7 de 2026 de la NIA](https://en.nia.gov.cn/n147418/n147468/c237295/content.html) · [Información del servicio](https://en.nia.gov.cn/n147418/n147463/c237273/content.html).
 
-10. **Viajar de Hainan al continente sin visa:** Entrar a Hainan con el esquema sin visa de Hainan y luego intentar volar a Beijing o Shanghai sin una visa separada es una infracción migratoria. Obtén una visa para el continente si planeas salir de Hainan.
+Para preparar el viaje según tu nacionalidad, consulta [[wiki/concepts/china-entry-country-rules.md]]. Las tasas, el embarque con una compañía, las decisiones individuales de visado y los permisos de viaje requieren comprobación específica.
 
----
+## ¿Qué permite la exención de visado propia de Hainan?
 
-## Todas las categorías de visa (referencia)
+Quienes tengan un pasaporte ordinario de uno de los 61 países de la lista oficial de Hainan, incluido Estados Unidos, pueden entrar por sus puertos habilitados y permanecer en la provincia hasta 30 días. El plazo cuenta desde las 00:00 del día siguiente a la llegada. Se admiten el turismo y las visitas comerciales o familiares. Se excluyen el trabajo y los estudios. Antes de reservar un viaje fuera de Hainan, comprueba qué permiso o exención te permite continuar.
 
-Para que la información sea completa, todas las categorías estándar de visa de China:
+[en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c180637/content.html) · [enfaohn.hainan.gov.cn](https://enfaohn.hainan.gov.cn/News/Latest/202608/t20260822_4133032.html)
 
-| Tipo | Propósito | Estancia típica por entrada | Opciones de entrada |
-|------|---------|---|---|
-| **L** | Turismo | 30–60 días (según la nacionalidad) | Única, doble o múltiple |
-| **F** | Intercambios no comerciales: visitas académicas, delegaciones culturales, capacitación técnica | 30–90 días | Única, doble o múltiple |
-| **M** | Comercial y de negocios: ferias comerciales, negociaciones de contratos, adquisiciones | 30–90 días | Única, doble o múltiple |
-| **Z** | Empleo (requiere la Notificación de Permiso de Trabajo previa del empleador) | Ventana corta; debe convertirse en permiso de residencia | Única |
-| **X1 / X2** | Estudios (X1 de larga duración >180 días; X2 de corta duración ≤180 días) | Duración del programa de estudios | Única o múltiple |
-| **Q1 / Q2** | Reunificación familiar (Q1 de larga duración; Q2 de corta duración ≤180 días) | Variable | Única o múltiple |
-| **J1 / J2** | Periodismo | Variable | Variable |
-| **C** | Tripulación de avión, barco o tren | Solo escala corta | Única |
-| **G** | Tránsito (para nacionalidades no cubiertas por ningún esquema de tránsito sin visa) | Duración de la escala | Única |
-| **D** | Residencia permanente | no aplica | Múltiple, indefinida |
+## ¿Qué letras corresponden al turismo, los negocios y los intercambios?
 
-> **F vs. M:** Usa **F** para visitas no comerciales (seminarios, intercambios académicos, capacitación técnica). Usa **M** para actividades con un elemento comercial directo (ferias comerciales, negociaciones de contratos, adquisiciones). La entidad china que te invita normalmente especifica el tipo correcto en su carta de invitación.
+La L corresponde al turismo, la M a actividades comerciales y la F a intercambios, visitas y viajes de estudios. La Z corresponde al trabajo, la G al tránsito, la C a tripulaciones que reúnan los requisitos y la D a quienes deseen establecerse de forma permanente. Comprueba las entradas y la duración concedidas en tu propio visado.
 
-> **Validez de la visa vs. estancia permitida:** *Validez* = la ventana dentro de la cual debes entrar por primera vez. *Estancia permitida* = cuánto tiempo puedes permanecer después de cada entrada. Ambas están impresas en la visa. Permanecer más allá de la fecha de tu estancia permitida es una infracción por exceso de estancia (overstay), incluso si el periodo de validez de la visa aún no ha vencido.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-VisaClassification/20231209/2855b4cd70084cc680c2887c4b0a77f8.html)
 
----
+## ¿Cómo se aplican los 180 días a los visados de estudios, familiares y prensa?
 
-## ¿Dónde solicito una visa para China?
+Para estudios, X1 corresponde a más de 180 días y X2 a un máximo de 180. Q1 cubre la reunificación familiar de larga duración y determinados casos de acogida. Q2 cubre visitas cortas a familiares que sean ciudadanos chinos residentes en China o extranjeros con residencia permanente. J1 se dirige a periodistas extranjeros residentes por más de 180 días y J2 a quienes hagan reportajes de hasta 180 días.
 
-- **Solicitudes de visa:** [visaforchina.cn](https://www.visaforchina.cn) (sistema COVA; también indica las ubicaciones de los CVASC más cercanos)
-- **Política de tránsito de la NIA:** [en.nia.gov.cn — Políticas de tránsito](https://en.nia.gov.cn/n147418/n147463/c183412/content.html)
-- **Lista de exención unilateral de visa de la NIA:** [en.nia.gov.cn — Exención unilateral](https://en.nia.gov.cn/n147418/n147463/c183390/content.html)
-- **Hainan sin visa (NIA):** [en.nia.gov.cn — Políticas regionales](https://en.nia.gov.cn/n147418/n147463/c180637/content.html)
-- **Preguntas frecuentes de la embajada (con sede en EE. UU.):** [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241224_11516392.htm)
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-VisaClassification/20231209/2855b4cd70084cc680c2887c4b0a77f8.html)
 
-La política de visa de China cambia con frecuencia. Verifica antes de reservar tu viaje.
+## ¿Necesito una cita para las huellas dactilares si solicito un visado chino de corta estancia?
 
----
+Consulta la oficina donde presentarás la solicitud, la duración de la estancia y el número de entradas. Hasta el 31 de diciembre de 2026, la embajada china en Singapur indica que están exentos los visados de una o dos entradas para estancias de hasta 180 días. En India, la embajada china exige en principio huellas para visados de entradas múltiples y para los solicitantes D, J1, Q1, S1, X1 y Z que deban obtener un permiso de residencia tras entrar. Su aviso recoge exenciones personales, entre ellas la de los menores de 14 años.
 
-## ¿Qué ocurre en el control migratorio al entrar a China?
+[sg.china-embassy.gov.cn](https://sg.china-embassy.gov.cn/eng/lsfwx/va/zgqz/202609/t20260918_12025190.htm) · [in.china-embassy.gov.cn](https://in.china-embassy.gov.cn/eng/lsfw/qz/202408/t20240820_11476941.htm)
 
-### Tarjeta de llegada digital (antes de la llegada)
-- Completa la tarjeta de llegada en línea en [s.nia.gov.cn](https://s.nia.gov.cn) dentro de las **72 horas previas al embarque**
-- Las tarjetas en papel se siguen aceptando a la llegada si no puedes completarla en línea
-- Aplica a todos los tipos de entrada (visa, sin visa, TWOV)
+## ¿Qué significan la validez, la duración de la estancia y las entradas de mi visado chino?
 
-### En el aeropuerto a la llegada
-1. Pasa el control migratorio (presenta el pasaporte, el boleto de continuación si usas TWOV y la tarjeta de llegada completada)
-2. Opcionalmente, compra una tarjeta SIM local (tiendas de China Mobile/Unicom en el aeropuerto; ~50-100 RMB por un plan de datos de 30 días solo con el pasaporte)
-3. Toma el metro o un DiDi hasta tu hotel
-4. Primeras tareas tras la llegada: activa la VPN, comprueba que Alipay funcione, descarga mapas sin conexión en Amap
+La fecha de validez indica hasta cuándo puedes entrar en China. La duración de la estancia es el máximo por entrada. El campo de entradas indica cuántas se permiten durante la vigencia del visado: 01 para una, 02 para dos y M para múltiples entradas.
 
-### Registro de alojamiento (obligatorio para TODOS los visitantes)
-- **Todos los extranjeros deben registrar su domicilio con la policía local dentro de las 24 horas siguientes a la llegada** en cada nuevo lugar
-- Los hoteles y hostales se encargan de esto automáticamente: escanean tu pasaporte al registrarte (toma 5-10 minutos)
-- Recibes un formulario/recibo de registro: **guárdalo** (la policía puede pedírtelo; es necesario para las prórrogas de visa)
-- Si te alojas en un alojamiento privado (Airbnb, con amigos/familiares): debes ir a la estación de policía local para registrarte en persona
-- Documentos necesarios para el registro privado: pasaporte, visa, la cédula de identidad del anfitrión (身份证) y un comprobante de domicilio (contrato de arrendamiento o certificado de propiedad)
-- Información requerida: nombre, número de pasaporte, tipo de visa, fecha de entrada, domicilio, datos del anfitrión
-- Si tu pasaporte se reemplaza (por pérdida/robo/vencimiento) mientras estás en China, debes volver a registrarte con tu nuevo pasaporte
+[sg.china-embassy.gov.cn](https://sg.china-embassy.gov.cn/eng/lsfwx/va/cjwd/202609/t20260917_12024749.htm)
 
-Ver también: [[wiki/concepts/residence-registration.md]]
+## ¿Qué condiciones publica China para el tránsito de 240 horas?
 
----
+La Administración Nacional de Inmigración incluye 57 nacionalidades, entre ellas la estadounidense, y 65 puntos de entrada habilitados en 24 divisiones de nivel provincial. Se requiere pasaporte ordinario y un viaje de continuación confirmado a un tercer país o región. La estancia se limita a las zonas autorizadas. Se permiten el turismo y las visitas de negocios o familiares. El trabajo, los estudios y la actividad periodística que requieran autorización previa exigen el visado correspondiente.
 
-## ¿Debería usar una agencia de visas para China?
+[www.nia.gov.cn](https://www.nia.gov.cn/n741440/n741577/c1731205/content.html)
 
-- Las agencias de buena reputación (por ejemplo, Oasis China Visa) pueden encargarse de las visitas presenciales al consulado por ti
-- Costo: aproximadamente **$200 en total** (incluidas las tarifas de servicio) frente a $140 haciéndolo por tu cuenta
-- Útil si vives lejos de un consulado de China o de un CVASC
-- VFS Global opera centros de visas de China en muchos países, incluidos el Reino Unido, Alemania y Francia
-- Estos centros gestionan la recepción de documentos y las citas biométricas en nombre del consulado
+## Para solicitar un visado L en Laos, ¿puedo presentar una invitación en lugar de reservas de hotel?
 
----
+Sí. La embajada china en Laos admite justificantes de viaje, como las reservas de vuelos de ida y vuelta y de hotel, o una invitación que cumpla los requisitos emitida por una persona u organización en China. Otros consulados pueden pedir documentos distintos.
 
-## ¿Qué países están exentos de visa para China en 2026?
+[la.china-embassy.gov.cn](https://la.china-embassy.gov.cn/lsfw/zshfl/lszjfhqz/)
 
-- A junio de 2026, **50 países** tienen acceso sin visa unilateral de 30 días (según la lista de la NIA vigente al 17 de febrero de 2026; la lista cambia: consulta los últimos anuncios de la NIA para ver actualizaciones)
-- El **Reino Unido y Canadá** se añadieron a la lista de entrada sin visa unilateral con efecto a partir del **17 de febrero de 2026** (según el anuncio oficial de gov.cn del 15 de febrero de 2026)
-- La mayoría de las políticas sin visa se prorrogaron hasta el **31 de diciembre de 2026** (Rusia se extiende hasta el 31 de diciembre de 2027; verifica para tu país específico)
-- La lista sigue ampliándose; consulta siempre [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147463/c183390/content.html) para ver las últimas incorporaciones
+## ¿Qué hago si una urgencia me obliga a superar el tránsito de 240 horas?
+
+Si por un motivo urgente y justificado o por fuerza mayor necesitas quedarte más tiempo o salir de la zona autorizada, debes solicitar de antemano un permiso de estancia ante la autoridad local de seguridad pública encargada de entradas y salidas. La autorización depende de su decisión.
+
+[www.nia.gov.cn](https://www.nia.gov.cn/n741435/n1194535/n1689182/n1689239/index.html)
+
+## ¿Cómo compruebo si un acuerdo bilateral de exención de visado cubre mi pasaporte?
+
+El 8 de marzo de 2026, el ministro de Asuntos Exteriores informó de exenciones mutuas integrales con 29 países. Consulta tu país y la categoría de tu pasaporte en la tabla de tratados del Ministerio. Algunos acuerdos solo cubren pasaportes diplomáticos o de servicio.
+
+[www.fmprc.gov.cn](https://www.fmprc.gov.cn/web/wjbz_673089/xghd_673097/202603/t20260308_11870492.shtml) · [cs.mfa.gov.cn](https://cs.mfa.gov.cn/zggmcgx/cgqzapecswlxk/ylb/202607/t20260716_11984014.html)
+
+## ¿En qué puertos se aplica el tránsito de 24 horas y qué billete necesito?
+
+Se aplica en todos los pasos fronterizos abiertos. Necesitas un documento de viaje internacional válido y un billete confirmado de avión, barco o tren a un tercer país o región. Permanece en la zona restringida salvo que el control fronterizo te conceda un permiso de entrada temporal.
+
+[www.nia.gov.cn](https://www.nia.gov.cn/n741440/n741577/c1731205/content.html)
+
+## ¿Qué fondo y tamaño pide la embajada china para la foto del visado?
+
+La embajada china en Venezuela indica 48 mm de alto por 33 mm de ancho, con fondo blanco o casi blanco. Consulta las instrucciones de la oficina donde presentes la solicitud.
+
+[ve.china-embassy.gov.cn](https://ve.china-embassy.gov.cn/chn/lsyw/1002A/fuhuaqianzheng/202401/t20240106_11219314.htm)
+
+## ¿Cuándo debo solicitar una prórroga de estancia con visado en China?
+
+Si tu visado autoriza una estancia de hasta 180 días y necesitas más tiempo, solicita la prórroga ante la autoridad local de entradas y salidas de seguridad pública siete días antes de vencer tu estancia. Presenta documentación que justifique la solicitud. Si se aprueba, el total de las prórrogas no puede superar la duración original de estancia indicada en el visado. Si se deniega, sal antes de que venza el plazo original.
+
+[en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147458/c155978/content.html)
+
+## ¿Cuándo se incorporaron Indonesia y los cinco nuevos pasos al tránsito de 240 horas?
+
+Indonesia se incorporó el 12 de junio de 2025, cuando la lista llegó a 55 países. El 5 de noviembre de 2025 se añadieron cinco pasos de entrada y el total pasó de 60 a 65. Son la terminal de ferris de Guangzhou Pazhou, Hengqin, el puente Hong Kong–Zhuhai–Macao, el puerto de pasajeros de Zhongshan y la estación de tren de alta velocidad de West Kowloon. Para tu viaje, consulta la lista vigente de nacionalidades y zonas de estancia.
+
+[www.nia.gov.cn](https://www.nia.gov.cn/n794014/n1050181/n1050489/c1722957/content.html) · [en.nia.gov.cn](https://en.nia.gov.cn/n147418/n147468/c187308/content.html)
+
+## ¿Cuánto cuesta un visado chino de turismo en EE. UU. y cuánto tarda el trámite urgente en Chicago?
+
+Hasta el 31 de diciembre de 2026, el trámite ordinario para un visado turístico de una entrada cuesta 140 USD para ciudadanos estadounidenses y habitualmente 23 USD para otras nacionalidades, con excepciones. El suplemento urgente es de 25 USD. En Chicago, quien tenga un viaje urgente puede presentar justificantes al entregar el pasaporte. Si se acepta la solicitud urgente, el consulado indica tres días laborables. La revisión en línea es previa y algunos casos requieren más tiempo.
+
+[us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/notice/202412/t20241227_11519914.htm) · [chicago.china-consulate.gov.cn](https://chicago.china-consulate.gov.cn/eng/ywsz/va/Visa/202510/t20251022_11738238.htm)
+
+## ¿Qué hago si necesito quedarme más de los 30 días de la exención unilateral?
+
+Si ya prevés pasar más de 30 días en China, solicita antes del viaje en una embajada o consulado chino un visado adecuado al motivo de tu estancia. Si las circunstancias cambian después de entrar sin visado y tienes motivos suficientes para quedarte más tiempo, solicita un permiso de estancia a la autoridad local de entradas y salidas de seguridad pública antes de que expire el plazo autorizado. Aporta los justificantes correspondientes. La aprobación es individual.
+
+[cs.mfa.gov.cn](https://cs.mfa.gov.cn/lh/lhqz_149493/cjwd/) · [en.nia.gov.cn](https://en.nia.gov.cn/n147423/n147478/n147715/c158215/content.html)
+
+## ¿Pueden denegarme la entrada si la actividad prevista es incompatible con mi visado?
+
+Sí. El artículo 25 de la Ley de Administración de Salidas y Entradas exige denegar la entrada si la persona puede realizar actividades incompatibles con su tipo de visado. Según el artículo 26, si se deniega la entrada se ordena el regreso. La expulsión prevista en el artículo 81 es una medida distinta con requisitos propios.
+
+[www.nia.gov.cn](https://www.nia.gov.cn/n794014/n1050181/n1050479/c757592/content.html)
+
+## ¿Necesito siempre un visado chino si mi pasaporte no figura en la lista del tránsito de 240 horas?
+
+El artículo 15 de la Ley de Administración de Salidas y Entradas exige, como regla general, solicitar visado salvo que exista una excepción legal. Comprueba también tu documentación y tu itinerario. El artículo 22 incluye a quienes tienen un permiso chino de residencia para extranjeros válido y determinados supuestos de tránsito internacional. Si no se aplica ninguna excepción, solicita antes de viajar el visado adecuado para el motivo de tu visita.
+
+[www.nia.gov.cn](https://www.nia.gov.cn/n794014/n1050181/n1050479/c757592/content.html) · [www.nia.gov.cn](https://www.nia.gov.cn/n741440/n741577/c1731205/content.html)
+
+## Consejo de viaje — Revisa cada tramo antes de reservar
+
+Anota las escalas, las fechas y el país o región de destino de cada tramo. Comprueba los requisitos aplicables al pasaporte de cada viajero y conserva los billetes de continuación y la página oficial correspondiente.
+
+## Consejo de viaje — Cuándo puede otra persona entregar el pasaporte en Estados Unidos
+
+Según el procedimiento de la embajada china en Estados Unidos, cuando la solicitud en línea indique «Passport to be submitted», el solicitante o un representante puede llevar el pasaporte y los documentos exigidos a la oficina de visados de su demarcación. Antes de contratar una agencia, consulta las instrucciones de la oficina y pide por separado la tarifa consular y los honorarios de la agencia. Atiende cualquier citación personal de la oficina.
+
+[Chinese embassy in the US, visa application FAQ](https://us.china-embassy.gov.cn/eng./lsfw/zj/qz2021/202309/t20230919_11144908.htm)
+
+## Preguntas de viajeros
+
+- ¿Qué países pueden entrar a China sin visa en 2026? — Comprueba por separado la exención unilateral, los acuerdos bilaterales y el tránsito. La vía aplicable depende del pasaporte, el itinerario y el motivo del viaje. [¿Qué vía de entrada corresponde a mi viaje?](#qué-vía-de-entrada-corresponde-a-mi-viaje) · [¿Quién puede usar la exención unilateral de 30 días?](#quién-puede-usar-la-exención-unilateral-de-30-días)
+- ¿Pueden los ciudadanos de EE. UU. visitar China sin visa? — Un pasaporte estadounidense puede servir para el tránsito sin visado si se cumplen las condiciones. Comprueba el destino posterior, los puertos y las zonas de estancia antes de reservar. [¿Quién puede utilizar el tránsito de 240 horas?](#quién-puede-utilizar-el-tránsito-de-240-horas) · [¿Qué condiciones publica China para el tránsito de 240 horas?](#qué-condiciones-publica-china-para-el-tránsito-de-240-horas)

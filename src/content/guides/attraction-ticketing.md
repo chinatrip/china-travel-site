@@ -1,9 +1,7 @@
 ---
-title: Attraction Ticketing & Admissions in China
-date: 2026-06-04
-sources:
-  - raw/realchinaguide-ticketing-admissions-2026.md
-  - raw/realchinaguide-14day-itinerary-2026.md
+title: Beijing Palace Museum tickets and opening days
+date: 2026-11-19
+sources: []
 related:
   - wiki/concepts/trip-planning.md
   - wiki/concepts/city-guides.md
@@ -12,162 +10,209 @@ related:
   - wiki/entities/trip-com.md
 volatility: medium
 verified_against:
+  - https://intl.dpm.org.cn/visit
   - https://www.dpm.org.cn/Visit.html
-  - https://ticket.dpm.org.cn/
-  - https://www.trip.com/things-to-do/detail/the-palace-museum-76517/
-  - https://www.bmy.com.cn/guide.html
-  - https://www.badaling.cn/
-last_verified: 2026-06-04
+  - https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6623d27081e5641581784ebb.html
+  - https://english.beijing.gov.cn/12345hotline/faqs/all/202506/t20250620_4117980.html
+  - https://en.xa.gov.cn/CultureTravel/Attractions/1691691506530373634.html
+  - https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html
+  - https://www.bjhr.gov.cn/zwgk/zfxxgkjg/qzfbmdh/fzggwdh/fgzdly/202405/t20240528_3696959.html
+  - https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/
+  - https://english.beijing.gov.cn/specials/ticketing/index.html
+  - https://fgw.hunan.gov.cn/fgw/jgzc11/202507/t20250724_33748635.html
+  - https://fgw.hunan.gov.cn/fgw/xxgk_70899/tzgg/202508/t20250825_33782047.html
+  - https://hunan.gov.cn/hnszf/hnyw/szdt/202611/t20261114_34101824.html
+  - https://fgw.sc.gov.cn/scsfgw/uploadfiles/2019112410065911407.pdf
+  - https://www.panda.org.cn/en/service/ticket/
+  - https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202609/t20260924_4880476.html
+  - https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202111/t20211119_2541156.html
+  - https://english.beijing.gov.cn/specials/strollthroughbeijing/lifeintheoldcity/202611/t20261110_4939976.html
+  - https://english.beijing.gov.cn/specials/ticketing/
+  - https://www.dpm.org.cn/singles_detail/259831.html
+  - https://english.beijing.gov.cn/whatson/events/travelling/202406/t20240627_3730064.html
+  - https://whhlyt.hunan.gov.cn/whhlyt/wldh2022jt/202208/t20220823_27716245.html
+  - https://english.beijing.gov.cn/latest/news/202408/t20240822_3780055.html
+  - https://www.shanghaidisneyresort.com/en/ticket/
+last_verified: 2026-11-20
 review:
   status: audited
-  page_audit: 2026-06-17
-  citation_check: null
-description: >-
-  China attraction tickets: real-name passport entry, daily caps and time slots,
-  and how early to book the Forbidden City, Great Wall, and pandas. Updated
-  2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026. The 20 November 2026 follow-up covered the restored travel tips on this page.
+description: Check admission seasons, ticket supplements and closure notices before your visit.
 faqs:
-  - q: Do I need to book China attraction tickets in advance?
-    a: >-
-      For most globally famous sites, yes. China uses real-name, passport-linked
-      ticketing with daily caps and time slots, so you cannot just show up — the
-      Forbidden City releases tickets 7 days ahead and can sell out in minutes
-      in peak season. Local temples, parks, and markets are usually walk-up.
-  - q: What do I need to enter an attraction in China?
-    a: >-
-      Your physical passport — the same one used to book, not a photo or copy.
-      At the gate, staff scan your QR code and match it to your passport number;
-      use the foreign-passport or manual check-in lane if one is available.
-  - q: What's the best way for foreigners to book attraction tickets?
-    a: >-
-      Trip.com is the most practical for foreigners: it works without a VPN, has
-      an English interface, accepts foreign cards, PayPal and Alipay, and saves
-      passport profiles to auto-fill future bookings.
-  - q: How far ahead should I book the Forbidden City?
-    a: >-
-      Book exactly 7 days ahead at 20:00, when the daily batch (about 40,000
-      tickets) releases — it can sell out within minutes in peak season, and it
-      is closed on Mondays. If it shows sold out, pick another date and book at
-      the next 20:00 release rather than counting on walk-up tickets.
+  - q: When can I visit Beijing’s Palace Museum?
+    a: The Palace Museum normally closes on Mondays, with exceptions for statutory holidays. Check the museum’s opening notices, including Lunar New Year’s Eve and temporary closures, before booking. Regular admission is CNY 60 from April through October and CNY 40 from November through March. The Treasure and Clock galleries have separate tickets.
+    sources:
+      - https://intl.dpm.org.cn/visit
+      - https://www.dpm.org.cn/Visit.html
+      - https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6623d27081e5641581784ebb.html
+    fact_number: 5
+  - q: Can I buy Palace Museum tickets on the day?
+    a: The Palace Museum asks visitors to arrange admission in advance and says it does not sell tickets on the day. Foreign visitors booking online enter their passport numbers. The Treasure Gallery and Clock Gallery each list a separate CNY 10 ticket.
+    sources:
+      - https://intl.dpm.org.cn/visit
+    fact_number: 6
+  - q: What if the booking form rejects my overseas telephone number?
+    a: Beijing’s 12345 service directs foreign visitors to the English version of the Palace Museum’s official website for booking. Use the museum’s own instructions for your document and contact information.
+    sources:
+      - https://english.beijing.gov.cn/12345hotline/faqs/all/202506/t20250620_4117980.html
+    fact_number: 7
+  - q: What does admission to the Terracotta Warriors museum cost?
+    a: The Emperor Qinshihuang’s Mausoleum Site Museum in Lintong, Xi’an, lists an ordinary adult ticket at CNY 120. Foreign visitors using a passport should use it for the booking and bring the original for admission. Check the museum’s ticketing page for your visit date.
+    sources:
+      - https://en.xa.gov.cn/CultureTravel/Attractions/1691691506530373634.html
+      - https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html
+    fact_number: 8
+  - q: What are the basic adult entry prices for Mutianyu, the Temple of Heaven and the Summer Palace?
+    a: Huairou District lists CNY 40 for adult admission to the Mutianyu Great Wall (慕田峪长城). Beijing lists basic Temple of Heaven (天坛) entry at CNY 15 in peak season and CNY 10 off season. Basic Summer Palace (颐和园) entry is CNY 30 in peak season and CNY 20 off season. Combined tickets and separately priced attractions can cost more.
+    sources:
+      - https://www.bjhr.gov.cn/zwgk/zfxxgkjg/qzfbmdh/fzggwdh/fgzdly/202405/t20240528_3696959.html
+      - https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/
+      - https://english.beijing.gov.cn/specials/ticketing/index.html
+    fact_number: 9
+  - q: What is included in the published Zhangjiajie admission prices?
+    a: Hunan lists CNY 165 for the Wulingyuan core scenic area (武陵源核心景区), valid for four consecutive days and excluding transport. Tianmen Mountain (天门山) is a separate attraction with a government-guided admission price of CNY 72. Check the transport and cableway components of your chosen ticket before comparing totals.
+    sources:
+      - https://fgw.hunan.gov.cn/fgw/jgzc11/202507/t20250724_33748635.html
+      - https://fgw.hunan.gov.cn/fgw/xxgk_70899/tzgg/202508/t20250825_33782047.html
+      - https://hunan.gov.cn/hnszf/hnyw/szdt/202611/t20261114_34101824.html
+    fact_number: 10
+  - q: What does an adult ticket to the Chengdu panda base cost?
+    a: The Chengdu Research Base of Giant Panda Breeding (成都大熊猫繁育研究基地) lists adult admission at CNY 55 per person. Check the base’s own booking service for the date and entry period you want.
+    sources:
+      - https://fgw.sc.gov.cn/scsfgw/uploadfiles/2019112410065911407.pdf
+      - https://www.panda.org.cn/en/service/ticket/
+    fact_number: 11
+  - q: How do I book a visit to Tian’anmen Square itself?
+    a: Tian’anmen Square (天安门广场) in Beijing is free to visit and uses real-name advance reservations. For a visit to the square itself, the management committee lists a booking window of one to seven days before the visit. Book through its official platform and follow the entry time and checkpoint on the reservation. A square reservation does not book entry to the Palace Museum or the National Museum.
+    sources:
+      - https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202609/t20260924_4880476.html
+      - https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202111/t20211119_2541156.html
+    fact_number: 12
+  - q: Is Prince Kung’s Palace open on Mondays?
+    a: Beijing’s visitor guide lists Monday as the weekly closure for Prince Kung’s Palace and Garden (恭王府), with an exception for statutory holidays. Check the museum’s notice for your planned date.
+    sources:
+      - https://english.beijing.gov.cn/specials/strollthroughbeijing/lifeintheoldcity/202611/t20261110_4939976.html
+    fact_number: 13
+  - q: Does Baqi Cave in Beijing offer a senior rate?
+    a: Beijing’s attraction directory lists a discounted ticket for visitors aged 60 to 65 with valid identification at Baqi Cave (八奇洞). Check the attraction’s own booking terms for your visit.
+    sources:
+      - https://english.beijing.gov.cn/specials/ticketing/
+    fact_number: 14
+  - q: When does the Palace Museum open reservations for an ordinary visit?
+    a: Ordinary tickets go on sale at 20:00 Beijing time seven days before the visit. The Palace Museum normally closes on Mondays except statutory holidays and publishes an advance-booking rule. Beijing reported in August 2024 that staff could help individual overseas visitors who had difficulty booking or paying online with same-day replacement tickets. This was a dated report about assistance. For a sold-out date, the current visitor rules give no assurance that presenting a passport at the counter will secure admission.
+    sources:
+      - https://www.dpm.org.cn/singles_detail/259831.html
+      - https://english.beijing.gov.cn/whatson/events/travelling/202406/t20240627_3730064.html
+      - https://english.beijing.gov.cn/latest/news/202408/t20240822_3780055.html
+    fact_number: 15
+    aliases:
+      - q: How far ahead should I book the Forbidden City?
+        fact_number: 4
+  - q: Which Zhangjiajie visitor sites does Hunan’s transport guide name?
+    a: Hunan’s visitor guide includes Golden Whip Stream (金鞭溪), Yuanjiajie (袁家界) and the Bailong Elevator (百龙天梯) in its directions for Wulingyuan. Check transport charges separately from park admission.
+    sources:
+      - https://whhlyt.hunan.gov.cn/whhlyt/wldh2022jt/202208/t20220823_27716245.html
+    fact_number: 16
 category: guide
+reader_question_numbers:
+  Do I need to book China attraction tickets in advance?: 1
+  What do I need to enter an attraction in China?: 2
+  What's the best way for foreigners to book attraction tickets?: 3
 ---
 
-# Attraction Ticketing & Admissions in China
+# Beijing Palace Museum tickets and opening days
 
-> China uses a real-name, passport-linked ticketing system with daily caps and time slots for most major attractions. You cannot "just show up" at globally famous sites. Book online in advance with your passport number, and carry your physical passport to the gate.
+## When can I visit Beijing’s Palace Museum?
 
----
+The Palace Museum normally closes on Mondays, with exceptions for statutory holidays. Check the museum’s opening notices, including Lunar New Year’s Eve and temporary closures, before booking. Regular admission is CNY 60 from April through October and CNY 40 from November through March. The Treasure and Clock galleries have separate tickets.
 
-## How does China's real-name ticketing system work?
+[intl.dpm.org.cn](https://intl.dpm.org.cn/visit) · [www.dpm.org.cn](https://www.dpm.org.cn/Visit.html) · [www.beijing.gov.cn](https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6623d27081e5641581784ebb.html)
 
-Every major attraction ties its ticket to a single passport number and checks it at the gate, so tickets can't be shared — you book ahead and carry your physical passport.
+## Can I buy Palace Museum tickets on the day?
 
-- Every ticket ties to a specific passport number and is checked at entry (QR + ID match)
-- Tickets cannot be shared or used by someone else
-- At entry: per-person QR scan + ID match; sometimes staff key-in if scanners fail
-- Your **physical passport** is required at the gate (not just a photo/copy)
+The Palace Museum asks visitors to arrange admission in advance and says it does not sell tickets on the day. Foreign visitors booking online enter their passport numbers. The Treasure Gallery and Clock Gallery each list a separate CNY 10 ticket.
 
----
+[intl.dpm.org.cn](https://intl.dpm.org.cn/visit)
 
-## What's the best ticket-booking platform for foreigners?
+## What if the booking form rejects my overseas telephone number?
 
-For most foreign visitors, Trip.com is the easiest option: it runs in English, accepts foreign cards, and works in China without a VPN.
+Beijing’s 12345 service directs foreign visitors to the English version of the Palace Museum’s official website for booking. Use the museum’s own instructions for your document and contact information.
 
-### Why Trip.com
-- Works in China without VPN
-- Accepts foreign payment methods (credit cards, PayPal, Alipay)
-- English interface
-- Passport profiles auto-fill subsequent bookings
+[english.beijing.gov.cn](https://english.beijing.gov.cn/12345hotline/faqs/all/202506/t20250620_4117980.html)
 
-### Setup
-1. Install app (iOS/Android)
-2. Create account (email) and verify
-3. Add passengers: Account > Passengers > exact passport details
-4. Add payment: Account > Payment > card, PayPal, or Alipay
+## What does admission to the Terracotta Warriors museum cost?
 
-### At the Gate
-- Follow "Foreign Passport / Manual Check-in" lane if available
-- Hand over passport; staff scan and match booking
-- Some sites print a paper ticket after passport scan
+The Emperor Qinshihuang’s Mausoleum Site Museum in Lintong, Xi’an, lists an ordinary adult ticket at CNY 120. Foreign visitors using a passport should use it for the booking and bring the original for admission. Check the museum’s ticketing page for your visit date.
 
----
+[en.xa.gov.cn](https://en.xa.gov.cn/CultureTravel/Attractions/1691691506530373634.html) · [www.bmy.com.cn](https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html)
 
-## How far ahead should I book major attractions, and what do they cost? (2026)
+## What are the basic adult entry prices for Mutianyu, the Temple of Heaven and the Summer Palace?
 
-Booking lead times range from same-day for open parks to 7–14 days for popular sites, and up to 15–30 days for peak-season entries like Shanghai Disneyland. The table below lists each attraction's window and approximate ticket price.
+Huairou District lists CNY 40 for adult admission to the Mutianyu Great Wall (慕田峪长城). Beijing lists basic Temple of Heaven (天坛) entry at CNY 15 in peak season and CNY 10 off season. Basic Summer Palace (颐和园) entry is CNY 30 in peak season and CNY 20 off season. Combined tickets and separately priced attractions can cost more.
 
-| Attraction | Book Ahead | Price (CNY) | Notes |
-|-----------|-----------|-------------|-------|
-| Forbidden City (Beijing) | 7 days at 20:00 release | ~60 | Daily cap ~40k; sells out in minutes peak; closed Mon |
-| Great Wall — Mutianyu | 1-3 days (peak); same-day off-peak | ~40 + cable car | Weekday mornings best |
-| Temple of Heaven | 1-7 days | ~15 park + ~20 halls | Rarely sells out |
-| Summer Palace | 1-3 days | ~30 | Spring/autumn busiest |
-| Panda Base (Chengdu) | 3-7 days essential (summer) | ~55 | 8:00 entry best (pandas active) |
-| Zhangjiajie National Forest Park | 3-5 days | ~225 (4-day pass) | Cable cars sold separately |
-| Tianmen Mountain | 5-7 days essential | ~260 incl. cable car | Sells out fast; fog risk |
-| Terracotta Warriors (Xi'an) | 3-7 days | ~120 | 40 km from city center |
-| Shanghai Tower | 1-3 days | ~180-220 | Best at sunset |
-| Shanghai Disneyland | 7-14+ days | ~399-699 (dynamic) | Weekends/holidays peak |
-| Li River Cruise (Guilin) | 3-5 days | ~200-300 | 4-5h to Yangshuo |
+[www.bjhr.gov.cn](https://www.bjhr.gov.cn/zwgk/zfxxgkjg/qzfbmdh/fzggwdh/fgzdly/202405/t20240528_3696959.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/specials/parktours/guidevisitors/templeofheaven/) · [english.beijing.gov.cn](https://english.beijing.gov.cn/specials/ticketing/index.html)
 
----
+## What is included in the published Zhangjiajie admission prices?
 
-## When should I book each type of attraction?
+Hunan lists CNY 165 for the Wulingyuan core scenic area (武陵源核心景区), valid for four consecutive days and excluding transport. Tianmen Mountain (天门山) is a separate attraction with a government-guided admission price of CNY 72. Check the transport and cableway components of your chosen ticket before comparing totals.
 
-| When to Book | Attractions |
-|-------------|-------------|
-| 15-30 days ahead | Shanghai Disneyland (peak), certain national park passes |
-| 7-14 days ahead | Forbidden City, Terracotta Warriors, Tianmen, Panda Base (summer), Li River |
-| 3-7 days ahead | Great Wall (peak), Summer Palace, Temple of Heaven, Zhangjiajie Park |
-| 1-3 days ahead | Most temples/smaller attractions, local tours; Great Wall (off-season) |
-| Same day | Parks without caps, open streets, markets, many temples |
+[fgw.hunan.gov.cn](https://fgw.hunan.gov.cn/fgw/jgzc11/202507/t20250724_33748635.html) · [fgw.hunan.gov.cn](https://fgw.hunan.gov.cn/fgw/xxgk_70899/tzgg/202508/t20250825_33782047.html) · [hunan.gov.cn](https://hunan.gov.cn/hnszf/hnyw/szdt/202611/t20261114_34101824.html)
 
----
+## What does an adult ticket to the Chengdu panda base cost?
 
-## What doesn't need booking in advance?
+The Chengdu Research Base of Giant Panda Breeding (成都大熊猫繁育研究基地) lists adult admission at CNY 55 per person. Check the base’s own booking service for the date and entry period you want.
 
-- Temple complexes: Lama Temple (Beijing), many local temples
-- Parks and gardens: Jingshan Park (Beijing), People's Park (Chengdu)
-- Cultural streets: Wangfujing, Jinli, Kuanzhai Alley, Nanjing Road, West Street (Yangshuo)
-- Markets and hutongs: generally open access
+[fgw.sc.gov.cn](https://fgw.sc.gov.cn/scsfgw/uploadfiles/2019112410065911407.pdf) · [www.panda.org.cn](https://www.panda.org.cn/en/service/ticket/)
 
-**General rule:** If it's globally famous, book. If it's local/open-air, walk up.
+## How do I book a visit to Tian’anmen Square itself?
 
----
+Tian’anmen Square (天安门广场) in Beijing is free to visit and uses real-name advance reservations. For a visit to the square itself, the management committee lists a booking window of one to seven days before the visit. Book through its official platform and follow the entry time and checkpoint on the reservation. A square reservation does not book entry to the Palace Museum or the National Museum.
 
-## What ticketing tips help foreign visitors?
+[tamgw.beijing.gov.cn](https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202609/t20260924_4880476.html) · [tamgw.beijing.gov.cn](https://tamgw.beijing.gov.cn/zhengwugongkai/tzgg/202111/t20211119_2541156.html)
 
-- **Forbidden City same-day:** In rare cases, foreigners can still buy at the ticket office with passport when the app shows sold out (not guaranteed)
-- **Passport recognition issues:** Remove spaces/special characters; use passport number only; contact Trip.com support
-- **Scanner won't read passport:** Clean data page, change angle, ask for manual key-in, show Trip.com confirmation
-- **Students:** Many 50% discounts with valid student ID; ISIC acceptance ~50/50
-- **Seniors:** Discounts for 60/65+ with passport age verification
+## Is Prince Kung’s Palace open on Mondays?
 
----
+Beijing’s visitor guide lists Monday as the weekly closure for Prince Kung’s Palace and Garden (恭王府), with an exception for statutory holidays. Check the museum’s notice for your planned date.
 
-## What should I watch out for in peak season?
+[english.beijing.gov.cn](https://english.beijing.gov.cn/specials/strollthroughbeijing/lifeintheoldcity/202611/t20261110_4939976.html)
 
-- Golden Week (Oct 1-7), Chinese New Year, and summer holidays sell out 10-15 days ahead
-- Many museums and palaces are **closed Mondays** (check before booking)
-- Time slots can be enforced strictly (arrive within your assigned window)
-- Mountain weather can destroy visibility (prefer flexible/refundable tickets for Tianmen, Huangshan)
-- Morning slots sell out first; afternoon can be cooler and slightly less crowded
+## Does Baqi Cave in Beijing offer a senior rate?
 
----
+Beijing’s attraction directory lists a discounted ticket for visitors aged 60 to 65 with valid identification at Baqi Cave (八奇洞). Check the attraction’s own booking terms for your visit.
 
-## What if a ticket is sold out or I booked the wrong date?
+[english.beijing.gov.cn](https://english.beijing.gov.cn/specials/ticketing/)
 
-| Problem | Solution |
-|---------|----------|
-| Sold out on Trip.com | Check official site (if usable) or try Klook/Viator; Forbidden City: try same-day ticket office |
-| Wrong date purchased | Check cancellation window; rebook; try refund |
-| Weather/sickness cancellation | Chat with Trip.com; reschedule often possible; insurance may help |
+## When does the Palace Museum open reservations for an ordinary visit?
 
----
+Ordinary tickets go on sale at 20:00 Beijing time seven days before the visit. The Palace Museum normally closes on Mondays except statutory holidays and publishes an advance-booking rule. Beijing reported in August 2024 that staff could help individual overseas visitors who had difficulty booking or paying online with same-day replacement tickets. This was a dated report about assistance. For a sold-out date, the current visitor rules give no assurance that presenting a passport at the counter will secure admission.
 
-## See Also
+[www.dpm.org.cn](https://www.dpm.org.cn/singles_detail/259831.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/whatson/events/travelling/202406/t20240627_3730064.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/latest/news/202408/t20240822_3780055.html)
 
-- [[wiki/concepts/trip-planning.md]] — When to avoid peak dates
-- [[wiki/concepts/city-guides.md]] — City-specific attraction guides
-- [[wiki/concepts/mini-programs.md]] — WeChat mini-programs for ticketing
-- [[wiki/concepts/mobile-payment.md]] — Payment setup for booking
+## Which Zhangjiajie visitor sites does Hunan’s transport guide name?
+
+Hunan’s visitor guide includes Golden Whip Stream (金鞭溪), Yuanjiajie (袁家界) and the Bailong Elevator (百龙天梯) in its directions for Wulingyuan. Check transport charges separately from park admission.
+
+[whhlyt.hunan.gov.cn](https://whhlyt.hunan.gov.cn/whhlyt/wldh2022jt/202208/t20220823_27716245.html)
+
+## Travel tip — If tickets sell out or the date is wrong
+
+Check the venue’s own calendar, opening days, ticket release instructions, accepted ID and cancellation terms. If your preferred slot is gone, choose another time or keep a nearby walk as a backup. Confirm any refund before buying a replacement.
+
+## Travel tip — Deciding what to reserve first
+
+When your dates are fixed, start with the attraction you would most regret missing. Check its own booking window, acceptable ID and cancellation terms, then fit flexible activities around it. If the desired slot is gone, try another official time or switch that day with a park or neighbourhood walk.
+
+## Travel tip — Booking Shanghai Disneyland through the resort
+
+For 上海迪士尼乐园 (Shanghai Disneyland), start with the resort’s own website or app. The resort also lists its official WeChat account and Fliggy flagship store. Before buying, compare the date, guest ID details, refund terms and whether a reservation is required for the ticket you chose.
+
+[Shanghai Disney Resort’s hotel and ticket booking channels](https://www.shanghaidisneyresort.com/en/ticket/)
+
+## Questions from travellers
+
+- Do I need to book China attraction tickets in advance? — Start with the official booking page of the attraction that matters most to you. Check its release date, the ID accepted and whether a same-day ticket is possible. [When can I visit Beijing’s Palace Museum?](#when-can-i-visit-beijings-palace-museum) · [When does the Palace Museum open reservations for an ordinary visit?](#when-does-the-palace-museum-open-reservations-for-an-ordinary-visit)
+- What do I need to enter an attraction in China? — Check the venue’s admission instructions and bring the document used to reserve. Keep your ticket or booking confirmation accessible. [What does admission to the Terracotta Warriors museum cost?](#what-does-admission-to-the-terracotta-warriors-museum-cost) · [How do I book a visit to Tian’anmen Square itself?](#how-do-i-book-a-visit-to-tiananmen-square-itself)
+- What's the best way for foreigners to book attraction tickets? — Start with the official booking page of the attraction that matters most to you. Check its release date, the ID accepted and whether a same-day ticket is possible. [What if the booking form rejects my overseas telephone number?](#what-if-the-booking-form-rejects-my-overseas-telephone-number) · [Travel tip — If tickets sell out or the date is wrong](#travel-tip--if-tickets-sell-out-or-the-date-is-wrong)

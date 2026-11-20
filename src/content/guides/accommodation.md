@@ -1,17 +1,19 @@
 ---
-title: Accommodation for Foreign Visitors in China
-date: 2026-05-04
-last_verified: 2026-07-16
+title: Hotels and Accommodation Registration in China
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://english.www.gov.cn/news/202404/11/content_WS6617c858c6d0868f4e8e5f4d.html
-  - https://www.trip.com
-  - https://www.agoda.com
-  - https://www.cnbc.com/2022/05/23/airbnb-is-closing-its-domestic-business-in-china-sources-say.html
-  - https://skift.com/2025/03/20/airbnb-stopped-listing-in-china-but-it-still-wants-chinese-travelers/
-sources:
-  - raw/12306-guide-for-foreign-business-visitors-2025.md
-  - raw/reddit-pain-points-research-2026.md
-  - raw/realchinaguide-accommodation-guide-2026.md
+  - https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_10ddb29858c24ece86b3f575bda1d9c4.html
+  - https://www.nia.gov.cn/n897453/c1806111/content.html
+  - https://english.shanghai.gov.cn/cmsres/11/11a3dd13306c44d6a744ce1575ad8ed4/016e480d2524ff7a6b905577d6557c77.pdf
+  - https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html
+  - https://www.shanghai.gov.cn/xxzfgzwj/20210608/e1ceccf2959645d8b2b85ad0dae3ea95.html
+  - https://news.airbnb.com/airbnb-q4-2022-and-full-year-financial-results
+  - https://www.tujia.com/
+  - https://rules-center.meituan.com/m/detail/guize/71
+  - https://www.hostelworld.com/hostels/asia/china/beijing/
+  - https://www.shanghaidisneyresort.com/en/ticket/
+sources: []
 related:
   - wiki/concepts/residence-registration.md
   - wiki/concepts/mobile-payment.md
@@ -21,229 +23,154 @@ related:
   - wiki/entities/meituan.md
   - wiki/entities/trip-com.md
   - wiki/entities/didi.md
+  - wiki/concepts/china-accommodation-registration-online.md
+  - wiki/entities/wechat.md
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-05-06
-  notes: "2026-07-16: Added a PROVISIONAL 'DiDi Hotel' note based on in-app observation of the DiDi English app (July 2026). Per issue #21's source-verified bar, product-level claims resting only on a private product-team confirmation — nationwide coverage, foreigner-screened properties, built-for-inbound intent — are deliberately NOT included; no public DiDi announcement or product page exists yet, so verified_against is unchanged and the note is scoped to directly-observable in-app behaviour and explicitly marked provisional. Issue #21 stays OPEN pending a publicly-verifiable source to upgrade this to a source-verified entry. Other sections carried forward from the 2026-06-09 audit, not re-verified this round; page_audit unchanged."
-description: >-
-  Which hotels in China accept foreign passports, how to book foreigner-eligible
-  stays on Trip.com or Agoda, pay with foreign cards, and do police
-  registration.
+  auditor: Codex
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Full review of the retained body and FAQs on 2026-11-18. Replaced foreign-guest licensing claims with primary policy. Removed platform/chain/payment guarantees, unsourced prices, discounts and DiDi Hotel anecdote; converted shopping advice to explicit prebooking checks. Practical checklists are advice, not guarantees. Dated sources are not live policy checks. Local review only; no publication or deployment. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026. The 20 November 2026 follow-up covered the restored travel tips on this page.
+description: Book accommodation in China with clear passport check-in, payment and registration steps. Learn hotel duties and the 24-hour rule outside hotels.
 faqs:
-  - q: Why do some hotels in China refuse foreign guests?
-    a: >-
-      Because not every hotel or guesthouse in China is authorized to receive
-      foreign nationals: properties must register with local public security to
-      accept foreign guests, and every check-in legally requires verifying and
-      registering your passport details. International chain hotels and most
-      3-star-and-above properties in major cities are licensed, but small
-      family-run guesthouses (客栈), rural inns, and some budget hotels in smaller
-      cities may not be — and they often only tell you at check-in, after you've
-      already arrived. Reddit travelers report this is a frequent surprise,
-      especially in tier-2/3 cities and rural areas. To avoid it, book through
-      international platforms like Trip.com, whose search results generally show
-      foreigner-eligible properties by default in major cities, or stick to
-      international chains. If a property cannot accept you, ask the front desk
-      to recommend a nearby licensed alternative — most are willing to help.
-  - q: How do I find hotels that accept foreigners?
-    a: >-
-      Book through international platforms — Trip.com, Agoda, or Booking.com —
-      which accept foreign cards, have full English support, and tend to list
-      properties licensed to receive foreign guests; Trip.com generally filters
-      to foreigner-eligible hotels by default in major cities. This is not
-      guaranteed, though, so confirm foreign-guest acceptance before booking
-      budget or smaller properties outside major cities. On Meituan or Ctrip's
-      Chinese site, searching '涉外酒店' filters for foreigner-licensed properties —
-      look for "Foreign guests accepted" tags. International chains (Marriott,
-      Hilton, IHG, Hyatt) always accept foreigners, and hotels near tourist
-      areas are far more likely to be licensed than those in residential
-      neighborhoods. Two safety nets help: book refundable rates, since some
-      hotels say yes at booking but discover at check-in they cannot process
-      foreign passports, and call ahead — or have your booking platform's
-      customer service call — to verify they can register foreign guests.
-  - q: What do I need at hotel check-in in China?
-    a: >-
-      Your original passport, showing a valid visa, entry stamp, or qualifying
-      visa-free entry — a photocopy or a photo on your phone is never accepted.
-      Desk staff scan the passport and enter your details into the PSB system,
-      which takes 5–10 minutes; the hotel files your residence registration with
-      the local police automatically, so no police-station visit is needed for
-      hotel stays. You'll receive a registration form (境外人员临时住宿登记表) — keep it,
-      as police may ask for it during random checks. Expect a deposit hold (押金)
-      of roughly ¥200–500 at budget properties and higher at luxury hotels,
-      returned at check-out; foreign cards can be used for the hold where
-      accepted, otherwise cash. If you change hotels mid-trip, each new hotel
-      simply registers you again at check-in.
+  - q: Do hotels need a special licence to accept foreign visitors?
+    a: The July 2024 seven-department notice says qualifications should not be used as a barrier to receiving overseas guests. Still confirm the specific property’s check-in arrangements before booking.
+    sources:
+      - https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_10ddb29858c24ece86b3f575bda1d9c4.html
+    fact_number: 5
+  - q: Do I need to register if I stay with friends?
+    a: Yes. Outside hotels, you or your host must register within 24 hours after arrival. National online channels have been available since 21 September 2026; in-person registration remains valid.
+    sources:
+      - https://www.nia.gov.cn/n897453/c1806111/content.html
+    fact_number: 6
+  - q: Will every hotel accept my foreign card?
+    a: Do not assume so. Confirm your exact payment method and deposit arrangement with the property; platform payment options do not establish what the front desk accepts.
+    sources:
+      - https://english.shanghai.gov.cn/cmsres/11/11a3dd13306c44d6a744ce1575ad8ed4/016e480d2524ff7a6b905577d6557c77.pdf
+    fact_number: 7
+  - q: Where can I compare hotel listings before booking in Shanghai?
+    a: Shanghai’s accommodation guide lists Ctrip (携程) and Meituan (美团) for comparing and booking hotels. Ctrip lets you filter by location, price, star rating and amenities. Compare the same room, dates and cancellation terms when checking prices.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html
+    fact_number: 8
+  - q: What happens to a hotel deposit in Shanghai?
+    a: Under Article 15 of Shanghai’s hotel rules, a hotel collecting a deposit agrees the amount with the guest at booking or check-in and gives a receipt. If the deposit exceeds what you owe, the hotel must return the balance at settlement.
+    sources:
+      - https://www.shanghai.gov.cn/xxzfgzwj/20210608/e1ceccf2959645d8b2b85ad0dae3ea95.html
+    fact_number: 9
   - q: Can I use Airbnb or short-term rentals in China?
-    a: >-
-      Airbnb is not a practical option inside mainland China: it shut down all
-      of its domestic mainland-China listings (around 150,000) effective 30 July
-      2022 and, as of June 2026, has not relisted them — it now serves only
-      Chinese travelers booking stays abroad. For apartment-style stays, use
-      domestic platforms instead: Tujia (途家) and Meituan Minsu (美团民宿).
-      Short-term rentals do carry the highest registration risk of any
-      accommodation type, though. Hosts must be licensed to receive foreign
-      guests and must file your residence registration within 24 hours of your
-      arrival — the same deadline that applies to hotels — and many hosts are
-      not set up to do this; under the regulations, both the host and the
-      foreign guest bear responsibility for completing it. Before booking,
-      confirm the host can legally receive foreign guests and will handle police
-      registration; if you cannot confirm they filed, register yourself at the
-      local 派出所, or choose a hotel, which handles it automatically.
+    a: Airbnb reported removing its mainland China listings in July 2022 when it closed its domestic business. If you arrange a private stay through another channel, confirm the address and who will handle accommodation registration. The historical announcement does not establish the availability of a particular property.
+    sources:
+      - https://news.airbnb.com/airbnb-q4-2022-and-full-year-financial-results
+      - https://www.nia.gov.cn/n897453/c1806111/content.html
+    fact_number: 4
+    checked_at: 2026-11-20
 category: guide
+reader_question_numbers:
+  Why do some hotels in China refuse foreign guests?: 1
+  How do I find hotels that accept foreigners?: 2
+  What do I need at hotel check-in in China?: 3
 ---
 
-# Accommodation for Foreign Visitors in China
+# Hotels and Accommodation Registration in China
 
-## Where should foreigners stay in China?
+Book a property that confirms your check-in arrangements, payment method and cancellation terms. A special “foreign guest licence” should not be presented as a legal requirement for accepting foreign visitors.
 
-| Option | Best for | Foreign-card payment | Notes |
-|---|---|---|---|
-| **International booking platform** (Trip.com, Agoda, Booking.com) | Most visitors — widest selection, foreign-card friendly | At booking (online) | Filters to foreigner-eligible hotels; English customer support |
-| **Hotel direct** (3-star and above) | Flexibility to pay at check-out | At front desk (PBOC 2024 mandate for 3-star+, but compliance varies in practice — pre-pay online to avoid uncertainty) | Call ahead if you need English-speaking staff |
-| **Youth hostel / budget hotel** | Budget travelers | Varies — confirm before booking | Not all are licensed to receive foreign guests; confirm when booking |
-| **Short-term rental** (local platforms — Tujia, Meituan Minsu; Airbnb no longer lists mainland China stays) | Longer stays, apartment feel | Via platform | Highest risk of registration issues — see [[wiki/concepts/residence-registration.md]] |
+## Do hotels need a special licence for foreign guests?
 
-## Which booking platforms work for foreigners in China?
+The [July 2024 seven-department accommodation notice](https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_10ddb29858c24ece86b3f575bda1d9c4.html) says authorities and platforms should not use qualification requirements to restrict accommodation providers from receiving overseas guests, and providers/platforms should not unlawfully publish blanket refusals. It also calls for registration training, language support and improved payments. These policy directions do not guarantee that every front desk will handle every booking smoothly.
 
-### International Platforms (Recommended)
+Before booking, ask the property to confirm the document you will use, arrival time and how it handles registration. Save its answer and Chinese address. If refused on a supposed qualification ground, ask the manager or booking platform for help; the notice identifies **12367** as a channel for policy enquiries and complaints. Do not assume an automatic refund or replacement room.
 
-These accept foreign credit cards and tend to list properties that are licensed to receive foreign guests:
+## Who must register my accommodation?
 
-| Platform | Foreign cards | English UI | Notes |
-|---|---|---|---|
-| **Trip.com** (Ctrip) | ✅ Visa, Mastercard, AMEX | ✅ Full | Largest inventory in China; customer service reachable in English |
-| **Agoda** | ✅ Visa, Mastercard | ✅ Full | Strong Asia coverage; competitive rates |
-| **Booking.com** | ✅ Visa, Mastercard | ✅ Full | Good for major cities; some rural gaps |
+Hotels must register foreign guests and report the information to local public security authorities. If staying **outside a hotel**, you or your host must complete registration within **24 hours after arrival** at the accommodation.
 
-### Domestic Platforms
+Since **21 September 2026**, the NIA notice provides national online handling through its government service website, the **移民局12367 (NIA 12367)** app and WeChat/Alipay mini programs. In-person registration remains available and has equal validity. A platform booking alone is not proof of completed registration. Source: [NIA national accommodation registration notice](https://www.nia.gov.cn/n897453/c1806111/content.html).
 
-**Meituan (美团)** lists the same rooms as OTAs but often at lower local prices — travelers report savings of roughly 20–30% on the same room versus international-facing OTAs (e.g. a room around ¥400 on Trip.com showing closer to ¥300 on Meituan). This is an anecdotal traveler estimate rather than a verified figure, and the gap varies by property and date; the Chinese and international versions of Trip.com (Ctrip) show the same price. To use Meituan you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]) — foreign cards are not directly supported. Meituan has partial English support but many menus remain in Chinese. (Source: traveler reports, Reddit r/travelchina, 2026-05-08)
+For a private home or rental, agree beforehand who will submit the registration and retain the completion record. If the online process fails, contact local public security or 12367 promptly instead of waiting past the deadline. See [[wiki/concepts/china-accommodation-registration-online.md]].
 
-**Fliggy (飞猪)** has wide coverage of smaller cities and budget properties but is harder to use without a Chinese payment method and has no English UI.
+## What should I confirm before check-in?
 
-### DiDi Hotel (滴滴酒店)
+This is a practical checklist, not a universal list of legal documents:
 
-As of July 2026 the DiDi English app shows a **DiDi Hotel** booking option on its home screen. This is a newly-surfaced feature with **no public DiDi documentation or announcement yet**, so the notes below are **in-app observations only** — treat them as provisional and confirm in the app before relying on them:
+- Carry the original valid identity/travel document used for your reservation, and ask the property about any additional documents it needs.
+- Confirm the name on the booking, late-arrival arrangement and Chinese address.
+- Ask for the total room price, taxes/charges, cancellation deadline, deposit amount and release timing in writing.
+- Confirm the actual card or wallet you intend to use, including whether it can cover the deposit. A platform's payment options do not establish the hotel's options.
+- Ask the front desk to confirm registration was completed. Keep the booking and payment records.
 
-- The booking flow is largely in English (some labels remain in Chinese). The guest form takes Latin-letter names, an international phone number, and an email, and the check-in ID reminder lists a **passport** among accepted IDs.
-- Payment at checkout is offered via **DiDi Payment, Alipay, or WeChat Pay** — no direct foreign-card option was shown, and prices are in CNY. A foreign Visa/Mastercard can be linked to Alipay or WeChat Pay to fund the payment (see [[wiki/concepts/mobile-payment.md]]).
-- The booking is fulfilled by a third-party travel-service provider, with DiDi acting as the technology platform.
+## Should I choose a hotel, hostel or private rental?
 
-How reliably it serves foreign guests, which cities and properties it covers, and how it compares to the platforms above are **not confirmed by any public source**. For a booking you can rely on today, use the international platforms or hotel-direct options above; as with any hotel in China, you will need your original passport for the police registration at check-in. See [[wiki/entities/didi.md]] for DiDi's ride-hailing use.
+Compare the specific property's arrangements rather than relying on a star rating or chain name. Check reception hours, language assistance, accessibility, room/bathroom type, location and cancellation terms. For a private rental, resolve the non-hotel registration responsibility with the host before paying.
 
-## What do I need to check in to a hotel in China?
+Compare the final price and refund terms across platforms and the property itself. This guide does not guarantee identical inventory, foreign-card acceptance, English staffing or a particular discount on any platform. See [[wiki/entities/trip-com.md]] for platform context and [[wiki/concepts/mobile-payment.md]] for payment preparation.
 
-- **Original passport is mandatory** at every check-in — a photocopy, a photo on your phone, or another ID document is not accepted. Hotels are legally required to verify and register your passport details.
-- A valid visa or entry stamp is required — the hotel will check that your passport shows a valid legal basis to be in China (a current visa, a valid entry stamp, or a qualifying visa-free entry).
-- The hotel files your residence registration with the local public security bureau automatically — you do not need to visit a police station for hotel stays (see [[wiki/concepts/residence-registration.md]]).
+## Where can I compare hotel listings before booking in Shanghai?
 
-## Can I pay with a foreign card at a hotel front desk in China?
+Shanghai’s accommodation guide lists Ctrip (携程) and Meituan (美团) for comparing and booking hotels. Ctrip lets you filter by location, price, star rating and amenities. Compare the same room, dates and cancellation terms when checking prices.
 
-Under the PBOC April 2024 circular, **3-star and above hotels** are required to accept foreign Visa and Mastercard at the POS. In practice:
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html)
 
-- Luxury and international-brand hotels (Marriott, Hilton, IHG, Hyatt, etc.) reliably accept foreign cards.
-- Mid-range 3-star hotels generally comply but acceptance is less consistent — have Alipay or WeChat Pay as a backup.
-- Budget hotels and unbranded properties below 3-star frequently accept mobile payment or cash only.
+## What happens to a hotel deposit in Shanghai?
 
-Pre-paying through an international booking platform (Trip.com, Agoda, Booking.com) sidesteps front-desk payment entirely and is the most reliable approach.
+Under Article 15 of Shanghai’s hotel rules, a hotel collecting a deposit agrees the amount with the guest at booking or check-in and gives a receipt. If the deposit exceeds what you owe, the hotel must return the balance at settlement.
 
-## Which hotels are licensed to accept foreign guests?
+[www.shanghai.gov.cn](https://www.shanghai.gov.cn/xxzfgzwj/20210608/e1ceccf2959645d8b2b85ad0dae3ea95.html)
 
-Not every hotel or guesthouse in China is authorized to receive foreign nationals. Properties must register with local public security to accept foreign guests. In practice:
+## Travel tip — Comparing a hostel, hotel or apartment
 
-- International chain hotels and most 3-star+ properties in major cities are licensed.
-- Small family-run guesthouses (客栈), rural inns, and some budget hotels in smaller cities may not be — they will often only tell you at check-in, after you've already arrived. Confirm at booking for any off-the-beaten-path or boutique property. (Reddit travelers report this is a frequent surprise, especially in tier-2/3 cities and rural areas — source: r/travelchina 2026-05-08)
-- If a property cannot accept foreign guests, ask the front desk to recommend a nearby licensed alternative — most are willing to help, though there is no formal legal obligation to do so.
+Decide whether you need a private bathroom, lift, laundry, quiet room or late check-in. Compare the same dates and room, and check the final total, cancellation deadline and breakfast terms. For a private stay, agree with the host how you will register.
 
-When booking via Trip.com or similar platforms, search results generally show only foreigner-eligible properties by default in major cities, but confirm for off-the-beaten-path destinations.
+## Travel tip — Keeping the booking handy
+
+Save the property’s Chinese name, address, phone number and confirmation offline. Ask the hotel about payment, deposit and late arrival before booking if these affect your choice.
+
+## Travel tip — Asking for help before check-in
+
+If you need English-language assistance or a particular payment method, contact the property or booking support in advance. Ask whether breakfast is included for your rate and keep the written reply.
 
 ## Can I use Airbnb or short-term rentals in China?
 
-Airbnb is not a practical home-rental option inside mainland China: it shut down all of its domestic mainland-China listings (around 150,000) effective 30 July 2022 and, as of June 2026, has not relisted them — it now serves only Chinese travelers booking stays abroad. (A small number of commercial hotels may still surface on Airbnb, but it is not a reliable way to find apartment-style stays in China.) For short-term apartment rentals, use domestic platforms instead: Tujia (途家) and Meituan Minsu (美团民宿).
+Airbnb reported removing its mainland China listings in July 2022 when it closed its domestic business. If you arrange a private stay through another channel, confirm the address and who will handle accommodation registration. The historical announcement does not establish the availability of a particular property.
 
-Key considerations:
-- Hosts must be licensed to receive foreign guests and must file your residence registration within 24 hours of your arrival — the same deadline that applies to hotels — per the Exit and Entry Administration Law implementing regulations (see [[wiki/concepts/residence-registration.md]]). Many short-term rental hosts are not set up to do this.
-- Under those same regulations, both the host and the foreign guest bear responsibility for ensuring registration is completed. If the host fails to file, you remain responsible — register yourself at the local 派出所 if you cannot confirm the host has done it (see [[wiki/concepts/residence-registration.md]]).
-- Before booking, confirm with the host: (1) that they can legally receive foreign guests, and (2) that they will handle registration with the local police.
-- As a fallback, register yourself at the local 派出所 (police sub-station) within 24 hours if you cannot confirm the host has filed.
+[news.airbnb.com](https://news.airbnb.com/airbnb-q4-2022-and-full-year-financial-results) · [www.nia.gov.cn](https://www.nia.gov.cn/n897453/c1806111/content.html)
 
-## Practical Tips
+## Travel tip — Room prices from one September trip
 
-- **WeChat groups:** many hotels add guests to a WeChat group for room service requests, late check-out, or local recommendations — install WeChat before arrival (see [[wiki/entities/wechat.md]]).
-- **English support:** international chain hotels in tier-1 cities (Beijing, Shanghai, Guangzhou, Shenzhen, Chengdu) reliably have English-speaking front desk staff. In smaller cities, prepare the hotel name and address in Chinese characters for taxi drivers and for communication with staff.
-- **Breakfast:** most mid-range and above Chinese hotels include breakfast; confirm when booking as the inclusion varies.
-- **Deposit:** hotels typically hold a deposit (押金) at check-in — ¥200–500 for budget properties, higher for luxury. Returned at check-out. Foreign cards can be used for the hold in hotels that accept them; otherwise cash.
-- **VPN:** if you need access to blocked services (Google, WhatsApp, etc.) in your room, set up a VPN before arrival — hotel Wi-Fi is subject to the same Great Firewall restrictions as any Chinese network.
+RealChinaGuide reported these room costs for two travellers in September 2025: about €50 a night in Beijing and Shanghai, €40–45 in Xi’an and €35–40 in Zhangjiajie. Use the figures to see how one trip varied by stop. For your dates, compare a hostel bed per person, a private room per night and a hotel near your first morning’s departure. If meeting people is important, look at hostel common areas; if you arrive late, check reception hours.
 
-## How do I find hotels that accept foreigners?
+## Travel tip — Request a non-smoking room
 
-Finding a hotel that will actually accept your passport at check-in is the single biggest accommodation challenge for foreign visitors. Strategies:
+If smoke bothers you, ask before booking: 请问可以预订无烟房吗？ (Can I reserve a non-smoking room?) Ask the property to confirm the room type in writing.
 
-1. **Use international booking platforms** — While Booking.com and Agoda primarily list larger hotels that typically accept foreign guests, this is not guaranteed. Some properties may still refuse foreigners at check-in if they lack Public Security Bureau registration capability. Always confirm foreign guest acceptance before booking, especially for budget or smaller properties outside major cities. Trip.com also filters for foreigner-eligible properties in major cities.
-2. **Search '涉外酒店' on Chinese platforms** — on Meituan or Ctrip's Chinese site, this term filters for foreigner-licensed properties. Look for "Foreign guests accepted" tags.
-3. **Stick to international chains** — Marriott, Hilton, IHG, Hyatt, InterContinental, etc. always accept foreigners without exception.
-4. **Look for hotels near tourist areas** — properties in popular tourist districts are far more likely to be licensed than those in residential neighborhoods.
-5. **Avoid budget business hotels** — small unbranded hotels, especially those with only a Chinese website or located in residential areas, frequently lack a foreigner license.
-6. **Always book refundable rates** — some hotels say "yes" at booking but discover at check-in they cannot process foreign passports. A refundable booking gives you an exit.
-7. **Call ahead to verify** — if in doubt, call the hotel directly (or have your booking platform's customer service call on your behalf) to confirm they can register foreign guests.
+## Travel tip — Find a homestay or a hostel
 
-**If refused at check-in:** Call your booking platform's customer service immediately — they will find an alternative or arrange a refund. Meanwhile, search Booking.com for nearby international hotels. International chains in the same city will always accept you as a fallback.
+For a homestay, try Tujia (途家民宿) in its app or scan the WeChat mini program code on its website. Meituan Minsu (美团民宿) also has a dedicated homestay app. Before paying, ask the host how passport check-in and accommodation registration will work for that address. For hostels, Hostelworld has Beijing listings with dorm beds and private rooms. Enter your dates and party size, and compare the total for everyone staying. Recent comments about noise, bathrooms or late check-in can be more informative than a score alone.
 
-## Hostel or hotel: which should foreigners choose in China?
+[Tujia booking options](https://www.tujia.com/) · [Meituan Minsu service channels](https://rules-center.meituan.com/m/detail/guize/71) · [Hostelworld Beijing listings](https://www.hostelworld.com/hostels/asia/china/beijing/)
 
-Prices below are approximate ballpark figures (as of June 2026) and vary by city, season, and property.
+## Travel tip — Compare a dorm bed with a private room
 
-| Factor | Hostel (dorm) | Budget hotel | Mid-range hotel |
-|---|---|---|---|
-| **Price** | ~¥70/night | ¥180-280/night | ¥400-700/night |
-| **Social** | Excellent — meet other travelers, get local tips | Minimal | Minimal |
-| **Comfort** | Shared bathroom, bunk beds | Private room, basic amenities | Private room, good amenities |
-| **Foreigner license** | Many hostels lack foreigner license — verify before booking | Risky — many budget hotels cannot accept foreigners | Generally licensed in major cities |
-| **Best for** | Solo backpackers, social travelers | Budget travelers who want privacy | Couples, families, comfort-seekers |
+In a RealChinaGuide account archived in June 2026, the traveller recalled paying about CNY 70 per night for a dorm bed on stays in Xi’an and Chengdu, and about CNY 350 per night for hotel accommodation on stays in Beijing and Shanghai. The account gives no stay dates. For two travellers sharing a room, compare the cost of two dorm beds with the total nightly room price for the same dates.
 
-**Recommended mixed strategy:** Use hostels in social/backpacker cities (Xi'an, Chengdu, Yangshuo) where highly-rated hostels cater to international travelers, and switch to hotels in major cities (Beijing, Shanghai) where comfort matters more and hotel prices are justified by better location and service. Verify foreigner license for both types.
+## Travel tip — Four city budgets from the June 2026 guide
 
-**Hostel tips:** Choose hostels rated 8.5+ on Trip.com or Hostelworld. Lockers are provided for valuables. Most travelers report no safety issues in Chinese hostels.
+For a starting point when drafting a budget, ChinaGuide’s June 2026 guide used these illustrative nightly amounts in yuan for budget and mid-range hotels respectively: Beijing ¥180–280 and ¥400–700; Shanghai ¥200–300 and ¥450–750; Chengdu ¥150–250 and ¥350–600; Xi’an ¥130–220 and ¥300–550. The old estimates have no named property, check-in dates or booking conditions. Replace them with quotes for your dates, room occupancy and cancellation terms before deciding what you can afford.
 
-## Booking Platform Tips
+## Travel tip — Another place to compare hotels and a deposit question for check-in
 
-### Trip.com vs Ctrip — Same Company
-Trip.com is Ctrip's international brand. Same company, same inventory, same hotels and trains. Trip.com is simply the foreigner-friendly version with full English support and foreign payment options (Visa, Mastercard, AMEX). No need to use both — Trip.com gives you access to everything Ctrip has.
+飞猪 (Fliggy) is another booking option. For example, Shanghai Disney Resort lists its official Fliggy store among its hotel booking channels. Compare the same room, dates and cancellation terms with the property. For a 客栈 (guesthouse) or hotel, you can ask 入住需要押金吗？ (is a deposit required at check-in?) and 押金怎么退？ (how will the deposit be returned?). Confirm the amount, payment method and release time for your own booking.
 
-### Price Differences Between Platforms
-The same room can cost more on international OTAs (Trip.com, Booking.com, Agoda) than on domestic platforms (Meituan, Fliggy) — travelers report differences in the rough range of **20–30%**, though this is an anecdotal estimate that varies by property and date. The gap exists because domestic apps target local consumers with lower prices. To access domestic pricing, you need Alipay or WeChat Pay set up (see [[wiki/concepts/mobile-payment.md]]).
+[Shanghai Disney Resort’s hotel and ticket booking channels](https://www.shanghaidisneyresort.com/en/ticket/)
 
-**Cost-saving strategy:** Use international platforms for guaranteed foreigner acceptance and foreign-card payment, or set up Alipay/WeChat Pay first and book via Meituan to access the lower domestic rates on the same room.
+## Travel tip — A dated DiDi Hotel observation in the English app
 
-### Platform Reliability
-Traveler reports confirm Trip.com works well for extended trips — one user booked 8 hotels, 4 trains, and 2 flights over 3 weeks with no issues. English customer support helped with date changes. Regular Visa card accepted for all bookings.
+ChinaGuide’s July 2026 in-app note recorded a 滴滴酒店 (DiDi Hotel) option on the English home screen. That version showed Latin-letter guest names, an international phone field and a passport ID reminder. Treat this as an observation from one version. If the tile appears in your app, inspect the booking provider, property, final payment screen and cancellation terms before paying. If it is missing, contact the hotel or use another booking channel.
 
-## How do I check in to a Chinese hotel with my passport?
+## Questions from travellers
 
-1. **Arrive at front desk** with your original passport (copies or photos on phone are never accepted).
-2. **Desk staff scan your passport** and check your valid visa, entry stamp, or visa-free entry evidence.
-3. **Staff complete registration** — they enter your details into the PSB system. This takes 5-10 minutes.
-4. **You receive a registration form** (境外人员临时住宿登记表) — keep this document. Police may ask for it during random checks.
-5. **Deposit hold** — the hotel places a deposit hold (押金): typically ¥200-500 for budget properties, higher for luxury. Foreign cards can be used where accepted; otherwise cash.
-
-**No action required from you** for PSB registration — hotels handle everything automatically. If you change hotels mid-trip, each new hotel registers you again upon check-in.
-
-## How much do hotels cost in major Chinese cities?
-
-The nightly ranges below are rough indications only (approximate, as of June 2026); actual prices vary widely by season, location, and demand, so treat them as ballpark figures and check live rates when booking.
-
-| City | Budget range | Mid-range | Notes |
-|---|---|---|---|
-| Beijing | ¥180-280/night | ¥400-700/night | Similar to Shanghai overall |
-| Shanghai | ¥200-300/night | ¥450-750/night | Shanghai and Beijing have broadly similar accommodation costs (Numbeo data shows less than 5% average difference). Hotel prices vary more by location and season than by city. |
-| Chengdu | ¥150-250/night | ¥350-600/night | Good hostel scene for backpackers |
-| Xi'an | ¥130-220/night | ¥300-550/night | Good hostel scene near city wall |
-
-## See Also
-
-- [[wiki/concepts/residence-registration.md]] — legal registration requirements for all accommodation types
-- [[wiki/concepts/mobile-payment.md]] — setting up Alipay / WeChat Pay for hotel payments
-- [[wiki/concepts/foreign-exchange.md]] — cash and ATM access for properties that don't accept foreign cards
+- Why do some hotels in China refuse foreign guests? — A particular refusal needs clarification from the property. [Do hotels need a special licence for foreign guests?](#do-hotels-need-a-special-licence-for-foreign-guests) · [What should I confirm before check-in?](#what-should-i-confirm-before-check-in)
+- How do I find hotels that accept foreigners? — Find a property in the area you want and confirm check-in arrangements with it directly. There is no special foreign-guest hotel licence to look for. [What should I confirm before check-in?](#what-should-i-confirm-before-check-in) · [Where can I compare hotel listings before booking in Shanghai?](#where-can-i-compare-hotel-listings-before-booking-in-shanghai)
+- What do I need at hotel check-in in China? — Bring the passport or travel document used for the booking and have your reservation details handy. Ask the property about its deposit and payment options. [Who must register my accommodation?](#who-must-register-my-accommodation) · [What should I confirm before check-in?](#what-should-i-confirm-before-check-in)

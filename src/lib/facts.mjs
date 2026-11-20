@@ -9,7 +9,8 @@
 // without an Astro build; the Astro endpoints in src/pages/ are thin wrappers.
 //
 // Design rules:
-// - Fact ids are stable (`<slug>.faq.<n>`) and do not depend on wording.
+// - English fact ids stay `<slug>.faq.<n>`; translations use a language prefix
+//   (`es.<slug>.faq.<n>`) so a translated claim cannot overwrite its source.
 // - Nothing is invented: facts come from authored FAQ entries, and every fact
 //   carries the page's `verified_against` sources + `last_verified` date.
 // - Confidence is a claim about verification, not about truth: it mirrors the
@@ -109,6 +110,8 @@ export function contentHash(data, body) {
     title: data?.title ?? null,
     last_verified: normalizeDate(data?.last_verified),
     body: String(body ?? '').trim(),
+    faqs: data?.faqs ?? [],
+    sources: data?.verified_against ?? [],
   });
   return `sha256:${createHash('sha256').update(canonical).digest('hex')}`;
 }
@@ -128,14 +131,14 @@ export function buildFacts(entry, collection) {
   return faqs
     .filter((faq) => faq && typeof faq.q === 'string' && typeof faq.a === 'string')
     .map((faq, index) => ({
-      id: `${entry.id}.faq.${index + 1}`,
+      id: `${collection === 'guidesEs' ? 'es.' : ''}${entry.id}.faq.${faq.fact_number ?? index + 1}`,
       type: 'faq',
       question: faq.q,
       claim: faq.a,
       applies_to: data.title ?? null,
-      sources,
-      verified_at: verifiedAt,
-      stale_after: staleAfter(verifiedAt, volatility),
+      sources: faq.sources ?? sources,
+      verified_at: normalizeDate(faq.checked_at) ?? verifiedAt,
+      stale_after: staleAfter(normalizeDate(faq.checked_at) ?? verifiedAt, volatility),
       confidence,
       volatility,
       page_json_url: pageJsonUrl(collection, entry.id),
@@ -215,7 +218,10 @@ export function buildPagesIndex(models, { generatedAt } = {}) {
 /** Single-fact response for /api/v1/facts/<id>.json. */
 export function buildFactDetail(model, factId) {
   const fact = model.facts.find((candidate) => candidate.id === factId);
-  if (!fact) return null;
+  return fact ? detailFor(model, fact) : null;
+}
+
+function detailFor(model, fact) {
   return {
     schema_version: SCHEMA_VERSION,
     site: SITE,
@@ -232,4 +238,34 @@ export function buildFactDetail(model, factId) {
       confidence: confidenceOf(model),
     },
   };
+}
+
+
+// Keep a previously published FAQ address useful when its answer now lives in
+// reader guidance. The question, answer and destinations come from the same
+// visible list. Editorial responses stay outside the verified facts feed.
+export function buildReaderGuidanceDetails(model, body, numbers = {}) {
+  const lines = (body ?? '').split(/\r?\n/);
+  const languagePrefix = model.lang === 'es' ? 'es.' : '';
+  return Object.entries(numbers).map(([question, number]) => {
+    const prefix = '- ' + question + ' — ';
+    const line = lines.find((candidate) => candidate.startsWith(prefix));
+    const wording = line?.slice(prefix.length);
+    const references = [...(wording ?? '').matchAll(/\[([^\]]+)\]\(#([^\s)]+)\)/g)];
+    const claim = references.length ? wording.slice(0, references[0].index).trim() : '';
+    if (!claim) throw new Error('Missing reader answer or section links for ' + model.slug + ': ' + question);
+    return detailFor(model, {
+      id: languagePrefix + model.slug + '.faq.' + number,
+      type: 'reader_guidance',
+      question,
+      claim,
+      applies_to: model.title,
+      sources: references.map((match) => model.url + '#' + match[2]),
+      verified_at: null,
+      stale_after: null,
+      confidence: 'editorial',
+      volatility: model.volatility,
+      page_json_url: model.json_url,
+    });
+  });
 }

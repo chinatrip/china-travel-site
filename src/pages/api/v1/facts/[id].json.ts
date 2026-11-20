@@ -1,9 +1,9 @@
 import type { APIRoute, GetStaticPaths, InferGetStaticPropsType } from 'astro';
 import { getCollection } from 'astro:content';
-import { buildFactDetail, buildPageModel, SITE, SCHEMA_VERSION } from '../../../../lib/facts.mjs';
+import { buildFactDetail, buildPageModel, buildReaderGuidanceDetails, SITE, SCHEMA_VERSION } from '../../../../lib/facts.mjs';
 
 // /api/v1/facts/<fact-id>.json — one addressable claim with its provenance.
-// Ids look like `sim-card.faq.3` and are stable across wording changes.
+// Ids look like `sim-card.faq.3` or `es.visa-types.faq.1`.
 export const getStaticPaths = (async () => {
   const [guides, apps, guidesEs] = await Promise.all([
     getCollection('guides', ({ data }) => data.status === 'audited'),
@@ -15,13 +15,33 @@ export const getStaticPaths = (async () => {
     ...apps.map((entry) => [entry, 'apps']),
     ...guidesEs.map((entry) => [entry, 'guidesEs']),
   ];
-  return entries.flatMap(([entry, collection]) => {
+  const paths = entries.flatMap(([entry, collection]) => {
     const model = buildPageModel(entry, collection);
-    return model.facts.map((fact) => ({
-      params: { id: fact.id },
-      props: { detail: buildFactDetail(model, fact.id) },
-    }));
+    const verifiedPaths = model.facts.flatMap((fact) => {
+      const detail = buildFactDetail(model, fact.id);
+      const faq = entry.data.faqs?.find((candidate) => candidate.q === fact.question);
+      const paths = [{ params: { id: fact.id }, props: { detail } }];
+      for (const alias of faq?.aliases ?? []) {
+        const id = fact.id.replace(/\d+$/, String(alias.fact_number));
+        paths.push({
+          params: { id },
+          props: { detail: { ...detail, fact: { ...fact, id, question: alias.q, canonical_id: fact.id } } },
+        });
+      }
+      return paths;
+    });
+    const guidance = buildReaderGuidanceDetails(model, entry.body, entry.data.reader_question_numbers);
+    return [...verifiedPaths, ...guidance.map((detail) => ({
+      params: { id: detail.fact.id },
+      props: { detail },
+    }))];
   });
+  const ids = new Set<string>();
+  for (const path of paths) {
+    if (ids.has(path.params.id)) throw new Error(`Duplicate fact route: ${path.params.id}`);
+    ids.add(path.params.id);
+  }
+  return paths;
 }) satisfies GetStaticPaths;
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>;
