@@ -77,4 +77,4 @@ jobs:
           # The sync script writes the per-page merge report (clean/conflict/no-base/
           # removed) to sync-report.md — it becomes the PR description.
           body-path: sync-report.md
-          reviewers: 1Feng
+          reviewers: startry

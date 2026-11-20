@@ -1,24 +1,22 @@
 ---
-title: "China Trip Planning: Timing, Budget, Length"
-date: 2026-07-01
-last_verified: 2026-09-08
+title: Planning a trip to China
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://ourwander.com/p/worst-time-to-visit-china
-  - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
-  - https://chinasurvivalkit.com/blog/china-summer-heat
-  - https://en.wikipedia.org/wiki/East_Asian_rainy_season
-  - https://www.hko.gov.hk/en/cis/climahk.htm
-  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202512/t20251203_11765346.htm
-  - https://www.trip.com/guide/info/china-arrival-card.html
-  - https://en.wikipedia.org/wiki/Qinling%E2%80%93Huaihe_Line
-  - https://english.www.gov.cn/policies/featured/202511/04/content_WS6909c915c6d00ca5f9a074f7.html
-sources:
-  - raw/china-practical-guide-2026.md
-  - raw/realchinaguide-best-times-2026.md
-  - raw/realchinaguide-14day-itinerary-2026.md
-  - raw/realchinaguide-alternative-itineraries-2026.md
-  - raw/realchinaguide-money-costs-2026.md
-  - raw/realchinaguide-pretrip-preparation-2026.md
+  - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+  - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
+  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm
+  - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+  - https://travel.gc.ca/destinations/china
+  - https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html
+  - https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20347
+  - https://www.cac.gov.cn/2014-11/10/c_1114048375.htm
+  - https://www.gov.uk/guidance/foreign-travel-insurance?pubDate=20250808
+  - https://www.hko.gov.hk/en/gts/time/time_text.htm
+  - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
+  - https://english.shanghai.gov.cn/en-TravelAcrossChina/20250515/fc5c158cf2b141dc8bbc8e7e2fb63256.html
+  - https://www.ehangzhou.gov.cn/2020-04/22/c_242880.htm
+sources: []
 related:
   - wiki/concepts/visa-types.md
   - wiki/concepts/transportation.md
@@ -29,208 +27,189 @@ related:
   - wiki/concepts/departure-customs.md
   - wiki/concepts/language-barrier.md
   - wiki/concepts/city-guides.md
+  - wiki/concepts/internet-connectivity.md
+  - wiki/entities/12306.md
+  - wiki/entities/didi.md
+  - wiki/entities/amap.md
+  - wiki/concepts/mobile-payment.md
+  - wiki/concepts/sim-card.md
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-15
-  citation_check: 2026-07-16
-  notes: "2026-09-08: the 240-hour transit count in this page's body moved 55 -> 57. NIA's transit page (c183412) was updated 2026-08-20; re-fetched 2026-09-08 and the full official list diffed against ours programmatically — exactly two additions (Kyrgyzstan, Vietnam), zero removals. Only that one sentence changed here; visa-types.md carries the full correction and the country list. last_verified BUMPED because the single high-volatility anchor this page states was genuinely re-verified today, and it is the only claim on the page that moved. NOTHING ELSE was re-checked this round — the 2026 public-holiday dates, budget bands and season guidance all retain their 2026-07-16 verification, and page_audit is unchanged at 2026-06-15. --- 2026-07-16 re-verified anchors against official sources: all 2026 public-holiday dates confirmed against the State Council General Office schedule announced 2025-11-04 (Spring Festival 15–23 Feb, Labour Day 1–5 May, National Day 1–7 Oct, Qingming 4–6 Apr, Dragon Boat 19–21 Jun, Mid-Autumn 25–27 Sep); 240-hour transit basics (10 days, 55 countries) remain consistent with current NIA policy (c183412); budget bands and best-season guidance are low-volatility with no reversal. Removed reader-facing internal wiki/summaries citations from the body. No anchor facts changed; added a 'most attraction tickets are bought same-day via Alipay' bullet to the independent-travel section to ground the pre-book-vs-buy-on-arrival guidance. page_audit retains 2026-06-15."
-description: >-
-  Planning a China trip: best seasons, how many days, what to pre-book versus
-  buy same-day, sample itineraries, and daily budgets from Tier-1 to Tier-3
-  cities. Updated May 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026. The 20 November 2026 follow-up covered the restored travel tips on this page.
+description: Choose a route and season, adapt a two-person travel budget and check the documents and bookings you need for your dates.
 faqs:
-  - q: How many days should I spend in China?
-    a: >-
-      Two weeks is a comfortable length for the classic three-city route
-      (Beijing-Xi'an-Shanghai or Beijing-Chengdu-Shanghai). 5-7 days fits a
-      single city, 10 days covers two, and three weeks lets you add a secondary
-      destination such as Guilin or Zhangjiajie.
-  - q: What should I pre-book versus buy on arrival?
-    a: >-
-      Pre-book the things that sell out: accommodation and long-distance
-      transport, especially during peak periods, and time-sensitive attraction
-      tickets such as the Forbidden City and the Panda Base. Most other
-      attraction tickets and short local trips can be bought same-day via
-      Alipay, so buy those on arrival to stay flexible. During a holiday surge
-      like Golden Week or Spring Festival, book accommodation, transport, and
-      those key tickets weeks or months ahead.
-  - q: What is the best season to visit China?
-    a: >-
-      April-May is optimal in most regions, and late September (before October
-      1) is excellent — crowds drop immediately after Golden Week ends. Avoid
-      Golden Week (October 1-7) and Chinese New Year, when crowds and prices
-      surge.
-  - q: What is a realistic daily budget for China?
-    a: >-
-      Roughly ¥200-400/day for backpackers, ¥500-1,000 for mid-range and ¥1,500+
-      for high-end, with Tier-1 cities (Beijing, Shanghai) costing more than
-      smaller ones.
+  - q: How much passport validity do I need?
+    a: Check the specific entry route. For unilateral visa-free visits the ordinary passport must cover the intended stay. For 240-hour visa-free transit the travel document must have at least three months remaining. For a visa application follow the instructions of the mission that will receive it.
+    sources:
+      - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+      - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
+      - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm
+    fact_number: 5
+  - q: Can I include Jiuzhaigou on a 240-hour transit trip through Sichuan?
+    a: The published Sichuan stay area lists eleven cities. Aba Prefecture, where Jiuzhaigou is located, is outside that area. Check each destination and the ports for the entire route before booking.
+    sources:
+      - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+      - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
+    fact_number: 6
+  - q: How can I explain a destination to a driver?
+    a: Canada’s travel advisory recommends carrying the destination and the name and address of your hotel written in Chinese characters. Ask your hotel for its Chinese address and keep a copy you can show without a connection.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 7
+  - q: What dates did the official 2026 holiday calendar give for Spring Festival and National Day?
+    a: For 2026, the State Council calendar set the Spring Festival break for 15–23 February and the National Day break for 1–7 October. Use the notice for your travel year when planning future trips.
+    sources:
+      - https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html
+    fact_number: 8
+  - q: Which other holiday breaks were on China’s 2026 calendar?
+    a: The State Council listed 1–3 January for New Year, 4–6 April for Qingming Festival, 1–5 May for Labour Day, 19–21 June for Dragon Boat Festival and 25–27 September for Mid-Autumn Festival. These dates refer to the 2026 calendar.
+    sources:
+      - https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html
+    fact_number: 9
+  - q: What power supply should my charger support in mainland China?
+    a: Mainland China’s standard low-voltage single-phase supply is 220 V AC at 50 Hz. Check your device’s input rating before packing. A plug adapter changes the plug shape, so it will not make a voltage-incompatible device suitable.
+    sources:
+      - https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20347
+      - https://www.cac.gov.cn/2014-11/10/c_1114048375.htm
+    fact_number: 10
+  - q: What should I check in a travel insurance policy for China?
+    a: Check that the policy covers every destination on your itinerary, including transit stops, and the activities you plan to do. Look for emergency medical treatment, ambulance transport and the cost of getting home on medical grounds. Adventure activities may require extra cover.
+    sources:
+      - https://www.gov.uk/guidance/foreign-travel-insurance?pubDate=20250808
+    fact_number: 11
+  - q: Are Beijing, Singapore and Japan on the same local time?
+    a: The Hong Kong Observatory lists Beijing and Singapore at UTC+8 and Sapporo, Japan, at UTC+9. When it is noon in Beijing, it is noon in Singapore and 13:00 in Sapporo.
+    sources:
+      - https://www.hko.gov.hk/en/gts/time/time_text.htm
+    fact_number: 12
+  - q: What is an example of a rail trip out of Shanghai?
+    a: Shanghai’s guide to Zhejiang lists rail travel from Shanghai to Hangzhou or Ningbo. Use current schedules for the station and date you want. For Hangzhou you can build a visit around West Lake (西湖).
+    sources:
+      - https://english.shanghai.gov.cn/en-TravelAcrossChina/20250515/fc5c158cf2b141dc8bbc8e7e2fb63256.html
+      - https://www.ehangzhou.gov.cn/2020-04/22/c_242880.htm
+    fact_number: 13
+    checked_at: 2026-11-20
 category: guide
+reader_question_numbers:
+  How many days should I spend in China?: 1
+  What should I pre-book versus buy on arrival?: 2
+  What is the best season to visit China?: 3
+  What is a realistic daily budget for China?: 4
 ---
 
-# Trip Planning — Timing, Budget, Length, and Independent Travel
+# Planning a trip to China
 
-## When should I avoid traveling in China?
+## How much passport validity do I need?
 
-Three national holidays cause extreme domestic travel surges that directly affect foreign tourists — transport sells out, hotel prices spike, and attractions hit daily capacity limits.
+Check the specific entry route. For unilateral visa-free visits the ordinary passport must cover the intended stay. For 240-hour visa-free transit the travel document must have at least three months remaining. For a visa application follow the instructions of the mission that will receive it.
 
-### Chinese New Year (Spring Festival)
+[ch.china-embassy.gov.cn](https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm) · [www.nia.gov.cn](https://www.nia.gov.cn/n741440/n741542/c1751080/content.html) · [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm)
 
-- **2026 dates:** February 15–23 (travel surge starts 2–3 weeks earlier)
-- **Scale:** Over 9 billion domestic trips in 2025
-- **Impact:** Train tickets sell out months ahead; many restaurants, shops, and government offices close; cities either empty (residents return home) or overcrowd (tourist cities); hotel prices spike sharply
-- **Recommendation:** Avoid entirely if there is any flexibility
+## Can I include Jiuzhaigou on a 240-hour transit trip through Sichuan?
 
-### Labour Day / May Day Golden Week
+The published Sichuan stay area lists eleven cities. Aba Prefecture, where Jiuzhaigou is located, is outside that area. Check each destination and the ports for the entire route before booking.
 
-- **2026 dates:** May 1–5
-- **Scale:** Over 250 million domestic trips in 5 days
-- **Impact:** Major cities overwhelmed; popular attraction tickets sell out; transport at capacity
+[toronto.china-consulate.gov.cn](https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm) · [Aba Prefecture government](https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml)
 
-### National Day Golden Week
+## How can I explain a destination to a driver?
 
-- **2026 dates:** October 1–7
-- **Scale:** Over 700 million domestic trips in 7 days
-- **Impact:** The Great Wall sees 20,000+ visitors/day (vs. ~5,000 in September); hotel prices triple; flights book out months ahead; even lesser-known attractions (Zhangjiajie glass bridge: 4-hour queues); attraction daily capacity caps hit immediately
-- **This is the single worst period to visit China as a foreign tourist**
+Canada’s travel advisory recommends carrying the destination and the name and address of your hotel written in Chinese characters. Ask your hotel for its Chinese address and keep a copy you can show without a connection.
 
-### Secondary Holidays (Shorter but Still Crowded)
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-| Holiday | 2026 dates |
-|---|---|
-| Qingming Festival (Tomb-Sweeping Day) | April 4–6 |
-| Dragon Boat Festival | June 19–21 |
-| Mid-Autumn Festival | September 25–27 |
+## What dates did the official 2026 holiday calendar give for Spring Festival and National Day?
 
-### Best Months to Visit
+For 2026, the State Council calendar set the Spring Festival break for 15–23 February and the National Day break for 1–7 October. Use the notice for your travel year when planning future trips.
 
-| Period | Conditions |
-|---|---|
-| **April–May** | Optimal in most regions; spring weather, reasonable crowds |
-| **Late September** (before Oct 1) | Excellent; autumn weather, crowds drop immediately after Golden Week ends |
-| **June–August** | Hot; "furnace cities" (Chongqing, Wuhan, Nanjing) reach 40°C+; typhoons affect southern coasts mainly July–September (season runs May–November); plum rain (梅雨) peaks over the lower Yangtze around mid-June to early July |
-| **November–February** | Fewer crowds at outdoor attractions; northern China −25°C; cities just south of the Qinling–Huai heating line (e.g. Wuhan, Chengdu, Shanghai) get cold and damp but lack the municipal central heating that the north has indoors; comfortable in Yunnan and Hainan |
+[www.beijing.gov.cn](https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html)
 
-**Regional weather detail:** The Yangtze-basin "furnace cities" (火炉城市) — Chongqing, Wuhan, and Nanjing — see June–August average highs of roughly 32–38°C with oppressive humidity, and "feels-like" temperatures regularly above 40°C (source: chinasurvivalkit.com, accessed June 2026). Plum-rain season (梅雨, méiyǔ) settles over the lower Yangtze (Shanghai, Hangzhou, Nanjing, Wuhan) from about mid-June to early July, bringing persistent heavy rain and flood risk as the East Asian rain belt moves north across eastern China between May and July. On the southern coast (Guangzhou, Shenzhen, Xiamen, Haikou), tropical cyclones can occur May–November and are most frequent July–September (per Hong Kong Observatory climate data, accessed June 2026) — expect flight and ferry cancellations while a storm is active.
+## Which other holiday breaks were on China’s 2026 calendar?
 
-### If You Must Travel During a Peak Period
+The State Council listed 1–3 January for New Year, 4–6 April for Qingming Festival, 1–5 May for Labour Day, 19–21 June for Dragon Boat Festival and 25–27 September for Mid-Autumn Festival. These dates refer to the 2026 calendar.
 
-- Book accommodation and transport as soon as dates are confirmed — use free-cancellation policies where available
-- Pre-book attraction tickets weeks or months ahead (WeChat mini-programs; see [[wiki/concepts/internet-connectivity.md]])
-- Consider Tier 2/3 cities which handle domestic overflow better than Beijing or Shanghai
-- Budget an extra 20–30% time throughout the itinerary — queues add time at attractions, transit points, and restaurants
+[www.beijing.gov.cn](https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html)
 
-## What is a realistic daily budget for China?
+## What power supply should my charger support in mainland China?
 
-| City Tier | Examples | Budget | Mid-range | Comfort/Luxury |
-|---|---|---|---|---|
-| **Tier 1** | Beijing, Shanghai, Guangzhou, Shenzhen | ¥250–400/day | ¥600–1,000/day | ¥1,500–3,000+/day |
-| **New Tier 1** | Chengdu, Hangzhou, Xi'an, Chongqing | ¥200–350/day | ¥500–800/day | ¥1,000–2,000/day |
-| **Tier 2/3** | Guilin, Lijiang, Pingyao, Zhangjiajie | ¥150–300/day | ¥400–700/day | ¥800–1,500/day |
-| **Remote/plateau** | Lhasa, Urumqi | ¥300–500/day | ¥700–1,200/day | ¥1,200–2,500/day |
+Mainland China’s standard low-voltage single-phase supply is 220 V AC at 50 Hz. Check your device’s input rating before packing. A plug adapter changes the plug shape, so it will not make a voltage-incompatible device suitable.
 
-**Budget:** hostel dorm or budget guesthouse (¥80–150/night), street food and local restaurants (¥30–80/meal), metro/bus
-**Mid-range:** 3-star hotel (¥300–600/night), sit-down restaurants (¥80–200/meal), mix of metro and DiDi
-**Comfort/luxury:** 4–5 star hotel (¥600–2,000/night), Western or upscale Chinese restaurants, private transfers
+[zfxxgk.ndrc.gov.cn](https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20347) · [www.cac.gov.cn](https://www.cac.gov.cn/2014-11/10/c_1114048375.htm)
 
-*Note: Remote/plateau (Lhasa, Urumqi) budget costs are higher than Tier-1 cities despite fewer amenities — accommodation is scarce and food supply chains are longer, so prices are elevated even at the budget end.*
+## What should I check in a travel insurance policy for China?
 
-### Regional Cost Context
+Check that the policy covers every destination on your itinerary, including transit stops, and the activities you plan to do. Look for emergency medical treatment, ambulance transport and the cost of getting home on medical grounds. Adventure activities may require extra cover.
 
-China is broadly mid-tier in Asia for travel costs: travelers consistently report it cheaper than Japan, South Korea, or Singapore, roughly comparable to Thailand, and more expensive than Vietnam, Laos, or Cambodia. Accommodation, food, and local transport are also widely reported as substantially cheaper than Western Europe at equivalent quality. (Traveler-reported comparisons as of 2026, not independently verified — the gap varies considerably by city, season, and travel style.)
+[www.gov.uk](https://www.gov.uk/guidance/foreign-travel-insurance?pubDate=20250808)
 
-### Key Transport and Attraction Reference Prices
+## Are Beijing, Singapore and Japan on the same local time?
 
-| Item | Cost |
-|---|---|
-| Beijing–Shanghai HSR (5.5h), second class | from ¥553 |
-| Domestic flight (most routes, booked in advance) | ¥300–800 |
-| Major attraction entrance fee | ¥40–100 (Forbidden City ¥60–80) |
-| Local restaurant meal with drink | ¥50–120/person |
-| International restaurant in Tier-1 city | ¥200–500+/person |
+The Hong Kong Observatory lists Beijing and Singapore at UTC+8 and Sapporo, Japan, at UTC+9. When it is noon in Beijing, it is noon in Singapore and 13:00 in Sapporo.
 
-## How many days do I need for a first trip to China?
+[www.hko.gov.hk](https://www.hko.gov.hk/en/gts/time/time_text.htm)
 
-| Duration | What's Realistic |
-|---|---|
-| **5–7 days** | Single city (Beijing or Shanghai); tight but workable for main highlights |
-| **10 days** | Two cities (e.g., Beijing + Shanghai, or Chengdu + Xi'an); 3–4 days per city plus HSR transfer |
-| **2 weeks** | Classic 3-city route (Beijing–Xi'an–Shanghai or Beijing–Chengdu–Shanghai); comfortable pace |
-| **3 weeks+** | Add a secondary destination (Guilin, Zhangjiajie, Yunnan, Chongqing); or Tibet add-on (requires 10+ working days permit lead time) |
+## Travel tip — Planning a first trip or a two-week route
 
-The **240-hour visa-free transit policy** (10 days for 57 qualifying nationalities) works well for a focused 1–2 city trip from one of the approved entry regions (Beijing, Shanghai, Guangzhou-Shenzhen, Chengdu, Harbin). See [[wiki/concepts/visa-types.md]].
+As one possible two-week itinerary, combine Beijing and Xi’an, then choose between extra time in Shanghai and a nature stop at Zhangjiajie. Count transfer days and leave room for bad weather. Compare live prices for your dates instead of relying on a fixed daily budget.
 
-**Peak season note:** add 20–30% buffer time to any itinerary during Golden Week or Spring Festival.
+## Travel tip — The week before departure
 
-### Sample 14-Day Budget (Two People, Mid-Range, 2025 Prices)
+Check bookings and holiday opening times. Save confirmations, station names, addresses and contact numbers offline. Arrange a way to pay, a way to connect and a fallback meeting point for arrival.
 
-One published worked example (2025 prices) for a mid-range 14-day trip for two people (Beijing-Xi'an-Chengdu-Shanghai route) budgets approximately: daily costs ~60 EUR per person (accommodation + food + local transport + activities), intercity trains ~300 EUR total, eSIM/VPN ~80 EUR, insurance ~100 EUR, plus a 20% buffer — totaling approximately 2,590 EUR (~$2,800 USD) excluding international flights, or roughly 92 EUR/$99 per person per day all-in. These figures come from a traveler-guide write-up in this page's sources and have not been independently verified; treat them as one data point, not a quote. They are, however, consistent with the budget table above — the all-in daily rate lands inside the mid-range band.
+## Travel tip — Weather, holidays and crowded travel days
 
-## Should I travel independently or with a guide in China?
+If your dates are flexible, compare nearby weeks for transport and lodging availability. Look at the forecast for each stop and keep a buffer between a timed visit and the next train. For a family trip, check each traveller’s passport individually.
 
-Most of mainland China is fully open to independent foreign travel — no guide is required.
+## Travel tip — Packing for a long journey
 
-| Mode | Best for |
-|---|---|
-| **Fully independent** | Tier-1 and major Tier-2 cities; HSR corridors; travelers comfortable with translation apps |
-| **Semi-guided** (day tours for specific sites) | Complex sites where trail-finding is genuinely difficult: Huangshan, Zhangjiajie trails, remote minority villages |
-| **Fully guided (legally required)** | Tibet — a licensed guide is mandatory throughout. Certain border zones in Xinjiang. |
+Think about earplugs, an eye mask or an extra layer if noise, light or air conditioning affects your sleep. Check your charger label and the airline’s rules before packing a power bank.
 
-### What Makes Independent Travel Work
+## What is an example of a rail trip out of Shanghai?
 
-- **12306** (official rail app, English UI) — all train booking; see [[wiki/entities/12306.md]]
-- **DiDi** — urban ride-hailing with no Chinese required; see [[wiki/entities/didi.md]]
-- **Amap** — English-language navigation; see [[wiki/entities/amap.md]]
-- **Alipay / WeChat Pay** — accepted everywhere; set up before arrival; see [[wiki/concepts/mobile-payment.md]]
-- **Attraction tickets & short trips** — most are bought same-day via Alipay or WeChat mini-programs, so you rarely need to pre-book them (reserve only the sell-out sites above)
-- **Major HSR stations and airports** have bilingual English/Chinese signage
+Shanghai’s guide to Zhejiang lists rail travel from Shanghai to Hangzhou or Ningbo. Use current schedules for the station and date you want. For Hangzhou you can build a visit around West Lake (西湖).
 
-### Where It Gets Harder
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TravelAcrossChina/20250515/fc5c158cf2b141dc8bbc8e7e2fb63256.html) · [www.ehangzhou.gov.cn](https://www.ehangzhou.gov.cn/2020-04/22/c_242880.htm)
 
-- Ordering at small local restaurants without a QR menu (point-and-photograph works)
-- Navigating bureaucratic processes (hospital admission, police reports) without Mandarin
-- Rural areas with no English signage or English-speaking staff
+## Travel tip — Booking the first nights
 
-## Xinjiang Note
+Book your first nights once the route is clear. If dates might change, compare cancellation terms before paying. Allow extra time for queues and look at less crowded stops if that suits your trip.
 
-Xinjiang is technically open to foreign tourists without a special permit (unlike Tibet), and major destinations (Kashgar Old City, Heavenly Lake, Turpan) are open and actively promoted by the regional government. However, practical conditions differ significantly from the rest of mainland China:
-- Enhanced ID checkpoints at hotel check-ins, transit stations, and some neighborhood entry points — your passport will be scanned frequently
-- More properties decline to accept foreign guests than elsewhere — confirm eligibility when booking
-- VPN reliability is lower; some apps have additional restrictions in the region
-- Some travel insurance policies explicitly exclude Xinjiang — verify before purchasing
-- Extensive camera and facial recognition networks are deployed; avoid photographing police, military, or checkpoints
+## Travel tip — A month, a week and a day before departure
 
-## What should I prepare before a China trip?
+One possible countdown: about a month ahead, check the entry route, insurance and first night’s stay. A week ahead, check individual ticket release dates, save addresses and prepare your phone. The day before, reconfirm bookings and keep tickets, contact details and a payment backup accessible. Use the actual deadlines for your route.
 
-A structured countdown approach helps ensure nothing is missed before departure:
+## Travel tip — Choosing independent days or a local guide
 
-**30 days before:**
-- Confirm visa status or visa-free eligibility
-- Purchase travel insurance
-- Set up Alipay and WeChat Pay; bind foreign card and test
-- Purchase and install eSIM (do not activate yet)
-- Install and test VPN on all devices
-- Book accommodation for at least the first few nights
+You can plan some stops yourself and ask a guide about a particular museum, language barrier or transfer. Check what a quoted tour includes and any route-specific permit rules before paying. Ask your insurer about the destinations and activities you plan to include.
 
-**7 days before:**
-- Book attraction tickets for time-sensitive sites (Forbidden City, Panda Base)
-- Download offline maps (Amap or Google Maps for offline use with VPN)
-- Save hotel addresses in Chinese characters
+## Travel tip — What one September trip was like
 
-**1 day before:**
-- Fill in the digital arrival card online at s.nia.gov.cn (official online channel since November 20, 2025, per PRC embassy notices; travel guidance recommends completing it 24–72 hours before arrival — it can also be done on arrival at the border, at the cost of queueing)
-- Install eSIM profile (do not toggle data on)
-- Confirm all bookings
-- Withdraw a small amount of RMB if possible, or plan airport ATM withdrawal
-- Screenshot essential information (hotel address, emergency numbers, embassy contact)
+In its account of a September 2025 trip, RealChinaGuide describes rain in Xi’an and fog at Tianmen Mountain in Zhangjiajie. The travellers said they would add a rest day halfway through. If you are choosing between a seven-day city break and two weeks with mountain stops, that extra day gives you a chance to move a hike when visibility changes.
 
-(Checklist structure follows a traveler-guide source in this page's sources list; app, payment, and connectivity setup steps are covered in detail in [[wiki/concepts/internet-connectivity.md]] and [[wiki/concepts/sim-card.md]]; arrival-card details per PRC embassy notice and trip.com guide, accessed June 2026.)
+## Travel tip — A two-person budget you can adapt
 
-## See Also
+RealChinaGuide’s 2025-price worked example for two people over 14 days came to about €2,590 excluding international flights. It allowed €1,680 for daily costs, €300 for intercity rail, €80 for connectivity, €100 for insurance and roughly €430 as a buffer. To adapt the example, first replace the room and train estimates with quotes for your dates. The total was a planning exercise; the travellers’ actual nightly room costs are described in the accommodation guide.
 
-- [[wiki/concepts/visa-types.md]] — Visa options, visa-free programs, 240-hour transit-free policy
-- [[wiki/concepts/tibet-permits.md]] — Tibet Travel Permit: mandatory process, costs, closure periods, altitude sickness
-- [[wiki/concepts/accommodation.md]] — Hotel booking, check-in requirements, foreign acceptance
-- [[wiki/concepts/transportation.md]] — Rail, metro, flights, ride-hailing; security checkpoint procedures
-- [[wiki/concepts/cultural-etiquette.md]] — Cultural behaviors to anticipate on arrival
+## Travel tip — Tissues and a refillable water bottle
+
+A pocket pack of tissues can come in handy if a restroom dispenser is empty. If you carry a reusable water bottle, refill it at a point marked 饮用水 (drinking water) or ask where drinking water is available.
+
+## Travel tip — Small items for a day bag
+
+If you use wet wipes (湿巾) or hand sanitizer (免洗洗手液), a pocket-size pack can be useful on a long transfer or at a rest stop. Keep tissues and any personal care products you prefer together where you can reach them without opening your suitcase.
+
+## Travel tip — How one September trip divided its four stops
+
+Read [[wiki/concepts/september-2025-four-city-travel-account.md|Agus and Lu’s full four-city travel story]].
+
+RealChinaGuide’s September 2025 diary shows how the pace felt in practice. In Beijing the travellers paired walks near Qianmen (前门) with a separate day at the Great Wall. In Xi’an they explored the City Wall (西安城墙) before their Terracotta Warriors visit. Wulingyuan (武陵源) served as their base for Zhangjiajie; keeping several nights there let them shift plans around rain and fog. In Shanghai they paired Nanjing Road (南京路) with an evening on the Bund (外滩). If you have fewer nights, pick the stops you want most and keep a rest day around the longest transfer.
+
+## Questions from travellers
+
+- How many days should I spend in China? — A week can work for a city pair. With 10–11 days you could try the four-stop northwest Yunnan route; two weeks gives you room for a mountain stop and a rest day. [Travel tip — Planning a first trip or a two-week route](#travel-tip--planning-a-first-trip-or-a-two-week-route)
+- What should I pre-book versus buy on arrival? — Book essential transport and timed attractions when their individual booking windows open. Keep walks, meals and alternative stops flexible. [Travel tip — The week before departure](#travel-tip--the-week-before-departure)
+- What is the best season to visit China? — Choose the season for your priority stop. Try spring for a Jiangnan garden trip, or late autumn for Beijing foliage. Give mountain days a flexible date. [What dates did the official 2026 holiday calendar give for Spring Festival and National Day?](#what-dates-did-the-official-2026-holiday-calendar-give-for-spring-festival-and-national-day) · [Travel tip — Weather, holidays and crowded travel days](#travel-tip--weather-holidays-and-crowded-travel-days)
+- What is a realistic daily budget for China? — For scale, RealChinaGuide’s worked example using 2025 prices allowed about €2,590 for two people over 14 days before international flights. Replace its hotel and train figures with your own quotes. [Travel tip — A two-person budget you can adapt](#travel-tip--a-two-person-budget-you-can-adapt) · [Travel tip — Planning a first trip or a two-week route](#travel-tip--planning-a-first-trip-or-a-two-week-route) · [Travel tip — The week before departure](#travel-tip--the-week-before-departure)

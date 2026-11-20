@@ -1,15 +1,51 @@
 ---
-title: Transportation in China
-date: 2026-04-30
-last_verified: 2026-06-09
+title: Trains, rides and transit passes in China
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
-  - https://www.12306.cn
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
   - https://www.12306.cn/en/faq.html
-  - https://wb.beijing.gov.cn/en/express/202508/t20250828_4186027.html
-sources:
-  - raw/12306-guide-for-foreign-business-visitors-2025.md
-  - raw/realchinaguide-transport-guide-2026.md
+  - https://japanese.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202206/t20220627_2752881.html
+  - https://www.mtr.bj.cn/page/instructions.html
+  - https://source.nra.gov.cn/xxgk/gkml/ztjg/gfzd/gfxw/202205/t20220527_326566.shtml
+  - https://www.caac.gov.cn/PHONE/XWZX/MHYW/202506/t20250626_227805.html
+  - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250627/d8f21f2e7d3b45a5b03757e35039b806.html
+  - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202504/t20250423_4072294.html
+  - https://english.shanghai.gov.cn/en-Transportation/20231214/649e06ea38f74aaeb573fa2debbe97d3.html
+  - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
+  - https://english.shanghai.gov.cn/en-LocalRules/20241203/5bd9be9cc4594179ba19ef672097b311.html
+  - https://english.shanghai.gov.cn/en-Individuals-Transportation-PublicTransport/20260813/661b027b052244508987d8d118cd3408.html
+  - https://zt.www.jiyuan.gov.cn/zsyz/wstz_zsyz/syzy/P020250714557071539642.pdf
+  - https://english.shanghai.gov.cn/en-Transportation/20241118/a72c77de6da34184a6b111f8ca706bf8.html
+  - https://sw.gz.gov.cn/xxgk/jyta/content/post_9800510.html
+  - https://english.shanghai.gov.cn/en-Transportation/20250919/5dd5b4725b7344cab776d3ddcbce224d.html
+  - https://sdcourt.gov.cn/lyjnfy/396916/396901/44539815/index.html
+  - https://service.shanghai.gov.cn/XingZhengWenDangKuJyh/XZGFDetails.aspx?docid=REPORT_NDOC_007926
+  - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/publicservices/publicservices/202206/t20220623_2749478.html?v=jt
+  - https://english.beijing.gov.cn/latest/news/202105/t20210513_2388917.html
+  - https://english.shanghai.gov.cn/en-Transportation/20241212/bd0bcbb71e234bf1807d808490a5fa4a.html
+  - https://english.beijing.gov.cn/latest/news/202403/P020240311342963898718.pdf
+  - https://tr.china-embassy.gov.cn/tur/sgxw/202508/P020250812770217257636.pdf
+  - https://zdzqgw.beijing.gov.cn/zqfw/cxzn/202608/t20260810_4815721.html
+  - https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/TZTG/202403/P020240308546143854934.pdf
+  - https://www.gz.gov.cn/attachment/7/7792/7792262/10198954.pdf
+  - https://gothenburg.china-consulate.gov.cn/chn/zytz/202505/P020250506826658303527.pdf
+  - https://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html
+  - https://www.shanghai.gov.cn/202513bmgfxwj/20250807/1b6f7476a4234b2c91efe929072c4f42.html
+  - https://www.caac.gov.cn/PHONE/SY/HLFW/GLZN/KP/
+  - https://kjj.gz.gov.cn/attachment/7/7513/7513640/9346539.pdf
+  - https://jtj.gz.gov.cn/gkmlpt/content/10/10986/post_10986461.html
+  - https://english.shanghai.gov.cn/en-CIIE2025Service-Transport/20251017/c6c5ca124ee74e92a37244280c0983b9.html
+  - https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html
+  - https://www.hyd.gov.hk/sc/road_and_railway/railway_network/er/index.html
+  - https://ka.sz.gov.cn/bmfw/katgfw/ftkazt/
+  - https://www.panda.org.cn/en/service/transit/
+  - https://www.mee.gov.cn/hjzl/sthjzk/hjzywr/202307/W020230728374728553582.pdf
+  - https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html
+  - https://english.shanghai.gov.cn/en-EasyShanghai/20260713/379bcea6e1bd4defaa7db2451d68d3dd.html
+  - https://jtj.gz.gov.cn/gkmlpt/content/10/10337/post_10337069.html
+  - https://apps.apple.com/us/app/id1303414976
+sources: []
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/12306.md
@@ -22,287 +58,453 @@ related:
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: null
-description: >-
-  How to get around China: 12306 trains in English, metro multi-day passes
-  (Beijing Yitongxing ¥20/3 days), foreign-card tap-to-ride, DiDi, and Amap.
-  Updated June 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026. The 20 November 2026 follow-up covered the restored travel tips on this page.
+description: Check passport booking, Beijing pass prices and battery rules for rail and domestic flights.
 faqs:
-  - q: How do foreigners buy high-speed train tickets in China?
-    a: >-
-      Book on 12306, the official channel — the website has an English version,
-      and the app has an English UI and accepts foreign mobile numbers — or buy
-      at a station ticket counter or self-service kiosk with your passport.
-      Ticketing is real-name: your passport must match the name on the ticket
-      and may be scanned at the boarding gate, so carry the original. For
-      payment, Alipay, WeChat Pay, and UnionPay cards work (RMB cash at counters
-      only); Visa/Mastercard acceptance on 12306 varies by issuing bank and card
-      type, so if your card is declined, pay via Alipay or WeChat Pay instead.
-      If 12306 repeatedly rejects your foreign passport number, book through
-      Trip.com — around a ¥50 service fee, but a full English interface and
-      foreign-card support. At the station, allow at least 30 minutes for
-      security and boarding, or 45–60 minutes at major hubs like Beijing West
-      and Shanghai Hongqiao.
-  - q: How do I pay for the metro in China?
-    a: >-
-      Most big-city metros accept an Alipay or WeChat Pay QR code scanned at the
-      turnstile, and self-service machines sell single-journey tickets for RMB
-      cash (some cities also take foreign bank cards). Note that each city has
-      its own metro app or mini-program — Beijing's Yitongxing does not work in
-      Shanghai, where you'd use Metro Daduhui (大都会) inside WeChat or Alipay —
-      and setting up the local one takes about 3–5 minutes. Beijing is the
-      easiest for visitors: as of June 2026 its full network (all ~29 lines plus
-      suburban Line S2) supports tap-and-go with foreign UnionPay, Mastercard,
-      Visa, JCB, and Amex cards — just tap at the gate, no app needed. Shanghai
-      also allows Apple Pay and contactless foreign-card tap at the gate. Rides
-      cost about ¥3–10. If a QR code fails to scan, maximize screen brightness
-      and regenerate it, or use the blue-signed Passport Lane, where staff are
-      trained to help foreigners.
-  - q: What is the best ride-hailing app in China for foreigners?
-    a: >-
-      DiDi — the dominant ride-hailing platform in China. It accepts foreign
-      mobile numbers, offers an English UI, and takes Alipay, WeChat Pay, or a
-      directly bound foreign Visa/Mastercard — all three reliably accepted as of
-      2026. The same app also books metered taxis alongside its private-car
-      options, and unlocks DiDi-branded shared bikes by QR scan. At airports,
-      follow the in-app guidance to the designated DiDi pickup zone instead of
-      waiting at the general arrivals exit. When DiDi is busy or surge-priced,
-      Amap and Baidu Maps both aggregate ride-hailing alongside navigation, and
-      Amap has taxi booking built in as a backup. Cost-wise, the metro is the
-      better default for daytime city trips (¥3–6, no traffic); save DiDi for
-      airport transfers, late nights after the metro closes around 11:30 PM,
-      heavy-luggage days, rainy days, and groups of 3+ where splitting the fare
-      makes it competitive.
+  - q: Can I book a train with my passport?
+    a: The 12306 English website and app accept passports for train bookings. If online verification needs manual review, upload the passport information page as directed or take the valid passport to a station counter. Bring the original document used to book when you travel.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://www.12306.cn/en/faq.html
+    fact_number: 6
+    aliases:
+      - q: How do foreigners buy high-speed train tickets in China?
+        fact_number: 1
+  - q: How can I request a ride?
+    a: The Ministry of Commerce lists Alipay, WeChat and DiDi as channels for ordering a ride. Set the pick-up point and destination and check the vehicle and fare shown for your trip.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+    fact_number: 7
+  - q: How much are Beijing’s rail transit passes?
+    a: The Beijing municipal guide lists a one-day electronic pass at CNY 20 and a three-day pass at CNY 40. Check the lines and products covered before buying a pass for an airport journey.
+    sources:
+      - https://japanese.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202206/t20220627_2752881.html
+      - https://www.mtr.bj.cn/page/instructions.html
+    fact_number: 8
+  - q: Can I take a power bank on a train?
+    a: The railway list allows clearly labelled power banks with rated energy of no more than 100 Wh per unit. Check the Wh marking on the device.
+    sources:
+      - https://source.nra.gov.cn/xxgk/gkml/ztjg/gfzd/gfxw/202205/t20220527_326566.shtml
+    fact_number: 9
+  - q: What power banks are prohibited on domestic flights in China?
+    a: CAAC prohibits power banks without a clear 3C mark and those in recalled models or batches on domestic flights. Check the marking and recall status as well as the airline’s other battery rules.
+    sources:
+      - https://www.caac.gov.cn/PHONE/XWZX/MHYW/202506/t20250626_227805.html
+    fact_number: 10
+  - q: Where do I buy a single metro ticket?
+    a: The Ministry of Commerce lists station ticket windows and self-service machines for single-journey metro tickets. Check station signs or ask staff which payment methods your station accepts.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+    fact_number: 11
+    aliases:
+      - q: How do I pay for the metro in China?
+        fact_number: 2
+  - q: Can I tap a foreign bank card at Shanghai Metro gates?
+    a: Shanghai Metro allows eligible contactless bank cards for entry and exit across its network. Enable small-amount PIN-free payments and check your available balance or credit. The network lists chip and card-scheme conditions, including restrictions for some JCB cards. Ask the station service center if the gate declines your card.
+    sources:
+      - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250627/d8f21f2e7d3b45a5b03757e35039b806.html
+    fact_number: 12
+  - q: How much is a single Beijing subway trip?
+    a: Fares on the ordinary Beijing rail network start at CNY 3 for up to six kilometres. Airport trains have separate tariffs. The Capital Airport Express charges a flat CNY 25. The Daxing Airport Express uses its own fare schedule.
+    sources:
+      - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202504/t20250423_4072294.html
+    fact_number: 13
+  - q: Where can I change from the Pudong Airport maglev to the Shanghai metro?
+    a: The maglev from Shanghai Pudong International Airport reaches Longyang Road (龙阳路), where you can change to Metro Line 2. You can also take Line 2 from Pudong Airport toward People’s Square (人民广场).
+    sources:
+      - https://english.shanghai.gov.cn/en-Transportation/20231214/649e06ea38f74aaeb573fa2debbe97d3.html
+    fact_number: 14
+  - q: What documents should a foreign visitor prepare to rent a car?
+    a: The Ministry of Commerce guide lists a passport or Foreign Permanent Resident ID Card, a valid Chinese driving licence and a domestic or international credit card. It asks first-time renters to have their identity information verified at least one working day in advance. Confirm the rental office’s terms before pickup.
+    sources:
+      - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
+    fact_number: 15
+  - q: What should I check in a metered Shanghai taxi?
+    a: Shanghai’s taxi rules require the driver to operate the meter as prescribed. Ask for the receipt at the end of the ride. It records the fare and trip details, which can help if you have a question about the charge or left something in the taxi.
+    sources:
+      - https://english.shanghai.gov.cn/en-LocalRules/20241203/5bd9be9cc4594179ba19ef672097b311.html
+      - https://english.shanghai.gov.cn/en-Individuals-Transportation-PublicTransport/20260813/661b027b052244508987d8d118cd3408.html
+    fact_number: 16
+  - q: How much is Beijing’s Capital Airport Express?
+    a: Beijing lists a flat fare of CNY 25 for the Capital Airport Express (首都机场线). The distance-based urban subway fare table excludes both this line and the Daxing Airport Express.
+    sources:
+      - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202504/t20250423_4072294.html
+    fact_number: 17
+  - q: How do I unlock and return a shared bike?
+    a: For supported shared bikes, scan the bicycle’s QR code in Alipay or WeChat and follow the prompt to unlock it. At your destination, use the return instructions for that bike, park in a permitted area and confirm the ride has ended.
+    sources:
+      - https://zt.www.jiyuan.gov.cn/zsyz/wstz_zsyz/syzy/P020250714557071539642.pdf
+    fact_number: 18
+  - q: Can I use the same Shanghai transport QR code on buses, ferries and the metro?
+    a: Shanghai’s public transportation QR code is available through the Shanghai Public Transportation Card app, Alipay and the official WeChat mini program, among other channels. Show it for bus, ferry and metro trips. A physical Shanghai transport card is also an option.
+    sources:
+      - https://english.shanghai.gov.cn/en-Transportation/20241118/a72c77de6da34184a6b111f8ca706bf8.html
+    fact_number: 19
+  - q: Which languages are used for stop announcements in Guangzhou?
+    a: Guangzhou’s buses and metro trains announce stops in Mandarin, Cantonese and English. The municipal government also reports English station names on bus and metro stop signs.
+    sources:
+      - https://sw.gz.gov.cn/xxgk/jyta/content/post_9800510.html
+    fact_number: 20
+  - q: Do I need an app to hail a taxi in Shanghai?
+    a: You can hail a taxi on the street in Shanghai. Pick a place where the driver can stop legally. The municipal guide advises against hailing at an intersection because drivers may not stop within 50 metres of a crossroads to pick up passengers.
+    sources:
+      - https://english.shanghai.gov.cn/en-Transportation/20250919/5dd5b4725b7344cab776d3ddcbce224d.html
+    fact_number: 21
+  - q: What does 静 mean on a China Railway booking?
+    a: A 静 symbol in 12306 marks a train offering a quiet carriage (静音车厢). By booking one you agree to silence electronic devices or use headphones, and to leave the carriage to take a call or have a conversation.
+    sources:
+      - https://www.mee.gov.cn/hjzl/sthjzk/hjzywr/202307/W020230728374728553582.pdf
+      - https://sdcourt.gov.cn/lyjnfy/396916/396901/44539815/index.html
+    fact_number: 22
+  - q: Will I get change if I pay cash on a Shanghai bus?
+    a: On a Shanghai bus without a conductor, bring the exact fare if you pay cash. The city’s passenger rules say these vehicles do not give change.
+    sources:
+      - https://service.shanghai.gov.cn/XingZhengWenDangKuJyh/XZGFDetails.aspx?docid=REPORT_NDOC_007926
+    fact_number: 23
+  - q: Can I buy a Beijing subway ticket in the Yitongxing app?
+    a: Yes. Beijing’s municipal subway guide lists ticket purchases in the Yitongxing (亿通行) app and says e-CNY is one payment option.
+    sources:
+      - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/publicservices/publicservices/202206/t20220623_2749478.html?v=jt
+      - https://english.beijing.gov.cn/latest/news/202105/t20210513_2388917.html
+    fact_number: 24
+  - q: How long can a temporary Chinese driving permit last?
+    a: The published guidance allows a three-month temporary permit for a short stay. For a stay longer than three months, the permit can be extended up to one year. Bring a valid overseas driving licence when applying and check the vehicle class on the permit.
+    sources:
+      - https://english.shanghai.gov.cn/en-Transportation/20241212/bd0bcbb71e234bf1807d808490a5fa4a.html
+      - https://english.beijing.gov.cn/latest/news/202403/P020240311342963898718.pdf
+    fact_number: 25
+  - q: Where does the Ministry of Commerce say I can find a rental car?
+    a: The ministry’s guide lists international airports and city-centre rental offices as options for foreign travellers. Check the office’s licence and document requirements before pickup.
+    sources:
+      - https://tr.china-embassy.gov.cn/tur/sgxw/202508/P020250812770217257636.pdf
+    fact_number: 26
+  - q: Where can I leave luggage near Beijing Railway Station (北京站)?
+    a: Beijing’s station-area authority locates self-service lockers northwest of the station’s west pedestrian overpass, up the steps north of the bus stop for routes 103 and 104.
+    sources:
+      - https://zdzqgw.beijing.gov.cn/zqfw/cxzn/202608/t20260810_4815721.html
+    fact_number: 27
+  - q: Do France, Serbia, Belgium and the UAE have driving-licence agreements with China?
+    a: China’s official guide lists all four. The agreement for your licence determines whether you can drive directly or exchange the licence without a test. Verify the applicable licence class and the agreement’s conditions before driving.
+    sources:
+      - https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/TZTG/202403/P020240308546143854934.pdf
+    fact_number: 28
+  - q: Can I use a Yang Cheng Tong card on both the metro and buses in Guangzhou?
+    a: Yes. Guangzhou’s ticket guide includes both metro and bus fares in the ordinary Yang Cheng Tong (羊城通) card scheme.
+    sources:
+      - https://www.gz.gov.cn/attachment/7/7792/7792262/10198954.pdf
+    fact_number: 29
+  - q: Which payments can I use when booking a domestic flight in China?
+    a: The official business expatriate guide lists payment through Alipay, Weixin Pay and UnionPay bank cards on airline websites, apps and sales platforms. It also describes overseas-card acceptance through air ticket sales platforms and airlines operating international services. Check your chosen payment channel before confirming.
+    sources:
+      - https://gothenburg.china-consulate.gov.cn/chn/zytz/202505/P020250506826658303527.pdf
+    fact_number: 30
+  - q: Can I take a lighter or matches on a flight in China?
+    a: No. China’s civil aviation authority prohibits lighters and matches both in carry-on items and in checked baggage.
+    sources:
+      - https://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html
+    fact_number: 31
+  - q: Should I expect security screening at Shanghai Metro stations?
+    a: Yes. Shanghai’s rules cover the screening of passengers entering metro stations and the articles they carry. Follow staff instructions at the entrance.
+    sources:
+      - https://www.shanghai.gov.cn/202513bmgfxwj/20250807/1b6f7476a4234b2c91efe929072c4f42.html
+    fact_number: 32
+  - q: Can I use the international liquids-bag rule for a domestic flight in China?
+    a: Check the domestic rules separately. For small quantities of travel cosmetics, the Civil Aviation Administration permits one container of each kind, no larger than 100 mL per container. Pack them separately and be prepared to open them for inspection.
+    sources:
+      - https://www.caac.gov.cn/PHONE/SY/HLFW/GLZN/KP/
+    fact_number: 33
+  - q: Which Guangzhou metro station serves Baiyun Airport Terminal 2?
+    a: Metro Line 3 serves Airport North (机场北) at Baiyun Airport Terminal 2. Check the terminal on your ticket when planning your trip.
+    sources:
+      - https://kjj.gz.gov.cn/attachment/7/7513/7513640/9346539.pdf
+      - https://jtj.gz.gov.cn/gkmlpt/content/10/10986/post_10986461.html
+    fact_number: 34
+  - q: Can I pay in Shanghai’s Metro Daduhui app with Alipay or WeChat Pay?
+    a: Yes. Shanghai’s metro guide lists Alipay, WeChat Pay and international bank cards as payment options in the Metro Daduhui (大都会) app.
+    sources:
+      - https://english.shanghai.gov.cn/en-CIIE2025Service-Transport/20251017/c6c5ca124ee74e92a37244280c0983b9.html
+    fact_number: 35
+  - q: Should my power bank go in checked baggage or cabin baggage?
+    a: China’s civil aviation authority requires a personal power bank to travel in the cabin. It may not go in checked baggage. On domestic flights, also check the 3C marking and whether the model or batch has been recalled.
+    sources:
+      - https://www.caac.gov.cn/PHONE/SY/HLFW/GLZN/KP/
+      - https://www.caac.gov.cn/PHONE/XWZX/MHYW/202506/t20250626_227805.html
+    fact_number: 36
+  - q: Which app unlocks which shared bicycle in Shanghai?
+    a: For a blue Hellobike (哈啰单车), use Hellobike or its Alipay mini program. For a yellow Meituan bike (美团单车), use Meituan. For a green Qingju bike (青桔单车), use Didi Qingju or Didi. These are Shanghai’s usual colour markings.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html
+    fact_number: 37
+  - q: How do Shenzhen’s Futian and Luohu crossings connect to Hong Kong rail?
+    a: Hong Kong’s East Rail Line serves Lo Wu (罗湖) and Lok Ma Chau (落马洲). At Lok Ma Chau a pedestrian bridge leads to the Futian checkpoint (福田口岸) in Shenzhen. Border crossing formalities apply.
+    sources:
+      - https://www.hyd.gov.hk/sc/road_and_railway/railway_network/er/index.html
+      - https://ka.sz.gov.cn/bmfw/katgfw/ftkazt/
+    fact_number: 38
+  - q: Which metro station serves the Chengdu Panda Base south-gate shuttle?
+    a: Take Chengdu Metro Line 3 to Panda Avenue (熊猫大道), use Exit A and transfer to shuttle bus 408 for the south gate. The base lists different directions for its west gate.
+    sources:
+      - https://www.panda.org.cn/en/service/transit/
+    fact_number: 39
   - q: How do I navigate China without Google Maps?
-    a: >-
-      Use Amap (高德地图) or Baidu Maps — Google Maps is blocked in mainland China,
-      so download one of them before arrival. Both have an English UI and
-      accurate real-time transit routing, which matters because the metro is the
-      default way around major cities. They also do more than navigation: both
-      offer ride-hailing aggregation alongside their maps, and Amap has taxi
-      booking built in — a useful backup when DiDi is busy or surge-priced. For
-      short last-mile gaps the map apps reveal — say, two metro stations 1–2 km
-      apart — shared bikes (Hellobike, Meituan Bike) fill the distance for about
-      ¥1.5 per trip: scan the QR code with Alipay, ride, and lock at your
-      destination.
-  - q: Are there metro multi-day passes for tourists in China?
-    a: >-
-      Some cities offer them — Beijing's Yitongxing (亿通行) has a ¥20/3-day
-      unlimited pass, available as a physical card (¥20 deposit) or in-app QR.
-      Availability varies by city, so check the local metro app; where no pass
-      exists, pay per ride by QR code or foreign-card tap.
+    a: Amap (高德地图) provides route planning for walking, transit, cycling and driving. Before leaving, save your destination and the exact branch or entrance. Shanghai’s guide also lists Baidu Maps (百度地图) as a navigation option.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html
+      - https://english.shanghai.gov.cn/en-EasyShanghai/20260713/379bcea6e1bd4defaa7db2451d68d3dd.html
+    fact_number: 4
+    checked_at: 2026-11-20
 category: guide
+reader_question_numbers:
+  What is the best ride-hailing app in China for foreigners?: 3
+  Are there metro multi-day passes for tourists in China?: 5
 ---
 
-# Transportation in China
+# Trains, rides and transit passes in China
 
-## How do I get from the airport to the city in China?
+## Can I book a train with my passport?
 
-Getting from the airport into the city centre is typically the first transport task on arrival.
+The 12306 English website and app accept passports for train bookings. If online verification needs manual review, upload the passport information page as directed or take the valid passport to a station counter. Bring the original document used to book when you travel.
 
-| Option | Speed | Cost | Notes |
-|---|---|---|---|
-| **Airport express train** | Fastest (15–30 min for major airports) | ¥25–55 (varies by city and line — Shanghai Pudong Maglev ¥50; standard express trains ¥25–35) | Available at PEK (Beijing Capital T3→city), PKX (Beijing Daxing), PVG/SHA (Shanghai — Maglev or Metro Line 2), CAN (Guangzhou), CTU (Chengdu). Buy ticket at the station with cash, card, or mobile pay. |
-| **Metro line** (regular subway) | Moderate (40–60 min) | ¥4–10 | Most major airports connect to the city metro network — check the airport's official site for the line number. Same QR / transit-card payment as city metro. |
-| **Airport shuttle bus** | Slower (60–90 min, traffic-dependent) | ¥20–40 | Multiple routes to city sub-centres; useful if not near a metro stop. Buy on the bus or at the shuttle counter. |
-| **Taxi / DiDi** | Convenient but variable | ¥80–200+ depending on city and distance | DiDi pickup points are designated — follow signage. Metered taxi queues are at arrivals exits. Avoid unlicensed touts inside the terminal. |
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [www.12306.cn](https://www.12306.cn/en/faq.html)
 
-## How do I take high-speed trains in China?
+## How can I request a ride?
 
-China's high-speed rail network covers nearly all major cities and is the preferred option for medium- and long-distance travel.
+The Ministry of Commerce lists Alipay, WeChat and DiDi as channels for ordering a ride. Set the pick-up point and destination and check the vehicle and fare shown for your trip.
 
-**Booking channels:**
-- **12306 official website** (English version): https://www.12306.cn
-- **12306 App** (English UI; foreign mobile numbers accepted)
-- Station ticket counter (passport required)
-- Self-service kiosks at stations (passport + booking number)
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html)
 
-**Payment:** Alipay, WeChat Pay, UnionPay cards, RMB cash (counter only). Visa/Mastercard acceptance on 12306 varies by issuing bank and card type — if your card is declined, pay via Alipay or WeChat Pay instead (both accept foreign cards; see [[wiki/concepts/mobile-payment.md]]).
+## How much are Beijing’s rail transit passes?
 
-**Changes and refunds:**
-- Reissue: allowed before departure via App / website / counter; usually one reissue per ticket.
-- Refund: a service fee scales up the closer you are to departure. The schedule below follows the 12306 official English refund policy (12306.cn/en/faq.html, as of June 2026) and applies to ticket refunds generally — confirm at 12306.cn for your specific train and any peak-season rules (e.g. Spring Festival refunds may be charged a flat 20%):
+The Beijing municipal guide lists a one-day electronic pass at CNY 20 and a three-day pass at CNY 40. Check the lines and products covered before buying a pass for an airport journey.
 
-| Time before departure | Refund fee |
-|---|---|
-| ≥ 8 days | 0% (no fee) |
-| > 48 hours (and < 8 days) | 5% |
-| 24 – 48 hours | 10% |
-| < 24 hours | 20% |
+[japanese.beijing.gov.cn](https://japanese.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202206/t20220627_2752881.html) · [www.mtr.bj.cn](https://www.mtr.bj.cn/page/instructions.html)
 
-Refunds must be processed before the train departs (a post-departure refund is only possible in limited approved cases). Note: this is more expensive than many guides claim — there is no fully free refund window within the last week before travel.
+## Can I take a power bank on a train?
 
-## How do I use the metro in China?
+The railway list allows clearly labelled power banks with rated energy of no more than 100 Wh per unit. Check the Wh marking on the device.
 
-Major cities — Beijing, Shanghai, Guangzhou, Shenzhen and others — have extensive subway networks.
+[source.nra.gov.cn](https://source.nra.gov.cn/xxgk/gkml/ztjg/gfzd/gfxw/202205/t20220527_326566.shtml)
 
-- Alipay / WeChat Pay QR-code entry is supported in most cities.
-- Self-service ticket machines accept RMB cash; some cities accept foreign bank cards.
-- Some cities (e.g., Shanghai) allow Apple Pay / contactless foreign-card tap at the gate.
-- **Navigation:** Google Maps is blocked in mainland China. Use **Amap (高德地图)** or **Baidu Maps** instead — both have English UI and accurate real-time transit routing. Download one before arrival.
+## What power banks are prohibited on domestic flights in China?
 
-### City-by-City Metro Apps
+CAAC prohibits power banks without a clear 3C mark and those in recalled models or batches on domestic flights. Check the marking and recall status as well as the airline’s other battery rules.
 
-**Each city has its own metro app or mini-program.** Beijing's app does not work in Shanghai or Guangzhou. Set up the local app when you arrive in each new city (~3–5 minutes).
+[www.caac.gov.cn](https://www.caac.gov.cn/PHONE/XWZX/MHYW/202506/t20250626_227805.html)
 
-| City | App / Mini-Program | Lines | Notes |
-|---|---|---|---|
-| **Beijing** | Yitongxing (亿通行) | ~29 lines, ~523 stations | Physical card (¥20 deposit) or app QR. Multi-day pass: ¥20/3 days. Alipay/WeChat work via the app QR, not by scanning at the gate directly. **Easiest for visitors:** as of June 2026 Beijing's full network (all ~29 lines plus suburban Line S2) supports tap-and-go with foreign UnionPay, Mastercard, Visa, JCB, and Amex — just tap your card at the gate, no app needed. |
-| **Shanghai** | Metro Daduhui (大都会) | 16+ lines (world's longest system) | Search "大都会" in WeChat/Alipay. Alipay/WeChat payment works directly. |
-| **Guangzhou** | 广州地铁 mini-program | 15+ lines | Announcements in Cantonese, Mandarin, and English. Direct metro to Baiyun Airport. Yangchengtong card works on metro, buses, and ferries. |
-| **Shenzhen** | Shenzhen Tong mini-program | 12 lines | Connects to Hong Kong MTR at Luohu and Futian border crossings. |
-| **Chengdu** | 成都地铁 mini-program | 13 lines | Line 3 → Panda Avenue station (near Giant Panda Research Base). |
+## Where do I buy a single metro ticket?
 
-**Troubleshooting QR codes:** Look for the **Passport Lane** (blue sign) at turnstiles — staff there are trained to help foreigners. If scanning fails, maximize screen brightness and regenerate the QR code.
+The Ministry of Commerce lists station ticket windows and self-service machines for single-journey metro tickets. Check station signs or ask staff which payment methods your station accepts.
 
-### Metro Practical Tips
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html)
 
-- **Rush hours to avoid:** 7–9 AM and 5–7 PM (body-to-body crowding on major lines).
-- **Metro closes around 11:30 PM** in most cities; use DiDi for late-night travel.
-- **Cost:** ¥3–10 per ride — roughly 10–15x cheaper than DiDi for the same distance.
-- **Multi-day passes** (where available) offer excellent value for tourists — Beijing's ¥20/3-day pass covers unlimited rides.
-- **Combine metro + bike-sharing** for last-mile connections (~¥1.5 per bike ride via Hellobike, Meituan Bike, etc.).
+## Can I tap a foreign bank card at Shanghai Metro gates?
 
-## What are the security checks on China's transport?
+Shanghai Metro allows eligible contactless bank cards for entry and exit across its network. Enable small-amount PIN-free payments and check your available balance or credit. The network lists chip and card-scheme conditions, including restrictions for some JCB cards. Ask the station service center if the gate declines your card.
 
-Every metro station and long-distance rail station in China has security screening. Budget extra time accordingly.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250627/d8f21f2e7d3b45a5b03757e35039b806.html)
 
-### Metro Stations
+## How much is a single Beijing subway trip?
 
-All metro stations require bag screening — no exceptions.
+Fares on the ordinary Beijing rail network start at CNY 3 for up to six kilometres. Airport trains have separate tariffs. The Capital Airport Express charges a flat CNY 25. The Daxing Airport Express uses its own fare schedule.
 
-**Process:**
-1. Place bags and large items on the X-ray conveyor belt
-2. Walk through a metal detector (body scanner at some stations)
-3. Security staff may conduct a secondary hand-scan with a portable detector
-4. Retrieve your bag and proceed to the fare gates
+[english.beijing.gov.cn](https://english.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202504/t20250423_4072294.html)
 
-**Time:** 20–60 seconds normally; 2–5 minutes at busy city-centre stations during peak hours.
+## Where can I change from the Pudong Airport maglev to the Shanghai metro?
 
-**What you do NOT need to remove:** shoes, belts, laptops, or liquids (metro security does not apply airline 100 ml rules).
+The maglev from Shanghai Pudong International Airport reaches Longyang Road (龙阳路), where you can change to Metro Line 2. You can also take Line 2 from Pudong Airport toward People’s Square (人民广场).
 
-**No ID required:** your Alipay/WeChat QR or transit card is sufficient — passport is not needed for metro entry.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Transportation/20231214/649e06ea38f74aaeb573fa2debbe97d3.html)
 
-**Prohibited items:** firearms, explosives, petrol, nail polish over 20 ml, kitchen knives and blades.
+## What documents should a foreign visitor prepare to rent a car?
 
-Budget an extra **10 minutes** at large interchange stations (e.g., Beijing Xizhimen, Shanghai Hongqiao) during rush hour.
+The Ministry of Commerce guide lists a passport or Foreign Permanent Resident ID Card, a valid Chinese driving licence and a domestic or international credit card. It asks first-time renters to have their identity information verified at least one working day in advance. Confirm the rental office’s terms before pickup.
 
-### High-Speed Rail and Long-Distance Rail Stations
+[english.www.gov.cn](https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf)
 
-Security at rail stations is stricter than metro:
-- Separate bag X-ray machines at station entrances
-- Real-name ticketing: your passport must match the name on the ticket; passport may be scanned at the boarding gate
-- Allow at least **30 minutes before departure** for security + boarding; major hub stations (Beijing West, Shanghai Hongqiao) recommend **45–60 minutes**
+## What should I check in a metered Shanghai taxi?
 
-### Airports
+Shanghai’s taxi rules require the driver to operate the meter as prescribed. Ask for the receipt at the end of the ride. It records the fare and trip details, which can help if you have a question about the charge or left something in the taxi.
 
-Standard international aviation security applies. Additional China-specific notes:
-- Some domestic terminals conduct a second security check at the gate — allow for this in connection timing
-- Power banks: carry-on only; power banks over 160 Wh are not permitted
-- Lighters: one lighter per person (not in checked baggage)
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LocalRules/20241203/5bd9be9cc4594179ba19ef672097b311.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Transportation-PublicTransport/20260813/661b027b052244508987d8d118cd3408.html)
 
-## How does ride-hailing work in China?
+## How much is Beijing’s Capital Airport Express?
 
-**DiDi** is the dominant platform — see [[wiki/entities/didi.md]]:
-- Foreign mobile numbers accepted; English UI available.
-- Book ride-hailing and **taxis** from the same app — the DiDi app includes a taxi-booking mode alongside its private car options.
-- Pay via Alipay, WeChat Pay, or a **directly bound foreign Visa/Mastercard** — all three are reliably accepted in the DiDi app as of 2026.
-- **DiDi also offers bike-sharing** — open the DiDi app and scan the QR code on any DiDi-branded bike to unlock it.
+Beijing lists a flat fare of CNY 25 for the Capital Airport Express (首都机场线). The distance-based urban subway fare table excludes both this line and the Daxing Airport Express.
 
-**Amap (Gaode)** and **Baidu Maps** also offer ride-hailing aggregation alongside navigation — both recommended for tourists.
+[english.beijing.gov.cn](https://english.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202504/t20250423_4072294.html)
 
-## How do I book domestic flights in China?
+## How do I unlock and return a shared bike?
 
-Book domestic flights on platforms that accept foreign cards:
-- **Trip.com / Ctrip**: international UI, strong English support
-- **Fliggy** (Alibaba): Alipay payment
+For supported shared bikes, scan the bicycle’s QR code in Alipay or WeChat and follow the prompt to unlock it. At your destination, use the return instructions for that bike, park in a permitted area and confirm the ride has ended.
 
-**Practical notes for foreign travelers:**
-- Passport is required at check-in and at security — your passport is your boarding ID; a photocopy is not accepted.
-- Arrive at least **90 minutes before departure** for domestic flights (2 hours for international terminals, which some domestic-to-international connections use).
-- Standard checked baggage allowance on most Chinese carriers: **20 kg** economy class. Carry-on allowance varies by carrier and fare class — many major carriers (e.g., Air China, China Eastern, China Southern) cap economy carry-on at **5 kg**; always check your booking confirmation for the exact figure before packing.
-- Liquids rules at Chinese security follow the standard 100 ml / 1-litre bag rule.
+[zt.www.jiyuan.gov.cn](https://zt.www.jiyuan.gov.cn/zsyz/wstz_zsyz/syzy/P020250714557071539642.pdf)
 
-## Can foreigners use shared bikes in China?
+## Can I use the same Shanghai transport QR code on buses, ferries and the metro?
 
-Three major platforms are widely available: **Meituan Bike**, **Hello Bike**, and **DiDi Bike**:
-- Unlock by scanning the QR code on the bike — Meituan and Hello Bike via WeChat or Alipay; DiDi Bike via the DiDi app
-- A deposit may be required (some platforms waive it for verified users)
+Shanghai’s public transportation QR code is available through the Shanghai Public Transportation Card app, Alipay and the official WeChat mini program, among other channels. Show it for bus, ferry and metro trips. A physical Shanghai transport card is also an option.
 
-## How do I use public buses in China?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Transportation/20241118/a72c77de6da34184a6b111f8ca706bf8.html)
 
-City bus systems support:
-- Alipay / WeChat Pay QR codes
-- Local transit cards
-- RMB coins / small bills (exact change typically required; no change given)
+## Which languages are used for stop announcements in Guangzhou?
 
-**Acquiring a local transit card:** available at metro station service centers with your passport; a refundable deposit (typically ¥20–50, varies by city) is required. Cards can be topped up at metro service desks, convenience stores, or via Alipay / WeChat Pay mini-programs. Most transit cards are city-specific; however, cities participating in the national **Jiaotong Lianhe (交通联合)** interoperability scheme (e.g., Shanghai, Suzhou, Hangzhou, and others) accept each other's cards — check whether your card's issuing city is in the scheme before relying on it elsewhere.
+Guangzhou’s buses and metro trains announce stops in Mandarin, Cantonese and English. The municipal government also reports English station names on bus and metro stop signs.
 
-## Can foreigners rent a car in China?
+[sw.gz.gov.cn](https://sw.gz.gov.cn/xxgk/jyta/content/post_9800510.html)
 
-Car rental is available at most international airports and major downtown outlets, and via car-leasing apps or Alipay / WeChat mini-programs.
+## Do I need an app to hail a taxi in Shanghai?
 
-**First-time renters need:**
-- Passport (or Foreign Permanent Resident ID)
-- Valid Chinese driver's license (see below)
-- International or domestic credit card
+You can hail a taxi on the street in Shanghai. Pick a place where the driver can stop legally. The municipal guide advises against hailing at an intersection because drivers may not stop within 50 metres of a crossroads to pick up passengers.
 
-Identity verification must be completed **at least 1 working day before** pickup — complete the in-app ID check ahead of arrival.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Transportation/20250919/5dd5b4725b7344cab776d3ddcbce224d.html)
 
-### Getting a Chinese Driver's License
+## What does 静 mean on a China Railway booking?
 
-Foreign visitors cannot drive in China on an overseas license alone. Two paths:
+A 静 symbol in 12306 marks a train offering a quiet carriage (静音车厢). By booking one you agree to silence electronic devices or use headphones, and to leave the carriage to take a call or have a conversation.
 
-| Path | Duration | Process |
-|---|---|---|
-| **Provisional Driving Permit** | 3 months (extendable to 1 year) | Apply at local traffic administration bureau with: passport, overseas license + certified Chinese translation, passport photo |
-| **Converted Chinese license** | Permanent (until expiry) | Requires passing a theory test (available in English); generally used by long-term residents |
+[Ministry of Ecology and Environment, quiet-carriage rules](https://www.mee.gov.cn/hjzl/sthjzk/hjzywr/202307/W020230728374728553582.pdf) · [2026 railway service notice](https://sdcourt.gov.cn/lyjnfy/396916/396901/44539815/index.html)
 
-**License mutual recognition:** China recognises driving licenses from **France, Serbia, Belgium, and UAE** — holders may apply for a Chinese license without the standard theory test (verify current process at your local traffic bureau, as procedures update).
+## Will I get change if I pay cash on a Shanghai bus?
 
----
+On a Shanghai bus without a conductor, bring the exact fare if you pay cash. The city’s passenger rules say these vehicles do not give change.
 
-## How do taxis work in China?
+[service.shanghai.gov.cn](https://service.shanghai.gov.cn/XingZhengWenDangKuJyh/XZGFDetails.aspx?docid=REPORT_NDOC_007926)
 
-Metered taxis (yellow / green cabs) can be hailed on the street and are still common in smaller cities and at airports:
-- Flag-down available; no app required.
-- Meters are mandatory — insist the driver uses it; if refused, take a different cab.
-- Payment: RMB cash (always accepted), Alipay / WeChat Pay (most cabs), card swipe (rare).
-- Older street-hail cabs may not have a working QR placard — keep ¥50–100 in cash as backup.
+<span id="city-by-city-metro-apps"></span>
 
-## DiDi or metro: which should I use in China?
+<span id="metro-apps"></span>
 
-| Situation | Best option | Why |
-|---|---|---|
-| Daytime city sightseeing | Metro | Cheap (¥3–6), no traffic, fast |
-| Airport transfer | DiDi or airport express | Direct, handles luggage |
-| After 11:30 PM | DiDi | Metro is closed |
-| Group of 3+ people | DiDi | Split cost makes it competitive with metro |
-| Rush hour (7–9 AM, 5–7 PM) | Metro | DiDi stuck in traffic; metro runs underground |
-| Rainy day / heavy luggage | DiDi | Door-to-door, no stairs |
+## Can I buy a Beijing subway ticket in the Yitongxing app?
 
-**Budget example (Beijing, 6 days):** ¥20 metro 3-day pass + 5 DiDi rides ≈ ¥110 total. All-DiDi would cost ¥300+.
+Yes. Beijing’s municipal subway guide lists ticket purchases in the Yitongxing (亿通行) app and says e-CNY is one payment option.
 
-## Airport-to-City: Additional Tips
+[english.beijing.gov.cn](https://english.beijing.gov.cn/specials/beijinglifeonthesubway/publicservices/publicservices/202206/t20220623_2749478.html?v=jt) · [english.beijing.gov.cn](https://english.beijing.gov.cn/latest/news/202105/t20210513_2388917.html)
 
-- **Shanghai Pudong:** Maglev train connects airport to the Longyang Road metro hub in about 8 minutes (¥50 standard one-way; ¥40 if you show a same-day flight boarding pass at the ticket window).
-- **Airport ATMs** generally offer better exchange rates than pre-exchanging cash at home banks. Withdraw ¥300–500 on arrival as backup cash.
-- **DiDi at airports:** follow in-app guidance to the designated pickup zone — do not wait at the general arrivals exit.
-- **First-hour checklist on arrival:** connect to airport WiFi → activate VPN → test Alipay with a small purchase → set up DiDi → test metro QR → screenshot hotel address in Chinese.
+## How long can a temporary Chinese driving permit last?
 
-## How do foreigners book train tickets in China?
+The published guidance allows a three-month temporary permit for a short stay. For a stay longer than three months, the permit can be extended up to one year. Bring a valid overseas driving licence when applying and check the vehicle class on the permit.
 
-- **12306 passport format issues:** the official site sometimes rejects foreign passport numbers. If your passport is declined repeatedly, use **Trip.com** instead (~¥50 service fee but full English interface and foreign card support).
-- **Morning trains are often cheaper** than afternoon departures on the same route.
-- **Seat selection:** only available in the Chinese version of the 12306 app. The English version assigns seats randomly.
-- **On-board amenities:** free hot water dispensers on all trains (bring your own cup); snacks and meals are allowed; dining car available on most G/D trains.
-- **Power banks on trains:** no CCC certification required (unlike domestic flights). Capacity limit: 100 Wh (27,000 mAh) with clear labeling.
-- **Choosing the right station:** major cities have multiple stations (e.g., Beijing West, Beijing South). Check which station your train departs from — they can be 30+ minutes apart.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Transportation/20241212/bd0bcbb71e234bf1807d808490a5fa4a.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/latest/news/202403/P020240311342963898718.pdf)
 
-## Practical Tips
+## Where does the Ministry of Commerce say I can find a rental car?
 
-- High-speed rail stations and airports have clear English signage.
-- Major stations offer baggage storage (staffed counters or self-service lockers).
-- **Amap has taxi booking built in** — useful as a backup when DiDi is busy or surge-priced.
-- **Bike-sharing fills metro gaps:** when two stations are 1–2 km apart, grab a shared bike (Hellobike, Meituan Bike) — scan with Alipay, ride, lock at destination. ~¥1.5 per trip.
+The ministry’s guide lists international airports and city-centre rental offices as options for foreign travellers. Check the office’s licence and document requirements before pickup.
+
+[tr.china-embassy.gov.cn](https://tr.china-embassy.gov.cn/tur/sgxw/202508/P020250812770217257636.pdf)
+
+## Where can I leave luggage near Beijing Railway Station (北京站)?
+
+Beijing’s station-area authority locates self-service lockers northwest of the station’s west pedestrian overpass, up the steps north of the bus stop for routes 103 and 104.
+
+[zdzqgw.beijing.gov.cn](https://zdzqgw.beijing.gov.cn/zqfw/cxzn/202608/t20260810_4815721.html)
+
+## Do France, Serbia, Belgium and the UAE have driving-licence agreements with China?
+
+China’s official guide lists all four. The agreement for your licence determines whether you can drive directly or exchange the licence without a test. Verify the applicable licence class and the agreement’s conditions before driving.
+
+[www.caac.gov.cn](https://www.caac.gov.cn/PHONE/XXGK_17/XXGK/TZTG/202403/P020240308546143854934.pdf)
+
+## Can I use a Yang Cheng Tong card on both the metro and buses in Guangzhou?
+
+Yes. Guangzhou’s ticket guide includes both metro and bus fares in the ordinary Yang Cheng Tong (羊城通) card scheme.
+
+[www.gz.gov.cn](https://www.gz.gov.cn/attachment/7/7792/7792262/10198954.pdf)
+
+## Which payments can I use when booking a domestic flight in China?
+
+The official business expatriate guide lists payment through Alipay, Weixin Pay and UnionPay bank cards on airline websites, apps and sales platforms. It also describes overseas-card acceptance through air ticket sales platforms and airlines operating international services. Check your chosen payment channel before confirming.
+
+[gothenburg.china-consulate.gov.cn](https://gothenburg.china-consulate.gov.cn/chn/zytz/202505/P020250506826658303527.pdf)
+
+## Can I take a lighter or matches on a flight in China?
+
+No. China’s civil aviation authority prohibits lighters and matches both in carry-on items and in checked baggage.
+
+[www.caac.gov.cn](https://www.caac.gov.cn/INDEX/HLFW/HKLXCS/202303/t20230316_217597.html)
+
+## Should I expect security screening at Shanghai Metro stations?
+
+Yes. Shanghai’s rules cover the screening of passengers entering metro stations and the articles they carry. Follow staff instructions at the entrance.
+
+[www.shanghai.gov.cn](https://www.shanghai.gov.cn/202513bmgfxwj/20250807/1b6f7476a4234b2c91efe929072c4f42.html)
+
+## Can I use the international liquids-bag rule for a domestic flight in China?
+
+Check the domestic rules separately. For small quantities of travel cosmetics, the Civil Aviation Administration permits one container of each kind, no larger than 100 mL per container. Pack them separately and be prepared to open them for inspection.
+
+[www.caac.gov.cn](https://www.caac.gov.cn/PHONE/SY/HLFW/GLZN/KP/)
+
+## Which Guangzhou metro station serves Baiyun Airport Terminal 2?
+
+Metro Line 3 serves Airport North (机场北) at Baiyun Airport Terminal 2. Check the terminal on your ticket when planning your trip.
+
+[kjj.gz.gov.cn](https://kjj.gz.gov.cn/attachment/7/7513/7513640/9346539.pdf) · [jtj.gz.gov.cn](https://jtj.gz.gov.cn/gkmlpt/content/10/10986/post_10986461.html)
+
+## Can I pay in Shanghai’s Metro Daduhui app with Alipay or WeChat Pay?
+
+Yes. Shanghai’s metro guide lists Alipay, WeChat Pay and international bank cards as payment options in the Metro Daduhui (大都会) app.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-CIIE2025Service-Transport/20251017/c6c5ca124ee74e92a37244280c0983b9.html)
+
+## Should my power bank go in checked baggage or cabin baggage?
+
+China’s civil aviation authority requires a personal power bank to travel in the cabin. It may not go in checked baggage. On domestic flights, also check the 3C marking and whether the model or batch has been recalled.
+
+[www.caac.gov.cn](https://www.caac.gov.cn/PHONE/SY/HLFW/GLZN/KP/) · [www.caac.gov.cn](https://www.caac.gov.cn/PHONE/XWZX/MHYW/202506/t20250626_227805.html)
+
+## Which app unlocks which shared bicycle in Shanghai?
+
+For a blue Hellobike (哈啰单车), use Hellobike or its Alipay mini program. For a yellow Meituan bike (美团单车), use Meituan. For a green Qingju bike (青桔单车), use Didi Qingju or Didi. These are Shanghai’s usual colour markings.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html)
+
+## How do Shenzhen’s Futian and Luohu crossings connect to Hong Kong rail?
+
+Hong Kong’s East Rail Line serves Lo Wu (罗湖) and Lok Ma Chau (落马洲). At Lok Ma Chau a pedestrian bridge leads to the Futian checkpoint (福田口岸) in Shenzhen. Border crossing formalities apply.
+
+[www.hyd.gov.hk](https://www.hyd.gov.hk/sc/road_and_railway/railway_network/er/index.html) · [ka.sz.gov.cn](https://ka.sz.gov.cn/bmfw/katgfw/ftkazt/)
+
+## Which metro station serves the Chengdu Panda Base south-gate shuttle?
+
+Take Chengdu Metro Line 3 to Panda Avenue (熊猫大道), use Exit A and transfer to shuttle bus 408 for the south gate. The base lists different directions for its west gate.
+
+[www.panda.org.cn](https://www.panda.org.cn/en/service/transit/)
+
+## Travel tip — Choosing between the metro, taxi and ride-hailing
+
+Compare the whole journey from the terminal to your door, including walking, luggage, transfers and the last departure. For a late arrival, save a backup route. Tell your driver the exact entrance or drop a pin rather than giving only the building name.
+
+## Travel tip — Flights, bikes and station transfers
+
+Check your airline’s baggage conditions for your fare and confirm the terminal. At a rental bike, check the brakes, the displayed price and the permitted return area before starting. At the end, check in the app that the rental has closed.
+
+## How do I navigate China without Google Maps?
+
+Amap (高德地图) provides route planning for walking, transit, cycling and driving. Before leaving, save your destination and the exact branch or entrance. Shanghai’s guide also lists Baidu Maps (百度地图) as a navigation option.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20231214/3cac2d8cc7f847da92a72252bae06705.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-EasyShanghai/20260713/379bcea6e1bd4defaa7db2451d68d3dd.html)
+
+## Travel tip — Arriving after the last train
+
+Look up the last departure and the precise station entrance. Save a taxi or ride-hailing pickup point for a late arrival. Check the airline’s own baggage allowance for your fare before packing.
+
+## Travel tip — A first transfer at a large station
+
+Leave more time for your first interchange, particularly with luggage or children. Check the station name and exit in advance. If you want to leave a bag, ask the station about storage hours and size limits before choosing your return train.
+
+## Travel tip — Storing a bag between trains
+
+If you have a long gap between check-out and departure, ask at the station service desk for 行李寄存 (luggage storage). Confirm that this station has space, ask when the desk closes and check how you will collect the bag. Keep your ticket, travel document and anything you need on the train with you.
+
+## Travel tip — Metro app and mini-program names in Guangzhou and Chengdu
+
+In 广州 (Guangzhou), search WeChat for 广州地铁乘车码 (Guangzhou Metro ride code), or look for the separate 广州地铁 app. In 成都 (Chengdu), look for 成都地铁 (Chengdu Metro), published by the metro operator, for journey planning and station information. Check ticket and payment options in your own account or at the station.
+
+[Guangzhou transport bureau on Metro information channels](https://jtj.gz.gov.cn/gkmlpt/content/10/10337/post_10337069.html) · [Chengdu Metro operator’s app listing](https://apps.apple.com/us/app/id1303414976)
+
+## Questions from travellers
+
+- What is the best ride-hailing app in China for foreigners? — Try DiDi or a supported ride option inside a wallet you already use. Compare the pickup point, car type and displayed fare. [How can I request a ride?](#how-can-i-request-a-ride) · [Travel tip — Choosing between the metro, taxi and ride-hailing](#travel-tip--choosing-between-the-metro-taxi-and-ride-hailing)
+- Are there metro multi-day passes for tourists in China? — Some cities offer multi-day passes. Beijing’s published passes are one example; compare the local price with the journeys you plan to make. [How much are Beijing’s rail transit passes?](#how-much-are-beijings-rail-transit-passes)

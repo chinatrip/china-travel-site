@@ -42,7 +42,7 @@ export const SITE_PAGES = [
     title: 'China Readiness Checklist',
     url: `${SITE}/checklist/`,
     description:
-      'Interactive pre-trip checklist personalized by nationality, travel dates, and destinations.',
+      'Interactive pre-trip checklist personalized by entry route, travel dates, and destinations.',
   },
   {
     title: 'About',

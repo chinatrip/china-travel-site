@@ -1,11 +1,16 @@
 ---
-title: "Meituan for Foreigners: Food Delivery & Hotel Deals (2026)"
-date: 2026-05-06
-last_verified: 2026-06-09
+title: Meituan (美团) for food delivery, hotel booking and shared bikes
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
-  - https://www.meituan.com
-sources:
-  - raw/realchinaguide-food-dining-2026.md
+  - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+  - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+  - https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html
+  - https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html
+  - https://apps.apple.com/us/app/id423084029
+  - https://play.google.com/store/apps/details?id=com.sankuai.meituan
+  - https://english.shanghai.gov.cn/en-TravelTips/20241217/91a38689417640cd823efb33c2f4f8db.html
+sources: []
 related:
   - wiki/concepts/accommodation.md
   - wiki/concepts/mobile-payment.md
@@ -17,137 +22,169 @@ related:
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: null
-description: >-
-  Meituan is China's super-app for food delivery, hotels, and bike rental, often
-  20-30% cheaper than international OTAs — how foreigners register, pay, and
-  order. Updated May 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Find meals, a room or a shared bike and check how to order food in Shanghai.
 faqs:
+  - q: How do I start a Meituan food order?
+    a: Shanghai’s guide describes SMS verification for a Meituan account. Have access to your phone for the code, enter the delivery address and check the contact details before ordering.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+    fact_number: 5
+    aliases:
+      - q: Can foreigners use Meituan?
+        fact_number: 2
+  - q: How can I order a meal in Shanghai?
+    a: Shanghai’s guide describes ordering on Meituan (美团) and Taobao Instant Commerce (淘宝闪购). Choose a delivery address, review the order and check the total before paying. Ask your accommodation where deliveries can be collected.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+    fact_number: 6
+  - q: What will Meituan ask for when I place a delivery order?
+    a: Shanghai’s guide shows sign-up with a six-digit SMS code. Review your basket and address, choose whether you need cutlery and select an available payment method. The guide lists Alipay, WeChat Pay and the digital RMB wallet.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+    fact_number: 7
+  - q: Which button submits a Meituan food order?
+    a: After checking the items, delivery address and total, look for 提交订单, meaning “submit order”. Shanghai’s guide says Meituan will also ask whether you need cutlery.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+    fact_number: 8
+  - q: Can I follow my Meituan delivery after I order?
+    a: Shanghai’s guide says Meituan shows the estimated wait and lets you track the delivery driver after placing an order.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html
+    fact_number: 9
+  - q: What can I use Meituan for besides food delivery?
+    a: In Shanghai, Meituan (美团) is one option for booking accommodation. You can also use its app for yellow Meituan shared bikes (美团单车). Look for the bike operator shown on the bicycle. Compare actual room rates and cancellation terms for your dates if booking a hotel.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html
+      - https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html
+    fact_number: 10
+    checked_at: 2026-11-20
+  - q: How do I find a restaurant in the Meituan app?
+    a: Open 外卖 (food delivery) to browse nearby restaurants or search by name. Open a restaurant, choose dishes and review the basket before tapping 提交订单 (submit order).
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+    fact_number: 11
+    checked_at: 2026-11-20
+  - q: Where can I download Meituan (美团) on iPhone?
+    a: Look for Meituan (美团) in the App Store. The US storefront listed the download at no charge on 20 November 2026. Service charges and purchases inside the app are separate. Check availability in the storefront used by your Apple account.
+    sources:
+      - https://apps.apple.com/us/app/id423084029
+    fact_number: 12
+    checked_at: 2026-11-20
+  - q: Where can I find the Android app for Meituan (美团)?
+    a: The linked Google Play listing is for Meituan. Check the listing and availability on your own device.
+    sources:
+      - https://play.google.com/store/apps/details?id=com.sankuai.meituan
+    fact_number: 13
+    checked_at: 2026-11-20
+  - q: Can I use Meituan to look for attraction or show tickets?
+    a: Shanghai’s guide to exhibitions and shows lists the Meituan app and the WeChat mini program 美团景点游玩. For a particular performance or museum, check the venue’s own booking channel, admission rules and availability.
+    sources:
+      - https://english.shanghai.gov.cn/en-TravelTips/20241217/91a38689417640cd823efb33c2f4f8db.html
+    fact_number: 14
+    checked_at: 2026-11-20
   - q: What is Meituan used for?
-    a: >-
-      Meituan is a super-app for food delivery, restaurant deals, hotel and
-      attraction booking, and bike rental. For hotels, the same room can run
-      20-30% cheaper on Meituan than on international platforms like Trip.com or
-      Booking.com.
-  - q: Can foreigners use Meituan?
-    a: >-
-      Yes. Set up mobile payment (Alipay or WeChat Pay) before using Meituan, as
-      it does not reliably accept foreign cards directly, then pay through that.
-      For food delivery, enter your address in Chinese — use the address from
-      your hotel booking or ask staff to write it for you.
+    a: Meituan (美团) offers food delivery. In Shanghai, visitor guides also list Meituan for booking hotels, unlocking its yellow shared bikes and finding attraction tickets. Check availability for the specific hotel, bike or venue.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+      - https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html
+      - https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html
+      - https://english.shanghai.gov.cn/en-TravelTips/20241217/91a38689417640cd823efb33c2f4f8db.html
+    fact_number: 1
+    checked_at: 2026-11-20
   - q: Is Meituan cheaper than Trip.com for hotels?
-    a: >-
-      Often yes for budget and mid-range domestic hotels, where the same room
-      can be 20-30% cheaper than on Trip.com. The catch is that the interface is
-      Chinese-language and some smaller properties cannot process foreign
-      passport check-in, so Trip.com or Booking.com are easier if you want a
-      fully English, foreign-friendly booking.
-  - q: Does Meituan have an English version?
-    a: >-
-      Not a full one — the interface is predominantly Chinese. Set your phone's
-      system language to English before first launch to get a partially-English
-      interface, and use the in-app translation tool (the ··· menu, then 翻译) for
-      menu descriptions.
+    a: Shanghai lists Meituan and Ctrip as hotel booking channels. Compare the same room, dates, breakfast and cancellation terms on the actual listings. There is no verified fixed saving in the cited guide.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html
+    fact_number: 3
+    checked_at: 2026-11-20
 category: app
+reader_question_numbers:
+  Does Meituan have an English version?: 4
 ---
 
-# Meituan for Foreigners: Food Delivery & Hotel Deals (2026)
+# Meituan (美团) for food delivery, hotel booking and shared bikes
 
-Meituan is one of China's largest super-apps, covering food delivery, hotel booking, restaurant discovery, bike-sharing, movie tickets, and more. Foreign visitors most commonly encounter it for food delivery and bike-sharing; hotel booking and restaurant reservations are possible but skew toward Chinese-language users.
+## How do I start a Meituan food order?
 
-## How do I download and set up Meituan?
+Shanghai’s guide describes SMS verification for a Meituan account. Have access to your phone for the code, enter the delivery address and check the contact details before ordering.
 
-- **iOS**: App Store → search "Meituan" or "美团"
-- **Android**: Google Play → search "Meituan"
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html)
 
-**Prerequisite**: mobile payment (Alipay or WeChat Pay) must be set up before Meituan is usable — the app does not reliably support direct foreign card payment for all service categories.
+## How can I order a meal in Shanghai?
 
-## How does Meituan food delivery work?
+Shanghai’s guide describes ordering on Meituan (美团) and Taobao Instant Commerce (淘宝闪购). Choose a delivery address, review the order and check the total before paying. Ask your accommodation where deliveries can be collected.
 
-Meituan is one of China's two dominant food delivery platforms (the other is **淘宝闪购**, formerly 饿了么/Ele.me, owned by Alibaba — rebranded December 2025).
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html)
 
-### How to Order
+## What will Meituan ask for when I place a delivery order?
 
-1. Open Meituan → tap the food delivery icon (外卖).
-2. The app uses your GPS location to show nearby restaurants.
-3. Select a restaurant → add items → proceed to checkout.
-4. Enter your delivery address in Chinese — use the address from your hotel booking confirmation, or ask hotel staff to write it for you.
-5. Pay via Alipay or WeChat Pay.
-6. Track the order on-screen; the rider contacts you by phone if needed (use the in-app call button so the number is anonymised).
+Shanghai’s guide shows sign-up with a six-digit SMS code. Review your basket and address, choose whether you need cutlery and select an available payment method. The guide lists Alipay, WeChat Pay and the digital RMB wallet.
 
-### Tips for Foreign Users
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html)
 
-- **Set phone language to English before first launch.** Meituan detects your phone's system language on first open — this determines whether you see a partially-English interface or full Chinese.
-- **Get your delivery address in Chinese characters first.** Ask hotel front desk to write the exact address including hotel name. Screenshot it or copy-paste into the address field.
-- **Browse by photos, not text.** Tap into restaurant listings to see dish photos with ratings. This is often more useful than translating the text menu.
-- **Use in-app translation.** Tap the ··· menu then 翻译 (translate) — supports 18 languages for menu descriptions.
-- **Backup plan:** If Meituan payment fails or a restaurant is not listed, try [[wiki/entities/eleme.md|淘宝闪购 (formerly Ele.me)]] through Alipay. Some restaurants are exclusive to one platform.
-- **Late-night use case:** Ordering to your hotel room at 10 PM is common and works well. Delivery typically arrives in 20-40 minutes in major cities.
-- **Use Meituan as a visual menu reference.** Even when dining at a restaurant in person, open the restaurant's page on Meituan to see photos and ratings of their dishes — helps with ordering at the table.
+## Which button submits a Meituan food order?
 
-### Interface Language
+After checking the items, delivery address and total, look for 提交订单, meaning “submit order”. Shanghai’s guide says Meituan will also ask whether you need cutlery.
 
-The Meituan app is predominantly Chinese. Key navigation:
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html)
 
-- 外卖 = food delivery
-- 附近 = nearby
-- 搜索 = search
-- 下单 = place order
-- 评价 = review
+## Can I follow my Meituan delivery after I order?
 
-English restaurant names and cuisines (e.g., "Pizza", "Burger") are searchable in English.
+Shanghai’s guide says Meituan shows the estimated wait and lets you track the delivery driver after placing an order.
 
-## Can I book hotels on Meituan?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/bcc05ccb6de7460e89dc3294b5fbb755.html)
 
-Meituan lists a large inventory of Chinese hotels, hostels, and guesthouses, often with competitive pricing for budget and mid-range properties.
+## What can I use Meituan for besides food delivery?
 
-**Price gap:** the same room listed on Meituan can be 20–30% cheaper than on Trip.com or Booking.com — the gap appears between local apps (Meituan) and international-facing OTAs, not between the Chinese and international versions of the same OTA. This is worth knowing for budget-conscious travelers who have Alipay or WeChat Pay set up. See [[wiki/concepts/accommodation.md]] for detail.
+In Shanghai, Meituan (美团) is one option for booking accommodation. You can also use its app for yellow Meituan shared bikes (美团单车). Look for the bike operator shown on the bicycle. Compare actual room rates and cancellation terms for your dates if booking a hotel.
 
-**Practical note for foreigners**: the interface is Chinese-language, and some smaller properties cannot process foreign passport check-in correctly. For most visitors, **Trip.com** or **Booking.com** are easier and fully English — use Meituan if you are comfortable navigating a Chinese UI and want the lower local price.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html)
 
-## How do I use Meituan shared bikes?
+## How do I find a restaurant in the Meituan app?
 
-Meituan operates one of China's largest dockless bike-sharing fleets (yellow bikes).
+Open 外卖 (food delivery) to browse nearby restaurants or search by name. Open a restaurant, choose dishes and review the basket before tapping 提交订单 (submit order).
 
-### How to Unlock
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html)
 
-1. Open Meituan → tap the bike icon (单车), **or** use Alipay's built-in bike entry, **or** use WeChat's mini-program search for "美团单车".
-2. Scan the QR code on the bike's handlebar.
-3. Pay per ride via Alipay or WeChat Pay; deposits are handled automatically through your linked payment account.
+## Travel tip — Receiving food at a hotel
 
-Bikes are GPS-tracked — park in designated areas (white-painted zones) to avoid surcharges.
+Copy the hotel’s Chinese address from your confirmation. Ask reception which entrance, shelf or collection point to use and add that detail to the delivery note. Use a contact number you can answer.
 
-## Restaurant Reviews and Reservations
+## Where can I download Meituan (美团) on iPhone?
 
-Meituan includes restaurant reviews and, for some venues, table reservations. **Dianping** (大众点评, also owned by Meituan's parent company) is the dedicated review platform and is more commonly referenced for reviews; the two apps share underlying data.
+Look for Meituan (美团) in the App Store. The US storefront listed the download at no charge on 20 November 2026. Service charges and purchases inside the app are separate. Check availability in the storefront used by your Apple account.
 
-## Movie Tickets and Entertainment
+[apps.apple.com](https://apps.apple.com/us/app/id423084029)
 
-Meituan sells cinema tickets, attraction tickets, and event passes at competitive prices. Useful if you can navigate the Chinese interface — otherwise attraction official websites or Trip.com cover the same inventory with English support.
+## Where can I find the Android app for Meituan (美团)?
 
-## Meituan or Taobao Flash Purchase: which is better?
+The linked Google Play listing is for Meituan. Check the listing and availability on your own device.
 
-| Feature | Meituan | 淘宝闪购 (formerly 饿了么) |
-|---------|---------|--------|
-| Market share | ~65–70% | ~30–35% |
-| Coverage | Broader (more cities, suburban areas) | Strong in Tier-1 cities (2000+ cities) |
-| Payment | Alipay, WeChat Pay | Alipay preferred (Alibaba-owned) |
-| English support | Minimal | Minimal |
-| Discounts | Meituan membership promotions | Alipay bundled promotions |
+[play.google.com](https://play.google.com/store/apps/details?id=com.sankuai.meituan)
 
-Both platforms work similarly for a foreign visitor — choose whichever has better restaurant selection near your location.
+## Can I use Meituan to look for attraction or show tickets?
 
-## What are Meituan's limitations for foreigners?
+Shanghai’s guide to exhibitions and shows lists the Meituan app and the WeChat mini program 美团景点游玩. For a particular performance or museum, check the venue’s own booking channel, admission rules and availability.
 
-- The app is **Chinese-language heavy** — most menus and UI labels are not translated.
-- **Mobile payment must be set up first** — Meituan does not accept foreign credit cards directly at the checkout.
-- Hotel booking and reservation features assume a Chinese identity/address for many confirmation flows.
-- Customer support is Chinese-language only.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TravelTips/20241217/91a38689417640cd823efb33c2f4f8db.html)
 
-## See Also
+## What is Meituan used for?
 
-- [[wiki/concepts/accommodation.md]] — hotel booking options and passport registration requirements
-- [[wiki/concepts/mobile-payment.md]] — Alipay and WeChat Pay setup for foreigners
-- [[wiki/entities/alipay.md]] — Alipay setup (required before using Meituan)
-- [[wiki/entities/wechat.md]] — WeChat Pay setup
+Meituan (美团) offers food delivery. In Shanghai, visitor guides also list Meituan for booking hotels, unlocking its yellow shared bikes and finding attraction tickets. Check availability for the specific hotel, bike or venue.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Transportation-Rideabike/20260813/3b4e059a25004d5a97814d4af9f283a2.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TravelTips/20241217/91a38689417640cd823efb33c2f4f8db.html)
+
+## Is Meituan cheaper than Trip.com for hotels?
+
+Shanghai lists Meituan and Ctrip as hotel booking channels. Compare the same room, dates, breakfast and cancellation terms on the actual listings. There is no verified fixed saving in the cited guide.
+
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-Tourism-Accommodation/20260813/aa459a1a8c904a61b49381717e308188.html)
+
+## Questions from travellers
+
+- Does Meituan have an English version? — The examples below identify the Chinese buttons. Check language options in your installed version. [Which button submits a Meituan food order?](#which-button-submits-a-meituan-food-order) · [How do I find a restaurant in the Meituan app?](#how-do-i-find-a-restaurant-in-the-meituan-app)

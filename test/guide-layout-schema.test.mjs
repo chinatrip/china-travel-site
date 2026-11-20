@@ -157,8 +157,16 @@ test('built app pages embed a SoftwareApplication about node (no fabricated rati
       typeof about.applicationCategory === 'string' && about.applicationCategory.length > 0,
       `${file}: about.applicationCategory`,
     );
-    assert.equal(about.operatingSystem, 'Android, iOS', `${file}: about.operatingSystem`);
-    assert.equal(about.offers?.price, 0, `${file}: free Offer`);
+    const page = readFileSync(file, 'utf8');
+    const platforms = about.downloadUrl.map((url) => {
+      assert.ok(page.includes(url.replaceAll('&', '&amp;')) || page.includes(url));
+      const host = new URL(url).hostname;
+      if (host === 'apps.apple.com') return 'iOS';
+      assert.ok(['play.google.com', 'kyfw.12306.cn'].includes(host));
+      return 'Android';
+    });
+    assert.deepEqual(about.operatingSystem, platforms);
+    assert.ok(!('offers' in about));
     assert.ok(!('aggregateRating' in about), `${file}: must not fabricate aggregateRating`);
   }
 });

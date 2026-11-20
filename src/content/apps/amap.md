@@ -1,11 +1,19 @@
 ---
-title: "Amap for Foreigners: English Navigation in China (2026)"
-date: 2026-06-01
-last_verified: 2026-06-09
+title: English navigation with Amap (高德地图)
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://mobile.amap.com
-sources:
-  - raw/realchinaguide-navigation-guide-2026.md
+  - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/7fbc0bbb51b341fcbb65c83986a6e32a.html
+  - https://travel.gc.ca/destinations/china
+  - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250123/78d115a256af4c29a607b3d326ac2d8a.html
+  - https://english.shanghai.gov.cn/en-UsefulApps/20240223/06d761174b294dad869d395cc3e38382.html
+  - https://english.shanghai.gov.cn/en-EasyShanghai/20260713/379bcea6e1bd4defaa7db2451d68d3dd.html
+  - https://apps.apple.com/us/app/id461703208
+  - https://play.google.com/store/apps/details?id=com.autonavi.minimap
+  - https://wap.amap.com/offline/index.html
+  - https://cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/ly/zxdt/202408/t20240826_13556747.html
+  - https://developer.amap.com/api/skill/ready-to-use/amap-ride-hailing-skill
+sources: []
 related:
   - wiki/concepts/transportation.md
   - wiki/concepts/internet-connectivity.md
@@ -15,161 +23,132 @@ related:
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: null
-description: >-
-  Amap (Gaode) is China's top navigation app and works where Google Maps does
-  not: switch it to English, use offline maps, transit routing, and
-  ride-hailing.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026. The 20 November 2026 follow-up covered the restored travel tips on this page.
+description: Explore supported route types and prepare a Chinese destination address.
 faqs:
-  - q: Does Amap work in English?
-    a: >-
-      Yes — Amap has an English mode, and there's an 'Amap Global' version aimed
-      at foreign visitors. It's the most reliable navigation in China since
-      Google Maps is blocked.
-  - q: Do I need a VPN or Chinese number to use Amap?
-    a: >-
-      No VPN is needed — Amap is a Chinese service that works normally. Core
-      navigation works without a Chinese phone number, though some features like
-      in-app ride-hailing payment work best with a linked wallet.
+  - q: What can I use for English navigation?
+    a: Shanghai’s guide to Amap (高德地图) describes driving, public transport, walking and cycling routes in English. Save the destination’s name and address so you can check the selected location before leaving.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/7fbc0bbb51b341fcbb65c83986a6e32a.html
+    fact_number: 5
+    aliases:
+      - q: Does Amap work in English?
+        fact_number: 1
+  - q: How can I explain a destination to a driver?
+    a: Canada’s travel advisory recommends carrying the destination and the name and address of your hotel written in Chinese characters. Ask your hotel for its Chinese address and keep a copy you can show without a connection.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 6
+  - q: Which places have English labels on Amap?
+    a: Amap’s English map provides English labels for places including attractions, restaurants and hotels. For a specific destination, keep the Chinese name or address from your booking so you can check that the result is the right place.
+    sources:
+      - https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250123/78d115a256af4c29a607b3d326ac2d8a.html
+    fact_number: 7
+  - q: What trip details can I see in Amap before leaving?
+    a: Enter your start and destination, then open a transit route to see where to board the bus or metro, where to get off and the walking connection. In biking mode, Amap distinguishes bicycle and e-bike routes and shows estimated time and distance.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240223/06d761174b294dad869d395cc3e38382.html
+    fact_number: 8
+  - q: What should I save in Amap before landing?
+    a: You can save your hotel and the destinations you plan to visit before departure in Amap (高德地图). Keep the Chinese address and branch name handy for pickup or directions.
+    sources:
+      - https://english.shanghai.gov.cn/en-EasyShanghai/20260713/379bcea6e1bd4defaa7db2451d68d3dd.html
+    fact_number: 9
+    checked_at: 2026-11-20
+  - q: Where can I download AMap Global (高德地图) on iPhone?
+    a: Look for AMap Global (高德地图) in the App Store. The US storefront listed the download at no charge on 20 November 2026. Service charges and purchases inside the app are separate. Check availability in the storefront used by your Apple account.
+    sources:
+      - https://apps.apple.com/us/app/id461703208
+    fact_number: 10
+    checked_at: 2026-11-20
+  - q: Where can I find the Android app for AMap Global (高德地图)?
+    a: The linked Google Play listing is for AMap Global. Check the listing and availability on your own device.
+    sources:
+      - https://play.google.com/store/apps/details?id=com.autonavi.minimap
+    fact_number: 11
+    checked_at: 2026-11-20
   - q: Can I use Amap offline?
-    a: >-
-      Yes — download offline city maps in advance for navigation without data,
-      useful as a backup and to save eSIM data.
-  - q: How do I search places in Amap as a foreigner?
-    a: >-
-      Search in English for major landmarks, or paste Chinese names/addresses
-      (e.g., from your hotel booking). Saving your hotel as a destination in
-      Chinese helps drivers and navigation.
+    a: Amap’s Chinese app help describes downloading offline city map data and searching the downloaded area. Check for the feature in your version, download the right city while connected and test a search in airplane mode. Live traffic and every feature of the international edition are outside that guide’s scope.
+    sources:
+      - https://wap.amap.com/offline/index.html
+    fact_number: 3
+    checked_at: 2026-11-20
 category: app
+reader_question_numbers:
+  Do I need a VPN or Chinese number to use Amap?: 2
+  How do I search places in Amap as a foreigner?: 4
 ---
 
-# Amap for Foreigners: English Navigation in China (2026)
+# English navigation with Amap (高德地图)
 
-Amap (高德地图, also known as Gaode Maps) is China's most widely used navigation app, operated by Alibaba Group. It is the recommended mapping tool for foreign visitors because Google Maps is blocked by the Great Firewall and does not have reliable offline data for China.
+## What can I use for English navigation?
 
-## Why do foreigners use Amap?
+Shanghai’s guide to Amap (高德地图) describes driving, public transport, walking and cycling routes in English. Save the destination’s name and address so you can check the selected location before leaving.
 
-- **Google Maps is blocked** in mainland China — Amap is the functional replacement.
-- English-language UI mode is available.
-- Real-time traffic, public transit routing, and turn-by-turn navigation work without a VPN.
-- POI (point of interest) data for mainland China is far more complete and accurate than any internationally available map service.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-MobileandInternet-Popularapps/20260826/7fbc0bbb51b341fcbb65c83986a6e32a.html)
 
-## How do I download Amap?
+## How can I explain a destination to a driver?
 
-Available outside China on both stores — install before you arrive:
+Canada’s travel advisory recommends carrying the destination and the name and address of your hotel written in Chinese characters. Ask your hotel for its Chinese address and keep a copy you can show without a connection.
 
-- **iOS**: App Store → search "Amap" or "高德地图"
-- **Android**: Google Play → search "Amap"
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-No account registration is required to use basic navigation.
+## Which places have English labels on Amap?
 
-## What are Amap's key features?
+Amap’s English map provides English labels for places including attractions, restaurants and hotels. For a specific destination, keep the Chinese name or address from your booking so you can check that the result is the right place.
 
-### Turn-by-Turn Navigation
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Latest-WhatsNew/20250123/78d115a256af4c29a607b3d326ac2d8a.html)
 
-- Driving, cycling, and walking modes with voice guidance.
-- Voice guidance defaults to Chinese; switch to English in **Settings → Voice → English**.
-- Real-time traffic overlay and rerouting.
+## What trip details can I see in Amap before leaving?
 
-### English UI Mode
+Enter your start and destination, then open a transit route to see where to board the bus or metro, where to get off and the walking connection. In biking mode, Amap distinguishes bicycle and e-bike routes and shows estimated time and distance.
 
-Enable via **Me → Settings → Language → English**. POI names in less-touristed areas may still display in Chinese characters; searching in either English or Chinese (pinyin or characters) works.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240223/06d761174b294dad869d395cc3e38382.html)
 
-### Metro and Public Transit Routing
+## What should I save in Amap before landing?
 
-- Enter your start and end points; select the "Transit" tab for metro / bus combinations.
-- Shows estimated fares, line transfers, and walking segments.
-- Covers all major Chinese cities with metro systems.
+You can save your hotel and the destinations you plan to visit before departure in Amap (高德地图). Keep the Chinese address and branch name handy for pickup or directions.
 
-### Restaurant Search and Dianping Integration
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-EasyShanghai/20260713/379bcea6e1bd4defaa7db2451d68d3dd.html)
 
-- Searching for restaurants in Amap shows ratings and reviews sourced from **Dianping** (大众点评), China's dominant restaurant review platform.
-- Tap a result to see hours, photos, and user reviews; a "Book" button links through to reservation or delivery.
+## Travel tip — Finding the right address
 
-### Ride-Hailing Aggregation
+Search with the Chinese name if an English search returns several results. Compare the district and street number, then save the pin or a screenshot. A screenshot of the last few turns can help if the connection drops.
 
-- Amap aggregates multiple ride-hailing platforms (DiDi, Caocao, and others) in a single booking interface.
-- Useful for price comparison — choose the lowest fare across services from one screen.
-- Payment goes through whichever service you select; Alipay or WeChat Pay required.
+## Where can I download AMap Global (高德地图) on iPhone?
 
-### Offline Map Download
+Look for AMap Global (高德地图) in the App Store. The US storefront listed the download at no charge on 20 November 2026. Service charges and purchases inside the app are separate. Check availability in the storefront used by your Apple account.
 
-- **Me → Offline Maps → Download** — select a city or province.
-- Offline maps allow navigation without mobile data; route recalculation still requires connectivity.
-- Recommended for areas with spotty coverage or to avoid data charges.
+[apps.apple.com](https://apps.apple.com/us/app/id461703208)
 
-## How do I search in Amap in English?
+## Where can I find the Android app for AMap Global (高德地图)?
 
-Both work well. Tips:
+The linked Google Play listing is for AMap Global. Check the listing and availability on your own device.
 
-- **Hotel names**: type the English brand name (e.g., "Marriott Beijing") — it reliably resolves.
-- **Attractions**: English names work for major sites; use Chinese characters (copy from your itinerary or booking confirmation) for smaller or rural destinations.
-- **Addresses**: Chinese address format is province → city → district → street → number; pasting from a booking confirmation is the most reliable approach.
+[play.google.com](https://play.google.com/store/apps/details?id=com.autonavi.minimap)
 
-## Apple Maps or Amap: which is better in China?
+## Can I use Amap offline?
 
-**iPhone users:** Apple Maps works well in mainland China. Apple sources its China map data from Gaode (Amap), so routing accuracy is equivalent — you do not need to download Amap for basic point-to-point navigation.
+Amap’s Chinese app help describes downloading offline city map data and searching the downloaded area. Check for the feature in your version, download the right city while connected and test a search in airplane mode. Live traffic and every feature of the international edition are outside that guide’s scope.
 
-However, Amap is still recommended for iPhone users when you need:
-- Public transit routing with live departure times
-- Dianping restaurant reviews directly in the map interface
-- Ride-hailing aggregation (DiDi, Caocao, and others in one screen)
-- Offline map download for areas with spotty coverage
+[wap.amap.com](https://wap.amap.com/offline/index.html)
 
-**Android users:** Google Maps is blocked in mainland China and Google Play is unavailable without a VPN — Amap is required.
+## Travel tip — Meeting on the right street level in Chongqing
 
-## How do I set Amap to English?
+At Hongyadong (洪崖洞) in Chongqing, streets meet the building on both the first and the eleventh levels. When arranging a pickup, send the pin and the street or entrance name. A photo of the sign and a message such as 我在一楼入口 (I am at the first-floor entrance) can save a trip to the wrong level.
 
-- Enable English: **Me → Settings → Language → English**.
-- The interface is mostly translated. Restaurant names and smaller POIs may still display in Chinese, but addresses and routing directions render in English.
-- **Known issue**: Amap sometimes resets to Chinese after an app update. Re-check your language setting whenever you notice the UI reverted.
-- Searching works in both English and Chinese. For destinations not found in English, copy-paste Chinese characters from a translation app or booking confirmation.
+[Street levels at Hongyadong](https://cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/ly/zxdt/202408/t20240826_13556747.html)
 
-## How do I use Amap offline?
+## Travel tip — Requesting a ride with Amap
 
-- Path: **Me → Offline Maps → Download** → select city or province.
-- Offline maps enable turn-by-turn navigation without mobile data. Real-time features (live traffic, transit schedule updates) still require a connection.
-- **Recommended**: download maps for all planned cities before leaving your hotel each morning, or before departing your home country.
-- Particularly useful when data runs out (common with capped eSIM plans) or in subway stations with no signal.
+If you already have Amap (高德地图), look for 高德打车 (Amap ride-hailing) when you need a ride. Check the pickup point, the available car types and the estimated fare for that trip before ordering. If you also checked another ride app, confirm that you have only one active request.
 
-## Can I book a taxi through Amap?
+[Amap ride-hailing service](https://developer.amap.com/api/skill/ready-to-use/amap-ride-hailing-skill)
 
-- Amap has a built-in ride-hailing aggregator — tap the car icon on any destination to book.
-- When you request a ride through Amap, **the destination is auto-filled** in the driver's app, removing communication barriers.
-- Serves as a backup when DiDi is busy or surge-priced: Amap queries multiple platforms (DiDi, Caocao, T3, etc.) simultaneously.
-- Payment requires Alipay or WeChat Pay linked in the booking service.
+## Questions from travellers
 
-## Amap vs Google Maps: how do they compare?
-
-| Aspect | Amap | Google Maps |
-|--------|------|-------------|
-| Works in China without VPN | Yes | No — blocked by GFW |
-| VPN reliability for Google Maps | N/A | ~50% uptime reported; drops mid-route |
-| China POI data accuracy | Up-to-date, comprehensive | Outdated, incomplete |
-| English interface | Partial (most UI, some POIs Chinese) | Full |
-| Offline maps for China | Excellent city-level downloads | Available but less detailed |
-| Metro/bus routing | Real-time, integrated | Limited China transit data |
-| Ride-hailing integration | Built-in (DiDi + others) | None in China |
-| Coverage outside China | Mainland only | Global |
-
-**Bottom line**: Use Amap as your primary navigation in China. Keep Google Maps (with VPN) only as a secondary reference for global context or for planning routes that cross borders.
-
-## What are Amap's limitations versus Google Maps?
-
-- Coverage is **mainland China only** — no routing data for Hong Kong, Macau, or overseas destinations.
-- Some POI names display only in Chinese characters even in English mode.
-- Street-view imagery (panoramic view) is available but less polished than Google Street View in most areas.
-- The app assumes you are in China — if you open it before landing the map may default to a seemingly random location.
-
-## Integration with Other Services
-
-- **DiDi**: tap the car icon in Amap to request a DiDi ride without switching apps.
-- **淘宝闪购 (formerly Ele.me, food delivery)**: accessible via Amap's search results for restaurants.
-- **Alipay**: if you are signed in with an Alipay/Taobao account, your saved addresses and payment method carry over.
-
-## See Also
-
-- [[wiki/concepts/transportation.md]] — transport overview including metro, train, and ride-hailing
-- [[wiki/concepts/internet-connectivity.md]] — GFW context and VPN guidance
-- [[wiki/entities/didi.md]] — ride-hailing via DiDi directly or through Amap aggregation
+- Do I need a VPN or Chinese number to use Amap? — Check the requirements for the particular Amap feature you intend to use. [What can I use for English navigation?](#what-can-i-use-for-english-navigation) · [Can I use Amap offline?](#can-i-use-amap-offline)
+- How do I search places in Amap as a foreigner? — Try the Chinese place name or paste the hotel’s Chinese address. Compare the branch and entrance on the map before starting directions. [What trip details can I see in Amap before leaving?](#what-trip-details-can-i-see-in-amap-before-leaving) · [Travel tip — Finding the right address](#travel-tip--finding-the-right-address)
