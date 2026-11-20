@@ -18,7 +18,7 @@ const APPS = {
   'amap':     { name: 'Amap',     applicationCategory: 'TravelApplication' },
   'dianping': { name: 'Dianping', applicationCategory: 'LifestyleApplication' },
   'didi':     { name: 'DiDi',     applicationCategory: 'TravelApplication' },
-  'eleme':    { name: 'Ele.me',   applicationCategory: 'LifestyleApplication' },
+  'eleme':    { name: 'Taobao Flash Shopping',   applicationCategory: 'LifestyleApplication' },
   'meituan':  { name: 'Meituan',  applicationCategory: 'LifestyleApplication' },
   'tenpaygo': { name: 'TenPayGo', applicationCategory: 'FinanceApplication' },
   'trip-com': { name: 'Trip.com', applicationCategory: 'TravelApplication' },
@@ -39,10 +39,6 @@ export function buildSoftwareApplication(slug) {
     '@type': 'SoftwareApplication',
     name: app.name,
     applicationCategory: app.applicationCategory,
-    // Every listed app ships on both mobile platforms.
-    operatingSystem: 'Android, iOS',
-    // The apps are free to download; in-app fees vary and are covered in prose.
-    offers: { '@type': 'Offer', price: 0, priceCurrency: 'USD' },
   };
 }
 

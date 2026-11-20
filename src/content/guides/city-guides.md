@@ -1,134 +1,218 @@
 ---
-title: "City Guides for Foreign Visitors"
-date: 2026-06-01
-sources: [raw/realchinaguide-city-guides-2026.md]
-related: [wiki/concepts/transportation.md, wiki/concepts/trip-planning.md, wiki/concepts/accommodation.md, wiki/concepts/food-dining.md, wiki/entities/dianping.md, wiki/concepts/attraction-ticketing.md]
-last_verified: 2026-07-20
+title: City landmarks, Beijing transit and Sichuan travel limits
+date: 2026-11-19
+sources: []
+related:
+  - wiki/concepts/transportation.md
+  - wiki/concepts/trip-planning.md
+  - wiki/concepts/accommodation.md
+  - wiki/concepts/food-dining.md
+  - wiki/entities/dianping.md
+  - wiki/concepts/attraction-ticketing.md
+last_verified: 2026-11-20
 verified_against:
-  - raw/realchinaguide-city-guides-2026.md
-  - https://www.travelchinaguide.com/china-trains/beijing-shanghai-highspeed.htm
-  - https://www.chinadiscovery.com/chinese-visa/240-hour-visa-free-transit.html
+  - https://intl.dpm.org.cn/visit
+  - https://www.dpm.org.cn/Visit.html
+  - https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6623d27081e5641581784ebb.html
+  - https://japanese.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202206/t20220627_2752881.html
+  - https://www.mtr.bj.cn/page/instructions.html
+  - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+  - https://www.ehangzhou.gov.cn/2020-04/22/c_242880.htm
+  - https://english.suzhou.gov.cn/szsenglish/sz5ajjq/201611/43680636abee46f3a7220ce37ec064cb.shtml
+  - https://www.fujian.gov.cn/english/cultureandtravel/attractions/202501/t20250107_6619424.htm
+  - https://english.shanghai.gov.cn/en-HeritageZones/20231208/f2ac293f546a4d32aba936f2e733a47c.html
+  - https://english.shanghai.gov.cn/en-TravelAcrossChina/20250421/fa4666cf783d46f48fc6edd4cf9dcf95.html
+  - https://en.xa.gov.cn/CultureTravel/Attractions/1691691506530373634.html
+  - https://english.shanghai.gov.cn/en-TravelAcrossChina/20250509/4a2d119f7ce24953bf339702c0270c84.html
+  - https://english.beijing.gov.cn/travellinginbeijing/mustvisitsites/
+  - https://whhlyt.hunan.gov.cn/whhlyt/wldh2022jt/202208/t20220823_27716245.html
+  - https://dt.gov.cn/english/placestovisit/202501/1e8f5566325143ebb930b7b82e9baa00.shtml
+  - https://english.www.gov.cn/news/202409/04/content_WS66d7b1fdc6d0868f4e8ea8f0.html
+  - https://english.beijing.gov.cn/specials/240tour/index.html
+  - https://english.beijing.gov.cn/specials/strollthroughbeijing/templesandancientpagodas/202611/t20261110_4940048.html
+  - https://www.lasa.gov.cn/lhasa/lsmj/202005/79834747dde3436f9f03f0d2f588fcda.shtml
+  - https://english.scio.gov.cn/in-depth/2018-08/17/content_59011742.htm
+  - https://wlj.nanjing.gov.cn/zwfw/bszlxz/202601/t20260121_5773976.html
+  - https://www.xjtsq.gov.cn/info/4388/160221.htm
+  - https://www.wlmq.gov.cn/wlmqs/c119055/202604/326477e0e6394fa78fd4fa2d85bb525e.shtml
+  - https://ka.sz.gov.cn/bmfw/katgfw/
+  - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-09
-  notes: "2026-07-20: Added a 'Which cities match what you want to see?' section that groups the existing table cities by theme (history / food / modern / nature / pandas) per traveler feedback — all primary cities are ones already profiled in the table above; Luoyang / Datong are named only as day-trip / add-on destinations, not primary bases, since they are not profiled here. No new city data or sourced claims introduced; theme descriptors use common-knowledge dish and landscape names (e.g. mapo tofu, sandstone pillars) for recognition, consistent with the existing Highlights. Existing content not re-verified this round; page_audit unchanged. --- City highlights and recommended days are stable facts. Best seasons cross-checked against general climate data. HSR time corrected during lint."
-description: >-
-  Foreigner-focused city guides for Beijing, Shanghai, Xi'an, Chengdu, Guilin
-  and more — top sights, how many days to spend, best seasons, and getting
-  around. Updated June 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Locate the sights, check Beijing museum and metro details, and verify the limits of a Sichuan transit itinerary.
 faqs:
-  - q: Which cities should I visit on a first trip to China?
-    a: >-
-      Beijing (Great Wall, Forbidden City) and Shanghai (modern China) are both
-      good starting points and pair well on a 5-7 day trip — they are about 4.5
-      hours apart by high-speed rail. With more time, add Xi'an (Terracotta
-      Warriors), Chengdu (pandas) or Guilin/Yangshuo (scenery). Allow roughly
-      4-5 days for Beijing, 3-4 for Shanghai or Chengdu, and 2-3 for most of the
-      others (Suzhou 1-2).
-  - q: How many days do I need in China?
-    a: >-
-      Two weeks fits the Classic First-Timer route: Beijing (4-5 days), Xi'an
-      (2-3), Chengdu (3-4) and Shanghai (3-4), all by high-speed rail. With 7-10
-      days, the East Coast Express (Shanghai, Hangzhou, Suzhou, Nanjing) or the
-      Silk Road (Xi'an, Urumqi, Kashgar) fits; the Southwest Nature and Yunnan
-      routes need 10-14 days.
-  - q: What is the best time of year to visit China?
-    a: >-
-      It depends on the city: the table above lists each city's best season (for
-      example, Beijing April and September-October; Guangzhou October-March;
-      Chengdu April and October). There is no single best season for the whole
-      country.
-  - q: How do I travel between Chinese cities?
-    a: >-
-      High-speed rail connects the major cities on the popular routes and is the
-      default for first-timers; the classic Beijing-Xi'an-Chengdu-Shanghai trip
-      runs entirely by HSR. Domestic flights cover the long western segments
-      (such as the Silk Road), and within a city each metro has its own app to
-      set up on arrival.
+  - q: When can I visit Beijing’s Palace Museum?
+    a: The Palace Museum normally closes on Mondays, with exceptions for statutory holidays. Check the museum’s opening notices, including Lunar New Year’s Eve and temporary closures, before booking. Regular admission is CNY 60 from April through October and CNY 40 from November through March. The Treasure and Clock galleries have separate tickets.
+    sources:
+      - https://intl.dpm.org.cn/visit
+      - https://www.dpm.org.cn/Visit.html
+      - https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6623d27081e5641581784ebb.html
+    fact_number: 5
+  - q: How much are Beijing’s rail transit passes?
+    a: The Beijing municipal guide lists a one-day electronic pass at CNY 20 and a three-day pass at CNY 40. Check the lines and products covered before buying a pass for an airport journey.
+    sources:
+      - https://japanese.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202206/t20220627_2752881.html
+      - https://www.mtr.bj.cn/page/instructions.html
+    fact_number: 6
+  - q: Can I include Jiuzhaigou on a 240-hour transit trip through Sichuan?
+    a: The published Sichuan stay area lists eleven cities. Aba Prefecture, where Jiuzhaigou is located, is outside that area. Check each destination and the ports for the entire route before booking.
+    sources:
+      - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+      - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
+    fact_number: 7
+  - q: Where are West Lake, the Humble Administrator’s Garden and Gulangyu?
+    a: West Lake (西湖) is in Hangzhou (杭州). The Humble Administrator’s Garden (拙政园) is in Suzhou (苏州). Gulangyu Island (鼓浪屿) is in Xiamen (厦门), Fujian. These names can help you distinguish the destinations when booking.
+    sources:
+      - https://www.ehangzhou.gov.cn/2020-04/22/c_242880.htm
+      - https://english.suzhou.gov.cn/szsenglish/sz5ajjq/201611/43680636abee46f3a7220ce37ec064cb.shtml
+      - https://www.fujian.gov.cn/english/cultureandtravel/attractions/202501/t20250107_6619424.htm
+    fact_number: 8
+  - q: Which cities should I search for the Bund, the pandas, the Giant Buddha and the Terracotta Warriors?
+    a: The Bund (外滩) is in Shanghai. Search for Chengdu (成都) for the Chengdu Research Base of Giant Panda Breeding and Leshan (乐山) for the Giant Buddha (乐山大佛). The Terracotta Warriors museum (秦始皇帝陵博物院) is in Lintong District (临潼区), Xi’an (西安).
+    sources:
+      - https://english.shanghai.gov.cn/en-HeritageZones/20231208/f2ac293f546a4d32aba936f2e733a47c.html
+      - https://english.shanghai.gov.cn/en-TravelAcrossChina/20250421/fa4666cf783d46f48fc6edd4cf9dcf95.html
+      - https://en.xa.gov.cn/CultureTravel/Attractions/1691691506530373634.html
+    fact_number: 9
+  - q: Where are the Stone Forest, Erhai Lake and Jade Dragon Snow Mountain?
+    a: For the Stone Forest (石林), look near Kunming (昆明). Erhai Lake (洱海) is in Dali (大理). Jade Dragon Snow Mountain (玉龙雪山), also called Yulong Snow Mountain, is near Lijiang (丽江).
+    sources:
+      - https://english.shanghai.gov.cn/en-TravelAcrossChina/20250509/4a2d119f7ce24953bf339702c0270c84.html
+    fact_number: 10
+  - q: Which city connects to Hong Kong at the Luohu and Futian crossings?
+    a: Luohu (罗湖) and Futian (福田) are Shenzhen crossings between mainland China and Hong Kong. Check your entry documents and the opening hours for the crossing you intend to use.
+    sources:
+      - https://ka.sz.gov.cn/bmfw/katgfw/
+    fact_number: 11
+  - q: Which Beijing sights are the Badaling Great Wall, the Summer Palace and the Temple of Heaven?
+    a: All three are in Beijing. Badaling Great Wall (八达岭长城) is northwest of central Beijing. The Summer Palace (颐和园) and Temple of Heaven (天坛) are separate sites. Use the specific Chinese names when planning your route.
+    sources:
+      - https://english.beijing.gov.cn/travellinginbeijing/mustvisitsites/
+    fact_number: 12
+  - q: Where are Golden Whip Stream and the Bailong Elevator?
+    a: At Zhangjiajie National Forest Park (张家界国家森林公园) in Hunan, Golden Whip Stream (金鞭溪) is accessible from the park entrance. The Bailong Elevator (百龙天梯) is one way to reach Yuanjiajie (袁家界).
+    sources:
+      - https://whhlyt.hunan.gov.cn/whhlyt/wldh2022jt/202208/t20220823_27716245.html
+    fact_number: 13
+  - q: Which cities are the Yungang and Longmen Grottoes near?
+    a: Yungang Grottoes (云冈石窟) are near Datong in Shanxi. Longmen Grottoes (龙门石窟) are in Luoyang in Henan.
+    sources:
+      - https://dt.gov.cn/english/placestovisit/202501/1e8f5566325143ebb930b7b82e9baa00.shtml
+    fact_number: 14
+  - q: What landscape will I see on the Li River in Guilin?
+    a: Guilin’s Li River (漓江) runs through a karst landscape. Tower-shaped and cone-shaped hills are characteristic of this part of Guangxi.
+    sources:
+      - https://english.www.gov.cn/news/202409/04/content_WS66d7b1fdc6d0868f4e8ea8f0.html
+    fact_number: 15
+  - q: Which city has Jingshan Park and the Lama Temple?
+    a: Jingshan Park (景山公园) and the Lama Temple (雍和宫) are both in Beijing. Check the individual venue before planning a visit.
+    sources:
+      - https://english.beijing.gov.cn/specials/240tour/index.html
+      - https://english.beijing.gov.cn/specials/strollthroughbeijing/templesandancientpagodas/202611/t20261110_4940048.html
+    fact_number: 16
+  - q: Where are the Potala Palace, Kashgar Old City and Sun Yat-sen’s Mausoleum?
+    a: Lhasa (拉萨) has the Potala Palace (布达拉宫) and Jokhang Temple (大昭寺). Kashgar Old City (喀什古城) is in Kashgar, Xinjiang. Sun Yat-sen’s Mausoleum (中山陵) is in Nanjing (南京).
+    sources:
+      - https://www.lasa.gov.cn/lhasa/lsmj/202005/79834747dde3436f9f03f0d2f588fcda.shtml
+      - https://english.scio.gov.cn/in-depth/2018-08/17/content_59011742.htm
+      - https://wlj.nanjing.gov.cn/zwfw/bszlxz/202601/t20260121_5773976.html
+    fact_number: 17
+  - q: Which city has the Xinjiang International Grand Bazaar?
+    a: The Xinjiang International Grand Bazaar (新疆国际大巴扎) is in the Tianshan district of Urumqi (乌鲁木齐).
+    sources:
+      - https://www.xjtsq.gov.cn/info/4388/160221.htm
+      - https://www.wlmq.gov.cn/wlmqs/c119055/202604/326477e0e6394fa78fd4fa2d85bb525e.shtml
+    fact_number: 18
 category: guide
 ---
 
-## Overview
+# City landmarks, Beijing transit and Sichuan travel limits
 
-China has dozens of cities worth visiting, each with distinct character. This page provides a quick-reference guide to the 20 most popular destinations for foreign tourists, organized by region.
+## When can I visit Beijing’s Palace Museum?
 
-## Which cities are best for foreign visitors to China?
+The Palace Museum normally closes on Mondays, with exceptions for statutory holidays. Check the museum’s opening notices, including Lunar New Year’s Eve and temporary closures, before booking. Regular admission is CNY 60 from April through October and CNY 40 from November through March. The Treasure and Clock galleries have separate tickets.
 
-| City | Region | Days | Highlights | Best Season |
-|------|--------|------|-----------|-------------|
-| Beijing | North | 4-5 | Great Wall, Forbidden City, Temple of Heaven, Summer Palace | Apr, Sep-Oct |
-| Shanghai | East | 3-4 | The Bund, French Concession, Shanghai Tower, Yu Garden | Apr-May, Sep-Oct |
-| Guangzhou | South | 2-3 | Dim sum capital, Canton Tower, Shamian Island | Oct-Mar |
-| Shenzhen | South | 2-3 | Tech hub, Hong Kong border crossing, modern architecture | Oct-Apr |
-| Chengdu | Southwest | 3-4 | Giant Panda Base, Sichuan hotpot, Leshan Buddha day trip | Apr, Oct |
-| Chongqing | Southwest | 2-3 | 3D mountain city, hotpot capital, Yangtze River cruises | Mar-May, Sep-Nov |
-| Xi'an | Northwest | 2-3 | Terracotta Warriors, City Wall cycling, Muslim Quarter | Apr-May, Sep-Oct |
-| Hangzhou | East | 2-3 | West Lake, Longjing tea plantations, Lingyin Temple | Apr, Sep |
-| Nanjing | East | 2-3 | Sun Yat-sen Mausoleum, Ming City Wall, Qinhuai River | Mar-May, Sep-Nov |
-| Suzhou | East | 1-2 | Classical gardens (UNESCO), water towns, canals | Apr-May, Sep-Oct |
-| Guilin | South | 2-3 | Li River cruise, karst mountains, Reed Flute Cave | Sep-Oct |
-| Yangshuo | South | 2-3 | Cycling karst countryside, rock climbing, river rafting | Sep-Oct |
-| Lijiang | Southwest | 2-3 | UNESCO Old Town, Jade Dragon Snow Mountain, Naxi culture | Mar-May, Sep-Nov |
-| Dali | Southwest | 2-3 | Erhai Lake cycling, Old Town, Bai culture, digital nomad hub | Mar-May, Sep-Nov |
-| Zhangjiajie | Central | 2-3 | Avatar mountains, Bailong Elevator, Tianmen Mountain glass skywalk | Apr-May, Sep-Oct |
-| Kunming | Southwest | 1-2 | Stone Forest, Green Lake, "Spring City" mild weather year-round | Year-round |
-| Xiamen | Southeast | 2-3 | Gulangyu Island (UNESCO), beaches, Nanputuo Temple, seafood | Mar-May, Oct-Nov |
-| Urumqi | Far West | 1-2 | Grand Bazaar, Heavenly Lake, Xinjiang cuisine, gateway to Silk Road | Jun-Sep |
-| Kashgar | Far West | 2-3 | Old City, Sunday Market, Uyghur culture, Karakoram Highway | May-Oct |
-| Lhasa | Tibet | 3-4 | Potala Palace, Jokhang Temple, Barkhor Street (permit required) | May-Oct |
+[intl.dpm.org.cn](https://intl.dpm.org.cn/visit) · [www.dpm.org.cn](https://www.dpm.org.cn/Visit.html) · [www.beijing.gov.cn](https://www.beijing.gov.cn/fwcj/calendar/bwgzl/6623d27081e5641581784ebb.html)
 
-## Which cities match what you want to see?
+## How much are Beijing’s rail transit passes?
 
-If you don't know where to start, pick by what you most want out of the trip. These group the cities in the table above by theme (all reachable by high-speed rail unless noted).
+The Beijing municipal guide lists a one-day electronic pass at CNY 20 and a three-day pass at CNY 40. Check the lines and products covered before buying a pass for an airport journey.
 
-**History & heritage** — Beijing (Great Wall, Forbidden City) + Xi'an (Terracotta Warriors, city wall) + Nanjing (Ming city wall, Sun Yat-sen Mausoleum). The classic imperial-history arc; about 10–12 days for all three. If you want to go deeper, Datong (Yungang Grottoes) and Luoyang (Longmen Grottoes) are strong add-on / day-trip destinations rather than main bases.
+[japanese.beijing.gov.cn](https://japanese.beijing.gov.cn/specials/beijinglifeonthesubway/noticeforpassengers/202206/t20220627_2752881.html) · [www.mtr.bj.cn](https://www.mtr.bj.cn/page/instructions.html)
 
-**Food** — Chengdu (Sichuan hotpot, mapo tofu) + Chongqing (the spiciest hotpot) + Guangzhou (Cantonese dim sum). A spice-to-subtle tour of two of China's great food traditions; about 8–10 days. Xi'an's Muslim Quarter is a strong street-food add-on. See [[wiki/concepts/food-dining.md]] for ordering and spice-tolerance tips.
+## Can I include Jiuzhaigou on a 240-hour transit trip through Sichuan?
 
-**Big-city & modern China** — Shanghai (the Bund, skyline) + Shenzhen (tech, modern architecture) + Beijing (capital energy alongside the history). For travelers who want contemporary China more than temples; about 8–10 days.
+The published Sichuan stay area lists eleven cities. Aba Prefecture, where Jiuzhaigou is located, is outside that area. Check each destination and the ports for the entire route before booking.
 
-**Nature & scenery** — Guilin / Yangshuo (karst rivers) + Zhangjiajie (the "Avatar" sandstone pillars) + the Yunnan towns (Lijiang, Dali). Slower-paced and scenic; about 10–14 days, with some segments needing a domestic flight.
+[toronto.china-consulate.gov.cn](https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm) · [Aba Prefecture government](https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml)
 
-**Pandas & family** — Chengdu (Giant Panda Base) pairs naturally with either the food route or a short Beijing–Xi'an–Chengdu first-timer loop; easy and high-reward for kids.
+## Where are West Lake, the Humble Administrator’s Garden and Gulangyu?
 
-These are starting points, not fixed packages — mix a theme with the multi-city routes below to build your own trip.
+West Lake (西湖) is in Hangzhou (杭州). The Humble Administrator’s Garden (拙政园) is in Suzhou (苏州). Gulangyu Island (鼓浪屿) is in Xiamen (厦门), Fujian. These names can help you distinguish the destinations when booking.
 
-## What are good multi-city routes for a China trip?
+[www.ehangzhou.gov.cn](https://www.ehangzhou.gov.cn/2020-04/22/c_242880.htm) · [english.suzhou.gov.cn](https://english.suzhou.gov.cn/szsenglish/sz5ajjq/201611/43680636abee46f3a7220ce37ec064cb.shtml) · [www.fujian.gov.cn](https://www.fujian.gov.cn/english/cultureandtravel/attractions/202501/t20250107_6619424.htm)
 
-### Classic First-Timer (14 days)
-Beijing (4-5d) > Xi'an (2-3d) > Chengdu (3-4d) > Shanghai (3-4d)
+## Which cities should I search for the Bund, the pandas, the Giant Buddha and the Terracotta Warriors?
 
-Transport: High-speed rail between all cities. Fly into Beijing, out of Shanghai.
+The Bund (外滩) is in Shanghai. Search for Chengdu (成都) for the Chengdu Research Base of Giant Panda Breeding and Leshan (乐山) for the Giant Buddha (乐山大佛). The Terracotta Warriors museum (秦始皇帝陵博物院) is in Lintong District (临潼区), Xi’an (西安).
 
-### East Coast Express (7-10 days)
-Shanghai (3-4d) > Hangzhou (2d) > Suzhou (1d) > Nanjing (2-3d)
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-HeritageZones/20231208/f2ac293f546a4d32aba936f2e733a47c.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TravelAcrossChina/20250421/fa4666cf783d46f48fc6edd4cf9dcf95.html) · [en.xa.gov.cn](https://en.xa.gov.cn/CultureTravel/Attractions/1691691506530373634.html)
 
-Transport: All cities connected by 30-90 min HSR.
+## Where are the Stone Forest, Erhai Lake and Jade Dragon Snow Mountain?
 
-### Southwest Nature & Culture (10-14 days)
-Chengdu (3d) > Chongqing (2d) > Zhangjiajie (3d) > Guilin/Yangshuo (3-4d)
+For the Stone Forest (石林), look near Kunming (昆明). Erhai Lake (洱海) is in Dali (大理). Jade Dragon Snow Mountain (玉龙雪山), also called Yulong Snow Mountain, is near Lijiang (丽江).
 
-### Yunnan Loop (10-14 days)
-Kunming (2d) > Dali (3d) > Lijiang (3d) > Shangri-La (2-3d)
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TravelAcrossChina/20250509/4a2d119f7ce24953bf339702c0270c84.html)
 
-### Silk Road (7-10 days)
-Xi'an (3d) > Urumqi (2d) > Kashgar (3d)
+## Which city connects to Hong Kong at the Luohu and Futian crossings?
 
-Note: Requires domestic flights for western segments.
+Luohu (罗湖) and Futian (福田) are Shenzhen crossings between mainland China and Hong Kong. Check your entry documents and the opening hours for the crossing you intend to use.
 
-## Practical Notes
+[ka.sz.gov.cn](https://ka.sz.gov.cn/bmfw/katgfw/)
 
-- **Metro apps**: Each city has its own metro mini-program. Set up upon arrival (takes ~5 minutes).
-- **Language**: English signage is good in Beijing, Shanghai, Guangzhou, Shenzhen. Limited elsewhere; translation apps essential.
-- **Permits**: [[wiki/concepts/tibet-permits.md]] required for Lhasa. Xinjiang cities (Urumqi, Kashgar) generally do not require a special travel permit, but visitors should expect heightened security checks and ID inspections; confirm current local conditions before travelling.
-- **Budget**: Shanghai tends to be the most expensive Chinese city for visitors, with Beijing close behind; hotels, food and attractions both run noticeably higher than in tier-2 cities. Within either city, prices vary more by location and season than by exact city. Tier-2 cities (Chengdu, Xi'an, Nanjing) offer excellent value.
-- **Avoid**: National holidays (Labour Day around May 1-3 and National Day / Golden Week Oct 1-7) bring extreme crowds to all destinations.
+## Which Beijing sights are the Badaling Great Wall, the Summer Palace and the Temple of Heaven?
 
-## Which cities should I visit on a first trip to China?
+All three are in Beijing. Badaling Great Wall (八达岭长城) is northwest of central Beijing. The Summer Palace (颐和园) and Temple of Heaven (天坛) are separate sites. Use the specific Chinese names when planning your route.
 
-- **Beijing vs Shanghai first?** Shanghai is easier to navigate and more international. Beijing offers deeper cultural immersion. Both are excellent starting points.
-- **Short trip (5-7 days)**: Pick Beijing + Shanghai (connected by ~4.5h HSR; second-class fare roughly CNY 553-673 / US$80-100 as of June 2026, after a ~20% fare-ceiling increase effective May 26, 2026).
-- **Nature focus**: Guilin/Yangshuo or Zhangjiajie.
-- **Food focus**: Chengdu (spicy) or Guangzhou (Cantonese dim sum).
-- **Off the beaten path**: Kashgar, Dali, or Nanjing.
+[english.beijing.gov.cn](https://english.beijing.gov.cn/travellinginbeijing/mustvisitsites/)
+
+## Where are Golden Whip Stream and the Bailong Elevator?
+
+At Zhangjiajie National Forest Park (张家界国家森林公园) in Hunan, Golden Whip Stream (金鞭溪) is accessible from the park entrance. The Bailong Elevator (百龙天梯) is one way to reach Yuanjiajie (袁家界).
+
+[whhlyt.hunan.gov.cn](https://whhlyt.hunan.gov.cn/whhlyt/wldh2022jt/202208/t20220823_27716245.html)
+
+## Which cities are the Yungang and Longmen Grottoes near?
+
+Yungang Grottoes (云冈石窟) are near Datong in Shanxi. Longmen Grottoes (龙门石窟) are in Luoyang in Henan.
+
+[dt.gov.cn](https://dt.gov.cn/english/placestovisit/202501/1e8f5566325143ebb930b7b82e9baa00.shtml)
+
+## What landscape will I see on the Li River in Guilin?
+
+Guilin’s Li River (漓江) runs through a karst landscape. Tower-shaped and cone-shaped hills are characteristic of this part of Guangxi.
+
+[english.www.gov.cn](https://english.www.gov.cn/news/202409/04/content_WS66d7b1fdc6d0868f4e8ea8f0.html)
+
+## Which city has Jingshan Park and the Lama Temple?
+
+Jingshan Park (景山公园) and the Lama Temple (雍和宫) are both in Beijing. Check the individual venue before planning a visit.
+
+[english.beijing.gov.cn](https://english.beijing.gov.cn/specials/240tour/index.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/specials/strollthroughbeijing/templesandancientpagodas/202611/t20261110_4940048.html)
+
+## Where are the Potala Palace, Kashgar Old City and Sun Yat-sen’s Mausoleum?
+
+Lhasa (拉萨) has the Potala Palace (布达拉宫) and Jokhang Temple (大昭寺). Kashgar Old City (喀什古城) is in Kashgar, Xinjiang. Sun Yat-sen’s Mausoleum (中山陵) is in Nanjing (南京).
+
+[www.lasa.gov.cn](https://www.lasa.gov.cn/lhasa/lsmj/202005/79834747dde3436f9f03f0d2f588fcda.shtml) · [english.scio.gov.cn](https://english.scio.gov.cn/in-depth/2018-08/17/content_59011742.htm) · [wlj.nanjing.gov.cn](https://wlj.nanjing.gov.cn/zwfw/bszlxz/202601/t20260121_5773976.html)
+
+## Which city has the Xinjiang International Grand Bazaar?
+
+The Xinjiang International Grand Bazaar (新疆国际大巴扎) is in the Tianshan district of Urumqi (乌鲁木齐).
+
+[www.xjtsq.gov.cn](https://www.xjtsq.gov.cn/info/4388/160221.htm) · [www.wlmq.gov.cn](https://www.wlmq.gov.cn/wlmqs/c119055/202604/326477e0e6394fa78fd4fa2d85bb525e.shtml)

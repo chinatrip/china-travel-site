@@ -157,8 +157,8 @@ test('built app pages embed a SoftwareApplication about node (no fabricated rati
       typeof about.applicationCategory === 'string' && about.applicationCategory.length > 0,
       `${file}: about.applicationCategory`,
     );
-    assert.equal(about.operatingSystem, 'Android, iOS', `${file}: about.operatingSystem`);
-    assert.equal(about.offers?.price, 0, `${file}: free Offer`);
+    assert.ok(!('operatingSystem' in about));
+    assert.ok(!('offers' in about));
     assert.ok(!('aggregateRating' in about), `${file}: must not fabricate aggregateRating`);
   }
 });

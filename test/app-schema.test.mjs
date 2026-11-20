@@ -37,10 +37,8 @@ test('every mapped app yields a well-formed SoftwareApplication node', () => {
       VALID_CATEGORIES.has(node.applicationCategory),
       `${slug}: applicationCategory "${node.applicationCategory}" must be a documented schema.org value`,
     );
-    assert.equal(node.operatingSystem, 'Android, iOS', `${slug}: operatingSystem`);
-    assert.equal(node.offers['@type'], 'Offer', `${slug}: offers @type`);
-    assert.equal(node.offers.price, 0, `${slug}: free download`);
-    assert.equal(node.offers.priceCurrency, 'USD', `${slug}: priceCurrency`);
+    assert.ok(!('operatingSystem' in node));
+    assert.ok(!('offers' in node));
   }
 });
 

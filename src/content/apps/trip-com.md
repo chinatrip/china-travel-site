@@ -1,143 +1,73 @@
 ---
-title: "Trip.com (携程国际版)"
-date: 2026-06-04
-sources:
-  - raw/realchinaguide-ticketing-admissions-2026.md
-  - raw/realchinaguide-14day-itinerary-2026.md
-  - raw/realchinaguide-pretrip-preparation-2026.md
-  - raw/realchinaguide-money-costs-2026.md
+title: Reserving a hotel with Trip.com (携程)
+date: 2026-11-19
+sources: []
 related:
   - wiki/concepts/attraction-ticketing.md
   - wiki/concepts/accommodation.md
   - wiki/concepts/transportation.md
   - wiki/entities/12306.md
 verified_against:
-  - https://www.trip.com/pages/customer-service/
-  - https://www.trip.com/things-to-do/
-  - https://www.seat61.com/China.htm
-last_verified: 2026-06-04
+  - https://english.shanghai.gov.cn/cmsres/11/11a3dd13306c44d6a744ce1575ad8ed4/016e480d2524ff7a6b905577d6557c77.pdf
+  - https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_10ddb29858c24ece86b3f575bda1d9c4.html
+  - https://www.nia.gov.cn/n897453/c1806111/content.html
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+last_verified: 2026-11-19
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-17
-  citation_check: null
-description: >-
-  Book China hotels, trains, flights, and attraction tickets on Trip.com —
-  Ctrip's English app with foreign-card payment, no VPN needed. Updated June
-  2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications.
+description: Confirm the reservation, reception documents and your accepted payment method.
 faqs:
-  - q: Can foreigners use Trip.com to book travel in China?
-    a: >-
-      Yes. Trip.com is Ctrip's international platform — it works in China
-      without a VPN, has an English interface, and accepts foreign
-      Visa/Mastercard, PayPal, and Alipay, which makes it the most practical
-      booking app for visitors.
-  - q: Does Trip.com charge a fee for China train tickets?
-    a: >-
-      It depends on the route and can be zero: Trip.com advertises "no booking
-      fees", while Seat61 reports roughly ¥30 (~US$5) on train tickets and user
-      reports range $5-8 depending on the route, charged only if the booking
-      succeeds. The practical trade-off is an English interface that avoids
-      12306's foreign-passport problems.
-  - q: Can I book Chinese attraction tickets on Trip.com?
-    a: >-
-      Yes. Trip.com offers real-name, passport-linked tickets for major
-      attractions such as the Forbidden City. At the gate, show your passport so
-      staff can scan and match it, using the foreign-passport or manual check-in
-      lane where available.
-  - q: Is Trip.com cheaper than booking directly in China?
-    a: >-
-      Not always. Direct platforms like 12306 are free, and Chinese apps such as
-      Meituan can list the same hotel rooms for less. What Trip.com offers in
-      exchange is an English interface and foreign-card support, so the
-      trade-off is a possible small premium for a booking you can actually
-      complete.
+  - q: Can visitors reserve accommodation using Trip.com?
+    a: The government’s visitor guide lists Trip.com (携程) as an online hotel reservation option, alongside booking by telephone. If you plan to use an international bank card at the hotel, ask the hotel in advance whether it accepts your card.
+    sources:
+      - https://english.shanghai.gov.cn/cmsres/11/11a3dd13306c44d6a744ce1575ad8ed4/016e480d2524ff7a6b905577d6557c77.pdf
+    fact_number: 5
+  - q: Can a hotel refuse foreign guests because it lacks a special qualification?
+    a: A joint Chinese government notice instructs local authorities and online platforms not to impose qualification requirements that restrict hotels from receiving overseas guests. Hotels must still register guests. Confirm your booking and take your passport to check in.
+    sources:
+      - https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_10ddb29858c24ece86b3f575bda1d9c4.html
+      - https://www.nia.gov.cn/n897453/c1806111/content.html
+    fact_number: 6
+  - q: Who registers my accommodation?
+    a: Hotels register their foreign guests. For a stay outside a hotel, the foreign guest or host must register with the local public-security authority within 24 hours of moving in.
+    sources:
+      - https://www.nia.gov.cn/n897453/c1806111/content.html
+    fact_number: 7
+  - q: How do I look for a pre-booked airport transfer?
+    a: The Ministry of Commerce guide describes the Airport Transfer option under Cars in Trip.com. Enter the flight details and check the quoted price and meeting instructions before confirming.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+    fact_number: 8
 category: app
 ---
 
-# Trip.com (携程国际版)
+# Reserving a hotel with Trip.com (携程)
 
-Trip.com is the international platform of Ctrip (携程), China's largest travel booking service. It is the single most recommended booking platform for foreign visitors to China due to its English interface, foreign payment acceptance, and coverage across hotels, trains, flights, and attraction tickets.
+## Can visitors reserve accommodation using Trip.com?
 
-## Key Facts
+The government’s visitor guide lists Trip.com (携程) as an online hotel reservation option, alongside booking by telephone. If you plan to use an international bank card at the hotel, ask the hotel in advance whether it accepts your card.
 
-| Attribute | Detail |
-|-----------|--------|
-| Parent company | Trip.com Group (formerly Ctrip) |
-| Chinese name | 携程 (Ctrip) |
-| Platform | iOS, Android, Web |
-| Works in China without VPN | Yes |
-| Payment methods | Foreign credit/debit cards, PayPal, Alipay |
-| Languages | English, Chinese, and many others |
-| Key services | Hotels, flights, trains, attraction tickets, car rental |
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/cmsres/11/11a3dd13306c44d6a744ce1575ad8ed4/016e480d2524ff7a6b905577d6557c77.pdf)
 
-## Why Trip.com Is Recommended for Foreigners
+## Can a hotel refuse foreign guests because it lacks a special qualification?
 
-- **Works without VPN** in China (unlike Booking.com which can be unreliable)
-- **Accepts foreign payment** directly (Visa, Mastercard, PayPal)
-- **Passport profiles:** Add once, auto-fill for all subsequent bookings
-- **English customer support** (24/7 chat)
-- **Price:** Comparable to international OTAs; Chinese domestic platforms (Meituan) may offer lower prices for budget/boutique hotels, but Trip.com's English interface and foreign-card support make it the practical choice
-- **Attraction tickets:** Real-name passport-linked ticketing for major Chinese attractions (Forbidden City, etc.)
-- **Train tickets:** Books China Railway (12306) tickets with an English interface; adds a service fee (Seat61 reports ¥30/~$5; user reports vary $5–8 by route, charged only if the booking succeeds) versus booking 12306 directly
+A joint Chinese government notice instructs local authorities and online platforms not to impose qualification requirements that restrict hotels from receiving overseas guests. Hotels must still register guests. Confirm your booking and take your passport to check in.
 
-## Setup
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_10ddb29858c24ece86b3f575bda1d9c4.html) · [www.nia.gov.cn](https://www.nia.gov.cn/n897453/c1806111/content.html)
 
-1. Install app (iOS/Android) or use trip.com website
-2. Create account (email verification)
-3. Add passengers: Account > Passengers > enter exact passport details
-4. Add payment: Account > Payment > card, PayPal, or Alipay
+## Who registers my accommodation?
 
-## Services for Tourists
+Hotels register their foreign guests. For a stay outside a hotel, the foreign guest or host must register with the local public-security authority within 24 hours of moving in.
 
-### Hotels
-- Filters for "accepts foreign passports" (critical — many Chinese hotels refuse foreign guests)
-- Chinese domestic inventory (boutique/budget hotels) better represented than on Western OTAs
-- Note: Chinese domestic platforms (Meituan) may list same rooms cheaper; Trip.com's value is in English interface + foreign card acceptance
+[www.nia.gov.cn](https://www.nia.gov.cn/n897453/c1806111/content.html)
 
-### Train Tickets
-- Books 12306 (China Railway) tickets with English interface
-- Pricing: Trip.com advertises "no booking fees"; prices may be slightly higher than 12306 direct
-- Advantage: avoids 12306 passport-recognition issues and Chinese-only interface
-- Tickets release ~15-30 days in advance
+## How do I look for a pre-booked airport transfer?
 
-### Attraction Tickets
-- Real-name passport-linked booking for major attractions
-- At gate: show passport; staff scan and match booking
-- Follow "Foreign Passport / Manual Check-in" lane where available
+The Ministry of Commerce guide describes the Airport Transfer option under Cars in Trip.com. Enter the flight details and check the quoted price and meeting instructions before confirming.
 
-### Flights
-- Domestic flights searchable and bookable
-- Often competitive with airline direct prices
-
-## Comparison: Trip.com vs Direct Platforms
-
-| Aspect | Trip.com | Direct (12306, official sites) |
-|--------|----------|-------------------------------|
-| Language | English | Chinese only (mostly) |
-| Payment | Foreign cards, PayPal | Chinese cards, Alipay |
-| Service fee | ~$5-8 per ticket (≈¥30-60) | Free |
-| Passport support | Smooth | Often problematic for foreign passports |
-| Customer support | English 24/7 | Chinese only |
-| Attraction tickets | Good selection | Wider (but Chinese interface) |
-
-## Limitations
-
-- Service fee on train tickets (worth paying for the convenience)
-- Not all attractions available (some require official Chinese platforms)
-- Hotel cancellation policies vary (check before booking)
-- Some domestic-only promotions not accessible via international version
-
-## Tips
-
-- Book trains 2-3 weeks ahead for best availability
-- Book Forbidden City exactly 7 days ahead at 20:00 (releases via official site, available on Trip.com shortly after)
-- Use Trip.com's reschedule/refund chat for weather-related changes (often flexible)
-- Book refundable rooms until you confirm hotel accepts foreign passports
-
-## See Also
-
-- [[wiki/concepts/attraction-ticketing.md]] — How real-name ticketing works
-- [[wiki/concepts/accommodation.md]] — Hotel booking and foreign-passport requirements
-- [[wiki/concepts/transportation.md]] — Train booking guide
-- [[wiki/entities/12306.md]] — Direct China Railway platform (cheaper, harder for foreigners)
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html)

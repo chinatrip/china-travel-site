@@ -1,16 +1,15 @@
 ---
-title: "How to Use WeChat Pay in China as a Foreigner (2026)"
-date: 2026-04-30
-last_verified: 2026-07-03
+title: WeChat Pay and WeChat mini programs
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
-  - https://www.wechat.com
-  - https://english.www.gov.cn/AssetsZi/A_Guide_to_Working_and_Living_in_China_as_Business_Expatriates_2025.pdf
-  - https://www.dragontrail.com/resources/blog/how-to-get-a-wechat-account-from-overseas
-  - https://www.sinorbis.com/how-to-sign-up-for-a-wechat-personal-account
-sources:
-  - raw/12306-guide-for-foreign-business-visitors-2025.md
-  - raw/wechat-paypal-integration-2026.md
-  - raw/realchinaguide-payment-guide-2026.md
+  - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html
+  - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+  - https://www.12306.cn/en/faq.html
+  - https://www.nia.gov.cn/n897453/c1806111/content.html
+  - https://en.gdfao.gov.cn/2026-06/02/c_1187603.htm
+  - https://english.shanghai.gov.cn/en-PaymentsInShanghai/20260920/f22b7e0f606c407e9da9d26b089eac48.html
+sources: []
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/entities/alipay.md
@@ -19,132 +18,69 @@ related:
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-07-03
-  notes: "2026-07-03: added a TenPayGo cross-link (related + a payments-only alternative note) and re-verified the anchor payment facts to satisfy pr-lint. The foreign-card binding rule, the 0%-under-¥200 / 3%-over fee threshold, and the PBOC per-transaction/annual caps were re-confirmed against the gov.cn April 2024 circular + Beijing May 2025 circular that I re-checked on 2026-07-02 for mobile-payment — still current, no reversal. The contact-vouching thresholds remain community/guide-reported (Dragon Trail) and are already hedged in-body as indicative. The PayPal × TenPay Global integration (2026-05-27) is unchanged. Did NOT re-audit every mini-program listing this round (those retain the 2026-06-09 page_audit)."
-description: >-
-  WeChat is essential in China for messaging, payments, and mini-programs: how
-  foreigners set up WeChat Pay, bind a foreign card, and use 2026 PayPal
-  integration.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Check linked-card charges and find the accommodation registration service.
 faqs:
-  - q: Do I need WeChat to travel in China?
-    a: >-
-      It's highly recommended. WeChat is used for messaging, payments and
-      countless mini-programs, and many businesses and contacts expect it. Set
-      it up before arrival.
-  - q: Can foreigners use WeChat Pay with a foreign card?
-    a: >-
-      Yes — bind a foreign Visa, Mastercard, or JCB and basic payments work. Be
-      aware that some regions block the foreign-card linking feature entirely;
-      if you get stuck, use Alipay as your primary and keep some cash for
-      WeChat-only places.
-  - q: What is the WeChat Pay PayPal integration?
-    a: >-
-      As of May 2026, Tencent's TenPay Global and PayPal World are
-      interoperable, so PayPal users visiting China can pay at WeChat Pay
-      merchants using their PayPal account. It is initially open to US users,
-      with rollout to other countries still to be confirmed and fees and the
-      scan flow still open questions — verify before relying on it.
-  - q: Alipay or WeChat Pay — which should I set up?
-    a: >-
-      Set up both if you can. WeChat changes its interface often, which makes
-      its payment features harder to locate than Alipay's, but WeChat Pay is
-      essential for messaging and for merchants and exclusive mini-programs that
-      only take WeChat.
+  - q: What does it cost to use a linked overseas card?
+    a: For an eligible overseas card linked to Alipay or WeChat Pay, the Shanghai government guide says the platform fee is generally waived for a transaction of CNY 200 or less. Above CNY 200 a 3% fee may apply to the entire purchase. Check the amount shown at checkout and any separate fees from your issuer.
+    sources:
+      - https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html
+    fact_number: 5
+  - q: How do I make a payment at a merchant?
+    a: The Ministry of Commerce guide describes two ways to pay by mobile wallet. Scan the merchant’s collection code, or show the payment code in your own wallet for the merchant to scan. Check the merchant and the amount before authorizing payment.
+    sources:
+      - https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html
+      - https://www.12306.cn/en/faq.html
+    fact_number: 6
+  - q: How do I register outside a hotel?
+    a: Since 21 September 2026 the guest or host can register nationwide through the NIA service website, the NIA 12367 app, or NIA mini programs in WeChat or Alipay. In-person registration remains available.
+    sources:
+      - https://www.nia.gov.cn/n897453/c1806111/content.html
+    fact_number: 7
+  - q: Can visitors from the United States use a PayPal wallet at participating WeChat Pay merchants?
+    a: Guangdong’s foreign affairs office reports that TenPay Global and PayPal World linked their services for visitors from the United States. At participating merchants, eligible US travellers can use their PayPal wallet to scan a WeChat Pay merchant code. Check availability in your wallet before relying on it.
+    sources:
+      - https://en.gdfao.gov.cn/2026-06/02/c_1187603.htm
+    fact_number: 8
+  - q: Where do I add an international card in WeChat?
+    a: After registering or signing in with your mobile number, open Me → Services → Wallet → Bank Cards. Follow the prompts for an eligible card. Shanghai lists Visa, Mastercard, American Express, JCB, Discover and Diners Club International for Weixin Pay.
+    sources:
+      - https://english.shanghai.gov.cn/en-PaymentsInShanghai/20260920/f22b7e0f606c407e9da9d26b089eac48.html
+    fact_number: 9
 category: app
 ---
 
-# How to Use WeChat Pay in China as a Foreigner (2026)
+# WeChat Pay and WeChat mini programs
 
-WeChat (Tencent) is a super-app combining messaging, social networking, payments, and Mini Programs. It's effectively required infrastructure for daily life and business communication in China.
+## What does it cost to use a linked overseas card?
 
-**Set up before you arrive** — WeChat registration from a foreign number often triggers a contact-vouching step that requires a qualifying contact to be available. This cannot be arranged reliably from inside China.
+For an eligible overseas card linked to Alipay or WeChat Pay, the Shanghai government guide says the platform fee is generally waived for a transaction of CNY 200 or less. Above CNY 200 a 3% fee may apply to the entire purchase. Check the amount shown at checkout and any separate fees from your issuer.
 
-## How do I set up WeChat Pay as a foreigner?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-Individuals-BankingandPayments-Payments/20260921/c2c94d06a0454c8fa05386b80d0ae865.html)
 
-1. Download WeChat (App Store / Google Play).
-2. Register with a **foreign mobile number**. WeChat may require an existing contact to scan a QR code to verify your account (risk-control measure, high probability for foreign registrations). As of June 2026, third-party registration guides report the contact (helper) typically needs to meet several conditions that differ by the helper's account type: the account should have been registered **6+ months for a mainland-China user** or **1+ month for an international user**; a **mainland-China helper should also have WeChat Pay activated** (this does not apply to international helpers, and there is no minimum-duration requirement); the helper should not have helped register another account in the past month; and should not have been blocked in the past month. These guides also cite a cap of **3 assisted registrations per year** per helper. WeChat does not publish these thresholds officially, so treat them as indicative and check the current in-app requirement. If no qualifying contact is available, WeChat in-app customer support can unlock the account but takes several days.
-3. Complete passport identity verification.
-4. **Me → Services → Wallet → Bank Cards → Add Bank Card.** Bind a Visa, Mastercard, or JCB. AMEX is bindable but has inconsistent merchant acceptance — use Visa or Mastercard as primary.
-5. Once verified, scan to pay or be scanned.
+## How do I make a payment at a merchant?
 
-## What are WeChat Pay's fees and limits?
+The Ministry of Commerce guide describes two ways to pay by mobile wallet. Scan the merchant’s collection code, or show the payment code in your own wallet for the merchant to scan. Check the merchant and the amount before authorizing payment.
 
-| Situation | Fee |
-|---|---|
-| Single payment under ¥200 | 0% WeChat surcharge |
-| Single payment ¥200 or over | **3%** surcharge on the full amount |
-| Card FX fee | 1–3% (set by your bank) |
+[www.mofcom.gov.cn](https://www.mofcom.gov.cn/ztxx/art/2026/art_90fd4865144d4ddab192742bf386bbd1.html) · [www.12306.cn](https://www.12306.cn/en/faq.html)
 
-PBOC regulatory cap: ~¥36,000 per transaction for verified accounts; ~¥360,000 annual. Check your actual limit in-app: Wallet → Pay → Settings → Daily Limit.
+## How do I register outside a hotel?
 
-## What can I do with WeChat Pay?
+Since 21 September 2026 the guest or host can register nationwide through the NIA service website, the NIA 12367 app, or NIA mini programs in WeChat or Alipay. In-person registration remains available.
 
-- **Scan to pay**: works at virtually every merchant
-- **Wallet top-up**: receive RMB transfers from Chinese contacts — credited to your WeChat Wallet and not subject to foreign-card limits
-- **Mini Programs**: in-app services for delivery, hotels, tickets, and more
+[www.nia.gov.cn](https://www.nia.gov.cn/n897453/c1806111/content.html)
 
-## What are WeChat's messaging features?
+## Can visitors from the United States use a PayPal wallet at participating WeChat Pay merchants?
 
-- Text / voice / video calls (free over data)
-- Group chats and Moments (a social feed)
-- Domestic contacts overwhelmingly use WeChat — including for business
+Guangdong’s foreign affairs office reports that TenPay Global and PayPal World linked their services for visitors from the United States. At participating merchants, eligible US travellers can use their PayPal wallet to scan a WeChat Pay merchant code. Check availability in your wallet before relying on it.
 
-## Notes
+[en.gdfao.gov.cn](https://en.gdfao.gov.cn/2026-06/02/c_1187603.htm)
 
-- The account is tightly bound to your phone number — update promptly if the number changes.
-- English UI: Settings → General → Language.
-- WeChat interface changes frequently, making it harder to locate payment features than Alipay.
-- Some services and exclusive mini-programs require WeChat Pay specifically and do not accept Alipay (source: realchinaguide.com 2026).
-- **Regional restrictions**: Some regions block the foreign-card linking feature entirely. If stuck, use Alipay as primary and keep ¥200 cash for WeChat-only places.
-- **Lighter payments-only alternative**: if the WeChat registration and contact-vouching step is too much friction, Tencent's newer **TenPayGo** app lets foreign visitors pay at the same WeChat Pay merchant network with just an email and a foreign card — no Chinese number or vouching. It is still an early-stage rollout; see [[wiki/entities/tenpaygo.md]].
+## Where do I add an international card in WeChat?
 
-## What are WeChat mini-programs?
+After registering or signing in with your mobile number, open Me → Services → Wallet → Bank Cards. Follow the prompts for an eligible card. Shanghai lists Visa, Mastercard, American Express, JCB, Discover and Diners Club International for Weixin Pay.
 
-Mini Programs (小程序) are lightweight apps that run inside WeChat — no separate download or installation required. They behave like native apps but launch instantly from within WeChat's interface.
-
-### How to Access
-
-- **Search**: tap the search icon at the top of WeChat → type the Mini Program name → select results under the "Mini Programs" tab.
-- **QR code**: scan a Mini Program QR code (printed at restaurant tables, hotel desks, attraction entrances) — WeChat opens it directly.
-- **Recently used**: swipe down on the WeChat home screen to see your recently opened Mini Programs.
-
-### Tourist-Relevant Mini Programs
-
-| Mini Program | Use |
-|---|---|
-| DiDi (滴滴出行) | Ride-hailing — book without switching apps |
-| 12306 | Official train ticket booking and seat selection |
-| Hotel chain apps (Marriott, Hilton, IHG, etc.) | Booking, check-in status, loyalty points |
-| Attraction ticketing | Many major attractions (Palace Museum, West Lake, etc.) sell timed-entry tickets exclusively via their Mini Program or WeChat — physical ticket queues may not exist |
-| Restaurant ordering | Scan a QR code at a restaurant table → menu appears → order and pay without a server; common in chain restaurants and fast-casual dining |
-| Airport / transit | Real-time flight status, boarding pass display at some airlines |
-| Hellobike (哈啰单车) | Bike sharing — scan QR on bike to unlock, ¥1-2 per ride |
-| 美团外卖 (Meituan) | Food delivery — search, order, pay, track rider in real-time |
-| 大麦 (Damai) | Event/concert tickets — digital tickets with QR code entry |
-| 猫眼 (Maoyan) | Movie tickets and live performances |
-| City metro apps | Yitongxing (Beijing), Metro Daduhui (Shanghai), 广州地铁, 深圳地铁, 成都地铁 |
-
-### Why This Matters for Foreigners
-
-Many Chinese services do **not** have a separate English-language website or iOS/Android app — their primary user interface is a WeChat Mini Program. If a local recommends "scan the QR code" or you see a QR code at a ticketing counter, it almost always opens a Mini Program. Knowing how to navigate this flow prevents confusion and gates access to services that are otherwise hard to reach.
-
-Mini Program interfaces are usually Chinese-language; however, major hotel chains and some transit services include English options.
-
-### Mini Program Technical Details
-
-- Lightweight: under 10MB, launch in under 1 second
-- Inherit your WeChat Pay payment method automatically — no additional card setup needed
-- Foreign Visa/Mastercard works if linked to WeChat Pay
-- Recently opened mini-programs stay cached and work briefly offline, but QR codes and payments require an internet connection
-- Pin frequently used mini-programs for instant access
-
-(Source: realchinaguide.com 2026)
-
-## How does the WeChat Pay PayPal integration work?
-
-As of **May 27, 2026**, Tencent's cross-border platform **TenPay Global** and **PayPal World** are interoperable. PayPal users visiting China can pay at tens of millions of WeChat Pay merchants using their PayPal account. Initially open to US users; rollout to other countries TBC. Announced by Tencent Financial Technology VP 洪丹毅 at the 20th Shenzhen International Financial Expo. See [[wiki/concepts/mobile-payment.md]] for details and open questions on fees and scan flow.
-
-## See Also
-
-- [[wiki/concepts/mobile-payment.md]] — full WeChat Pay setup guide, PBOC policy, fee tables, vouching detail, common failure modes, PayPal integration
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-PaymentsInShanghai/20260920/f22b7e0f606c407e9da9d26b089eac48.html)

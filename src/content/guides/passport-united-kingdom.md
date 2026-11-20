@@ -1,60 +1,66 @@
 ---
-title: United Kingdom 英国 passport application before China travel
-description: >-
-  Government-source baseline for local passport preparation; this does not
-  determine permission to enter China.
-date: 2026-11-17
-last_verified: 2026-11-17
+title: "UK Passport: Application Preparation"
+description: Check UK passport application preparation using official sources. Confirm the route for your age and residence before planning travel to China.
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
-  - 'https://www.gov.uk/apply-first-adult-passport'
+  - https://www.gov.uk/apply-first-adult-passport
+  - https://www.gov.uk/foreign-travel-advice/china/health
 sources: []
 related:
   - wiki/concepts/china-entry-country-rules.md
 volatility: high
 review:
   status: audited
-  auditor: Codex
-  page_audit: 2026-11-17
-  citation_check: 2026-11-17
-  notes: >-
-    Checked only the explicitly stated scope of this short guide against the
-    linked government publications on 2026-11-17. This is not a complete
-    checklist for every applicant or a guarantee of entry.
-category: guide
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications.
 faqs:
   - q: Who can use the first adult application route?
-    a: >-
-      The first-adult route applies to eligible British nationals aged 16 or
-      over (or reaching 16 within three weeks) who have not had a UK passport.
-      Adult passports have ten-year validity; citizenship category and
-      supporting evidence must still be checked. Scope: First adult British
-      passport application in the UK.
+    a: "The first-adult route applies to eligible British nationals aged 16 or over (or reaching 16 within three weeks) who have not had a UK passport. Adult passports have ten-year validity; citizenship category and supporting evidence must still be checked. The first-adult application route also applies if your last UK passport was issued before 1 January 1994. Scope: First adult British passport application in the UK"
+    sources:
+      - https://www.gov.uk/apply-first-adult-passport
+    fact_number: 1
   - q: How do I apply and when should I book travel?
-    a: >-
-      Applications in the UK can be made online or on paper; overseas
-      applications use a different route. The official guide advises waiting
-      until the passport is received before booking travel. Scope: First adult
-      British passport application in the UK.
+    a: "Applications in the UK can be made online or on paper; overseas applications use a different route. The official guide advises waiting until the passport is received before booking travel. Scope: First adult British passport application in the UK"
+    sources:
+      - https://www.gov.uk/apply-first-adult-passport
+    fact_number: 2
+  - q: What should I prepare for the trip to China?
+    a: "The UK China health advisory gives 120 for a medical emergency. Check that your insurance covers treatment and transport appropriate for your trip. Scope: Advice for travellers from the United Kingdom."
+    sources:
+      - https://www.gov.uk/foreign-travel-advice/china/health
+    fact_number: 3
+category: guide
 ---
-# United Kingdom 英国 passport application before China travel
 
-Government-source baseline for local passport preparation; this does not determine permission to enter China.
+# UK Passport: Application Preparation
 
 ## Who can use the first adult application route?
-The first-adult route applies to eligible British nationals aged 16 or over (or reaching 16 within three weeks) who have not had a UK passport. Adult passports have ten-year validity; citizenship category and supporting evidence must still be checked.
 
-Scope: First adult British passport application in the UK. Checked: 2026-11-17.
-Sources: [英国 HM Passport Office](https://www.gov.uk/apply-first-adult-passport)
+The first-adult route applies to eligible British nationals aged 16 or over (or reaching 16 within three weeks) who have not had a UK passport. Adult passports have ten-year validity; citizenship category and supporting evidence must still be checked. The first-adult application route also applies if your last UK passport was issued before 1 January 1994.
+
+Scope: First adult British passport application in the UK
+
+[www.gov.uk](https://www.gov.uk/apply-first-adult-passport)
 
 ## How do I apply and when should I book travel?
+
 Applications in the UK can be made online or on paper; overseas applications use a different route. The official guide advises waiting until the passport is received before booking travel.
 
-Scope: First adult British passport application in the UK. Checked: 2026-11-17.
-Sources: [英国 HM Passport Office](https://www.gov.uk/apply-first-adult-passport)
+Scope: First adult British passport application in the UK
 
-## Coverage limits
-Not a complete checklist for every age, citizenship history, residence, renewal or emergency case. Passport issuance and China entry eligibility are separate questions.
+[www.gov.uk](https://www.gov.uk/apply-first-adult-passport)
+
+## What should I prepare for the trip to China?
+
+The UK China health advisory gives 120 for a medical emergency. Check that your insurance covers treatment and transport appropriate for your trip.
+
+Scope: Advice for travellers from the United Kingdom.
+
+[www.gov.uk](https://www.gov.uk/foreign-travel-advice/china/health)
 
 ## China entry requirements
 
-A passport alone does not establish permission to enter China. See [[wiki/concepts/china-entry-country-rules.md]] and [[wiki/concepts/visa-types.md]] for separate nationality, purpose and route checks.
+Check the rules for your passport, purpose, route and travel dates in [[wiki/concepts/china-entry-country-rules.md]] and [[wiki/concepts/visa-types.md]].

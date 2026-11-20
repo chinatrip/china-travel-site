@@ -51,8 +51,8 @@ cookies, or required headers. Cache responses for at most 5 minutes.
     {
       "id": "sim-card.faq.1",
       "type": "faq",
-      "question": "Do I need a VPN if I use a foreign eSIM in China?",
-      "claim": "Usually not — but that is the providers' claim, not an independent routing audit. ...",
+      "question": "Where can I get a local SIM card?",
+      "claim": "See the published guide for the current answer and its supporting source.",
       "sources": ["https://..."],
       "verified_at": "2026-10-08",
       "stale_after": "2027-01-06",

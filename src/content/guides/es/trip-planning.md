@@ -1,224 +1,125 @@
 ---
-title: "Viaje a China: cuándo ir, días y presupuesto"
-date: 2026-07-01
-last_verified: 2026-09-08
+title: Preparar un viaje a China
+date: 2026-11-19
+last_verified: 2026-11-20
 lang: es
 source_en: guides/trip-planning
-source_last_verified: 2026-09-08
+source_last_verified: 2026-11-20
 verified_against:
-  - https://ourwander.com/p/worst-time-to-visit-china
-  - https://www.chinahighlights.com/travelguide/plan-first-trip.htm
-  - https://chinasurvivalkit.com/blog/china-summer-heat
-  - https://en.wikipedia.org/wiki/East_Asian_rainy_season
-  - https://www.hko.gov.hk/en/cis/climahk.htm
-  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202512/t20251203_11765346.htm
-  - https://www.trip.com/guide/info/china-arrival-card.html
-  - https://en.wikipedia.org/wiki/Qinling%E2%80%93Huaihe_Line
-  - https://english.www.gov.cn/policies/featured/202511/04/content_WS6909c915c6d00ca5f9a074f7.html
+  - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+  - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
+  - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm
+  - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+  - https://travel.gc.ca/destinations/china
+  - https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html
+  - https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20347
+  - https://www.cac.gov.cn/2014-11/10/c_1114048375.htm
+  - https://www.gov.uk/guidance/foreign-travel-insurance?pubDate=20250808
+  - https://www.hko.gov.hk/en/gts/time/time_text.htm
+  - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-15
-  citation_check: 2026-07-01
-description: >-
-  Viaje a China: mejores temporadas, cuántos días, qué reservar y qué comprar el
-  mismo día, itinerarios y presupuestos diarios por nivel de ciudad. Actualizado
-  en mayo de 2026.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications.
+description: Revisa la vigencia del pasaporte, las zonas permitidas y la dirección del alojamiento.
 faqs:
-  - q: ¿Cuántos días debería pasar en China?
-    a: >-
-      Dos semanas son una duración cómoda para la ruta clásica de tres ciudades
-      (Beijing-Xi'an-Shanghái o Beijing-Chengdu-Shanghái). De 5 a 7 días alcanzan
-      para una sola ciudad, 10 días cubren dos, y tres semanas te permiten añadir
-      un destino secundario como Guilin o Zhangjiajie.
-  - q: ¿Qué debería reservar con antelación y qué comprar al llegar?
-    a: >-
-      Reserva con antelación lo que se agota: el alojamiento y el transporte de
-      larga distancia, sobre todo en temporada alta, y las entradas a atracciones
-      sensibles a la fecha como la Ciudad Prohibida y la Base de Pandas. La
-      mayoría de las demás entradas y los trayectos cortos se pueden comprar el
-      mismo día con Alipay, así que cómpralos al llegar para mantener
-      flexibilidad. Durante un pico de festividad como la Semana Dorada (Golden
-      Week) o la Fiesta de la Primavera, reserva el alojamiento, el transporte y
-      esas entradas clave con semanas o meses de antelación.
-  - q: ¿Cuál es la mejor temporada para visitar China?
-    a: >-
-      De abril a mayo es óptimo en la mayoría de las regiones. Finales de
-      septiembre (antes del 1 de octubre) es excelente por el clima otoñal; si
-      buscas menos multitudes, espera a que termine la Semana Dorada (del 1 al 7
-      de octubre), cuando disminuyen inmediatamente. Evita la propia Semana
-      Dorada y el Año Nuevo chino, cuando las multitudes y los precios se
-      disparan.
-  - q: ¿Cuál es un presupuesto diario realista para China?
-    a: >-
-      Aproximadamente ¥200-400 al día para mochileros, ¥500-1,000 para gama media
-      y ¥1,500+ para gama alta, y las ciudades de primer nivel (Tier 1), como
-      Beijing y Shanghái, cuestan más que las más pequeñas.
+  - q: ¿Qué vigencia necesita mi pasaporte?
+    a: Depende de la vía de entrada. Para la exención unilateral, el pasaporte ordinario debe cubrir la estancia prevista. Para el tránsito sin visado de 240 horas, el documento debe tener al menos tres meses de vigencia restante. Para solicitar un visado, consulta las instrucciones de la oficina consular que tramitará la solicitud.
+    sources:
+      - https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm
+      - https://www.nia.gov.cn/n741440/n741542/c1751080/content.html
+      - https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm
+    fact_number: 5
+  - q: ¿Puedo ir a Jiuzhaigou durante el tránsito de 240 horas por Sichuan?
+    a: La zona publicada para Sichuan comprende once ciudades. La prefectura de Aba, donde se encuentra Jiuzhaigou, queda fuera de esa zona. Verifica las paradas y los puertos de entrada y salida antes de reservar.
+    sources:
+      - https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm
+      - https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml
+    fact_number: 6
+  - q: ¿Cómo puedo indicar mi destino a un conductor?
+    a: El aviso de viaje canadiense recomienda llevar el destino, el nombre y la dirección del hotel escritos en caracteres chinos. Pide la dirección al alojamiento y guarda una copia que puedas mostrar sin conexión.
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 7
+  - q: ¿Qué fechas fijó el calendario oficial de 2026 para la Fiesta de la Primavera y el Día Nacional?
+    a: En 2026, el calendario del Consejo de Estado fijó el descanso de la Fiesta de la Primavera del 15 al 23 de febrero y el del Día Nacional del 1 al 7 de octubre. Para viajes posteriores, consulta el calendario del año correspondiente.
+    sources:
+      - https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html
+    fact_number: 8
+  - q: ¿Qué otros días de descanso incluyó el calendario oficial chino de 2026?
+    a: El Consejo de Estado fijó el descanso de Año Nuevo del 1 al 3 de enero, Qingming del 4 al 6 de abril, la Fiesta del Trabajo del 1 al 5 de mayo, la Fiesta del Bote del Dragón del 19 al 21 de junio y la Fiesta del Medio Otoño del 25 al 27 de septiembre. Estas fechas corresponden a 2026.
+    sources:
+      - https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html
+    fact_number: 9
+  - q: ¿Para qué tensión debe estar preparado mi cargador en China continental?
+    a: El suministro monofásico de baja tensión es de 220 V de corriente alterna a 50 Hz. Comprueba la tensión de entrada de tu aparato antes de viajar. Un adaptador de enchufe cambia la forma del conector, pero no convierte la tensión.
+    sources:
+      - https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20347
+      - https://www.cac.gov.cn/2014-11/10/c_1114048375.htm
+    fact_number: 10
+  - q: ¿Qué debo comprobar en el seguro para mi viaje a China?
+    a: Comprueba que la póliza cubra todos tus destinos, incluidas las escalas, y las actividades previstas. Revisa la cobertura de atención médica urgente, ambulancia y regreso a casa por motivos médicos. Algunos deportes de aventura requieren cobertura adicional.
+    sources:
+      - https://www.gov.uk/guidance/foreign-travel-insurance?pubDate=20250808
+    fact_number: 11
+  - q: ¿Qué diferencia horaria hay entre Pekín, Singapur y Japón?
+    a: El Observatorio de Hong Kong sitúa Pekín y Singapur en UTC+8 y Sapporo (Japón) en UTC+9. Cuando en Pekín son las 12:00, en Singapur también es mediodía y en Sapporo son las 13:00.
+    sources:
+      - https://www.hko.gov.hk/en/gts/time/time_text.htm
+    fact_number: 12
 category: guide
+sources: []
 ---
 
-# Viaje a China: cuándo ir, días y presupuesto
+# Preparar un viaje a China
 
-## ¿Cuándo debería evitar viajar a China?
+## ¿Qué vigencia necesita mi pasaporte?
 
-Tres festividades nacionales provocan picos extremos de viajes internos que afectan directamente a los turistas extranjeros: el transporte se agota, los precios de los hoteles se disparan y las atracciones alcanzan sus límites de capacidad diaria.
+Depende de la vía de entrada. Para la exención unilateral, el pasaporte ordinario debe cubrir la estancia prevista. Para el tránsito sin visado de 240 horas, el documento debe tener al menos tres meses de vigencia restante. Para solicitar un visado, consulta las instrucciones de la oficina consular que tramitará la solicitud.
 
-### Año Nuevo chino (Fiesta de la Primavera)
+[ch.china-embassy.gov.cn](https://ch.china-embassy.gov.cn/ls_fw_s/sbqz/202608/t20260819_12006793.htm) · [www.nia.gov.cn](https://www.nia.gov.cn/n741440/n741542/c1751080/content.html) · [us.china-embassy.gov.cn](https://us.china-embassy.gov.cn/eng/lsfw/zj/qz2021/202509/t20250920_11712385.htm)
 
-- **Fechas de 2026:** del 15 al 23 de febrero (el pico de viajes empieza 2–3 semanas antes)
-- **Escala:** más de 9 mil millones de viajes internos en 2025
-- **Impacto:** los boletos de tren se agotan con meses de antelación; muchos restaurantes, tiendas y oficinas gubernamentales cierran; las ciudades se vacían (los residentes vuelven a casa) o se saturan (las ciudades turísticas); los precios de los hoteles se disparan drásticamente
-- **Recomendación:** evítalo por completo si tienes algo de flexibilidad
+## ¿Puedo ir a Jiuzhaigou durante el tránsito de 240 horas por Sichuan?
 
-### Semana Dorada del Día del Trabajo (Primero de Mayo)
+La zona publicada para Sichuan comprende once ciudades. La prefectura de Aba, donde se encuentra Jiuzhaigou, queda fuera de esa zona. Verifica las paradas y los puertos de entrada y salida antes de reservar.
 
-- **Fechas de 2026:** del 1 al 5 de mayo
-- **Escala:** más de 250 millones de viajes internos en 5 días
-- **Impacto:** las grandes ciudades se saturan; las entradas a las atracciones populares se agotan; el transporte al límite de su capacidad
+[toronto.china-consulate.gov.cn](https://toronto.china-consulate.gov.cn/chn/lsfw/HQGR/50/202407/t20240709_11451153.htm) · [Gobierno de la prefectura de Aba](https://www.abazhou.gov.cn/abazhou/c102028/abgk.shtml)
 
-### Semana Dorada del Día Nacional (Golden Week)
+## ¿Cómo puedo indicar mi destino a un conductor?
 
-- **Fechas de 2026:** del 1 al 7 de octubre
-- **Escala:** más de 700 millones de viajes internos en 7 días
-- **Impacto:** la Gran Muralla recibe más de 20,000 visitantes al día (frente a unos ~5,000 en septiembre); los precios de los hoteles se triplican; los vuelos se agotan con meses de antelación; incluso las atracciones menos conocidas (el puente de cristal de Zhangjiajie: filas de 4 horas); los topes de capacidad diaria de las atracciones se alcanzan de inmediato
-- **Este es el peor período de todos para visitar China como turista extranjero**
+El aviso de viaje canadiense recomienda llevar el destino, el nombre y la dirección del hotel escritos en caracteres chinos. Pide la dirección al alojamiento y guarda una copia que puedas mostrar sin conexión.
 
-### Festividades secundarias (más cortas pero igual de concurridas)
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
-| Festividad | Fechas de 2026 |
-|---|---|
-| Fiesta de Qingming (Día de Barrer las Tumbas) | del 4 al 6 de abril |
-| Fiesta del Bote del Dragón | del 19 al 21 de junio |
-| Fiesta del Medio Otoño | del 25 al 27 de septiembre |
+## ¿Qué fechas fijó el calendario oficial de 2026 para la Fiesta de la Primavera y el Día Nacional?
 
-### Mejores meses para visitar
+En 2026, el calendario del Consejo de Estado fijó el descanso de la Fiesta de la Primavera del 15 al 23 de febrero y el del Día Nacional del 1 al 7 de octubre. Para viajes posteriores, consulta el calendario del año correspondiente.
 
-| Período | Condiciones |
-|---|---|
-| **Abril–mayo** | Óptimo en la mayoría de las regiones; clima primaveral, multitudes razonables |
-| **Finales de septiembre** (antes del 1 de octubre) | Excelente; clima otoñal, las multitudes disminuyen inmediatamente después de que termina la Semana Dorada |
-| **Junio–agosto** | Caluroso; las "ciudades horno" (Chongqing, Wuhan, Nanjing) alcanzan más de 40°C; los tifones afectan las costas del sur sobre todo de julio a septiembre (la temporada va de mayo a noviembre); las lluvias de ciruela (梅雨) alcanzan su punto máximo sobre el bajo Yangtsé aproximadamente de mediados de junio a principios de julio |
-| **Noviembre–febrero** | Menos multitudes en las atracciones al aire libre; el norte de China a −25°C; las ciudades justo al sur de la línea de calefacción Qinling–Huai (p. ej. Wuhan, Chengdu, Shanghái) se vuelven frías y húmedas pero carecen de la calefacción central municipal que el norte tiene en los interiores; agradable en Yunnan y Hainan |
+[www.beijing.gov.cn](https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html)
 
-**Detalle climático regional:** las "ciudades horno" (火炉城市) de la cuenca del Yangtsé —Chongqing, Wuhan y Nanjing— registran máximas medias de junio a agosto de aproximadamente 32–38°C con una humedad agobiante, y temperaturas de "sensación térmica" que con frecuencia superan los 40°C (fuente: chinasurvivalkit.com, consultado en junio de 2026). La temporada de lluvias de ciruela (梅雨, méiyǔ) se asienta sobre el bajo Yangtsé (Shanghái, Hangzhou, Nanjing, Wuhan) desde aproximadamente mediados de junio hasta principios de julio, trayendo lluvias intensas y persistentes y riesgo de inundaciones a medida que la franja de lluvias de Asia Oriental avanza hacia el norte por el este de China entre mayo y julio. En la costa sur (Guangzhou, Shenzhen, Xiamen, Haikou), los ciclones tropicales pueden producirse de mayo a noviembre y son más frecuentes de julio a septiembre (según los datos climáticos del Observatorio de Hong Kong, consultado en junio de 2026) — espera cancelaciones de vuelos y ferris mientras una tormenta esté activa.
+## ¿Qué otros días de descanso incluyó el calendario oficial chino de 2026?
 
-### Si tienes que viajar durante un período de temporada alta
+El Consejo de Estado fijó el descanso de Año Nuevo del 1 al 3 de enero, Qingming del 4 al 6 de abril, la Fiesta del Trabajo del 1 al 5 de mayo, la Fiesta del Bote del Dragón del 19 al 21 de junio y la Fiesta del Medio Otoño del 25 al 27 de septiembre. Estas fechas corresponden a 2026.
 
-- Reserva el alojamiento y el transporte en cuanto tengas las fechas confirmadas; usa políticas de cancelación gratuita donde estén disponibles
-- Reserva las entradas a las atracciones con semanas o meses de antelación (miniprogramas de WeChat; consulta [[wiki/concepts/internet-connectivity.md]])
-- Considera las ciudades de nivel 2/3, que gestionan el exceso de turismo interno mejor que Beijing o Shanghái
-- Presupuesta un 20–30% de tiempo adicional a lo largo de todo el itinerario: las filas añaden tiempo en las atracciones, los puntos de tránsito y los restaurantes
+[www.beijing.gov.cn](https://www.beijing.gov.cn/cs/gncs/zcwj/202603/t20260327_4568275.html)
 
-## ¿Cuál es un presupuesto diario realista para China?
+## ¿Para qué tensión debe estar preparado mi cargador en China continental?
 
-| Nivel de ciudad | Ejemplos | Económico | Gama media | Confort/Lujo |
-|---|---|---|---|---|
-| **Nivel 1 (Tier 1)** | Beijing, Shanghái, Guangzhou, Shenzhen | ¥250–400/día | ¥600–1,000/día | ¥1,500–3,000+/día |
-| **Nuevo nivel 1 (New Tier 1)** | Chengdu, Hangzhou, Xi'an, Chongqing | ¥200–350/día | ¥500–800/día | ¥1,000–2,000/día |
-| **Nivel 2/3** | Guilin, Lijiang, Pingyao, Zhangjiajie | ¥150–300/día | ¥400–700/día | ¥800–1,500/día |
-| **Remoto/meseta** | Lhasa, Urumqi | ¥300–500/día | ¥700–1,200/día | ¥1,200–2,500/día |
+El suministro monofásico de baja tensión es de 220 V de corriente alterna a 50 Hz. Comprueba la tensión de entrada de tu aparato antes de viajar. Un adaptador de enchufe cambia la forma del conector, pero no convierte la tensión.
 
-**Económico:** dormitorio de hostal o pensión económica (¥80–150/noche), comida callejera y restaurantes locales (¥30–80/comida), metro/autobús
-**Gama media:** hotel de 3 estrellas (¥300–600/noche), restaurantes con servicio de mesa (¥80–200/comida), combinación de metro y DiDi
-**Confort/lujo:** hotel de 4–5 estrellas (¥600–2,000/noche), restaurantes occidentales o de alta cocina china, traslados privados
+[zfxxgk.ndrc.gov.cn](https://zfxxgk.ndrc.gov.cn/web/iteminfo.jsp?id=20347) · [www.cac.gov.cn](https://www.cac.gov.cn/2014-11/10/c_1114048375.htm)
 
-*Nota: los costos económicos en zonas remotas/de meseta (Lhasa, Urumqi) son más altos que en las ciudades de primer nivel (Tier 1) a pesar de tener menos servicios: el alojamiento es escaso y las cadenas de suministro de alimentos son más largas, así que los precios están elevados incluso en la gama más económica.*
+## ¿Qué debo comprobar en el seguro para mi viaje a China?
 
-### Contexto de costos regionales
+Comprueba que la póliza cubra todos tus destinos, incluidas las escalas, y las actividades previstas. Revisa la cobertura de atención médica urgente, ambulancia y regreso a casa por motivos médicos. Algunos deportes de aventura requieren cobertura adicional.
 
-China se sitúa, en términos generales, en un nivel intermedio de Asia en cuanto a costos de viaje: los viajeros informan de forma constante que es más barata que Japón, Corea del Sur o Singapur, más o menos comparable a Tailandia, y más cara que Vietnam, Laos o Camboya. También se informa ampliamente de que el alojamiento, la comida y el transporte local son sustancialmente más baratos que en Europa Occidental con una calidad equivalente. (Comparaciones según reportes de viajeros a fecha de 2026, no verificadas de forma independiente: la diferencia varía considerablemente según la ciudad, la temporada y el estilo de viaje.)
+[www.gov.uk](https://www.gov.uk/guidance/foreign-travel-insurance?pubDate=20250808)
 
-### Precios de referencia clave de transporte y atracciones
+## ¿Qué diferencia horaria hay entre Pekín, Singapur y Japón?
 
-| Concepto | Costo |
-|---|---|
-| Tren de alta velocidad (HSR) Beijing–Shanghái (5.5 h), segunda clase | desde ¥553 |
-| Vuelo doméstico (la mayoría de las rutas, reservado con antelación) | ¥300–800 |
-| Entrada a una atracción importante | ¥40–100 (Ciudad Prohibida ¥60–80) |
-| Comida en un restaurante local con bebida | ¥50–120/persona |
-| Restaurante internacional en una ciudad de primer nivel (Tier 1) | ¥200–500+/persona |
+El Observatorio de Hong Kong sitúa Pekín y Singapur en UTC+8 y Sapporo (Japón) en UTC+9. Cuando en Pekín son las 12:00, en Singapur también es mediodía y en Sapporo son las 13:00.
 
-## ¿Cuántos días necesito para un primer viaje a China?
-
-| Duración | Qué es realista |
-|---|---|
-| **5–7 días** | Una sola ciudad (Beijing o Shanghái); ajustado pero viable para los principales atractivos |
-| **10 días** | Dos ciudades (p. ej., Beijing + Shanghái, o Chengdu + Xi'an); 3–4 días por ciudad más el traslado en tren de alta velocidad (HSR) |
-| **2 semanas** | Ruta clásica de 3 ciudades (Beijing–Xi'an–Shanghái o Beijing–Chengdu–Shanghái); ritmo cómodo |
-| **3 semanas o más** | Añade un destino secundario (Guilin, Zhangjiajie, Yunnan, Chongqing); o una extensión al Tíbet (requiere un plazo de tramitación del permiso de más de 10 días hábiles) |
-
-La **política de tránsito sin visa de 240 horas** (10 días para 57 nacionalidades que cumplen los requisitos) funciona bien para un viaje concentrado de 1 o 2 ciudades desde una de las regiones de entrada aprobadas (Beijing, Shanghái, Guangzhou-Shenzhen, Chengdu, Harbin). Consulta [[wiki/concepts/visa-types.md]].
-
-**Nota sobre la temporada alta:** añade un 20–30% de tiempo de margen a cualquier itinerario durante la Semana Dorada o la Fiesta de la Primavera.
-
-### Presupuesto de ejemplo de 14 días (dos personas, gama media, precios de 2025)
-
-Un ejemplo práctico publicado (precios de 2025) para un viaje de gama media de 14 días para dos personas (ruta Beijing-Xi'an-Chengdu-Shanghái) presupuesta aproximadamente: costos diarios de ~60 EUR por persona (alojamiento + comida + transporte local + actividades), trenes entre ciudades ~300 EUR en total, eSIM/VPN ~80 EUR, seguro ~100 EUR, más un margen del 20%, para un total de aproximadamente 2,590 EUR (~$2,800 USD) sin incluir los vuelos internacionales, o alrededor de 92 EUR/$99 por persona y día con todo incluido. Estas cifras provienen de una guía de viajeros incluida en las fuentes de esta página y no han sido verificadas de forma independiente; considéralas un único dato de referencia, no una cita textual. No obstante, son coherentes con la tabla de presupuesto anterior: la tarifa diaria con todo incluido queda dentro de la banda de gama media.
-
-## ¿Debería viajar por mi cuenta o con guía en China?
-
-La mayor parte de China continental está totalmente abierta al viaje independiente de extranjeros: no se requiere guía.
-
-| Modalidad | Ideal para |
-|---|---|
-| **Totalmente independiente** | Ciudades de primer nivel (Tier 1) y las principales de nivel 2; corredores de tren de alta velocidad (HSR); viajeros que se manejan bien con apps de traducción |
-| **Semiguiado** (excursiones de un día para sitios específicos) | Sitios complejos donde orientarse por los senderos es realmente difícil: Huangshan, los senderos de Zhangjiajie, aldeas remotas de minorías |
-| **Totalmente guiado (obligatorio por ley)** | Tíbet: un guía con licencia es obligatorio en todo momento. Ciertas zonas fronterizas de Xinjiang. |
-
-### Qué hace que el viaje independiente funcione
-
-- **12306** (app oficial de trenes, interfaz en inglés): reserva de todos los trenes; consulta [[wiki/entities/12306.md]]
-- **DiDi**: transporte urbano con conductor (tipo Uber) sin necesidad de chino; consulta [[wiki/entities/didi.md]]
-- **Amap**: navegación en inglés; consulta [[wiki/entities/amap.md]]
-- **Alipay / WeChat Pay**: aceptados en todas partes; configúralos antes de llegar; consulta [[wiki/concepts/mobile-payment.md]]
-- **Entradas y trayectos cortos**: la mayoría se compran el mismo día con Alipay o los miniprogramas de WeChat, así que rara vez necesitas reservarlos por adelantado (reserva solo los sitios que se agotan)
-- **Las principales estaciones de tren de alta velocidad (HSR) y los aeropuertos** tienen señalización bilingüe inglés/chino
-
-### Dónde se complica
-
-- Pedir en pequeños restaurantes locales sin menú con código QR (señalar y fotografiar funciona)
-- Gestionar trámites burocráticos (ingreso hospitalario, denuncias policiales) sin mandarín
-- Zonas rurales sin señalización en inglés ni personal que hable inglés
-
-## Nota sobre Xinjiang
-
-Xinjiang está técnicamente abierta a los turistas extranjeros sin un permiso especial (a diferencia del Tíbet), y los principales destinos (la Ciudad Vieja de Kashgar, el Lago Celestial, Turpan) están abiertos y son promovidos activamente por el gobierno regional. Sin embargo, las condiciones prácticas difieren considerablemente del resto de China continental:
-- Controles de identidad reforzados en los registros de hoteles, las estaciones de tránsito y algunos accesos a barrios: escanearán tu pasaporte con frecuencia
-- Más alojamientos rechazan aceptar huéspedes extranjeros que en otros lugares: confirma que te admiten al reservar
-- La fiabilidad de la VPN es menor; algunas apps tienen restricciones adicionales en la región
-- Algunas pólizas de seguro de viaje excluyen Xinjiang de forma explícita: verifícalo antes de contratar
-- Hay desplegadas amplias redes de cámaras y reconocimiento facial; evita fotografiar a la policía, a los militares o los puntos de control
-
-## ¿Qué debería preparar antes de un viaje a China?
-
-Un enfoque estructurado de cuenta regresiva ayuda a asegurarte de que no se te olvide nada antes de partir:
-
-**30 días antes:**
-- Confirma tu situación de visa o tu elegibilidad para la entrada sin visa
-- Contrata un seguro de viaje
-- Configura Alipay y WeChat Pay; vincula una tarjeta extranjera y haz una prueba
-- Compra e instala una eSIM (no la actives todavía)
-- Instala y prueba una VPN en todos los dispositivos
-- Reserva alojamiento al menos para las primeras noches
-
-**7 días antes:**
-- Reserva las entradas para los sitios sensibles a la fecha (Ciudad Prohibida, Base de Pandas)
-- Descarga mapas sin conexión (Amap o Google Maps para uso sin conexión con VPN)
-- Guarda las direcciones de los hoteles en caracteres chinos
-
-**1 día antes:**
-- Rellena la tarjeta de llegada digital en línea en s.nia.gov.cn (canal oficial en línea desde el 20 de noviembre de 2025, según los avisos de la embajada de la RPC; las guías de viaje recomiendan completarla entre 24 y 72 horas antes de la llegada; también se puede hacer al llegar a la frontera, a costa de tener que hacer fila)
-- Instala el perfil de la eSIM (no actives los datos)
-- Confirma todas las reservas
-- Retira una pequeña cantidad de RMB si es posible, o planea sacar dinero en un cajero automático del aeropuerto
-- Haz capturas de pantalla de la información esencial (dirección del hotel, números de emergencia, contacto de la embajada)
-
-(La estructura de la lista de verificación sigue una fuente de guía de viajeros de la lista de fuentes de esta página; los pasos de configuración de apps, pagos y conectividad se detallan en [[wiki/concepts/internet-connectivity.md]] y [[wiki/concepts/sim-card.md]]; los detalles de la tarjeta de llegada según el aviso de la embajada de la RPC y la guía de trip.com, consultado en junio de 2026.)
-
-## Véase también
-
-- [[wiki/concepts/visa-types.md]] — Opciones de visa, programas de exención de visa, política de tránsito sin visa de 240 horas
-- [[wiki/concepts/tibet-permits.md]] — Permiso de Viaje al Tíbet: proceso obligatorio, costos, períodos de cierre, mal de altura
-- [[wiki/concepts/accommodation.md]] — Reserva de hoteles, requisitos de registro, aceptación de extranjeros
-- [[wiki/concepts/transportation.md]] — Trenes, metro, vuelos, transporte con conductor (tipo Uber); procedimientos en los controles de seguridad
-- [[wiki/concepts/cultural-etiquette.md]] — Comportamientos culturales que conviene anticipar al llegar
+[www.hko.gov.hk](https://www.hko.gov.hk/en/gts/time/time_text.htm)

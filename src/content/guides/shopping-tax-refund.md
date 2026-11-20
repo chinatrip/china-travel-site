@@ -1,21 +1,32 @@
 ---
-title: Shopping and Tax Refund for Foreign Visitors
-date: '2026-11-17'
-last_verified: 2026-09-20
+title: "China Tourist Tax Refund: Eligibility and Steps"
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
-  - >-
-    https://www.china-briefing.com/news/chinas-new-instant-vat-refund-policy-boost-to-tourism-and-retail-amid-tariff-tensions/
-  - 'https://www.gov.cn/zhengce/jiedu/tujie/202504/content_7021304.htm'
-  - >-
-    https://www.shio.gov.cn/TrueCMS/shxwbgs/ywts/content/4eb5dc1c-f2ff-425f-b92f-a1c6df388d95.html
-  - 'https://www.chinavigators.com/china-vat-refund-guide/'
-  - 'https://www.trip.com/guide/info/china-tax-refund.html'
-  - >-
-    http://english.customs.gov.cn/statics/88707c1e-aa4e-40ca-a968-bdbdbb565e4f.html
-  - 'https://en.people.cn/n3/2025/0508/c90000-20312163.html'
-  - >-
-    https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html
-  - 'https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html'
+  - https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html
+  - https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html
+  - https://fgk.chinatax.gov.cn/zcfgk/c100012/c5239603/content.html
+  - https://shanghai.chinatax.gov.cn/zcfw/rdwd/202608/t481206.html
+  - https://english.shanghai.gov.cn/en-Individuals-ShoppingandTaxRefund-Departuretaxrefund/20260813/469b30ac4ff348b8ac3a1259f0e12d23.html
+  - https://english.shanghai.gov.cn/en-TaxRefundandDutyFree/20240313/55aec996b80949bc818fb4486ea2f50f.html
+  - https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20250428092052057.shtml
+  - https://www.chinatax.gov.cn/eng/c101276/c102444/c5240901/content.html
+  - https://www.chinatax.gov.cn/eng/c101276/c102444/c5240903/content.html
+  - https://www.chinatax.gov.cn/eng/c101276/c102444/c5240906/content.html
+  - https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html
+  - https://www.mofcom.gov.cn/zfxxgk/gkml/art/2026/art_c588cb1b63c34184849ebf6a79027cf4.html
+  - https://tradeinservices.mofcom.gov.cn/article/xwdt/dfdt/202608/200762.html
+  - https://english.beijing.gov.cn/livinginbeijing/DiningShopping/202006/t20200616_1925709.html
+  - https://map.beijing.gov.cn/place?categoryId=ljtsfwd&placeId=6826b348f8f52a79c0ac67c7
+  - https://www.beijing.gov.cn/ywdt/gzdt/202504/t20250427_4075218.html
+  - https://taxfree.mofcom.gov.cn/taxfreeCnMp/zcwj/2025/7/5a4545e307d54ed4866627dea764a5d6542.html
+  - https://www.cq.gov.cn/ykbzt/yhyshj/zxdt/202601/t20260122_15343347.html
+  - https://www.sz.gov.cn/en_szgov/news/latest/content/post_12950959.html
+  - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/landmarksalongthesubwaylines/line10/202206/t20220624_2750413.html
+  - https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html
+  - https://touch.shio.gov.cn/jsp/jrsh_detail.jsp?id=20260109132651910
+  - https://fgk.chinatax.gov.cn/zcfgk/c100013/c5240079/content.html
+  - https://english.shanghai.gov.cn/en-TaxRefundandDutyFree/20261029/072dd12ff3b545dfb530a19fd8ecded5.html
 sources: []
 related:
   - wiki/concepts/mobile-payment.md
@@ -25,244 +36,213 @@ related:
 volatility: medium
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: null
-  notes: >-
-    2026-11-17 scoped correction: Correct net-refund example and reform date;
-    remove unsupported post-validation deadline. Sources checked on this date
-    are listed in the correction section below. last_verified, page_audit and
-    citation_check retain their earlier scope; this is not a whole-page
-    re-audit.
-
-    2026-09-20: verified the customs rows against GACC's passenger clearance
-    guide, reachable again over http:// after the misdiagnosis fixed in the
-    previous PR. CORRECTED A CATEGORY ERROR: the tobacco and alcohol rows read
-    'Up to 400 cigarettes … duty-free on entry' and 'Up to 1,500 ml …
-    duty-free'. Those are GACC's RED-CHANNEL DECLARATION THRESHOLDS, not
-    duty-free allowances. Verbatim: 'CAUTION: Inward passengers with the
-    articles listed below SHALL choose GOODS TO DECLARE (RED CHANNEL) … 1,500ml
-    or above of alcoholic drinks (containing 12% or above alcoholic content);
-    400 sticks or above of cigarettes; 100 sticks or above of cigars; 500g or
-    above of tobacco.' The practical outcome is similar — below the line you
-    take the green channel and goods are released as personal effects — but 'up
-    to 400 duty-free' promises an entitlement the source does not give: release
-    is 'within the limitation set by the Customs' and explicitly 'subject to
-    REASONABLE QUANTITY control'. Rewritten as thresholds with that caveat.
-    ALSO: the foreign-currency row claimed larger amounts need a permit from an
-    authorised Chinese bank. GACC's guide does not say that — it is a
-    foreign-exchange rule under a different authority — so it is labelled
-    unverified here rather than cited to customs. ADDED: the inbound
-    personal-article thresholds (¥5,000 residents / ¥2,000 non-residents), which
-    this page never carried and which are the context those tobacco figures sit
-    in. SCOPE: last_verified BUMPED to 2026-09-20 for the customs-threshold
-    anchors only. The VAT refund scheme, the ¥200 minimum, the 11% rate and the
-    instant-refund mechanics were NOT re-verified this round. --- 2026-10-17:
-    source-list maintenance only, no claim changes. Replaced the dead visahq.com
-    URL (HTTP 404, no Wayback snapshot) with the official gov.cn April 2025
-    policy chart for the ¥200 threshold, and rewrote the Shanghai outlet
-    sentence against the Shanghai government's 2025-12-26 release (1,700+
-    registered refund stores, 1,000+ added in 2025, instant refund city-wide via
-    9 + 17 + N points). last_verified NOT bumped.
-description: >-
-  China tourist tax refunds: the CNY 200 purchase threshold, departure procedure
-  and the difference between the gross refund rate and net payout.
+  auditor: Codex
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Full review of the retained body and FAQs on 2026-11-18. Removed outbound/inbound customs conflation, false mall names, unsourced merchant directories/prices, payment timelines and categorical product exclusions. Corrected net refund, advance process, bag inspection order and local conditions. Practical checklists are advice, not guarantees. Dated sources are not live policy checks. Local review only; no publication or deployment. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Check China departure tax refund eligibility, the ¥200 threshold, net refund calculation and instant-refund conditions before shopping and departure.
 faqs:
-  - q: Can foreign tourists get a VAT refund in China?
-    a: >-
-      Yes. Overseas visitors can claim a refund on eligible goods bought at
-      tax-free (tuishui) stores, with a minimum spend of ¥200 per store per day,
-      when taking the items out of China within 90 days.
-  - q: How do I claim the tax refund?
-    a: >-
-      Ask the store for a tax-refund form and keep the receipt, then process the
-      refund at the airport customs/refund counter on departure. China has also
-      rolled out an instant in-store refund at participating shops.
+  - q: What is the minimum purchase for a China departure tax refund?
+    a: CNY 200 at the same participating refund shop on the same day. Goods and the traveller must also satisfy the other eligibility conditions.
+    sources:
+      - https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html
+      - https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html
+    fact_number: 5
   - q: How much is the China tax refund?
-    a: >-
-      Under the cited Shanghai tax-authority fee schedule, the net refund is 9%
-      or 6% of the invoice value: an 11% or 8% refund rate less a 2% handling
-      fee. A CNY 1,000 purchase therefore yields CNY 90 or CNY 60 under that
-      schedule. Check the applicable local agent fee and customs verification.
-  - q: What can't I claim a refund on?
-    a: >-
-      Consumables already used, purchases below the ¥200 threshold, and goods
-      not carried out with you generally don't qualify. Keep items unused and
-      packed for possible customs inspection.
+    a: Under the cited Shanghai schedule, the net refund is 9% or 6% after the 2% fee, depending on the goods’ refund rate. A CNY 1,000 invoice gives CNY 90 or CNY 60, subject to Customs verification.
+    sources:
+      - https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html
+      - https://shanghai.chinatax.gov.cn/zcfw/rdwd/202608/t481206.html
+      - https://english.shanghai.gov.cn/en-Individuals-ShoppingandTaxRefund-Departuretaxrefund/20260813/469b30ac4ff348b8ac3a1259f0e12d23.html
+    fact_number: 3
+  - q: Can I skip Customs if I received an instant refund?
+    a: An instant refund is an advance backed by credit-card authorization. Follow the Customs system’s instruction at departure. An exempt form needs no Customs inspection. Complete the agent’s review and meet the agreed deadline and port conditions.
+    sources:
+      - https://fgk.chinatax.gov.cn/zcfgk/c100012/c5239603/content.html
+      - https://shanghai.chinatax.gov.cn/zcfw/rdwd/202608/t481206.html
+      - https://www.mofcom.gov.cn/zfxxgk/gkml/art/2026/art_c588cb1b63c34184849ebf6a79027cf4.html
+      - https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html
+    fact_number: 7
+  - q: Do ordinary and instant refunds have the same deadline?
+    a: Ordinary refunds require departure within 90 days of purchase. The national instant-refund rules set a 28-day departure commitment. Check the port named in your agreement and whether its agents support cross-region handling.
+    sources:
+      - https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html
+      - https://fgk.chinatax.gov.cn/zcfgk/c100012/c5239603/content.html
+      - https://shanghai.chinatax.gov.cn/zcfw/rdwd/202608/t481206.html
+      - https://www.mofcom.gov.cn/zfxxgk/gkml/art/2026/art_c588cb1b63c34184849ebf6a79027cf4.html
+      - https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html
+    fact_number: 8
+  - q: Which Shanghai airport terminals have departure tax refund desks?
+    a: Shanghai’s published directory lists refund agencies at Hongqiao International Airport Terminal 1 and Pudong International Airport Terminals 1 and 2. Check the directory for the location in your departure terminal and allow time for Customs verification.
+    sources:
+      - https://english.shanghai.gov.cn/en-TaxRefundandDutyFree/20240313/55aec996b80949bc818fb4486ea2f50f.html
+    fact_number: 9
+  - q: When can I choose a cash departure tax refund?
+    a: If the refund itself is CNY 20,000 or less, you may choose cash in RMB or a bank transfer. A refund above CNY 20,000 must be paid by bank transfer. The threshold uses the refund amount, not the price of the goods.
+    sources:
+      - https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20250428092052057.shtml
+    fact_number: 10
+  - q: What should I keep for a departure tax refund on purchases?
+    a: The scheme covers eligible overseas visitors who have stayed in mainland China for no more than 183 consecutive days before departure. Ask the participating shop for the refund application form and sales invoice. Keep the goods unused and available for Customs inspection, and take them out as accompanied or checked baggage within 90 days of purchase. Use a departure port with a refund agency.
+    sources:
+      - https://www.chinatax.gov.cn/eng/c101276/c102444/c5240901/content.html
+      - https://www.chinatax.gov.cn/eng/c101276/c102444/c5240903/content.html
+      - https://www.chinatax.gov.cn/eng/c101276/c102444/c5240906/content.html
+    fact_number: 11
+  - q: Do I need paper forms or a physical inspection for a departure tax refund?
+    a: Ask the refund shop for the sales invoice and application form. Electronic versions are accepted, and you can request paper copies. From 1 July 2026, goods on forms with sales below CNY 10,000 are selected for physical inspection at random. At CNY 10,000 or above, Customs inspects each form’s goods. Keep your ID and purchases accessible until you have followed the port’s instructions. If the system exempts your form from verification, proceed to the refund agent.
+    sources:
+      - https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html
+      - https://www.mofcom.gov.cn/zfxxgk/gkml/art/2026/art_c588cb1b63c34184849ebf6a79027cf4.html
+    fact_number: 12
+  - q: Where do I take checked purchases for a departure tax refund at Guangzhou Baiyun?
+    a: Guangzhou Customs placed the verification points at the baggage check-in area and added signs in terminals T2 and T3 of Guangzhou Baiyun International Airport (广州白云国际机场). If your purchases need inspection, take them to the verification point before handing over the bag.
+    sources:
+      - https://tradeinservices.mofcom.gov.cn/article/xwdt/dfdt/202608/200762.html
+    fact_number: 13
+  - q: Can I bargain at Silk Street in Beijing?
+    a: Beijing’s visitor guide describes bargaining at Silk Street (秀水街) and lists clothing, shoes, souvenirs and rugs among the goods sold there. It also notes that shopkeepers use English and other languages. Confirm the item and the final price with your seller.
+    sources:
+      - https://english.beijing.gov.cn/livinginbeijing/DiningShopping/202006/t20200616_1925709.html
+    fact_number: 14
+  - q: Which airport, land or ferry departure ports publish tax-refund services?
+    a: Beijing lists a refund counter in Terminal 3 of Capital International Airport and also reports handling at Daxing International Airport. Shenzhen lists Bao’an International Airport (深圳宝安国际机场), Shekou Cruise Home Port (蛇口邮轮母港) and designated land crossings. At Shenzhen Bay and Wenjindu, the cited notice places the refund point in the passenger inspection channel, not the vehicle lane.
+    sources:
+      - https://map.beijing.gov.cn/place?categoryId=ljtsfwd&placeId=6826b348f8f52a79c0ac67c7
+      - https://www.beijing.gov.cn/ywdt/gzdt/202504/t20250427_4075218.html
+      - https://taxfree.mofcom.gov.cn/taxfreeCnMp/zcwj/2025/7/5a4545e307d54ed4866627dea764a5d6542.html
+    fact_number: 15
+  - q: Can I complete a Chongqing instant refund when flying from Chengdu or Xi’an?
+    a: For eligible purchases at participating Chongqing instant-refund shops, Chongqing lists Chengdu Tianfu International Airport (成都天府国际机场) and Xi’an Xianyang International Airport (西安咸阳国际机场) among the departure ports where the advance can be settled. Confirm your port and participating agents when signing the agreement.
+    sources:
+      - https://www.cq.gov.cn/ykbzt/yhyshj/zxdt/202601/t20260122_15343347.html
+      - https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html
+    fact_number: 16
+  - q: Where can I browse electronics, antiques or local crafts?
+    a: For electronics in Shenzhen, look for Huaqiangbei (华强北), where the city lists specialist electronics markets. In Beijing, Panjiayuan Antique Market (潘家园旧货市场) is near Panjiayuan Station on metro line 10. Shanghai’s Yuyuan Bazaar (豫园商城) sells handicrafts and local snacks. A listing does not certify the authenticity or export eligibility of any particular item.
+    sources:
+      - https://www.sz.gov.cn/en_szgov/news/latest/content/post_12950959.html
+      - https://english.beijing.gov.cn/specials/beijinglifeonthesubway/landmarksalongthesubwaylines/line10/202206/t20220624_2750413.html
+      - https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html
+    fact_number: 17
+  - q: How can I tell whether a shop in Shanghai participates in departure tax refunds?
+    a: Check the national departure tax refund information platform or ask the shop before purchasing. Shanghai reported more than 1,700 registered shops at the end of November 2025 and identified a central instant-refund counter in the IAPM mall (环贸广场) on Huaihai Road. Those figures describe that period. Confirm the current shop and counter for your purchase.
+    sources:
+      - https://touch.shio.gov.cn/jsp/jrsh_detail.jsp?id=20260109132651910
+      - https://fgk.chinatax.gov.cn/zcfgk/c100013/c5240079/content.html
+    fact_number: 18
+  - q: Which Shanghai malls list a shared tax refund counter for participating shops?
+    a: Shanghai’s September 2026 directory lists IFC Mall (国金中心商场) at 8 Century Avenue, Plaza 66 (恒隆广场) on West Nanjing Road, and IAPM Mall (环贸广场) at 999 Middle Huaihai Road. These counters handle claims for participating stores in the relevant shopping centre or area. Ask your retailer whether your purchase qualifies.
+    sources:
+      - https://english.shanghai.gov.cn/en-TaxRefundandDutyFree/20261029/072dd12ff3b545dfb530a19fd8ecded5.html
+    fact_number: 19
 category: guide
 ---
 
-# Shopping and Tax Refund for Foreign Visitors
+# China Tourist Tax Refund: Eligibility and Steps
 
-## Can tourists get a VAT refund in China?
+离境退税 (departure tax refund) applies to eligible purchases at participating refund shops, not every purchase or every retailer. Confirm participation and the goods' eligibility before paying.
 
-The national 2025 No.11 amendment dated 26 April 2025 reduced the qualifying purchase threshold to CNY 200 at the same refund shop on the same day. Keep this amendment separate from instant-refund rollout dates.
+## Who can claim, and how much must I spend?
 
-### Eligibility
+The national **2025 No. 11** amendment lowered the same-shop, same-day qualifying purchase threshold to **CNY 200**. Source: [State Taxation Administration amendment](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html).
 
-- Overseas visitor staying in mainland China for **no more than 183 consecutive days**
-- Minimum spend: **¥200 or more from a single participating store on the same day** (source: gov.cn, April 2025 policy notice; china-briefing.com April 2025)
-- Goods must be for personal use and taken out of the country unused and in original packaging
+The [Shanghai tax authority guide](https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html) requires goods to be unused/unconsumed and personally carried or checked out within **90 days of purchase**, with no more than **183 days between entry and departure**. Request a sales invoice and departure refund form using your valid identity document. Do not substitute an ordinary shop receipt for the required tax documents.
 
-### Refund Rate
+## How much will I actually receive?
 
-The refund uses the formula: **Refund = (invoice amount incl. VAT × refund rate) − handling fee**.
+Under that Shanghai guide, invoice value × (11% or 8% refund rate minus 2% handling fee) means a **net refund of 9% or 6%**. A CNY 1,000 invoice gives **CNY 90 or CNY 60**, subject to Customs verification. Confirm the applicable goods rate and local agent fee; the headline gross rate is not the net payout. Source: [Shanghai calculation and payment rules](https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html). [Shanghai municipal guidance, 17 November 2026](https://english.shanghai.gov.cn/en-Individuals-ShoppingandTaxRefund-Departuretaxrefund/20260813/469b30ac4ff348b8ac3a1259f0e12d23.html)
 
-The Shanghai tax authority guide calculates net refund as invoice value × (11% or 8% refund rate minus 2% handling fee), i.e. 9% or 6%. A CNY 1,000 example yields CNY 90 or CNY 60 under that published fee schedule. Check the applicable local agent fee and customs verification; do not present the gross rate as the net payout.
+## How do I claim at departure?
 
-**Ineligible goods:** services (hotels, restaurants, transport), food and beverages, tobacco, alcohol, and items consumed inside China. Most physical retail goods — clothing, electronics, cosmetics, watches, jewelry, luggage, sporting goods — are eligible.
+1. Before leaving the shop, obtain the invoice and **退税申请单 (tax refund application form)**.
+2. Check the Customs instruction for your application. Keep your ID, electronic or paper documents and any goods selected for inspection accessible before handing over checked bags.
+3. If the system exempts the form from verification, go directly to the refund agent. Otherwise complete the indicated inspection first. The agent can use your ID and electronic documents to process the refund.
 
-### Recognising Eligible Stores
+Check the designated port's counter location and hours in advance and allow extra time; this guide does not promise a universal airport layout or a 45-minute completion time. The current rules support [paperless processing](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html) and [inspection by sales amount](https://www.mofcom.gov.cn/zfxxgk/gkml/art/2026/art_c588cb1b63c34184849ebf6a79027cf4.html). Earlier local guidance on the paper process: [Shanghai departure procedure](https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html).
 
-Participating retailers display a **"Tax Free Shopping" or "离境退税"** sign at the entrance or checkout. Coverage has been expanded (April 2025) to include stores in major commercial areas, pedestrian streets, tourist attractions, resorts, cultural venues, airports, ports, and hotels. Not every store in these areas participates — look for the sign.
+## Does instant refund mean I can skip Customs?
 
-## How do I claim a tax refund in China?
+Follow the departure instructions. **即买即退 (refund upon purchase)** is an advance: at a participating shop, sign the agreement and arrange credit-card preauthorization. At departure, follow the Customs system’s inspection or exemption instruction and complete the refund agent’s review. Failure to meet eligibility or the agreed deadline/port can cause recovery through the card authorization. The national rollout announcement is **2025 No. 9, dated 4 April 2025**, distinct from the threshold amendment. Source: [national instant-refund rules](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5239603/content.html).
 
-### Path 1: Instant Refund at Point of Sale (新 — since April 2025)
+Read the agreement before accepting the advance. Do not assume ordinary refund's 90-day purchase window is also the instant-refund deadline.
 
-At designated tax-free retailers (primarily in major cities and airports):
+## Which conditions are specific to Shanghai?
 
-1. Show your passport at checkout and request the VAT refund.
-2. The store processes the refund instantly — you sign an agreement and the store provides the refund amount in RMB immediately.
-3. A credit-card pre-authorization hold is placed on a card you provide as a deposit.
-4. **At departure**, present your goods, invoices, and ID at the customs kiosk for verification. If compliant, the hold is cancelled and the refund is finalised.
+Shanghai's August 2026 FAQ specifies an instant-refund purchase range of **CNY 200–222,200**, unused goods, required invoice/form, a credit card supporting preauthorization, and a commitment to depart through Shanghai within **28 days** of invoicing while remaining within the 183-day entry/departure limit. It also describes **conditional cross-region handling from 1 September 2026**, depending on compliant arrangements between agents. Ask the agents to confirm whether your itinerary qualifies; this is not universal portability. Source: [Shanghai tax authority FAQ](https://shanghai.chinatax.gov.cn/zcfw/rdwd/202608/t481206.html).
 
-Shanghai had **more than 1,700 registered refund stores by the end of November 2025** (over 1,000 added that year), and "instant refund" (即买即退) is available city-wide through 9 city-wide refund points, 17 centralised points and store-level points (source: Shanghai municipal government, shio.gov.cn, December 2025).
+## How is the refund paid?
 
-### Path 2: Airport Departure Claim (Traditional)
+Shanghai's guidance permits cash or bank transfer for refunds up to **CNY 20,000 inclusive**, and bank transfer above that amount. Its later FAQ adds **Alipay** as an initial third-party option. Confirm available methods and timing with the actual refund agent; no universal card or wallet settlement time is established here. Sources: [payment limits](https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html), [Shanghai payment options](https://shanghai.chinatax.gov.cn/zcfw/rdwd/202608/t481206.html).
 
-For stores not offering instant refunds, or if you prefer to claim at the airport:
+## What else should I check before buying?
 
-1. **At the store:** request a VAT refund form (退税申请单). Store staff complete it using your passport details. Keep the form, receipts, and goods together.
-2. **At check-in:** check in your luggage as normal, but keep the refund items accessible for customs inspection.
-3. **Before passport control:** go to the **Customs Declaration (海关)** window. Present unused goods, completed form, and receipt. The customs officer stamps your form to validate it. *Allow at least 45 minutes extra before departure for this step — queues can form, especially at busy airports.*
-4. **After passport control:** find the **Tax Refund desk (退税处)** in the departure lounge. Present your stamped form, passport, and receipt.
+Confirm the item's authenticity, warranty, invoice details, refund eligibility and final price. Keep the goods unused and available for inspection. Departure VAT refunds are separate from import duties and restrictions at your next destination: consult that destination's customs authority. The old inbound tobacco/alcohol thresholds do not belong in a table of Chinese outbound allowances.
 
-### Airports and Exit Ports with Tax Refund Desks
+For daily purchases, see [[wiki/concepts/mobile-payment.md]]. For departure preparation, see [[wiki/concepts/departure-customs.md]].
 
-Refund desks operate at all major international airports (source: chinavigators.com; trip.com):
+## Which Shanghai airport terminals have departure tax refund desks?
 
-| Airport | IATA | Notes |
-|---|---|---|
-| Beijing Capital | PEK | Terminals 2 and 3 |
-| Beijing Daxing | PKX | — |
-| Shanghai Pudong | PVG | Terminals 1 and 2 |
-| Shanghai Hongqiao | SHA | — |
-| Guangzhou Baiyun | CAN | Terminals 1 and 2 |
-| Chengdu Tianfu | TFU | — |
-| Xi'an Xianyang | XIY | — |
-| Shenzhen Bao'an | SZX | — |
+Shanghai’s published directory lists refund agencies at Hongqiao International Airport Terminal 1 and Pudong International Airport Terminals 1 and 2. Check the directory for the location in your departure terminal and allow time for Customs verification.
 
-Land border crossings and ferry ports also process refunds — check signage at your specific exit point.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TaxRefundandDutyFree/20240313/55aec996b80949bc818fb4486ea2f50f.html)
 
-### Refund Payment Options
+## When can I choose a cash departure tax refund?
 
-| Method | Speed | Limit | Notes |
-|---|---|---|---|
-| **Cash (RMB)** | Immediate | ¥20,000 per claim (source: china-briefing.com) | Some counters also pay USD or EUR — ask |
-| **Bank card (credit/debit)** | 14–22 days | Required above ¥20,000 cash limit | Processed back to the card you present |
-| **Alipay / WeChat Pay** | 3–5 days | Up to ¥10,000 (source: trip.com — verify at counter; limits may have been raised) | Scan the QR code at the refund desk |
+If the refund itself is CNY 20,000 or less, you may choose cash in RMB or a bank transfer. A refund above CNY 20,000 must be paid by bank transfer. The threshold uses the refund amount, not the price of the goods.
 
-**Practical note:** cash is simplest for small claims. For large purchases (luxury goods), card refund avoids carrying large amounts of cash through the airport. Set up Alipay before departure — see [[wiki/concepts/mobile-payment.md]].
+[tianjin.chinatax.gov.cn](https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20250428092052057.shtml)
 
-### Key Rules and Deadlines
+## What should I keep for a departure tax refund on purchases?
 
-- Validate your refund form at customs **within 90 days of purchase**
-- Follow the departure-port customs inspection and refund-agent procedure. The cited national rules do not establish a general 30-day-after-validation claim window.
-- Goods must be **unused and in original packaging** at customs inspection — do not open packaging or wear purchased items before leaving China
+The scheme covers eligible overseas visitors who have stayed in mainland China for no more than 183 consecutive days before departure. Ask the participating shop for the refund application form and sales invoice. Keep the goods unused and available for Customs inspection, and take them out as accompanied or checked baggage within 90 days of purchase. Use a departure port with a refund agency.
 
-## What are the customs duty limits when leaving China?
+[www.chinatax.gov.cn](https://www.chinatax.gov.cn/eng/c101276/c102444/c5240901/content.html) · [www.chinatax.gov.cn](https://www.chinatax.gov.cn/eng/c101276/c102444/c5240903/content.html) · [www.chinatax.gov.cn](https://www.chinatax.gov.cn/eng/c101276/c102444/c5240906/content.html)
 
-These are the limits when **leaving China** (what foreign customs at your destination impose is separate and varies by country):
+## Do I need paper forms or a physical inspection for a departure tax refund?
 
-| Item | Duty-free limit on exit from China |
-|---|---|
-| **Inbound personal articles** (context for the thresholds below) | Red channel required at **¥5,000 or above** for Chinese residents, **¥2,000 or above** for non-residents, on articles staying in China. The excess is dutiable |
-| **Personal goods generally** | No outbound duty for reasonable personal-use quantities — China's customs duty limits apply to *incoming* goods; what you buy and take out is your home country's concern |
-| **RMB cash** | ¥20,000 per person outbound (source: customs.gov.cn) |
-| **Foreign currency** | Declare at **USD $5,000 equivalent or above** on the way out (GACC). The further claim that larger amounts need a permit from an authorised Chinese bank is a **foreign-exchange rule, not a customs one** — GACC's passenger guide does not mention it, so it is unverified here; confirm with your bank |
-| **Tobacco** | **Declaration thresholds, not duty-free allowances.** GACC requires the red channel at **400 cigarettes or above**, **100 cigars or above**, or **500 g of tobacco or above** on entry. Below those you may use the green channel and goods are released duty-free as personal effects — but that is "within the limitation set by the Customs" and subject to reasonable-quantity judgement, not an entitlement. Outbound limits are your destination country's concern |
-| **Alcohol** | Same shape: red channel required at **1,500 ml or above** of drinks at 12%+ ABV. Below it, released as personal effects under the same reasonable-quantity caveat |
-| **Chinese medicinal materials** | No more than ¥300 worth if taking to a foreign country |
+Ask the refund shop for the sales invoice and application form. Electronic versions are accepted, and you can request paper copies. From 1 July 2026, goods on forms with sales below CNY 10,000 are selected for physical inspection at random. At CNY 10,000 or above, Customs inspects each form’s goods. Keep your ID and purchases accessible until you have followed the port’s instructions. If the system exempts your form from verification, proceed to the refund agent.
 
-**Note on counterfeit goods:** it is a legal risk in China to purchase counterfeit branded goods, and many countries (EU, US, UK, Australia) impose fines or confiscation at the border for importing them. Counterfeit goods are also excluded from VAT refund eligibility. See the scam-avoidance section in [[wiki/concepts/emergency-safety.md]] for market shopping tips.
+[shanghai.chinatax.gov.cn](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html) · [www.mofcom.gov.cn](https://www.mofcom.gov.cn/zfxxgk/gkml/art/2026/art_c588cb1b63c34184849ebf6a79027cf4.html)
 
-## Where should foreigners shop in China?
+## Where do I take checked purchases for a departure tax refund at Guangzhou Baiyun?
 
-### Luxury Malls
+Guangzhou Customs placed the verification points at the baggage check-in area and added signs in terminals T2 and T3 of Guangzhou Baiyun International Airport (广州白云国际机场). If your purchases need inspection, take them to the verification point before handing over the bag.
 
-| City | Mall | Notes |
-|---|---|---|
-| Beijing | **SKP** (世贸天阶) | China's highest-grossing luxury mall; all major international brands |
-| Beijing | **China World Mall** (国贸商城) | Connected to major hotels; reliable English-speaking staff |
-| Shanghai | **IFC Mall** (国金中心) | Lujiazui; strong tax-free store coverage |
-| Shanghai | **Plaza 66** (恒隆广场) | Nanjing West Road; high-end international brands |
-| Shanghai | **IAPM** | Evening-focused; good for dining and mid-high range brands |
-| Guangzhou | **Taikoo Hui** (太古汇) | Premier luxury mall |
-| Chengdu | **IFS / Taikoo Li** | Upscale retail and dining hub |
+[tradeinservices.mofcom.gov.cn](https://tradeinservices.mofcom.gov.cn/article/xwdt/dfdt/202608/200762.html)
 
-**Important:** prices for international luxury brands in Chinese malls are generally **10–30% higher than in Europe** due to import duties and consumption tax. For VAT refund purposes, the refund applies to the VAT component — the price differential relative to Europe may not fully close even after a refund.
+## Can I bargain at Silk Street in Beijing?
 
-### Electronics Markets
+Beijing’s visitor guide describes bargaining at Silk Street (秀水街) and lists clothing, shoes, souvenirs and rugs among the goods sold there. It also notes that shopkeepers use English and other languages. Confirm the item and the final price with your seller.
 
-| Location | City | What to Buy |
-|---|---|---|
-| **Zhongguancun (中关村)** | Beijing | Laptops, components, software, accessories — China's "Silicon Valley" district |
-| **Huaqiangbei (华强北)** | Shenzhen | Consumer electronics, phone components, accessories; very competitive prices; some grey-market goods — verify authenticity |
+[english.beijing.gov.cn](https://english.beijing.gov.cn/livinginbeijing/DiningShopping/202006/t20200616_1925709.html)
 
-**Huaqiangbei** is the world's largest electronics market district. Prices are competitive, but so is the presence of grey-market or cloned products. Buy from established multi-floor buildings rather than street stalls. Ask for a receipt (发票) — needed for VAT refund and for warranty claims.
+## Which airport, land or ferry departure ports publish tax-refund services?
 
-### Silk, Fabric, and Crafts Markets
+Beijing lists a refund counter in Terminal 3 of Capital International Airport and also reports handling at Daxing International Airport. Shenzhen lists Bao’an International Airport (深圳宝安国际机场), Shekou Cruise Home Port (蛇口邮轮母港) and designated land crossings. At Shenzhen Bay and Wenjindu, the cited notice places the refund point in the passenger inspection channel, not the vehicle lane.
 
-- **Silk Street (秀水街), Beijing** — touristy; English-speaking vendors; convenient location near embassies; prices higher than local markets, but bargaining is expected
-- **Hangzhou and Suzhou** — source cities for silk; specialist fabric markets with better quality and more authentic products
-- **Panjiayuan Antique Market, Beijing** — weekend flea market; mix of genuine antiques, reproductions, and crafts; bargaining essential
-- **Yu Garden Bazaar, Shanghai** — traditional crafts, tea, jade; tourist-oriented; prices are negotiable
+[map.beijing.gov.cn](https://map.beijing.gov.cn/place?categoryId=ljtsfwd&placeId=6826b348f8f52a79c0ac67c7) · [www.beijing.gov.cn](https://www.beijing.gov.cn/ywdt/gzdt/202504/t20250427_4075218.html) · [taxfree.mofcom.gov.cn](https://taxfree.mofcom.gov.cn/taxfreeCnMp/zcwj/2025/7/5a4545e307d54ed4866627dea764a5d6542.html)
 
-### Night Markets and Street Shopping
+## Can I complete a Chongqing instant refund when flying from Chengdu or Xi’an?
 
-Common in Chengdu (Jinli Street), Xian (Muslim Quarter), Chongqing, and smaller cities. Night markets are primarily food-focused; some stalls sell crafts and souvenirs. Cash is standard; some stalls now accept Alipay/WeChat Pay QR. Bargaining is expected at non-food stalls.
+For eligible purchases at participating Chongqing instant-refund shops, Chongqing lists Chengdu Tianfu International Airport (成都天府国际机场) and Xi’an Xianyang International Airport (西安咸阳国际机场) among the departure ports where the advance can be settled. Confirm your port and participating agents when signing the agreement.
 
-## Is bargaining expected when shopping in China?
+[www.cq.gov.cn](https://www.cq.gov.cn/ykbzt/yhyshj/zxdt/202601/t20260122_15343347.html) · [shanghai.chinatax.gov.cn](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202607/t480927.html)
 
-Bargaining is expected and acceptable at **markets, street stalls, and unlicensed small shops**. It is **not** practised at fixed-price stores (department stores, chain shops, supermarkets, brand boutiques).
+## Where can I browse electronics, antiques or local crafts?
 
-**How to bargain:**
-- Start at 20–40% of the asking price and negotiate upward. Sellers quote high specifically to allow negotiation.
-- Walk away slowly if the price isn't acceptable — vendors often call you back with a lower offer.
-- Once you agree on a price, you are expected to buy. Agreeing then refusing is considered rude.
-- Useful phrases: *Tài guì le* (太贵了) — "Too expensive!" | *Zuì dī duōshǎo?* (最低多少钱?) — "What's your lowest price?"
+For electronics in Shenzhen, look for Huaqiangbei (华强北), where the city lists specialist electronics markets. In Beijing, Panjiayuan Antique Market (潘家园旧货市场) is near Panjiayuan Station on metro line 10. Shanghai’s Yuyuan Bazaar (豫园商城) sells handicrafts and local snacks. A listing does not certify the authenticity or export eligibility of any particular item.
 
-**Scam to avoid:** some vendors show you a high-quality item, then swap it for a lower-quality version when packaging your purchase. Check the item before you leave the stall.
+[www.sz.gov.cn](https://www.sz.gov.cn/en_szgov/news/latest/content/post_12950959.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/specials/beijinglifeonthesubway/landmarksalongthesubwaylines/line10/202206/t20220624_2750413.html) · [english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html)
 
-## How do I pay when shopping in China?
+## How can I tell whether a shop in Shanghai participates in departure tax refunds?
 
-| Venue type | Accepted payments | Notes |
-|---|---|---|
-| **Department stores / malls** | Alipay, WeChat Pay, UnionPay, foreign Visa/MC (3-star+ venues per PBOC 2024) | Most tax-refund-eligible stores fall in this category |
-| **Markets and stalls** | Alipay, WeChat Pay, cash | Foreign cards almost never accepted; mobile pay QR codes are universal even at small stalls |
-| **Street vendors** | Cash, sometimes Alipay/WeChat Pay | Always carry ¥50–100 in small bills as backup |
+Check the national departure tax refund information platform or ask the shop before purchasing. Shanghai reported more than 1,700 registered shops at the end of November 2025 and identified a central instant-refund counter in the IAPM mall (环贸广场) on Huaihai Road. Those figures describe that period. Confirm the current shop and counter for your purchase.
 
-For Alipay/WeChat Pay setup with a foreign card, see [[wiki/concepts/mobile-payment.md]]. For cash withdrawal, see [[wiki/concepts/foreign-exchange.md]].
+[touch.shio.gov.cn](https://touch.shio.gov.cn/jsp/jrsh_detail.jsp?id=20260109132651910) · [fgk.chinatax.gov.cn](https://fgk.chinatax.gov.cn/zcfgk/c100013/c5240079/content.html)
 
-## Quick Practical Tips
+## Which Shanghai malls list a shared tax refund counter for participating shops?
 
-- **Keep all receipts** — you need the original receipt and the VAT refund form together at customs. Losing either means losing the refund.
-- **Allow 45 minutes extra at the airport** for the customs stamp and refund desk process on departure day.
-- **Do not open packaging** on purchased items until you have cleared customs at departure.
-- **Photograph your purchases** with the receipt and tax form before packing — useful if anything goes wrong.
-- **For large luxury purchases**, confirm the store is enrolled in the tax-free scheme before buying — ask for the 退税单 (refund form) explicitly; if they can't provide one, they are not enrolled.
-- **Instant refund vs airport refund:** if the store offers instant refund at point of sale, it is more convenient — but you still need to clear customs at departure to finalise it. Do not skip the customs step or the pre-authorization charge will be deducted from your card.
+Shanghai’s September 2026 directory lists IFC Mall (国金中心商场) at 8 Century Avenue, Plaza 66 (恒隆广场) on West Nanjing Road, and IAPM Mall (环贸广场) at 999 Middle Huaihai Road. These counters handle claims for participating stores in the relevant shopping centre or area. Ask your retailer whether your purchase qualifies.
 
-## See Also
-
-- [[wiki/concepts/mobile-payment.md]] — Alipay / WeChat Pay setup for daily payments
-- [[wiki/concepts/foreign-exchange.md]] — Cash, ATMs, foreign-card POS use
-- [[wiki/concepts/emergency-safety.md]] — Scam avoidance, counterfeit goods risk
-
-
-## Scoped source check — 17 November 2026
-
-Correct net-refund example and reform date; remove unsupported post-validation deadline. This check does not re-verify the rest of the page.
-
-- [境外旅客购物离境退税政策指引](https://shanghai.chinatax.gov.cn/tax/xwdt/ztzl/zcgll/ljts/zchb/201911/t449153.html) — 国家税务总局上海市税务局; government. Scope: Shanghai refund calculation and departure procedure; page published 2025-08-12. Accessed 2026-11-17.
-- [国家税务总局公告2025年第11号](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5240071/content.html) — 国家税务总局; government. Scope: 200-yuan threshold amendment dated 2025-04-26. Accessed 2026-11-17.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-TaxRefundandDutyFree/20261029/072dd12ff3b545dfb530a19fd8ecded5.html)

@@ -99,6 +99,20 @@ test('buildFacts tolerates malformed FAQ entries', () => {
   assert.equal(facts[0].id, 'sim-card.faq.1');
 });
 
+test('English and Spanish FAQ endpoints cannot overwrite each other', () => {
+  const english = buildPageModel(makeEntry(), 'guides');
+  const spanish = buildPageModel(makeEntry({
+    faqs: [{ q: '¿Necesito una VPN?', a: 'Normalmente no.' }],
+  }), 'guidesEs');
+  const allFacts = [...english.facts, ...spanish.facts];
+  assert.equal(new Set(allFacts.map(f => f.id)).size, allFacts.length);
+  assert.equal(english.facts[0].id, 'sim-card.faq.1');
+  assert.equal(spanish.facts[0].id, 'es.sim-card.faq.1');
+  assert.equal(buildFactDetail(english, 'sim-card.faq.1').fact.question, 'Do I need a VPN?');
+  assert.equal(buildFactDetail(spanish, 'es.sim-card.faq.1').fact.question, '¿Necesito una VPN?');
+  assert.equal(buildFactDetail(spanish, 'sim-card.faq.1'), null);
+});
+
 test('buildPageModel carries urls, dates, sections and facts', () => {
   const model = buildPageModel(makeEntry(), 'guides');
   assert.equal(model.schema_version, SCHEMA_VERSION);

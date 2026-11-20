@@ -1,61 +1,66 @@
 ---
-title: Canada 加拿大 passport application before China travel
-description: >-
-  Government-source baseline for local passport preparation; this does not
-  determine permission to enter China.
-date: 2026-11-17
-last_verified: 2026-11-17
+title: "Canada Passport: Application Preparation"
+description: Check Canada passport application preparation using official sources. Confirm the route for your age and residence before planning travel to China.
+date: 2026-11-19
+last_verified: 2026-11-19
 verified_against:
-  - >-
-    https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html
+  - https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html
+  - https://travel.gc.ca/destinations/china
 sources: []
 related:
   - wiki/concepts/china-entry-country-rules.md
 volatility: high
 review:
   status: audited
-  auditor: Codex
-  page_audit: 2026-11-17
-  citation_check: 2026-11-17
-  notes: >-
-    Checked only the explicitly stated scope of this short guide against the
-    linked government publications on 2026-11-17. This is not a complete
-    checklist for every applicant or a guarantee of entry.
-category: guide
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-19
+  citation_check: 2026-11-19
+  notes: Retained statements checked within the scope of the linked publications.
 faqs:
   - q: What documents and references do I need?
-    a: >-
-      The official checklist requires citizenship proof, identity evidence, two
-      identical passport photographs, a guarantor and two references. If a
-      Canadian passport or other travel document is still valid, it must also be
-      submitted. Scope: New adult Canadian passport application inside Canada.
+    a: "The official checklist requires citizenship proof, identity evidence, two identical passport photographs, a guarantor and two references. If a Canadian passport or other travel document is still valid, it must also be submitted. Scope: New adult Canadian passport application inside Canada"
+    sources:
+      - https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html
+    fact_number: 1
   - q: Can I submit copies of my supporting documents?
-    a: >-
-      A paper citizenship certificate must be the original; an electronic
-      citizenship certificate requires a printed copy. Copies of identity
-      documents need the specified signatures and dates. Renewal, child and
-      overseas applications use different routes. Scope: New adult Canadian
-      passport application inside Canada.
+    a: "A paper citizenship certificate must be the original; an electronic citizenship certificate requires a printed copy. For an identity-document photocopy, include both sides and have the guarantor or signing official sign and date it. Renewal, child and overseas applications use different routes. Scope: New adult Canadian passport application inside Canada"
+    sources:
+      - https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html
+    fact_number: 2
+  - q: What should I prepare for the trip to China?
+    a: "Canada recommends carrying the name and address of your hotel and your destination written in Chinese characters. Scope: Advice for travellers from Canada."
+    sources:
+      - https://travel.gc.ca/destinations/china
+    fact_number: 3
+category: guide
 ---
-# Canada 加拿大 passport application before China travel
 
-Government-source baseline for local passport preparation; this does not determine permission to enter China.
+# Canada Passport: Application Preparation
 
 ## What documents and references do I need?
+
 The official checklist requires citizenship proof, identity evidence, two identical passport photographs, a guarantor and two references. If a Canadian passport or other travel document is still valid, it must also be submitted.
 
-Scope: New adult Canadian passport application inside Canada. Checked: 2026-11-17.
-Sources: [加拿大移民、难民及公民部 IRCC](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html)
+Scope: New adult Canadian passport application inside Canada
+
+[www.canada.ca](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html)
 
 ## Can I submit copies of my supporting documents?
-A paper citizenship certificate must be the original; an electronic citizenship certificate requires a printed copy. Copies of identity documents need the specified signatures and dates. Renewal, child and overseas applications use different routes.
 
-Scope: New adult Canadian passport application inside Canada. Checked: 2026-11-17.
-Sources: [加拿大移民、难民及公民部 IRCC](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html)
+A paper citizenship certificate must be the original; an electronic citizenship certificate requires a printed copy. For an identity-document photocopy, include both sides and have the guarantor or signing official sign and date it. Renewal, child and overseas applications use different routes.
 
-## Coverage limits
-Not a complete checklist for every age, citizenship history, residence, renewal or emergency case. Passport issuance and China entry eligibility are separate questions.
+Scope: New adult Canadian passport application inside Canada
+
+[www.canada.ca](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports/new-adult-passport/required-documents-photos.html)
+
+## What should I prepare for the trip to China?
+
+Canada recommends carrying the name and address of your hotel and your destination written in Chinese characters.
+
+Scope: Advice for travellers from Canada.
+
+[travel.gc.ca](https://travel.gc.ca/destinations/china)
 
 ## China entry requirements
 
-A passport alone does not establish permission to enter China. See [[wiki/concepts/china-entry-country-rules.md]] and [[wiki/concepts/visa-types.md]] for separate nationality, purpose and route checks.
+Check the rules for your passport, purpose, route and travel dates in [[wiki/concepts/china-entry-country-rules.md]] and [[wiki/concepts/visa-types.md]].

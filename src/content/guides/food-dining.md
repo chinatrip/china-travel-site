@@ -1,13 +1,37 @@
 ---
-title: Food and Dining in China for Foreign Visitors
-date: 2026-05-04
-last_verified: 2026-07-17
+title: Food, dining and delivery in China
+date: 2026-11-19
+last_verified: 2026-11-20
 verified_against:
-  - https://www.chinahighlights.com
-  - https://technode.com/2025/12/05/ele-me-rebrands-as-taobao-flash-sale-ending-17-years-as-an-independent-brand/
-sources:
-  - raw/food-dining-guide-2026.md
-  - raw/realchinaguide-food-dining-2026.md
+  - https://www.cdc.gov/yellow-book/hcp/asia/china.html
+  - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+  - https://english.shanghai.gov.cn/en-BarsandPubs/20240227/fbb5411eab8b489ea719f013131d7c23.html
+  - https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html
+  - https://english.shanghai.gov.cn/en-LearnChinese/20240408/233e22b629f64bf1bfe06d155a3109c7.html
+  - https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f7ab3a6e7ea0426d8fd104fc7c93df79
+  - https://www.eguangzhou.gov.cn/gzspecialreports/intlblocks/fun/cuisine/content/post_31934.html
+  - https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200525_1908295.html
+  - https://www.cfs.gov.hk/english/multimedia/multimedia_pub/multimedia_pub_fsf_240_01.html
+  - https://www.cfs.gov.hk/tc_chi/multimedia/multimedia_pub/multimedia_pub_fsf_240_01.html
+  - https://wb.beijing.gov.cn/home/wswm/yyhj/bscx/bjdfbz/202110/P020211015580261528243.pdf
+  - https://english.shanghai.gov.cn/en-LearnChinese/20240516/3410e17a9855459eaaca8abc89ab9f8f.html
+  - https://one.sipac.gov.cn/szgyyqwsdt/szyqzwdt/html/pages/foreign/files/%E5%A4%96%E7%B1%8D%E4%BA%BA%E5%A3%AB%E7%94%9F%E6%B4%BB%E6%89%8B%E5%86%8C.pdf
+  - https://wlj.xa.gov.cn/wbdw/fwzwhyc/6261100af8fd1c0bdc90f772.html
+  - https://swj.xm.gov.cn/tzzx/tzzn/202211/P020221102314710615015.pdf
+  - https://swt.yn.gov.cn/zfxxgk/fdzdgknr/zcfg/zcfb/202603/t20260326_3217183.html
+  - https://www.shanghai.gov.cn/hpfy/index.html
+  - https://english.shanghai.gov.cn/en-LocalRules/20260924/ea0bcdb1a46f4a78be38bab289cdb9ca.html
+  - https://wwwnc.cdc.gov/travel/page/food-water-safety
+  - https://www.nia.gov.cn/2022cn/files/basic-html/page29.html
+  - https://www.xjyl.gov.cn/xjylz/c112874/202604/280de5febd2649ed8118be24085a8c21.shtml
+  - https://whlyw.cq.gov.cn/zjwl/szq/zqms/202411/t20241111_13787035.html
+  - https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/technology-edu/resources/technology-and-living/TL%20glossary%202018_update%202022_final.pdf
+  - https://en.xa.gov.cn/MediaCenter/News/1691691410275291138.html
+  - https://wb.beijing.gov.cn/home/wswm/yyhj/smjwy/202209/t20220922_2820937.html
+  - https://hunan.gov.cn/topic/ccjhl/dez/202101/t20210127_14290088.html
+  - https://english.scio.gov.cn/featured/chinakeywords/2024-08/30/content_117397262.htm
+  - https://dfz.cq.gov.cn/zqlswh/rwby_417819/202412/t20241219_13907530.html
+sources: []
 related:
   - wiki/concepts/mobile-payment.md
   - wiki/concepts/internet-connectivity.md
@@ -17,247 +41,273 @@ related:
 volatility: low
 review:
   status: audited
-  page_audit: 2026-06-09
-  citation_check: 2026-05-06
-  notes: "2026-07-17: Added a 'Spice and Chili Tolerance' section (comfort/health guidance for low-tolerance visitors — pacing tips and a note that severe or persistent symptoms warrant a doctor), per traveler feedback. The chili-heat context matches the page's existing regional-cuisine content; the split-pot and milk-not-water tips are general common knowledge. No new external source added and no medication recommended. Other sections carried forward from the 2026-06-09 audit, not re-verified this round; page_audit unchanged."
-description: >-
-  Order food in China without speaking Chinese: photo menus, camera translation,
-  allergy phrases, delivery apps (Meituan, Ele.me), and regional cuisine basics.
+  auditor: ChinaGuide source review
+  page_audit: 2026-11-20
+  citation_check: 2026-11-20
+  notes: Retained statements checked within the scope of the linked publications. Additional questions and their linked sources were checked in the follow-up source review on 19 November 2026.
+description: Plan for food allergies, read restaurant reviews and check delivery options in Shanghai.
 faqs:
-  - q: How do I order food in China if I don't speak Chinese?
-    a: >-
-      Mostly you won't need to speak at all: most restaurants use QR-code table
-      ordering — scan the code on your table with WeChat or Alipay, browse the
-      photo menu, and submit and pay in the app. In smaller restaurants,
-      pointing at menu photos is widely accepted, and pointing at another
-      table's dish while saying 我要这个 ("I want this one") is socially normal in
-      China. You can also ask for a picture menu (图片菜单 — many restaurants keep
-      tablet or picture versions for foreigners), or open Meituan or 淘宝闪购 to see
-      that restaurant's dishes with photos and ratings even when ordering in
-      person. For text-only menus, camera translation works with caveats: Google
-      Translate's camera mode needs a VPN and struggles with handwritten menus,
-      and taking a clear, well-lit photo to upload is often more accurate than
-      live scanning. No mobile payment set up yet? Ask staff for a physical bill
-      and pay cash or foreign card at the counter.
-  - q: How do I handle food allergies or dietary restrictions in China?
-    a: >-
-      Show your restrictions written in Chinese rather than relying on machine
-      translation of dish names. Keep prepared phrases on your phone — for
-      example 我对花生过敏，请不要放花生或花生油 (peanut allergy: no peanuts or peanut oil) — and
-      paste them into the order-notes field when ordering delivery. Be specific
-      and cautious: peanut oil is used pervasively in Chinese cooking,
-      cross-contamination is common, and kitchen allergy awareness varies, so
-      for severe allergies stick to international hotel restaurants or
-      communicate directly with staff. Vegetarians should know many dishes
-      described as vegetarian contain lard, oyster sauce, or fish sauce —
-      Buddhist vegetarian restaurants (素食餐厅) strictly avoid all meat, fish, and
-      eggs; search "素食" in Dianping or Meituan. Halal (清真) food is widely
-      available, particularly in Xinjiang-style restaurants and cities with
-      Muslim communities such as Xi'an and Lanzhou — look for the 清真 sign on
-      storefronts.
-  - q: Can I get food delivery as a foreigner in China?
-    a: >-
-      Yes. The two platforms are Meituan Waimai (美团外卖), the dominant one with
-      the yellow logo, and 淘宝闪购 — the Alibaba-owned service formerly known as
-      饿了么/Ele.me — which integrates with Alipay. Both run as standalone apps or
-      as mini-programs (Meituan inside WeChat, 淘宝闪购 inside Alipay), both take
-      WeChat Pay and Alipay, and both accept international phone numbers for
-      registration as of 2026 — though verify on the platform's help pages
-      before relying on this, as policies change. Two setup details matter:
-      enter your delivery address in Chinese (hotel name plus room number — copy
-      it from your booking confirmation or ask hotel reception to write it for
-      you), and the contact number must be in Chinese mainland format, so use
-      your hotel front desk's number if you don't have a Chinese SIM. Minimum
-      orders are typically ¥15–30, and deliveries arrive in 20–40 minutes in
-      major cities.
-  - q: Is Chinese food very spicy everywhere?
-    a: >-
-      No — spiciness is regional, not universal. The genuinely fiery cuisines
-      are Sichuan (spicy and numbing, 麻辣 — hotpot, mapo tofu, kung pao chicken),
-      Hunan (spicy without the Sichuan numbness), and above all Chongqing, the
-      spiciest region of all, where even locals sweat over the hotpot. Plenty of
-      major cuisines are mild: Cantonese food is light, mild, and fresh — this
-      is dim sum territory — Shanghai cooking is sweet-savory and mild, Shandong
-      leans salty and braised, and Yunnan favors fresh herbs and sour flavors
-      over heat. You can also turn down the heat when ordering: ask for 不辣 (bù
-      là, not spicy) or 少辣 (shǎo là, less spicy). In Chengdu, where spice levels
-      are intense, start with 微辣 (slightly spicy) — and the Haidilao hotpot
-      chain there has English menus if you want guidance.
+  - q: Which food precautions does CDC recommend for China?
+    a: CDC advises avoiding unpasteurized milk and undercooked meat and taking food, water and hand-hygiene precautions. If you have a food allergy or follow a vegetarian diet, write down ingredients to check with the restaurant before ordering.
+    sources:
+      - https://www.cdc.gov/yellow-book/hcp/asia/china.html
+    fact_number: 5
+  - q: How can I order a meal in Shanghai?
+    a: Shanghai’s guide describes ordering on Meituan (美团) and Taobao Instant Commerce (淘宝闪购). Choose a delivery address, review the order and check the total before paying. Ask your accommodation where deliveries can be collected.
+    sources:
+      - https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html
+    fact_number: 6
+  - q: What is Dianping useful for?
+    a: Shanghai’s municipal portal describes Dianping (大众点评) as a customer review app. Use reviews to shortlist places, then check the address, opening hours and any dietary questions directly with the venue.
+    sources:
+      - https://english.shanghai.gov.cn/en-BarsandPubs/20240227/fbb5411eab8b489ea719f013131d7c23.html
+    fact_number: 7
+  - q: What are Shanghai soup dumplings?
+    a: 小笼包 (xiaolongbao, or soup dumplings) are small steamed dumplings with hot broth inside. Shanghai’s municipal guide describes 南翔小笼包 (Nanxiang soup dumplings) in connection with Nanxiang in Shanghai’s Jiading District. Ask the restaurant about the filling before ordering.
+    sources:
+      - https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html
+    fact_number: 8
+  - q: How do I tell a restaurant I have a peanut allergy?
+    a: Show or say 我对花生过敏 (I am allergic to peanuts). You can ask 你们用花生油吗？ (Do you use peanut oil?). Tell staff the specific ingredient and check preparation with them before deciding whether to eat the dish.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240408/233e22b629f64bf1bfe06d155a3109c7.html
+    fact_number: 9
+  - q: How can I say I am vegan?
+    a: 我吃纯素 (wǒ chī chún sù) means “I eat a vegan diet.” If you need to avoid particular ingredients, name them and ask how the dish is prepared.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240408/233e22b629f64bf1bfe06d155a3109c7.html
+    fact_number: 10
+  - q: Which local dishes can I look for in Chengdu, Guangzhou and Beijing?
+    a: In Chengdu (成都), look for mapo tofu (麻婆豆腐), a Sichuan tofu dish. In Guangzhou (广州), morning tea (早茶) includes Cantonese dim sum (点心). In Beijing (北京), look for Peking duck (北京烤鸭). Use the Chinese names when searching a menu.
+    sources:
+      - https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f7ab3a6e7ea0426d8fd104fc7c93df79
+      - https://www.eguangzhou.gov.cn/gzspecialreports/intlblocks/fun/cuisine/content/post_31934.html
+      - https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200525_1908295.html
+    fact_number: 11
+  - q: Which Chinese ingredient names can help me explain a food allergy?
+    a: Name the specific ingredient and ask staff to confirm it with the kitchen. Examples include milk (奶类), eggs (蛋类), peanuts (花生), tree nuts (木本坚果) and crustaceans (甲壳类动物). Wheat (小麦) is one of several cereals containing gluten (麸质).
+    sources:
+      - https://www.cfs.gov.hk/english/multimedia/multimedia_pub/multimedia_pub_fsf_240_01.html
+      - https://www.cfs.gov.hk/tc_chi/multimedia/multimedia_pub/multimedia_pub_fsf_240_01.html
+    fact_number: 12
+  - q: Which Chinese words identify a menu or a vegetarian menu?
+    a: 菜单 means “menu”. 素食菜单 means “vegetarian menu”.
+    sources:
+      - https://wb.beijing.gov.cn/home/wswm/yyhj/bscx/bjdfbz/202110/P020211015580261528243.pdf
+    fact_number: 13
+  - q: How can I recognise coriander on a Chinese menu?
+    a: 香菜 (xiāng cài) means coriander, also called cilantro.
+    sources:
+      - https://english.shanghai.gov.cn/en-LearnChinese/20240516/3410e17a9855459eaaca8abc89ab9f8f.html
+    fact_number: 14
+  - q: How can I tell a restaurant how spicy I want my food?
+    a: Use 不辣 (bù là) for “not spicy”, 少辣 (shǎo là) for “less spicy”, or 微辣 (wēi là) for “mildly spicy”. These describe how you want the dish prepared.
+    sources:
+      - https://one.sipac.gov.cn/szgyyqwsdt/szyqzwdt/html/pages/foreign/files/%E5%A4%96%E7%B1%8D%E4%BA%BA%E5%A3%AB%E7%94%9F%E6%B4%BB%E6%89%8B%E5%86%8C.pdf
+    fact_number: 15
+  - q: What are some regional foods I can look for in Xi’an, Xiamen and Yunnan?
+    a: Xi’an lists roujiamo (肉夹馍), a meat-filled flatbread, among its food-making traditions. Xiamen lists shacha noodles (沙茶面) and oyster omelettes (海蛎煎) among its Minnan snacks. In Yunnan, look for crossing-the-bridge rice noodles (过桥米线).
+    sources:
+      - https://wlj.xa.gov.cn/wbdw/fwzwhyc/6261100af8fd1c0bdc90f772.html
+      - https://swj.xm.gov.cn/tzzx/tzzn/202211/P020221102314710615015.pdf
+      - https://swt.yn.gov.cn/zfxxgk/fdzdgknr/zcfg/zcfb/202603/t20260326_3217183.html
+    fact_number: 16
+  - q: What flavour does Shanghai associate with its local Benbang cooking?
+    a: Shanghai describes Benbang cuisine (本帮菜) as rich and often salty-sweet, with red-braising among its characteristic methods. This describes a regional tradition; the seasoning varies by dish.
+    sources:
+      - https://www.shanghai.gov.cn/hpfy/index.html
+    fact_number: 17
+  - q: How are halal-food businesses identified in Shanghai?
+    a: Shanghai’s regulations require factories, shops and stalls operating halal-food businesses to identify halal food on their signboards. Look for 清真 and check with staff about the food you want.
+    sources:
+      - https://english.shanghai.gov.cn/en-LocalRules/20260924/ea0bcdb1a46f4a78be38bab289cdb9ca.html
+    fact_number: 18
+  - q: What should I check before eating cooked food while travelling?
+    a: CDC recommends food that is fully cooked and served hot. Food that has been standing at room temperature can pose a risk even when it looks fresh.
+    sources:
+      - https://wwwnc.cdc.gov/travel/page/food-water-safety
+    fact_number: 19
+  - q: Which places do the cuisine names 湘菜 and 鲁菜 refer to?
+    a: 湘菜 means Hunan cuisine and 鲁菜 means Shandong cuisine. Both appear in the National Immigration Administration’s guide to China’s eight major culinary traditions.
+    sources:
+      - https://www.nia.gov.cn/2022cn/files/basic-html/page29.html
+    fact_number: 20
+  - q: Which Xinjiang foods might I see listed as 大盘鸡 and 拌面?
+    a: A regional food list published by the Ili prefectural government includes big-plate chicken (大盘鸡) and Xinjiang mixed noodles (新疆拌面). These names identify dishes; preparation can vary.
+    sources:
+      - https://www.xjyl.gov.cn/xjylz/c112874/202604/280de5febd2649ed8118be24085a8c21.shtml
+    fact_number: 21
+  - q: What hot-pot options can I ask about in Chongqing?
+    a: Chongqing’s tourism authority lists yuanyang hot pot (鸳鸯锅) and red-broth hot pot (红汤锅), with different levels of heat. Ask which broths the restaurant serves.
+    sources:
+      - https://whlyw.cq.gov.cn/zjwl/szq/zqms/202411/t20241111_13787035.html
+    fact_number: 22
+  - q: Are mushrooms part of Yunnan’s local cuisine?
+    a: Yunnan’s provincial commerce department identifies mushroom banquets (菌子宴) among the region’s distinctive meals.
+    sources:
+      - https://swt.yn.gov.cn/zfxxgk/fdzdgknr/zcfg/zcfb/202603/t20260326_3217183.html
+    fact_number: 23
+  - q: What does 味精 mean on a menu or ingredient list?
+    a: 味精 means monosodium glutamate (MSG).
+    sources:
+      - https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/technology-edu/resources/technology-and-living/TL%20glossary%202018_update%202022_final.pdf
+    fact_number: 24
+  - q: Where is Xi’an’s Huimin Street and what food does the city describe there?
+    a: Xi’an identifies Huimin Street (回民街) as its Muslim Quarter. One snack the city describes there is jinggao (甑糕), made with sticky rice and dates.
+    sources:
+      - https://en.xa.gov.cn/MediaCenter/News/1691691410275291138.html
+    fact_number: 25
+  - q: How do I ask for a table for two at a Chinese restaurant?
+    a: A table for two is 两人桌 (liǎng rén zhuō). If the host asks 请问一共几位？ (“How many people?”), reply 两位 (liǎng wèi), meaning “two of us.”
+    sources:
+      - https://wb.beijing.gov.cn/home/wswm/yyhj/smjwy/202209/t20220922_2820937.html
+      - https://hunan.gov.cn/topic/ccjhl/dez/202101/t20210127_14290088.html
+    fact_number: 26
+  - q: What makes some Sichuan dishes taste numbing as well as spicy?
+    a: Sichuan pepper (花椒, huājiāo) gives some dishes their numbing sensation. This combination of numbing and spicy is called 麻辣 (málà) and is characteristic of Sichuan cuisine from Sichuan and Chongqing.
+    sources:
+      - https://english.scio.gov.cn/featured/chinakeywords/2024-08/30/content_117397262.htm
+      - https://dfz.cq.gov.cn/zqlswh/rwby_417819/202412/t20241219_13907530.html
+    fact_number: 27
 category: guide
 ---
 
-# Food and Dining in China for Foreign Visitors
+# Food, dining and delivery in China
 
-## How do I find good restaurants in China?
+## Which food precautions does CDC recommend for China?
 
-- **Dianping (大众点评):** China's dominant restaurant review platform (like Yelp). Works without VPN. Star ratings and photo menus are navigable without Chinese.
-- **Meituan:** same app used for delivery; also lists restaurants with menus and reviews.
-- **Amap (高德地图):** search nearby restaurants; links to Dianping reviews. Google Maps is blocked — use Amap instead.
+CDC advises avoiding unpasteurized milk and undercooked meat and taking food, water and hand-hygiene precautions. If you have a food allergy or follow a vegetarian diet, write down ingredients to check with the restaurant before ordering.
 
-## How do I order food at a restaurant in China?
+[www.cdc.gov](https://www.cdc.gov/yellow-book/hcp/asia/china.html)
 
-Most restaurants use QR-code table ordering:
-1. Scan the QR code on your table with WeChat or Alipay.
-2. Browse the photo menu and add items to cart.
-3. Submit order and pay via WeChat Pay or Alipay.
+## How can I order a meal in Shanghai?
 
-In smaller restaurants, point-and-order using the menu photos is widely accepted. If you haven't set up WeChat Pay or Alipay yet, ask staff for a physical bill and pay with cash or a foreign card at the counter.
+Shanghai’s guide describes ordering on Meituan (美团) and Taobao Instant Commerce (淘宝闪购). Choose a delivery address, review the order and check the total before paying. Ask your accommodation where deliveries can be collected.
 
-### Ordering Without Speaking Chinese
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-UsefulApps/20240109/89844b5729d64b199463a156bc8ef43d.html)
 
-Several strategies work in practice:
+## What is Dianping useful for?
 
-1. **Ask for picture menu:** Say '图片菜单' (tú piàn cài dān). Many restaurants keep tablet or picture versions for foreigners.
-2. **Point at other tables:** See a dish you want? Point and say '我要这个' (wǒ yào zhè ge = "I want this one"). This is socially normal in China.
-3. **Use delivery app photos:** Open Meituan or 淘宝闪购 (formerly Ele.me) to see that restaurant's dishes with photos and ratings, even if you order in person.
-4. **Show photos from your phone:** Search Google Images for the dish name and show staff.
-5. **Ask staff to write it down:** For handwritten menus or regional dialects, ask staff to write the dish name on your phone, then translate it.
+Shanghai’s municipal portal describes Dianping (大众点评) as a customer review app. Use reviews to shortlist places, then check the address, opening hours and any dietary questions directly with the venue.
 
-### Menu Translation Apps and Tips
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-BarsandPubs/20240227/fbb5411eab8b489ea719f013131d7c23.html)
 
-| Method | How it works | Limitations |
-|--------|-------------|-------------|
-| Google Translate camera | Open app → Camera mode → Point at printed menu → Instant visual overlay | Requires VPN; struggles with handwritten menus |
-| Pleco dictionary | Look up individual characters offline | Manual; no camera auto-translate |
-| Meituan/淘宝闪购 in-app translation | Tap ··· menu → 翻译 (translate) → supports 18 languages | Only works within the delivery app interface |
-| Photo upload approach | Take clear photo of menu, upload to translation app | Often more accurate than live camera scan |
+## What are Shanghai soup dumplings?
 
-**Tip:** Menu photo translation often works better than live camera scanning. Take a clear, well-lit photo and upload it rather than relying on real-time OCR.
+小笼包 (xiaolongbao, or soup dumplings) are small steamed dumplings with hot broth inside. Shanghai’s municipal guide describes 南翔小笼包 (Nanxiang soup dumplings) in connection with Nanxiang in Shanghai’s Jiading District. Ask the restaurant about the filling before ordering.
 
-## Do I tip at restaurants in China?
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html)
 
-**Tipping is not customary in China** — at restaurants, hotels, or for services. Leaving cash on the table will typically be returned to you. At international hotels, ¥10–20 for porters is acceptable but not required.
+## How do I tell a restaurant I have a peanut allergy?
 
-## How does food delivery work for foreigners in China?
+Show or say 我对花生过敏 (I am allergic to peanuts). You can ask 你们用花生油吗？ (Do you use peanut oil?). Tell staff the specific ingredient and check preparation with them before deciding whether to eat the dish.
 
-### Platforms
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240408/233e22b629f64bf1bfe06d155a3109c7.html)
 
-| Platform | Notes |
-|---|---|
-| **Meituan Waimai (美团外卖)** | Dominant platform; yellow logo. Standalone app or WeChat Mini Program. |
-| **淘宝闪购 (formerly 饿了么/Ele.me)** | Alibaba-owned; integrates with Alipay. App or Alipay Mini Program. |
+## How can I say I am vegan?
 
-Both platforms accept international phone numbers for registration as of 2026 — verify on the platform's help pages before relying on this, as policies change. Deliveries typically arrive in 20–40 minutes in major cities.
+我吃纯素 (wǒ chī chún sù) means “I eat a vegan diet.” If you need to avoid particular ingredients, name them and ask how the dish is prepared.
 
-### Delivery Setup Notes
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240408/233e22b629f64bf1bfe06d155a3109c7.html)
 
-- Set your delivery address in Chinese (hotel name + room number). If you can't type Chinese characters, ask hotel reception to write the address for you, or copy it from your booking confirmation.
-- The contact phone number must be in Chinese mainland format — use your hotel front desk number if you don't have a Chinese SIM.
-- Minimum order amounts typically ¥15–30.
-- Payment: WeChat Pay and Alipay work on both platforms.
+## Which local dishes can I look for in Chengdu, Guangzhou and Beijing?
 
-## How do I communicate allergies or dietary needs in China?
+In Chengdu (成都), look for mapo tofu (麻婆豆腐), a Sichuan tofu dish. In Guangzhou (广州), morning tea (早茶) includes Cantonese dim sum (点心). In Beijing (北京), look for Peking duck (北京烤鸭). Use the Chinese names when searching a menu.
 
-### Allergies
+[lzhbwg.mofcom.gov.cn](https://lzhbwg.mofcom.gov.cn/edi_ecms_web_front/thb/detail/f7ab3a6e7ea0426d8fd104fc7c93df79) · [www.eguangzhou.gov.cn](https://www.eguangzhou.gov.cn/gzspecialreports/intlblocks/fun/cuisine/content/post_31934.html) · [english.beijing.gov.cn](https://english.beijing.gov.cn/beijinginfo/culture/202005/t20200525_1908295.html)
 
-Write bilingual instructions in the order notes field:
+## Which Chinese ingredient names can help me explain a food allergy?
 
-| Condition | Chinese phrase |
-|---|---|
-| Peanut allergy | 我对花生过敏，请不要放花生或花生油 |
-| Shellfish allergy | 我对海鲜/贝类过敏，请不要放任何海鲜或贝类 |
-| Nut allergy (general) | 我对坚果过敏 |
-| Gluten / wheat | 我不能吃面粉/小麦 |
-| Dairy | 我不能吃奶制品/牛奶 |
-| Egg | 我不能吃鸡蛋 |
+Name the specific ingredient and ask staff to confirm it with the kitchen. Examples include milk (奶类), eggs (蛋类), peanuts (花生), tree nuts (木本坚果) and crustaceans (甲壳类动物). Wheat (小麦) is one of several cereals containing gluten (麸质).
 
-**Important:** peanut oil is used pervasively in Chinese cooking. For severe allergies, stick to international hotel restaurants or communicate directly with staff — cross-contamination is common and kitchen allergy awareness varies.
+[www.cfs.gov.hk](https://www.cfs.gov.hk/english/multimedia/multimedia_pub/multimedia_pub_fsf_240_01.html) · [www.cfs.gov.hk](https://www.cfs.gov.hk/tc_chi/multimedia/multimedia_pub/multimedia_pub_fsf_240_01.html)
 
-### Vegetarian and Vegan
+## Which Chinese words identify a menu or a vegetarian menu?
 
-True vegetarianism is uncommon in Chinese cuisine — many dishes described as vegetarian contain lard, oyster sauce, or fish sauce.
+菜单 means “menu”. 素食菜单 means “vegetarian menu”.
 
-| Phrase | Chinese | Meaning |
-|---|---|---|
-| I am vegetarian | 我吃素 | Wǒ chī sù |
-| No meat | 不要肉 | Bù yào ròu |
-| No pork / beef / chicken | 不要猪肉/牛肉/鸡肉 | — |
-| I am vegan | 我是纯素食者，不吃任何动物产品包括蛋和奶 | — |
-| Does this contain meat broth or lard? | 这个菜有肉汤或猪油吗？ | — |
+[wb.beijing.gov.cn](https://wb.beijing.gov.cn/home/wswm/yyhj/bscx/bjdfbz/202110/P020211015580261528243.pdf)
 
-**Buddhist vegetarian restaurants (素食餐厅)** strictly avoid all meat, fish, eggs, and often onions and garlic. Search "素食" in Dianping or Meituan.
+## How can I recognise coriander on a Chinese menu?
 
-### Halal
+香菜 (xiāng cài) means coriander, also called cilantro.
 
-Halal (清真, qīngzhēn) food is widely available, particularly in Xinjiang-style restaurants and in cities with Muslim communities (Xi'an, Lanzhou, Ningxia, parts of Yunnan). Look for the 清真 sign on restaurant storefronts.
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LearnChinese/20240516/3410e17a9855459eaaca8abc89ab9f8f.html)
 
-## Useful Phrases for Restaurants
+## How can I tell a restaurant how spicy I want my food?
 
-| Situation | Chinese | Pinyin |
-|---|---|---|
-| A table for [2] | 两位 | Liǎng wèi |
-| The menu | 菜单 | Càidān |
-| I'll have this (point) | 我要这个 | Wǒ yào zhège |
-| Not spicy | 不辣 | Bù là |
-| Slightly spicy | 微辣 | Wēi là |
-| Less spicy | 少辣 | Shǎo là |
-| No cilantro | 不要香菜 | Bù yào xiāngcài |
-| No MSG | 不要味精 | Bù yào wèijīng |
-| The bill, please | 买单 | Mǎidān |
+Use 不辣 (bù là) for “not spicy”, 少辣 (shǎo là) for “less spicy”, or 微辣 (wēi là) for “mildly spicy”. These describe how you want the dish prepared.
 
-## What are China's main regional cuisines?
+[one.sipac.gov.cn](https://one.sipac.gov.cn/szgyyqwsdt/szyqzwdt/html/pages/foreign/files/%E5%A4%96%E7%B1%8D%E4%BA%BA%E5%A3%AB%E7%94%9F%E6%B4%BB%E6%89%8B%E5%86%8C.pdf)
 
-| Region | Character | Flavor profile |
-|---|---|---|
-| Sichuan | 四川 | Spicy and numbing (麻辣); mapo tofu, hotpot, kung pao chicken |
-| Cantonese | 粤菜 | Light, mild, fresh; dim sum; common in Guangdong |
-| Hunan | 湘菜 | Spicy (without Sichuan numbness) |
-| Shandong | 鲁菜 | Salty, braised, seafood-heavy |
-| Shanghai | 沪菜 | Sweet-savory, mild |
-| Xinjiang | 新疆 | Lamb, cumin, flatbreads, pulled noodles |
-| Yunnan | 云南 | Fresh herbs, mushrooms, sour flavors |
+## What are some regional foods I can look for in Xi’an, Xiamen and Yunnan?
 
-## Which Chinese dishes should first-timers try?
+Xi’an lists roujiamo (肉夹馍), a meat-filled flatbread, among its food-making traditions. Xiamen lists shacha noodles (沙茶面) and oyster omelettes (海蛎煎) among its Minnan snacks. In Yunnan, look for crossing-the-bridge rice noodles (过桥米线).
 
-| City/Region | Must-try dishes | Notes |
-|-------------|----------------|-------|
-| **Beijing** | Peking duck, zhajiangmian (炸酱面, noodles w/ soybean paste), jianbing (street crepe), dumplings | Hutong street food is excellent; imperial cuisine at higher-end restaurants |
-| **Shanghai** | Xiaolongbao (小笼包, soup dumplings), shengjianbao (生煎包), crab shell cakes, sweet osmanthus cake | Din Tai Fung is reliable for xiaolongbao; most diverse food city overall |
-| **Chengdu** | Sichuan hotpot, mapo tofu, kung pao chicken, dan dan noodles | Haidilao chain has English menus; spice level is intense — order '微辣' (slightly spicy) to start |
-| **Chongqing** | Hotpot (spicier than Chengdu), grilled fish, xiaomian noodles | THE spiciest region — even locals sweat |
-| **Xi'an** | Cumin lamb skewers (烤羊肉串), roujiamo (肉夹馍, "Chinese burger"), biangbiang noodles | Muslim Quarter has endless street food; budget 50-100 RMB |
-| **Guangzhou** | Dim sum (morning tea tradition), char siu, congee, wonton noodles | Cantonese food capital; go early for dim sum (7-9 AM) |
-| **Xiamen** | Fresh seafood, oyster omelette, satay noodles, peanut soup | Fujian/Min Nan flavors |
-| **Xinjiang/Kashgar** | Da pan ji (大盘鸡, big plate chicken), lamb pilaf, naan bread, cumin lamb | Central Asian influence; halal-friendly |
-| **Yunnan** | Crossing-the-bridge noodles (过桥米线), wild mushrooms, Dai-style grilled fish | Fresh herbs, sour flavors; Dali has good Western food too |
+[wlj.xa.gov.cn](https://wlj.xa.gov.cn/wbdw/fwzwhyc/6261100af8fd1c0bdc90f772.html) · [swj.xm.gov.cn](https://swj.xm.gov.cn/tzzx/tzzn/202211/P020221102314710615015.pdf) · [swt.yn.gov.cn](https://swt.yn.gov.cn/zfxxgk/fdzdgknr/zcfg/zcfb/202603/t20260326_3217183.html)
 
-## Spice and Chili Tolerance
+## What flavour does Shanghai associate with its local Benbang cooking?
 
-China's "spice belt" — Sichuan, Chongqing, Hunan, Hubei, and Jiangxi — builds many dishes around chili, and Sichuan and Chongqing cooking adds mouth-numbing Sichuan peppercorn (麻辣, málà) on top. If you are not used to this level of heat, ease in rather than starting your trip with a Chongqing hotpot: visitors with low chili tolerance sometimes get stomach upset or diarrhea, a sore mouth or throat, or skin irritation around the lips after a very spicy meal.
+Shanghai describes Benbang cuisine (本帮菜) as rich and often salty-sweet, with red-braising among its characteristic methods. This describes a regional tradition; the seasoning varies by dish.
 
-Ways to pace yourself:
-- Order 微辣 (wēi là, slightly spicy) or 少辣 (shǎo là, less spicy) to start, or 不辣 (bù là, not spicy) for none — see the phrase table above.
-- In hotpot places, ask for a split pot (鸳鸯锅, yuānyāng guō) so a mild broth sits alongside the spicy one.
-- Sip milk, yogurt, or sweet soy milk rather than water to calm the burn — water just spreads the chili oil around.
-- Build up over several meals instead of one extreme meal on day one.
+[www.shanghai.gov.cn](https://www.shanghai.gov.cn/hpfy/index.html)
 
-These reactions are usually mild and short-lived. If stomach upset, a rash, or other symptoms are severe or don't settle, treat it as you would any illness and see a doctor — see [[wiki/concepts/health-medical.md]].
+## How are halal-food businesses identified in Shanghai?
 
-## Is street food safe to eat in China?
+Shanghai’s regulations require factories, shops and stalls operating halal-food businesses to identify halal food on their signboards. Look for 清真 and check with staff about the food you want.
 
-Street food is generally safe if:
-- Freshly cooked and served hot
-- From a busy stall with high turnover
+[english.shanghai.gov.cn](https://english.shanghai.gov.cn/en-LocalRules/20260924/ea0bcdb1a46f4a78be38bab289cdb9ca.html)
 
-Exercise caution with:
-- Cold dishes left sitting out (especially in summer)
-- Raw vegetables at budget restaurants (may be washed in tap water)
-- Shellfish from unlicensed stalls far from the coast
+## What should I check before eating cooked food while travelling?
 
-**Tap water:** not safe to drink anywhere in mainland China. Use bottled water (矿泉水, kuànquánshuǐ) or hotel boiled water (开水, kāishuǐ).
+CDC recommends food that is fully cooked and served hot. Food that has been standing at room temperature can pose a risk even when it looks fresh.
 
-## App Summary
+[wwwnc.cdc.gov](https://wwwnc.cdc.gov/travel/page/food-water-safety)
 
-| App | Use | VPN needed? |
-|---|---|---|
-| Dianping (大众点评) | Restaurant discovery, reviews | No |
-| Meituan Waimai (美团外卖) | Food delivery | No |
-| 淘宝闪购 (formerly 饿了么) | Food delivery | No |
-| WeChat Mini Programs | Table ordering, delivery, payment | No |
+## Which places do the cuisine names 湘菜 and 鲁菜 refer to?
 
-## See Also
+湘菜 means Hunan cuisine and 鲁菜 means Shandong cuisine. Both appear in the National Immigration Administration’s guide to China’s eight major culinary traditions.
 
-- [[wiki/concepts/mobile-payment.md]] — WeChat Pay and Alipay setup (required for QR ordering and delivery)
-- [[wiki/concepts/health-medical.md]] — Food safety, tap water, common stomach issues
-- [[wiki/entities/meituan.md]] — Meituan food delivery setup and tips
-- [[wiki/entities/eleme.md]] — 淘宝闪购 (formerly 饿了么/Ele.me) instant delivery via Alipay
+[www.nia.gov.cn](https://www.nia.gov.cn/2022cn/files/basic-html/page29.html)
+
+## Which Xinjiang foods might I see listed as 大盘鸡 and 拌面?
+
+A regional food list published by the Ili prefectural government includes big-plate chicken (大盘鸡) and Xinjiang mixed noodles (新疆拌面). These names identify dishes; preparation can vary.
+
+[www.xjyl.gov.cn](https://www.xjyl.gov.cn/xjylz/c112874/202604/280de5febd2649ed8118be24085a8c21.shtml)
+
+## What hot-pot options can I ask about in Chongqing?
+
+Chongqing’s tourism authority lists yuanyang hot pot (鸳鸯锅) and red-broth hot pot (红汤锅), with different levels of heat. Ask which broths the restaurant serves.
+
+[whlyw.cq.gov.cn](https://whlyw.cq.gov.cn/zjwl/szq/zqms/202411/t20241111_13787035.html)
+
+## Are mushrooms part of Yunnan’s local cuisine?
+
+Yunnan’s provincial commerce department identifies mushroom banquets (菌子宴) among the region’s distinctive meals.
+
+[swt.yn.gov.cn](https://swt.yn.gov.cn/zfxxgk/fdzdgknr/zcfg/zcfb/202603/t20260326_3217183.html)
+
+## What does 味精 mean on a menu or ingredient list?
+
+味精 means monosodium glutamate (MSG).
+
+[www.edb.gov.hk](https://www.edb.gov.hk/attachment/tc/curriculum-development/kla/technology-edu/resources/technology-and-living/TL%20glossary%202018_update%202022_final.pdf)
+
+## Where is Xi’an’s Huimin Street and what food does the city describe there?
+
+Xi’an identifies Huimin Street (回民街) as its Muslim Quarter. One snack the city describes there is jinggao (甑糕), made with sticky rice and dates.
+
+[en.xa.gov.cn](https://en.xa.gov.cn/MediaCenter/News/1691691410275291138.html)
+
+## How do I ask for a table for two at a Chinese restaurant?
+
+A table for two is 两人桌 (liǎng rén zhuō). If the host asks 请问一共几位？ (“How many people?”), reply 两位 (liǎng wèi), meaning “two of us.”
+
+[wb.beijing.gov.cn](https://wb.beijing.gov.cn/home/wswm/yyhj/smjwy/202209/t20220922_2820937.html) · [hunan.gov.cn](https://hunan.gov.cn/topic/ccjhl/dez/202101/t20210127_14290088.html)
+
+## What makes some Sichuan dishes taste numbing as well as spicy?
+
+Sichuan pepper (花椒, huājiāo) gives some dishes their numbing sensation. This combination of numbing and spicy is called 麻辣 (málà) and is characteristic of Sichuan cuisine from Sichuan and Chongqing.
+
+[english.scio.gov.cn](https://english.scio.gov.cn/featured/chinakeywords/2024-08/30/content_117397262.htm) · [dfz.cq.gov.cn](https://dfz.cq.gov.cn/zqlswh/rwby_417819/202412/t20241219_13907530.html)
